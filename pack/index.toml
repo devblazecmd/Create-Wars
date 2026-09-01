@@ -17,6 +17,11 @@ file = "kubejs/server_scripts/.gitkeep"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "657a01a86bbf8617e4726c77df08f708e43a3db12db74b837eebd8eb1d93faae"
+metafile = true
+
+[[files]]
 file = "mods/better-advanced-tooltips.pw.toml"
 hash = "03084ff4f74cedc1b8ac6c85a98842f75956fb4fa811d285d8ca7caa8d54da5d"
 metafile = true
@@ -37,8 +42,33 @@ hash = "b6ac94e91f766466186d350ed45a79fdcf7805f34d9170ccc8612ff47983a5f5"
 metafile = true
 
 [[files]]
+file = "mods/create-compact-flap.pw.toml"
+hash = "8357524fb98d75ce1c11e1385744c1e4897ac0551c81f60ae437e5a52ed8d995"
+metafile = true
+
+[[files]]
+file = "mods/create-contraption-terminals.pw.toml"
+hash = "0eaabd71feeb13bb51455fc6528adf953639fe70b17d9bb90d54bacd8f6377a8"
+metafile = true
+
+[[files]]
 file = "mods/create-droneworks-simulated.pw.toml"
 hash = "f8af9277f307db54a20d1eb432e5a29aa39cf7acaf0d2e051644743de22b74d8"
+metafile = true
+
+[[files]]
+file = "mods/create-ender-transmission.pw.toml"
+hash = "dba1cec5505db9aa2a65d9cc14f017a956a6e2044c006db1d48ff92c59871992"
+metafile = true
+
+[[files]]
+file = "mods/create-radars.pw.toml"
+hash = "035f86b5c4c27664e1bb17d03b14cf19c5a0f540d9f0bfd2645075d6339b7e8b"
+metafile = true
+
+[[files]]
+file = "mods/create-simulated-missiles-create-aeronautics.pw.toml"
+hash = "639880c5b956436d71ff2e5ec17837f963a3e81ae84e03be6b5c35a919ddc20f"
 metafile = true
 
 [[files]]
@@ -49,6 +79,46 @@ metafile = true
 [[files]]
 file = "mods/createaddition.pw.toml"
 hash = "5931025bb6c50fa9064bd6c3c3ca51afb4119535bd77d8cc01b6509e53a9abc1"
+metafile = true
+
+[[files]]
+file = "mods/extra-copycats.pw.toml"
+hash = "972cf82be646ff7dbf7c47d63a09e212d28d5113eff78d85ee831ec4c0c9a8c7"
+metafile = true
+
+[[files]]
+file = "mods/ftb-chunks-forge.pw.toml"
+hash = "0922cfee3b7351e62fb22ccc6e5a59f35fd99fe80737dc861ada3b5407ecdf87"
+metafile = true
+
+[[files]]
+file = "mods/ftb-library-forge.pw.toml"
+hash = "276e79d919c3a698ab2881d784544b7e60bef69b43f44808353bb65d38633cb3"
+metafile = true
+
+[[files]]
+file = "mods/ftb-quests-forge.pw.toml"
+hash = "6a451ba7022f1afab59b6884ded7e2c533f7d4279738477030d6de496e3de1a4"
+metafile = true
+
+[[files]]
+file = "mods/ftb-teams-forge.pw.toml"
+hash = "c21c2308684a75cda7dd9d557d129c9f89f49be527da3d5aa675fff444c11f5e"
+metafile = true
+
+[[files]]
+file = "mods/ftbxaerocompat.pw.toml"
+hash = "db5702e18aadc0f4c6a0b1a79e6689aa97e6d5d8979012769709ad287f034434"
+metafile = true
+
+[[files]]
+file = "mods/hots-aerostuff.pw.toml"
+hash = "a7e9187482cf225fbdb3769e860989040d41508106c4672c49439ed4f0d94af1"
+metafile = true
+
+[[files]]
+file = "mods/just-hammers.pw.toml"
+hash = "af4465a52c59ed914f3b924bedb844cee7867b2682a356592aafb7246fd33427"
 metafile = true
 
 [[files]]
@@ -73,7 +143,12 @@ metafile = true
 
 [[files]]
 file = "mods/sable.pw.toml"
-hash = "a1fa121ed5d0207e4cdd3f545d043f68f9a4bb38dcb21278b968fad5e4cefe4a"
+hash = "f21e2db6083eb58ee1b96630cf345c38ee7b93296da7990f27155480f3f2b6e1"
+metafile = true
+
+[[files]]
+file = "mods/simulated-copycats.pw.toml"
+hash = "d51634fccfc5064d7f60f8863ba9b83c489d8e62e68f5d431f7c9fa7434a4c98"
 metafile = true
 
 [[files]]
@@ -89,4 +164,24 @@ metafile = true
 [[files]]
 file = "mods/sophisticated-storage.pw.toml"
 hash = "2d45e747634f18813476b01a13507fa99e01e330334f11c3ed8b6a074faf3b5f"
+metafile = true
+
+[[files]]
+file = "mods/tfmg-community-edition.pw.toml"
+hash = "e0bf2a73a55e1ae63171ece74ae521f9a9827f12f43bd69e8b67f29bd3a20521"
+metafile = true
+
+[[files]]
+file = "mods/toms-storage.pw.toml"
+hash = "a303683e4c74640f419c31db329e9afc3ee8f388abc5c6a536dc6169c274b5c6"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-minimap.pw.toml"
+hash = "4c336c9a00838ff5b5bbf6cd8ae35927186fdfa42258ca15513835e1b12ced2f"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-world-map.pw.toml"
+hash = "2ba7eb6ca5c2c9886cfb1bb23ed56fbbcaac3d4d3b1b185dc550ed61b66ecce1"
 metafile = true

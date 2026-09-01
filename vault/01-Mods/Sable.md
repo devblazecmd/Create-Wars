@@ -17,7 +17,11 @@ Library dependency required by [[Create Aeronautics]]. No standalone gameplay ro
 
 ## Version notes
 Auto-resolved and added by `packwiz modrinth add create-aeronautics` on 2026-09-01 (packwiz detected it as
-a declared dependency and prompted to add it, accepted non-interactively).
+a declared dependency and prompted to add it, accepted non-interactively). Later re-pinned to the same
+`2.0.5` build but sourced from CurseForge metadata instead of Modrinth, when `packwiz curseforge add
+create-simulated-missiles-create-aeronautics` also declared Sable as a dependency — packwiz re-resolves a
+shared dependency through whichever platform the mod that's currently being added uses. No functional
+change (same jar), just a different update-tracking source in `sable.pw.toml`.
 
 ## Known issues
 None logged yet.

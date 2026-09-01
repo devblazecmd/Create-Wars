@@ -22,6 +22,7 @@ instead of re-reading every note after a Minecraft update.
 - `#mod/category/drones` — remote-controlled/autonomous units
 - `#mod/category/radar` — detection/awareness
 - `#mod/category/storage` — inventory/logistics (backpacks, storage upgrades, etc.)
+- `#mod/category/teams` — factions/claims/questing (FTB Teams/Quests/Chunks and similar)
 - `#mod/category/scripting` — KubeJS/CraftTweaker and similar
 - `#mod/category/utility` — QoL, performance, world-gen, etc.
 - `#mod/category/dependency` — required library mod, not a "feature" by itself

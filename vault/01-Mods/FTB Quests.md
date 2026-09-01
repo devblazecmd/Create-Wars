@@ -1,0 +1,30 @@
+---
+tags: [mod/status/active, mod/category/teams, mc-version/1.21.1, loader/neoforge]
+mod_id: ftb-quests-forge
+pack_version_pinned: "2101.1.34 (ftb-quests-neoforge-2101.1.34.jar)"
+last_verified: "2026-09-01 (added via packwiz curseforge add)"
+---
+
+# FTB Quests (NeoForge)
+
+**Source:** [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge) — same
+`-forge`-suffix-on-NeoForge-slug naming as [[FTB Teams]]. Also not on Modrinth — see [[FTB Teams]]'s note
+for how the first (wrong) add attempt was corrected.
+
+## Role in Create Wars
+Questing/progression system. Natural fit for gating pack progression: e.g. requiring a team to research
+[[Create Big Cannons]] tiers or unlock [[Create Droneworks Simulated]] drone parts through quest chains
+rather than raw crafting-table access, tying progression to the "war" narrative.
+
+## Dependencies
+- No new dependencies at add time — [[FTB Library]] (pulled in by [[FTB Teams]]) already covers it.
+
+## Version notes
+Added via `packwiz curseforge add ftb-quests-forge` on 2026-09-01; resolved to `2101.1.34`.
+
+## Known issues
+None logged yet.
+
+## Config decisions
+None yet — actual quest lines are a design task for `03-Design`, not something to improvise ad hoc once
+the pack has enough content installed to sequence.

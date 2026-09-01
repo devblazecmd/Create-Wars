@@ -7,6 +7,12 @@ last_verified: "2026-09-01 (added via packwiz curseforge add)"
 
 # Mob Radar
 
+**Open decision (2026-09-01):** [[CBC Aeronautics Missiles]] pulled in [[Create Radars|Create: Radars]] as a
+hard dependency, which is a Create-native radar addon with explicit missile-targeting compat. We now have
+two overlapping "radar" mods. Don't remove either unilaterally — decide in-game whether they serve distinct
+purposes (this one: general terrain-penetrating mob/player detection; Create: Radars: missile
+guidance/detection) or whether one makes the other redundant.
+
 **Source:** [CurseForge](https://www.curseforge.com/minecraft/mc-mods/mob-radar)
 
 ## Role in Create Wars
