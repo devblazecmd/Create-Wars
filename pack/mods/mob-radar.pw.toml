@@ -1,0 +1,13 @@
+name = "Mob Radar"
+filename = "mob_radar-1.1.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f48feeb2a5dfcfef4772561ab3908c4b867043a8"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7604459
+project-id = 1415161

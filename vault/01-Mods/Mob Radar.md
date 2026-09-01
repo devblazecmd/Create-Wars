@@ -1,8 +1,8 @@
 ---
-tags: [mod/status/candidate, mod/category/radar, mc-version/1.21.1, loader/neoforge]
+tags: [mod/status/active, mod/category/radar, mc-version/1.21.1, loader/neoforge]
 mod_id: mob-radar
-pack_version_pinned: "1.1.0 for NeoForge 1.21.1"
-last_verified: "2026-09-01 (web research only, not yet installed)"
+pack_version_pinned: "1.1.0 (mob_radar-1.1.0-neoforge-1.21.1.jar)"
+last_verified: "2026-09-01 (added via packwiz curseforge add)"
 ---
 
 # Mob Radar

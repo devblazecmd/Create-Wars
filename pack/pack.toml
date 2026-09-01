@@ -3,9 +3,11 @@ author = "devblazecmd"
 version = "0.1.0"
 pack-format = "packwiz:1.1.0"
 
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "136c5b98906ea2bc80355d1126ecd6381ff17c2b4f6a1404daa42d0001d2f42b"
+
 [versions]
 minecraft = "1.21.1"
-neoforge = "TODO"
-
-[options]
-acceptable-game-versions = ["1.21.1"]
+neoforge = "21.1.249"

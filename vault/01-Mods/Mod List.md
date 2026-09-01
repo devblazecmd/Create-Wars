@@ -7,16 +7,16 @@ tags: [meta]
 Index of every mod note. Update this when a mod's status changes — don't rely on search alone, since this
 is the one page meant to give a whole-pack view at a glance.
 
-Researched 2026-09-01 for **Minecraft 1.21.1, NeoForge**. All entries below are `#mod/status/candidate` —
-none are pinned into `pack/` yet. See [[../../README|root README]] for the packwiz workflow that promotes a
-candidate to active.
+Researched 2026-09-01 for **Minecraft 1.21.1, NeoForge**. Pinned into `pack/` on 2026-09-01 via packwiz —
+all entries below except the open questions/rejected sections are `#mod/status/active`. See
+[[../../README|root README]] for the packwiz workflow.
 
 ## Core
 - [[Create]] — base building/automation mod everything else hangs off of
-- [[Flywheel]] — rendering engine dependency required by Create
 
 ## Combat
 - [[Create Big Cannons]] — multiblock artillery, autocannons, projectiles/fuzes; explicitly built for PvP
+- [[Ritchie's Projectile Library]] — dependency, required by Create Big Cannons
 
 ## Vehicles
 - [[Create Aeronautics]] — planes, hot-air balloons, offroad vehicles (requires [[Sable]])
@@ -25,12 +25,19 @@ candidate to active.
 
 ## Drones
 - [[Create Droneworks Simulated]] — drone camera + wireless remote controller, addon to Create Aeronautics
+- [[Carbon Config]] — dependency, required by Create: Droneworks Simulated
 
 ## Radar
 - [[Mob Radar]] — reveals nearby mob/player outlines through terrain for a short window
 
 ## Scripting
 - [[KubeJS]] — server/client scripting glue for custom recipes, events, and balance tweaks
+- [[Rhino]] — dependency, JS engine required by KubeJS
+- [[Better Advanced Tooltips]] — dependency, required by KubeJS
+
+## Not a separate install
+- [[Flywheel]] — ships jar-in-jar inside Create's own file for current versions; see its note for why
+  `packwiz modrinth add flywheel` fails and shouldn't be retried.
 
 ## Not yet researched / open questions
 - Trains ([[Steam 'n' Rails]]?) — do we want rail-based logistics/combat, or is that scope creep?

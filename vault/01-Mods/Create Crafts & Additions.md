@@ -1,8 +1,8 @@
 ---
-tags: [mod/status/candidate, mod/category/vehicles, mc-version/1.21.1, loader/neoforge]
+tags: [mod/status/active, mod/category/vehicles, mc-version/1.21.1, loader/neoforge]
 mod_id: createaddition
-pack_version_pinned: "neoforge-1.4.0-1.21.1"
-last_verified: "2026-09-01 (web research only, not yet installed)"
+pack_version_pinned: "1.7.0 (createaddition-1.7.0.jar)"
+last_verified: "2026-09-01 (added via packwiz modrinth add)"
 ---
 
 # Create Crafts & Additions
@@ -18,7 +18,8 @@ systems unless they're meant to compose.
 - Hard requires: [[Create]]
 
 ## Version notes
-`neoforge-1.4.0-1.21.1` confirmed available on Modrinth at research time.
+Added via `packwiz modrinth add createaddition` on 2026-09-01; resolved to `1.7.0`, notably higher than the
+`neoforge-1.4.0-1.21.1` build seen in initial research.
 
 ## Known issues
 None logged yet.

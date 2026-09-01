@@ -1,8 +1,8 @@
 ---
-tags: [mod/status/candidate, mod/category/vehicles, mc-version/1.21.1, loader/neoforge]
+tags: [mod/status/active, mod/category/vehicles, mc-version/1.21.1, loader/neoforge]
 mod_id: create-aeronautics
-pack_version_pinned: "1.2.1+mc1.21.1"
-last_verified: "2026-09-01 (web research only, not yet installed)"
+pack_version_pinned: "1.3.2 (create-aeronautics-bundled-1.21.1-1.3.2.jar)"
+last_verified: "2026-09-01 (added via packwiz modrinth add)"
 ---
 
 # Create Aeronautics
@@ -23,7 +23,9 @@ unsupported dependency to carry through future MC version bumps.
 - Hard requires: [[Create]] and [[Sable]] (both required — confirmed on the mod's own page)
 
 ## Version notes
-Modrinth shows `1.2.1+mc1.21.1` and `1.1.0+mc1.21.1` as recent releases at research time.
+Pinned via `packwiz modrinth add create-aeronautics` on 2026-09-01, which auto-resolved and pulled in
+[[Sable]] as a dependency. Resolved to `1.3.2` (bundled jar), newer than the `1.2.1`/`1.1.0` seen in
+research.
 
 ## Known issues
 None logged yet.
