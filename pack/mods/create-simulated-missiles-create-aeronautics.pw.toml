@@ -1,13 +1,13 @@
 name = "Create: Simulated Missiles | Create Aeronautics | Create Big Cannons Compat | Create: Radars Compat"
-filename = "cbcaeronauticsmissiles-0.2.0.jar"
+filename = "CBCAeronautics Missiles 0.1.0.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "0c6c2322d038bb97a1abfb99d1cba6134fc783f5"
+hash = "ec1a9970b67a78dca554650cfe2c8131d1782f22"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8746555
+file-id = 8658979
 project-id = 1654531

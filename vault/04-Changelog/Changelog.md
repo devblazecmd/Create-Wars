@@ -87,3 +87,36 @@ this tells you *why*, in prose, per pack version.
   repeated on a future update. Also caught that "Oculus" (the old Forge-era Iris fork) never got a 1.21.1
   build, so used Iris itself as the shader loader instead. New `#mod/category/optimization` tag added to
   the taxonomy. Pack is now at 61 mods.
+
+- **First real test of the pack.** No GUI/Microsoft-login client test was possible in this dev environment,
+  so instead ran the most rigorous automated check available: installed a NeoForge 1.21.1 server into a
+  scratch instance outside the repo, used the real `packwiz-installer` (via `packwiz-installer-bootstrap`,
+  fetched from its GitHub Releases) to resolve and download every mod for the server side, then booted a
+  headless dedicated server and watched the log for crashes.
+  - Hit CurseForge's "third-party download disabled" wall on [[../01-Mods/CBC Aeronautics Missiles]] — no
+    automated tool (packwiz, Prism, curl) can fetch it, only a browser. Project owner manually downloaded
+    it; since only `0.1.0` was on hand (not the `0.2.0` originally pinned), re-pinned the pack to that exact
+    file via `packwiz curseforge add --file-id 8658979`. Discovered `0.1.0` doesn't declare
+    [[../01-Mods/Create Radars|Create: Radars]]/[[../01-Mods/Sable|Sable]] as dependencies the way `0.2.0`
+    does — the radar-targeting integration may not be present at this version.
+  - That re-pin cascaded a second problem: packwiz re-resolved [[../01-Mods/Create Aeronautics]] (a shared
+    dependency) through CurseForge metadata instead of its previous working Modrinth source, and *that*
+    CurseForge copy is also distribution-disabled. Fixed by re-adding it via
+    `packwiz modrinth add create-aeronautics` to force it back to a direct-download source. **Lesson
+    recorded in the vault:** any `packwiz curseforge add` can silently flip an existing shared dependency's
+    source — worth checking `git diff` on other `.pw.toml` files after any curseforge add, not just the one
+    just added.
+  - The dedicated server then crashed with `ModLoadingException` for two missing runtime dependencies
+    neither Modrinth nor CurseForge had declared: [[../01-Mods/Waystones|Waystones]]/
+    [[../01-Mods/Create Waystones Recipes]] need [[../01-Mods/Balm|Balm]], and
+    [[../01-Mods/Aeronautics Simulated Copycats|Aeronautics: Simulated Copycats]] needs
+    [[../01-Mods/Create Copycats Plus|Create: Copycats+]] (referenced in research long ago but never
+    actually installed). Added both via packwiz.
+  - **Second boot succeeded: `Done (6.503s)!`** — all 63 server-side mods loaded, world generated across
+    overworld/nether/end/the custom teleporter pocket dimension, and the server idled without error for the
+    rest of the test. Filed [[../02-Bugs/Cross-mod compat noise on server boot]] for a handful of non-fatal
+    recipe/loot-table errors from Create: Connected, Create: Misc and Things, and TFMG Community Edition's
+    optional cross-mod compat content — cosmetic, not blocking.
+  - Not yet tested: the client side (rendering mods, GUI, actual play) — needs a real Prism Launcher launch
+    with Microsoft login, which this environment can't do. Server-side testing is a strong signal but not a
+    substitute for an actual playtest.

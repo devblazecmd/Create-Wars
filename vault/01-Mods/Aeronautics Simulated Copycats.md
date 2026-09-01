@@ -16,6 +16,9 @@ copycat material is used structurally. Directly relevant to vehicle combat durab
 
 ## Dependencies
 - Hard requires: [[Create Aeronautics]]; packwiz found no new dependencies to add (already present).
+- Also hard requires [[Create Copycats Plus|Create: Copycats+]] — not declared on Modrinth, only surfaced
+  as a hard crash (`Mod sim_copycats requires copycats any`) during a headless server boot test; see that
+  mod's note and the 2026-09-01 changelog entry.
 
 ## Version notes
 Requested at `1.3.1`; `packwiz modrinth add` resolved to current latest, `1.3.2`.

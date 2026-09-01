@@ -16,6 +16,8 @@ balance question this raises for a combat-focused pack.
 
 ## Dependencies
 - Required by: [[Create Waystones Recipes]]
+- Itself requires: [[Balm]] (not declared on Modrinth — only surfaced as a hard crash during a headless
+  server boot test; see [[Balm]]'s note and the 2026-09-01 changelog entry)
 
 ## Version notes
 Auto-resolved and added by `packwiz modrinth add create-waystones-recipes` on 2026-09-01; pinned at

@@ -76,6 +76,10 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - [[Just Hammers]] — area-mining hammers (3x3 up to 5x5x5 patterns)
 - [[Create Waystones Recipes]] — reworks Waystones recipes to fit Create's economy
 - [[Waystones]] — dependency, base fast-travel mod required by Create Waystones Recipes
+- [[Balm]] — dependency, required by Waystones and Create Waystones Recipes (found via server boot test,
+  not declared on Modrinth)
+- [[Create Copycats Plus|Create: Copycats+]] — base copycat system; required by Aeronautics: Simulated
+  Copycats (found via server boot test, not declared on Modrinth)
 - [[Create Bits n Bobs|Create: Bits 'n' Bobs]] — general decorative/mechanical Create additions
 - [[Strut Your Stuff (Struts)]] — dependency, required by Create: Bits 'n' Bobs
 - [[Azimuth API]] — dependency, required by Create: Bits 'n' Bobs

@@ -18,6 +18,8 @@ this mod's recipe changes.
 ## Dependencies
 - Hard requires: [[Waystones]] (auto-resolved and added by packwiz — this is the first thing that pulled
   the base Waystones mod into the pack)
+- Also hard requires [[Balm]] — not declared on Modrinth, only surfaced as a hard crash during a headless
+  server boot test; see [[Balm]]'s note.
 
 ## Version notes
 Added via `packwiz modrinth add create-waystones-recipes` on 2026-09-01; resolved to `3.0.1.b`, close to the

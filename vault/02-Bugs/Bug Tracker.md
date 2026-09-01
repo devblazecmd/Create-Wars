@@ -7,10 +7,16 @@ tags: [meta]
 Index of open/notable bug notes. Use [[../Templates/Bug Report Template|Bug Report Template]] for each new
 one — one note per bug, tagged by severity/type/mc-version, linked to the affected [[../01-Mods/Mod List|mod note(s)]].
 
-No bugs logged yet — nothing has been installed/tested in-game.
+First real test happened 2026-09-01: a headless NeoForge server boot with the full mod list (see
+[[../04-Changelog/Changelog|changelog]]). Two hard crashes were found and fixed before this note was
+written (missing [[../01-Mods/Balm|Balm]] and [[../01-Mods/Create Copycats Plus|Create: Copycats+]]
+dependencies) — those aren't logged here since they were resolved immediately by adding the missing mods,
+not by a code/config fix. What's below is what's left after that.
 
 ## Open
-*(none)*
+- [[Cross-mod compat noise on server boot]] — cosmetic, non-fatal recipe/loot-table errors from
+  Create: Connected, Create: Misc and Things, and TFMG Community Edition's optional cross-mod compat
+  content.
 
 ## Investigating
 *(none)*
