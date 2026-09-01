@@ -64,3 +64,12 @@ this tells you *why*, in prose, per pack version.
   and [[../01-Mods/Create Connected]] `1.3.3-mc1.21.1`.
 - Added [[../01-Mods/Just Enough Items (JEI)|Just Enough Items (JEI)]] `19.51.0.417` — recipe viewer,
   overdue given the pack is now at 42 mods.
+- Added seven more Create addons, all resolved exactly to the requested versions:
+  [[../01-Mods/Create Deep Seas]] `2.2.4` (submarines — opens up underwater combat),
+  [[../01-Mods/Create Misc and Things|Create: Misc and Things]] `4.1.1`,
+  [[../01-Mods/Create New Furnitures|Create : New Furnitures]] `1.1.2` (CurseForge only),
+  [[../01-Mods/Create Teleporters]] `2.0.2b` (a third fast-travel system alongside Waystones — same open
+  balance question, now three-way), [[../01-Mods/Create Aeronautics Kinetic Grip|Create Aeronautics:
+  Kinetic Grip]] `1.0.5` (CurseForge only), [[../01-Mods/Create Aeronautics Throwable Rope Connector|Create
+  Aeronautics: Throwable Rope Connector]] `0.4.3`, and [[../01-Mods/CreateBetterFps]] `1.1.4`. Pack is now
+  at 49 mods.

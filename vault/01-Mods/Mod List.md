@@ -30,6 +30,11 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - [[Create Aeroworks|Create: Aeroworks]] — flight-control hardware (gyroscope, joystick) for Aeronautics
 - [[Create Aeronautics Toolgun|Create Aeronautics: Toolgun]] — gravity gun/towing + blueprint save-print
   tool for Aeronautics contraptions
+- [[Create Deep Seas]] — submarines for Aeronautics; opens up underwater combat
+- [[Create Aeronautics Kinetic Grip|Create Aeronautics: Kinetic Grip]] — kinetic-powered handles for
+  Aeronautics contraptions
+- [[Create Aeronautics Throwable Rope Connector|Create Aeronautics: Throwable Rope Connector]] — rope
+  docking for airships/submarines
 
 ## Drones
 - [[Create Droneworks Simulated]] — drone camera + wireless remote controller, addon to Create Aeronautics
@@ -77,6 +82,10 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - [[Create Connected]] — configurable Create QoL blocks; worth a config pass to avoid overlap with other
   addons already installed
 - [[Just Enough Items (JEI)]] — recipe/usage viewer, essential once this many mods add recipes
+- [[Create Misc and Things|Create: Misc and Things]] — general decorative/technology grab-bag addon
+- [[Create New Furnitures|Create : New Furnitures]] — industrial-style furniture matching Create's aesthetic
+- [[Create Teleporters]] — point-to-point teleportation; overlaps with the Waystones fast-travel question
+- [[CreateBetterFps]] — client-side FPS optimization for Create when shaders are on
 
 ## Not a separate install
 - [[Flywheel]] — ships jar-in-jar inside Create's own file for current versions; see its note for why
@@ -95,6 +104,11 @@ all entries below except the open questions/rejected sections are `#mod/status/a
   mistake once and removed — see [[FTB Chunks]]'s note. Worth adding deliberately later.
 - Whether to add "FTB Ranks" or other FTB-family mods for finer-grained faction permissions beyond what
   FTB Teams alone provides — not requested yet, flagging as a natural next step for faction design.
+- [[Create Teleporters]] adds a *third* fast-travel-adjacent system alongside [[Waystones]] and vehicle
+  travel — same balance question, now three-way.
+- Three general-purpose "grab bag" Create addons now installed ([[Create Connected]],
+  [[Create Bits n Bobs|Create: Bits 'n' Bobs]], [[Create Misc and Things|Create: Misc and Things]]) — worth
+  a config pass together once in-game to check for duplicate/overlapping content.
 
 ## Distribution gotchas (for future adds)
 - **FTB family mods (Teams/Quests/Chunks/Library) are not on Modrinth at all.** `packwiz modrinth add
