@@ -1,0 +1,8 @@
+# Obsidian local-only workspace state (keep the config that defines the vault's look/plugins, ignore
+# per-device window/scroll state)
+vault/.obsidian/workspace.json
+vault/.obsidian/workspace-mobile.json
+
+# OS cruft
+Thumbs.db
+.DS_Store

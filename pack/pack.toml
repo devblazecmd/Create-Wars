@@ -1,0 +1,11 @@
+name = "Create Wars"
+author = "devblazecmd"
+version = "0.1.0"
+pack-format = "packwiz:1.1.0"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "TODO"
+
+[options]
+acceptable-game-versions = ["1.21.1"]

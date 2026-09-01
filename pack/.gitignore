@@ -1,0 +1,6 @@
+# packwiz-managed pack: keep the .toml manifests, ignore fetched/cached binaries and local instance state
+.packwizcache/
+mods/*.jar
+resourcepacks/*.zip
+shaderpacks/*.zip
+*.disabled
