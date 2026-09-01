@@ -27,3 +27,7 @@ this tells you *why*, in prose, per pack version.
 - Discovered [[../01-Mods/Flywheel|Flywheel]] isn't a separate install for current Create versions — it
   ships jar-in-jar inside Create's own jar. Corrected its vault note (was previously listed as a required
   standalone dependency based on research alone).
+- Added storage/logistics: [[../01-Mods/Sophisticated Storage|Sophisticated Storage]] and
+  [[../01-Mods/Sophisticated Backpacks|Sophisticated Backpacks]] (sharing the
+  [[../01-Mods/Sophisticated Core|Sophisticated Core]] dependency), pinned `1.5.91.2127` and `3.25.78.2107`
+  respectively. New `#mod/category/storage` tag added to the taxonomy for these.

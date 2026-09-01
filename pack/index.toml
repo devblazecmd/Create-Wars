@@ -17,10 +17,6 @@ file = "kubejs/server_scripts/.gitkeep"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
-file = "mods/.gitkeep"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-
-[[files]]
 file = "mods/better-advanced-tooltips.pw.toml"
 hash = "03084ff4f74cedc1b8ac6c85a98842f75956fb4fa811d285d8ca7caa8d54da5d"
 metafile = true
@@ -78,4 +74,19 @@ metafile = true
 [[files]]
 file = "mods/sable.pw.toml"
 hash = "a1fa121ed5d0207e4cdd3f545d043f68f9a4bb38dcb21278b968fad5e4cefe4a"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-backpacks.pw.toml"
+hash = "2b3710eb891a5f6c8a0db46f2b51b1505794ab10244353d35357d269279bbc86"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-core.pw.toml"
+hash = "9d4a04a61b2cebf80d76716f2d3c034d17f817327cbad6a79921a05c2e2c23a3"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-storage.pw.toml"
+hash = "2d45e747634f18813476b01a13507fa99e01e330334f11c3ed8b6a074faf3b5f"
 metafile = true

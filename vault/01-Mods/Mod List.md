@@ -30,6 +30,11 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 ## Radar
 - [[Mob Radar]] — reveals nearby mob/player outlines through terrain for a short window
 
+## Storage
+- [[Sophisticated Storage]] — upgradeable storage barrels/chests, filtering, auto-crafting
+- [[Sophisticated Backpacks]] — portable counterpart to Sophisticated Storage
+- [[Sophisticated Core]] — dependency, shared by both Sophisticated mods
+
 ## Scripting
 - [[KubeJS]] — server/client scripting glue for custom recipes, events, and balance tweaks
 - [[Rhino]] — dependency, JS engine required by KubeJS
