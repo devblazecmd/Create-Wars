@@ -73,3 +73,17 @@ this tells you *why*, in prose, per pack version.
   Kinetic Grip]] `1.0.5` (CurseForge only), [[../01-Mods/Create Aeronautics Throwable Rope Connector|Create
   Aeronautics: Throwable Rope Connector]] `0.4.3`, and [[../01-Mods/CreateBetterFps]] `1.1.4`. Pack is now
   at 49 mods.
+- Did a dedicated research pass on optimization mods and added the full stack early, per project owner's
+  request, rather than waiting until performance problems show up: [[../01-Mods/Sodium]],
+  [[../01-Mods/Iris Shaders|Iris]], [[../01-Mods/Iris and Oculus Flywheel Compat|Iris & Oculus Flywheel
+  Compat]], [[../01-Mods/ModernFix]], [[../01-Mods/FerriteCore]], [[../01-Mods/Entity Culling]],
+  [[../01-Mods/ImmediatelyFast]], [[../01-Mods/Concurrent Chunk Management Engine|C2ME (NeoForge, alpha)]],
+  [[../01-Mods/Alternate Current]], [[../01-Mods/BadOptimizations]], [[../01-Mods/FastFurnace]], and
+  [[../01-Mods/FastWorkbench]] (with [[../01-Mods/Placebo]] as a dependency).
+  **Correction made mid-batch:** initially added [[../01-Mods/Embeddium|Embeddium]] (the traditional
+  "Sodium for Forge/NeoForge" fork) before discovering Sodium itself now ships native NeoForge builds and
+  that Iris depends on Sodium directly — running both would mean two forks of the same rendering engine
+  active at once. Removed Embeddium, documented the discovery in [[../01-Mods/Sodium]]'s note so it isn't
+  repeated on a future update. Also caught that "Oculus" (the old Forge-era Iris fork) never got a 1.21.1
+  build, so used Iris itself as the shader loader instead. New `#mod/category/optimization` tag added to
+  the taxonomy. Pack is now at 61 mods.

@@ -87,6 +87,24 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - [[Create Teleporters]] — point-to-point teleportation; overlaps with the Waystones fast-travel question
 - [[CreateBetterFps]] — client-side FPS optimization for Create when shaders are on
 
+## Optimization
+- [[Sodium]] — base rendering-optimization engine; now has native NeoForge support (see its note — this
+  replaced [[Embeddium]], which was added by mistake first)
+- [[Iris Shaders|Iris]] — shader pack loader; replaces "Oculus," which never got a 1.21.1/NeoForge build
+- [[Iris and Oculus Flywheel Compat|Iris & Oculus Flywheel Compat]] — keeps Flywheel's optimizations on
+  with shaders active, pairs with [[CreateBetterFps]]
+- [[ModernFix]] — startup time / memory usage optimization for large packs
+- [[FerriteCore]] — memory dedup for block-state/model allocations
+- [[Entity Culling]] — skips rendering occluded entities
+- [[ImmediatelyFast]] — GUI/immediate-mode rendering optimization
+- [[Concurrent Chunk Management Engine]] — multithreaded chunk gen/IO (alpha-status NeoForge port — see
+  its note)
+- [[Alternate Current]] — redstone update-propagation rewrite; watch for Create-redstone interaction
+- [[BadOptimizations]] — misc tick-time micro-optimizations
+- [[FastFurnace]] — smelting recipe-match caching
+- [[FastWorkbench]] — crafting-table per-slot scan removal
+- [[Placebo]] — dependency, required by FastFurnace/FastWorkbench
+
 ## Not a separate install
 - [[Flywheel]] — ships jar-in-jar inside Create's own file for current versions; see its note for why
   `packwiz modrinth add flywheel` fails and shouldn't be retried.
@@ -123,3 +141,6 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 ## Rejected candidates
 - [[Valkyrien Skies (unofficial port)]] — rejected 2026-09-01, superseded by [[Create Aeronautics]]. Kept
   for history; don't re-add without revisiting what Aeronautics can't cover.
+- [[Embeddium]] — rejected 2026-09-01, superseded by [[Sodium]] once it became clear Sodium now has native
+  NeoForge support and [[Iris Shaders|Iris]] depends on it directly. Don't re-add unless Sodium's NeoForge
+  support regresses in a future MC version.
