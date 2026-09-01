@@ -27,6 +27,9 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - [[Hot's Aerostuff]] — link relay, levitite, copycat sails, torsion spring for Aeronautics
 - [[Aeronautics Simulated Copycats|Aeronautics: Simulated Copycats]] — copycats with different physical
   properties (weight/drag) for Aeronautics vehicles
+- [[Create Aeroworks|Create: Aeroworks]] — flight-control hardware (gyroscope, joystick) for Aeronautics
+- [[Create Aeronautics Toolgun|Create Aeronautics: Toolgun]] — gravity gun/towing + blueprint save-print
+  tool for Aeronautics contraptions
 
 ## Drones
 - [[Create Droneworks Simulated]] — drone camera + wireless remote controller, addon to Create Aeronautics
@@ -66,6 +69,14 @@ all entries below except the open questions/rejected sections are `#mod/status/a
   (oil, large transformers/switches, electricity). Source on GitHub, but distributed via CurseForge only —
   see its note.
 - [[Just Hammers]] — area-mining hammers (3x3 up to 5x5x5 patterns)
+- [[Create Waystones Recipes]] — reworks Waystones recipes to fit Create's economy
+- [[Waystones]] — dependency, base fast-travel mod required by Create Waystones Recipes
+- [[Create Bits n Bobs|Create: Bits 'n' Bobs]] — general decorative/mechanical Create additions
+- [[Strut Your Stuff (Struts)]] — dependency, required by Create: Bits 'n' Bobs
+- [[Azimuth API]] — dependency, required by Create: Bits 'n' Bobs
+- [[Create Connected]] — configurable Create QoL blocks; worth a config pass to avoid overlap with other
+  addons already installed
+- [[Just Enough Items (JEI)]] — recipe/usage viewer, essential once this many mods add recipes
 
 ## Not a separate install
 - [[Flywheel]] — ships jar-in-jar inside Create's own file for current versions; see its note for why

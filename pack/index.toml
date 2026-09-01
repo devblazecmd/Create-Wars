@@ -22,6 +22,11 @@ hash = "657a01a86bbf8617e4726c77df08f708e43a3db12db74b837eebd8eb1d93faae"
 metafile = true
 
 [[files]]
+file = "mods/azimuth-api.pw.toml"
+hash = "382d7eb9e95beb4224fdb16e6781604c0f12d49ba3b900b323b1cb0ffabec13a"
+metafile = true
+
+[[files]]
 file = "mods/better-advanced-tooltips.pw.toml"
 hash = "03084ff4f74cedc1b8ac6c85a98842f75956fb4fa811d285d8ca7caa8d54da5d"
 metafile = true
@@ -32,8 +37,18 @@ hash = "5d9c4167ef4c04142844bf3b43252f1b6bed5eefaae2a0e101b7c9172316e774"
 metafile = true
 
 [[files]]
+file = "mods/create-aeronautics-toolgun.pw.toml"
+hash = "783a2f396c1420da031f90b14a60b7020bd97d32c76a1bade1980046aa812aba"
+metafile = true
+
+[[files]]
 file = "mods/create-aeronautics.pw.toml"
 hash = "3b8895369640b2a52d3e05f7186185ba6798e44d513f11c5427a0fe9c16769e9"
+metafile = true
+
+[[files]]
+file = "mods/create-aeroworks.pw.toml"
+hash = "210419599e24212d879f58d0b3bacb74dec6d64703f49f1c547440bf7705e942"
 metafile = true
 
 [[files]]
@@ -42,8 +57,18 @@ hash = "b6ac94e91f766466186d350ed45a79fdcf7805f34d9170ccc8612ff47983a5f5"
 metafile = true
 
 [[files]]
+file = "mods/create-bits-n-bobs.pw.toml"
+hash = "c09447bd8598423945d8d58907a5ec9d6e4b1d4abd55d40dcc63826db9af9381"
+metafile = true
+
+[[files]]
 file = "mods/create-compact-flap.pw.toml"
 hash = "8357524fb98d75ce1c11e1385744c1e4897ac0551c81f60ae437e5a52ed8d995"
+metafile = true
+
+[[files]]
+file = "mods/create-connected.pw.toml"
+hash = "6ac362d60bc8b13e03a5b6b9cdf9c7676f65d3e89e87c66f18514e7ee164cdb0"
 metafile = true
 
 [[files]]
@@ -69,6 +94,11 @@ metafile = true
 [[files]]
 file = "mods/create-simulated-missiles-create-aeronautics.pw.toml"
 hash = "639880c5b956436d71ff2e5ec17837f963a3e81ae84e03be6b5c35a919ddc20f"
+metafile = true
+
+[[files]]
+file = "mods/create-waystones-recipes.pw.toml"
+hash = "009321bf662bf580a9858d97f0c81770dbd4d06df6df0811d2d870ab5bcce621"
 metafile = true
 
 [[files]]
@@ -117,6 +147,11 @@ hash = "a7e9187482cf225fbdb3769e860989040d41508106c4672c49439ed4f0d94af1"
 metafile = true
 
 [[files]]
+file = "mods/jei.pw.toml"
+hash = "812491578497cd7ce0cadb757e6cf32475cd097c80b1df9d2a3b7a3e9fd1dac6"
+metafile = true
+
+[[files]]
 file = "mods/just-hammers.pw.toml"
 hash = "af4465a52c59ed914f3b924bedb844cee7867b2682a356592aafb7246fd33427"
 metafile = true
@@ -143,7 +178,7 @@ metafile = true
 
 [[files]]
 file = "mods/sable.pw.toml"
-hash = "f21e2db6083eb58ee1b96630cf345c38ee7b93296da7990f27155480f3f2b6e1"
+hash = "a1fa121ed5d0207e4cdd3f545d043f68f9a4bb38dcb21278b968fad5e4cefe4a"
 metafile = true
 
 [[files]]
@@ -167,6 +202,11 @@ hash = "2d45e747634f18813476b01a13507fa99e01e330334f11c3ed8b6a074faf3b5f"
 metafile = true
 
 [[files]]
+file = "mods/strut-your-stuff.pw.toml"
+hash = "13415590b9e3f8aa1ca0cf33be26d697fa4b00de9c29e999815cadd37cf17175"
+metafile = true
+
+[[files]]
 file = "mods/tfmg-community-edition.pw.toml"
 hash = "e0bf2a73a55e1ae63171ece74ae521f9a9827f12f43bd69e8b67f29bd3a20521"
 metafile = true
@@ -174,6 +214,11 @@ metafile = true
 [[files]]
 file = "mods/toms-storage.pw.toml"
 hash = "a303683e4c74640f419c31db329e9afc3ee8f388abc5c6a536dc6169c274b5c6"
+metafile = true
+
+[[files]]
+file = "mods/waystones.pw.toml"
+hash = "34bab18f8671c1bea3cc577bf412afcc587c7f6d704ffabc7c4bf7fc049c32b4"
 metafile = true
 
 [[files]]

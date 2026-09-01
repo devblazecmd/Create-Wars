@@ -55,3 +55,12 @@ this tells you *why*, in prose, per pack version.
   [[../01-Mods/Xaero's World Map]] `1.45.0`, and the bridge
   [[../01-Mods/FTB Chunks x Xaero's Compat]] `1.1.4` (renders FTB claims on Xaero's maps).
 - New `#mod/category/teams` tag added to the taxonomy for the FTB stack.
+- Added five more Create addons: [[../01-Mods/Create Aeronautics Toolgun|Create Aeronautics: Toolgun]]
+  `0.3.6` (gravity gun/towing + blueprint tool), [[../01-Mods/Create Waystones Recipes]] `3.0.1.b` (pulled
+  in the base [[../01-Mods/Waystones|Waystones]] mod as a dependency — raises an open fast-travel-vs-
+  vehicles balance question), [[../01-Mods/Create Aeroworks|Create: Aeroworks]] `1.5.0` (gyroscope/joystick
+  flight controls), [[../01-Mods/Create Bits n Bobs|Create: Bits 'n' Bobs]] `2.2.9` (pulled in
+  [[../01-Mods/Strut Your Stuff (Struts)|Strut Your Stuff]] and [[../01-Mods/Azimuth API]] as dependencies),
+  and [[../01-Mods/Create Connected]] `1.3.3-mc1.21.1`.
+- Added [[../01-Mods/Just Enough Items (JEI)|Just Enough Items (JEI)]] `19.51.0.417` — recipe viewer,
+  overdue given the pack is now at 42 mods.
