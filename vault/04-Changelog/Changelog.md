@@ -120,3 +120,22 @@ this tells you *why*, in prose, per pack version.
   - Not yet tested: the client side (rendering mods, GUI, actual play) — needs a real Prism Launcher launch
     with Microsoft login, which this environment can't do. Server-side testing is a strong signal but not a
     substitute for an actual playtest.
+
+- **First real client test — success.** Project owner created a Prism Launcher instance matching the pack
+  exactly (Minecraft 1.21.1, NeoForge 21.1.249), then the same `packwiz-installer` process used for the
+  server smoke test was pointed at that instance's real `minecraft/` folder instead of the scratch
+  directory, this time without `--side server` so client-only mods (Sodium, Iris, ImmediatelyFast,
+  CreateBetterFps, BadOptimizations, Entity Culling — everything correctly excluded from the server test)
+  were included too.
+  - Hit the [[../01-Mods/CBC Aeronautics Missiles]] manual-download wall again as expected, but this time
+    the project owner had the `0.2.0` file (not `0.1.0`) — re-pinned the pack back to `0.2.0` via
+    `packwiz curseforge add --file-id 8746555`, which restores the [[../01-Mods/Create Radars|Create:
+    Radars]]/[[../01-Mods/Sable|Sable]] integration that was uncertain at `0.1.0`. The same
+    Create-Aeronautics-gets-flipped-to-blocked-CurseForge side effect happened a third time and was fixed
+    the same way (`packwiz modrinth add create-aeronautics`) — this is now a confirmed recurring pattern,
+    documented directly in [[../01-Mods/CBC Aeronautics Missiles]]'s note as something to redo after any
+    future re-pin of that mod.
+  - All mods installed cleanly into the real instance. **Project owner launched it and confirmed: "all
+    looks good."** This is the first full end-to-end validation of the pack — client rendering stack
+    (Sodium/Iris/Flywheel compat), all 61+ gameplay mods, and the manual-download mod all working together
+    in an actual running game, not just a headless server.
