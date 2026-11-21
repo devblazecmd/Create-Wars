@@ -24,6 +24,10 @@ Added via `packwiz curseforge add create-big-cannons` on 2026-09-01; resolved to
 build seen in research. CBC ships frequent patch releases — expect to re-check this note's
 `pack_version_pinned` field often relative to other mods.
 
+2026-11-20: adding [[Create Armored Constructs]] made packwiz re-resolve this mod, switching its source from
+CurseForge metadata to a Modrinth direct download. Same version (`5.11.7+mc.1.21.1`), different source —
+kept, since Modrinth direct downloads avoid the CurseForge third-party-download wall.
+
 ## Known issues
 None logged yet.
 

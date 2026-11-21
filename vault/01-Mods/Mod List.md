@@ -18,6 +18,22 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - [[Create Big Cannons]] — multiblock artillery, autocannons, projectiles/fuzes; explicitly built for PvP
 - [[Ritchie's Projectile Library]] — dependency, required by Create Big Cannons
 - [[CBC Aeronautics Missiles]] — guided missiles connecting Big Cannons + Aeronautics + Radars
+- [[CBC Military Supplement]] — torpedoes, aerial bombs, extra shells (deps: [[Shaolib]],
+  [[Shaolib Munitions]]) *(testing, added 2026-11-20)*
+- [[CBC Firepower Components]] — compact cannon mounts for vehicles *(testing)*
+- [[CBC Ballistic Computer]] — trajectory calc + redstone-controlled artillery *(testing)*
+- [[Create The Air War|Create: The Air War]] — aircraft weapons for Aeronautics *(testing)*
+
+## Infantry / personal weapons
+- [[Create Gunsmithing|Create: Gunsmithing]] — steampunk guns crafted via Create machines *(testing)*
+- [[NTGL NukaTeam's Gun Lib|NTGL]] — dependency gun library *(testing)*
+
+## PvE threat
+- [[Trigger Mobs]] — mobs spawn with and fire Gunsmithing/NTGL guns *(testing)*
+- [[Improved Mobs]] — mob gear/stat scaling, block breaking (dep: [[TenshiLib]]) *(testing)*
+- [[Enhanced AI]] — breaching creepers, mining zombies, sniping skeletons (dep: [[InsaneLib]]) *(testing,
+  beta)*
+- Three mods all buff ranged/block-breaking mobs — needs a mob-balance design doc before release.
 
 ## Vehicles
 - [[Create Aeronautics]] — planes, hot-air balloons, offroad vehicles (requires [[Sable]])
@@ -35,6 +51,15 @@ all entries below except the open questions/rejected sections are `#mod/status/a
   Aeronautics contraptions
 - [[Create Aeronautics Throwable Rope Connector|Create Aeronautics: Throwable Rope Connector]] — rope
   docking for airships/submarines
+- [[Rolled Homongenous Forked|Rolled Homongenous: Forked]] — armor plate blocks for Aeronautics/CBC
+  *(testing)*
+- [[Create Armored Constructs|Create: Armored Constructs]] — military armored-vehicle building *(testing)*
+- [[Create Bits n Tracks CE|Create: Bits 'n' Tracks CE]] — Sable-driven tank treads *(testing)*
+
+## Trains (scope decided 2026-11-20: in, as armored rail warfare)
+- [[Steam 'n' Rails]] — unofficial NeoForge port, beta *(testing)*
+- [[CBC Locometal Armor]] — train armor vs. Big Cannons, server-side only *(testing)*
+- [[Create Who Touched My Train|Create: Who Touched My Train]] — train locking/permissions *(testing)*
 
 ## Drones
 - [[Create Droneworks Simulated]] — drone camera + wireless remote controller, addon to Create Aeronautics
@@ -44,6 +69,8 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - [[Mob Radar]] — reveals nearby mob/player outlines through terrain for a short window
 - [[Create Radars|Create: Radars]] — Create-native radar, pulled in by [[CBC Aeronautics Missiles]] for
   missile targeting. **Overlaps with Mob Radar — see [[Mob Radar]] for the open decision.**
+- [[Create Radar Fire Arc Filter|Create Radar: Fire Arc Filter]] — no-fire sectors for radar-slaved
+  cannons *(testing)*. Its install tried to bump Radars to 5.1.1; reverted to 0.4.9.4 — see its note.
 
 ## Storage
 - [[Sophisticated Storage]] — upgradeable storage barrels/chests, filtering, auto-crafting
@@ -114,7 +141,10 @@ all entries below except the open questions/rejected sections are `#mod/status/a
   `packwiz modrinth add flywheel` fails and shouldn't be retried.
 
 ## Not yet researched / open questions
-- Trains ([[Steam 'n' Rails]]?) — do we want rail-based logistics/combat, or is that scope creep?
+- ~~Trains ([[Steam 'n' Rails]]?) — do we want rail-based logistics/combat, or is that scope creep?~~
+  Resolved 2026-11-20: yes, armored trains (see Trains section).
+- Pack is now **PvP and PvE equally** (decided 2026-11-20). Mob scaling is installed ([[Improved Mobs]],
+  [[Enhanced AI]], [[Trigger Mobs]]) but untuned — the open question is now *how hard*, not *whether*.
 - Mob-side scaling: do vanilla mobs need buffing/reworking to be a real "war" opponent, or is the PvP-style
   gear enough on its own? → open [[Design Doc Template|design doc]] once we decide.
 - [[Mob Radar]] vs [[Create Radars|Create: Radars]] vs [[Xaero's Minimap]] entity radar — three overlapping

@@ -1,0 +1,13 @@
+name = "Create Big Cannons: Ballistic Computer"
+filename = "cbc_ballistic_computer-1.3.5.10.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Pol2YROZ/versions/6O6X2qcH/cbc_ballistic_computer-1.3.5.10.jar"
+hash-format = "sha512"
+hash = "d5af33d7753584097dbd52458b2a68096ab0f30dbe0fea39d5a7e41ee1643bc761adcc8e5d3f1881a46f98d4fff77b301424251df75663e339b1e138283ba7a7"
+
+[update]
+[update.modrinth]
+mod-id = "Pol2YROZ"
+version = "6O6X2qcH"

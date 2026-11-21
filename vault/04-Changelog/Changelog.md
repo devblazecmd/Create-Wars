@@ -139,3 +139,30 @@ this tells you *why*, in prose, per pack version.
     looks good."** This is the first full end-to-end validation of the pack — client rendering stack
     (Sodium/Iris/Flywheel compat), all 61+ gameplay mods, and the manual-download mod all working together
     in an actual running game, not just a headless server.
+
+## Unreleased — 2026-11-20: "more content" pass (warfare + PvE)
+- Project owner set direction: **PvP and PvE weighted equally**, and **trains are in scope** as armored rail
+  warfare (resolves the long-open Steam 'n' Rails question).
+- Researched candidates on Modrinth's API filtered to 1.21.1 + NeoForge, then added (all via
+  `packwiz modrinth add`, all `#mod/status/testing`):
+  - Infantry: [[../01-Mods/Create Gunsmithing|Create: Gunsmithing]] `1.4.9` (+ [[../01-Mods/NTGL NukaTeam's Gun Lib|NTGL]] `3.2.0`).
+  - Vehicle armor: [[../01-Mods/Rolled Homongenous Forked|Rolled Homongenous: Forked]] `1.0.3b`,
+    [[../01-Mods/Create Armored Constructs|Create: Armored Constructs]] `1.0.0`,
+    [[../01-Mods/Create Bits n Tracks CE|Create: Bits 'n' Tracks CE]] `3.0.3` (tank treads).
+  - Munitions: [[../01-Mods/CBC Military Supplement]] `3.0.7-1.21.1` (+ [[../01-Mods/Shaolib]],
+    [[../01-Mods/Shaolib Munitions]] `0.1.0`), [[../01-Mods/CBC Firepower Components]] `0.4.4`,
+    [[../01-Mods/Create The Air War|Create: The Air War]] `5.00`.
+  - Fire control: [[../01-Mods/CBC Ballistic Computer]] `1.3.5.10`,
+    [[../01-Mods/Create Radar Fire Arc Filter|Create Radar: Fire Arc Filter]] `1.0.0`.
+  - Trains: [[../01-Mods/Steam 'n' Rails]] `0.3.0-beta.2`, [[../01-Mods/CBC Locometal Armor]] `2.0.0`,
+    [[../01-Mods/Create Who Touched My Train|Create: Who Touched My Train]] `1.4.0-Create6.0-beta`.
+  - PvE: [[../01-Mods/Trigger Mobs]] `1.5.6`, [[../01-Mods/Improved Mobs]] `1.16.1` (+ [[../01-Mods/TenshiLib]]),
+    [[../01-Mods/Enhanced AI]] `4.3.2.0-beta` (+ [[../01-Mods/InsaneLib]]).
+- **Dependency re-resolution side effects (caught via `git diff`, per the lesson from the first test):**
+  - Create: Radars was silently upgraded `0.4.9.4` -> `5.1.1` when adding Fire Arc Filter. Reverted to the
+    tested `0.4.9.4` — 5.x is a new major line and Fire Arc / CBC Aeronautics Missiles predate it.
+  - Ritchie's Projectile Library got added a second time as `rpl.pw.toml`. Duplicate removed.
+  - Create Big Cannons switched CurseForge -> Modrinth source, same version. Kept.
+- Pack now at 85 mods. **Not yet boot-tested** — the headless server test was blocked in this session
+  (auto-mode permission on running the downloaded installer); needs to be run before any of the above
+  flip to `active`.

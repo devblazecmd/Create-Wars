@@ -1,0 +1,13 @@
+name = "Improved Mobs"
+filename = "improvedmobs-1.21.1-1.16.1-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/23MovWyi/versions/KVvfBlMx/improvedmobs-1.21.1-1.16.1-neoforge.jar"
+hash-format = "sha512"
+hash = "37acebf6210bc7ac7ae7b4771f8656d25a95fc281788a3d368b2bda03a57d5d6949a158481ae78474e950d325ab013e9a6b26e030ef003a796db247721a397bb"
+
+[update]
+[update.modrinth]
+mod-id = "23MovWyi"
+version = "KVvfBlMx"

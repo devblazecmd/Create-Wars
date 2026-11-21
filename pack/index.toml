@@ -47,6 +47,11 @@ hash = "03084ff4f74cedc1b8ac6c85a98842f75956fb4fa811d285d8ca7caa8d54da5d"
 metafile = true
 
 [[files]]
+file = "mods/bits-n-tracks-ce.pw.toml"
+hash = "c7916294254f19658955c2781468e89df4266e7c5267d1f5b5f11202937c10a1"
+metafile = true
+
+[[files]]
 file = "mods/c2me-neoforge.pw.toml"
 hash = "8eeaf5023a8c5978f68ecd71d09ac46516167111ab2f46ab2c3909b8f9283f92"
 metafile = true
@@ -54,6 +59,26 @@ metafile = true
 [[files]]
 file = "mods/carbon-config.pw.toml"
 hash = "5d9c4167ef4c04142844bf3b43252f1b6bed5eefaae2a0e101b7c9172316e774"
+metafile = true
+
+[[files]]
+file = "mods/cbc-firepower-components.pw.toml"
+hash = "e3b9cf3dc36c72e8e2133441094d4be55bc03372ad25c8ab403ca71fdfd46de4"
+metafile = true
+
+[[files]]
+file = "mods/cbc-locometal-armor.pw.toml"
+hash = "ae483c5af2ef43fd7afd785cbced8c5f78e235239732a51f44183dfb26adf1eb"
+metafile = true
+
+[[files]]
+file = "mods/cbc-more-shells.pw.toml"
+hash = "2ca1c31a7df0eff63bcd7246658d877b0c210f3b07787e11b984fdb3326894be"
+metafile = true
+
+[[files]]
+file = "mods/cgs.pw.toml"
+hash = "dae8f38fa94bb1ce2108bf60fcce95eed3b5e9a3deb6759093a217e9b192f5ac"
 metafile = true
 
 [[files]]
@@ -82,8 +107,18 @@ hash = "210419599e24212d879f58d0b3bacb74dec6d64703f49f1c547440bf7705e942"
 metafile = true
 
 [[files]]
+file = "mods/create-armored-constructs.pw.toml"
+hash = "883665cdcbacc758d2d45045a54b069ffad17364911d7a403b081167f7d4d600"
+metafile = true
+
+[[files]]
+file = "mods/create-big-cannons-ballistic-computer.pw.toml"
+hash = "5601166524d7fd44619e55e50eba9e1f3d24123239bdf7d971a1396a5dfe5590"
+metafile = true
+
+[[files]]
 file = "mods/create-big-cannons.pw.toml"
-hash = "b6ac94e91f766466186d350ed45a79fdcf7805f34d9170ccc8612ff47983a5f5"
+hash = "a0e9ff95570cd9af3374ca8b44aa095447baf94e565f46ae99819d52a9b48dc1"
 metafile = true
 
 [[files]]
@@ -137,8 +172,13 @@ hash = "a6ee1697ee2f3a890c04c30a141de645b2903c164eb0e1ccd2a61a22bd2e9a3e"
 metafile = true
 
 [[files]]
+file = "mods/create-radar-fire-arc.pw.toml"
+hash = "40b2272abd6a0914ce2fa78836e9ea841a2d82c02a237100afd0297f8992ab6b"
+metafile = true
+
+[[files]]
 file = "mods/create-radars.pw.toml"
-hash = "035f86b5c4c27664e1bb17d03b14cf19c5a0f540d9f0bfd2645075d6339b7e8b"
+hash = "184474f86bc32d2a7e9585760ff38354f60788b8bafe94ce9dbb40850b9c41ba"
 metafile = true
 
 [[files]]
@@ -147,13 +187,28 @@ hash = "639880c5b956436d71ff2e5ec17837f963a3e81ae84e03be6b5c35a919ddc20f"
 metafile = true
 
 [[files]]
+file = "mods/create-steam-n-rails-1.21.1.pw.toml"
+hash = "80332cead695f1e3c27e99133a48709767d1106f836792bb2fc4d594b88f1a68"
+metafile = true
+
+[[files]]
 file = "mods/create-teleporters.pw.toml"
 hash = "a9fdfce6ffedfe29a7df44e8aea2df2a9d56ff8b3da73f9dcafcf6d5a861d2a5"
 metafile = true
 
 [[files]]
+file = "mods/create-the-air-war.pw.toml"
+hash = "422fd5cf73322f4379b04dc0a3d8dc952b8faeadd2f287d40e31db596db72c83"
+metafile = true
+
+[[files]]
 file = "mods/create-waystones-recipes.pw.toml"
 hash = "009321bf662bf580a9858d97f0c81770dbd4d06df6df0811d2d870ab5bcce621"
+metafile = true
+
+[[files]]
+file = "mods/create-who-touched-my-train.pw.toml"
+hash = "8c4dffa16d95b6f545fec8ac4b8d4fc5112423578fbc77cb3f6030c5993f86ba"
 metafile = true
 
 [[files]]
@@ -169,6 +224,11 @@ metafile = true
 [[files]]
 file = "mods/createbetterfps.pw.toml"
 hash = "28e720db43464fe32b9ce591fb02b824ebf691c578fb694f87a98421d3207022"
+metafile = true
+
+[[files]]
+file = "mods/enhanced-ai.pw.toml"
+hash = "23a6993b43d774f77e8a94f7ccd7fcb537f9ea6ab5118cad50c7574288a776a8"
 metafile = true
 
 [[files]]
@@ -232,6 +292,16 @@ hash = "48b746cb623c16a8cee88ec0d7d42233d74d97b9cf92d662f121633723d50876"
 metafile = true
 
 [[files]]
+file = "mods/improved-mobs.pw.toml"
+hash = "ab0928c81d3f51116315f3733bc92fe44abc6dbf1e1ea5433de22e6b1692e37c"
+metafile = true
+
+[[files]]
+file = "mods/insanelib.pw.toml"
+hash = "c81a85c8a3d15099f3bf04705dbc89b2c53650d44903defc50c07c10c808bd2c"
+metafile = true
+
+[[files]]
 file = "mods/iris-flw-compat.pw.toml"
 hash = "ed85b2ed42beb6523223eef6f0ae397ed29f8059b2bf5aa08d8598de04865614"
 metafile = true
@@ -267,6 +337,11 @@ hash = "c84140c66f233909b392bd7253ca33c59903ffda51beff558d9a2a4a8c6bc269"
 metafile = true
 
 [[files]]
+file = "mods/ntgl.pw.toml"
+hash = "7932fbacc370edc6fd2577784800fd3d8baf7ceffa7d8ef0ac927ec13a62f16a"
+metafile = true
+
+[[files]]
 file = "mods/placebo.pw.toml"
 hash = "2f9f0f8c05ce7e410a70cfed595e623fe8031df89a8a9ba9a8aaaa419eb4d18b"
 metafile = true
@@ -282,8 +357,23 @@ hash = "c62b51a8248d15e3cb63880ac123a92dd6a67973a1eafc4c4cb09f3f74481f78"
 metafile = true
 
 [[files]]
+file = "mods/rolled-homongenous-forked.pw.toml"
+hash = "ae96c29451ce6c11aebec185e64ddd15d4dd6584733d2dc7bcd7b24849ca2b44"
+metafile = true
+
+[[files]]
 file = "mods/sable.pw.toml"
 hash = "a1fa121ed5d0207e4cdd3f545d043f68f9a4bb38dcb21278b968fad5e4cefe4a"
+metafile = true
+
+[[files]]
+file = "mods/shaolib-munitions.pw.toml"
+hash = "90b63cf06f0d0c78a1eebe08b0b7dc60fbceb6b4d1787e200c22979745ab9973"
+metafile = true
+
+[[files]]
+file = "mods/shaolib.pw.toml"
+hash = "52844ecbde49a202162b1808ab3c36240fce17dd80e036dc0eadb7320f4071d2"
 metafile = true
 
 [[files]]
@@ -317,6 +407,11 @@ hash = "13415590b9e3f8aa1ca0cf33be26d697fa4b00de9c29e999815cadd37cf17175"
 metafile = true
 
 [[files]]
+file = "mods/tenshilib.pw.toml"
+hash = "584bb0949e80ae13565cfc33ec2bcf2f3a0aa1242a8ef7346cddf4bc0fa2ee45"
+metafile = true
+
+[[files]]
 file = "mods/tfmg-community-edition.pw.toml"
 hash = "e0bf2a73a55e1ae63171ece74ae521f9a9827f12f43bd69e8b67f29bd3a20521"
 metafile = true
@@ -324,6 +419,11 @@ metafile = true
 [[files]]
 file = "mods/toms-storage.pw.toml"
 hash = "a303683e4c74640f419c31db329e9afc3ee8f388abc5c6a536dc6169c274b5c6"
+metafile = true
+
+[[files]]
+file = "mods/trigger-mobs.pw.toml"
+hash = "41d07309f46e9744ca0bcf9c7289eb89c95e1c20da4d471f7264b38d86e4fa3d"
 metafile = true
 
 [[files]]
