@@ -373,6 +373,10 @@ hash = "3c703781ea00c9cf968e1051b57b9ee28380a0cd0f038d1087b91d884cc30fb7"
 metafile = true
 
 [[files]]
+file = "mods/lootedit-1.0.0.jar"
+hash = "269bdb818e6ae6b28a34d12df88e2a823d855d914dd68b214223a6fd1e71825b"
+
+[[files]]
 file = "mods/mezzconfig.pw.toml"
 hash = "f1fecbcbee6806a14efb3bd38ccf10166b48004967fbe72b6c31224e5e9fc5ea"
 metafile = true

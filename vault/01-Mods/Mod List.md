@@ -13,6 +13,7 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 
 ## Core
 - [[Create]] — base building/automation mod everything else hangs off of
+- [[Loot Edit]] — **custom** loot-table export/override tool (needs NeoForge >=21.1.267) *(testing)*
 
 ## Combat
 - [[Create Big Cannons]] — multiblock artillery, autocannons, projectiles/fuzes; explicitly built for PvP

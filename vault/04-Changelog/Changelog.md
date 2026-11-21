@@ -218,3 +218,14 @@ this tells you *why*, in prose, per pack version.
   other sources flipped. Client boot + world load with 93 mods (incl. Enchantment Industry): clean.
 - **Elytras removed (2026-11-21):** see [[../03-Design/Elytra Removal]]. End ship item frames are emptied,
   gliding is blocked, and the item is hidden from JEI.
+- **NeoForge 21.1.249 → 21.1.267 + custom [[../01-Mods/Loot Edit]] mod (2026-11-21):** the project
+  owner's Loot Edit jar requires NeoForge >=21.1.267, so the pack was bumped via `packwiz migrate loader
+  latest` (21.1.267 was also the newest 21.1 on maven.neoforged.net). Safety steps: world + `mmc-pack.json`
+  + `pack.toml` backed up to the Prism instance's `backups/before-neoforge-bump-20261121-0339/`. Scanned
+  all 93 mod jars for NeoForge upper bounds; none exclude 267. Prism instance `mmc-pack.json` updated to
+  match. Boot + world load: clean; KubeJS 4/4 scripts OK; Loot Edit exported 4,969 tables.
+  - The 309 `Couldn't parse element` loot-table errors at load are **not** from the bump; they're
+    identical on 249. They come from Steam 'n' Rails track loot tables for mods that aren't installed
+    (e.g. `railways:blocks/track_tfc_acacia`).
+  - **Rollback:** set `neoforge = "21.1.249"` in `pack/pack.toml`, restore the backed-up `mmc-pack.json`,
+    and remove Loot Edit (it won't load on 249).
