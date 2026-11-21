@@ -17,6 +17,8 @@ not by a code/config fix. What's below is what's left after that.
 - [[Cross-mod compat noise on server boot]] — cosmetic, non-fatal recipe/loot-table errors from
   Create: Connected, Create: Misc and Things, and TFMG Community Edition's optional cross-mod compat
   content.
+- [[Client model load errors]] — empty/invalid model JSON in Create: Radars, Create: The Air War
+  and Create: Misc and Things. Non-fatal, needs an in-game look.
 
 ## Investigating
 *(none)*

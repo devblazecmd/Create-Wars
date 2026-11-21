@@ -189,3 +189,12 @@ this tells you *why*, in prose, per pack version.
     Aeronautics Missiles, etc.) can't be dependency-checked the same way without a CurseForge API key —
     the boot test is the only check for those.
   - Pack now at 89 mods. Still awaiting the boot test.
+- **Client boot test (2026-11-21):** synced the Prism instance with `packwiz-installer` (client side, all
+  files downloaded, including CBC Aeronautics Missiles with no manual-download wall this time) and launched it.
+  - First launch failed during mod loading: [[../01-Mods/NTGL NukaTeam's Gun Lib|NTGL]] requires
+    [[../01-Mods/GeckoLib]] `>=4.8.2`, which wasn't in the pack. Added via `packwiz modrinth add geckolib`
+    (`4.9.3`). Neither packwiz nor the Modrinth dependency cross-check had flagged it.
+  - Second launch reached the title screen with no crash. Remaining log errors are non-fatal: MezzConfig
+    complaining about old JEI config keys, a missing irisflw access-transformer file, Xaero's version-check
+    timeout, and model JSON errors logged in [[../02-Bugs/Client model load errors]].
+  - Not yet tested: creating/loading a world with the 26 mods added since the last test. Pack now at 90 mods.

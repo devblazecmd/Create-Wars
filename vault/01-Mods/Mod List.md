@@ -26,7 +26,7 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 
 ## Infantry / personal weapons
 - [[Create Gunsmithing|Create: Gunsmithing]] — steampunk guns crafted via Create machines *(testing)*
-- [[NTGL NukaTeam's Gun Lib|NTGL]] — dependency gun library *(testing)*
+- [[NTGL NukaTeam's Gun Lib|NTGL]] — dependency gun library (dep: [[GeckoLib]]) *(testing)*
 
 ## PvE threat
 - [[Trigger Mobs]] — mobs spawn with and fire Gunsmithing/NTGL guns *(testing)*
