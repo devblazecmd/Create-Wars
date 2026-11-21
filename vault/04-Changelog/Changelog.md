@@ -166,3 +166,10 @@ this tells you *why*, in prose, per pack version.
 - Pack now at 85 mods. **Not yet boot-tested** — the headless server test was blocked in this session
   (auto-mode permission on running the downloaded installer); needs to be run before any of the above
   flip to `active`.
+- **Storage pass (same day):** project owner chose to stay on the Sophisticated family + Tom's rather than
+  adding AE2/Refined Storage/Storage Drawers. Added vehicle-cargo storage only:
+  [[../01-Mods/Sophisticated Storage Create Integration]] `0.1.23.246`,
+  [[../01-Mods/Create Compatible Storage|Create: Compatible Storage]] `2.14.0`, and
+  [[../01-Mods/Create Aeronautics Automated Logistics|Create Aeronautics: Automated Logistics]] `0.7.0`.
+  No dependency side effects this time (`git diff` clean on existing files). Pack now at 88 mods, still
+  awaiting a boot test.

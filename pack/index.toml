@@ -87,6 +87,11 @@ hash = "a7eb11401eda3779b7f2d6f32c2964511d5c71760573f2577d55c78ca800f8a3"
 metafile = true
 
 [[files]]
+file = "mods/create-aeronautics-automated-logistics.pw.toml"
+hash = "39c088076ac598ef07bb287d525160504cb3f6aad61931a45beecd7cf4d9b7c2"
+metafile = true
+
+[[files]]
 file = "mods/create-aeronautics-throwable-rope-connector.pw.toml"
 hash = "ede459754df771b7fed0268f983b67f9f98ccccd60df8958ffa49d28f0481106"
 metafile = true
@@ -129,6 +134,11 @@ metafile = true
 [[files]]
 file = "mods/create-compact-flap.pw.toml"
 hash = "8357524fb98d75ce1c11e1385744c1e4897ac0551c81f60ae437e5a52ed8d995"
+metafile = true
+
+[[files]]
+file = "mods/create-compatible-storage.pw.toml"
+hash = "afeff218ff2279635376096eeae0c8963345804d145514d15fa8644d60352616"
 metafile = true
 
 [[files]]
@@ -394,6 +404,11 @@ metafile = true
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
 hash = "9d4a04a61b2cebf80d76716f2d3c034d17f817327cbad6a79921a05c2e2c23a3"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-storage-create-integration.pw.toml"
+hash = "3d71ac9484fbf77d941c272d87ccd7c9e87364574a167c338b7bcacd1e1063f6"
 metafile = true
 
 [[files]]

@@ -78,6 +78,14 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - [[Sophisticated Core]] — dependency, shared by both Sophisticated mods
 - [[Tom's Simple Storage Mod|Tom's Simple Storage]] — networked terminal/connector storage system
 - [[Create Contraption Terminals]] — lets Tom's Storage terminals work on moving Create contraptions
+- [[Sophisticated Storage Create Integration]] — full Sophisticated chests/barrels on moving contraptions
+  (vehicle cargo holds) *(testing, added 2026-11-20)*
+- [[Create Compatible Storage|Create: Compatible Storage]] — fixes modded chests on contraptions *(testing)*
+- [[Create Aeronautics Automated Logistics|Create Aeronautics: Automated Logistics]] — airship cargo routes
+  and auto-docking *(testing)*
+- **Storage direction decided 2026-11-20:** Sophisticated is the preferred storage family; Tom's stays as
+  the networked terminal. Rejected for now: AE2, Refined Storage, Storage Drawers, Create Factory/Meta
+  Logistics, Vibrant Vaults.
 
 ## Teams / claims / questing
 - [[FTB Teams]] — faction/team system; natural unit for PvP factions
