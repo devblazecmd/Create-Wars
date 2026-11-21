@@ -17,6 +17,22 @@ file = "kubejs/server_scripts/.gitkeep"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
+file = "kubejs/server_scripts/air_war_launchers_removed.js"
+hash = "f5844850ca63241d691f8d12f7e7ad6c1dc748959902d8d935d7e3f8d8892d35"
+
+[[files]]
+file = "kubejs/server_scripts/blaze_burner_tiers.js"
+hash = "71059c1f475cd166f63b428a940f0a5eef516220fa6eeff3b7709e05e4cd74cd"
+
+[[files]]
+file = "kubejs/server_scripts/diamond_compacting.js"
+hash = "fdb8dbb57c35c55fc6a66a6403f22b4e299f513380f694788a39fb832698c935"
+
+[[files]]
+file = "kubejs/server_scripts/elytra_removed.js"
+hash = "3fdaa8c2dfe468cb67b383d787fdbef4274ac3251da12abc5003a8be2df6f545"
+
+[[files]]
 file = "mods/alternate-current.pw.toml"
 hash = "18cf2b63d293ba0738c1073690fbd2c62305b161f76d346a551a66a9bbf8af32"
 metafile = true
@@ -157,8 +173,18 @@ hash = "c4f8f71ce17c44e0dfd0e68a037f4bc16b9136ee1f523de1fbed6f476bca3d85"
 metafile = true
 
 [[files]]
+file = "mods/create-dragons-plus.pw.toml"
+hash = "dcbb37e828a2f915e64a2ef839a742761a553a2e3b923b000ffba95db7503ac3"
+metafile = true
+
+[[files]]
 file = "mods/create-droneworks-simulated.pw.toml"
 hash = "f8af9277f307db54a20d1eb432e5a29aa39cf7acaf0d2e051644743de22b74d8"
+metafile = true
+
+[[files]]
+file = "mods/create-enchantment-industry.pw.toml"
+hash = "5f76bdf0fe120e62cc3ae298e911727fa45c70dd191fd9c2b213029c7601576c"
 metafile = true
 
 [[files]]
@@ -342,6 +368,11 @@ hash = "be9f3f981dd69822b4a3e5ab6fd677ec69a4e01dcf66c62e239b6ef65f31f0fd"
 metafile = true
 
 [[files]]
+file = "mods/ldlib.pw.toml"
+hash = "3c703781ea00c9cf968e1051b57b9ee28380a0cd0f038d1087b91d884cc30fb7"
+metafile = true
+
+[[files]]
 file = "mods/mezzconfig.pw.toml"
 hash = "f1fecbcbee6806a14efb3bd38ccf10166b48004967fbe72b6c31224e5e9fc5ea"
 metafile = true
@@ -379,6 +410,11 @@ metafile = true
 [[files]]
 file = "mods/rolled-homongenous-forked.pw.toml"
 hash = "ae96c29451ce6c11aebec185e64ddd15d4dd6584733d2dc7bcd7b24849ca2b44"
+metafile = true
+
+[[files]]
+file = "mods/sable-schematic-tool.pw.toml"
+hash = "bdb86f7611da8c045e82f4aca7cf4bde48a0271b2859c938551ecebb6f94d08d"
 metafile = true
 
 [[files]]
@@ -429,6 +465,11 @@ metafile = true
 [[files]]
 file = "mods/strut-your-stuff.pw.toml"
 hash = "aa89e067824ca42d818a81a6d02ce5296ce662d834c35dd2ff0d81189d3bc3f9"
+metafile = true
+
+[[files]]
+file = "mods/synaxis.pw.toml"
+hash = "b4a00c641876aeb50fd1de78c4eb3a61cc0089749ffa14a71abbd3949056c7b4"
 metafile = true
 
 [[files]]

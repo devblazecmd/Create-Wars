@@ -32,7 +32,10 @@ re-verify compatibility with core Create more often than usual.
 None logged yet.
 
 ## Config decisions
-None yet.
+- 2026-11-21: Napalm mixing now needs a superheated burner + 250 mB biofuel (Tier 3 of
+  [[../03-Design/Blaze Burner Fuel Tiers|Blaze Burner Fuel Tiers]]). This also makes napalm weapons
+  more expensive. TFMG's own napalm burner-fuel entry needs Create: Liquid Fuel (not in the pack), so
+  napalm burns through C&A's Straw burner instead.
 
 ## Update history
 - 2026-11-20: `tfmg-1.21.1-1.2.4b-community.jar` -> `tfmg-1.21.1-1.3.3a-community.jar` via `packwiz update --all`.

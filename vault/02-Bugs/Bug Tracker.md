@@ -24,7 +24,8 @@ not by a code/config fix. What's below is what's left after that.
 *(none)*
 
 ## Fixed
-*(none)*
+- [[Explosions crash - Shaolib missing Synaxis]]: Tomahawk (and likely any explosion) crashed the
+  server; fixed by adding Synaxis + deps.
 
 ## Won't fix
 *(none)*

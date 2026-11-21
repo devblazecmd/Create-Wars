@@ -20,6 +20,8 @@ Library. No standalone content.
 Added via `packwiz modrinth add shaolib` on 2026-11-20; resolved to `0.1.0`.
 
 ## Known issues
+- [[../02-Bugs/Explosions crash - Shaolib missing Synaxis]]: 0.1.0 needs [[Synaxis]] installed
+  (undeclared) or every explosion can crash the server. Fixed by adding Synaxis.
 Very early version (0.1.0) - watch for breakage on updates.
 
 ## Config decisions

@@ -19,7 +19,8 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - [[Ritchie's Projectile Library]] — dependency, required by Create Big Cannons
 - [[CBC Aeronautics Missiles]] — guided missiles connecting Big Cannons + Aeronautics + Radars
 - [[CBC Military Supplement]] — torpedoes, aerial bombs, extra shells (deps: [[Shaolib]],
-  [[Shaolib Munitions]]) *(testing, added 2026-11-20)*
+  [[Shaolib Munitions]]) *(testing, added 2026-11-20)*. Shaolib secretly needs [[Synaxis]]; see
+  [[../02-Bugs/Explosions crash - Shaolib missing Synaxis]]
 - [[CBC Firepower Components]] — compact cannon mounts for vehicles *(testing)*
 - [[CBC Ballistic Computer]] — trajectory calc + redstone-controlled artillery *(testing)*
 - [[Create The Air War|Create: The Air War]] — aircraft weapons for Aeronautics *(testing)*
@@ -36,6 +37,8 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - Three mods all buff ranged/block-breaking mobs — needs a mob-balance design doc before release.
 
 ## Vehicles
+- [[Synaxis]] — Sable control circuits/Lua/joints/actuators; also a crash fix for [[Shaolib]]
+  (deps: [[LDLib2]], [[Sable Photomancy]]) *(testing)*
 - [[Create Aeronautics]] — planes, hot-air balloons, offroad vehicles (requires [[Sable]])
 - [[Sable]] — dependency library required by Create Aeronautics
 - [[Create Crafts & Additions]] — additional vehicle/decoration content for Create
@@ -86,6 +89,10 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - **Storage direction decided 2026-11-20:** Sophisticated is the preferred storage family; Tom's stays as
   the networked terminal. Rejected for now: AE2, Refined Storage, Storage Drawers, Create Factory/Meta
   Logistics, Vibrant Vaults.
+
+## Automation / progression
+- [[Create Enchantment Industry|Create: Enchantment Industry]] — automated enchanting with liquid XP
+  (dep: [[Create Dragons Plus|Create: Dragons Plus]]) *(testing)*
 
 ## Teams / claims / questing
 - [[FTB Teams]] — faction/team system; natural unit for PvP factions

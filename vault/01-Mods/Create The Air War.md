@@ -19,7 +19,12 @@ Weapons designed for aerial vehicles ([[Create Aeronautics]]).
 Added via `packwiz modrinth add create-the-air-war` on 2026-11-20; resolved to `5.00`.
 
 ## Known issues
-None logged yet.
+- [[../02-Bugs/Client model load errors|Client model load errors]]: the FAB-1500 model uses an invalid rotation.
 
 ## Config decisions
-None yet.
+- 2026-11-21: **Launchers and their ammo removed from survival** (project owner's call) by
+  `pack/kubejs/server_scripts/air_war_launchers_removed.js`. Recipes are removed and the items hidden from
+  JEI: Anti-Aircraft Launcher + C-75 Rocket (these had no recipe upstream, so they were creative-only
+  already), Vihr Missile Launcher + Vihr Missile, Heat Trap Launcher + Heat Charge. Still available:
+  the standalone missile blocks (Tomahawk, AIM-9X, RIM-7, X-25ML, Kh-101, 9K119M, C-25), bombs, guns and
+  drones. Side effect: with Heat Traps gone, there are no flares to decoy AIM-9X missiles.

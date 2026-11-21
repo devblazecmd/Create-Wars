@@ -198,3 +198,23 @@ this tells you *why*, in prose, per pack version.
     complaining about old JEI config keys, a missing irisflw access-transformer file, Xaero's version-check
     timeout, and model JSON errors logged in [[../02-Bugs/Client model load errors]].
   - Not yet tested: creating/loading a world with the 26 mods added since the last test. Pack now at 90 mods.
+- **Diamond recipe + blaze burner fuel tiers (2026-11-21):** added [[../03-Design/Diamond Recipe]]
+  (superheated compacting, 9 coal blocks → 1 diamond) and [[../03-Design/Blaze Burner Fuel Tiers]]
+  (Blaze Cake → Biofuel → Napalm, each needing the previous tier's superheat to produce). These are the
+  pack's first KubeJS scripts. Found that TFMG's napalm burner fuel was dead data without Create: Liquid Fuel.
+  Not yet tested in game.
+- **Added [[../01-Mods/Create Enchantment Industry|Create: Enchantment Industry]] `2.5.4b` (2026-11-21)**
+  plus its dependency [[../01-Mods/Create Dragons Plus|Create: Dragons Plus]] `1.11.9`. Checked dependencies
+  against both the Modrinth metadata and the jar's `neoforge.mods.toml`: all met, nothing hidden. Pack now
+  at 92 mods. Not yet boot-tested.
+- **Removed Create: The Air War launchers + ammo (2026-11-21):** see the Config decisions in
+  [[../01-Mods/Create The Air War]]. KubeJS recipe removal + JEI hiding; the mod itself stays.
+- **Explosion crash fix (2026-11-21):** Tomahawk missiles crashed the server on impact. Root cause:
+  [[../01-Mods/Shaolib]] 0.1.0 always calls into [[../01-Mods/Synaxis]] from its explosion hook but
+  never declares or checks it (see [[../02-Bugs/Explosions crash - Shaolib missing Synaxis]]). Added
+  Synaxis `1.6.3` + [[../01-Mods/LDLib2]] `2.2.46.a` + [[../01-Mods/Sable Photomancy]] `1.0.1`. Neither
+  Synaxis's Modrinth metadata nor packwiz listed its dependencies; they came from reading the jar's
+  `neoforge.mods.toml`. Another `packwiz curseforge add` slip (LDLib) was switched back to Modrinth, and no
+  other sources flipped. Client boot + world load with 93 mods (incl. Enchantment Industry): clean.
+- **Elytras removed (2026-11-21):** see [[../03-Design/Elytra Removal]]. End ship item frames are emptied,
+  gliding is blocked, and the item is hidden from JEI.

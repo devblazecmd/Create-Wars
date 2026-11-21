@@ -25,6 +25,8 @@ Added via `packwiz modrinth add createaddition` on 2026-09-01; resolved to `1.7.
 None logged yet.
 
 ## Config decisions
+- 2026-11-21: Bioethanol (biofuel) mixing now needs a superheated burner, and napalm was added as a
+  Straw-burner fuel. Both are Tier 2/3 of [[../03-Design/Blaze Burner Fuel Tiers|Blaze Burner Fuel Tiers]].
 None yet. Decide during install whether this and [[Create Aeronautics]]/[[Create Crafts & Additions]]
 overlap enough that we only want one.
 
