@@ -318,8 +318,8 @@
 	]
 	"quest.3371D99BDCDED5AC.title": "Brass Casing"
 	"quest.34E9EC54D3ED4DE2.quest_desc": [
-		"Feed Blocks of Coal into a superheated compactor. Make a &astack&r of Diamonds"
-		"(that's 576 coal blocks)."
+		"&eThis pack's own recipe:&r compact &a9 Blocks of Coal&r in a Basin over a &6Superheated&r"
+		"burner to make &b1 Diamond&r. Automate it and make a &astack&r (576 coal blocks)."
 	]
 	"quest.34E9EC54D3ED4DE2.title": "Automate: Diamonds"
 	"quest.359CB1C16A2C769F.quest_desc": [
@@ -397,11 +397,6 @@
 		"A &asteel sheet&r on &aSteel Casing&r. The shell for oil and engine machinery."
 	]
 	"quest.48768D4D201D8CE7.title": "Heavy Machinery Casing"
-	"quest.4A5DED6F08A7B2C9.quest_desc": [
-		"&eThis pack's own recipe:&r compact &a9 Blocks of Coal&r in a Basin over a"
-		"&6Superheated&r burner to make &b1 Diamond&r."
-	]
-	"quest.4A5DED6F08A7B2C9.title": "Diamonds from Coal"
 	"quest.4C0B58935DA7AACD.quest_desc": [
 		"Compact &aliquid experience&r into a solid &aBlock of Experience&r."
 	]
@@ -487,6 +482,15 @@
 		"of cobblestone generators and tunnel borers."
 	]
 	"quest.5D03F1D941E5D2B8.title": "Mechanical Drill"
+	"quest.60A8E36CAE45E950.quest_desc": [
+		"&eThis pack's own recipe:&r &aCrushing Wheels&r crushing &aNether Bricks&r (the block) have a"
+		"&a5% chance&r to drop &aNetherite Scrap&r. Netherrack is endless, so this is renewable."
+		"(Ancient Debris blown through lava with a fan works too.)"
+		""
+		"Then let &aMechanical Crafters&r run the normal recipe: &a4 Netherite Scrap + 4 Gold Ingots&r"
+		"= 1 Netherite Ingot. Make &a4 Netherite Ingots&r."
+	]
+	"quest.60A8E36CAE45E950.title": "Automate: Netherite"
 	"quest.60B90AF4C95E818F.quest_desc": [
 		"Mix &acopper&r and &azinc&r in a Basin over a lit Blaze Burner."
 	]

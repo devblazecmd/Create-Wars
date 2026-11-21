@@ -259,3 +259,9 @@ No unit tests exist for a quest book. Verification is layered:
 - 2026-11-21: **v3** (owner: "continue with this style"; "make an automation chapter... since the quest is
   more for guidance"). Automation chapter added; Industrial Age (TFMG), Quantum Expansion and
   Enchanting Expansion built; Heat slimmed. 8 chapters, 137 quests. Generator gained cross-chapter deps.
+- 2026-11-21: v3 confirmed in game (`Loaded 5 chapter groups, 8 chapters, 137 quests`, no errors).
+- 2026-11-21: Owner: diamonds only in Automation (Heat's "Diamonds from Coal" removed; Automate: Diamonds
+  now states the coal-block recipe). Added **Automate: Netherite** (4 ingots, not a stack, because debris is
+  non-renewable) to Heat Automation. Netherite recipe checked: vanilla 4 scrap + 4 gold (shapeless)
+  plus debris smelting/blasting are present and untouched by any mod or script. Automatable with fan
+  bulk blasting (lava) + Mechanical Crafters.

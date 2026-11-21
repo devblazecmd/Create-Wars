@@ -200,48 +200,6 @@
 			dependencies: [
 				"76F59EFACD9DBDED"
 			]
-			id: "4A5DED6F08A7B2C9"
-			rewards: [
-				{
-					id: "096070C171350E3D"
-					type: "xp"
-					xp: 40
-				}
-				{
-					count: 4
-					id: "58A5818C9678B620"
-					item: {
-						count: 1
-						id: "minecraft:coal_block"
-					}
-					type: "item"
-				}
-				{
-					id: "009D1C05283AF709"
-					item: {
-						count: 1
-						id: "minecraft:diamond"
-					}
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					id: "3C2BBB095BA3EC5C"
-					item: {
-						count: 1
-						id: "minecraft:diamond"
-					}
-					type: "item"
-				}
-			]
-			x: 1.0d
-			y: -2.6d
-		}
-		{
-			dependencies: [
-				"76F59EFACD9DBDED"
-			]
 			id: "6112990A4F373F3B"
 			rewards: [
 				{

@@ -14,7 +14,7 @@ hash = "047db2bdc32b8e3dcfb1b3e35c54c9cbdfbe9541ec387d3bff529c2cb59a6ac2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/automation.snbt"
-hash = "8805ce26e843222b2e66394ab1f4ef544baad8c9ae4f1b3aa39c3e64f6a07c9e"
+hash = "ca4fcbc9d9c030043549a3571838036005a28052ffe6b3581253e8d3b7534e25"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/brass_and_precision.snbt"
@@ -26,7 +26,7 @@ hash = "a49ce62d8880abe0fe1b413487fdb2c9911619cc6e8790dd137fd7eb54a10649"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/heat.snbt"
-hash = "8bca9de8c6967fc899346452b6fcc9847bff8c87a2c2c197e89d53c9b30fd91e"
+hash = "9ff1a239e0a34bbf92024c3203bd34af34d84d557ef8b1191a1f06f8be231e96"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/industrial.snbt"
@@ -50,7 +50,7 @@ hash = "59e6f33cb9b5b2593319a35b8e70e99d32e8834c38f7206fa7ec59de1f16c4d9"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "1328d0249f94f0b9ee63c2a817ca76df71e4291f346ab2a50beff742e91ac238"
+hash = "220dca72e527b427c03e4e94f2f3b4afc1c3365851c9f2a010246b55a50f8341"
 
 [[files]]
 file = "config/waystones-common.toml"
@@ -91,6 +91,10 @@ hash = "fdb8dbb57c35c55fc6a66a6403f22b4e299f513380f694788a39fb832698c935"
 [[files]]
 file = "kubejs/server_scripts/elytra_removed.js"
 hash = "3fdaa8c2dfe468cb67b383d787fdbef4274ac3251da12abc5003a8be2df6f545"
+
+[[files]]
+file = "kubejs/server_scripts/netherite_scrap_crushing.js"
+hash = "aacf037918fcde0be6e799d161253dece48fbe20695d1bdaea08121f5bd05734"
 
 [[files]]
 file = "kubejs/server_scripts/quantum_pearl_recipe.js"

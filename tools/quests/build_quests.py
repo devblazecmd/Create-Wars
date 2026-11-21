@@ -328,10 +328,6 @@ CHAPTERS = [
             "Feed it to a Blaze Burner: &6Superheated for 2 min 40 s&r. Automate the feeding with a",
             "Mechanical Arm, Deployer or Funnel.",
         ], [item("create:blaze_cake", 2)], deps=["spout"], xp=30, items=[("minecraft:egg", 8)]),
-        Q("diamond", "Diamonds from Coal", 8, -2, [
-            "&eThis pack's own recipe:&r compact &a9 Blocks of Coal&r in a Basin over a",
-            "&6Superheated&r burner to make &b1 Diamond&r.",
-        ], [item("minecraft:diamond")], deps=["blaze_cake"], xp=40, items=[("minecraft:coal_block", 4)]),
         Q("biomass", "Biomass", 10, 0, [
             "Compact &aseeds&r into Seed Oil, then mix plants (crops, leaves, saplings, flowers) with",
             "&a100 mB of Seed Oil&r over a &6heated&r burner to make &aBiomass&r.",
@@ -603,9 +599,17 @@ CHAPTERS = [
             "touching it. Make a &astack&r of Blaze Cakes.",
         ], [item("create:blaze_cake", STACK)], xp=50),
         Q("auto_diamond", "Automate: Diamonds", 0, 0, [
-            "Feed Blocks of Coal into a superheated compactor. Make a &astack&r of Diamonds",
-            "(that's 576 coal blocks).",
+            "&eThis pack's own recipe:&r compact &a9 Blocks of Coal&r in a Basin over a &6Superheated&r",
+            "burner to make &b1 Diamond&r. Automate it and make a &astack&r (576 coal blocks).",
         ], [item("minecraft:diamond", STACK)], xp=100),
+        Q("auto_netherite", "Automate: Netherite", 0, 0, [
+            "&eThis pack's own recipe:&r &aCrushing Wheels&r crushing &aNether Bricks&r (the block) have a",
+            "&a5% chance&r to drop &aNetherite Scrap&r. Netherrack is endless, so this is renewable.",
+            "(Ancient Debris blown through lava with a fan works too.)",
+            "",
+            "Then let &aMechanical Crafters&r run the normal recipe: &a4 Netherite Scrap + 4 Gold Ingots&r",
+            "= 1 Netherite Ingot. Make &a4 Netherite Ingots&r.",
+        ], [item("minecraft:netherite_ingot", 4)], xp=100),  # 4, not a stack: ~80 brick blocks per ingot at 5%
         Q("auto_biofuel", "Automate: Biofuel", 0, 0, [
             "A biofuel plant that keeps its own mixer superheated. Fill a &astack&r of Biofuel buckets",
             "(16).",
@@ -700,7 +704,7 @@ LAYOUTS = {
     "heat": dict(
         main=[("tiers", -5, 1.5), ("blaze_cake", 1, 2.0), ("biofuel", 8, 2.0)],
         hubs={"tiers": dict(top=["cinder_flour"], bottom=["spout"]),
-              "blaze_cake": dict(top=["diamond"], bottom=["biomass"]),
+              "blaze_cake": dict(bottom=["biomass"]),
               "biofuel": dict(top=["straw"])},
         chains={"cinder_flour": ["cake_base"]},
         gate=None),
@@ -728,7 +732,7 @@ LAYOUTS = {
         hubs={"andesite_auto": dict(top=["auto_cobble", "auto_gravel", "auto_alloy"],
                                     bottom=["auto_iron", "auto_sheets", "auto_kelp"]),
               "brass_auto": dict(top=["auto_brass", "auto_tubes", "auto_precision"], bottom=["crushing"]),
-              "heat_auto": dict(top=["auto_cakes", "auto_diamond"], bottom=["auto_biofuel"]),
+              "heat_auto": dict(top=["auto_cakes", "auto_diamond", "auto_netherite"], bottom=["auto_biofuel"]),
               "industrial_auto": dict(top=["auto_coke", "auto_steel"], bottom=["auto_gasoline"]),
               "quantum_auto": dict(top=["auto_telejuice"], bottom=["auto_qpearl"]),
               "enchanting_auto": dict(top=["auto_xp"])},

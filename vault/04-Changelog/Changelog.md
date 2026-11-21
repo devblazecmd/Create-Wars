@@ -268,3 +268,5 @@ this tells you *why*, in prose, per pack version.
   Industrial Age (TFMG coke/steel/oil → napalm), Quantum Expansion (Telejuice, Quantum items, waystones,
   Create: Teleporters) and Enchanting Expansion (Enchantment Industry). Recipe-accurate chains throughout.
   8 chapters, 137 quests, 0 unknown item IDs.
+- **Netherite scrap from crushing (2026-11-21):** Create crushing of Nether Bricks → 2 bricks + 2% Netherite
+  Scrap (renewable netherite). See [[../03-Design/Netherite Scrap Crushing]]. Automate: Netherite quest updated.

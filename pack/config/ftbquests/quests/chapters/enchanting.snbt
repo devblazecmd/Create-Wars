@@ -1,0 +1,383 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "enchanting"
+	group: "5198D7EDAB40AD32"
+	icon: {
+		id: "create_enchantment_industry:blaze_enchanter"
+	}
+	id: "2218ACE80C232364"
+	images: [ ]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"4C20D3C1C2FAB4CF"
+			]
+			id: "41370BD350C0E8DF"
+			rewards: [
+				{
+					id: "51B77469E495E69F"
+					type: "xp"
+					xp: 20
+				}
+				{
+					id: "0E69A5B4AFE50F4B"
+					item: {
+						count: 1
+						id: "create_enchantment_industry:mechanical_grindstone"
+					}
+					type: "item"
+				}
+			]
+			size: 1.25d
+			tasks: [
+				{
+					id: "3E7D88C8751CF918"
+					item: {
+						count: 1
+						id: "create_enchantment_industry:mechanical_grindstone"
+					}
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"41370BD350C0E8DF"
+			]
+			id: "7EF44200E09553BD"
+			rewards: [
+				{
+					id: "6D06B2C59EB5624C"
+					type: "xp"
+					xp: 30
+				}
+				{
+					id: "13FA4E615ED67083"
+					item: {
+						count: 1
+						id: "create_enchantment_industry:experience_bucket"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "585D357FB243E2A6"
+					item: {
+						count: 1
+						id: "create_enchantment_industry:experience_bucket"
+					}
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7EF44200E09553BD"
+			]
+			id: "4257FB3FAF262265"
+			rewards: [
+				{
+					id: "2B327807FF7B7673"
+					type: "xp"
+					xp: 15
+				}
+				{
+					id: "4AF05943DA2E9473"
+					item: {
+						count: 1
+						id: "create_enchantment_industry:experience_cake_base"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "22F6B78AE2042580"
+					item: {
+						count: 1
+						id: "create_enchantment_industry:experience_cake_base"
+					}
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"4257FB3FAF262265"
+			]
+			id: "3EBBCA8C5D0936F3"
+			rewards: [
+				{
+					id: "23FEA8EC57AB8FDD"
+					type: "xp"
+					xp: 20
+				}
+				{
+					id: "3E496D5049B03D30"
+					item: {
+						count: 1
+						id: "create_enchantment_industry:experience_cake"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "44A59295002DAC05"
+					item: {
+						count: 1
+						id: "create_enchantment_industry:experience_cake"
+					}
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -4.4d
+		}
+		{
+			dependencies: [
+				"7EF44200E09553BD"
+			]
+			id: "4C0B58935DA7AACD"
+			rewards: [
+				{
+					id: "3DF9F62641D7816B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					id: "5DBA48A362C1D214"
+					item: {
+						count: 1
+						id: "create:experience_block"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					count: 2L
+					id: "516A333729EF7F1D"
+					item: {
+						count: 1
+						id: "create:experience_block"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4C0B58935DA7AACD"
+			]
+			id: "5329946572EF2539"
+			rewards: [
+				{
+					id: "3D0AB557804B91E2"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "0114F8C071362D28"
+					item: {
+						count: 1
+						id: "create_enchantment_industry:enchanting_template"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "47A859DF6589ABF3"
+					item: {
+						count: 1
+						id: "create_enchantment_industry:enchanting_template"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"4C0B58935DA7AACD"
+			]
+			id: "2CE27670B22613B3"
+			rewards: [
+				{
+					id: "2A3CC8E945398599"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "0476AC6B6A4EF06C"
+					item: {
+						count: 1
+						id: "create_enchantment_industry:experience_hatch"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4D700C111AA26D93"
+					item: {
+						count: 1
+						id: "create_enchantment_industry:experience_hatch"
+					}
+					type: "item"
+				}
+			]
+			x: 4.8d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"4C0B58935DA7AACD"
+			]
+			id: "18C30ADB760AAE42"
+			rewards: [
+				{
+					id: "3741DA02B52D66C3"
+					type: "xp"
+					xp: 20
+				}
+				{
+					id: "6E0E1010D5453E37"
+					item: {
+						count: 1
+						id: "create_enchantment_industry:experience_lantern"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "47F380622A4668C2"
+					item: {
+						count: 1
+						id: "create_enchantment_industry:experience_lantern"
+					}
+					type: "item"
+				}
+			]
+			x: 7.2d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"4C0B58935DA7AACD"
+			]
+			id: "40B15D449F2EBE71"
+			rewards: [
+				{
+					id: "0FB1EAED0CAFE4ED"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "4388073FA02DAC01"
+					item: {
+						count: 1
+						id: "create_enchantment_industry:blaze_enchanter"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "75842E89E2E04B73"
+					item: {
+						count: 1
+						id: "create_enchantment_industry:blaze_enchanter"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"40B15D449F2EBE71"
+			]
+			id: "2E3F189B4FBB8213"
+			rewards: [
+				{
+					id: "518D689BE36D11AB"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "0C42A63B78D2A072"
+					item: {
+						count: 1
+						id: "create_enchantment_industry:blaze_forger"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "424A8C6D0EB2EC35"
+					item: {
+						count: 1
+						id: "create_enchantment_industry:blaze_forger"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"40B15D449F2EBE71"
+			]
+			id: "1FE66342C645AA64"
+			rewards: [
+				{
+					id: "5BBAC2A18B1F9F1A"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "289FFC70CB7A4B52"
+					item: {
+						count: 1
+						id: "create_enchantment_industry:printer"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "29E731BF4893F53F"
+					item: {
+						count: 1
+						id: "create_enchantment_industry:printer"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 2.6d
+		}
+	]
+}

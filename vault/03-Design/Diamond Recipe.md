@@ -19,3 +19,7 @@ Crafts & Additions only turns diamonds into grit. Added 2026-11-21 at the projec
   automation recipe, not an early shortcut.
 - Not yet balance-tested in PvP. If diamond gear floods servers, raise the coal count or add a
   sequenced-assembly step.
+
+## Quest book
+Taught by **Automate: Diamonds** in the Automation chapter (Heat Automation hub); the separate Heat
+Expansion quest was removed 2026-11-21. See [[Quest Book]].
