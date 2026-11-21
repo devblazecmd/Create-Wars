@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/dependency, mc-version/1.21.1, loader/neoforge]
 mod_id: sophisticatedcore
-pack_version_pinned: "1.21.1-1.4.90.2299 (sophisticatedcore-1.21.1-1.4.90.2299.jar)"
-last_verified: "2026-09-01 (auto-added as a dependency of Sophisticated Storage via packwiz)"
+pack_version_pinned: "sophisticatedcore-1.21.1-1.5.39.2489.jar (updated 2026-11-20 from sophisticatedcore-1.21.1-1.4.90.2299.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # Sophisticated Core
@@ -24,3 +24,6 @@ None logged yet.
 
 ## Config decisions
 None yet.
+
+## Update history
+- 2026-11-20: `sophisticatedcore-1.21.1-1.4.90.2299.jar` -> `sophisticatedcore-1.21.1-1.5.39.2489.jar` via `packwiz update --all`.

@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/dependency, mc-version/1.21.1, loader/neoforge]
 mod_id: ftb-library-forge
-pack_version_pinned: "2101.1.35 (ftb-library-neoforge-2101.1.35.jar)"
-last_verified: "2026-09-01 (auto-added as a dependency of FTB Teams via packwiz)"
+pack_version_pinned: "ftb-library-neoforge-2101.1.40.jar (updated 2026-11-20 from ftb-library-neoforge-2101.1.35.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # FTB Library (NeoForge)
@@ -25,3 +25,6 @@ None logged yet.
 
 ## Config decisions
 None yet.
+
+## Update history
+- 2026-11-20: `ftb-library-neoforge-2101.1.35.jar` -> `ftb-library-neoforge-2101.1.40.jar` via `packwiz update --all`.

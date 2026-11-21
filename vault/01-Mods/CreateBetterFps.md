@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/utility, mc-version/1.21.1, loader/neoforge]
 mod_id: createbetterfps
-pack_version_pinned: "1.21.1-1.1.4 (createbetterfps-1.21.1-1.1.4.jar)"
-last_verified: "2026-09-01 (added via packwiz modrinth add)"
+pack_version_pinned: "createbetterfps-1.21.1-1.1.5.jar (updated 2026-11-20 from createbetterfps-1.21.1-1.1.4.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # CreateBetterFps
@@ -27,3 +27,6 @@ None logged yet.
 
 ## Config decisions
 None yet.
+
+## Update history
+- 2026-11-20: `createbetterfps-1.21.1-1.1.4.jar` -> `createbetterfps-1.21.1-1.1.5.jar` via `packwiz update --all`.

@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/teams, mc-version/1.21.1, loader/neoforge]
 mod_id: ftb-teams-forge
-pack_version_pinned: "2101.1.11 (ftb-teams-neoforge-2101.1.11.jar)"
-last_verified: "2026-09-01 (added via packwiz curseforge add)"
+pack_version_pinned: "ftb-teams-neoforge-2101.1.12.jar (updated 2026-11-20 from ftb-teams-neoforge-2101.1.11.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # FTB Teams (NeoForge)
@@ -35,3 +35,6 @@ None logged yet.
 None yet. This is where faction design (see [[Design Doc Template|design docs]] under `03-Design`) will
 eventually need to hook in — e.g. team-based claim protection via [[FTB Chunks]], team-based quest lines
 via [[FTB Quests]].
+
+## Update history
+- 2026-11-20: `ftb-teams-neoforge-2101.1.11.jar` -> `ftb-teams-neoforge-2101.1.12.jar` via `packwiz update --all`.

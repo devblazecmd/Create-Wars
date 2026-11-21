@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/vehicles, mc-version/1.21.1, loader/neoforge]
 mod_id: create-aeronautics
-pack_version_pinned: "1.3.2 (create-aeronautics-bundled-1.21.1-1.3.2.jar)"
-last_verified: "2026-09-01 (added via packwiz modrinth add)"
+pack_version_pinned: "create-aeronautics-bundled-1.21.1-1.3.3.jar (updated 2026-11-20 from create-aeronautics-bundled-1.21.1-1.3.2.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # Create Aeronautics
@@ -32,3 +32,6 @@ None logged yet.
 
 ## Config decisions
 None yet.
+
+## Update history
+- 2026-11-20: `create-aeronautics-bundled-1.21.1-1.3.2.jar` -> `create-aeronautics-bundled-1.21.1-1.3.3.jar` via `packwiz update --all`.

@@ -173,3 +173,19 @@ this tells you *why*, in prose, per pack version.
   [[../01-Mods/Create Aeronautics Automated Logistics|Create Aeronautics: Automated Logistics]] `0.7.0`.
   No dependency side effects this time (`git diff` clean on existing files). Pack now at 88 mods, still
   awaiting a boot test.
+- **Full mod update pass (same day):** `packwiz update --all` found 36 newer versions. Applied 35; reverted
+  Create: Radars `5.1.1` back to `0.4.9.4` again (same reason as above). Notable:
+  - Major bumps: [[../01-Mods/Create Deep Seas]] `2.2.4` -> `3.4.8` (pressure/hull mechanics rework),
+    [[../01-Mods/Create Teleporters]] `2.0.2b` -> `3.0.2` (portals now move trains and Sable ships).
+  - [[../01-Mods/Sophisticated Storage]] `1.5.91` -> `1.6.20`, Core `1.4.90` -> `1.5.39`, Backpacks
+    `3.25.78` -> `3.26.22` — also brings them in line with the newer Create-integration addon.
+  - [[../01-Mods/Create TFMG Community Edition]] `1.2.4b` -> `1.3.3a`, [[../01-Mods/Create Aeronautics]]
+    `1.3.2` -> `1.3.3`, [[../01-Mods/Sable]] `2.0.5` -> `2.0.6`, plus FTB family, Xaero's, JEI, KubeJS, and
+    optimization-mod patch bumps.
+  - **New hidden dependency:** JEI `19.71` requires [[../01-Mods/MezzConfig]], which `packwiz update` did
+    not add. Caught by cross-checking every pinned Modrinth version's declared deps against the pack.
+    Lesson: `update` never adds new deps — always run that check after a bulk update.
+  - No Modrinth/CurseForge source flips. CurseForge-sourced mods (FTB family, TFMG, Radars, RPL, CBC
+    Aeronautics Missiles, etc.) can't be dependency-checked the same way without a CurseForge API key —
+    the boot test is the only check for those.
+  - Pack now at 89 mods. Still awaiting the boot test.

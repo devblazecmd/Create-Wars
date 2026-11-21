@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/dependency, mc-version/1.21.1, loader/neoforge]
 mod_id: architectury-api
-pack_version_pinned: "13.0.11-neoforge (architectury-13.0.11-neoforge.jar)"
-last_verified: "2026-09-01 (auto-added as a dependency of FTB Teams via packwiz)"
+pack_version_pinned: "architectury-13.0.12-neoforge.jar (updated 2026-11-20 from architectury-13.0.11-neoforge.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # Architectury API
@@ -26,3 +26,6 @@ None logged yet.
 
 ## Config decisions
 None yet.
+
+## Update history
+- 2026-11-20: `architectury-13.0.11-neoforge.jar` -> `architectury-13.0.12-neoforge.jar` via `packwiz update --all`.

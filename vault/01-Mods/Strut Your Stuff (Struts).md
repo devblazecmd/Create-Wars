@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/dependency, mc-version/1.21.1, loader/neoforge]
 mod_id: struts
-pack_version_pinned: "1.3.0 (struts-1.3.0.jar)"
-last_verified: "2026-09-01 (auto-added as a dependency of Create: Bits 'n' Bobs via packwiz)"
+pack_version_pinned: "struts-1.3.1.jar (updated 2026-11-20 from struts-1.3.0.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # Strut Your Stuff (Struts)
@@ -25,3 +25,6 @@ None logged yet.
 
 ## Config decisions
 None yet.
+
+## Update history
+- 2026-11-20: `struts-1.3.0.jar` -> `struts-1.3.1.jar` via `packwiz update --all`.

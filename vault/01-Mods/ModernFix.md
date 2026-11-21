@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/optimization, mc-version/1.21.1, loader/neoforge]
 mod_id: modernfix
-pack_version_pinned: "5.27.24+mc1.21.1 (modernfix-neoforge-5.27.24+mc1.21.1.jar)"
-last_verified: "2026-09-01 (added via packwiz modrinth add)"
+pack_version_pinned: "modernfix-neoforge-5.27.27+mc1.21.1.jar (updated 2026-11-20 from modernfix-neoforge-5.27.24+mc1.21.1.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # ModernFix
@@ -28,3 +28,6 @@ None logged yet.
 ModernFix ships many optional mixin groups that can be selectively disabled via config if a specific
 optimization ever conflicts with another mod — worth remembering this exists before assuming a rendering/
 loading bug must be a different mod's fault.
+
+## Update history
+- 2026-11-20: `modernfix-neoforge-5.27.24+mc1.21.1.jar` -> `modernfix-neoforge-5.27.27+mc1.21.1.jar` via `packwiz update --all`.

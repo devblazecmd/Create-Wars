@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/storage, mc-version/1.21.1, loader/neoforge]
 mod_id: sophisticated-storage
-pack_version_pinned: "1.21.1-1.5.91.2127 (sophisticatedstorage-1.21.1-1.5.91.2127.jar)"
-last_verified: "2026-09-01 (added via packwiz modrinth add)"
+pack_version_pinned: "sophisticatedstorage-1.21.1-1.6.20.2239.jar (updated 2026-11-20 from sophisticatedstorage-1.21.1-1.5.91.2127.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # Sophisticated Storage
@@ -28,3 +28,6 @@ None logged yet.
 None yet. Worth deciding whether Create's own logistics (depots, funnels, brass tunnels) and Sophisticated
 Storage's filtering/upgrades are meant to compose (storage as the endpoint of a Create line) or compete —
 document that choice here once we've playtested a supply chain.
+
+## Update history
+- 2026-11-20: `sophisticatedstorage-1.21.1-1.5.91.2127.jar` -> `sophisticatedstorage-1.21.1-1.6.20.2239.jar` via `packwiz update --all`.

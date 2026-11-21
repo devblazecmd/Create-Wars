@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/utility, mc-version/1.21.1, loader/neoforge]
 mod_id: jei
-pack_version_pinned: "19.51.0.417 (jei-1.21.1-neoforge-19.51.0.417.jar)"
-last_verified: "2026-09-01 (added via packwiz modrinth add)"
+pack_version_pinned: "jei-1.21.1-neoforge-19.71.0.475.jar (updated 2026-11-20 from jei-1.21.1-neoforge-19.51.0.417.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # Just Enough Items (JEI)
@@ -26,3 +26,6 @@ None logged yet.
 ## Config decisions
 None yet. Worth hiding/organizing categories once the full mod list's item count is known — 40+ mods can
 make the default JEI category list unwieldy.
+
+## Update history
+- 2026-11-20: `jei-1.21.1-neoforge-19.51.0.417.jar` -> `jei-1.21.1-neoforge-19.71.0.475.jar` via `packwiz update --all`.

@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/vehicles, mc-version/1.21.1, loader/neoforge]
 mod_id: copycats
-pack_version_pinned: "3.0.8+mc.1.21.1-neoforge (copycats-3.0.8+mc.1.21.1-neoforge.jar)"
-last_verified: "2026-09-01 (added after a server-boot smoke test caught it missing)"
+pack_version_pinned: "copycats-3.0.11+mc.1.21.1-neoforge.jar (updated 2026-11-20 from copycats-3.0.8+mc.1.21.1-neoforge.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # Create: Copycats+
@@ -40,3 +40,6 @@ didn't crash anything, but worth watching.
 
 ## Config decisions
 None yet.
+
+## Update history
+- 2026-11-20: `copycats-3.0.8+mc.1.21.1-neoforge.jar` -> `copycats-3.0.11+mc.1.21.1-neoforge.jar` via `packwiz update --all`.

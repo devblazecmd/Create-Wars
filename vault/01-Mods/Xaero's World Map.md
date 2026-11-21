@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/utility, mc-version/1.21.1, loader/neoforge]
 mod_id: xaeros-world-map
-pack_version_pinned: "1.21.1-1.45.0 (xaeroworldmap-neoforge-1.21.1-1.45.0.jar)"
-last_verified: "2026-09-01 (added via packwiz modrinth add / auto-added as a dependency of FTB Chunks x Xaero's Compat)"
+pack_version_pinned: "xaeroworldmap-neoforge-1.21.1-1.47.0.jar (updated 2026-11-20 from xaeroworldmap-neoforge-1.21.1-1.45.0.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # Xaero's World Map
@@ -28,3 +28,6 @@ None logged yet.
 
 ## Config decisions
 None yet.
+
+## Update history
+- 2026-11-20: `xaeroworldmap-neoforge-1.21.1-1.45.0.jar` -> `xaeroworldmap-neoforge-1.21.1-1.47.0.jar` via `packwiz update --all`.

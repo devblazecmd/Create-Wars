@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/teams, mc-version/1.21.1, loader/neoforge]
 mod_id: ftb-quests-forge
-pack_version_pinned: "2101.1.34 (ftb-quests-neoforge-2101.1.34.jar)"
-last_verified: "2026-09-01 (added via packwiz curseforge add)"
+pack_version_pinned: "ftb-quests-neoforge-2101.1.39.jar (updated 2026-11-20 from ftb-quests-neoforge-2101.1.34.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # FTB Quests (NeoForge)
@@ -28,3 +28,6 @@ None logged yet.
 ## Config decisions
 None yet — actual quest lines are a design task for `03-Design`, not something to improvise ad hoc once
 the pack has enough content installed to sequence.
+
+## Update history
+- 2026-11-20: `ftb-quests-neoforge-2101.1.34.jar` -> `ftb-quests-neoforge-2101.1.39.jar` via `packwiz update --all`.

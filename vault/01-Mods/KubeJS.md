@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/scripting, mc-version/1.21.1, loader/neoforge]
 mod_id: kubejs
-pack_version_pinned: "2101.7.2-build.374 (kubejs-neoforge-2101.7.2-build.374.jar)"
-last_verified: "2026-09-01 (added via packwiz modrinth add)"
+pack_version_pinned: "kubejs-neoforge-2101.7.2-build.381.jar (updated 2026-11-20 from kubejs-neoforge-2101.7.2-build.374.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # KubeJS
@@ -28,3 +28,6 @@ None logged yet.
 
 ## Config decisions
 None yet.
+
+## Update history
+- 2026-11-20: `kubejs-neoforge-2101.7.2-build.374.jar` -> `kubejs-neoforge-2101.7.2-build.381.jar` via `packwiz update --all`.

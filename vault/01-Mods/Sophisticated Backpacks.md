@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/storage, mc-version/1.21.1, loader/neoforge]
 mod_id: sophisticated-backpacks
-pack_version_pinned: "1.21.1-3.25.78.2107 (sophisticatedbackpacks-1.21.1-3.25.78.2107.jar)"
-last_verified: "2026-09-01 (added via packwiz modrinth add)"
+pack_version_pinned: "sophisticatedbackpacks-1.21.1-3.26.22.2257.jar (updated 2026-11-20 from sophisticatedbackpacks-1.21.1-3.25.78.2107.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # Sophisticated Backpacks
@@ -28,3 +28,6 @@ None logged yet.
 
 ## Config decisions
 None yet.
+
+## Update history
+- 2026-11-20: `sophisticatedbackpacks-1.21.1-3.25.78.2107.jar` -> `sophisticatedbackpacks-1.21.1-3.26.22.2257.jar` via `packwiz update --all`.

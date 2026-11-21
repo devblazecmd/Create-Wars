@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/vehicles, mc-version/1.21.1, loader/neoforge]
 mod_id: create-aeronautics-toolgun
-pack_version_pinned: "0.3.6 (create_aeronautics_toolgun-0.3.6.jar)"
-last_verified: "2026-09-01 (added via packwiz modrinth add)"
+pack_version_pinned: "create_aeronautics_toolgun-0.3.9.jar (updated 2026-11-20 from create_aeronautics_toolgun-0.3.6.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # Create Aeronautics: Toolgun
@@ -28,3 +28,6 @@ None logged yet.
 ## Config decisions
 None yet. The gravity-gun towing function could be a balance concern in PvP (yanking enemy structures/
 players) — worth a look once in-game.
+
+## Update history
+- 2026-11-20: `create_aeronautics_toolgun-0.3.6.jar` -> `create_aeronautics_toolgun-0.3.9.jar` via `packwiz update --all`.

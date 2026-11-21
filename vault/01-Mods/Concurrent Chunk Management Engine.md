@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/optimization, mc-version/1.21.1, loader/neoforge]
 mod_id: c2me-neoforge
-pack_version_pinned: "mc1.21.1-0.4.0-alpha.0.120 (c2me-neoforge-mc1.21.1-0.4.0-alpha.0.120.jar)"
-last_verified: "2026-09-01 (added via packwiz modrinth add)"
+pack_version_pinned: "c2me-neoforge-mc1.21.1-0.4.0-alpha.0.124.jar (updated 2026-11-20 from c2me-neoforge-mc1.21.1-0.4.0-alpha.0.120.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # Concurrent Chunk Management Engine (NeoForge)
@@ -31,3 +31,6 @@ None logged yet — flagged above as alpha-status and worth extra caution.
 
 ## Config decisions
 None yet.
+
+## Update history
+- 2026-11-20: `c2me-neoforge-mc1.21.1-0.4.0-alpha.0.120.jar` -> `c2me-neoforge-mc1.21.1-0.4.0-alpha.0.124.jar` via `packwiz update --all`.

@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/dependency, mc-version/1.21.1, loader/neoforge]
 mod_id: balm
-pack_version_pinned: "21.0.65 (balm-neoforge-1.21.1-21.0.65.jar)"
-last_verified: "2026-09-01 (added after a server-boot smoke test caught it missing)"
+pack_version_pinned: "balm-neoforge-1.21.1-21.0.67.jar (updated 2026-11-20 from balm-neoforge-1.21.1-21.0.65.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # Balm
@@ -31,3 +31,6 @@ None logged yet.
 
 ## Config decisions
 None yet.
+
+## Update history
+- 2026-11-20: `balm-neoforge-1.21.1-21.0.65.jar` -> `balm-neoforge-1.21.1-21.0.67.jar` via `packwiz update --all`.

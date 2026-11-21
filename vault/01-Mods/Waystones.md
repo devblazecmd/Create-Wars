@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/utility, mc-version/1.21.1, loader/neoforge]
 mod_id: waystones
-pack_version_pinned: "21.1.42 (waystones-neoforge-1.21.1-21.1.42.jar)"
-last_verified: "2026-09-01 (auto-added as a dependency of Create Waystones Recipes via packwiz)"
+pack_version_pinned: "waystones-neoforge-1.21.1-21.1.47.jar (updated 2026-11-20 from waystones-neoforge-1.21.1-21.1.42.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # Waystones
@@ -28,3 +28,6 @@ None logged yet.
 
 ## Config decisions
 None yet.
+
+## Update history
+- 2026-11-20: `waystones-neoforge-1.21.1-21.1.42.jar` -> `waystones-neoforge-1.21.1-21.1.47.jar` via `packwiz update --all`.

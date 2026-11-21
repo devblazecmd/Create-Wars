@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/utility, mc-version/1.21.1, loader/neoforge]
 mod_id: create-bits-n-bobs
-pack_version_pinned: "2.2.9 (bits_n_bobs-2.2.9.jar)"
-last_verified: "2026-09-01 (added via packwiz modrinth add)"
+pack_version_pinned: "bits_n_bobs-2.3.5.jar (updated 2026-11-20 from bits_n_bobs-2.2.9.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # Create: Bits 'n' Bobs
@@ -28,3 +28,6 @@ None logged yet.
 
 ## Config decisions
 None yet.
+
+## Update history
+- 2026-11-20: `bits_n_bobs-2.2.9.jar` -> `bits_n_bobs-2.3.5.jar` via `packwiz update --all`.

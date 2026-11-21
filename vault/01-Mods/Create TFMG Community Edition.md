@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/utility, mc-version/1.21.1, loader/neoforge]
 mod_id: tfmg-community-edition
-pack_version_pinned: "1.2.4b-community (tfmg-1.21.1-1.2.4b-community.jar)"
-last_verified: "2026-09-01 (added via packwiz curseforge add)"
+pack_version_pinned: "tfmg-1.21.1-1.3.3a-community.jar (updated 2026-11-20 from tfmg-1.21.1-1.2.4b-community.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # Create: TFMG Community Edition
@@ -33,3 +33,6 @@ None logged yet.
 
 ## Config decisions
 None yet.
+
+## Update history
+- 2026-11-20: `tfmg-1.21.1-1.2.4b-community.jar` -> `tfmg-1.21.1-1.3.3a-community.jar` via `packwiz update --all`.

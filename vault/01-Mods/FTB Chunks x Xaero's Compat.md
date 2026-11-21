@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/teams, mc-version/1.21.1, loader/neoforge]
 mod_id: ftbxaerocompat
-pack_version_pinned: "1.1.4 (ftbxaerocompat-neoforge-1.1.4.jar)"
-last_verified: "2026-09-01 (added via packwiz curseforge add)"
+pack_version_pinned: "ftbxaerocompat-neoforge-1.4.0-1.21.1.jar (updated 2026-11-20 from ftbxaerocompat-neoforge-1.1.4.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # FTB Chunks x Xaero's Compat
@@ -26,3 +26,6 @@ None logged yet.
 
 ## Config decisions
 None yet.
+
+## Update history
+- 2026-11-20: `ftbxaerocompat-neoforge-1.1.4.jar` -> `ftbxaerocompat-neoforge-1.4.0-1.21.1.jar` via `packwiz update --all`.

@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/optimization, mc-version/1.21.1, loader/neoforge]
 mod_id: entityculling
-pack_version_pinned: "1.10.5-mc1.21.1 (entityculling-neoforge-1.10.5-mc1.21.1.jar)"
-last_verified: "2026-09-01 (added via packwiz modrinth add)"
+pack_version_pinned: "entityculling-neoforge-1.12.1-mc1.21.1.jar (updated 2026-11-20 from entityculling-neoforge-1.10.5-mc1.21.1.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # Entity Culling
@@ -25,3 +25,6 @@ None logged yet.
 
 ## Config decisions
 None yet.
+
+## Update history
+- 2026-11-20: `entityculling-neoforge-1.10.5-mc1.21.1.jar` -> `entityculling-neoforge-1.12.1-mc1.21.1.jar` via `packwiz update --all`.

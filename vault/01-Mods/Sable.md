@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/dependency, mc-version/1.21.1, loader/neoforge]
 mod_id: sable
-pack_version_pinned: "2.0.5 (sable-neoforge-1.21.1-2.0.5.jar)"
-last_verified: "2026-09-01 (auto-added as a dependency of Create Aeronautics via packwiz)"
+pack_version_pinned: "sable-neoforge-1.21.1-2.0.6.jar (updated 2026-11-20 from sable-neoforge-1.21.1-2.0.5.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # Sable
@@ -28,3 +28,6 @@ None logged yet.
 
 ## Config decisions
 None yet.
+
+## Update history
+- 2026-11-20: `sable-neoforge-1.21.1-2.0.5.jar` -> `sable-neoforge-1.21.1-2.0.6.jar` via `packwiz update --all`.

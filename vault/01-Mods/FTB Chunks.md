@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/teams, mc-version/1.21.1, loader/neoforge]
 mod_id: ftb-chunks-forge
-pack_version_pinned: "2101.1.21 (ftb-chunks-neoforge-2101.1.21.jar)"
-last_verified: "2026-09-01 (added via packwiz curseforge add)"
+pack_version_pinned: "ftb-chunks-neoforge-2101.1.24.jar (updated 2026-11-20 from ftb-chunks-neoforge-2101.1.21.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # FTB Chunks (NeoForge)
@@ -34,3 +34,6 @@ None logged yet.
 None yet. Claim rules need to explicitly account for airborne/moving Create contraptions
 ([[Create Aeronautics]], [[CBC Aeronautics Missiles]]) crossing claim boundaries — default chunk-protection
 mods aren't always contraption-aware.
+
+## Update history
+- 2026-11-20: `ftb-chunks-neoforge-2101.1.21.jar` -> `ftb-chunks-neoforge-2101.1.24.jar` via `packwiz update --all`.

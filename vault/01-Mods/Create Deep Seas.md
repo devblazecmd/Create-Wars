@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/vehicles, mc-version/1.21.1, loader/neoforge]
 mod_id: create-deep-seas
-pack_version_pinned: "2.2.4 (create_submarine-2.2.4.jar)"
-last_verified: "2026-09-01 (added via packwiz modrinth add)"
+pack_version_pinned: "create_submarine-3.4.8.jar (updated 2026-11-20 from create_submarine-2.2.4.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # Create Deep Seas
@@ -31,3 +31,10 @@ but worth adding if that bug is encountered in testing.
 
 ## Config decisions
 None yet.
+
+## Update history
+- 2026-11-20: `create_submarine-2.2.4.jar` -> `create_submarine-3.4.8.jar` via `packwiz update --all`.
+- **Major version jump (2.x -> 3.x).** 3.x adds hull pressure models, girder beams, pressure goggles, an
+  optional progressive-flooding mode (off by default), and a "Vortex Engine" coloured-light renderer that
+  auto-disables under Iris shaders. 3.4.0 was labelled ALPHA in its changelog. Untested in this pack —
+  if submarines misbehave, rolling back to `2.2.4` is the first step.

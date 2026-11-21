@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/dependency, mc-version/1.21.1, loader/neoforge]
 mod_id: carbon-config
-pack_version_pinned: "2.0.2.1 (CarbonConfig-Neoforge-1.21.1-2.0.2.1.jar)"
-last_verified: "2026-09-01 (auto-added as a dependency of Create: Droneworks Simulated via packwiz)"
+pack_version_pinned: "CarbonConfig-Neoforge-1.21.1-2.0.3.jar (updated 2026-11-20 from CarbonConfig-Neoforge-1.21.1-2.0.2.1.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # Carbon Config
@@ -23,3 +23,6 @@ None logged yet.
 
 ## Config decisions
 None yet.
+
+## Update history
+- 2026-11-20: `CarbonConfig-Neoforge-1.21.1-2.0.2.1.jar` -> `CarbonConfig-Neoforge-1.21.1-2.0.3.jar` via `packwiz update --all`.

@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/active, mod/category/utility, mc-version/1.21.1, loader/neoforge]
 mod_id: create-teleporters
-pack_version_pinned: "2.0.2b-neoforge-1.21.1 (createteleporters-remastered-2.0.2b-neoforge-1.21.1.jar)"
-last_verified: "2026-09-01 (added via packwiz modrinth add)"
+pack_version_pinned: "createteleporters-3.0.2-1.21.1.jar (updated 2026-11-20 from createteleporters-remastered-2.0.2b-neoforge-1.21.1.jar)"
+last_verified: "2026-11-20 (packwiz update --all; not yet boot-tested)"
 ---
 
 # Create: Teleporters
@@ -32,3 +32,10 @@ None logged yet.
 
 ## Config decisions
 None yet — fold into the fast-travel balance design doc alongside [[Waystones]] once that's written.
+
+## Update history
+- 2026-11-20: `createteleporters-remastered-2.0.2b-neoforge-1.21.1.jar` -> `createteleporters-3.0.2-1.21.1.jar` via `packwiz update --all`.
+- **Major version jump (2.x -> 3.x).** 3.0 lets custom portals carry **trains** and **Sable ships**
+  (Aeronautics vehicles); 3.0.1 requires tracks on both sides of a portal and removed passive portal
+  drain. Balance implication for the open fast-travel question: warships/armored trains can now teleport
+  into a fight, not just players.
