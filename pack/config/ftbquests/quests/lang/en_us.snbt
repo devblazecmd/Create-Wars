@@ -1,0 +1,687 @@
+{
+	"chapter.053911DC66C6FCCC.chapter_subtitle": [
+		"Superheating and this pack's fuel tiers"
+	]
+	"chapter.053911DC66C6FCCC.title": "Heat Expansion"
+	"chapter.0A8F7FB8A84C2634.chapter_subtitle": [
+		"Heated mixing, brass, precision parts and ore processing"
+	]
+	"chapter.0A8F7FB8A84C2634.title": "Brass Age"
+	"chapter.2218ACE80C232364.chapter_subtitle": [
+		"Create: Enchantment Industry: liquid experience and machine enchanting"
+	]
+	"chapter.2218ACE80C232364.title": "Enchanting Expansion"
+	"chapter.35A2446CB394CD33.chapter_subtitle": [
+		"Rotation, your first machines, your first automation"
+	]
+	"chapter.35A2446CB394CD33.title": "Andesite Age"
+	"chapter.40B137FE2D792459.chapter_subtitle": [
+		"Start here: the rules of this pack"
+	]
+	"chapter.40B137FE2D792459.title": "Welcome to the War"
+	"chapter.509675FCE8A0F318.chapter_subtitle": [
+		"TFMG: cast iron, coke, steel and oil"
+	]
+	"chapter.509675FCE8A0F318.title": "Industrial Age"
+	"chapter.56C3E9BF26C90251.chapter_subtitle": [
+		"Telejuice, quantum items, waystones and teleporters"
+	]
+	"chapter.56C3E9BF26C90251.title": "Quantum Expansion"
+	"chapter.7415700D4D0CE1C8.chapter_subtitle": [
+		"Put your machines to work: production goals for every tier"
+	]
+	"chapter.7415700D4D0CE1C8.title": "Automation"
+	"chapter_group.0CFAFF482C306DFD.title": "Ages"
+	"chapter_group.5198D7EDAB40AD32.title": "Expansions"
+	"chapter_group.5DC36AFDE29DAA60.title": "Automation"
+	"chapter_group.5F5DEF409B409D0F.title": "Getting Started"
+	"quest.01B274AEC6E98520.quest_desc": [
+		"A Spout fills items on a Depot or belt with fluid. You'll use it for Blaze Cakes and,"
+		"later, for &dQuantum Paper&r."
+	]
+	"quest.01B274AEC6E98520.title": "Spout"
+	"quest.05898BDC6E712A72.quest_desc": [
+		"Made with iron sheets. A &aMechanical Saw&r cuts trees and processes wood; put it on a"
+		"moving contraption to build a tree farm."
+	]
+	"quest.05898BDC6E712A72.title": "Mechanical Saw"
+	"quest.05FD55AEF439EB0C.quest_desc": [
+		"Cast iron tank, pipe and fireproof bricks: heats air for the furnace."
+	]
+	"quest.05FD55AEF439EB0C.title": "Blast Stove"
+	"quest.062E02334D715791.quest_desc": [
+		"Brass casing and a precision mechanism. Sets the exact &aRPM&r of whatever it feeds."
+	]
+	"quest.062E02334D715791.title": "Rotation Speed Controller"
+	"quest.066EDE2B31CE6F97.quest_desc": [
+		"The &aMechanical Press&r flattens ingots into sheets and compacts items in a &aBasin&r."
+		"Put a &aDepot&r under it to hold what it's pressing."
+	]
+	"quest.066EDE2B31CE6F97.title": "Mechanical Press & Depot"
+	"quest.06A39428AF78928B.quest_desc": [
+		"Everything in Create starts with &aandesite&r: the gray stone found in big patches"
+		"underground and in hillsides. Mine some."
+	]
+	"quest.06A39428AF78928B.title": "Find Andesite"
+	"quest.09D33D79CA336A9E.quest_desc": [
+		"Same idea, turned on its side: a &aVertical Gearbox&r sends rotation up or down."
+	]
+	"quest.09D33D79CA336A9E.title": "Vertical Gearbox"
+	"quest.0A4151F48A770553.quest_desc": [
+		"Dried kelp makes &aBelts&r, which move items between machines. Place a belt by using"
+		"it on two shafts."
+	]
+	"quest.0A4151F48A770553.title": "Belts"
+	"quest.0B4492CE16040D3F.quest_desc": [
+		"Feed cobblestone into a &aMillstone&r. Make a &astack&r of gravel."
+	]
+	"quest.0B4492CE16040D3F.title": "Automate: Gravel"
+	"quest.0C34CAA169348117.quest_desc": [
+		"Press &agold ingots&r into &aGolden Sheets&r: they make the Wrench and Goggles, and go into"
+		"precision parts later."
+	]
+	"quest.0C34CAA169348117.title": "Gold Sheets"
+	"quest.0C3E6CD025DD5F0B.quest_desc": [
+		"Experience on tap."
+	]
+	"quest.0C3E6CD025DD5F0B.title": "Enchanting Automation"
+	"quest.0C8ED7CBC0DFB08A.quest_desc": [
+		"Mechanical crafting with an Entity Teleporter, Quantum Mechanism and more: build portals"
+		"of your own shape. Each base needs at least 256 mB of Telejuice."
+	]
+	"quest.0C8ED7CBC0DFB08A.title": "Custom Portal Controller"
+	"quest.0D9F1985E16955EF.quest_desc": [
+		"A cobblestone generator with a &aMechanical Drill&r mining it nonstop. Make a &astack&r."
+	]
+	"quest.0D9F1985E16955EF.title": "Automate: Cobblestone"
+	"quest.0E5FBD9105AE2934.quest_desc": [
+		"Compact &aEgg + Sugar + Cinder Flour&r in a Basin (no heat needed)."
+	]
+	"quest.0E5FBD9105AE2934.title": "Blaze Cake Base"
+	"quest.0F1A32D940E5614D.quest_desc": [
+		"Mass-produce the quantum supply chain."
+	]
+	"quest.0F1A32D940E5614D.title": "Quantum Automation"
+	"quest.0FB364E6D5715082.quest_desc": [
+		"Compact the base, fill it with lava and feed the cakes to your burners, all without"
+		"touching it. Make a &astack&r of Blaze Cakes."
+	]
+	"quest.0FB364E6D5715082.title": "Automate: Blaze Cakes"
+	"quest.109B3C60E36DD5D4.quest_desc": [
+		"Made by &aSequenced Assembly&r: a &agolden sheet&r passes Deployers adding cogwheels, large"
+		"cogwheels and iron nuggets, in a loop. JEI shows each step."
+	]
+	"quest.109B3C60E36DD5D4.title": "Precision Mechanism"
+	"quest.10F87A2D17CAB073.quest_desc": [
+		"Run the blast furnace continuously. Make a &astack&r of Steel Ingots."
+	]
+	"quest.10F87A2D17CAB073.title": "Automate: Steel"
+	"quest.135F39054A742654.quest_desc": [
+		"&eThis pack's own item:&r mix an &aEnder Pearl + 250 mB Telejuice&r in a Basin."
+		"Replaces ender pearls in waystone recipes."
+	]
+	"quest.135F39054A742654.title": "Quantum Pearl"
+	"quest.1360814D51B29322.quest_desc": [
+		"&aIndustrial Iron Blocks&r and &acast iron&r. Build the oven multiblock (see its Ponder)."
+	]
+	"quest.1360814D51B29322.title": "Coke Oven"
+	"quest.1379459167819F72.quest_desc": [
+		"Make &a5 Electron Tubes&r without crafting them by hand (Deployers on a belt work)."
+	]
+	"quest.1379459167819F72.title": "Automate: Electron Tubes"
+	"quest.14817DE690D788A0.quest_desc": [
+		"A Press over a belt of iron ingots. Make a &astack&r of Iron Sheets."
+	]
+	"quest.14817DE690D788A0.title": "Automate: Iron Sheets"
+	"quest.14AE92114CC90F48.quest_desc": [
+		"Cook kelp in a furnace, smoker or on a campfire. Later, an &aEncased Fan&r blowing"
+		"through fire does it in bulk."
+	]
+	"quest.14AE92114CC90F48.title": "Dried Kelp"
+	"quest.157B57B8355906AB.quest_desc": [
+		"Heavy casing, steel mechanism and electron tube. Finds &aoil deposits&r underground."
+	]
+	"quest.157B57B8355906AB.title": "Surface Scanner"
+	"quest.1810AAC17B0A938A.quest_desc": [
+		"Craft &aQuartz&r with &aredstone dust&r to make &aRose Quartz&r."
+	]
+	"quest.1810AAC17B0A938A.title": "Rose Quartz"
+	"quest.18C30ADB760AAE42.quest_desc": [
+		"Copper casing, Block of Experience and a sponge."
+	]
+	"quest.18C30ADB760AAE42.title": "Experience Lantern"
+	"quest.1AB72D9EE25ADB14.quest_desc": [
+		"Made with a gold sheet. The &aWrench&r rotates Create blocks, and sneak-using it picks"
+		"them up instantly."
+	]
+	"quest.1AB72D9EE25ADB14.title": "Wrench"
+	"quest.1AF4C0EB171B91E8.quest_desc": [
+		"Andesite alloy, planks and stone (mechanical crafting). Two &aCrushing Wheels&r spinning"
+		"toward each other crush ores into &acrushed ore&r: far more metal per ore than smelting."
+	]
+	"quest.1AF4C0EB171B91E8.title": "Crushing Wheels"
+	"quest.1BD0EA51B5612C64.quest_desc": [
+		"Keep the heat on without lifting a finger."
+	]
+	"quest.1BD0EA51B5612C64.title": "Heat Automation"
+	"quest.1C0A64D0E5145EF4.quest_desc": [
+		"One-time teleport to a waystone. Uses a &dQuantum Pearl&r in this pack."
+	]
+	"quest.1C0A64D0E5145EF4.title": "Warp Scroll"
+	"quest.1C23EC68FAEA93EF.quest_desc": [
+		"Another distillation product: engine fuel."
+	]
+	"quest.1C23EC68FAEA93EF.title": "Diesel"
+	"quest.1CF412C654F1F427.quest_desc": [
+		"Heavy casing, heavy plate and steel: a fuel-burning engine for serious rotational power."
+	]
+	"quest.1CF412C654F1F427.title": "Engine"
+	"quest.1D0C2F8A5C8D6DA9.quest_desc": [
+		"Use a &aStraw&r on a Blaze Burner so it accepts &aliquid fuel&r (see its Ponder)."
+		"&a1 bucket of Biofuel = 20 minutes of superheat.&r"
+	]
+	"quest.1D0C2F8A5C8D6DA9.title": "Blaze Burner with Straw"
+	"quest.1EFEBE35ACDF5803.quest_desc": [
+		"&eChanged in this pack:&r Napalm is mixed from &aAluminum Ingot + 1000 mB Gasoline +"
+		"250 mB Biofuel&r over a &6Superheated&r burner (makes 250 mB)."
+		""
+		"In a Straw burner: &a1 bucket = 1 hour of superheat&r. Napalm is also a weapon, so handle"
+		"with care."
+	]
+	"quest.1EFEBE35ACDF5803.title": "Tier 3 Fuel: Napalm"
+	"quest.1FE66342C645AA64.quest_desc": [
+		"Brass sheet, a Spout and a block of iron. Copies books and enchanted books."
+	]
+	"quest.1FE66342C645AA64.title": "Printer"
+	"quest.205AA396405C0F61.quest_desc": [
+		"Brass ingot, electron tube and dried kelp. Like an andesite funnel, but it can &afilter&r"
+		"and move whole stacks."
+	]
+	"quest.205AA396405C0F61.title": "Brass Funnel"
+	"quest.20B1AC5BF862EA1B.quest_desc": [
+		"Heavy industry on autopilot."
+	]
+	"quest.20B1AC5BF862EA1B.title": "Industrial Automation"
+	"quest.20BAE8E095DB0D3B.quest_desc": [
+		"Process &abauxite&r in a chemical vat for &aAluminum Ingots&r. Napalm needs them."
+	]
+	"quest.20BAE8E095DB0D3B.title": "Aluminum"
+	"quest.211EEEFFBA86CF3D.quest_desc": [
+		"A &aDistillation Controller&r and outputs on steel tanks refine crude oil into fuels."
+	]
+	"quest.211EEEFFBA86CF3D.title": "Distillation Tower"
+	"quest.2180ADB6E46AC859.quest_desc": [
+		"Mix an &aender pearl&r with &arose quartz&r. A core part of teleporter tech."
+	]
+	"quest.2180ADB6E46AC859.title": "Redstone Pearl"
+	"quest.252033B55A5BDA67.quest_desc": [
+		"Blowing through &alava&r smelts items, &awater&r washes them, &afire&r smokes them. A fan"
+		"is the cheapest way to process in bulk."
+	]
+	"quest.252033B55A5BDA67.title": "Encased Fan"
+	"quest.257D9DE8F5DF9281.quest_desc": [
+		"Andesite Alloy makes &aShafts&r: they carry rotation in a straight line from one machine"
+		"to the next."
+	]
+	"quest.257D9DE8F5DF9281.title": "Shafts"
+	"quest.2637B546C8D26A98.quest_desc": [
+		"Crush or mill &anetherrack&r."
+	]
+	"quest.2637B546C8D26A98.title": "Cinder Flour"
+	"quest.26EC6558855D5B57.quest_desc": [
+		"&6TFMG&r industry starts with &aCast Iron&r: compact &airon ingots&r with &acoal&r in a Basin"
+		"under a Press."
+	]
+	"quest.26EC6558855D5B57.title": "Cast Iron"
+	"quest.2701BFD6DE6338F6.quest_desc": [
+		"A biofuel plant that keeps its own mixer superheated. Fill a &astack&r of Biofuel buckets"
+		"(16)."
+	]
+	"quest.2701BFD6DE6338F6.title": "Automate: Biofuel"
+	"quest.27527B6B1D4EAB19.quest_desc": [
+		"Use a &asteel ingot&r on &ahardened planks&r."
+	]
+	"quest.27527B6B1D4EAB19.title": "Steel Casing"
+	"quest.279E94C7E37D4A13.quest_desc": [
+		"Production goals for the Brass Age."
+	]
+	"quest.279E94C7E37D4A13.title": "Brass Automation"
+	"quest.2820B4A2B63AB6CF.quest_desc": [
+		"Polish rose quartz with &aSandpaper&r (hold use), or let a Deployer holding sandpaper do it."
+	]
+	"quest.2820B4A2B63AB6CF.title": "Polished Rose Quartz"
+	"quest.28B372346FDAC614.quest_desc": [
+		"&aBrass Casing&r, an &aElectron Tube&r and a crafting table. Place several in a grid, connect"
+		"them with the wrench, and power them to craft recipes bigger than 3x3. The &dwaystone&r"
+		"recipes in this pack use them."
+	]
+	"quest.28B372346FDAC614.title": "Mechanical Crafter"
+	"quest.2A2F6D7284B0213C.quest_desc": [
+		"A compact one-way teleport point. Uses Quantum Casings too."
+	]
+	"quest.2A2F6D7284B0213C.title": "Portstone"
+	"quest.2CE27670B22613B3.quest_desc": [
+		"Apply a Block of Experience to a fluid hatch. Right-click to store your own levels as"
+		"liquid experience; sneak-right-click to take them back."
+	]
+	"quest.2CE27670B22613B3.title": "Experience Hatch"
+	"quest.2D89FEC40D52AEA2.quest_desc": [
+		"Same ingredients as the funnel. Put it over a belt to &asplit, filter and balance&r items"
+		"across belts."
+	]
+	"quest.2D89FEC40D52AEA2.title": "Brass Tunnel"
+	"quest.2DA10E741DEED39B.quest_desc": [
+		"Made with a gold sheet. Wear &aEngineer's Goggles&r to see stress, speed and contents"
+		"when you look at machines."
+	]
+	"quest.2DA10E741DEED39B.title": "Engineer's Goggles"
+	"quest.2DD1199EE570E8A6.quest_desc": [
+		"Feed andesite and iron (or zinc) nuggets into a &aMixer&r over a Basin, no heat needed."
+		"Make a &astack&r."
+	]
+	"quest.2DD1199EE570E8A6.title": "Automate: Andesite Alloy"
+	"quest.2E3F189B4FBB8213.quest_desc": [
+		"Same smithing upgrade, with an &aanvil&r instead of an enchanting table."
+	]
+	"quest.2E3F189B4FBB8213.title": "Blaze Forger"
+	"quest.2F3B184CE57794CA.quest_desc": [
+		"&eChanged in this pack:&r a &aQuantum Pearl&r and an &aamethyst shard&r make 4 Warp Dust."
+	]
+	"quest.2F3B184CE57794CA.title": "Warp Dust"
+	"quest.2F4686DB77BD1C7C.quest_desc": [
+		"Base, crank and hammer, built over an oil deposit, pump &acrude oil&r."
+	]
+	"quest.2F4686DB77BD1C7C.title": "Pumpjack"
+	"quest.2FC01DCFD815E793.quest_desc": [
+		"A &abrass sheet&r and &aandesite alloy&r. The business end of a Deployer."
+	]
+	"quest.2FC01DCFD815E793.title": "Brass Hand"
+	"quest.30690D9174F34F2D.quest_desc": [
+		"Teleports you back to your spawn point."
+	]
+	"quest.30690D9174F34F2D.title": "Return Scroll"
+	"quest.3188AB5143C724A6.quest_desc": [
+		"Brass needs &6heat&r, and heat comes from a &aBlaze Burner&r. Craft an"
+		"&aEmpty Blaze Burner&r from &airon sheets&r and &anetherrack&r."
+	]
+	"quest.3188AB5143C724A6.title": "Empty Blaze Burner"
+	"quest.32E70B970B951381.quest_desc": [
+		"&cElytras are disabled.&r End ships no longer carry one, and gliding is blocked even if"
+		"you find one."
+		""
+		"If you want to fly, build an aircraft with &6Create Aeronautics&r."
+	]
+	"quest.32E70B970B951381.title": "No Elytras"
+	"quest.3371D99BDCDED5AC.quest_desc": [
+		"Use a &abrass ingot&r on a &astripped log&r (or stripped wood). The casing for Create's"
+		"advanced machines."
+	]
+	"quest.3371D99BDCDED5AC.title": "Brass Casing"
+	"quest.34E9EC54D3ED4DE2.quest_desc": [
+		"Feed Blocks of Coal into a superheated compactor. Make a &astack&r of Diamonds"
+		"(that's 576 coal blocks)."
+	]
+	"quest.34E9EC54D3ED4DE2.title": "Automate: Diamonds"
+	"quest.359CB1C16A2C769F.quest_desc": [
+		"Sequenced assembly on a &asturdy sheet&r with a &adiamond&r and a &aRedstone Pearl&r."
+	]
+	"quest.359CB1C16A2C769F.title": "Advanced Component"
+	"quest.361D29A4C61B6861.quest_desc": [
+		"Quantum casing, Quantum Mechanism, Redstone Pearl and a transmitter. Links portals."
+	]
+	"quest.361D29A4C61B6861.title": "Advanced TP Link"
+	"quest.367C2F2B0C2B6767.quest_desc": [
+		"Step on it to warp to a linked plate. Made with Warp Dust."
+	]
+	"quest.367C2F2B0C2B6767.title": "Warp Plate"
+	"quest.386FB1A022BFF30E.quest_desc": [
+		"Production goals for Andesite-tier machines. Make these with &amachines&r, not by hand."
+	]
+	"quest.386FB1A022BFF30E.title": "Andesite Automation"
+	"quest.3BD47489393A7320.quest_desc": [
+		"Find a &cBlaze&r (a Nether fortress blaze spawner is ideal) and use the Empty Blaze Burner"
+		"on it to capture it."
+		""
+		"Feed it fuel (coal, logs) and it heats a Basin above it: &6Heated&r."
+	]
+	"quest.3BD47489393A7320.title": "Catch a Blaze"
+	"quest.3BF3768260E3F121.quest_desc": [
+		"&aCogwheels&r pass rotation sideways to other cogs. Pairing a &alarge&r and a &asmall&r"
+		"cogwheel doubles or halves the speed."
+	]
+	"quest.3BF3768260E3F121.title": "Cogwheels"
+	"quest.3E2D23E1D3A0EBE4.quest_desc": [
+		"Everything starts with rotation. Head to the &6Andesite Age&r."
+	]
+	"quest.3E2D23E1D3A0EBE4.title": "Start Building"
+	"quest.3EBBCA8C5D0936F3.quest_desc": [
+		"Fill the cake base with liquid experience using a Spout."
+	]
+	"quest.3EBBCA8C5D0936F3.title": "Cake o' Enchanting"
+	"quest.40B15D449F2EBE71.quest_desc": [
+		"Smithing: a &aBlaze Burner&r, an &aenchanting table&r and a &aBlaze Upgrade Smithing"
+		"Template&r. Enchants items automatically with liquid experience."
+	]
+	"quest.40B15D449F2EBE71.title": "Blaze Enchanter"
+	"quest.41370BD350C0E8DF.quest_desc": [
+		"Andesite alloy and a shaft. The entry point to Enchantment Industry; its Ponder shows how"
+		"it turns items and enchantments into &aliquid experience&r."
+	]
+	"quest.41370BD350C0E8DF.title": "Mechanical Grindstone"
+	"quest.4257FB3FAF262265.quest_desc": [
+		"Compact &aeggs, sugar and lapis&r in a Basin."
+	]
+	"quest.4257FB3FAF262265.title": "Cake Base o' Enchanting"
+	"quest.43B65B6F74E24201.quest_desc": [
+		"&cWaystones don't generate&r in the world or in villages. You have to craft them, and every"
+		"waystone recipe runs on &dTelejuice&r: Quantum Pearls, Quantum Casings and Quantum Paper."
+		""
+		"You'll learn to make it in the &dQuantum Expansion&r."
+	]
+	"quest.43B65B6F74E24201.title": "Waystones Are Built, Not Found"
+	"quest.45BDA6C768B90B56.quest_desc": [
+		"Blow kelp through &afire&r with an Encased Fan (smoking). Make a &astack&r of Dried Kelp."
+	]
+	"quest.45BDA6C768B90B56.title": "Automate: Dried Kelp"
+	"quest.4680D4EEDDCD2B02.quest_desc": [
+		"&eChanged in this pack:&r waystones don't generate. Mechanical crafting: Warp Stone,"
+		"&d3 Quantum Pearls&r, &d2 Quantum Casings&r, casings and bricks."
+	]
+	"quest.4680D4EEDDCD2B02.title": "Waystone"
+	"quest.47FAA13063C15889.quest_desc": [
+		"A &aWater Wheel&r turns when water flows past it. It's your first source of"
+		"&6stress capacity&r (SU). Every machine uses some; the goggles show how much is left."
+	]
+	"quest.47FAA13063C15889.title": "Water Wheel"
+	"quest.48768D4D201D8CE7.quest_desc": [
+		"A &asteel sheet&r on &aSteel Casing&r. The shell for oil and engine machinery."
+	]
+	"quest.48768D4D201D8CE7.title": "Heavy Machinery Casing"
+	"quest.4A5DED6F08A7B2C9.quest_desc": [
+		"&eThis pack's own recipe:&r compact &a9 Blocks of Coal&r in a Basin over a"
+		"&6Superheated&r burner to make &b1 Diamond&r."
+	]
+	"quest.4A5DED6F08A7B2C9.title": "Diamonds from Coal"
+	"quest.4C0B58935DA7AACD.quest_desc": [
+		"Compact &aliquid experience&r into a solid &aBlock of Experience&r."
+	]
+	"quest.4C0B58935DA7AACD.title": "Block of Experience"
+	"quest.4C20D3C1C2FAB4CF.quest_desc": [
+		"You've mastered brass. This &aunlocks the Industrial Age&r and all three &6Expansions&r:"
+		"Heat, Quantum and Enchanting."
+		""
+		"&7Requires: Electron Tube, Deployer, Precision Mechanism and Mechanical Crafter.&r"
+	]
+	"quest.4C20D3C1C2FAB4CF.title": "Brass Age Complete"
+	"quest.4CC67633097B3200.quest_desc": [
+		"Brass casing, a precision mechanism, brass sheets and andesite alloy. An Arm picks items"
+		"up and drops them into machines, depots and chests in range."
+	]
+	"quest.4CC67633097B3200.title": "Mechanical Arm"
+	"quest.4D1D21B956A310AC.quest_desc": [
+		"A chorus fruit farm feeding a heated mixer. Fill a &astack&r of Telejuice buckets (16)."
+	]
+	"quest.4D1D21B956A310AC.title": "Automate: Telejuice"
+	"quest.4DA0DEC5FD32700E.quest_desc": [
+		"Fill a &astack&r of Bucket o' Enchanting (16) from an automated setup."
+	]
+	"quest.4DA0DEC5FD32700E.title": "Automate: Liquid Experience"
+	"quest.4FC33F44C920C77C.quest_desc": [
+		"Refined from crude oil. Needed for &cnapalm&r."
+	]
+	"quest.4FC33F44C920C77C.title": "Gasoline"
+	"quest.500E380CBF65328A.quest_desc": [
+		"Put &airon ingots&r on the Depot and let the Press flatten them into &aIron Sheets&r."
+	]
+	"quest.500E380CBF65328A.title": "Iron Sheets"
+	"quest.50CD930018A90F12.quest_desc": [
+		"Everything quantum starts in &dthe End&r: bring back &achorus fruit&r (and plant some)."
+	]
+	"quest.50CD930018A90F12.title": "Chorus Fruit"
+	"quest.5329946572EF2539.quest_desc": [
+		"Press a &aBlock of Experience&r into an &aEnchanting Template&r."
+	]
+	"quest.5329946572EF2539.title": "Enchanting Template"
+	"quest.537966C61051FF3E.quest_desc": [
+		"Loop the sequenced assembly line so it runs unattended. Make &a5 Precision Mechanisms&r."
+	]
+	"quest.537966C61051FF3E.title": "Automate: Precision Mechanisms"
+	"quest.53C1D57D1C14787F.quest_desc": [
+		"You've built the core Andesite machines. This &aunlocks the Brass Age&r, and the"
+		"&6Automation&r chapter has goals for putting these machines to work."
+		""
+		"&7Requires: Press & Depot, Basin and Mixer, Belts and Iron Sheets.&r"
+		""
+		"Next up: you'll need a captured &cBlaze&r to make brass."
+	]
+	"quest.53C1D57D1C14787F.title": "Andesite Age Complete"
+	"quest.53FCAEF396A40468.quest_desc": [
+		"Sequenced assembly: Advanced Component, sturdy sheet and &dTelejuice&r. The heart of every"
+		"teleporter."
+	]
+	"quest.53FCAEF396A40468.title": "Quantum Mechanism"
+	"quest.54F28171B8869203.quest_desc": [
+		"Made with an iron sheet. A &aMechanical Harvester&r on a moving contraption harvests"
+		"fully grown crops and replants them: the basis of any farm."
+	]
+	"quest.54F28171B8869203.title": "Mechanical Harvester"
+	"quest.57B7CCC186625ABD.quest_desc": [
+		"Your first bucket of &acrude oil&r."
+	]
+	"quest.57B7CCC186625ABD.title": "Crude Oil"
+	"quest.591FA47EC216B85D.quest_desc": [
+		"Some recipes need a &6Superheated&r burner. This pack has three fuel tiers, and each one"
+		"needs superheat to produce, so you climb them in order:"
+		""
+		"&61. Blaze Cake&r: 2 min 40 s per cake"
+		"&62. Biofuel&r: 20 min per bucket"
+		"&63. Napalm&r: 1 hour per bucket (made in the &6Industrial Age&r)"
+	]
+	"quest.591FA47EC216B85D.title": "Fuel Tiers"
+	"quest.5C326BE896F9406D.quest_desc": [
+		"The furnace makes &amolten steel&r; cast it into &aSteel Ingots&r."
+	]
+	"quest.5C326BE896F9406D.title": "Steel"
+	"quest.5D03F1D941E5D2B8.quest_desc": [
+		"Made with iron sheets. A &aMechanical Drill&r mines whatever is in front of it: the heart"
+		"of cobblestone generators and tunnel borers."
+	]
+	"quest.5D03F1D941E5D2B8.title": "Mechanical Drill"
+	"quest.60B90AF4C95E818F.quest_desc": [
+		"Mix &acopper&r and &azinc&r in a Basin over a lit Blaze Burner."
+	]
+	"quest.60B90AF4C95E818F.title": "Brass Ingot"
+	"quest.610E62DABE42F45B.quest_desc": [
+		"Crush &azinc ore&r, wash the crushed ore with a fan, and smelt it. Make a &astack&r of Zinc"
+		"Ingots."
+	]
+	"quest.610E62DABE42F45B.title": "Automate: Ore Processing"
+	"quest.6112990A4F373F3B.quest_desc": [
+		"Compact &aseeds&r into Seed Oil, then mix plants (crops, leaves, saplings, flowers) with"
+		"&a100 mB of Seed Oil&r over a &6heated&r burner to make &aBiomass&r."
+	]
+	"quest.6112990A4F373F3B.title": "Biomass"
+	"quest.62C2BF76845D80A0.quest_desc": [
+		"A &aBasin&r holds ingredients; a &aMechanical Mixer&r above it mixes them, and a Press"
+		"above it compacts them. Many recipes need &6heat&r from a burner under the basin; you'll"
+		"get there in the next two chapters."
+	]
+	"quest.62C2BF76845D80A0.title": "Basin and Mixer"
+	"quest.62D79935090F608A.quest_desc": [
+		"Built from &afireproof bricks&r with a &aBlast Furnace Output&r (cast iron block, pipe) and"
+		"a hatch. Check the Ponder for the full multiblock."
+	]
+	"quest.62D79935090F608A.title": "Blast Furnace"
+	"quest.6306F2A0E0D78360.quest_desc": [
+		"Sequenced assembly with heavy plates, lead and nickel sheets, steel cogwheels and screws."
+		"JEI shows every step."
+	]
+	"quest.6306F2A0E0D78360.title": "Steel Mechanism"
+	"quest.63DA6FB61B0FE89C.quest_desc": [
+		"Ender pearls and Telejuice into a mixer, automatically. Make a &astack&r (16)."
+	]
+	"quest.63DA6FB61B0FE89C.title": "Automate: Quantum Pearls"
+	"quest.64156283A7F5D425.quest_desc": [
+		"Press brass ingots into &aBrass Sheets&r on a Depot, like iron and gold."
+	]
+	"quest.64156283A7F5D425.title": "Brass Sheets"
+	"quest.663C120074F50910.quest_desc": [
+		"A waystone shared by everyone who uses the same color. Uses Quantum Casings too."
+	]
+	"quest.663C120074F50910.title": "Sharestone"
+	"quest.67454231A804793A.quest_desc": [
+		"The Coke Oven bakes &acoal&r into &aCoal Coke&r, the fuel for the blast furnace."
+	]
+	"quest.67454231A804793A.title": "Coal Coke"
+	"quest.674633D31D85B876.quest_desc": [
+		"&aAndesite Casing&r, a &aBrass Hand&r and an &aElectron Tube&r. A Deployer uses items like"
+		"a player (placing, clicking, applying), and it's the key machine for sequenced assembly."
+	]
+	"quest.674633D31D85B876.title": "Deployer"
+	"quest.67A8D26B5BBD67D5.quest_desc": [
+		"Feed copper and zinc into a heated Mixer automatically. Make a &astack&r of Brass Ingots."
+	]
+	"quest.67A8D26B5BBD67D5.title": "Automate: Brass"
+	"quest.6831CB5CFFFE83CA.quest_desc": [
+		"Casings make machines tidy and are an ingredient in many recipes, including &dwaystones&r."
+	]
+	"quest.6831CB5CFFFE83CA.title": "Andesite Casing"
+	"quest.690304EEF8A85B66.quest_desc": [
+		"The first Create material. Combine &aandesite&r with &airon nuggets&r (or zinc nuggets)."
+		"Check &aJEI&r for the recipe: press &aU&r on an item to see how it's made."
+	]
+	"quest.690304EEF8A85B66.title": "Andesite Alloy"
+	"quest.6A0F5E3A470D0D6D.quest_desc": [
+		"Brass casing, electron tube, Quantum Mechanism and Redstone Pearl. Fill it with"
+		"&dTelejuice&r to teleport to a paired destination."
+	]
+	"quest.6A0F5E3A470D0D6D.title": "Entity Teleporter"
+	"quest.6AF6E11AB857B769.quest_desc": [
+		"&aPolished Rose Quartz&r on an &aIron Sheet&r: the 'circuit' of Create machines."
+	]
+	"quest.6AF6E11AB857B769.title": "Electron Tube"
+	"quest.6BEC794B9B7ED2B9.quest_desc": [
+		"Belts are made from &adried kelp&r. Gather &akelp&r from any ocean."
+	]
+	"quest.6BEC794B9B7ED2B9.title": "Kelp"
+	"quest.6CFFC5E6FB4D423C.quest_desc": [
+		"&eChanged in this pack:&r brewing Biofuel now needs a &6Superheated&r burner. Mix"
+		"&aSugar + Cinder Flour + 2 Biomass&r to make &a125 mB&r."
+		""
+		"Bootstrap it with Blaze Cakes. Once it's running, Biofuel can keep its own mixer hot."
+	]
+	"quest.6CFFC5E6FB4D423C.title": "Tier 2: Biofuel"
+	"quest.6D4D3B1AE4194237.quest_desc": [
+		"Grinds items: gravel to flint, flowers to dye, and more. Look up any item in JEI under"
+		"&aMilling&r."
+	]
+	"quest.6D4D3B1AE4194237.title": "Millstone"
+	"quest.6D7A35883B8B3DFF.quest_desc": [
+		"Bigger wheel, more power: a &aLarge Water Wheel&r gives far more stress capacity, at a"
+		"slower speed. Gear it up with a large-to-small cogwheel pair."
+	]
+	"quest.6D7A35883B8B3DFF.title": "Large Water Wheel"
+	"quest.6FC902C0AAB2722B.quest_desc": [
+		"&eChanged in this pack:&r mechanical crafting with &a7 Quantum Pearls&r, amethyst and"
+		"emeralds."
+	]
+	"quest.6FC902C0AAB2722B.title": "Warp Stone"
+	"quest.708ABE7F0EE91DFA.quest_desc": [
+		"&eChanged in this pack:&r every scroll is made from &dQuantum Paper&r."
+	]
+	"quest.708ABE7F0EE91DFA.title": "Blank Scroll"
+	"quest.728E9D32BE764BA7.quest_desc": [
+		"Links teleporters together. Advanced component, brass sheet, redstone pearl, transmitter."
+	]
+	"quest.728E9D32BE764BA7.title": "TP Link"
+	"quest.72BF8D911FA88129.quest_desc": [
+		"Mix &aChorus Fruit + 250 mB water&r over a &6heated&r burner to make &dTelejuice&r"
+		"(Quantum Fluid)."
+	]
+	"quest.72BF8D911FA88129.title": "Telejuice"
+	"quest.7314F8809800FC2F.quest_desc": [
+		"Andesite alloy and dried kelp make an &aAndesite Tunnel&r: put it over a belt to cover it"
+		"and split items off to the sides."
+	]
+	"quest.7314F8809800FC2F.title": "Andesite Tunnel"
+	"quest.731740FB69570BAB.quest_desc": [
+		"&eThis pack's own item:&r Spout &a100 mB of Telejuice&r onto &aPaper&r. Used for every"
+		"waystone scroll."
+	]
+	"quest.731740FB69570BAB.title": "Quantum Paper"
+	"quest.74777FCB60E4E957.quest_desc": [
+		"Blow &agravel&r through water with an &aEncased Fan&r (washing) for iron nuggets, then"
+		"have a &aMechanical Press&r over a &aBasin&r compact them: &a9 nuggets&r into an ingot,"
+		"&a9 ingots&r into a block."
+		""
+		"Make a &astack&r of nuggets, a &astack&r of ingots and &a7 Blocks of Iron&r."
+	]
+	"quest.74777FCB60E4E957.title": "Automate: Iron"
+	"quest.749FE3E4AD2CCE5B.quest_desc": [
+		"Sends items to a paired destination. Brass casing, chute, barrel, Quantum Mechanism."
+	]
+	"quest.749FE3E4AD2CCE5B.title": "Item Teleporter"
+	"quest.74CDBCF76E1C34D2.quest_desc": [
+		"Factions are &aFTB Teams&r. Quest progress is shared by everyone on your team."
+		""
+		"Create a party from the FTB Teams button in your inventory, or with"
+		"&a/ftbteams party create <name>&r, then invite your teammates."
+	]
+	"quest.74CDBCF76E1C34D2.title": "Form a Team"
+	"quest.768786DC2818C9FB.quest_desc": [
+		"Another distillation product: aviation fuel."
+	]
+	"quest.768786DC2818C9FB.title": "Kerosene"
+	"quest.76F59EFACD9DBDED.quest_desc": [
+		"Fill a Blaze Cake Base with &a250 mB of lava&r using a Spout."
+		""
+		"Feed it to a Blaze Burner: &6Superheated for 2 min 40 s&r. Automate the feeding with a"
+		"Mechanical Arm, Deployer or Funnel."
+	]
+	"quest.76F59EFACD9DBDED.title": "Tier 1: Blaze Cake"
+	"quest.772EB687B23B503B.quest_desc": [
+		"Protect your base with &aFTB Chunks&r. Open the claim map from the FTB buttons in your"
+		"inventory and drag across chunks to claim them for your team."
+		""
+		"Claimed chunks stop other teams breaking or using your blocks."
+	]
+	"quest.772EB687B23B503B.title": "Claim Your Base"
+	"quest.7750562BA513BD83.quest_desc": [
+		"Moves a block to a paired destination. Needs an Item Teleporter and a Deployer."
+	]
+	"quest.7750562BA513BD83.title": "Block Teleporter"
+	"quest.77578E1470294AE0.quest_desc": [
+		"A &aGearbox&r turns rotation 90 degrees in any horizontal direction, and is more compact"
+		"than a cog pair."
+	]
+	"quest.77578E1470294AE0.title": "Gearbox"
+	"quest.77BD910B208F5E79.quest_desc": [
+		"Pumpjack to distillation tower, no hands. Fill a &astack&r of Gasoline buckets (16)."
+	]
+	"quest.77BD910B208F5E79.title": "Automate: Gasoline"
+	"quest.77DB7EDAF5F47B92.quest_desc": [
+		"Cast iron tank, pipe, sheet and fireproof bricks: where materials go in."
+	]
+	"quest.77DB7EDAF5F47B92.title": "Blast Furnace Hatch"
+	"quest.788F9D6BEE492895.quest_desc": [
+		"Keep the coke oven fed. Make a &astack&r of Coal Coke."
+	]
+	"quest.788F9D6BEE492895.title": "Automate: Coal Coke"
+	"quest.7B00515BF7869680.quest_desc": [
+		"Create Wars is a &6Create&r pack about building a faction that can &cfight&r: aircraft, artillery,"
+		"radar-guided missiles, armored trains and submarines."
+		""
+		"This book is a &aguide&r: it never locks recipes or items. Chapters open up as you finish"
+		"earlier ones: the &6Ages&r in order, then the &6Expansions&r once you reach the Brass Age."
+	]
+	"quest.7B00515BF7869680.quest_subtitle": "Open the book. You did it."
+	"quest.7B00515BF7869680.title": "Welcome to Create Wars"
+	"quest.7C25C2287D94AE08.quest_desc": [
+		"Fill a &aRailway Casing&r with &a1000 mB of Telejuice&r using a Spout."
+	]
+	"quest.7C25C2287D94AE08.title": "Quantum Casing"
+	"quest.7EF44200E09553BD.quest_desc": [
+		"Collect your first bucket of liquid experience (&aBucket o' Enchanting&r)."
+	]
+	"quest.7EF44200E09553BD.title": "Liquid Experience"
+}

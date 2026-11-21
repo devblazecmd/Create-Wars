@@ -1,5 +1,5 @@
 ---
-tags: [mod/status/active, mod/category/radar, mc-version/1.21.1, loader/neoforge]
+tags: [mod/status/removed, mod/category/radar, mc-version/1.21.1, loader/neoforge]
 mod_id: mob-radar
 pack_version_pinned: "1.1.0 (mob_radar-1.1.0-neoforge-1.21.1.jar)"
 last_verified: "2026-09-01 (added via packwiz curseforge add)"
@@ -34,3 +34,10 @@ None logged yet.
 ## Config decisions
 None yet — the 30-block range and 10-second duration are gamerule-configurable; balance decision once
 installed, likely tied to the same design doc as [[Create Droneworks Simulated]] drone counterplay.
+
+## Removal
+**Removed 2026-11-21** (`packwiz remove mob-radar`), project owner's call while streamlining radar
+systems. This resolves the open "Mob Radar vs. Create: Radars" decision: [[Create Radars|Create: Radars]]
+is the pack's radar system. Nothing depended on it. Worth knowing for later: [[Create Misc and Things]]
+also has a handheld "Radar" item that reveals nearby entities (no config), which is now the only
+handheld scanner. Consider it if wallhack-style scanning becomes a PvP problem.

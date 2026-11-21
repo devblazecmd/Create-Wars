@@ -1,0 +1,352 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "heat"
+	group: "5198D7EDAB40AD32"
+	icon: {
+		id: "create:blaze_cake"
+	}
+	id: "053911DC66C6FCCC"
+	images: [ ]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"4C20D3C1C2FAB4CF"
+			]
+			id: "591FA47EC216B85D"
+			rewards: [
+				{
+					id: "44A76A618982DA5D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "63824B3B1796AB8C"
+					type: "checkmark"
+				}
+			]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"591FA47EC216B85D"
+			]
+			id: "2637B546C8D26A98"
+			rewards: [
+				{
+					id: "47DBFED021F53B2A"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 8
+					id: "4EC1D58F4EC4E1DE"
+					item: {
+						count: 1
+						id: "minecraft:sugar"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6D49A7BFA6B349D8"
+					item: {
+						count: 1
+						id: "minecraft:egg"
+					}
+					type: "item"
+				}
+				{
+					id: "7C9906CB8C6C52CF"
+					item: {
+						count: 1
+						id: "create:cinder_flour"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "7029085791E27424"
+					item: {
+						count: 1
+						id: "create:cinder_flour"
+					}
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"591FA47EC216B85D"
+			]
+			id: "01B274AEC6E98520"
+			rewards: [
+				{
+					id: "2CFA709F0453AAEE"
+					type: "xp"
+					xp: 15
+				}
+				{
+					id: "196130324D0CC928"
+					item: {
+						count: 1
+						id: "create:spout"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1EA633775A577989"
+					item: {
+						count: 1
+						id: "create:spout"
+					}
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"2637B546C8D26A98"
+			]
+			id: "0E5FBD9105AE2934"
+			rewards: [
+				{
+					id: "5900A24BC58C55D6"
+					type: "xp"
+					xp: 15
+				}
+				{
+					id: "6B2292D2DC8AF988"
+					item: {
+						count: 1
+						id: "create:blaze_cake_base"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "4F44ADA9D3497EA2"
+					item: {
+						count: 1
+						id: "create:blaze_cake_base"
+					}
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -4.4d
+		}
+		{
+			dependencies: [
+				"591FA47EC216B85D"
+			]
+			id: "76F59EFACD9DBDED"
+			rewards: [
+				{
+					id: "61E283DFB0E609CD"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 8
+					id: "33ACAAEF1981D379"
+					item: {
+						count: 1
+						id: "minecraft:egg"
+					}
+					type: "item"
+				}
+				{
+					id: "00BC4D84EA09E1E4"
+					item: {
+						count: 1
+						id: "create:blaze_cake"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					count: 2L
+					id: "311608692BA9C114"
+					item: {
+						count: 1
+						id: "create:blaze_cake"
+					}
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"76F59EFACD9DBDED"
+			]
+			id: "4A5DED6F08A7B2C9"
+			rewards: [
+				{
+					id: "096070C171350E3D"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 4
+					id: "58A5818C9678B620"
+					item: {
+						count: 1
+						id: "minecraft:coal_block"
+					}
+					type: "item"
+				}
+				{
+					id: "009D1C05283AF709"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3C2BBB095BA3EC5C"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"76F59EFACD9DBDED"
+			]
+			id: "6112990A4F373F3B"
+			rewards: [
+				{
+					id: "4CA927514C7D0E39"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 16
+					id: "47CCD51CF0A52D62"
+					item: {
+						count: 1
+						id: "minecraft:wheat_seeds"
+					}
+					type: "item"
+				}
+				{
+					id: "2C6175D9EED64355"
+					item: {
+						count: 1
+						id: "createaddition:biomass"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "777198E92A2683EA"
+					item: {
+						count: 1
+						id: "createaddition:biomass"
+					}
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"76F59EFACD9DBDED"
+			]
+			id: "6CFFC5E6FB4D423C"
+			rewards: [
+				{
+					id: "662DA6EA99D2EB53"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "46BAD86E4981B45D"
+					item: {
+						count: 1
+						id: "createaddition:bioethanol_bucket"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "7AFE4AD4EB757E13"
+					item: {
+						count: 1
+						id: "createaddition:bioethanol_bucket"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6CFFC5E6FB4D423C"
+			]
+			id: "1D0C2F8A5C8D6DA9"
+			rewards: [
+				{
+					id: "28B6A67A533AC0D0"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "53EBA630859BDC1C"
+					item: {
+						count: 1
+						id: "createaddition:straw"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3E8CFC3062564E87"
+					item: {
+						count: 1
+						id: "createaddition:straw"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -2.6d
+		}
+	]
+}

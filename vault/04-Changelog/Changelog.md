@@ -229,3 +229,42 @@ this tells you *why*, in prose, per pack version.
     (e.g. `railways:blocks/track_tfc_acacia`).
   - **Rollback:** set `neoforge = "21.1.249"` in `pack/pack.toml`, restore the backed-up `mmc-pack.json`,
     and remove Loot Edit (it won't load on 249).
+- **Waystones no longer generate in the world (2026-11-21):** wild + village generation off via
+  `pack/config/waystones-common.toml`, the first config file shipped in `pack/config/`. See
+  [[../01-Mods/Waystones]].
+- **Waystone recipe needs Quantum Casing (2026-11-21):** see [[../01-Mods/Waystones]]. 2 Quantum Casings
+  (Telejuice-filled railway casings) per mechanical-crafting craft, all 3 waystone variants.
+- **Quantum Pearl (2026-11-21):** the pack's first custom item, `createwars:quantum_pearl` (Ender Pearl +
+  250 mB Telejuice, mixed), with an original purple pearl texture. Also the first KubeJS startup script
+  and `kubejs/assets/`. See [[../03-Design/Quantum Pearl]]. Needs a game restart to appear.
+- **Waystone recipe uses Quantum Pearls (2026-11-21):** the 3 Ender Pearls are now Quantum Pearls.
+- **Quantum Paper + scrolls (2026-11-21):** new item `createwars:quantum_paper` (Paper + 100 mB Telejuice,
+  Spout), now used instead of Paper in all 5 Waystones scroll recipes. Startup script renamed to
+  `createwars_items.js` since it now registers more than one item.
+- **Warp Scroll uses a Quantum Pearl (2026-11-21)** instead of an ender pearl.
+- **All Waystones recipes match (2026-11-21):** consolidated into `waystones_quantum.js` (replaces
+  `waystone_quantum_casing.js` + `waystone_scrolls_quantum_paper.js`). Quantum Pearls everywhere ender
+  pearls were (except Bound Scroll), Quantum Casings in all waystones/sharestones/portstones, Quantum
+  Paper in scrolls. 51 recipes total. See [[../01-Mods/Waystones]].
+- **Sandy Waystone (2026-11-21):** Stone Bricks → Sandstone, output 3 → 2. First in-game check of the
+  Quantum waystone recipes in JEI: the waystone recipe showed correctly.
+- **Removed [[../01-Mods/Mob Radar]] (2026-11-21):** radar streamlining. Create: Radars is the radar system
+  (connected to CBC Aeronautics Missiles, Fire Arc Filter, Firepower Components; see
+  [[../01-Mods/Create Radars]] for the integration map). Nothing depended on Mob Radar. Pack now at 92 mods.
+- **Quest book v1 (2026-11-21):** spec [[../03-Design/Quest Book]] approved; 4 chapters (Welcome, Kinetics,
+  Brass & Precision, Heat), 39 quests, shipped in `pack/config/ftbquests/quests/`. New top-level
+  `tools/`: `quests/build_quests.py` (generator, source of truth) and `check_quest_refs.py` (flags
+  unknown or pack-removed item IDs). Format derived from FTB Quests bytecode and confirmed in game.
+- **Quest book v2 structure (2026-11-21):** sections (Getting Started / Ages / Expansions), chapters renamed
+  to Andesite Age, Brass Age, Heat Expansion, one-stack "Automate" quests, and real unlocks
+  (`progression_mode: linear`): Andesite Age Complete → Brass Age; Brass Age Complete → Industrial Age +
+  Heat/Quantum/Enchanting Expansions. 51 quests, clean boot. Industrial, Quantum and Enchanting chapters
+  are next.
+- **Quest book layout + iron chain (2026-11-21):** all chapters on a clean grid (no crossing lines);
+  new Automate Iron Ingots / Iron Blocks quests in the Andesite Age. 53 quests.
+- **Quest book hub-and-spoke layout (2026-11-21):** hubs on a main line with side quests fanned around
+  them (owner's reference); auto-placed by the generator with an overlap/line-crossing check. 61 quests.
+- **Quest book v3 (2026-11-21):** automation goals moved into a new Automation section; new chapters
+  Industrial Age (TFMG coke/steel/oil → napalm), Quantum Expansion (Telejuice, Quantum items, waystones,
+  Create: Teleporters) and Enchanting Expansion (Enchantment Industry). Recipe-accurate chains throughout.
+  8 chapters, 137 quests, 0 unknown item IDs.

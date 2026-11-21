@@ -70,11 +70,13 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - [[Carbon Config]] — dependency, required by Create: Droneworks Simulated
 
 ## Radar
-- [[Mob Radar]] — reveals nearby mob/player outlines through terrain for a short window
+- ~~[[Mob Radar]]~~ — *removed 2026-11-21*; Create: Radars is the radar system
 - [[Create Radars|Create: Radars]] — Create-native radar, pulled in by [[CBC Aeronautics Missiles]] for
-  missile targeting. **Overlaps with Mob Radar — see [[Mob Radar]] for the open decision.**
+  missile targeting. The pack's radar system (Mob Radar overlap resolved by removing Mob Radar).
 - [[Create Radar Fire Arc Filter|Create Radar: Fire Arc Filter]] — no-fire sectors for radar-slaved
   cannons *(testing)*. Its install tried to bump Radars to 5.1.1; reverted to 0.4.9.4 — see its note.
+- Radar integration map (which mods share Create: Radars' network vs. run their own): see
+  [[Create Radars]].
 
 ## Storage
 - [[Sophisticated Storage]] — upgradeable storage barrels/chests, filtering, auto-crafting
