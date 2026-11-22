@@ -1,0 +1,13 @@
+name = "More Enchants"
+filename = "moreenchantments-1.2.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/LbDPuvYD/versions/xkPh2NKR/moreenchantments-1.2.1.jar"
+hash-format = "sha512"
+hash = "a23ac8918dc301629a79f4f3812497be88eb853d181f4a20ec7e86f23d280c4b28108f3e064f3614a12b49746935e5ab8a863432cfb55e0dca77a421c684ce60"
+
+[update]
+[update.modrinth]
+mod-id = "LbDPuvYD"
+version = "xkPh2NKR"
