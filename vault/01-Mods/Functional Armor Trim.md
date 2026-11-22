@@ -33,3 +33,5 @@ Defaults kept; shipped so the server and every client use the same values. PvP n
 `net.minecraft.client.multiplayer.ClientLevel` during Improved Mobs' equipment scoring, and a dedicated server can't load
 client classes ("Attempted to load class ... for invalid dist DEDICATED_SERVER"). Single-player never showed it. The mod
 adds its own attributes, so it can't be server-skipped either. Removed with its config.
+
+Replaced 2026-11-22 by the owner's fixed fork [[Better Trims]] (same mod ID, dedicated-server crash fixed).

@@ -145,6 +145,10 @@ file = "config/ftbquests/quests/reward_tables/war_trophy.snbt"
 hash = "37857ca3ce883e4ca7d628422a6d35001fd57f514f0104aec1cd6b6fb0b7d94e"
 
 [[files]]
+file = "config/functionalarmortrim.json"
+hash = "9713d4c65c04f8399573f94a7f7d69bffa3d7f570ad217921e6e9e67393e1e95"
+
+[[files]]
 file = "config/gravestone-server.toml"
 hash = "f93c280168e2c0287fb53a24556a5184527c2ffd5741c11b931f076d6afc83e5"
 
@@ -504,6 +508,10 @@ metafile = true
 file = "mods/better-advanced-tooltips.pw.toml"
 hash = "03084ff4f74cedc1b8ac6c85a98842f75956fb4fa811d285d8ca7caa8d54da5d"
 metafile = true
+
+[[files]]
+file = "mods/better-trims-armor-and-weapons-1.21.1-1.1.0.jar"
+hash = "44c6d813b92bc06839ec497b9f19c35cbedb728e19d1b4868fe38f75c359655f"
 
 [[files]]
 file = "mods/biomes-o-plenty.pw.toml"

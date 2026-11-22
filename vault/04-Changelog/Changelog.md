@@ -369,4 +369,6 @@ this tells you *why*, in prose, per pack version.
 - **Mob tone-down (2026-11-22, owner):** phantoms never carry mobs (Improved Mobs FLYING off); despawn distances back to vanilla; less
   alerting and shorter notice range; no mob-throwing or enderman teleport-to-player; fewer reinforcements; natural Ambush ships 3/player.
   CTOV village waystones disabled (21 Lithostitched no-op overrides).
+- **Better Trims (2026-11-22):** owner-built fork of Functional Armor Trim with the dedicated-server crash fixed (client fallback now
+  dist-guarded). Shipped as a raw jar with the trim config; owner testing on UltraServers.
 
