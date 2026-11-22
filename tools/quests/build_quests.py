@@ -347,6 +347,123 @@ CHAPTERS = [
         ], [CHECK], xp=75, items=[("create:zinc_ingot", 16), ("minecraft:copper_ingot", 16)], shape="hexagon"),
     ]),
     # ----------------------------------------------------------------------------------------------
+    # Copper Expansion (owner 2026-11-22: "we need copper expansion"). Create's copper tier (fluids and steam)
+    # plus Create Crafts and Additions' copper wiring (electricity). Recipes read from the live recipe export.
+    dict(slug="copper", group="expansions", title="Copper Expansion",
+         subtitle="Fluids, steam power and electricity", icon="create:fluid_tank",
+         unlock=[("kinetics", "next")], quests=[
+        Q("copper_sheet", "Copper Sheets", 0, 0, [
+            "Copper is Create's &6fluid&r metal. Press copper ingots on a Depot, like iron sheets.",
+        ], [item("create:copper_sheet", 16)], xp=15),
+        Q("copper_casing", "Copper Casing", 0, 0, [
+            "Right-click a stripped log or wood with a copper ingot. The shell of every fluid machine.",
+        ], [item("create:copper_casing", 8)], xp=25),
+        Q("item_drain", "Item Drain", 0, 0, [
+            "Copper casing and iron bars. Empties buckets, bottles and potions dropped on it into the",
+            "pipes below.",
+        ], [item("create:item_drain")], xp=20),
+        Q("fluid_hatch", "Fluid Hatch", 0, 0, [
+            "&6Create: Dragons Plus&r: an item drain and a copper ingot. A drain that works on",
+            "contraptions.",
+        ], [item("create_dragons_plus:fluid_hatch")], xp=15),
+        Q("hose_pulley", "Hose Pulley", 0, 0, [
+            "Copper casing, a copper sheet and a dried kelp block. Lowers a hose to drain a lake or",
+            "lava pool, or to fill one. Large bodies of water never run dry.",
+        ], [item("create:hose_pulley")], xp=25),
+        Q("portable_fluid_interface", "Portable Fluid Interface", 0, 0, [
+            "Copper casing and a chute. Pumps fluids in and out of tanks on a moving contraption.",
+        ], [item("create:portable_fluid_interface", 2)], xp=20),
+        Q("fluid_pipe", "Fluid Pipe", 0, 0, [
+            "A copper sheet and copper ingots. Pipes connect tanks and machines. They carry nothing on",
+            "their own: they need a pump.",
+        ], [item("create:fluid_pipe", 16)], xp=20),
+        Q("mechanical_pump", "Mechanical Pump", 0, 0, [
+            "A fluid pipe and a cogwheel. Give it rotation and it pushes fluid along the pipe. Faster",
+            "rotation pumps more.",
+        ], [item("create:mechanical_pump", 2)], xp=25),
+        Q("fluid_valve", "Fluid Valve", 0, 0, [
+            "A fluid pipe and an iron sheet. Opens and closes a pipe when you turn it.",
+        ], [item("create:fluid_valve")], xp=15),
+        Q("copper_valve_handle", "Valve Handle", 0, 0, [
+            "A copper sheet and andesite alloy. Turns a valve, or anything else, a set amount.",
+        ], [item("create:copper_valve_handle")], xp=10),
+        Q("smart_fluid_pipe", "Smart Fluid Pipe", 0, 0, [
+            "A fluid pipe, brass sheet and electron tube: a pipe with a filter that only lets one",
+            "fluid through. &eNeeds the Brass Age.&r",
+        ], [item("create:smart_fluid_pipe")], xp=25),
+        Q("fluid_tank", "Fluid Tank", 0, 0, [
+            "Copper sheets and a barrel. Tanks join into bigger tanks when placed next to each other.",
+            "A tall tank is also the body of a &6steam boiler&r.",
+        ], [item("create:fluid_tank", 4)], xp=30),
+        Q("fluid_vessel", "Fluid Vessel", 0, 0, [
+            "&6Create: Connected&r: copper sheets and a barrel. A sideways tank. Converts to and from a",
+            "Fluid Tank in the crafting grid.",
+        ], [item("create_connected:fluid_vessel", 2)], xp=15),
+        Q("fragile_fluid_tank", "Fragile Fluid Tank", 0, 0, [
+            "&6Dragons Plus&r: copper sheets, gold and a barrel. A tank that keeps its fluid when you",
+            "break it.",
+        ], [item("create_dragons_plus:fragile_fluid_tank")], xp=20),
+        Q("steam_engine", "Steam Engine", 0, 0, [
+            "A copper block, a gold sheet and andesite alloy. Build a &6boiler&r: a Fluid Tank with lit",
+            "&aBlaze Burners&r underneath and water pumped in, then put Steam Engines on its sides and",
+            "a shaft on each. A bigger tank and more heat run more engines. Look at the tank with",
+            "goggles to see its level.",
+        ], [item("create:steam_engine", 2)], xp=60),
+        Q("steam_whistle", "Steam Whistle", 0, 0, [
+            "Copper and a gold sheet. Put it on a boiler; redstone blows it. Taller stacks play lower.",
+        ], [item("create:steam_whistle")], xp=10),
+        Q("rolling_mill", "Rolling Mill", 0, 0, [
+            "&6Create Crafts and Additions&r electricity starts here. Andesite casing, andesite alloy, iron",
+            "sheets and a shaft. Rolls ingots into rods and sheets into wire.",
+        ], [item("createaddition:rolling_mill")], xp=30),
+        Q("copper_rod", "Copper Rod", 0, 0, [
+            "Roll a copper ingot.",
+        ], [item("createaddition:copper_rod", 4)], xp=10),
+        Q("connector", "Connector", 0, 0, [
+            "A copper rod, andesite alloy and slime. Wire runs between connectors: put them on",
+            "generators, motors and batteries.",
+        ], [item("createaddition:connector", 4)], xp=15),
+        Q("capacitor", "Capacitor", 0, 0, [
+            "Copper and zinc sheets with a redstone torch. A part of every electric machine.",
+        ], [item("createaddition:capacitor", 2)], xp=15),
+        Q("spool", "Spool", 0, 0, [
+            "Iron sheets and iron rods (roll iron ingots). An empty spool to wind wire onto.",
+        ], [item("createaddition:spool", 2)], xp=10),
+        Q("copper_wire", "Copper Wire", 0, 0, [
+            "Roll copper sheets into wire.",
+        ], [item("createaddition:copper_wire", 8)], xp=10),
+        Q("copper_spool", "Copper Spool", 0, 0, [
+            "Copper wire wound on a spool. Use it on two connectors to wire them together.",
+        ], [item("createaddition:copper_spool", 2)], xp=15),
+        Q("electric_motor", "Electric Motor", 0, 0, [
+            "&aMechanical Crafting&r: copper spool, capacitor, iron rods, brass sheets and andesite",
+            "alloy. Turns electricity back into rotation, with a speed you set. &eNeeds the Brass Age.&r",
+        ], [item("createaddition:electric_motor")], xp=60),
+        Q("alternator", "Alternator", 0, 0, [
+            "&aMechanical Crafting&r: copper spool, iron rods and sheets, andesite alloy. Turns rotation",
+            "into electricity: put one on your steam engines' shaft.",
+        ], [item("createaddition:alternator")], xp=50),
+        Q("electric_pump", "Electric Pump", 0, 0, [
+            "A mechanical pump, copper spool, capacitor and dried kelp (mechanical crafting). Pumps",
+            "fluid on electricity instead of rotation.",
+        ], [item("createaddition:electric_pump")], xp=25),
+        Q("modular_accumulator", "Modular Accumulator", 0, 0, [
+            "Brass casing, a capacitor, copper rods and electrum wire (roll electrum). Stores electricity. Blocks placed",
+            "together act as one battery.",
+        ], [item("createaddition:modular_accumulator", 2)], xp=40),
+        Q("portable_energy_interface", "Portable Energy Interface", 0, 0, [
+            "Brass casing, a chute and a copper spool. Charges batteries on a moving contraption.",
+        ], [item("createaddition:portable_energy_interface")], xp=25),
+        Q("electrum", "Electrum", 0, 0, [
+            "Charge gold ingots with a Tesla Coil. Electrum wire is what the accumulator needs.",
+        ], [item("createaddition:electrum_ingot", 4)], xp=20),
+        Q("tesla_coil", "Tesla Coil", 0, 0, [
+            "&aMechanical Crafting&r: copper spool, capacitor, brass casing and sheets, an electron tube",
+            "and andesite alloy. Charges items on a depot below it (gold into Electrum) and zaps",
+            "anything that wanders under it.",
+        ], [item("createaddition:tesla_coil")], xp=80, shape="hexagon"),
+    ]),
+    # ----------------------------------------------------------------------------------------------
     dict(slug="heat", group="expansions", title="Heat Expansion",
          subtitle="Superheating and this pack's fuel tiers", icon="create:blaze_cake",
          unlock=[("brass_and_precision", "next")], quests=[
@@ -1475,7 +1592,7 @@ CHAPTERS = [
     # Nuclear (owner 2026-11-22: "a good nuclear mod to add to the chaos"). Create Nuclear reactors and
     # radiation; nuke shells from CBC Enhanced Shells, re-gated on uranium rods by
     # pack/kubejs/server_scripts/nuclear_weapons.js. Recipe chain read from createnuclear-2.0.1's jar.
-    dict(slug="nuclear", group="warfare", title="Nuclear Age",
+    dict(slug="nuclear", group="ages", title="Nuclear Age",
          subtitle="Reactors, radiation, and the shells that end wars", icon="cbc_enhanced_shells:nuke_shell",
          unlock=[("industrial", "steel")], quests=[
         Q("raw_uranium", "Uranium", 0, 0, [
@@ -2144,6 +2261,27 @@ LAYOUTS = {
         extra_deps={"napalm": ["heat/biofuel"],   # napalm needs biofuel (Heat Expansion)
                     "heavy_casing": ["steel_casing", "steel_mechanism"]},   # 2026-11-22 audit
         gate=None),
+    "copper": dict(
+        main=[("copper_sheet", -6, 1.25), ("copper_casing", -1, 2.0), ("fluid_pipe", 6, 2.0), ("fluid_tank", 13, 2.0),
+              ("steam_engine", 20, 2.0), ("rolling_mill", 27, 2.0), ("electric_motor", 34, 2.0),
+              ("tesla_coil", 41, 2.25)],
+        hubs={"copper_casing": dict(top=["item_drain", "hose_pulley"], bottom=["portable_fluid_interface"]),
+              "fluid_pipe": dict(top=["mechanical_pump", "fluid_valve"], bottom=["smart_fluid_pipe"]),
+              "fluid_tank": dict(top=["fluid_vessel"], bottom=["fragile_fluid_tank"]),
+              "steam_engine": dict(top=["steam_whistle"]),
+              "rolling_mill": dict(top=["copper_rod", "capacitor"], bottom=["spool", "copper_wire"]),
+              "electric_motor": dict(top=["alternator", "electric_pump"], bottom=["portable_energy_interface"]),
+              "tesla_coil": dict(top=["electrum"])},
+        chains={"item_drain": ["fluid_hatch"], "copper_rod": ["connector"], "copper_wire": ["copper_spool"],
+                "fluid_valve": ["copper_valve_handle"],
+                "electrum": ["modular_accumulator"]},   # the accumulator needs electrum wire
+        # a boiler needs lit blaze burners; the engine needs gold sheets; brass parts stay visible but locked
+        extra_deps={"steam_engine": ["brass_and_precision/blaze", "kinetics/gold_sheets"],
+                    "smart_fluid_pipe": ["brass_and_precision/electron_tube"],
+                    "electric_motor": ["brass_and_precision/brass_casing"]},
+        hidden_deps={"copper_spool": ["spool"], "electric_motor": ["capacitor", "copper_spool"],
+                     "electric_pump": ["mechanical_pump"]},
+        gate=None),
     "heat": dict(
         main=[("tiers", -5, 1.5), ("blaze_cake", 1, 2.0), ("biofuel", 8, 2.0)],
         hubs={"tiers": dict(top=["cinder_flour"], bottom=["spout"]),
@@ -2411,6 +2549,25 @@ LAYOUTS = {
                     "food_auto": ["food/slicer"]},
         gate=None),
 }
+# Copper Expansion parts used by other chapters (2026-11-22 audit, after the Copper chapter was added):
+# each quest also needs the Copper quest that teaches its fluid/copper part. Other chapter, so not drawn.
+COPPER_DEPS = {
+    "aeronautics": {"cockpit": ["copper/copper_casing"], "jet": ["copper/fluid_pipe"],
+                    "rocket_engine": ["copper/fluid_tank"]},
+    "artillery": {"cannon_drill": ["copper/fluid_pipe"]},
+    "enchanting": {"xp_hatch": ["copper/fluid_hatch"], "xp_lantern": ["copper/copper_casing"]},
+    "heat": {"spout": ["copper/copper_casing"]},
+    "infantry": {"blazegun": ["copper/fluid_tank"], "launcher": ["copper/fluid_pipe"],
+                 "nailgun": ["copper/fluid_valve"], "rocket": ["copper/fluid_pipe"]},
+    "naval": {"ballast": ["copper/fluid_tank"], "decompression": ["copper/mechanical_pump"],
+              "diffuser": ["copper/item_drain"], "pump_controller": ["copper/mechanical_pump"],
+              "sub_sonar": ["copper/copper_sheet"], "torpedo_detector": ["copper/copper_sheet"],
+              "water_thruster": ["copper/mechanical_pump"]},
+    "pollution": {"oil_burner": ["copper/copper_casing", "copper/fluid_pipe"]},
+    "quantum": {"custom_portal": ["copper/fluid_tank"], "fluid_transmitter": ["copper/mechanical_pump"]},
+    "radar": {"fire_arc": ["copper/copper_sheet"]},
+    "rail": {"fuel_tank": ["copper/fluid_tank"]},
+}
 ARCS = [(35, 145), (215, 325)]  # degrees; keeps satellites clear of the horizontal main line
 SAT_SPACING = 1.8               # arc distance between neighbouring satellites
 FAN_RADIUS = 2.6                # sub-fan: distance from its center quest
@@ -2486,6 +2643,8 @@ def apply_layout(ch):
             ang = base - spread / 2 + spread * (i + 0.5) / len(sats)
             put(slug, cx + fr * math.cos(ang), cy - fr * math.sin(ang), [center], ang)
     for slug, extra in lay.get("extra_deps", {}).items():
+        by[slug]["deps"] = by[slug]["deps"] + list(extra)
+    for slug, extra in COPPER_DEPS.get(ch["slug"], {}).items():
         by[slug]["deps"] = by[slug]["deps"] + list(extra)
     # main_deps: replace a main-line quest's dependency on the previous hub (owner 2026-11-22: Advanced Component
     # doesn't need the Waystone; its recipe has no waystone parts).

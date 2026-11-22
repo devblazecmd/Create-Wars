@@ -8,7 +8,7 @@
 	}
 	id: "56C3E9BF26C90251"
 	images: [ ]
-	order_index: 5
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
@@ -802,6 +802,7 @@
 		{
 			dependencies: [
 				"6A0F5E3A470D0D6D"
+				"363A6F521A378478"
 			]
 			id: "0C8ED7CBC0DFB08A"
 			rewards: [
@@ -875,6 +876,7 @@
 		{
 			dependencies: [
 				"1B29AC04A12AFBC1"
+				"52314BB35786FF3A"
 			]
 			id: "1A380332FEC145A5"
 			rewards: [

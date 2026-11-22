@@ -1,0 +1,1083 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "copper"
+	group: "5198D7EDAB40AD32"
+	icon: {
+		id: "create:fluid_tank"
+	}
+	id: "1C5C72058DB17D14"
+	images: [ ]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"53C1D57D1C14787F"
+			]
+			id: "23D6DBBEBF2DB427"
+			rewards: [
+				{
+					id: "742B6A821CD03366"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "746791FFBE0D72D7"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					count: 2
+					id: "4F1A7E67C9D1B7E4"
+					item: {
+						count: 1
+						id: "create:copper_sheet"
+					}
+					type: "item"
+				}
+			]
+			size: 1.25d
+			tasks: [
+				{
+					count: 16L
+					id: "09850C8F63FEC049"
+					item: {
+						count: 1
+						id: "create:copper_sheet"
+					}
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"23D6DBBEBF2DB427"
+			]
+			id: "7D263B17652C8ACD"
+			rewards: [
+				{
+					id: "1C850150E3E5BF3E"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "3D446EA7DFE407D4"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "79678A8354047D48"
+					item: {
+						count: 1
+						id: "create:copper_casing"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					count: 8L
+					id: "4820D5BDDBBB3EB7"
+					item: {
+						count: 1
+						id: "create:copper_casing"
+					}
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7D263B17652C8ACD"
+			]
+			id: "5D4BCA7941DD7B93"
+			rewards: [
+				{
+					id: "006B6F18AAECDFF0"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "5A40DA558CEF24F6"
+					item: {
+						count: 1
+						id: "create:item_drain"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2DF32ABAFF1C38DC"
+					item: {
+						count: 1
+						id: "create:item_drain"
+					}
+					type: "item"
+				}
+			]
+			x: 0.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"5D4BCA7941DD7B93"
+			]
+			id: "1652FAEEF42E8E51"
+			rewards: [
+				{
+					id: "42BAC56313ADB840"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "5F3F47829DBF9D32"
+					item: {
+						count: 1
+						id: "create_dragons_plus:fluid_hatch"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5CAC8FE4A7B6AFDA"
+					item: {
+						count: 1
+						id: "create_dragons_plus:fluid_hatch"
+					}
+					type: "item"
+				}
+			]
+			x: 1.03d
+			y: -3.9d
+		}
+		{
+			dependencies: [
+				"7D263B17652C8ACD"
+			]
+			id: "563C4DBA93D8EADA"
+			rewards: [
+				{
+					id: "2115AB3068C30CCF"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "52BC04D3F0371604"
+					item: {
+						count: 1
+						id: "create:hose_pulley"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3661605A334C2FB4"
+					item: {
+						count: 1
+						id: "create:hose_pulley"
+					}
+					type: "item"
+				}
+			]
+			x: -2.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"7D263B17652C8ACD"
+			]
+			id: "078D72E61EE6482B"
+			rewards: [
+				{
+					id: "3C2557E697F8BDD9"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "71D1FA19D09912D8"
+					item: {
+						count: 1
+						id: "create:portable_fluid_interface"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "1B9780A86B41DF23"
+					item: {
+						count: 1
+						id: "create:portable_fluid_interface"
+					}
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"7D263B17652C8ACD"
+			]
+			id: "1644ECEFAD7DDC5C"
+			rewards: [
+				{
+					id: "24B47F39F3AF1E4A"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "0B55CB9A17558388"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					count: 2
+					id: "09F09AA7052B333E"
+					item: {
+						count: 1
+						id: "create:fluid_pipe"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					count: 16L
+					id: "4C66853EDFD09963"
+					item: {
+						count: 1
+						id: "create:fluid_pipe"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1644ECEFAD7DDC5C"
+			]
+			id: "52314BB35786FF3A"
+			rewards: [
+				{
+					id: "0257902D5D0A215A"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "0B371A7F60B9DB71"
+					item: {
+						count: 1
+						id: "create:mechanical_pump"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "229D3FA27B9359C7"
+					item: {
+						count: 1
+						id: "create:mechanical_pump"
+					}
+					type: "item"
+				}
+			]
+			x: 7.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"1644ECEFAD7DDC5C"
+			]
+			id: "29AF5124A7AE7006"
+			rewards: [
+				{
+					id: "16F2FC667992853E"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "1AC47E6EA585B257"
+					item: {
+						count: 1
+						id: "create:fluid_valve"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "76412A7475CEEE11"
+					item: {
+						count: 1
+						id: "create:fluid_valve"
+					}
+					type: "item"
+				}
+			]
+			x: 4.8d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"29AF5124A7AE7006"
+			]
+			id: "28ABA66692CBC7AA"
+			rewards: [
+				{
+					id: "5B5DE7AF6E1E2324"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "5B88D1207B958FE9"
+					item: {
+						count: 1
+						id: "create:copper_valve_handle"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "470333FD189052DB"
+					item: {
+						count: 1
+						id: "create:copper_valve_handle"
+					}
+					type: "item"
+				}
+			]
+			x: 3.97d
+			y: -3.9d
+		}
+		{
+			dependencies: [
+				"1644ECEFAD7DDC5C"
+				"6AF6E11AB857B769"
+			]
+			id: "2AEE3DA100C4AF48"
+			rewards: [
+				{
+					id: "0EC5D6F56C721B08"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "0FEC0F8CBD91FCA4"
+					item: {
+						count: 1
+						id: "create:smart_fluid_pipe"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0ACE6BA6728F16D9"
+					item: {
+						count: 1
+						id: "create:smart_fluid_pipe"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"1644ECEFAD7DDC5C"
+			]
+			id: "363A6F521A378478"
+			rewards: [
+				{
+					id: "2AB6278AC569544D"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "4B94CA92970826CD"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "57D1F4478DEC8937"
+					item: {
+						count: 1
+						id: "create:fluid_tank"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					count: 4L
+					id: "7A316A72058E110C"
+					item: {
+						count: 1
+						id: "create:fluid_tank"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"363A6F521A378478"
+			]
+			id: "4C4C085C92F74D33"
+			rewards: [
+				{
+					id: "3B0B7401035E3CB1"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "31588BDA66AEBD8B"
+					item: {
+						count: 1
+						id: "create_connected:fluid_vessel"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "12F5F84F94466649"
+					item: {
+						count: 1
+						id: "create_connected:fluid_vessel"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"363A6F521A378478"
+			]
+			id: "6F14B448D1FF9C9A"
+			rewards: [
+				{
+					id: "6365F9957DFD23AB"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "1C4E51F19147C3A7"
+					item: {
+						count: 1
+						id: "create_dragons_plus:fragile_fluid_tank"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "559AEE3C83388A04"
+					item: {
+						count: 1
+						id: "create_dragons_plus:fragile_fluid_tank"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"363A6F521A378478"
+				"3BD47489393A7320"
+				"0C34CAA169348117"
+			]
+			id: "0540AEA5FD47D948"
+			rewards: [
+				{
+					id: "2BD3EBFA04F2F929"
+					type: "xp"
+					xp: 240
+				}
+				{
+					id: "69FECDCFA5691FFD"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "78D71899CBCA7233"
+					item: {
+						count: 1
+						id: "create:steam_engine"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					count: 2L
+					id: "09F9B25DAFBD7AB8"
+					item: {
+						count: 1
+						id: "create:steam_engine"
+					}
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0540AEA5FD47D948"
+			]
+			id: "5595EF082B5BFD12"
+			rewards: [
+				{
+					id: "6A64F47489218C9F"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "50474CA6958E6021"
+					item: {
+						count: 1
+						id: "create:steam_whistle"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "71D0901AE7028CC6"
+					item: {
+						count: 1
+						id: "create:steam_whistle"
+					}
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"0540AEA5FD47D948"
+			]
+			id: "3D18216C0DC91D67"
+			rewards: [
+				{
+					id: "34F4CEF41E584126"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "0748C495982CCDDD"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "77652ABBF7F35794"
+					item: {
+						count: 1
+						id: "createaddition:rolling_mill"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "6BE940F4E0908DE1"
+					item: {
+						count: 1
+						id: "createaddition:rolling_mill"
+					}
+					type: "item"
+				}
+			]
+			x: 27.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3D18216C0DC91D67"
+			]
+			id: "14ED0DFC2655F555"
+			rewards: [
+				{
+					id: "5A00BBF9196033FA"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "70512C9F3F51B7D3"
+					item: {
+						count: 1
+						id: "createaddition:copper_rod"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "1F3582E019EA33F3"
+					item: {
+						count: 1
+						id: "createaddition:copper_rod"
+					}
+					type: "item"
+				}
+			]
+			x: 28.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"14ED0DFC2655F555"
+			]
+			id: "217A537D8ED81055"
+			rewards: [
+				{
+					id: "3FFC086C8FAE89FD"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "18CA1D3001F32B81"
+					item: {
+						count: 1
+						id: "createaddition:connector"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "019451E6DF7E473C"
+					item: {
+						count: 1
+						id: "createaddition:connector"
+					}
+					type: "item"
+				}
+			]
+			x: 29.03d
+			y: -3.9d
+		}
+		{
+			dependencies: [
+				"3D18216C0DC91D67"
+			]
+			id: "722BD515250F1E67"
+			rewards: [
+				{
+					id: "71FF39BA7B2055AB"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "46C5977DA2D63029"
+					item: {
+						count: 1
+						id: "createaddition:capacitor"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "735AD0B74E47A46B"
+					item: {
+						count: 1
+						id: "createaddition:capacitor"
+					}
+					type: "item"
+				}
+			]
+			x: 25.8d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"3D18216C0DC91D67"
+			]
+			id: "403EEC901700CF83"
+			rewards: [
+				{
+					id: "4C77613C059817EC"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "3570F4042EC8928C"
+					item: {
+						count: 1
+						id: "createaddition:spool"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "4F88DEE1081366FB"
+					item: {
+						count: 1
+						id: "createaddition:spool"
+					}
+					type: "item"
+				}
+			]
+			x: 25.8d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"3D18216C0DC91D67"
+			]
+			id: "3789B6937D0F2AC7"
+			rewards: [
+				{
+					id: "1613A7AD02ABA619"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "6A5E9D6C9A1EAA37"
+					item: {
+						count: 1
+						id: "createaddition:copper_wire"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "7A0699DFC5FB64FA"
+					item: {
+						count: 1
+						id: "createaddition:copper_wire"
+					}
+					type: "item"
+				}
+			]
+			x: 28.2d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"3789B6937D0F2AC7"
+				"403EEC901700CF83"
+			]
+			hide_dependency_lines: true
+			id: "763A8D151E82F962"
+			rewards: [
+				{
+					id: "41254CBAA87D4654"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "357550A8064D3BA9"
+					item: {
+						count: 1
+						id: "createaddition:copper_spool"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "1EABB99BF84165CD"
+					item: {
+						count: 1
+						id: "createaddition:copper_spool"
+					}
+					type: "item"
+				}
+			]
+			x: 29.03d
+			y: 3.9d
+		}
+		{
+			dependencies: [
+				"3D18216C0DC91D67"
+				"3371D99BDCDED5AC"
+				"722BD515250F1E67"
+				"763A8D151E82F962"
+			]
+			hide_dependency_lines: true
+			id: "6E9F388055BE2E9B"
+			rewards: [
+				{
+					id: "1B9E80F9F86A5151"
+					type: "xp"
+					xp: 240
+				}
+				{
+					id: "2EB973E1CF195097"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "6DF10E0E9EEE7030"
+					item: {
+						count: 1
+						id: "createaddition:electric_motor"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "214612E46FE1D290"
+					item: {
+						count: 1
+						id: "createaddition:electric_motor"
+					}
+					type: "item"
+				}
+			]
+			x: 34.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6E9F388055BE2E9B"
+			]
+			id: "1700A4738A7B371C"
+			rewards: [
+				{
+					id: "00E5A810CA3BF7FC"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "66DBDF45808E8E1F"
+					item: {
+						count: 1
+						id: "createaddition:alternator"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "59789464CF5DED5A"
+					item: {
+						count: 1
+						id: "createaddition:alternator"
+					}
+					type: "item"
+				}
+			]
+			x: 35.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"6E9F388055BE2E9B"
+				"52314BB35786FF3A"
+			]
+			hide_dependency_lines: true
+			id: "027DCABF3223641D"
+			rewards: [
+				{
+					id: "77ECA97F51F01DE0"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "5F1564E2710C070B"
+					item: {
+						count: 1
+						id: "createaddition:electric_pump"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7C0356D2F6F789B9"
+					item: {
+						count: 1
+						id: "createaddition:electric_pump"
+					}
+					type: "item"
+				}
+			]
+			x: 32.8d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"243A46F42E06A78C"
+			]
+			id: "69751AD0E2419B9B"
+			rewards: [
+				{
+					id: "736ECA9577B14B1F"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "1B911D5F942BC50D"
+					item: {
+						count: 1
+						id: "createaddition:modular_accumulator"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "208FA2D6A9CDECAC"
+					item: {
+						count: 1
+						id: "createaddition:modular_accumulator"
+					}
+					type: "item"
+				}
+			]
+			x: 41.0d
+			y: -4.4d
+		}
+		{
+			dependencies: [
+				"6E9F388055BE2E9B"
+			]
+			id: "30B182214955D9F9"
+			rewards: [
+				{
+					id: "7F3CD303A042C527"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "5C1DFB0735710D93"
+					item: {
+						count: 1
+						id: "createaddition:portable_energy_interface"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "55701007B708DA19"
+					item: {
+						count: 1
+						id: "createaddition:portable_energy_interface"
+					}
+					type: "item"
+				}
+			]
+			x: 34.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"4CCBC62EA65800AD"
+			]
+			id: "243A46F42E06A78C"
+			rewards: [
+				{
+					id: "7EE7A880F3809AA0"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "544E868090B40197"
+					item: {
+						count: 1
+						id: "createaddition:electrum_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "31B8D1295ADF4B80"
+					item: {
+						count: 1
+						id: "createaddition:electrum_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 41.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"6E9F388055BE2E9B"
+			]
+			id: "4CCBC62EA65800AD"
+			rewards: [
+				{
+					id: "69013E657009EB8B"
+					type: "xp"
+					xp: 320
+				}
+				{
+					id: "72EDF9D60C6C247F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "43E35D399A75A715"
+					item: {
+						count: 1
+						id: "createaddition:tesla_coil"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.25d
+			tasks: [
+				{
+					id: "65E38F69E2F575F5"
+					item: {
+						count: 1
+						id: "createaddition:tesla_coil"
+					}
+					type: "item"
+				}
+			]
+			x: 41.0d
+			y: 0.0d
+		}
+	]
+}

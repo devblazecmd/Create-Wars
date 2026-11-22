@@ -8,7 +8,7 @@
 	}
 	id: "233471EFD5752016"
 	images: [ ]
-	order_index: 21
+	order_index: 22
 	quest_links: [ ]
 	quests: [
 		{
@@ -752,6 +752,8 @@
 		{
 			dependencies: [
 				"77F672E923133118"
+				"7D263B17652C8ACD"
+				"1644ECEFAD7DDC5C"
 			]
 			id: "6965B2C1A9D2D96A"
 			rewards: [

@@ -8,7 +8,7 @@
 	}
 	id: "028624C5F728E0F5"
 	images: [ ]
-	order_index: 8
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{
@@ -757,6 +757,7 @@
 		{
 			dependencies: [
 				"5B0AB69264381253"
+				"1644ECEFAD7DDC5C"
 			]
 			id: "7D6935F4DE704537"
 			rewards: [
@@ -796,6 +797,7 @@
 		{
 			dependencies: [
 				"7D6935F4DE704537"
+				"1644ECEFAD7DDC5C"
 			]
 			id: "1A0135C606EB0E16"
 			rewards: [
@@ -865,6 +867,7 @@
 			dependencies: [
 				"7D6935F4DE704537"
 				"3BD47489393A7320"
+				"363A6F521A378478"
 			]
 			id: "29652E2BA6AE13B3"
 			rewards: [
@@ -905,6 +908,7 @@
 			dependencies: [
 				"29652E2BA6AE13B3"
 				"0E100C9DE8E82065"
+				"29AF5124A7AE7006"
 			]
 			id: "01417E6752358717"
 			rewards: [

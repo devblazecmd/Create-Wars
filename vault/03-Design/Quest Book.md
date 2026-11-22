@@ -353,3 +353,12 @@ No unit tests exist for a quest book. Verification is layered:
   Andesite Casing hub (they need casing). Rail: Train Casing moved to the first hub. Generator gained `hidden_deps`
   (dependency without a drawn line) and `main_deps` (replace a main-line dependency). Advanced Component no longer
   requires the Waystone (owner). 519 quests.
+- 2026-11-22: **Copper Expansion** (owner: "we need copper expansion"). New Expansions chapter, unlocked by Andesite Age
+  Complete: copper sheets/casing, fluids (drain, hose pulley, pipes, pump, valve, smart pipe, tanks incl. Create Connected
+  fluid vessel and Dragons Plus fragile tank/fluid hatch), steam engine boiler + whistle, then Crafts and Additions
+  electricity (rolling mill, rods, wire, spools, connectors, capacitor, alternator, electric motor/pump, energy interface,
+  Tesla Coil finale, electrum, accumulator). Brass-needing parts visible but locked. `COPPER_DEPS` makes 23 quests in
+  other chapters that use copper/fluid parts require the matching Copper quest. 24 chapters, 549 quests.
+- 2026-11-22: **Nuclear Age moved to the Ages tab** (owner kept moving it in game; the generator's `group` overwrote it on
+  every sync). In-game edits to the book never stick: change `build_quests.py` instead.
+- 2026-11-22: Owner confirmed: Advanced Component does **not** require the Waystone.

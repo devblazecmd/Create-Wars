@@ -345,4 +345,7 @@ this tells you *why*, in prose, per pack version.
   quests; recipe-order fixes (audit: 0 left); 109 descriptions rewritten; Artillery/Infantry brass parts locked behind the
   Brass Age. Defend Your Home and Automation XP confirmed as intended challenge tiers. 519 quests, clean boot, 0 failed
   recipes.
+- **Copper Expansion, Nuclear Age tab (2026-11-22):** new Copper Expansion chapter (fluids, steam, Crafts and Additions
+  electricity; 30 quests); copper/fluid parts used elsewhere now require it. Nuclear Age now sits in the Ages tab. 24 chapters,
+  549 quests, clean boot.
 

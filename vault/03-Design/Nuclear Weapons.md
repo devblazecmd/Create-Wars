@@ -28,7 +28,7 @@ Script: `pack/kubejs/server_scripts/nuclear_weapons.js`.
 - **H-Bomb** (mod recipe): 3 Mk.II shells, 4 end crystals, 2 nether stars.
 - Nether stars along the way: the enriching campfire's soul soil, the reactor controller, and one per nuke.
   The Wither is the real gate.
-- Quests: Warfare chapter **"Nuclear Age"** (renamed from "Nuclear" 2026-11-22, owner) (unlocked by Industrial Age steel). Its finale is the H-Bomb, which
+- Quests: **Ages** tab chapter **"Nuclear Age"** (moved from Warfare 2026-11-22, owner) (renamed from "Nuclear" 2026-11-22, owner) (unlocked by Industrial Age steel). Its finale is the H-Bomb, which
   gives 30 levels and 2 War Trophy rolls.
 
 ## Decisions log
