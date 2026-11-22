@@ -30,6 +30,11 @@ player auto-update with packwiz on each start/launch.
 - NeoForge: 21.1.267 is the newest 1.21.1 build. Newer NeoForge (26.1.x) is a different Minecraft version, and Create,
   Aeronautics, Big Cannons, Sable, TFMG, Create Nuclear and Radars have no builds past 1.21.1 (checked 2026-11-22).
 
+## Players without Prism (owner, 2026-11-22: "no prism")
+`packwiz curseforge export` -> CurseForge app import works: 15 CurseForge mods via manifest (the official app can download
+Simulated Missiles), 118 Modrinth mods + config/kubejs/shaderpacks as overrides, 275 MB, NeoForge 21.1.267. No auto-update
+(re-import per change). `packwiz modrinth export` fails on the missiles mod (manual download).
+
 ## Open questions
 - Which host (startup-command support decides whether `start.sh` can run automatically).
 - First real multiplayer test: claims vs cannons, Lootr per-player chests, Ultimine in claims, nuke lag, Ambush waves.

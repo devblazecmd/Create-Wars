@@ -28,6 +28,15 @@ Every restart pulls the latest pack from GitHub, so a fix pushed to `main` reach
 5. Auto-updates: UltraServers only runs a script like `start.sh` if support sets it up. Open a ticket asking them to set
    the startup command to `sh start.sh` (from this folder) in the server root. Until then, updates are a re-upload.
 
+## Each player (CurseForge app) - no Prism needed
+Build the zip (from `pack/`): `packwiz curseforge export -o CreateWars-curseforge.zip`. It lists the CurseForge mods in
+its manifest (the app downloads them, including Simulated Missiles, which only third-party tools can't fetch) and bundles
+the Modrinth mods, configs, KubeJS scripts and the shader pack (~275 MB). Share it (Google Drive, Discord with Nitro...).
+1. Install the CurseForge app, open Minecraft, **Create Custom Profile -> Import**, pick the zip.
+2. Play. In the profile's settings, set memory to 6-8 GB.
+No auto-update: after pack changes, build a new zip and everyone imports it again (worlds live on the server, so nothing
+is lost). A Modrinth app `.mrpack` doesn't work: packwiz can't include the missiles mod.
+
 ## Each player (Prism Launcher)
 1. Add Instance -> Minecraft **1.21.1**, loader **NeoForge 21.1.267**.
 2. Download `packwiz-installer-bootstrap.jar`
