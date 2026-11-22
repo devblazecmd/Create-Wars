@@ -426,6 +426,45 @@
 			dependencies: [
 				"4DB1904CB77CFEAE"
 			]
+			id: "49B7B6103781F910"
+			rewards: [
+				{
+					id: "602A3126D3D577CD"
+					type: "xp"
+					xp: 240
+				}
+				{
+					count: 1
+					id: "6873B24205FA5FC6"
+					item: {
+						count: 1
+						id: "minecraft:totem_of_undying"
+					}
+					type: "item"
+				}
+			]
+			tags: [
+				"ambush:trigger:createwars:quest_raiding_party"
+			]
+			tasks: [
+				{
+					id: "60BC6DA45C425357"
+					type: "checkmark"
+				}
+				{
+					entity: "minecraft:pillager"
+					id: "3896734AFF6F8F5E"
+					type: "kill"
+					value: 6L
+				}
+			]
+			x: 29.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"4DB1904CB77CFEAE"
+			]
 			id: "5AFAAE84D66D6BA3"
 			rewards: [
 				{

@@ -30,7 +30,7 @@ hash = "9edf4e5ef020af81667aea3b3ba1ec360c782a90d21ba447b0135b70b4679673"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/automation.snbt"
-hash = "598aa9ab1ff4920e8a7812e3534d8a055c25f200406d76801df745434723bf88"
+hash = "9febb07e1fa4747dfbe1cfebf7cd15a6afdfe1c6ed7da5f4e465ce92e6b27f49"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/brass_and_precision.snbt"
@@ -50,7 +50,7 @@ hash = "fe014219b61facdb31b75426fe75b818a2f7cdaa45f64f72928fb73ee2a6063d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/enemy.snbt"
-hash = "4b4f921b8f2232e23b4bf28d1285a6bad20ef6e77e370f5e13150b659fe06629"
+hash = "e09be1f309c6395f120fad6b50b6079e8d171394ede4c82d0e84cb9ce9d5813d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/food.snbt"
@@ -106,7 +106,7 @@ hash = "59e6f33cb9b5b2593319a35b8e70e99d32e8834c38f7206fa7ec59de1f16c4d9"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "1f1bf6a61ba3dcc81d01a1991e4c2366f9a4a1622d40d7de6f0282d2e5939b45"
+hash = "dc3cddb08bef90cfb164dd0348ed72eb3b59a76307337b8db9aac68696964bff"
 
 [[files]]
 file = "config/improvedmobs/client.toml"
@@ -141,6 +141,58 @@ file = "kubejs/client_scripts/.gitkeep"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
+file = "kubejs/data/cbcmoreshells/README.md"
+hash = "4e0da477421ae79a467e248eddf267789e9115156a646aab888916ab3ca8b876"
+
+[[files]]
+file = "kubejs/data/cbcmoreshells/loot_table/blocks/airdropped_shrapnel_torpedo.json"
+hash = "5a803b9f15b5a4e58c6fc6c74df4cf9b2417e81d326b759e6721f0f0d7b84ffd"
+
+[[files]]
+file = "kubejs/data/cbcmoreshells/loot_table/blocks/airdropped_torpedo.json"
+hash = "6f901e28d0e0637df3756bea7f60daac9696b2e3ec72befcd6697ac02a8a3aa9"
+
+[[files]]
+file = "kubejs/data/cbcmoreshells/loot_table/blocks/antiair_shrapnel_shell.json"
+hash = "b346d7951d7d121b0f81ffd1c7654be15fcb96ae7473f4dd0e7a921bf6ed97a6"
+
+[[files]]
+file = "kubejs/data/cbcmoreshells/loot_table/blocks/aphe_cannon_rocket.json"
+hash = "1b27f7dbaba748918406d8a2980566c1cb689fd24bc86e1b9cb527d8c3a638ae"
+
+[[files]]
+file = "kubejs/data/cbcmoreshells/loot_table/blocks/deepwater_shrapnel_torpedo.json"
+hash = "a8a3299c8dfaa4da07a13b043a7af830a2a3e823f5bcd9074373f76bb8a9701a"
+
+[[files]]
+file = "kubejs/data/cbcmoreshells/loot_table/blocks/he_cannon_rocket.json"
+hash = "ea12ebbc97954cd21fc275a0ccc491f223820e663b6886b5ed010f2bc237e912"
+
+[[files]]
+file = "kubejs/data/cbcmoreshells/loot_table/blocks/sharpnel_torpedo.json"
+hash = "9c859e6b2df3f15098d0eaf0c9f8886a085486a6ca72e4b2a366701354fdb7ae"
+
+[[files]]
+file = "kubejs/data/cbcmoreshells/loot_table/blocks/shelless_ap_shot.json"
+hash = "a4bcc78e54d38f37b484a5df71a4b164a3e4138230ce963cb8d023acdf42393f"
+
+[[files]]
+file = "kubejs/data/cbcmoreshells/loot_table/blocks/shelless_he_shell.json"
+hash = "8f1c1b49bac26cdd66bc7cd4b26c8dbc2fd12a0a4be3514e9c10630fe5d02aac"
+
+[[files]]
+file = "kubejs/data/cbcmoreshells/loot_table/blocks/shelless_incendiary_he_shell.json"
+hash = "44901fc2518dd9b46178986cec46820e196365f754dc074cedc77a803f709d10"
+
+[[files]]
+file = "kubejs/data/cbcmoreshells/loot_table/blocks/shelless_sap_shell.json"
+hash = "d194b56221756690aed380bf043c5bf9cb14ce36f28bd5cfb61d248340c00fe1"
+
+[[files]]
+file = "kubejs/data/createwars/ambushes/quest_raiding_party.json"
+hash = "c2e1445f32ab05b8e18fad9662cb75d6f23c625c5a3dd880b409f46abe2b0352"
+
+[[files]]
 file = "kubejs/server_scripts/.gitkeep"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
@@ -151,6 +203,10 @@ hash = "f5844850ca63241d691f8d12f7e7ad6c1dc748959902d8d935d7e3f8d8892d35"
 [[files]]
 file = "kubejs/server_scripts/blaze_burner_tiers.js"
 hash = "71059c1f475cd166f63b428a940f0a5eef516220fa6eeff3b7709e05e4cd74cd"
+
+[[files]]
+file = "kubejs/server_scripts/cbcmoreshells_fixes.js"
+hash = "1b78e148344fd9d84291a6894c29abb6e5176fd87af919c090614a662986a3f1"
 
 [[files]]
 file = "kubejs/server_scripts/diamond_compacting.js"

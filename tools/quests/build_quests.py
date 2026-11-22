@@ -38,10 +38,12 @@ def qid(*parts):
 # Content helpers
 # --------------------------------------------------------------------------------------------------
 def Q(slug, title, x, y, desc, tasks, deps=(), xp=10, items=(), subtitle=None, icon=None, shape=None,
-      size=None, optional=False, bonus=True):
+      size=None, optional=False, bonus=True, tags=()):
+    # tags: FTB Quests object tags (QuestObjectBase writes "tags" as a string list when non-empty).
+    # Used by AMBUSH: "ambush:trigger:<id>" starts that ambush when the quest is started.
     return dict(slug=slug, title=title, x=x, y=y, desc=desc, tasks=tasks, deps=list(deps), xp=xp,
                 items=list(items), subtitle=subtitle, icon=icon, shape=shape, size=size, optional=optional,
-                bonus=bonus)
+                bonus=bonus, tags=list(tags))
 
 
 def bonus_count(task_count):
@@ -1298,6 +1300,12 @@ CHAPTERS = [
             "&aPrepare:&r radar to see them coming (Radar chapter), anti-air guns, and an air-raid",
             "siren.",
         ], [CHECK], xp=50),
+        Q("raiding_party", "Raiding Party", 0, 0, [
+            "&cA test of your defenses.&r Click the checkmark when you're ready: an &6AMBUSH&r raiding",
+            "party of &cpillagers and vindicators&r attacks you on the spot. Kill the pillagers to win.",
+            "&aBuild walls and get your team together first.&r",
+        ], [CHECK, kill("minecraft:pillager", 6)], xp=60, items=[("minecraft:totem_of_undying", 1)],
+          tags=["ambush:trigger:createwars:quest_raiding_party"]),
         Q("nether", "Into the Nether", 0, 0, [
             "Thin air down here too (see Pollution and Air): bring a backtank.",
         ], [kill("minecraft:blaze", 10)], xp=30),
@@ -1662,6 +1670,22 @@ CHAPTERS = [
         Q("auto_xp", "Automate: Liquid Experience", 0, 0, [
             "Fill a &astack&r of Bucket o' Enchanting (16) from an automated setup.",
         ], [item("create_enchantment_industry:experience_bucket", STACK16)], xp=75),
+        # Food hub (owner 2026-11-21: "Yes, a Food hub")
+        Q("food_auto", "Food Automation", 0, 0, [
+            "Feed an army without lifting a knife. Make these with &amachines&r, not by hand.",
+        ], [CHECK], xp=20),
+        Q("auto_bread", "Automate: Bread", 0, 0, [
+            "Mill wheat into flour, mix flour and water into dough, then bake it with an encased fan",
+            "blowing through fire. Make a &astack&r.",
+        ], [item("minecraft:bread", STACK)], xp=40),
+        Q("auto_cabbage_leaf", "Automate: Cabbage Leaves", 0, 0, [
+            "Feed cabbages under a &aSlicer&r holding a knife (it runs cutting board recipes). Make a",
+            "&astack&r.",
+        ], [item("farmersdelight:cabbage_leaf", STACK)], xp=40),
+        Q("auto_soup", "Automate: Vegetable Soup", 0, 0, [
+            "Keep a cooking pot on a stove fed with funnels and pull the soup out. Make a &astack&r",
+            "(16).",
+        ], [item("farmersdelight:vegetable_soup", STACK16)], xp=50),
     ]),
 ]
 
@@ -1868,6 +1892,7 @@ LAYOUTS = {
               "skeleton": dict(top=["stray"], bottom=["bogged"]),
               "creeper": dict(top=["enderman"], bottom=["witch"]),
               "raiders": dict(top=["vindicator", "evoker"], bottom=["ravager"]),
+              "ambush": dict(top=["raiding_party"]),
               "nether": dict(top=["wither_skeleton", "ghast"], bottom=["piglin_brute"]),
               "wither": dict(top=["ender_dragon"], bottom=["elder_guardian", "warden"])},
         gate=None),
@@ -1903,14 +1928,16 @@ LAYOUTS = {
         # owner: separate bubbles, not a connected line. Top row = Ages tiers, bottom row = Expansions.
         connected=False,
         main=[("andesite_auto", 0, 2.0, 0), ("brass_auto", 10, 2.0, 0), ("industrial_auto", 20, 2.0, 0),
-              ("heat_auto", 0, 2.0, 11), ("quantum_auto", 10, 2.0, 11), ("enchanting_auto", 20, 2.0, 11)],
+              ("heat_auto", 0, 2.0, 11), ("quantum_auto", 10, 2.0, 11), ("enchanting_auto", 20, 2.0, 11),
+              ("food_auto", 30, 2.0, 0)],
         hubs={"andesite_auto": dict(top=["auto_cobble", "auto_gravel", "auto_alloy"],
                                     bottom=["auto_iron", "auto_sheets", "auto_kelp"]),
               "brass_auto": dict(top=["auto_brass", "auto_tubes", "auto_precision"], bottom=["crushing"]),
               "heat_auto": dict(top=["auto_cakes", "auto_diamond", "auto_netherite"], bottom=["auto_biofuel"]),
               "industrial_auto": dict(top=["auto_coke", "auto_steel"], bottom=["auto_gasoline"]),
               "quantum_auto": dict(top=["auto_telejuice"]),   # owner 2026-11-21: no quantum pearl automate
-              "enchanting_auto": dict(top=["auto_xp"])},
+              "enchanting_auto": dict(top=["auto_xp"]),
+              "food_auto": dict(top=["auto_bread", "auto_cabbage_leaf"], bottom=["auto_soup"])},
         chains={"crushing": ["auto_zinc"]},
         # each tier hub also needs progress in its own chapter (not drawn: other chapter)
         extra_deps={"andesite_auto": ["kinetics/casing"],
@@ -1918,7 +1945,8 @@ LAYOUTS = {
                     "heat_auto": ["heat/blaze_cake"],
                     "industrial_auto": ["industrial/steel"],
                     "quantum_auto": ["quantum/telejuice"],
-                    "enchanting_auto": ["enchanting/liquid_xp"]},
+                    "enchanting_auto": ["enchanting/liquid_xp"],
+                    "food_auto": ["food/slicer"]},
         gate=None),
 }
 ARCS = [(35, 145), (215, 325)]  # degrees; keeps satellites clear of the horizontal main line
@@ -2153,6 +2181,8 @@ def build():
                         r["count"] = bonus_count(count)
                     rewards.append(r)
             quest = {"id": id_, "x": float(q["x"]), "y": float(q["y"])}
+            if q["tags"]:
+                quest["tags"] = list(q["tags"])
             if q["shape"]:
                 quest["shape"] = q["shape"]
             if q["size"]:

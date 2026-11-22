@@ -880,6 +880,11 @@
 		"A &abrass sheet&r and &aandesite alloy&r. The business end of a Deployer."
 	]
 	"quest.2FC01DCFD815E793.title": "Brass Hand"
+	"quest.2FCB6C6C6877CFF3.quest_desc": [
+		"Feed cabbages under a &aSlicer&r holding a knife (it runs cutting board recipes). Make a"
+		"&astack&r."
+	]
+	"quest.2FCB6C6C6877CFF3.title": "Automate: Cabbage Leaves"
 	"quest.2FEB14F8B42244B0.quest_desc": [
 		"Hit their fireballs back."
 	]
@@ -1238,6 +1243,10 @@
 		"A boss that destroys blocks. Fight it far from your base."
 	]
 	"quest.4706D48B2397DBEB.title": "The Wither"
+	"quest.47BD23F65E10529D.quest_desc": [
+		"Feed an army without lifting a knife. Make these with &amachines&r, not by hand."
+	]
+	"quest.47BD23F65E10529D.title": "Food Automation"
 	"quest.47DAF49FAD3BD9FB.quest_desc": [
 		"Bread, patty, cabbage, tomato, onion."
 	]
@@ -1263,6 +1272,12 @@
 		"Desert zombies. They make you hungry."
 	]
 	"quest.48BD6C1FF6EEBB8E.title": "Husks"
+	"quest.49B7B6103781F910.quest_desc": [
+		"&cA test of your defenses.&r Click the checkmark when you're ready: an &6AMBUSH&r raiding"
+		"party of &cpillagers and vindicators&r attacks you on the spot. Kill the pillagers to win."
+		"&aBuild walls and get your team together first.&r"
+	]
+	"quest.49B7B6103781F910.title": "Raiding Party"
 	"quest.4A5F8E84D4A3E786.quest_desc": [
 		"Deny an area of sea."
 	]
@@ -1452,6 +1467,11 @@
 		"Break tall grass or wheat with a knife."
 	]
 	"quest.55133A80FE1B9D72.title": "Straw"
+	"quest.55D36CF33F3CCCBB.quest_desc": [
+		"Mill wheat into flour, mix flour and water into dough, then bake it with an encased fan"
+		"blowing through fire. Make a &astack&r."
+	]
+	"quest.55D36CF33F3CCCBB.title": "Automate: Bread"
 	"quest.5616C2CB21D1F5E0.quest_desc": [
 		"Goes off on contact. Put a fuze on a shell before loading it."
 	]
@@ -1783,6 +1803,11 @@
 		"keep moving."
 	]
 	"quest.6C3CFAF816C70C1A.title": "Armed and Dangerous"
+	"quest.6C99B713DE5C894D.quest_desc": [
+		"Keep a cooking pot on a stove fed with funnels and pull the soup out. Make a &astack&r"
+		"(16)."
+	]
+	"quest.6C99B713DE5C894D.title": "Automate: Vegetable Soup"
 	"quest.6CFFC5E6FB4D423C.quest_desc": [
 		"&eChanged in this pack:&r brewing Biofuel now needs a &6Superheated&r burner. Mix"
 		"&aSugar + Cinder Flour + 2 Biomass&r to make &a125 mB&r."

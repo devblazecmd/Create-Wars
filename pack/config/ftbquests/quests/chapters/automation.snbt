@@ -999,5 +999,152 @@
 			x: 20.0d
 			y: 8.4d
 		}
+		{
+			dependencies: [
+				"6117481665174663"
+			]
+			id: "47BD23F65E10529D"
+			rewards: [
+				{
+					id: "358C49FC9F798A18"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "5DEABAEE2D840989"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "1DDE9D18D39B61D5"
+					type: "checkmark"
+				}
+			]
+			x: 30.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"47BD23F65E10529D"
+			]
+			id: "55D36CF33F3CCCBB"
+			rewards: [
+				{
+					id: "67C411FCA8306BA8"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "7637B03A5862DDCF"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					count: 8
+					id: "413D0D1B8DBF598E"
+					item: {
+						count: 1
+						id: "minecraft:bread"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "6E3227E247B11EC7"
+					item: {
+						count: 1
+						id: "minecraft:bread"
+					}
+					type: "item"
+				}
+			]
+			x: 31.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"47BD23F65E10529D"
+			]
+			id: "2FCB6C6C6877CFF3"
+			rewards: [
+				{
+					id: "5571C2765E4F7C7A"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "22B708ACF932B58D"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					count: 8
+					id: "269E2E398886ADA8"
+					item: {
+						count: 1
+						id: "farmersdelight:cabbage_leaf"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "4BF0BAC259A7B0D5"
+					item: {
+						count: 1
+						id: "farmersdelight:cabbage_leaf"
+					}
+					type: "item"
+				}
+			]
+			x: 28.8d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"47BD23F65E10529D"
+			]
+			id: "6C99B713DE5C894D"
+			rewards: [
+				{
+					id: "5ECB0321D39EDC74"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "30D319BCC4637D3D"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					count: 2
+					id: "230D71AAA3EF445D"
+					item: {
+						count: 1
+						id: "farmersdelight:vegetable_soup"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "42E51BB5F6DABC67"
+					item: {
+						count: 1
+						id: "farmersdelight:vegetable_soup"
+					}
+					type: "item"
+				}
+			]
+			x: 30.0d
+			y: 2.6d
+		}
 	]
 }
