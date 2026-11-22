@@ -25,6 +25,8 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - [[CBC Firepower Components]] — compact cannon mounts for vehicles *(testing)*
 - [[CBC Ballistic Computer]] — trajectory calc + redstone-controlled artillery *(testing)*
 - [[Create The Air War|Create: The Air War]] — aircraft weapons for Aeronautics *(testing)*
+- [[Create Warnautics|Create: Warnautics]] — CBC bombs, MOAB, mines, C4, AIM-9, rocket pods; mod ID
+  `cbc_more_content` *(testing, added 2026-11-21)*
 
 ## Infantry / personal weapons
 - [[Create Gunsmithing|Create: Gunsmithing]] — steampunk guns crafted via Create machines *(testing)*
@@ -35,7 +37,10 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - [[Improved Mobs]] — mob gear/stat scaling, block breaking (dep: [[TenshiLib]]) *(testing)*
 - [[Enhanced AI]] — breaching creepers, mining zombies, sniping skeletons (dep: [[InsaneLib]]) *(testing,
   beta)*
-- Three mods all buff ranged/block-breaking mobs — needs a mob-balance design doc before release.
+- [[Create Aeronautics AMBUSH|Create Aeronautics: AMBUSH]] — ambushes, invasions and enemy airship/vehicle
+  fleets using Aeronautics + Big Cannons; natural airship spawns on by default *(testing, added 2026-11-21)*
+- Three mods all buff ranged/block-breaking mobs — needs a mob-balance design doc before release. AMBUSH
+  adds a fourth PvE threat source (enemy fleets), so it should be part of that doc.
 
 ## Vehicles
 - [[Synaxis]] — Sable control circuits/Lua/joints/actuators; also a crash fix for [[Shaolib]]
@@ -92,6 +97,24 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - **Storage direction decided 2026-11-20:** Sophisticated is the preferred storage family; Tom's stays as
   the networked terminal. Rejected for now: AE2, Refined Storage, Storage Drawers, Create Factory/Meta
   Logistics, Vibrant Vaults.
+- **Updated 2026-11-21 (owner):** the plan is for the pack to steer players onto **Tom's Simple Storage** as
+  *the* storage network. Sophisticated chests + tier upgrades fill the "chest upgrade" role (no separate
+  Iron Chests-style mod). For now this is enforced in the quest book only; Create package logistics and
+  the Sophisticated Controller still have recipes. See [[../03-Design/Quest Book|Quest Book]] decisions log.
+
+## Environment / pollution
+- [[Pollution of the Realms]] — pollution simulation: smog clouds, acid rain, oil spills, crop and health
+  damage (dep: [[ForgeEndertech]]) *(testing, added 2026-11-21)*
+- [[Create Smog|Create: Smog]] — Create machines for it: smokestacks, precipitator, air scrubbers, waste
+  treatment; runs on top of PoTR *(testing, added 2026-11-21)*
+- [[Thick Air]] — no breathable air below Y=0, above Y=128, or in the Nether/End; Create Backtank +
+  Diving Helmet works as an air supply (dep: [[Curios]]) *(testing, added 2026-11-21)*. Y=128 acts as an
+  aircraft altitude ceiling without oxygen gear.
+
+## Food
+- [[Farmer's Delight]] — crops, cutting board, cooking pot, meals and feasts *(testing, added 2026-11-21)*
+- [[Create Slice and Dice|Create: Slice & Dice]] — Slicer and Sprinkler that automate Farmer's Delight
+  (dep: [[Kotlin for Forge]]) *(testing, added 2026-11-21)*
 
 ## Automation / progression
 - [[Create Enchantment Industry|Create: Enchantment Industry]] — automated enchanting with liquid XP

@@ -17,7 +17,12 @@
 				{
 					id: "0907BE9ACE4410E2"
 					type: "xp"
-					xp: 10
+					xp: 40
+				}
+				{
+					id: "31EB6F2A5586770E"
+					type: "xp_levels"
+					xp_levels: 2
 				}
 			]
 			size: 2.0d
@@ -39,7 +44,7 @@
 				{
 					id: "378CB9094BD1D1D5"
 					type: "xp"
-					xp: 10
+					xp: 40
 				}
 				{
 					count: 8
@@ -69,7 +74,7 @@
 				{
 					id: "4051EDA38C196F0D"
 					type: "xp"
-					xp: 10
+					xp: 40
 				}
 				{
 					count: 16
@@ -99,7 +104,7 @@
 				{
 					id: "0F5EFD7C86304768"
 					type: "xp"
-					xp: 10
+					xp: 40
 				}
 			]
 			tasks: [
@@ -120,7 +125,7 @@
 				{
 					id: "73536B251F4E497D"
 					type: "xp"
-					xp: 10
+					xp: 40
 				}
 			]
 			tasks: [
@@ -141,7 +146,12 @@
 				{
 					id: "1C9D4BB4FBD67F64"
 					type: "xp"
-					xp: 20
+					xp: 80
+				}
+				{
+					id: "12C627A7A1F49908"
+					type: "xp_levels"
+					xp_levels: 5
 				}
 				{
 					count: 16

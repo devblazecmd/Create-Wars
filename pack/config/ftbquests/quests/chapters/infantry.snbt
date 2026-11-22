@@ -1,0 +1,1004 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "infantry"
+	group: "541CE08481D1C6C5"
+	icon: {
+		id: "cgs:revolver"
+	}
+	id: "028624C5F728E0F5"
+	images: [ ]
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"53C1D57D1C14787F"
+			]
+			id: "7647AA74DA277AB7"
+			rewards: [
+				{
+					id: "78EB3AE893DA9B77"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "595B3F5952EABDD2"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "16B8FC6A4C17B35C"
+					item: {
+						count: 1
+						id: "cgs:lead_ingot"
+					}
+					type: "item"
+				}
+			]
+			size: 1.25d
+			tasks: [
+				{
+					count: 8L
+					id: "00E76BF1AA8240C8"
+					item: {
+						count: 1
+						id: "cgs:lead_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7647AA74DA277AB7"
+			]
+			id: "4FF0B24C57E15BD3"
+			rewards: [
+				{
+					id: "552168B9CF6F8B02"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "2C7E15898084924B"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "59ACE28A943D8FD3"
+					item: {
+						count: 1
+						id: "cgs:flintlock"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "5B6893193F75B020"
+					item: {
+						count: 1
+						id: "cgs:flintlock"
+					}
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4FF0B24C57E15BD3"
+			]
+			id: "4E215730E6F0B136"
+			rewards: [
+				{
+					id: "317EA2DC4BDB7971"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "3E66C702A596573A"
+					item: {
+						count: 1
+						id: "cgs:paper_cartridge"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "18332FBA5CD6B6AB"
+					item: {
+						count: 1
+						id: "cgs:paper_cartridge"
+					}
+					type: "item"
+				}
+			]
+			x: 0.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"4FF0B24C57E15BD3"
+			]
+			id: "56DD42619431371D"
+			rewards: [
+				{
+					id: "7927CAB8F37AF9FB"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "494C9A87A84CD236"
+					item: {
+						count: 1
+						id: "cgs:flintlock_long_barrel"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0FC79EF8144D07CA"
+					item: {
+						count: 1
+						id: "cgs:flintlock_long_barrel"
+					}
+					type: "item"
+				}
+			]
+			x: -2.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"4FF0B24C57E15BD3"
+			]
+			id: "0DE91D880C27E0AF"
+			rewards: [
+				{
+					id: "57969C36EDBB5DAD"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "21DEF1F4BBDFCD3A"
+					item: {
+						count: 1
+						id: "cgs:stock"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "18ECD6AF79559C34"
+					item: {
+						count: 1
+						id: "cgs:stock"
+					}
+					type: "item"
+				}
+			]
+			x: -2.2d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"4FF0B24C57E15BD3"
+			]
+			id: "653667B88343242F"
+			rewards: [
+				{
+					id: "6B97201D3DA11F22"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "3A03F042ABB0ADD3"
+					item: {
+						count: 1
+						id: "cgs:bayonet"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6647196AD10095B7"
+					item: {
+						count: 1
+						id: "cgs:bayonet"
+					}
+					type: "item"
+				}
+			]
+			x: 0.2d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"4FF0B24C57E15BD3"
+			]
+			id: "2519832DF78B9EB9"
+			rewards: [
+				{
+					id: "055490BA48BD85D7"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "161B2105723FDD24"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "15B16059BBAD7C60"
+					item: {
+						count: 1
+						id: "cgs:steel_ingot"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					count: 4L
+					id: "4EA5EE5E7BF0D40F"
+					item: {
+						count: 1
+						id: "cgs:steel_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2519832DF78B9EB9"
+			]
+			id: "658C20D3D998E1FC"
+			rewards: [
+				{
+					id: "231B7758D480C626"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "37DFD5DA6C4DFD81"
+					item: {
+						count: 1
+						id: "cgs:charcoal_dust"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "5A90691DF3B7D03F"
+					item: {
+						count: 1
+						id: "cgs:charcoal_dust"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"2519832DF78B9EB9"
+			]
+			id: "0CC25CF336BC5A7A"
+			rewards: [
+				{
+					id: "5D30A2415AD23F96"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "6BCD0718428A2FFF"
+					item: {
+						count: 1
+						id: "cgs:steel_sheet"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "58D9A091BBD4A6F1"
+					item: {
+						count: 1
+						id: "cgs:steel_sheet"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"2519832DF78B9EB9"
+			]
+			id: "792CC832BC6F5671"
+			rewards: [
+				{
+					id: "7334E6A1E3C325B4"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "62A3BD9826B5E4A1"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "26EB6C4A9BDC52BA"
+					item: {
+						count: 1
+						id: "cgs:revolver"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "0BEAC558F495247A"
+					item: {
+						count: 1
+						id: "cgs:revolver"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"792CC832BC6F5671"
+			]
+			id: "77518E8FBF4A5EBF"
+			rewards: [
+				{
+					id: "2C73169B690D68A1"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "4190D69AD65F5DE7"
+					item: {
+						count: 1
+						id: "cgs:press_form_revolver"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7D5B4437BB205348"
+					item: {
+						count: 1
+						id: "cgs:press_form_revolver"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"77518E8FBF4A5EBF"
+			]
+			id: "763D4204A08B0422"
+			rewards: [
+				{
+					id: "403231959D4619B2"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "2F659584AD382170"
+					item: {
+						count: 1
+						id: "cgs:shell_revolver"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "53E00DC23B31F810"
+					item: {
+						count: 1
+						id: "cgs:shell_revolver"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: -4.4d
+		}
+		{
+			dependencies: [
+				"763D4204A08B0422"
+			]
+			id: "614588AD6D3684C0"
+			rewards: [
+				{
+					id: "7574FB4C274FE216"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 2
+					id: "571BD6E65EDB83D0"
+					item: {
+						count: 1
+						id: "cgs:round_revolver"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "31DE8A7E62FC49A2"
+					item: {
+						count: 1
+						id: "cgs:round_revolver"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: -6.2d
+		}
+		{
+			dependencies: [
+				"792CC832BC6F5671"
+			]
+			id: "2E6F6CB4B39FF8FE"
+			rewards: [
+				{
+					id: "1121DA9B3268F87B"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "27D7E90B5A523AD3"
+					item: {
+						count: 1
+						id: "cgs:scope"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "720A15C9192F177A"
+					item: {
+						count: 1
+						id: "cgs:scope"
+					}
+					type: "item"
+				}
+			]
+			x: 11.8d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"792CC832BC6F5671"
+			]
+			id: "7E06F1098287576C"
+			rewards: [
+				{
+					id: "1485A7D8B1F4280B"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "557E5994D43E68B5"
+					item: {
+						count: 1
+						id: "cgs:long_barrel"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "410F5A93AA085337"
+					item: {
+						count: 1
+						id: "cgs:long_barrel"
+					}
+					type: "item"
+				}
+			]
+			x: 14.2d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"792CC832BC6F5671"
+			]
+			id: "5F57791FE7C5E54E"
+			rewards: [
+				{
+					id: "7C86A33846F2E003"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "68B6812AA44ADC15"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "004E93631C86D90A"
+					item: {
+						count: 1
+						id: "cgs:shotgun"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "6052669F444C2174"
+					item: {
+						count: 1
+						id: "cgs:shotgun"
+					}
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5F57791FE7C5E54E"
+			]
+			id: "5B0A036B4AB20650"
+			rewards: [
+				{
+					id: "58797F46F347761F"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "62373594AC48D707"
+					item: {
+						count: 1
+						id: "cgs:press_form_shotgun"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3BBA2C919F5A4F0E"
+					item: {
+						count: 1
+						id: "cgs:press_form_shotgun"
+					}
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"5B0A036B4AB20650"
+			]
+			id: "01DB109F38C332AE"
+			rewards: [
+				{
+					id: "34AA948F65C56E07"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "46C9C95F2E147687"
+					item: {
+						count: 1
+						id: "cgs:shell_shotgun"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "657604E407EF89C5"
+					item: {
+						count: 1
+						id: "cgs:shell_shotgun"
+					}
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: -4.4d
+		}
+		{
+			dependencies: [
+				"01DB109F38C332AE"
+			]
+			id: "4B274D3E2316F111"
+			rewards: [
+				{
+					id: "2C6AD93018FAF188"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 2
+					id: "733B74F8666FC848"
+					item: {
+						count: 1
+						id: "cgs:round_shotgun"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "6203B402507496C1"
+					item: {
+						count: 1
+						id: "cgs:round_shotgun"
+					}
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: -6.2d
+		}
+		{
+			dependencies: [
+				"5F57791FE7C5E54E"
+			]
+			id: "5B0AB69264381253"
+			rewards: [
+				{
+					id: "048328D95CEF3BC0"
+					type: "xp"
+					xp: 240
+				}
+				{
+					id: "39C33042BB4D0928"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "60E209CC7BA91BF0"
+					item: {
+						count: 1
+						id: "cgs:gatling"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "4880796610E5AB51"
+					item: {
+						count: 1
+						id: "cgs:gatling"
+					}
+					type: "item"
+				}
+			]
+			x: 27.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5B0AB69264381253"
+			]
+			id: "463608773F5CEE47"
+			rewards: [
+				{
+					id: "6331953E59BA532A"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "1D1482ABF4AC578A"
+					item: {
+						count: 1
+						id: "cgs:round_gatling"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "1BEA0AB8CBEAF566"
+					item: {
+						count: 1
+						id: "cgs:round_gatling"
+					}
+					type: "item"
+				}
+			]
+			x: 27.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"5B0AB69264381253"
+			]
+			id: "7D6935F4DE704537"
+			rewards: [
+				{
+					id: "5A39650A04ECDF5D"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "3EF8D6D3B4DAF5A7"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "622CE33C0B7E5664"
+					item: {
+						count: 1
+						id: "cgs:launcher"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "77EBD4DB16F8B082"
+					item: {
+						count: 1
+						id: "cgs:launcher"
+					}
+					type: "item"
+				}
+			]
+			x: 34.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7D6935F4DE704537"
+			]
+			id: "1A0135C606EB0E16"
+			rewards: [
+				{
+					id: "1168D547D9D4507E"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "74FFB4D03037FE27"
+					item: {
+						count: 1
+						id: "cgs:rocket"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "2CFC7AE8265F7C8B"
+					item: {
+						count: 1
+						id: "cgs:rocket"
+					}
+					type: "item"
+				}
+			]
+			x: 34.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"7D6935F4DE704537"
+			]
+			id: "779A31FF93D9F4FD"
+			rewards: [
+				{
+					id: "6A7BEF02814FA56F"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "221265E2A15C8737"
+					item: {
+						count: 1
+						id: "cgs:frag_grenade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "44DF3CAD54601C44"
+					item: {
+						count: 1
+						id: "cgs:frag_grenade"
+					}
+					type: "item"
+				}
+			]
+			x: 34.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"7D6935F4DE704537"
+			]
+			id: "29652E2BA6AE13B3"
+			rewards: [
+				{
+					id: "3D98E2AACDEDE2A0"
+					type: "xp"
+					xp: 240
+				}
+				{
+					id: "24416FD6F5DDB9D6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "7A3E68A6B2F55819"
+					item: {
+						count: 1
+						id: "cgs:blazegun"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "53E1F9DD94E06FED"
+					item: {
+						count: 1
+						id: "cgs:blazegun"
+					}
+					type: "item"
+				}
+			]
+			x: 41.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"29652E2BA6AE13B3"
+			]
+			id: "01417E6752358717"
+			rewards: [
+				{
+					id: "7E890988D9F4024A"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "7E43B6B22F2243B1"
+					item: {
+						count: 1
+						id: "cgs:nailgun"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "160FC7214DC9AA52"
+					item: {
+						count: 1
+						id: "cgs:nailgun"
+					}
+					type: "item"
+				}
+			]
+			x: 41.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"01417E6752358717"
+			]
+			id: "170A73A299563CC2"
+			rewards: [
+				{
+					id: "7D3899E1C3BCCF35"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 4
+					id: "0010706E752410A7"
+					item: {
+						count: 1
+						id: "cgs:nail"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "62081128AE21FBB3"
+					item: {
+						count: 1
+						id: "cgs:nail"
+					}
+					type: "item"
+				}
+			]
+			x: 41.0d
+			y: -4.4d
+		}
+		{
+			dependencies: [
+				"29652E2BA6AE13B3"
+			]
+			id: "222C59BD86688FD7"
+			rewards: [
+				{
+					id: "11C1FC71ED9A7FE0"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "0C4A949DC40864E5"
+					item: {
+						count: 1
+						id: "cgs:ballistazooka"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "01E91A3040BD68B4"
+					item: {
+						count: 1
+						id: "cgs:ballistazooka"
+					}
+					type: "item"
+				}
+			]
+			x: 41.0d
+			y: 2.6d
+		}
+	]
+}

@@ -42,7 +42,20 @@ section, and the remaining chapters were built in the hub-and-spoke style.
 | **Expansions** | Heat Expansion | Brass Age Complete | 9 |
 | | Quantum Expansion (Teleporters + Quantum items + waystones) | Brass Age Complete | 23 |
 | | Enchanting Expansion (Create: Enchantment Industry) | Brass Age Complete | 11 |
-| **Automation** | Automation: one hub per tier (Andesite, Brass, Heat, Industrial, Quantum, Enchanting) | Andesite Casing; each later hub also needs its chapter's key quest | 26 |
+| **Infrastructure** | Food (Farmer's Delight, Create: Slice & Dice) | Welcome | 28 |
+| | Storage (Sophisticated Backpacks, Sophisticated chests + tier upgrades, Create Item Vault, Tom's Simple Storage network) | Welcome | 25 |
+| | Pollution and Air (Create: Smog machines + Thick Air oxygen gear) | Welcome (Smog machines also need Andesite Alloy / Casing / Brass / Brass Casing / Precision) | 28 |
+| **Warfare** | Artillery (CBC + Firepower Components + Ballistic Computer) | Andesite Age Complete | 36 |
+| | Infantry (Create: Gunsmithing) | Andesite Age Complete | 28 |
+| | Radar and Missiles (Create: Radars + Fire Arc Filter + CBC Aeronautics Missiles) | Brass Age Complete + Artillery's Cannon Mount | 25 |
+| | Aeronautics (Create Aeronautics, Sable/Simulated, Air War, CBC bombs, Synaxis) | Brass Age Complete | 35 |
+| | Naval (Create: High Seas, Deep Seas, CBC torpedoes) | Brass Age Complete | 27 |
+| | Rail Warfare (Create trains, Steam 'n' Rails, Who Touched My Train, Locometal) | Brass Age Complete | 17 |
+| | Armored Vehicles (Offroad, Bits 'n' Tracks, RHA, Armored Constructs) | Brass Age Complete | 17 |
+| | Drones (Droneworks, Air War FPV) | Brass Age Complete | 12 |
+| | Know Your Enemy (Improved Mobs, Enhanced AI, Trigger Mobs, AMBUSH; kill tasks on vanilla mobs) | Welcome | 24 |
+| | Demolitions (Create: Warnautics bombs, mines, C4, missiles) | Artillery's High Explosive Shell (medium bomb also needs Impact Fuze + Mechanical Crafter; AIM-9 needs Proximity Fuze) | 23 |
+| **Automation** | Automation: one hub per tier (Andesite, Brass, Heat, Industrial, Quantum, Enchanting) | Andesite Casing; each later hub also needs its chapter's key quest | 25 |
 
 - Ages and expansions are **guidance**: each quest is "make this machine/material", following real
   recipe order (read from the jars). Andesite Age Complete / Brass Age Complete gate on key machines.
@@ -100,6 +113,9 @@ Ordered roughly by progression. Each chapter is a node graph of quests with depe
   quest whose description states the recipe.
 - **Rewards:** XP plus materials only. No gear, vehicles or anything that skips a tier. No currency, no
   loot crates.
+- **XP (owner, 2026-11-21: "even higher and feel better overall"):** XP points ×4 on every quest
+  (`XP_SCALE`), plus whole **levels** on milestones: main-line hub +2, automate quest +3, chapter finale +5,
+  Age Complete +10 (`levels_for` in the generator). Whole book: 35,200 XP points + 301 levels.
 - **Bonus rewards (owner, 2026-11-21):** every quest with item tasks also rewards a little of what it
   asked for: about ⅛ of the task amount, min 1, max 8 (generator `bonus_count`, per task; `bonus=False`
   on a quest turns it off). Exception to the v1 "no blaze cakes/diamonds as rewards" rule: the bonus
@@ -195,6 +211,10 @@ No unit tests exist for a quest book. Verification is layered:
 - [ ] The owner has completed the first and last quest of every chapter in a test world.
 
 ## Open questions
+1. **Three steel ingots:** `createbigcannons:steel_ingot`, `tfmg:steel_ingot` and `cgs:steel_ingot` all
+   exist. Recipes using the `c:ingots/steel` tag accept any of them, but CBC casting, TFMG's blast
+   furnace and Gunsmithing's mixing each make their own. Unify with KubeJS (e.g. hide two and add
+   conversions), or leave them?
 1. **Warfare chapters:** still the flat draft list; settle before authoring them.
 
 ## Decisions log
@@ -265,3 +285,41 @@ No unit tests exist for a quest book. Verification is layered:
   non-renewable) to Heat Automation. Netherite recipe checked: vanilla 4 scrap + 4 gold (shapeless)
   plus debris smelting/blasting are present and untouched by any mod or script. Automatable with fan
   bulk blasting (lava) + Mechanical Crafters.
+- 2026-11-21: Automation chapter tiers are now **separate bubbles** (owner): no line or dependency between
+  tier hubs, laid out 2×3 (top: Andesite, Brass, Industrial; bottom: Heat, Quantum, Enchanting). Each tier
+  hub is unlocked only by its own chapter's key quest (kinetics/casing, brass_and_precision/brass_casing,
+  industrial/steel, heat/blaze_cake, quantum/telejuice, enchanting/liquid_xp). Layout engine: `connected=False`
+  plus optional y on main entries; duplicate dependencies are dropped.
+- 2026-11-21: **Warfare section** (owner: "expand into the other mods ... like weapons and radar"):
+  Artillery, Infantry, Radar & Missiles in the hub-and-spoke style, from the jars' recipes. Cast CBC
+  parts (barrels, breeches) have no crafting recipe (CBC casts them), so those quests point to the
+  Ponder. 11 chapters, 226 quests. Still to do in Warfare: Aeronautics, Naval, Rail, Armored, Drones.
+- 2026-11-21: Warfare finished: Aeronautics, Naval, Rail Warfare, Armored Vehicles, Drones. Item IDs all
+  verified; for parts whose recipes weren't read, quest text describes function and points to JEI and
+  the Ponder rather than guessing ingredients. XP raised (×4 points + level rewards). Boot-tested:
+  `Loaded 6 chapter groups, 16 chapters, 334 quests`, 706 translations, no warnings, no file rewrites.
+- 2026-11-21: **Infrastructure section** (owner: "add a food mod then do an infrastructure tab with
+  food and storage"): added Farmer's Delight + Create: Slice & Dice; new Food and Storage chapters,
+  unlocked from Welcome, recipe order read from the jars. Slicer/Packager also need Andesite Casing,
+  Item Vault needs Iron Sheets (cross-chapter deps). Chapter renamed "Radar and Missiles" (a bare `&`
+  breaks FTB text; see [[../02-Bugs/Quest titles break on ampersand]]). 18 chapters, 393 quests.
+- 2026-11-21: Removed **Automate: Quantum Pearls** (owner: "dont really need quantum pearls automated"). Quantum
+  Automation keeps Automate: Telejuice only. 392 quests.
+- 2026-11-21: **Storage chapter v2** (owner): Tom's Simple Storage is *the* storage network. Dropped
+  Create package logistics (Packager, Stock Ticker, Frogport and the rest), Fluid Tank and PSI, and the
+  Sophisticated Controller/Link/I/O from the quests. **Quests only**: their recipes still work (owner
+  chose not to disable them). Chest upgrade mod = Sophisticated Storage's chests + tier upgrades (copper ->
+  netherite); no new mod added. Main line: Backpack -> Sophisticated Chest -> Chest Tier Upgrades -> Item
+  Vault -> Inventory Connector -> Storage Terminal -> Crafting Terminal. 25 quests; book 386.
+- 2026-11-21: **Demolitions chapter** (owner: "add those to the quests", meaning Warnautics). One chapter
+  instead of splitting it across Aeronautics and Naval. Main line: Packed Guncotton -> Small Bomb -> Medium Bomb
+  -> Large Bomb -> C4 -> Cruise Missile -> MOAB. Recipe order from the jar. Owner kept AIM-9, rocket pods
+  and the cruise missile (they're quested), so they're not removed like the Air War launchers. 409 quests.
+- 2026-11-21: **Pollution and Air** (Infrastructure) and **Know Your Enemy** (Warfare) chapters (owner: "then we
+  need pollution and mobs quests"). Generator gained **kill tasks** (`kill(entity, n)`; format from
+  `KillTask.writeData`: `entity` string + `value` long). `check_quest_refs.py` now also validates entity IDs
+  (`entity.*` lang keys). Mob mods add no new mob types, so the kill tasks use vanilla mobs. Both
+  respirators are quested with distinct titles (Air Respirator = Thick Air, Smog Respirator = Smog). PoTR's
+  tools are not quested (disabled). 21 chapters, 460 quests.
+- Possible later: AMBUSH's FTB Quests hook (quest tag `ambush:trigger:<id>` starts an ambush when the quest
+  starts; tagged tasks can be auto-completed). Not used yet; needs specific ambush IDs and testing.

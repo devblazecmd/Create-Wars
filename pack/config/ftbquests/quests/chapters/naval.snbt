@@ -1,0 +1,974 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "naval"
+	group: "541CE08481D1C6C5"
+	icon: {
+		id: "create_submarine:ballast_tank"
+	}
+	id: "51F1033527079020"
+	images: [ ]
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"4C20D3C1C2FAB4CF"
+			]
+			id: "54A10483D0EE3E7F"
+			rewards: [
+				{
+					id: "72845B4306C911F1"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "42287B858D90726C"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "49CBF6B331AC07CA"
+					item: {
+						count: 1
+						id: "create_high_seas:rudder"
+					}
+					type: "item"
+				}
+			]
+			size: 1.25d
+			tasks: [
+				{
+					id: "6A6FA89D77B4F618"
+					item: {
+						count: 1
+						id: "create_high_seas:rudder"
+					}
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"54A10483D0EE3E7F"
+			]
+			id: "598BE4ADE1531AFA"
+			rewards: [
+				{
+					id: "64D10E1CB662B525"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "64D27A02C6A667C3"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "29F0315EA6F83F99"
+					item: {
+						count: 1
+						id: "create_high_seas:boat_engine"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "1B09539BF1D5B9D2"
+					item: {
+						count: 1
+						id: "create_high_seas:boat_engine"
+					}
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"598BE4ADE1531AFA"
+			]
+			id: "0D6FAA54E3DC19FA"
+			rewards: [
+				{
+					id: "23D872893199489E"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "2ADA24E24633668F"
+					item: {
+						count: 1
+						id: "create_high_seas:anchor"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "397DE4DA60E21185"
+					item: {
+						count: 1
+						id: "create_high_seas:anchor"
+					}
+					type: "item"
+				}
+			]
+			x: 0.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"598BE4ADE1531AFA"
+			]
+			id: "6BB4725031FEA927"
+			rewards: [
+				{
+					id: "65F64D9C7BDEFDEE"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "722CDF0C539E7E5F"
+					item: {
+						count: 1
+						id: "create_high_seas:buoy"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4AB6782C31BA3BD8"
+					item: {
+						count: 1
+						id: "create_high_seas:buoy"
+					}
+					type: "item"
+				}
+			]
+			x: -2.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"598BE4ADE1531AFA"
+			]
+			id: "66447527701EAC29"
+			rewards: [
+				{
+					id: "03E5143D016E5754"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "7FC2B1A55E186739"
+					item: {
+						count: 1
+						id: "create_high_seas:wind_vane"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3C5983B5A02002A8"
+					item: {
+						count: 1
+						id: "create_high_seas:wind_vane"
+					}
+					type: "item"
+				}
+			]
+			x: -2.2d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"598BE4ADE1531AFA"
+			]
+			id: "515DC0FA59FD5614"
+			rewards: [
+				{
+					id: "5AAD820E94054745"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "1D88C0A0EE65BC53"
+					item: {
+						count: 1
+						id: "create_high_seas:oar_of_boat"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5E2A7FD34E3D1E54"
+					item: {
+						count: 1
+						id: "create_high_seas:oar_of_boat"
+					}
+					type: "item"
+				}
+			]
+			x: 0.2d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"598BE4ADE1531AFA"
+			]
+			id: "6A815378A5DE98C6"
+			rewards: [
+				{
+					id: "75A3FF27699EFEE1"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "20376BE7CC6A6873"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "59C47F9C4356A85D"
+					item: {
+						count: 1
+						id: "create_submarine:ballast_tank"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "5D9AA8E9A7768208"
+					item: {
+						count: 1
+						id: "create_submarine:ballast_tank"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6A815378A5DE98C6"
+			]
+			id: "2FA74C71CCB3010E"
+			rewards: [
+				{
+					id: "7ACFC5581C5628C6"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "1CA96E41D8963ACD"
+					item: {
+						count: 1
+						id: "create_submarine:ballast_vent"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4762B040BF68BB7E"
+					item: {
+						count: 1
+						id: "create_submarine:ballast_vent"
+					}
+					type: "item"
+				}
+			]
+			x: 7.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"6A815378A5DE98C6"
+			]
+			id: "390997AC21E3AFB3"
+			rewards: [
+				{
+					id: "03270DE8A097A641"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "6411A007443D5BF7"
+					item: {
+						count: 1
+						id: "create_submarine:floater"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "39BD0420BD705DB8"
+					item: {
+						count: 1
+						id: "create_submarine:floater"
+					}
+					type: "item"
+				}
+			]
+			x: 4.8d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"6A815378A5DE98C6"
+			]
+			id: "681D7475EC18C5EA"
+			rewards: [
+				{
+					id: "122055716923B758"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "0E376D2C63B8A233"
+					item: {
+						count: 1
+						id: "create_submarine:submarine_propeller"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5DD7D12447D830FF"
+					item: {
+						count: 1
+						id: "create_submarine:submarine_propeller"
+					}
+					type: "item"
+				}
+			]
+			x: 4.8d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"6A815378A5DE98C6"
+			]
+			id: "59C4C64E295DD12D"
+			rewards: [
+				{
+					id: "3884DAF480EE3968"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "00AF8E1FA4D27B71"
+					item: {
+						count: 1
+						id: "create_submarine:water_thruster"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7D657085AAD11AB5"
+					item: {
+						count: 1
+						id: "create_submarine:water_thruster"
+					}
+					type: "item"
+				}
+			]
+			x: 7.2d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"6A815378A5DE98C6"
+			]
+			id: "77F9BCF4792E9119"
+			rewards: [
+				{
+					id: "59FAEBC6AE223D05"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "345C3E6CCF3BD6E0"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "10028D3AE8F17B22"
+					item: {
+						count: 1
+						id: "create_submarine:electrolyzer"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "4034DBD4FC92B644"
+					item: {
+						count: 1
+						id: "create_submarine:electrolyzer"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"77F9BCF4792E9119"
+			]
+			id: "1738721036346250"
+			rewards: [
+				{
+					id: "0A85CD4CE8690064"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "779312FB31C80929"
+					item: {
+						count: 1
+						id: "create_submarine:oxygene_diffuser"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "62A42D22AAB08325"
+					item: {
+						count: 1
+						id: "create_submarine:oxygene_diffuser"
+					}
+					type: "item"
+				}
+			]
+			x: 14.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"77F9BCF4792E9119"
+			]
+			id: "2BFAFF067189BF14"
+			rewards: [
+				{
+					id: "751AAF4F49D1DF6F"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "3F0B661A3F31DAD6"
+					item: {
+						count: 1
+						id: "create_submarine:decompression_chamber"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1C49E4B31D972C0C"
+					item: {
+						count: 1
+						id: "create_submarine:decompression_chamber"
+					}
+					type: "item"
+				}
+			]
+			x: 11.8d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"77F9BCF4792E9119"
+			]
+			id: "10EEAA6ABB049773"
+			rewards: [
+				{
+					id: "10803502CD891214"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "7BBA2FC217E31DF8"
+					item: {
+						count: 1
+						id: "create_submarine:diving_chestplate"
+					}
+					type: "item"
+				}
+				{
+					id: "54DF8AB8B54362E0"
+					item: {
+						count: 1
+						id: "create_submarine:diving_leggings"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "63834EC697C26F11"
+					item: {
+						count: 1
+						id: "create_submarine:diving_chestplate"
+					}
+					type: "item"
+				}
+				{
+					id: "7E2F40EC26B60050"
+					item: {
+						count: 1
+						id: "create_submarine:diving_leggings"
+					}
+					type: "item"
+				}
+			]
+			x: 11.8d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"77F9BCF4792E9119"
+			]
+			id: "666707D21D56B27F"
+			rewards: [
+				{
+					id: "2F4C37100D2FCAE8"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "0666F90A1A885DD9"
+					item: {
+						count: 1
+						id: "create_submarine:pressure_goggles"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6C5058A3015F9320"
+					item: {
+						count: 1
+						id: "create_submarine:pressure_goggles"
+					}
+					type: "item"
+				}
+			]
+			x: 14.2d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"77F9BCF4792E9119"
+			]
+			id: "5BC063A06F708BDE"
+			rewards: [
+				{
+					id: "022FCBE36A5B5969"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "078B4FEC8A7C1506"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "23738CD6E1A6C14F"
+					item: {
+						count: 1
+						id: "create_submarine:command_sub"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "7D91A6BAEDCF0239"
+					item: {
+						count: 1
+						id: "create_submarine:command_sub"
+					}
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5BC063A06F708BDE"
+			]
+			id: "5459DE3C6BCF979E"
+			rewards: [
+				{
+					id: "0E466DA30FC1B2C5"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "06ABB3FDA1BA1F16"
+					item: {
+						count: 1
+						id: "create_submarine:sonar"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2BF41057C248C1BC"
+					item: {
+						count: 1
+						id: "create_submarine:sonar"
+					}
+					type: "item"
+				}
+			]
+			x: 21.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"5BC063A06F708BDE"
+			]
+			id: "78B7A9898E0C4DA1"
+			rewards: [
+				{
+					id: "025C4280E994FD13"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "324387636C449B69"
+					item: {
+						count: 1
+						id: "create_submarine:barometer"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "565AEC736078FD5F"
+					item: {
+						count: 1
+						id: "create_submarine:barometer"
+					}
+					type: "item"
+				}
+			]
+			x: 18.8d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"5BC063A06F708BDE"
+			]
+			id: "06FB04B9C71307E7"
+			rewards: [
+				{
+					id: "17500C67BB29EE98"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "6AE63AB851E899CE"
+					item: {
+						count: 1
+						id: "create_submarine:industrial_alarm"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "68E496446D0C11BB"
+					item: {
+						count: 1
+						id: "create_submarine:industrial_alarm"
+					}
+					type: "item"
+				}
+			]
+			x: 18.8d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"5BC063A06F708BDE"
+			]
+			id: "7298096382EF849F"
+			rewards: [
+				{
+					id: "4242A0A2BD90BC17"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "714816F93B5A56EB"
+					item: {
+						count: 1
+						id: "create_submarine:pump_controller"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0E321E3A6B90CE06"
+					item: {
+						count: 1
+						id: "create_submarine:pump_controller"
+					}
+					type: "item"
+				}
+			]
+			x: 21.2d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"5BC063A06F708BDE"
+			]
+			id: "74CFBB049C996D12"
+			rewards: [
+				{
+					id: "5DEE2CB98248C301"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "455F038E833C10B6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "7E322424B4B0FF64"
+					item: {
+						count: 1
+						id: "cbcmoreshells:primary_torpedo"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "498B5F4555938787"
+					item: {
+						count: 1
+						id: "cbcmoreshells:primary_torpedo"
+					}
+					type: "item"
+				}
+			]
+			x: 27.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"74CFBB049C996D12"
+			]
+			id: "7FB9FCEB172EFC2A"
+			rewards: [
+				{
+					id: "4662BC27C5BC6E64"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "5A223E29FF91E1F3"
+					item: {
+						count: 1
+						id: "cbcmoreshells:torpedo_head"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "55C07BF4978CEBC8"
+					item: {
+						count: 1
+						id: "cbcmoreshells:torpedo_head"
+					}
+					type: "item"
+				}
+			]
+			x: 28.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"74CFBB049C996D12"
+			]
+			id: "1A4FD9D28FD574FC"
+			rewards: [
+				{
+					id: "2C9C138A1362EEE2"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "21A615E39B500D93"
+					item: {
+						count: 1
+						id: "cbcmoreshells:steel_torpedo_tube_chamber"
+					}
+					type: "item"
+				}
+				{
+					id: "6723D32E9F544D57"
+					item: {
+						count: 1
+						id: "cbcmoreshells:steel_torpedo_tube_barrel"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4D7C5DD0D34278E2"
+					item: {
+						count: 1
+						id: "cbcmoreshells:steel_torpedo_tube_chamber"
+					}
+					type: "item"
+				}
+				{
+					id: "63B47C25F230D3B0"
+					item: {
+						count: 1
+						id: "cbcmoreshells:steel_torpedo_tube_barrel"
+					}
+					type: "item"
+				}
+			]
+			x: 25.8d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"74CFBB049C996D12"
+			]
+			id: "7B58D6CB05D0188E"
+			rewards: [
+				{
+					id: "48EF0580E1C7D4FB"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "3E4BB156E39D28A6"
+					item: {
+						count: 1
+						id: "cbcmoreshells:depth_charge"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "781A4AFAA871A4BD"
+					item: {
+						count: 1
+						id: "cbcmoreshells:depth_charge"
+					}
+					type: "item"
+				}
+			]
+			x: 25.45d
+			y: 2.09d
+		}
+		{
+			dependencies: [
+				"74CFBB049C996D12"
+			]
+			id: "4A5F8E84D4A3E786"
+			rewards: [
+				{
+					id: "059E6A301A20BB60"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "57702CBC884067C4"
+					item: {
+						count: 1
+						id: "create_submarine:underwater_mine"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7B48182257E49583"
+					item: {
+						count: 1
+						id: "create_submarine:underwater_mine"
+					}
+					type: "item"
+				}
+			]
+			x: 27.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"74CFBB049C996D12"
+			]
+			id: "0ACD3C38CCC47073"
+			rewards: [
+				{
+					id: "7F8276FFE4F547DF"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "64A65861E13605BD"
+					item: {
+						count: 1
+						id: "cbcmoreshells:torpedo_detection_device"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7E43AC56F026F42C"
+					item: {
+						count: 1
+						id: "cbcmoreshells:torpedo_detection_device"
+					}
+					type: "item"
+				}
+			]
+			x: 28.55d
+			y: 2.09d
+		}
+	]
+}

@@ -1,0 +1,620 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "armored"
+	group: "541CE08481D1C6C5"
+	icon: {
+		id: "bits_n_tracks:tank_tread"
+	}
+	id: "41740B86D8A8BC3E"
+	images: [ ]
+	order_index: 13
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"4C20D3C1C2FAB4CF"
+			]
+			id: "71AA12F89FADBAA6"
+			rewards: [
+				{
+					id: "18734C4BFD329AFA"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "5127F8D1D6D3134B"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "58B6E9BA80D17270"
+					item: {
+						count: 1
+						id: "offroad:wheel_mount"
+					}
+					type: "item"
+				}
+			]
+			size: 1.25d
+			tasks: [
+				{
+					count: 4L
+					id: "5E2C1825C519EBDD"
+					item: {
+						count: 1
+						id: "offroad:wheel_mount"
+					}
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"71AA12F89FADBAA6"
+			]
+			id: "7AB9FC5B547B2BA9"
+			rewards: [
+				{
+					id: "098161105666A815"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "679CB31FEE0B6E6B"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "27BD142C68D4978F"
+					item: {
+						count: 1
+						id: "offroad:tire"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					count: 4L
+					id: "1B13278DC7F51A7E"
+					item: {
+						count: 1
+						id: "offroad:tire"
+					}
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7AB9FC5B547B2BA9"
+			]
+			id: "09ACA9567831BCFF"
+			rewards: [
+				{
+					id: "5678FC7C75E54C50"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "1BCDE7AD9D2F801F"
+					item: {
+						count: 1
+						id: "offroad:small_tire"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "377E4E5074F82C78"
+					item: {
+						count: 1
+						id: "offroad:small_tire"
+					}
+					type: "item"
+				}
+			]
+			x: 0.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"7AB9FC5B547B2BA9"
+			]
+			id: "3527520056C4B53A"
+			rewards: [
+				{
+					id: "19373F05A30304A5"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "38B62255AAFE8F68"
+					item: {
+						count: 1
+						id: "offroad:large_tire"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "5529C9157D9DD85B"
+					item: {
+						count: 1
+						id: "offroad:large_tire"
+					}
+					type: "item"
+				}
+			]
+			x: -2.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"7AB9FC5B547B2BA9"
+			]
+			id: "0E7AAD972EAEA28F"
+			rewards: [
+				{
+					id: "46707814207F6B3C"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "61D8ABBAE505D893"
+					item: {
+						count: 1
+						id: "offroad:monstrous_tire"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "6FECA1300F145970"
+					item: {
+						count: 1
+						id: "offroad:monstrous_tire"
+					}
+					type: "item"
+				}
+			]
+			x: -2.2d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"7AB9FC5B547B2BA9"
+			]
+			id: "2F7B3CC7044ABB69"
+			rewards: [
+				{
+					id: "4C83AA0AFDF31648"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "58015C1169B71CA0"
+					item: {
+						count: 1
+						id: "offroad:rockcutting_wheel"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "75A3A203E9DC6A42"
+					item: {
+						count: 1
+						id: "offroad:rockcutting_wheel"
+					}
+					type: "item"
+				}
+			]
+			x: 0.2d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"7AB9FC5B547B2BA9"
+			]
+			id: "4EB5ADD78C50BDC2"
+			rewards: [
+				{
+					id: "0C1CF303BC4B0B5D"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "172219FD5219814D"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					count: 2
+					id: "0CA909754223F999"
+					item: {
+						count: 1
+						id: "bits_n_tracks:tank_tread"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					count: 16L
+					id: "219127169D3A7FCA"
+					item: {
+						count: 1
+						id: "bits_n_tracks:tank_tread"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4EB5ADD78C50BDC2"
+			]
+			id: "03B65E923ACB37ED"
+			rewards: [
+				{
+					id: "317CE8A6CDEB8415"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "1163D96DABD76F42"
+					item: {
+						count: 1
+						id: "bits_n_tracks:grouser"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "3CB5B6E0AB845A87"
+					item: {
+						count: 1
+						id: "bits_n_tracks:grouser"
+					}
+					type: "item"
+				}
+			]
+			x: 7.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"4EB5ADD78C50BDC2"
+			]
+			id: "026989985A23357E"
+			rewards: [
+				{
+					id: "2A178BC8DE96D704"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "5F0F32FA7F50AD80"
+					item: {
+						count: 1
+						id: "bits_n_tracks:suspension_piece"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "716EAD3520806944"
+					item: {
+						count: 1
+						id: "bits_n_tracks:suspension_piece"
+					}
+					type: "item"
+				}
+			]
+			x: 4.8d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"4EB5ADD78C50BDC2"
+			]
+			id: "7B036FB0C0449878"
+			rewards: [
+				{
+					id: "7487971F9F7AC4E0"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "3C061BA84292D851"
+					item: {
+						count: 1
+						id: "bits_n_tracks:industrial_belt"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "0D395E9588CD70DC"
+					item: {
+						count: 1
+						id: "bits_n_tracks:industrial_belt"
+					}
+					type: "item"
+				}
+			]
+			x: 4.8d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"4EB5ADD78C50BDC2"
+			]
+			id: "73638BEF242FD8D0"
+			rewards: [
+				{
+					id: "18B6299AEEDECD6E"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "2AE213CC3832047F"
+					item: {
+						count: 1
+						id: "bits_n_tracks:flanged_cogwheel"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "2E0BE83FA6C1A6BC"
+					item: {
+						count: 1
+						id: "bits_n_tracks:flanged_cogwheel"
+					}
+					type: "item"
+				}
+			]
+			x: 7.2d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"4EB5ADD78C50BDC2"
+			]
+			id: "36AAE0F95A2E1194"
+			rewards: [
+				{
+					id: "2351AD2A657A3614"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "1CD426EAE492180E"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					count: 2
+					id: "68AFEB2B430AB03D"
+					item: {
+						count: 1
+						id: "rha:hardsteelolive"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					count: 16L
+					id: "025936944EBC0F1B"
+					item: {
+						count: 1
+						id: "rha:hardsteelolive"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"36AAE0F95A2E1194"
+			]
+			id: "377AA8FD1BA2A3FC"
+			rewards: [
+				{
+					id: "51A4CDDBC4E3567D"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "2FDBCAFBB1D0F51D"
+					item: {
+						count: 1
+						id: "rha:hatcholive"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2E30F0FEB689B653"
+					item: {
+						count: 1
+						id: "rha:hatcholive"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"36AAE0F95A2E1194"
+			]
+			id: "5E4C130E5B208860"
+			rewards: [
+				{
+					id: "6CFF153F03F49EAD"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "2A707DF47FBEAF87"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "1E1632A29356C331"
+					item: {
+						count: 1
+						id: "arcon:arcon_cannon_barrel"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "5541223FACD5FFF8"
+					item: {
+						count: 1
+						id: "arcon:arcon_cannon_barrel"
+					}
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5E4C130E5B208860"
+			]
+			id: "2461493636AB9AC8"
+			rewards: [
+				{
+					id: "6531CB7AE19C1402"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "25006210CCD35EBF"
+					item: {
+						count: 1
+						id: "arcon:arcon_cannon_muzzle"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2B0AF9F6D6865FB3"
+					item: {
+						count: 1
+						id: "arcon:arcon_cannon_muzzle"
+					}
+					type: "item"
+				}
+			]
+			x: 21.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"5E4C130E5B208860"
+			]
+			id: "14F99FFA53D598FD"
+			rewards: [
+				{
+					id: "3AE602859162868E"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "0401430E501DD7B9"
+					item: {
+						count: 1
+						id: "arcon:arcon_barrel_section"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0806239C4F4A8E03"
+					item: {
+						count: 1
+						id: "arcon:arcon_barrel_section"
+					}
+					type: "item"
+				}
+			]
+			x: 18.8d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"5E4C130E5B208860"
+			]
+			id: "4F0949D1FAB33BD1"
+			rewards: [
+				{
+					id: "1985161E0FA28D9F"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "43B2082F740CFE14"
+					item: {
+						count: 1
+						id: "arcon:bops"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "2433AB42E79D067E"
+					item: {
+						count: 1
+						id: "arcon:bops"
+					}
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: 2.6d
+		}
+	]
+}

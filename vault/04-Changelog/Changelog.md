@@ -270,3 +270,35 @@ this tells you *why*, in prose, per pack version.
   8 chapters, 137 quests, 0 unknown item IDs.
 - **Netherite scrap from crushing (2026-11-21):** Create crushing of Nether Bricks → 2 bricks + 2% Netherite
   Scrap (renewable netherite). See [[../03-Design/Netherite Scrap Crushing]]. Automate: Netherite quest updated.
+- **Quest book: Warfare section (2026-11-21):** Artillery (36), Infantry (28), Radar & Missiles (25)
+  chapters. 11 chapters, 226 quests, 0 unknown IDs.
+- **Quest book: Warfare complete + XP boost (2026-11-21):** Aeronautics, Naval, Rail Warfare, Armored
+  Vehicles, Drones chapters; XP ×4 plus level rewards on milestones. 16 chapters, 334 quests, clean boot.
+- **Food mod + Infrastructure quests (2026-11-21):** added [[../01-Mods/Farmer's Delight|Farmer's Delight]],
+  [[../01-Mods/Create Slice and Dice|Create: Slice & Dice]] and [[../01-Mods/Kotlin for Forge|Kotlin for Forge]].
+  New Infrastructure section with Food (28) and Storage (31) chapters. 18 chapters, 393 quests, 0 unknown IDs.
+- **Fix (2026-11-21):** bare `&` in quest titles broke the Radar chapter name. See
+  [[../02-Bugs/Quest titles break on ampersand]].
+- **Quest book (2026-11-21):** removed Automate: Quantum Pearls (owner). 392 quests.
+- **Storage chapter v2 (2026-11-21):** Tom's Simple Storage is the pack's storage network; Sophisticated chests
+  + tier upgrades are the chest upgrades. Create logistics, Fluid Tank, PSI and Sophisticated Controller
+  removed from quests (recipes untouched). 386 quests.
+- **Improved Mobs HUD (2026-11-21):** difficulty overlay moved to the bottom-right corner (client config shipped in pack).
+- **Create Aeronautics: AMBUSH (2026-11-21):** added (v1.1.8). PvE encounter engine: ambushes, invasions, enemy
+  airship and vehicle fleets with Aeronautics + Big Cannons, natural airship spawns. Optional-dep ranges checked
+  against the pack; clean boot (205 definitions, 6 factions, 4 invasions). Default limits left alone, to tune
+  after playtesting. See [[../01-Mods/Create Aeronautics AMBUSH]].
+- **Create: Warnautics (2026-11-21):** added v1.1 from Modrinth (mod ID `cbc_more_content`). CBC aerial bombs (up to MOAB),
+  mines, C4, AIM-9, rocket pods, cruise missile. All required deps present; clean boot. Open: overlap with the
+  removed Air War launchers, and explosive griefing. See [[../01-Mods/Create Warnautics]].
+- **Quest book: Demolitions (2026-11-21):** new Warfare chapter for Create: Warnautics (23 quests). 19 chapters, 409 quests.
+- **Pollution (2026-11-21):** added [[../01-Mods/Pollution of the Realms|Pollution of the Realms]] (+ [[../01-Mods/ForgeEndertech|ForgeEndertech]])
+  and [[../01-Mods/Create Smog|Create: Smog]]. Dependency ranges checked against the pack. Boot OK; PoTR's TFMG coke oven and
+  blast furnace hooks fail ([[../02-Bugs/PoTR coremod misses TFMG coke oven and blast furnace]]). Balance (crop and health damage, which sources count) left at defaults until a playtest.
+- **Oxygen (2026-11-21):** added [[../01-Mods/Thick Air|Thick Air]] (+ [[../01-Mods/Curios|Curios]]). Air runs out below Y=0 and above
+  Y=128; Create Backtank + Diving Helmet, respirators and air bladders supply it. Boot test pending.
+- **Pollution model decided (2026-11-21):** keep PoTR; Create: Smog runs in `POTR` mode so Create machines clean PoTR's pollution.
+- **Create is the pollution standard (2026-11-21):** Smog set to `POTR_AND_BUILT_IN` (both models). PoTR's own tools
+  (filter frames, vacuum bags and tubes, respirators, aerometer) disabled via KubeJS. Thick Air boot-tested clean.
+- **Quest book: Pollution and Air + Know Your Enemy (2026-11-21):** kill-task support added. 21 chapters, 460 quests,
+  0 unknown item/entity IDs.

@@ -1,0 +1,437 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "drones"
+	group: "541CE08481D1C6C5"
+	icon: {
+		id: "droneworks:drone_core"
+	}
+	id: "18E7501046BDBB52"
+	images: [ ]
+	order_index: 14
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"4C20D3C1C2FAB4CF"
+			]
+			id: "7723D422C390F52B"
+			rewards: [
+				{
+					id: "2E53CA263EE8A420"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "507DD0AEA10F5A96"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "1477F45982593555"
+					item: {
+						count: 1
+						id: "droneworks:drone_core"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "57B97DDA0449FE52"
+					item: {
+						count: 1
+						id: "droneworks:drone_core"
+					}
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7723D422C390F52B"
+			]
+			id: "7391A72D1E941C14"
+			rewards: [
+				{
+					id: "1F14E7255568FC0E"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "59A63630D6EB7688"
+					item: {
+						count: 1
+						id: "droneworks:drone_blade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "069F16B5CF4AB3E7"
+					item: {
+						count: 1
+						id: "droneworks:drone_blade"
+					}
+					type: "item"
+				}
+			]
+			x: 0.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"7723D422C390F52B"
+			]
+			id: "669054B8698F5052"
+			rewards: [
+				{
+					id: "2A1FC73C57C31CCB"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "0A68E44715D68682"
+					item: {
+						count: 1
+						id: "droneworks:drone_propeller"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "7F609FD3AB26E549"
+					item: {
+						count: 1
+						id: "droneworks:drone_propeller"
+					}
+					type: "item"
+				}
+			]
+			x: -2.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"7723D422C390F52B"
+			]
+			id: "59C7A4B8DD096B55"
+			rewards: [
+				{
+					id: "5A1FAFE734C98878"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "5B6968AB9EA8EA9A"
+					item: {
+						count: 1
+						id: "droneworks:tilting_propeller_bearing"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1C5D93DC3EC05016"
+					item: {
+						count: 1
+						id: "droneworks:tilting_propeller_bearing"
+					}
+					type: "item"
+				}
+			]
+			x: -2.2d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"7723D422C390F52B"
+			]
+			id: "4D59F0C8C2DE0CB2"
+			rewards: [
+				{
+					id: "090971C9AAF08822"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "1D8406810C019F18"
+					item: {
+						count: 1
+						id: "droneworks:flap_bearing"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "476DC60B28B0931F"
+					item: {
+						count: 1
+						id: "droneworks:flap_bearing"
+					}
+					type: "item"
+				}
+			]
+			x: 0.2d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"7723D422C390F52B"
+			]
+			id: "252D8DF36E7599EE"
+			rewards: [
+				{
+					id: "49B5932EA1DAE8AE"
+					type: "xp"
+					xp: 140
+				}
+				{
+					id: "44993220008EBDAA"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "5689353D0110EDD9"
+					item: {
+						count: 1
+						id: "droneworks:drone_camera"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "4B717B1FC49D80E3"
+					item: {
+						count: 1
+						id: "droneworks:drone_camera"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"252D8DF36E7599EE"
+			]
+			id: "2C5821CD9043F72B"
+			rewards: [
+				{
+					id: "149E0B1F07CD91E2"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "0B1D2C821E4428F2"
+					item: {
+						count: 1
+						id: "droneworks:drone_hub"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0F2D0991F33D64B9"
+					item: {
+						count: 1
+						id: "droneworks:drone_hub"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"252D8DF36E7599EE"
+			]
+			id: "50822B0BBA2CD21E"
+			rewards: [
+				{
+					id: "0C5EB4D1C4B7FEBB"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "4D87387CB51AE02F"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "119EB0A663DDE0CB"
+					item: {
+						count: 1
+						id: "droneworks:drone_remote_control"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "595F45E52053DAE7"
+					item: {
+						count: 1
+						id: "droneworks:drone_remote_control"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"50822B0BBA2CD21E"
+			]
+			id: "244FA77672364CA5"
+			rewards: [
+				{
+					id: "391F4AB4FC7D38A3"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "78DB4BA924E18AC7"
+					item: {
+						count: 1
+						id: "droneworks:drone_controls"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5E44F36D011AA8C8"
+					item: {
+						count: 1
+						id: "droneworks:drone_controls"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"50822B0BBA2CD21E"
+			]
+			id: "3BABEFE16AC81C7F"
+			rewards: [
+				{
+					id: "332727C17B486E2F"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "2AD115744F910C6C"
+					item: {
+						count: 1
+						id: "droneworks:commander_seat"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2B1726DBC0C81072"
+					item: {
+						count: 1
+						id: "droneworks:commander_seat"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"50822B0BBA2CD21E"
+			]
+			id: "3A6991406BB1CE62"
+			rewards: [
+				{
+					id: "6BB51A377132EDBB"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "3DAA35167C5FF5F3"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "297C6FF76347CBF2"
+					item: {
+						count: 1
+						id: "create_the_air_wars:fpv_drone"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "03783A33681DB941"
+					item: {
+						count: 1
+						id: "create_the_air_wars:fpv_drone"
+					}
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3A6991406BB1CE62"
+			]
+			id: "459817C4038930C4"
+			rewards: [
+				{
+					id: "33D64575168D7F92"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "43AAD039A5EEF3E1"
+					item: {
+						count: 1
+						id: "create_the_air_wars:drone_controller"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "588A4BCE00022596"
+					item: {
+						count: 1
+						id: "create_the_air_wars:drone_controller"
+					}
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: -2.6d
+		}
+	]
+}

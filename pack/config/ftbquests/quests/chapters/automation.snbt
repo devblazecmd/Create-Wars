@@ -8,7 +8,7 @@
 	}
 	id: "7415700D4D0CE1C8"
 	images: [ ]
-	order_index: 7
+	order_index: 20
 	quest_links: [ ]
 	quests: [
 		{
@@ -20,7 +20,12 @@
 				{
 					id: "6461FF9F14EAB060"
 					type: "xp"
-					xp: 20
+					xp: 80
+				}
+				{
+					id: "4230A276079AEB12"
+					type: "xp_levels"
+					xp_levels: 2
 				}
 			]
 			size: 2.0d
@@ -42,7 +47,12 @@
 				{
 					id: "04E9C7749224CA17"
 					type: "xp"
-					xp: 30
+					xp: 120
+				}
+				{
+					id: "079620D017B8C910"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 				{
 					count: 8
@@ -77,7 +87,12 @@
 				{
 					id: "382F0DA2F436B256"
 					type: "xp"
-					xp: 30
+					xp: 120
+				}
+				{
+					id: "71395F6B7BB06514"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 				{
 					count: 8
@@ -112,7 +127,12 @@
 				{
 					id: "1832A9D94B266C9B"
 					type: "xp"
-					xp: 30
+					xp: 120
+				}
+				{
+					id: "54958A781E93FFF6"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 				{
 					count: 8
@@ -147,7 +167,12 @@
 				{
 					id: "12A492264F6A2F85"
 					type: "xp"
-					xp: 80
+					xp: 320
+				}
+				{
+					id: "59EC49422DDB0C41"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 				{
 					count: 8
@@ -217,7 +242,12 @@
 				{
 					id: "5574D812DE844729"
 					type: "xp"
-					xp: 40
+					xp: 160
+				}
+				{
+					id: "69046E5899E8E152"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 				{
 					count: 8
@@ -252,7 +282,12 @@
 				{
 					id: "002C9D5ECC708216"
 					type: "xp"
-					xp: 30
+					xp: 120
+				}
+				{
+					id: "1474039A6F60F7A4"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 				{
 					count: 8
@@ -280,7 +315,6 @@
 		}
 		{
 			dependencies: [
-				"386FB1A022BFF30E"
 				"3371D99BDCDED5AC"
 			]
 			id: "279E94C7E37D4A13"
@@ -288,7 +322,12 @@
 				{
 					id: "5D022CEED048435E"
 					type: "xp"
-					xp: 25
+					xp: 100
+				}
+				{
+					id: "323F9134E2883900"
+					type: "xp_levels"
+					xp_levels: 2
 				}
 			]
 			size: 2.0d
@@ -298,7 +337,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 8.0d
+			x: 10.0d
 			y: 0.0d
 		}
 		{
@@ -310,7 +349,12 @@
 				{
 					id: "407A424E58A9126F"
 					type: "xp"
-					xp: 40
+					xp: 160
+				}
+				{
+					id: "2FD0B3C404D1C935"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 				{
 					count: 8
@@ -333,7 +377,7 @@
 					type: "item"
 				}
 			]
-			x: 9.55d
+			x: 11.55d
 			y: -2.09d
 		}
 		{
@@ -345,7 +389,7 @@
 				{
 					id: "48DF664ECCB32B1D"
 					type: "xp"
-					xp: 20
+					xp: 80
 				}
 				{
 					id: "5A481A06580BA045"
@@ -367,7 +411,7 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
+			x: 10.0d
 			y: 2.6d
 		}
 		{
@@ -379,7 +423,12 @@
 				{
 					id: "42FA555FC123F527"
 					type: "xp"
-					xp: 40
+					xp: 160
+				}
+				{
+					id: "46B242268DF7DAFB"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 				{
 					count: 8
@@ -402,7 +451,7 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
+			x: 10.0d
 			y: 4.4d
 		}
 		{
@@ -414,7 +463,12 @@
 				{
 					id: "1767F6DE9809C204"
 					type: "xp"
-					xp: 40
+					xp: 160
+				}
+				{
+					id: "270120682AB97F6E"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 				{
 					id: "19A2AFF5326C4382"
@@ -436,7 +490,7 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
+			x: 10.0d
 			y: -2.6d
 		}
 		{
@@ -448,7 +502,12 @@
 				{
 					id: "7B4882E989815DC6"
 					type: "xp"
-					xp: 60
+					xp: 240
+				}
+				{
+					id: "779E936AB00741B2"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 				{
 					id: "31FA951B67151FC4"
@@ -470,12 +529,11 @@
 					type: "item"
 				}
 			]
-			x: 6.45d
+			x: 8.45d
 			y: -2.09d
 		}
 		{
 			dependencies: [
-				"279E94C7E37D4A13"
 				"76F59EFACD9DBDED"
 			]
 			id: "1BD0EA51B5612C64"
@@ -483,18 +541,23 @@
 				{
 					id: "6FE38E9799A3E53B"
 					type: "xp"
-					xp: 25
+					xp: 100
+				}
+				{
+					id: "051845FD52F8635A"
+					type: "xp_levels"
+					xp_levels: 2
 				}
 			]
-			size: 1.75d
+			size: 2.0d
 			tasks: [
 				{
 					id: "45B980B190E2A6C8"
 					type: "checkmark"
 				}
 			]
-			x: 15.0d
-			y: 0.0d
+			x: 0.0d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -505,7 +568,12 @@
 				{
 					id: "0D48802E0A26AC8D"
 					type: "xp"
-					xp: 50
+					xp: 200
+				}
+				{
+					id: "0B8FF7523DAEA3E2"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 				{
 					count: 8
@@ -528,8 +596,8 @@
 					type: "item"
 				}
 			]
-			x: 16.55d
-			y: -2.09d
+			x: 1.55d
+			y: 8.91d
 		}
 		{
 			dependencies: [
@@ -540,7 +608,12 @@
 				{
 					id: "7BA9D54CAEA1020C"
 					type: "xp"
-					xp: 100
+					xp: 400
+				}
+				{
+					id: "41EEBAA8D383A21C"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 				{
 					count: 8
@@ -563,8 +636,8 @@
 					type: "item"
 				}
 			]
-			x: 15.0d
-			y: -2.6d
+			x: 0.0d
+			y: 8.4d
 		}
 		{
 			dependencies: [
@@ -575,7 +648,12 @@
 				{
 					id: "79AFE77874137796"
 					type: "xp"
-					xp: 100
+					xp: 400
+				}
+				{
+					id: "0D7AC0C7057338E9"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 				{
 					id: "2643EF45918C57DA"
@@ -597,8 +675,8 @@
 					type: "item"
 				}
 			]
-			x: 13.45d
-			y: -2.09d
+			x: -1.55d
+			y: 8.91d
 		}
 		{
 			dependencies: [
@@ -609,7 +687,12 @@
 				{
 					id: "1E8CEA6E7B02152B"
 					type: "xp"
-					xp: 75
+					xp: 300
+				}
+				{
+					id: "1F43F054CFE5C13C"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 				{
 					count: 2
@@ -632,12 +715,11 @@
 					type: "item"
 				}
 			]
-			x: 15.0d
-			y: 2.6d
+			x: -0.0d
+			y: 13.6d
 		}
 		{
 			dependencies: [
-				"1BD0EA51B5612C64"
 				"5C326BE896F9406D"
 			]
 			id: "20B1AC5BF862EA1B"
@@ -645,17 +727,22 @@
 				{
 					id: "672270677B518941"
 					type: "xp"
-					xp: 30
+					xp: 120
+				}
+				{
+					id: "430F9612A66CB875"
+					type: "xp_levels"
+					xp_levels: 2
 				}
 			]
-			size: 1.75d
+			size: 2.0d
 			tasks: [
 				{
 					id: "388A9244FAEE2DC9"
 					type: "checkmark"
 				}
 			]
-			x: 22.0d
+			x: 20.0d
 			y: 0.0d
 		}
 		{
@@ -667,7 +754,12 @@
 				{
 					id: "3DDEB04FAC4765EA"
 					type: "xp"
-					xp: 50
+					xp: 200
+				}
+				{
+					id: "214BABA58349DFBB"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 				{
 					count: 8
@@ -690,7 +782,7 @@
 					type: "item"
 				}
 			]
-			x: 23.2d
+			x: 21.2d
 			y: -2.31d
 		}
 		{
@@ -702,7 +794,12 @@
 				{
 					id: "3A8063BF04A63E06"
 					type: "xp"
-					xp: 100
+					xp: 400
+				}
+				{
+					id: "2A076F43B6B7C4CA"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 				{
 					count: 8
@@ -725,7 +822,7 @@
 					type: "item"
 				}
 			]
-			x: 20.8d
+			x: 18.8d
 			y: -2.31d
 		}
 		{
@@ -737,7 +834,12 @@
 				{
 					id: "7E248B108B0A4AD8"
 					type: "xp"
-					xp: 100
+					xp: 400
+				}
+				{
+					id: "5512499EB0F5BC54"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 				{
 					count: 2
@@ -760,12 +862,11 @@
 					type: "item"
 				}
 			]
-			x: 22.0d
+			x: 20.0d
 			y: 2.6d
 		}
 		{
 			dependencies: [
-				"20B1AC5BF862EA1B"
 				"72BF8D911FA88129"
 			]
 			id: "0F1A32D940E5614D"
@@ -773,18 +874,23 @@
 				{
 					id: "01730024B78667EF"
 					type: "xp"
-					xp: 30
+					xp: 120
+				}
+				{
+					id: "578E8ACCDCFEA563"
+					type: "xp_levels"
+					xp_levels: 2
 				}
 			]
-			size: 1.75d
+			size: 2.0d
 			tasks: [
 				{
 					id: "76445940783807BA"
 					type: "checkmark"
 				}
 			]
-			x: 29.0d
-			y: 0.0d
+			x: 10.0d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -795,7 +901,12 @@
 				{
 					id: "3B02DD00F8388D81"
 					type: "xp"
-					xp: 75
+					xp: 300
+				}
+				{
+					id: "4260957E62C38BB9"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 				{
 					count: 2
@@ -818,47 +929,11 @@
 					type: "item"
 				}
 			]
-			x: 29.0d
-			y: -2.6d
+			x: 10.0d
+			y: 8.4d
 		}
 		{
 			dependencies: [
-				"0F1A32D940E5614D"
-			]
-			id: "63DA6FB61B0FE89C"
-			rewards: [
-				{
-					id: "6687D84784D4C6CE"
-					type: "xp"
-					xp: 60
-				}
-				{
-					count: 2
-					id: "7C249C63CB7F7E8A"
-					item: {
-						count: 1
-						id: "createwars:quantum_pearl"
-					}
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					count: 16L
-					id: "009D81FC99146868"
-					item: {
-						count: 1
-						id: "createwars:quantum_pearl"
-					}
-					type: "item"
-				}
-			]
-			x: 29.0d
-			y: 2.6d
-		}
-		{
-			dependencies: [
-				"0F1A32D940E5614D"
 				"7EF44200E09553BD"
 			]
 			id: "0C3E6CD025DD5F0B"
@@ -866,18 +941,23 @@
 				{
 					id: "12B260E19778CAD7"
 					type: "xp"
-					xp: 30
+					xp: 120
+				}
+				{
+					id: "20CDBCCD7672BF3B"
+					type: "xp_levels"
+					xp_levels: 2
 				}
 			]
-			size: 1.75d
+			size: 2.0d
 			tasks: [
 				{
 					id: "484EDC620712B655"
 					type: "checkmark"
 				}
 			]
-			x: 36.0d
-			y: 0.0d
+			x: 20.0d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -888,7 +968,12 @@
 				{
 					id: "7924F2B8DD7E949D"
 					type: "xp"
-					xp: 75
+					xp: 300
+				}
+				{
+					id: "153C6DB632D5D516"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 				{
 					count: 2
@@ -911,8 +996,8 @@
 					type: "item"
 				}
 			]
-			x: 36.0d
-			y: -2.6d
+			x: 20.0d
+			y: 8.4d
 		}
 	]
 }

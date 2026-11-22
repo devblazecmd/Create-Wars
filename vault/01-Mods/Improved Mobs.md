@@ -22,4 +22,6 @@ Added via `packwiz modrinth add improved-mobs` on 2026-11-20; resolved to `1.21.
 Block-breaking mobs vs. player bases: decide whether [[FTB Chunks]] claimed areas should be immune. All-Rights-Reserved license.
 
 ## Config decisions
-None yet.
+- 2026-11-21: Difficulty overlay (`Difficulty X.X` HUD text) moved from top-left to **bottom-right** (owner:
+  it clashed with the top-left of the screen). `pack/config/improvedmobs/client.toml`,
+  `"Difficulty location" = "BOTTOMRIGHT"`. Still shown; difficulty scaling itself unchanged.

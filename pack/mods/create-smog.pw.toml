@@ -1,0 +1,13 @@
+name = "Create: Smog"
+filename = "smog-0.5.0+mc1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/x6ANh9Im/versions/IuPaCzrH/smog-0.5.0%2Bmc1.21.1.jar"
+hash-format = "sha512"
+hash = "1484d809ba8de1e380488ccb0a7016d0b679be3d87b29a8168024e2ca4b6602a1912c2f94efd7b8c2620c0a446dc723b7f8f19dcddafd976549e28430417a068"
+
+[update]
+[update.modrinth]
+mod-id = "x6ANh9Im"
+version = "IuPaCzrH"

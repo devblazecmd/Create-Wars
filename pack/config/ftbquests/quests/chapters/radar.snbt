@@ -1,0 +1,920 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "radar"
+	group: "541CE08481D1C6C5"
+	icon: {
+		id: "create_radar:radar_dish_block"
+	}
+	id: "07C70A0BC14A9A52"
+	images: [ ]
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"4C20D3C1C2FAB4CF"
+				"438EF50C90497E4F"
+			]
+			id: "6A3136FC8C67D6A5"
+			rewards: [
+				{
+					id: "1823CB3D04B7F179"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "3366F0CF79CCE7CA"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "5094F1FF1727D108"
+					item: {
+						count: 1
+						id: "create_radar:binoculars"
+					}
+					type: "item"
+				}
+			]
+			size: 1.25d
+			tasks: [
+				{
+					id: "26053BB77FFB379D"
+					item: {
+						count: 1
+						id: "create_radar:binoculars"
+					}
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6A3136FC8C67D6A5"
+			]
+			id: "083D0860E2942759"
+			rewards: [
+				{
+					id: "266E68DE5AA1C80F"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "06AA738BBC8EA74D"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "7CC2162983207F2D"
+					item: {
+						count: 1
+						id: "create_radar:radar_bearing"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "0C4895FCB3070349"
+					item: {
+						count: 1
+						id: "create_radar:radar_bearing"
+					}
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"083D0860E2942759"
+			]
+			id: "0470831658F15E52"
+			rewards: [
+				{
+					id: "1F89EB0229DBC501"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "2675847DD4629C96"
+					item: {
+						count: 1
+						id: "create_radar:radar_dish_block"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "4000FEC40A14C829"
+					item: {
+						count: 1
+						id: "create_radar:radar_dish_block"
+					}
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"083D0860E2942759"
+			]
+			id: "62E99830472736C1"
+			rewards: [
+				{
+					id: "7CE4055332447CA0"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "2E265CE2A9A49040"
+					item: {
+						count: 1
+						id: "create_radar:radar_plate_block"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "1987C046C3402B53"
+					item: {
+						count: 1
+						id: "create_radar:radar_plate_block"
+					}
+					type: "item"
+				}
+			]
+			x: -2.2d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"083D0860E2942759"
+			]
+			id: "5A3BA4624706AB01"
+			rewards: [
+				{
+					id: "4B788C3E515954C2"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "14233FE028C2C052"
+					item: {
+						count: 1
+						id: "create_radar:radar_receiver_block"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "45770DFB14FE19DD"
+					item: {
+						count: 1
+						id: "create_radar:radar_receiver_block"
+					}
+					type: "item"
+				}
+			]
+			x: 0.2d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"083D0860E2942759"
+			]
+			id: "135D466BB447FEEE"
+			rewards: [
+				{
+					id: "316992C8B73AD594"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "69E40DD536CDE20C"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "06F3944C0405F91E"
+					item: {
+						count: 1
+						id: "create_radar:monitor"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "24639CA05F0932BF"
+					item: {
+						count: 1
+						id: "create_radar:monitor"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"135D466BB447FEEE"
+			]
+			id: "2CE2E4FBE8339897"
+			rewards: [
+				{
+					id: "7C8B0E2E7EDD85B1"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "6C271456A65E4E96"
+					item: {
+						count: 1
+						id: "create_radar:data_link"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "63C65E4B4D2F5707"
+					item: {
+						count: 1
+						id: "create_radar:data_link"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"135D466BB447FEEE"
+			]
+			id: "2E52F82D051E855F"
+			rewards: [
+				{
+					id: "37DC0A5F6324D9CD"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "7656B3BE266AF25F"
+					item: {
+						count: 1
+						id: "create_radar:radar_filter_item"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "49DA069FFD40888A"
+					item: {
+						count: 1
+						id: "create_radar:radar_filter_item"
+					}
+					type: "item"
+				}
+			]
+			x: 4.45d
+			y: 2.09d
+		}
+		{
+			dependencies: [
+				"135D466BB447FEEE"
+			]
+			id: "398902EC58D4FE30"
+			rewards: [
+				{
+					id: "0CDA6851818BF610"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "0604D2427185EE47"
+					item: {
+						count: 1
+						id: "create_radar:target_filter_item"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "42E37A551AFD72B5"
+					item: {
+						count: 1
+						id: "create_radar:target_filter_item"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"135D466BB447FEEE"
+			]
+			id: "4BF2549A5697EC75"
+			rewards: [
+				{
+					id: "2E379818384693DE"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "5A463C2EE95E717C"
+					item: {
+						count: 1
+						id: "create_radar:ident_filter_item"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1BA17A34DDA46151"
+					item: {
+						count: 1
+						id: "create_radar:ident_filter_item"
+					}
+					type: "item"
+				}
+			]
+			x: 7.55d
+			y: 2.09d
+		}
+		{
+			dependencies: [
+				"135D466BB447FEEE"
+			]
+			id: "38FD043F88311C72"
+			rewards: [
+				{
+					id: "2B21F74FED6F1D7A"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "27610D0BC24BEDDE"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					id: "1DC1BE06BC51BFDF"
+					item: {
+						count: 1
+						id: "create_radar:auto_yaw_controller"
+					}
+					type: "item"
+				}
+				{
+					id: "2EE1C2EBF3440312"
+					item: {
+						count: 1
+						id: "create_radar:auto_pitch_controller"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "7A1960C8FA696032"
+					item: {
+						count: 1
+						id: "create_radar:auto_yaw_controller"
+					}
+					type: "item"
+				}
+				{
+					id: "7361D7E486A80C66"
+					item: {
+						count: 1
+						id: "create_radar:auto_pitch_controller"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"38FD043F88311C72"
+			]
+			id: "39B7178398319DC1"
+			rewards: [
+				{
+					id: "3E710D4860519FAD"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "637AD672D9B3B4FD"
+					item: {
+						count: 1
+						id: "create_radar:fire_controller"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "10535252C3AE9C91"
+					item: {
+						count: 1
+						id: "create_radar:fire_controller"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"38FD043F88311C72"
+			]
+			id: "3B31101BA6D1CD75"
+			rewards: [
+				{
+					id: "7B2621EC096B967D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "67ED7F4FFE0E3AAE"
+					item: {
+						count: 1
+						id: "create_radar:guided_fuze"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "56C311E1D307C50D"
+					item: {
+						count: 1
+						id: "create_radar:guided_fuze"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"39B7178398319DC1"
+			]
+			id: "1AB2FB971E4C51CC"
+			rewards: [
+				{
+					id: "79C206B292B48898"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "4CC91F810543A625"
+					item: {
+						count: 1
+						id: "create_radar_firearc:yaw_fire_arc_filter"
+					}
+					type: "item"
+				}
+				{
+					id: "355A1B9F899F371F"
+					item: {
+						count: 1
+						id: "create_radar_firearc:pitch_fire_arc_filter"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1462741D88D7BA62"
+					item: {
+						count: 1
+						id: "create_radar_firearc:yaw_fire_arc_filter"
+					}
+					type: "item"
+				}
+				{
+					id: "436FD651E078AF56"
+					item: {
+						count: 1
+						id: "create_radar_firearc:pitch_fire_arc_filter"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: -4.4d
+		}
+		{
+			dependencies: [
+				"38FD043F88311C72"
+			]
+			id: "446D9B17AB7994FD"
+			rewards: [
+				{
+					id: "0E52B3A4ED578AF8"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "7A0F84FA0EB5ADEC"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "18781D4E3F628304"
+					item: {
+						count: 1
+						id: "create_radar:plane_radar"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "1EF1DDA137CC8ADA"
+					item: {
+						count: 1
+						id: "create_radar:plane_radar"
+					}
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"446D9B17AB7994FD"
+			]
+			id: "2DD644438104E15A"
+			rewards: [
+				{
+					id: "7DB899DE9A77D8C1"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "2E618857D4A8DF85"
+					item: {
+						count: 1
+						id: "create_radar:identification_transponder"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1A5EF0A78250C0C8"
+					item: {
+						count: 1
+						id: "create_radar:identification_transponder"
+					}
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"446D9B17AB7994FD"
+			]
+			id: "2F37EAD823F5C5A1"
+			rewards: [
+				{
+					id: "37E039169566ABA0"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "396E61283792B99E"
+					item: {
+						count: 1
+						id: "create_radar:network_filterer"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3BAFC09DF45EAB81"
+					item: {
+						count: 1
+						id: "create_radar:network_filterer"
+					}
+					type: "item"
+				}
+			]
+			x: 18.8d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"446D9B17AB7994FD"
+			]
+			id: "460F2822FC8D77BC"
+			rewards: [
+				{
+					id: "38F0F98D9D157190"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "1AF3CE4CB53B38A3"
+					item: {
+						count: 1
+						id: "create_radar:radar_safe_zone_designator"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0025818C33A68766"
+					item: {
+						count: 1
+						id: "create_radar:radar_safe_zone_designator"
+					}
+					type: "item"
+				}
+			]
+			x: 21.2d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"446D9B17AB7994FD"
+			]
+			id: "66C3EC98853BC5DF"
+			rewards: [
+				{
+					id: "434BE7D3FDC0625A"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "60274A3A7DD64654"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "1B50BCF6925915F0"
+					item: {
+						count: 1
+						id: "cbcaeronauticsmissiles:missile_mount"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "2EFD5C2E6A239F4C"
+					item: {
+						count: 1
+						id: "cbcaeronauticsmissiles:missile_mount"
+					}
+					type: "item"
+				}
+			]
+			x: 27.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"66C3EC98853BC5DF"
+			]
+			id: "0784C2E3B1ED63AB"
+			rewards: [
+				{
+					id: "757E4D890F8534D4"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "6AF1A259F03A7C72"
+					item: {
+						count: 1
+						id: "cbcaeronauticsmissiles:actuator_fins"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "7576C4DFBF0AD44E"
+					item: {
+						count: 1
+						id: "cbcaeronauticsmissiles:actuator_fins"
+					}
+					type: "item"
+				}
+			]
+			x: 27.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"0784C2E3B1ED63AB"
+			]
+			id: "381EFD6DCD13A8ED"
+			rewards: [
+				{
+					id: "7A49355115B0E611"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "6AA8001C1C30134F"
+					item: {
+						count: 1
+						id: "cbcaeronauticsmissiles:rocket_motor"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4F1B28842AE22E39"
+					item: {
+						count: 1
+						id: "cbcaeronauticsmissiles:rocket_motor"
+					}
+					type: "item"
+				}
+			]
+			x: 27.0d
+			y: -4.4d
+		}
+		{
+			dependencies: [
+				"66C3EC98853BC5DF"
+			]
+			id: "6DFA7706AC394262"
+			rewards: [
+				{
+					id: "520E36C68939E8FD"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "099EB798720CFAD3"
+					item: {
+						count: 1
+						id: "cbcaeronauticsmissiles:octagonal_copycat"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "6B99DEB63F3658DA"
+					item: {
+						count: 1
+						id: "cbcaeronauticsmissiles:octagonal_copycat"
+					}
+					type: "item"
+				}
+			]
+			x: 27.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"66C3EC98853BC5DF"
+			]
+			id: "628849AB04278591"
+			rewards: [
+				{
+					id: "287DD4A4B66D2CD4"
+					type: "xp"
+					xp: 240
+				}
+				{
+					id: "17479B8EDA502CA2"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "07FCBF5CD32AD952"
+					item: {
+						count: 1
+						id: "cbcaeronauticsmissiles:guidance_computer"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "174867FDACB2F62E"
+					item: {
+						count: 1
+						id: "cbcaeronauticsmissiles:guidance_computer"
+					}
+					type: "item"
+				}
+			]
+			x: 34.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"628849AB04278591"
+			]
+			id: "689AB4054B803CCE"
+			rewards: [
+				{
+					id: "54B13F1CAA2BAEF5"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "771EE52F19B2AF71"
+					item: {
+						count: 1
+						id: "cbcaeronauticsmissiles:targeting_interface"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5EB04E22E7C17EF4"
+					item: {
+						count: 1
+						id: "cbcaeronauticsmissiles:targeting_interface"
+					}
+					type: "item"
+				}
+			]
+			x: 34.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"628849AB04278591"
+			]
+			id: "24EBC08912BF74CC"
+			rewards: [
+				{
+					id: "2C775910D5D722F7"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "2B418CD1B570BD77"
+					item: {
+						count: 1
+						id: "cbcaeronauticsmissiles:aircraft_proximity_fuze"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "61247F50625A952A"
+					item: {
+						count: 1
+						id: "cbcaeronauticsmissiles:aircraft_proximity_fuze"
+					}
+					type: "item"
+				}
+			]
+			x: 34.0d
+			y: 2.6d
+		}
+	]
+}

@@ -1,0 +1,263 @@
+#Pollution of the Realms (adpother). Optional: the settings below only apply when it is installed.
+[integration]
+	#Which pollution model runs.
+	#POTR: only Pollution of the Realms. The built-in model is off; scrubbers, smokestacks, ducts,
+	#  precipitators, sensors and the aerometer work on PoTR's pollution instead.
+	#  Falls back to BUILT_IN when PoTR is not installed.
+	#BUILT_IN: only Smog's own model. PoTR, if installed, is left alone.
+	#POTR_AND_BUILT_IN: EXPERIMENTAL. Both models run at once and Smog's machines act on both.
+	#  PoTR's breathing effects replace the built-in ones unless potionAirEffectsWithPotr is on.
+	#Allowed Values: POTR, BUILT_IN, POTR_AND_BUILT_IN
+	mode = "POTR_AND_BUILT_IN"
+	#Sources PoTR does not track itself, such as the Oil Burner, release real PoTR gas at their smokestack.
+	forwardEmissionsToPotr = true
+	#PoTR pollution units per built-in unit forwarded.
+	# Default: 0.05
+	# Range: 0.0 ~ 100.0
+	potrEmissionScale = 0.05
+	#Scrubbers, panels and respirators also clean PoTR's gas and pollution.
+	cleanPotrPollution = true
+	#POTR_AND_BUILT_IN only: keep the built-in breathing effects and air-tier terrain damage too.
+	#Off by default: PoTR already applies its own. Acid rain and water contamination stay on either way.
+	potionAirEffectsWithPotr = false
+	#PoTR gas blocks an exhaust intake catches around a source per second and moves to its smokestack.
+	# Default: 24
+	# Range: 0 ~ 10000
+	potrCapturePerSecond = 24
+
+#The built-in pollution model
+[simulation]
+	# Default: 100
+	# Range: 20 ~ 1200
+	tickInterval = 100
+	#Scales every source. Rates below are per second, so tickInterval does not shift balance.
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	emissionMultiplier = 1.0
+	# Default: 10000.0
+	# Range: 100.0 ~ 1000000.0
+	maxPollution = 10000.0
+	#Share of the gradient that moves to each neighbouring chunk per step, at ground level.
+	# Default: 0.12
+	# Range: 0.0 ~ 1.0
+	spreadRate = 0.12
+	#The same for the layer aloft that tall smokestacks feed. Higher: it travels further.
+	# Default: 0.35
+	# Range: 0.0 ~ 1.0
+	aloftSpreadRate = 0.35
+	#Share of the air aloft that settles back down to ground level per second.
+	# Default: 0.003
+	# Range: 0.0 ~ 1.0
+	aloftSettleRate = 0.003
+	#Share of the air aloft carried one chunk downwind per step. The wind turns once a day.
+	# Default: 0.08
+	# Range: 0.0 ~ 1.0
+	windDrift = 0.08
+	#Per second.
+	# Default: 0.0025
+	# Range: 0.0 ~ 1.0
+	decayRate = 0.0025
+	#Extra washout per second in rain. Washed-out sulfur lands in the ground and water.
+	# Default: 0.02
+	# Range: 0.0 ~ 1.0
+	rainDecayBonus = 0.02
+	# Default: 1.5
+	# Range: 0.0 ~ 1000.0
+	vegetationAbsorption = 1.5
+	#How fast ground and water contamination recovers on its own, per second.
+	# Default: 4.0E-4
+	# Range: 0.0 ~ 1.0
+	waterDecayRate = 4.0E-4
+
+[thresholds]
+	# Default: 400.0
+	# Range: 0.0 ~ 1000000.0
+	light = 400.0
+	# Default: 1800.0
+	# Range: 0.0 ~ 1000000.0
+	moderate = 1800.0
+	# Default: 4500.0
+	# Range: 0.0 ~ 1000000.0
+	heavy = 4500.0
+	# Default: 8000.0
+	# Range: 0.0 ~ 1000000.0
+	toxic = 8000.0
+	#Ground and water contamination at which crops wither and grass dies back.
+	# Default: 3000.0
+	# Range: 0.0 ~ 1000000.0
+	contaminatedGround = 3000.0
+
+[sources]
+	#Catch-all for mods nobody listed: any block entity whose state carries a boolean 'lit'
+	#set to true burns at this rate. Set to 0 to only use the explicit list below;
+	#an explicit entry always wins, so listing a block at 0 excludes it.
+	# Default: 3.0
+	# Range: 0.0 ~ 1000.0
+	autoDetectedLitRate = 3.0
+	#"<block id>=<pollution per second>[:<profile>]", or "#<block tag>=<rate>[:<profile>]".
+	#Profiles split the output into soot, fumes and sulfur: combustion, smelting, engine (also leaves
+	#waste oil condensate in a smokestack), clean, oil. Without a profile one is guessed from the id.
+	#Only blocks with a block entity are scanned. A boolean 'lit' property gates the source on and off;
+	#Create's 'blaze' heat property scales it. Unknown ids are skipped, so listing mods you do not have
+	#is harmless. #smog:polluting is empty by default and is the easy hook for datapacks and KubeJS.
+	emitters = ["#smog:polluting=6", "minecraft:furnace=4", "minecraft:blast_furnace=8:smelting", "minecraft:smoker=4", "minecraft:campfire=1", "minecraft:soul_campfire=1", "create:blaze_burner=6:clean", "createaddition:liquid_blaze_burner=6:clean", "createdieselgenerators:burner=20:oil", "createdieselgenerators:diesel_engine=45:engine", "createdieselgenerators:large_diesel_engine=70:engine", "createdieselgenerators:huge_diesel_engine=110:engine", "create_smart_diesel_generator:smart_diesel_engine=45:engine", "tfmg:industrial_blast_furnace=60:smelting", "tfmg:diesel_engine=45:engine", "tfmg:coal_burner=20:combustion", "vintageimprovements:vacuum_chamber=6:clean", "createbigcannons:blast_furnace=25:smelting", "farmersdelight:stove=2", "mekanismgenerators:heat_generator=8", "mekanismgenerators:gas_burning_generator=30:engine", "immersiveengineering:diesel_generator=60:engine", "immersiveengineering:blastfurnace=25:smelting"]
+
+[effects]
+	terrainDegradation = true
+	playerEffects = true
+	#Crops in contaminated ground sometimes skip a growth step.
+	cropStall = true
+	#Ground contamination a dumped source block of wastewater, sludge, waste oil or runoff adds per random tick.
+	# Default: 20.0
+	# Range: 0.0 ~ 10000.0
+	dumpedFluidContamination = 20.0
+
+#Sulfur in the air comes down with the rain
+[acidRain]
+	enabled = true
+	#Sulfur (ground plus aloft) in a chunk before its rain turns acidic.
+	# Default: 500.0
+	# Range: 0.0 ~ 1000000.0
+	sulfurThreshold = 500.0
+	#Acid rain withers crops and plants, sours farmland and weathers copper, a few blocks at a time.
+	blockDamage = true
+	#Players caught out in acid rain without a helmet take a little damage now and then.
+	entityDamage = true
+	#Acid rain slowly turns open surface water into Acidic Runoff. It turns back once the air is clean.
+	surfaceRunoff = true
+
+[scrubber]
+	#Cleaning units per second at 64 RPM, scaling to 256 RPM.
+	# Default: 24.0
+	# Range: 0.0 ~ 10000.0
+	cleanRatePerSecond = 24.0
+	# Default: 24000
+	# Range: 1 ~ 10000000
+	cartridgeCapacity = 24000
+	# Default: 4
+	# Range: 1 ~ 100
+	brassCartridgeMultiplier = 4
+	# Default: 8.0
+	# Range: 0.0 ~ 1024.0
+	stressImpact = 8.0
+	#Pollution of the Realms: block radius searched for gas.
+	# Default: 7
+	# Range: 1 ~ 16
+	gasRadius = 7
+	#Pollution of the Realms: cleaning units spent per density step.
+	# Default: 40.0
+	# Range: 1.0 ~ 100000.0
+	gasStepCost = 40.0
+	#Pollution of the Realms: rate multiplier, since its pollution is counted on a different scale.
+	# Default: 12.0
+	# Range: 0.1 ~ 1000.0
+	adpotherRateMultiplier = 12.0
+	#Scrub the smog out of players and mobs standing in range, not just out of the world.
+	cleanEntities = true
+	# Default: 16
+	# Range: 1 ~ 1000
+	precisionCartridgeMultiplier = 16
+	#Rate multiplier while the scrubber has water to wet its filter with.
+	#A wet filter also catches sulfur twice as well, and drains its dirty water out as Industrial Wastewater.
+	# Default: 1.6
+	# Range: 1.0 ~ 10.0
+	waterBoost = 1.6
+	#Millibuckets of water drunk, and of wastewater produced, per working second.
+	# Default: 4
+	# Range: 0 ~ 1000
+	waterPerSecond = 4
+	#Rate multiplier while the scrubber is riding a contraption, where it has no shaft to read a speed from.
+	# Default: 0.75
+	# Range: 0.0 ~ 100.0
+	contraptionRate = 0.75
+
+#Scrubbers joined side by side act as one panel, run by the block with the lowest coordinates
+[panel]
+	#Output per member. 1.0 means a 5x5 panel cleans as much as 25 lone scrubbers,
+	#on one filter instead of 25. Below 1.0 makes panels a convenience rather than a win.
+	# Default: 1.0
+	# Range: 0.1 ~ 10.0
+	efficiencyPerMember = 1.0
+	#Members counted before the search gives up.
+	# Default: 64
+	# Range: 1 ~ 1024
+	maxMembers = 64
+	#Members needed before the panel reaches up into the air aloft and the cloud layer. 25 is a 5x5.
+	# Default: 25
+	# Range: 1 ~ 1024
+	cloudReachMembers = 25
+	#Pollution of the Realms: gas search radius of a cloud-reaching panel.
+	# Default: 12
+	# Range: 1 ~ 32
+	radius = 12
+	#Pollution of the Realms: horizontal radius of the column a panel breaks the cloud in.
+	# Default: 8
+	# Range: 1 ~ 24
+	skyRadius = 8
+
+#Smokestacks (Flue blocks) and exhaust ducts
+[smokestack]
+	#A stack this tall or shorter releases everything at ground level, around the factory.
+	# Default: 3
+	# Range: 1 ~ 64
+	shortHeight = 3
+	#A stack this tall releases the most it can aloft. In between it scales.
+	# Default: 12
+	# Range: 2 ~ 128
+	tallHeight = 12
+	#Share of the exhaust a tall stack sends aloft. The rest still settles locally.
+	# Default: 0.85
+	# Range: 0.0 ~ 1.0
+	maxAloftShare = 0.85
+	#How far up a smokestack column is followed.
+	# Default: 32
+	# Range: 1 ~ 256
+	maxHeight = 32
+	#Millibuckets of Waste Oil condensate per unit of engine exhaust, caught at the base of a stack.
+	# Default: 0.04
+	# Range: 0.0 ~ 10.0
+	condensatePerUnit = 0.04
+	#Most duct blocks an exhaust route is followed through.
+	# Default: 256
+	# Range: 8 ~ 4096
+	maxDuctLength = 256
+
+[precipitator]
+	#Share of the soot in passing exhaust removed at full speed.
+	# Default: 0.9
+	# Range: 0.0 ~ 1.0
+	efficiency = 0.9
+	#RPM for full efficiency. Slower is proportionally weaker.
+	# Default: 128
+	# Range: 1 ~ 256
+	fullSpeed = 128
+	# Default: 12.0
+	# Range: 0.0 ~ 1024.0
+	stressImpact = 12.0
+	#Units of soot collected per item of Soot or Industrial Dust.
+	# Default: 60.0
+	# Range: 1.0 ~ 100000.0
+	unitsPerItem = 60.0
+	#With water piped in: share of the sulfur washed out as Acidic Runoff.
+	# Default: 0.6
+	# Range: 0.0 ~ 1.0
+	wetSulfurEfficiency = 0.6
+
+[oilBurner]
+	# Default: 2
+	# Range: 1 ~ 1000
+	fuelPerSecond = 2
+	#Pollution per second burning Waste Oil or other dirty fuel.
+	# Default: 30.0
+	# Range: 0.0 ~ 10000.0
+	dirtyEmission = 30.0
+	#Pollution per second burning Refined Oil or other clean fuel.
+	# Default: 6.0
+	# Range: 0.0 ~ 10000.0
+	cleanEmission = 6.0
+
+[respirator]
+	#Pollution a worn respirator pulls out of you per second. Costs one point of durability each time it does.
+	# Default: 40
+	# Range: 0 ~ 100000
+	reliefPerSecond = 40

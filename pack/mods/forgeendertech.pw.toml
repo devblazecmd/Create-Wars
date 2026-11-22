@@ -1,0 +1,13 @@
+name = "ForgeEndertech"
+filename = "ForgeEndertech-1.21.1-12.1.5.0-NeoForge-build.1335.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/EgS8gGp8/versions/3zcgUFDT/ForgeEndertech-1.21.1-12.1.5.0-NeoForge-build.1335.jar"
+hash-format = "sha512"
+hash = "ab4b1f62701baa0a8812f1fd168de40010dcc2c47c2327156215e47aa5d5e818ecb779ada34d05b85c37099493902523865e3fa17a10bb42b67b79343fe8b331"
+
+[update]
+[update.modrinth]
+mod-id = "EgS8gGp8"
+version = "3zcgUFDT"

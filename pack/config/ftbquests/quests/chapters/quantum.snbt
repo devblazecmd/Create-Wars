@@ -20,7 +20,12 @@
 				{
 					id: "1CDD3C4C8FE1A070"
 					type: "xp"
-					xp: 20
+					xp: 80
+				}
+				{
+					id: "65940A9F10BA1597"
+					type: "xp_levels"
+					xp_levels: 2
 				}
 				{
 					count: 2
@@ -56,7 +61,12 @@
 				{
 					id: "63991EBD16F0C2CF"
 					type: "xp"
-					xp: 40
+					xp: 160
+				}
+				{
+					id: "08438330C2C3CF14"
+					type: "xp_levels"
+					xp_levels: 2
 				}
 				{
 					id: "07B9109F1C265E31"
@@ -90,7 +100,7 @@
 				{
 					id: "6432A5EB85C25A77"
 					type: "xp"
-					xp: 25
+					xp: 100
 				}
 				{
 					id: "56EB766B4CD1C664"
@@ -124,7 +134,7 @@
 				{
 					id: "50D8180A22550D18"
 					type: "xp"
-					xp: 20
+					xp: 80
 				}
 				{
 					id: "6FEDE79D3F69673B"
@@ -158,7 +168,12 @@
 				{
 					id: "2732DE43C508795B"
 					type: "xp"
-					xp: 30
+					xp: 120
+				}
+				{
+					id: "19B6B992025ADB5F"
+					type: "xp_levels"
+					xp_levels: 2
 				}
 				{
 					id: "29C357F3C5A4B469"
@@ -193,7 +208,7 @@
 				{
 					id: "2D35F1D4CEC0E238"
 					type: "xp"
-					xp: 20
+					xp: 80
 				}
 				{
 					id: "6C246C7D11073516"
@@ -227,7 +242,7 @@
 				{
 					id: "2D6B777D45F18125"
 					type: "xp"
-					xp: 40
+					xp: 160
 				}
 				{
 					id: "40270CE782CEE36D"
@@ -260,7 +275,7 @@
 				{
 					id: "6E7C2E2E6A91D9BB"
 					type: "xp"
-					xp: 20
+					xp: 80
 				}
 				{
 					id: "1CD4F6B89F818383"
@@ -294,7 +309,12 @@
 				{
 					id: "43866AB03E0D0D66"
 					type: "xp"
-					xp: 60
+					xp: 240
+				}
+				{
+					id: "27F7F7450B47992A"
+					type: "xp_levels"
+					xp_levels: 2
 				}
 				{
 					id: "6EC99D229035A017"
@@ -328,7 +348,7 @@
 				{
 					id: "0E8ECAACC4629592"
 					type: "xp"
-					xp: 25
+					xp: 100
 				}
 				{
 					id: "6116A10DDEFA0D85"
@@ -361,7 +381,7 @@
 				{
 					id: "22B5C68408DD7022"
 					type: "xp"
-					xp: 25
+					xp: 100
 				}
 				{
 					id: "37FCF046B4817149"
@@ -394,7 +414,7 @@
 				{
 					id: "5A349AD1C83CF242"
 					type: "xp"
-					xp: 25
+					xp: 100
 				}
 				{
 					id: "22FC10372DB6C51D"
@@ -428,7 +448,7 @@
 				{
 					id: "3D15138BA6FB5607"
 					type: "xp"
-					xp: 20
+					xp: 80
 				}
 				{
 					id: "7C7FC7FA649D028D"
@@ -462,7 +482,7 @@
 				{
 					id: "7B28F4910DF1FD47"
 					type: "xp"
-					xp: 20
+					xp: 80
 				}
 				{
 					id: "0E7687275CF40CC6"
@@ -495,7 +515,7 @@
 				{
 					id: "490B9B6E8C8D2EBF"
 					type: "xp"
-					xp: 20
+					xp: 80
 				}
 				{
 					id: "5BF4B8F161A93A20"
@@ -528,7 +548,12 @@
 				{
 					id: "4B76158B4BBF3FCF"
 					type: "xp"
-					xp: 40
+					xp: 160
+				}
+				{
+					id: "76E5798AD5BE54FB"
+					type: "xp_levels"
+					xp_levels: 2
 				}
 				{
 					id: "36D337FEC3B36E6A"
@@ -563,7 +588,12 @@
 				{
 					id: "073F07A844DCF9FC"
 					type: "xp"
-					xp: 50
+					xp: 200
+				}
+				{
+					id: "60DDF13F0B28A901"
+					type: "xp_levels"
+					xp_levels: 2
 				}
 				{
 					id: "0DE56EB816C80ABC"
@@ -598,7 +628,7 @@
 				{
 					id: "2CC49EABA3360536"
 					type: "xp"
-					xp: 25
+					xp: 100
 				}
 				{
 					id: "6A0F948F1E66F481"
@@ -631,7 +661,12 @@
 				{
 					id: "2D4B80EE26C0793F"
 					type: "xp"
-					xp: 60
+					xp: 240
+				}
+				{
+					id: "2E1AC3137184B66F"
+					type: "xp_levels"
+					xp_levels: 5
 				}
 				{
 					id: "05ADEC2A9DC49D42"
@@ -665,7 +700,7 @@
 				{
 					id: "1A20C155321402A8"
 					type: "xp"
-					xp: 40
+					xp: 160
 				}
 				{
 					id: "555C1AA84F64353D"
@@ -698,7 +733,7 @@
 				{
 					id: "08D4D4AA7C328F03"
 					type: "xp"
-					xp: 40
+					xp: 160
 				}
 				{
 					id: "428C3BFA1FB9E655"
@@ -731,7 +766,7 @@
 				{
 					id: "4B3112FB22E8A1C8"
 					type: "xp"
-					xp: 40
+					xp: 160
 				}
 				{
 					id: "6F4706F71958E7E0"
@@ -764,7 +799,7 @@
 				{
 					id: "37555A056022910B"
 					type: "xp"
-					xp: 75
+					xp: 300
 				}
 				{
 					id: "63E16E90D0127FC6"

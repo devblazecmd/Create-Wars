@@ -1,0 +1,830 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "demolitions"
+	group: "541CE08481D1C6C5"
+	icon: {
+		id: "cbc_more_content:moab"
+	}
+	id: "68FFFFE2EED0491A"
+	images: [ ]
+	order_index: 15
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"40F499E79AE3DD52"
+			]
+			id: "6629BCD414634293"
+			rewards: [
+				{
+					id: "24768888ACEEAB0B"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "7C25C5A9F5CED468"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "03A69D792172FD63"
+					item: {
+						count: 1
+						id: "createbigcannons:packed_guncotton"
+					}
+					type: "item"
+				}
+			]
+			size: 1.25d
+			tasks: [
+				{
+					count: 4L
+					id: "72ECE13EE71280E9"
+					item: {
+						count: 1
+						id: "createbigcannons:packed_guncotton"
+					}
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6629BCD414634293"
+			]
+			id: "45EF11E35D7CAB2D"
+			rewards: [
+				{
+					id: "271E708D4AC46346"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "3D13CD8ACECDCFE0"
+					item: {
+						count: 1
+						id: "cbc_more_content:tripwire_coil"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "692A4EDB7A3F4ADF"
+					item: {
+						count: 1
+						id: "cbc_more_content:tripwire_coil"
+					}
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"6629BCD414634293"
+			]
+			id: "4D699D6ADDDBDDE5"
+			rewards: [
+				{
+					id: "310895D2A74E93E8"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "05699A18B541A12C"
+					item: {
+						count: 1
+						id: "cbc_more_content:wire_cutters"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1854306BC6222214"
+					item: {
+						count: 1
+						id: "cbc_more_content:wire_cutters"
+					}
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"6629BCD414634293"
+			]
+			id: "7B757D6F1FE22F44"
+			rewards: [
+				{
+					id: "0ABF66BA25DBE509"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "698966ADE7555BC3"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "201E40D0A6A20564"
+					item: {
+						count: 1
+						id: "cbc_more_content:small_bomb"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					count: 4L
+					id: "7F7C68CFDB662456"
+					item: {
+						count: 1
+						id: "cbc_more_content:small_bomb"
+					}
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7B757D6F1FE22F44"
+			]
+			id: "385048FDBEED3462"
+			rewards: [
+				{
+					id: "6DF98A27599BA821"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "78F58BDCC901E57E"
+					item: {
+						count: 1
+						id: "cbc_more_content:bombsight"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5AC5C35559286745"
+					item: {
+						count: 1
+						id: "cbc_more_content:bombsight"
+					}
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"7B757D6F1FE22F44"
+			]
+			id: "636673A39A09D339"
+			rewards: [
+				{
+					id: "3FBA84ABA48E3EEC"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "5A8BE6FE07A00A17"
+					item: {
+						count: 1
+						id: "cbc_more_content:small_mine"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "1C1CA9CF25E091CF"
+					item: {
+						count: 1
+						id: "cbc_more_content:small_mine"
+					}
+					type: "item"
+				}
+			]
+			x: -2.55d
+			y: 2.09d
+		}
+		{
+			dependencies: [
+				"7B757D6F1FE22F44"
+			]
+			id: "1AC5779555467F08"
+			rewards: [
+				{
+					id: "2081CCD4C354CF25"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "63FC9D66E854314B"
+					item: {
+						count: 1
+						id: "cbc_more_content:bounding_mine"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "01DD827FCA767076"
+					item: {
+						count: 1
+						id: "cbc_more_content:bounding_mine"
+					}
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"7B757D6F1FE22F44"
+			]
+			id: "28FA53FC0E80852A"
+			rewards: [
+				{
+					id: "6EB098220D629CAC"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "75959C424B46B148"
+					item: {
+						count: 1
+						id: "cbc_more_content:claymore"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "723DBB03914D343C"
+					item: {
+						count: 1
+						id: "cbc_more_content:claymore"
+					}
+					type: "item"
+				}
+			]
+			x: 0.55d
+			y: 2.09d
+		}
+		{
+			dependencies: [
+				"7B757D6F1FE22F44"
+				"5616C2CB21D1F5E0"
+				"28B372346FDAC614"
+			]
+			id: "06594F19D2F3CE63"
+			rewards: [
+				{
+					id: "2DDB2D608A21D4C9"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "4876D24FE89F25C4"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "45A82737D09332CC"
+					item: {
+						count: 1
+						id: "cbc_more_content:medium_bomb"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					count: 2L
+					id: "5BF50914429B4731"
+					item: {
+						count: 1
+						id: "cbc_more_content:medium_bomb"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"06594F19D2F3CE63"
+			]
+			id: "4197D2995C3D7FE3"
+			rewards: [
+				{
+					id: "15D7011E18B95DC0"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "68272F3E7FB4454A"
+					item: {
+						count: 1
+						id: "cbc_more_content:rocket_pod"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5EA37FF4D8602CC6"
+					item: {
+						count: 1
+						id: "cbc_more_content:rocket_pod"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"4197D2995C3D7FE3"
+			]
+			id: "0202D14D081DFB44"
+			rewards: [
+				{
+					id: "7776BA4B20CBB59E"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "496A97FF8BC045B7"
+					item: {
+						count: 1
+						id: "cbc_more_content:s8_rocket"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "620CF913AF1377B6"
+					item: {
+						count: 1
+						id: "cbc_more_content:s8_rocket"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -4.4d
+		}
+		{
+			dependencies: [
+				"06594F19D2F3CE63"
+			]
+			id: "42E06B591264712B"
+			rewards: [
+				{
+					id: "5CAC6C890CB5AB69"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "64A5FE93B34FE095"
+					item: {
+						count: 1
+						id: "cbc_more_content:sea_mine"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "570C637CC138C5C7"
+					item: {
+						count: 1
+						id: "cbc_more_content:sea_mine"
+					}
+					type: "item"
+				}
+			]
+			x: 4.8d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"06594F19D2F3CE63"
+			]
+			id: "5194AC4C99BEB854"
+			rewards: [
+				{
+					id: "523E23EC5FF0CA9A"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "2BA32A16B95320E3"
+					item: {
+						count: 1
+						id: "cbc_more_content:sea_bomb"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5F5BF751387376E3"
+					item: {
+						count: 1
+						id: "cbc_more_content:sea_bomb"
+					}
+					type: "item"
+				}
+			]
+			x: 7.2d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"06594F19D2F3CE63"
+			]
+			id: "75DA6E9988F3AA8E"
+			rewards: [
+				{
+					id: "5AF14013EF6B285D"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "2ECBFBA2F4F9DA59"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "08511BAB85E64F1E"
+					item: {
+						count: 1
+						id: "cbc_more_content:large_bomb"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "0F6DE44F44A3A638"
+					item: {
+						count: 1
+						id: "cbc_more_content:large_bomb"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"75DA6E9988F3AA8E"
+			]
+			id: "4081D65FB1B1B03E"
+			rewards: [
+				{
+					id: "77280D6913734A79"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "58010F31CEFC7866"
+					item: {
+						count: 1
+						id: "cbc_more_content:large_mine"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "18F3C0FBC6045044"
+					item: {
+						count: 1
+						id: "cbc_more_content:large_mine"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"75DA6E9988F3AA8E"
+			]
+			id: "528707EC128E396E"
+			rewards: [
+				{
+					id: "200A8CC5E2149E8E"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "6FED4E4018B46D5C"
+					item: {
+						count: 1
+						id: "cbc_more_content:siren"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "15C065918ED0655E"
+					item: {
+						count: 1
+						id: "cbc_more_content:siren"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"75DA6E9988F3AA8E"
+			]
+			id: "3F82F140108CBD1D"
+			rewards: [
+				{
+					id: "1B7FD4306AA2E63F"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "5A2575E39F908D91"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "270388DA520EA59D"
+					item: {
+						count: 1
+						id: "cbc_more_content:c4"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					count: 2L
+					id: "78D4B508F3D6D669"
+					item: {
+						count: 1
+						id: "cbc_more_content:c4"
+					}
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3F82F140108CBD1D"
+			]
+			id: "6393779977E23D30"
+			rewards: [
+				{
+					id: "0D7ADA8FB2B3CF46"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "5C48C1B22A81FCAC"
+					item: {
+						count: 1
+						id: "cbc_more_content:detonator"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "680D3FFFB834F39A"
+					item: {
+						count: 1
+						id: "cbc_more_content:detonator"
+					}
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"3F82F140108CBD1D"
+			]
+			id: "2A94ABD09E21FD9D"
+			rewards: [
+				{
+					id: "7A46D9A4EE537D48"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "77D757C82EEFC274"
+					item: {
+						count: 1
+						id: "cbc_more_content:bomb_vest"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "798EF5992E4F7E53"
+					item: {
+						count: 1
+						id: "cbc_more_content:bomb_vest"
+					}
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"3F82F140108CBD1D"
+			]
+			id: "593880FB761DDE5A"
+			rewards: [
+				{
+					id: "2DB6FE2A5CB2A917"
+					type: "xp"
+					xp: 240
+				}
+				{
+					id: "75F077A25AD1B2BC"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "6B6F7D454C0FFED1"
+					item: {
+						count: 1
+						id: "cbc_more_content:cruise_missile"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "11FAA94F129DCA7E"
+					item: {
+						count: 1
+						id: "cbc_more_content:cruise_missile"
+					}
+					type: "item"
+				}
+			]
+			x: 27.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"593880FB761DDE5A"
+			]
+			id: "6F3BBA2B34BC0A91"
+			rewards: [
+				{
+					id: "521B0FAF92DA8227"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "7B8443D6448A4722"
+					item: {
+						count: 1
+						id: "cbc_more_content:target_designator"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1F1F770576A430A8"
+					item: {
+						count: 1
+						id: "cbc_more_content:target_designator"
+					}
+					type: "item"
+				}
+			]
+			x: 27.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"593880FB761DDE5A"
+				"7495980C8CC73268"
+			]
+			id: "44241F8B25C03EB8"
+			rewards: [
+				{
+					id: "21AF201B91C26B78"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "71206966EC87FC6F"
+					item: {
+						count: 1
+						id: "cbc_more_content:aim9"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "20F0B3BDCEFE9710"
+					item: {
+						count: 1
+						id: "cbc_more_content:aim9"
+					}
+					type: "item"
+				}
+			]
+			x: 27.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"593880FB761DDE5A"
+			]
+			id: "14BCD8B12AE6EF84"
+			rewards: [
+				{
+					id: "14541D9AB3C9F22A"
+					type: "xp"
+					xp: 400
+				}
+				{
+					id: "6E982A841B1687AC"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "04E13D3F70C0D397"
+					item: {
+						count: 1
+						id: "cbc_more_content:moab"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "5D4B01DFD5D19440"
+					item: {
+						count: 1
+						id: "cbc_more_content:moab"
+					}
+					type: "item"
+				}
+			]
+			x: 34.0d
+			y: 0.0d
+		}
+	]
+}

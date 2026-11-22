@@ -1,50 +1,169 @@
 {
+	"chapter.028624C5F728E0F5.chapter_subtitle": [
+		"Create: Gunsmithing: guns built with Create machines"
+	]
+	"chapter.028624C5F728E0F5.title": "Infantry"
 	"chapter.053911DC66C6FCCC.chapter_subtitle": [
 		"Superheating and this pack's fuel tiers"
 	]
 	"chapter.053911DC66C6FCCC.title": "Heat Expansion"
+	"chapter.07C70A0BC14A9A52.chapter_subtitle": [
+		"Create: Radars, fire control and guided missiles"
+	]
+	"chapter.07C70A0BC14A9A52.title": "Radar and Missiles"
 	"chapter.0A8F7FB8A84C2634.chapter_subtitle": [
 		"Heated mixing, brass, precision parts and ore processing"
 	]
 	"chapter.0A8F7FB8A84C2634.title": "Brass Age"
+	"chapter.18E7501046BDBB52.chapter_subtitle": [
+		"Create: Droneworks and FPV drones"
+	]
+	"chapter.18E7501046BDBB52.title": "Drones"
+	"chapter.20B805B4C2935D77.chapter_subtitle": [
+		"Create Aeronautics + Sable: airships, planes and air weapons"
+	]
+	"chapter.20B805B4C2935D77.title": "Aeronautics"
 	"chapter.2218ACE80C232364.chapter_subtitle": [
 		"Create: Enchantment Industry: liquid experience and machine enchanting"
 	]
 	"chapter.2218ACE80C232364.title": "Enchanting Expansion"
+	"chapter.2241B037A73C6DEF.chapter_subtitle": [
+		"Create trains, Steam 'n' Rails and armored trains"
+	]
+	"chapter.2241B037A73C6DEF.title": "Rail Warfare"
+	"chapter.233471EFD5752016.chapter_subtitle": [
+		"Create: Smog cleans up your factory; bring oxygen up high and deep down"
+	]
+	"chapter.233471EFD5752016.title": "Pollution and Air"
 	"chapter.35A2446CB394CD33.chapter_subtitle": [
 		"Rotation, your first machines, your first automation"
 	]
 	"chapter.35A2446CB394CD33.title": "Andesite Age"
+	"chapter.39CCB32D95EDFDBC.chapter_subtitle": [
+		"Farmer's Delight cooking, then Create: Slice and Dice automation"
+	]
+	"chapter.39CCB32D95EDFDBC.title": "Food"
+	"chapter.3D48292E4D2714F1.chapter_subtitle": [
+		"Backpacks, upgradeable chests, vaults and a Tom's storage network"
+	]
+	"chapter.3D48292E4D2714F1.title": "Storage"
 	"chapter.40B137FE2D792459.chapter_subtitle": [
 		"Start here: the rules of this pack"
 	]
 	"chapter.40B137FE2D792459.title": "Welcome to the War"
+	"chapter.41740B86D8A8BC3E.chapter_subtitle": [
+		"Wheels, tank treads, armor plate and vehicle cannons"
+	]
+	"chapter.41740B86D8A8BC3E.title": "Armored Vehicles"
 	"chapter.509675FCE8A0F318.chapter_subtitle": [
 		"TFMG: cast iron, coke, steel and oil"
 	]
 	"chapter.509675FCE8A0F318.title": "Industrial Age"
+	"chapter.51F1033527079020.chapter_subtitle": [
+		"Create Deep Seas: boats, submarines and torpedoes"
+	]
+	"chapter.51F1033527079020.title": "Naval"
 	"chapter.56C3E9BF26C90251.chapter_subtitle": [
 		"Telejuice, quantum items, waystones and teleporters"
 	]
 	"chapter.56C3E9BF26C90251.title": "Quantum Expansion"
+	"chapter.68FFFFE2EED0491A.chapter_subtitle": [
+		"Create: Warnautics bombs, mines, C4 and missiles"
+	]
+	"chapter.68FFFFE2EED0491A.title": "Demolitions"
+	"chapter.706C3C2934D87936.chapter_subtitle": [
+		"Smarter, tougher, armed mobs and enemy fleets"
+	]
+	"chapter.706C3C2934D87936.title": "Know Your Enemy"
 	"chapter.7415700D4D0CE1C8.chapter_subtitle": [
 		"Put your machines to work: production goals for every tier"
 	]
 	"chapter.7415700D4D0CE1C8.title": "Automation"
+	"chapter.7E12579408EECDD7.chapter_subtitle": [
+		"Create Big Cannons: from log cannons to built-up steel and autocannons"
+	]
+	"chapter.7E12579408EECDD7.title": "Artillery"
 	"chapter_group.0CFAFF482C306DFD.title": "Ages"
 	"chapter_group.5198D7EDAB40AD32.title": "Expansions"
+	"chapter_group.541CE08481D1C6C5.title": "Warfare"
 	"chapter_group.5DC36AFDE29DAA60.title": "Automation"
 	"chapter_group.5F5DEF409B409D0F.title": "Getting Started"
+	"chapter_group.79CD1FEEFEBE8885.title": "Infrastructure"
+	"quest.001F652EAEFEE740.quest_desc": [
+		"Canvas and sticks. Picks up items in front of it, like a hopper."
+	]
+	"quest.001F652EAEFEE740.title": "Basket"
+	"quest.005AC10822BFEE7D.quest_desc": [
+		"Clay, dirt and sand: lines the moulds."
+	]
+	"quest.005AC10822BFEE7D.title": "Casting Sand"
+	"quest.012C8C453F6577FE.quest_desc": [
+		"Leather, glass, string and a filter cartridge. Pulls pollution out of you."
+	]
+	"quest.012C8C453F6577FE.title": "Smog Respirator"
+	"quest.01417E6752358717.quest_desc": [
+		"Runs off a &acopper backtank&r: precision mechanism, valve, pipe, brass and iron sheets."
+	]
+	"quest.01417E6752358717.title": "Nailgun"
 	"quest.01B274AEC6E98520.quest_desc": [
 		"A Spout fills items on a Depot or belt with fluid. You'll use it for Blaze Cakes and,"
 		"later, for &dQuantum Paper&r."
 	]
 	"quest.01B274AEC6E98520.title": "Spout"
+	"quest.01DB109F38C332AE.quest_desc": [
+		"Stamped with the shotgun press form."
+	]
+	"quest.01DB109F38C332AE.title": "Shotgun Shell"
+	"quest.0202D14D081DFB44.quest_desc": [
+		"Iron plate, gunpowder and blaze powder (makes 2). Ammunition for rocket pods."
+	]
+	"quest.0202D14D081DFB44.title": "S-8 Rocket"
+	"quest.026989985A23357E.quest_desc": [
+		"Smooths the ride."
+	]
+	"quest.026989985A23357E.title": "Suspension Piece"
+	"quest.02BA6E0ADEE99DA1.quest_desc": [
+		"Liquid levitite blend. JEI shows how it sets into solid levitite."
+	]
+	"quest.02BA6E0ADEE99DA1.title": "Levitite Blend"
+	"quest.03495FB874BD1066.quest_desc": [
+		"Andesite casing, fluid pipe, iron and a piston pole. Bores out cast and built-up barrels."
+	]
+	"quest.03495FB874BD1066.title": "Cannon Drill"
+	"quest.036B26DACF1DA03A.quest_desc": [
+		"&6Create: Who Touched My Train&r: lock your train against other teams. In this pack, train"
+		"blocks also resist cannon fire (&6CBC: Locometal Armor&r, server-side)."
+	]
+	"quest.036B26DACF1DA03A.title": "Train Lock"
+	"quest.03B65E923ACB37ED.quest_desc": [
+		"Track grip."
+	]
+	"quest.03B65E923ACB37ED.title": "Grouser"
+	"quest.0470831658F15E52.quest_desc": [
+		"Iron sheets and bars: the dish surface."
+	]
+	"quest.0470831658F15E52.title": "Radar Dish"
+	"quest.047B724128CA8638.quest_desc": [
+		"Brass casing material for train parts (and Quantum Casing)."
+	]
+	"quest.047B724128CA8638.title": "Train Casing"
+	"quest.04D5C8ED75ADC36D.quest_desc": [
+		"Smelt congealed nitro."
+	]
+	"quest.04D5C8ED75ADC36D.title": "Hardened Nitro"
+	"quest.054F56945A0D2185.quest_desc": [
+		"Andesite alloy. Turns a Basin into a foundry for melting metal."
+	]
+	"quest.054F56945A0D2185.title": "Basin Foundry Lid"
 	"quest.05898BDC6E712A72.quest_desc": [
 		"Made with iron sheets. A &aMechanical Saw&r cuts trees and processes wood; put it on a"
 		"moving contraption to build a tree farm."
 	]
 	"quest.05898BDC6E712A72.title": "Mechanical Saw"
+	"quest.05DA4FF98AE373A1.quest_desc": [
+		"Cabbage leaves and filling."
+	]
+	"quest.05DA4FF98AE373A1.title": "Cabbage Rolls"
 	"quest.05FD55AEF439EB0C.quest_desc": [
 		"Cast iron tank, pipe and fireproof bricks: heats air for the furnace."
 	]
@@ -53,16 +172,64 @@
 		"Brass casing and a precision mechanism. Sets the exact &aRPM&r of whatever it feeds."
 	]
 	"quest.062E02334D715791.title": "Rotation Speed Controller"
+	"quest.06594F19D2F3CE63.quest_desc": [
+		"&aMechanical Crafting&r: adds wooden slabs and an &aImpact Fuze&r to the small bomb's"
+		"ingredients."
+	]
+	"quest.06594F19D2F3CE63.title": "Medium Bomb"
 	"quest.066EDE2B31CE6F97.quest_desc": [
 		"The &aMechanical Press&r flattens ingots into sheets and compacts items in a &aBasin&r."
 		"Put a &aDepot&r under it to hold what it's pressing."
 	]
-	"quest.066EDE2B31CE6F97.title": "Mechanical Press & Depot"
+	"quest.066EDE2B31CE6F97.title": "Mechanical Press and Depot"
 	"quest.06A39428AF78928B.quest_desc": [
 		"Everything in Create starts with &aandesite&r: the gray stone found in big patches"
 		"underground and in hillsides. Mine some."
 	]
 	"quest.06A39428AF78928B.title": "Find Andesite"
+	"quest.06FB04B9C71307E7.quest_desc": [
+		"Sound the alarm."
+	]
+	"quest.06FB04B9C71307E7.title": "Industrial Alarm"
+	"quest.0784C2E3B1ED63AB.quest_desc": [
+		"Iron sheet, precision mechanism and shaft: steering for a missile."
+	]
+	"quest.0784C2E3B1ED63AB.title": "Actuator Fins"
+	"quest.07BF44C0797C1380.quest_desc": [
+		"Each slot holds more items. Higher tiers hold far more."
+	]
+	"quest.07BF44C0797C1380.title": "Stack Upgrade Tier 1"
+	"quest.07E8DC1BE76E7D93.quest_desc": [
+		"Lasts 4x longer."
+	]
+	"quest.07E8DC1BE76E7D93.title": "Brass Filter Cartridge"
+	"quest.083D0860E2942759.quest_desc": [
+		"A mechanical bearing, electron tube and iron sheet. Build a dish on it and spin it to"
+		"&ascan the sky&r. Check the Ponder for radar builds."
+	]
+	"quest.083D0860E2942759.title": "Radar Bearing"
+	"quest.08ADF7B023180415.quest_desc": [
+		"Find wild crops in the world and break them for seeds and produce. Plant them."
+		"&aTip:&r Create's Millstone turns wild crops into seeds too."
+	]
+	"quest.08ADF7B023180415.title": "Wild Crops"
+	"quest.092D0A0E2DF0AEE9.quest_desc": [
+		"Turns nuggets into ingots and ingots into blocks as they come in."
+	]
+	"quest.092D0A0E2DF0AEE9.title": "Compacting Upgrade"
+	"quest.0962E263FFA273D1.quest_desc": [
+		"Everything that flies (or drives, or sails) starts here. A &aPhysics Assembler&r turns a"
+		"built contraption into a real &6Sable&r physics object. Check its Ponder."
+	]
+	"quest.0962E263FFA273D1.title": "Physics Assembler"
+	"quest.098FA67A40C809DB.quest_desc": [
+		"Refuel a train at a station."
+	]
+	"quest.098FA67A40C809DB.title": "Portable Fuel Interface"
+	"quest.09ACA9567831BCFF.quest_desc": [
+		"Light vehicles."
+	]
+	"quest.09ACA9567831BCFF.title": "Small Tire"
 	"quest.09D33D79CA336A9E.quest_desc": [
 		"Same idea, turned on its side: a &aVertical Gearbox&r sends rotation up or down."
 	]
@@ -72,10 +239,26 @@
 		"it on two shafts."
 	]
 	"quest.0A4151F48A770553.title": "Belts"
+	"quest.0ACD3C38CCC47073.quest_desc": [
+		"Warns of incoming torpedoes."
+	]
+	"quest.0ACD3C38CCC47073.title": "Torpedo Detection Device"
+	"quest.0AED7F0E408DE000.quest_desc": [
+		"Cast a barrel from molten &abronze&r: lighter and tougher than cast iron."
+	]
+	"quest.0AED7F0E408DE000.title": "Bronze Cannon"
+	"quest.0B1FFDFAEA02CC1B.quest_desc": [
+		"Slime and paper. Tape a full chest to pick it up with everything inside."
+	]
+	"quest.0B1FFDFAEA02CC1B.title": "Packing Tape"
 	"quest.0B4492CE16040D3F.quest_desc": [
 		"Feed cobblestone into a &aMillstone&r. Make a &astack&r of gravel."
 	]
 	"quest.0B4492CE16040D3F.title": "Automate: Gravel"
+	"quest.0C31FEEDB9F4C0F8.quest_desc": [
+		"Grows in shallow water."
+	]
+	"quest.0C31FEEDB9F4C0F8.title": "Rice"
 	"quest.0C34CAA169348117.quest_desc": [
 		"Press &agold ingots&r into &aGolden Sheets&r: they make the Wrench and Goggles, and go into"
 		"precision parts later."
@@ -90,32 +273,122 @@
 		"of your own shape. Each base needs at least 256 mB of Telejuice."
 	]
 	"quest.0C8ED7CBC0DFB08A.title": "Custom Portal Controller"
+	"quest.0CC25CF336BC5A7A.quest_desc": [
+		"Press gun steel into sheets."
+	]
+	"quest.0CC25CF336BC5A7A.title": "Steel Sheet"
+	"quest.0CD62493EF389622.quest_desc": [
+		"Reloads big cannons from a magazine."
+	]
+	"quest.0CD62493EF389622.title": "Cannon Magazine Loader"
+	"quest.0CD7E5A645ACC910.quest_desc": [
+		"Better cannons are &acast&r: pour molten cast iron into a &amould&r. Check the Ponder"
+		"for casting setups."
+	]
+	"quest.0CD7E5A645ACC910.title": "Cast Iron Cannon"
+	"quest.0D1C293AEDBE7585.quest_desc": [
+		"Wet scrubbers drain it. &cDo not dump it&r: it contaminates ground and kills plants."
+	]
+	"quest.0D1C293AEDBE7585.title": "Industrial Wastewater"
+	"quest.0D6FAA54E3DC19FA.quest_desc": [
+		"Stay put."
+	]
+	"quest.0D6FAA54E3DC19FA.title": "Anchor"
+	"quest.0D9AA173E29EA08E.quest_desc": [
+		"Another way to fill an envelope."
+	]
+	"quest.0D9AA173E29EA08E.title": "Steam Vent"
 	"quest.0D9F1985E16955EF.quest_desc": [
 		"A cobblestone generator with a &aMechanical Drill&r mining it nonstop. Make a &astack&r."
 	]
 	"quest.0D9F1985E16955EF.title": "Automate: Cobblestone"
+	"quest.0DE91D880C27E0AF.quest_desc": [
+		"Brass sheet and a stripped log: steadies your aim."
+	]
+	"quest.0DE91D880C27E0AF.title": "Stock"
+	"quest.0E100C9DE8E82065.quest_desc": [
+		"&6Thick Air&r: you slowly run out of air &cbelow Y=0&r, &cabove Y=128&r, and in the Nether."
+		"The End has no air at all. A &aBacktank&r with a &aDiving Helmet&r is your air supply."
+		"&cPilots:&r flying above Y=128 needs this too."
+	]
+	"quest.0E100C9DE8E82065.title": "Copper Backtank"
 	"quest.0E5FBD9105AE2934.quest_desc": [
 		"Compact &aEgg + Sugar + Cinder Flour&r in a Basin (no heat needed)."
 	]
 	"quest.0E5FBD9105AE2934.title": "Blaze Cake Base"
+	"quest.0E7AAD972EAEA28F.quest_desc": [
+		"For the biggest builds."
+	]
+	"quest.0E7AAD972EAEA28F.title": "Monstrous Tire"
+	"quest.0EF9790E6AD7081C.quest_desc": [
+		"Kill them before they drink a potion."
+	]
+	"quest.0EF9790E6AD7081C.title": "Witches"
 	"quest.0F1A32D940E5614D.quest_desc": [
 		"Mass-produce the quantum supply chain."
 	]
 	"quest.0F1A32D940E5614D.title": "Quantum Automation"
+	"quest.0F8FE5F9FB341304.quest_desc": [
+		"Compact gunpowder into &aPacked Gunpowder&r and put it in an &aEmpty Powder Charge&r"
+		"(wool and string). More charges = more range, and more strain on the barrel."
+	]
+	"quest.0F8FE5F9FB341304.title": "Powder Charge"
+	"quest.0F99D02B0C15D1C8.quest_desc": [
+		"Iron and a brick. Cook on the stove, or swing it as a weapon."
+	]
+	"quest.0F99D02B0C15D1C8.title": "Skillet"
 	"quest.0FB364E6D5715082.quest_desc": [
 		"Compact the base, fill it with lava and feed the cakes to your burners, all without"
 		"touching it. Make a &astack&r of Blaze Cakes."
 	]
 	"quest.0FB364E6D5715082.title": "Automate: Blaze Cakes"
+	"quest.0FC5913EC2DC28C7.quest_desc": [
+		"Dough and filling."
+	]
+	"quest.0FC5913EC2DC28C7.title": "Dumplings"
+	"quest.1010F3ECFE297C65.quest_desc": [
+		"Graphite, an electron tube and a brass cartridge. Lasts 16x longer. A clean factory."
+	]
+	"quest.1010F3ECFE297C65.title": "Precision Filter Cartridge"
+	"quest.10994D153CA9FABA.quest_desc": [
+		"&6Enhanced AI&r: creepers &cbreach walls&r on purpose, and zombies dig to reach you. Build"
+		"thick walls, or something they cannot dig through."
+	]
+	"quest.10994D153CA9FABA.title": "Breachers"
 	"quest.109B3C60E36DD5D4.quest_desc": [
 		"Made by &aSequenced Assembly&r: a &agolden sheet&r passes Deployers adding cogwheels, large"
 		"cogwheels and iron nuggets, in a loop. JEI shows each step."
 	]
 	"quest.109B3C60E36DD5D4.title": "Precision Mechanism"
+	"quest.10EEAA6ABB049773.quest_desc": [
+		"Diving chestplate and leggings for swimming outside."
+	]
+	"quest.10EEAA6ABB049773.title": "Diving Gear"
 	"quest.10F87A2D17CAB073.quest_desc": [
 		"Run the blast furnace continuously. Make a &astack&r of Steel Ingots."
 	]
 	"quest.10F87A2D17CAB073.title": "Automate: Steel"
+	"quest.10F97F3E76257275.quest_desc": [
+		"Control engine and propeller power."
+	]
+	"quest.10F97F3E76257275.title": "Throttle Lever"
+	"quest.112B7097521CB372.quest_desc": [
+		"Mix &ablaze powder, gunpowder and magma cream&r. The start of stronger propellant."
+	]
+	"quest.112B7097521CB372.title": "Congealed Nitro"
+	"quest.119F31071255E1D5.quest_desc": [
+		"Scrubbers side by side join into one panel. A full &a5x5&r reaches up and clears the high"
+		"air and the smog clouds."
+	]
+	"quest.119F31071255E1D5.title": "Scrubber Panel"
+	"quest.11FDB45C5A84681B.quest_desc": [
+		"A raid's heavy armor."
+	]
+	"quest.11FDB45C5A84681B.title": "Ravager"
+	"quest.135D466BB447FEEE.quest_desc": [
+		"Brass casing, electron tube and precision mechanism. Shows radar contacts."
+	]
+	"quest.135D466BB447FEEE.title": "Monitor"
 	"quest.135F39054A742654.quest_desc": [
 		"&eThis pack's own item:&r mix an &aEnder Pearl + 250 mB Telejuice&r in a Basin."
 		"Replaces ender pearls in waystone recipes."
@@ -133,15 +406,61 @@
 		"A Press over a belt of iron ingots. Make a &astack&r of Iron Sheets."
 	]
 	"quest.14817DE690D788A0.title": "Automate: Iron Sheets"
+	"quest.14939665A825B598.quest_desc": [
+		"Lets hoppers, funnels and pipes insert into and extract from the whole network."
+	]
+	"quest.14939665A825B598.title": "Inventory Interface"
+	"quest.149E2F64521FBDE6.quest_desc": [
+		"Wear it with the backtank to breathe from it."
+	]
+	"quest.149E2F64521FBDE6.title": "Copper Diving Helmet"
 	"quest.14AE92114CC90F48.quest_desc": [
 		"Cook kelp in a furnace, smoker or on a campfire. Later, an &aEncased Fan&r blowing"
 		"through fire does it in bulk."
 	]
 	"quest.14AE92114CC90F48.title": "Dried Kelp"
+	"quest.14BCD8B12AE6EF84.quest_desc": [
+		"The biggest bomb. Mechanical crafting around a Large Bomb, with a precision mechanism and"
+		"sturdy sheets. &cBe careful where you drop it.&r"
+	]
+	"quest.14BCD8B12AE6EF84.title": "MOAB"
+	"quest.14F99FFA53D598FD.quest_desc": [
+		"Where the shell goes in."
+	]
+	"quest.14F99FFA53D598FD.title": "Arcon Barrel Section (Breech)"
 	"quest.157B57B8355906AB.quest_desc": [
 		"Heavy casing, steel mechanism and electron tube. Finds &aoil deposits&r underground."
 	]
 	"quest.157B57B8355906AB.title": "Surface Scanner"
+	"quest.15F66045D0C797A4.quest_desc": [
+		"A long-range guided missile: set its target with the Target Gunner Gadget."
+	]
+	"quest.15F66045D0C797A4.title": "Tomahawk"
+	"quest.162B154459B5939E.quest_desc": [
+		"Armored-train looks."
+	]
+	"quest.162B154459B5939E.title": "Riveted Locometal"
+	"quest.170A73A299563CC2.quest_desc": [
+		"Nailgun ammo."
+	]
+	"quest.170A73A299563CC2.title": "Nails"
+	"quest.17101C72A1903A91.quest_desc": [
+		"Opens your locked trains."
+	]
+	"quest.17101C72A1903A91.title": "Iron Key"
+	"quest.1735BB1FF6FB4780.quest_desc": [
+		"Emergency air. Soul fire, soul torches and soul campfires also make small pockets of"
+		"breathable air."
+	]
+	"quest.1735BB1FF6FB4780.title": "Bottle of Soulfire"
+	"quest.1738721036346250.quest_desc": [
+		"Spreads oxygen through the hull."
+	]
+	"quest.1738721036346250.title": "Oxygen Diffuser"
+	"quest.17A6D73E23678BDD.quest_desc": [
+		"Deep dark. Probably best avoided."
+	]
+	"quest.17A6D73E23678BDD.title": "The Warden"
 	"quest.1810AAC17B0A938A.quest_desc": [
 		"Craft &aQuartz&r with &aredstone dust&r to make &aRose Quartz&r."
 	]
@@ -150,20 +469,57 @@
 		"Copper casing, Block of Experience and a sponge."
 	]
 	"quest.18C30ADB760AAE42.title": "Experience Lantern"
+	"quest.196090EA37747DAD.quest_desc": [
+		"Engine smokestacks collect &aWaste Oil&r. Refine it with clay in a heated basin."
+	]
+	"quest.196090EA37747DAD.title": "Refined Oil"
+	"quest.1A0135C606EB0E16.quest_desc": [
+		"Sequenced assembly: TNT, brass sheet and a fluid pipe."
+	]
+	"quest.1A0135C606EB0E16.title": "Rocket"
+	"quest.1A20D6A79DF02040.quest_desc": [
+		"Adds &acast iron&r: punches through armor before exploding."
+	]
+	"quest.1A20D6A79DF02040.title": "Armor Piercing Shell"
+	"quest.1A4FD9D28FD574FC.quest_desc": [
+		"Tube chamber and barrel: the launcher."
+	]
+	"quest.1A4FD9D28FD574FC.title": "Torpedo Tube"
+	"quest.1AB2FB971E4C51CC.quest_desc": [
+		"&6Create Radar: Fire Arc Filter&r. Mark &cno-fire sectors&r so turrets don't hit your own"
+		"base or ships."
+	]
+	"quest.1AB2FB971E4C51CC.title": "Fire Arc Filters"
 	"quest.1AB72D9EE25ADB14.quest_desc": [
 		"Made with a gold sheet. The &aWrench&r rotates Create blocks, and sneak-using it picks"
 		"them up instantly."
 	]
 	"quest.1AB72D9EE25ADB14.title": "Wrench"
+	"quest.1AC5779555467F08.quest_desc": [
+		"Jumps up before it goes off. Tripwire hook trigger."
+	]
+	"quest.1AC5779555467F08.title": "Bounding Mine"
 	"quest.1AF4C0EB171B91E8.quest_desc": [
 		"Andesite alloy, planks and stone (mechanical crafting). Two &aCrushing Wheels&r spinning"
 		"toward each other crush ores into &acrushed ore&r: far more metal per ore than smelting."
 	]
 	"quest.1AF4C0EB171B91E8.title": "Crushing Wheels"
+	"quest.1AFDEB5FBC17B28A.quest_desc": [
+		"A small mount for autocannons on vehicles."
+	]
+	"quest.1AFDEB5FBC17B28A.title": "Compact Autocannon Mount"
+	"quest.1B28C23F7F0D9389.quest_desc": [
+		"Automates where a train goes."
+	]
+	"quest.1B28C23F7F0D9389.title": "Train Schedule"
 	"quest.1BD0EA51B5612C64.quest_desc": [
 		"Keep the heat on without lifting a finger."
 	]
 	"quest.1BD0EA51B5612C64.title": "Heat Automation"
+	"quest.1BF438DC607E8E62.quest_desc": [
+		"Cure one with a golden apple and weakness."
+	]
+	"quest.1BF438DC607E8E62.title": "Zombie Villagers"
 	"quest.1C0A64D0E5145EF4.quest_desc": [
 		"One-time teleport to a waystone. Uses a &dQuantum Pearl&r in this pack."
 	]
@@ -172,6 +528,14 @@
 		"Another distillation product: engine fuel."
 	]
 	"quest.1C23EC68FAEA93EF.title": "Diesel"
+	"quest.1C79F0536FCB42A7.quest_desc": [
+		"Andesite casing, iron sheet, iron nuggets and a piston pole."
+	]
+	"quest.1C79F0536FCB42A7.title": "Cannon Builder"
+	"quest.1CC566DCC6037250.quest_desc": [
+		"Cut logs into a mould. Bigger cannon parts need bigger moulds."
+	]
+	"quest.1CC566DCC6037250.title": "Cast Mould"
 	"quest.1CF412C654F1F427.quest_desc": [
 		"Heavy casing, heavy plate and steel: a fuel-burning engine for serious rotational power."
 	]
@@ -181,6 +545,18 @@
 		"&a1 bucket of Biofuel = 20 minutes of superheat.&r"
 	]
 	"quest.1D0C2F8A5C8D6DA9.title": "Blaze Burner with Straw"
+	"quest.1D3C5F87BC0291E0.quest_desc": [
+		"Ocean monument boss. Mining Fatigue."
+	]
+	"quest.1D3C5F87BC0291E0.title": "Elder Guardian"
+	"quest.1D6EA8A5CB88FCDF.quest_desc": [
+		"Jet thrust for fast aircraft."
+	]
+	"quest.1D6EA8A5CB88FCDF.title": "Jet"
+	"quest.1DD53B0B1D8C1FB9.quest_desc": [
+		"See and search everything on the network from one screen."
+	]
+	"quest.1DD53B0B1D8C1FB9.title": "Storage Terminal"
 	"quest.1EFEBE35ACDF5803.quest_desc": [
 		"&eChanged in this pack:&r Napalm is mixed from &aAluminum Ingot + 1000 mB Gasoline +"
 		"250 mB Biofuel&r over a &6Superheated&r burner (makes 250 mB)."
@@ -189,15 +565,36 @@
 		"with care."
 	]
 	"quest.1EFEBE35ACDF5803.title": "Tier 3 Fuel: Napalm"
+	"quest.1F391BB7B007C12F.quest_desc": [
+		"Every pilot needs a pair."
+	]
+	"quest.1F391BB7B007C12F.title": "Aviator's Goggles"
+	"quest.1F6B36437C9F338E.quest_desc": [
+		"Leather and string. A portable refill of air."
+	]
+	"quest.1F6B36437C9F338E.title": "Air Bladder"
 	"quest.1FE66342C645AA64.quest_desc": [
 		"Brass sheet, a Spout and a block of iron. Copies books and enchanted books."
 	]
 	"quest.1FE66342C645AA64.title": "Printer"
+	"quest.2046EC2EB85F2020.quest_desc": [
+		"An upgraded levitite."
+	]
+	"quest.2046EC2EB85F2020.title": "Pearlescent Levitite"
 	"quest.205AA396405C0F61.quest_desc": [
 		"Brass ingot, electron tube and dried kelp. Like an andesite funnel, but it can &afilter&r"
 		"and move whole stacks."
 	]
 	"quest.205AA396405C0F61.title": "Brass Funnel"
+	"quest.20798AC33774E094.quest_desc": [
+		"&aIron sheets&r and gunpowder: a sturdier chamber than logs."
+	]
+	"quest.20798AC33774E094.title": "Wrought Iron Cannon"
+	"quest.207A6631CA77A8EC.quest_desc": [
+		"Place it, put food on it, and right-click with a &aknife&r (or axe, pickaxe, shovel)."
+		"Planks and sticks."
+	]
+	"quest.207A6631CA77A8EC.title": "Cutting Board"
 	"quest.20B1AC5BF862EA1B.quest_desc": [
 		"Heavy industry on autopilot."
 	]
@@ -214,11 +611,67 @@
 		"Mix an &aender pearl&r with &arose quartz&r. A core part of teleporter tech."
 	]
 	"quest.2180ADB6E46AC859.title": "Redstone Pearl"
+	"quest.221AD5A5A71139A3.quest_desc": [
+		"Planks and iron. The base for storage upgrades."
+	]
+	"quest.221AD5A5A71139A3.title": "Storage Upgrade Base"
+	"quest.222C59BD86688FD7.quest_desc": [
+		"A &aflywheel&r, string, brass and iron sheets: a handheld ballista."
+	]
+	"quest.222C59BD86688FD7.title": "Ballistazooka"
+	"quest.2270F3906EA75CD8.quest_desc": [
+		"Copper sheets, a fluid pipe and iron bars (makes 3). Pipe water into it to hydrate farmland."
+	]
+	"quest.2270F3906EA75CD8.title": "Sprinkler"
+	"quest.2363FC61C8D84632.quest_desc": [
+		"Poison arrows from swamps and trial chambers."
+	]
+	"quest.2363FC61C8D84632.title": "Bogged"
+	"quest.23E16B7EDA0A0A85.quest_desc": [
+		"Their skulls summon the Wither."
+	]
+	"quest.23E16B7EDA0A0A85.title": "Wither Skeletons"
+	"quest.2416A967A69FD188.quest_desc": [
+		"Collected from filters. Compact 4 into coal, or 6 into graphite."
+	]
+	"quest.2416A967A69FD188.title": "Soot"
+	"quest.244FA77672364CA5.quest_desc": [
+		"On-board controls."
+	]
+	"quest.244FA77672364CA5.title": "Drone Controls"
+	"quest.2461493636AB9AC8.quest_desc": [
+		"The business end."
+	]
+	"quest.2461493636AB9AC8.title": "Arcon Cannon Muzzle"
+	"quest.2479F9ADF092F86D.quest_desc": [
+		"A droppable bomb."
+	]
+	"quest.2479F9ADF092F86D.title": "SC250 Bomb"
+	"quest.24DAE58E17E18027.quest_desc": [
+		"A camera that feeds a monitor, for remote aiming."
+	]
+	"quest.24DAE58E17E18027.title": "Camera"
+	"quest.24EBC08912BF74CC.quest_desc": [
+		"Built from a proximity fuze: bursts near aircraft."
+	]
+	"quest.24EBC08912BF74CC.title": "Aircraft Proximity Fuze"
+	"quest.24F9886D990D5FBD.quest_desc": [
+		"A short-range infrared missile."
+	]
+	"quest.24F9886D990D5FBD.title": "AIM-9X"
+	"quest.2519832DF78B9EB9.quest_desc": [
+		"Mix &acharcoal dust&r with &airon&r for Gunsmithing steel. Better guns need it."
+	]
+	"quest.2519832DF78B9EB9.title": "Gun Steel"
 	"quest.252033B55A5BDA67.quest_desc": [
 		"Blowing through &alava&r smelts items, &awater&r washes them, &afire&r smokes them. A fan"
 		"is the cheapest way to process in bulk."
 	]
 	"quest.252033B55A5BDA67.title": "Encased Fan"
+	"quest.252D8DF36E7599EE.quest_desc": [
+		"See what your drone sees."
+	]
+	"quest.252D8DF36E7599EE.title": "Drone Camera"
 	"quest.257D9DE8F5DF9281.quest_desc": [
 		"Andesite Alloy makes &aShafts&r: they carry rotation in a straight line from one machine"
 		"to the next."
@@ -233,6 +686,10 @@
 		"under a Press."
 	]
 	"quest.26EC6558855D5B57.title": "Cast Iron"
+	"quest.26FF016B45448F85.quest_desc": [
+		"Thrust from lava fuel; redstone sets the throttle."
+	]
+	"quest.26FF016B45448F85.title": "Rocket Engine"
 	"quest.2701BFD6DE6338F6.quest_desc": [
 		"A biofuel plant that keeps its own mixer superheated. Fill a &astack&r of Biofuel buckets"
 		"(16)."
@@ -246,25 +703,109 @@
 		"Production goals for the Brass Age."
 	]
 	"quest.279E94C7E37D4A13.title": "Brass Automation"
+	"quest.27B83168473D2123.quest_desc": [
+		"Clock, iron and redstone: bursts after a set time, for airbursts."
+	]
+	"quest.27B83168473D2123.title": "Timed Fuze"
+	"quest.27C7E3679A99E65E.quest_desc": [
+		"&6Create: Smog&r: anything that burns pollutes its chunk. Pollution here is handled &aonly"
+		"with Create machines&r. Stack smokestacks on a source: &a12 tall&r sends most of the smoke"
+		"into the high air, where it spreads thin."
+	]
+	"quest.27C7E3679A99E65E.title": "Smokestack"
 	"quest.2820B4A2B63AB6CF.quest_desc": [
 		"Polish rose quartz with &aSandpaper&r (hold use), or let a Deployer holding sandpaper do it."
 	]
 	"quest.2820B4A2B63AB6CF.title": "Polished Rose Quartz"
+	"quest.282B8F98D1E419E7.quest_desc": [
+		"Iron to gold."
+	]
+	"quest.282B8F98D1E419E7.title": "Gold Tier"
 	"quest.28B372346FDAC614.quest_desc": [
 		"&aBrass Casing&r, an &aElectron Tube&r and a crafting table. Place several in a grid, connect"
 		"them with the wrench, and power them to craft recipes bigger than 3x3. The &dwaystone&r"
 		"recipes in this pack use them."
 	]
 	"quest.28B372346FDAC614.title": "Mechanical Crafter"
+	"quest.28FA53FC0E80852A.quest_desc": [
+		"A directional mine: the blast goes one way."
+	]
+	"quest.28FA53FC0E80852A.title": "M18A1 Claymore"
+	"quest.29652E2BA6AE13B3.quest_desc": [
+		"A &ablaze burner&r, fluid tank, pipe and chute: a flamethrower."
+	]
+	"quest.29652E2BA6AE13B3.title": "Blazegun"
+	"quest.297C16F5F33DB4DD.quest_desc": [
+		"The simplest big cannon: &alogs&r and &agunpowder&r make a &aLog Cannon Chamber&r and an end."
+		"Short range and fragile, but it fires. &cBig Cannons are multiblocks&r: check each part's Ponder."
+	]
+	"quest.297C16F5F33DB4DD.title": "Log Cannon"
+	"quest.29E6A06D262FC52F.quest_desc": [
+		"Mounts rockets under wings."
+	]
+	"quest.29E6A06D262FC52F.title": "Rocket Bracket"
 	"quest.2A2F6D7284B0213C.quest_desc": [
 		"A compact one-way teleport point. Uses Quantum Casings too."
 	]
 	"quest.2A2F6D7284B0213C.title": "Portstone"
+	"quest.2A8180943E58554F.quest_desc": [
+		"The top cannon material. Cast a barrel from molten &anethersteel&r."
+	]
+	"quest.2A8180943E58554F.title": "Nethersteel"
+	"quest.2A94ABD09E21FD9D.quest_desc": [
+		"Mechanical crafting with C4 and a leather chestplate."
+	]
+	"quest.2A94ABD09E21FD9D.title": "Bomb Vest"
+	"quest.2AAC2846CE112D90.quest_desc": [
+		"4 soot and string. A cheaper way to make cartridges."
+	]
+	"quest.2AAC2846CE112D90.title": "Filter Medium"
+	"quest.2AC057F850BF58B8.quest_desc": [
+		"Liquid-fueled trains."
+	]
+	"quest.2AC057F850BF58B8.title": "Fuel Tank"
+	"quest.2B4BFECA3D6F7D80.quest_desc": [
+		"Do not look them in the eye."
+	]
+	"quest.2B4BFECA3D6F7D80.title": "Endermen"
+	"quest.2BFAFF067189BF14.quest_desc": [
+		"Come up from the deep safely."
+	]
+	"quest.2BFAFF067189BF14.title": "Decompression Chamber"
+	"quest.2C489D95F51758A5.quest_desc": [
+		"Shows a linked camera's view and controls linked weapons."
+	]
+	"quest.2C489D95F51758A5.title": "Monitor (Air War)"
+	"quest.2C4D537C18CE8E78.quest_desc": [
+		"Same idea as the chest, in barrel form."
+	]
+	"quest.2C4D537C18CE8E78.title": "Sophisticated Barrel"
+	"quest.2C5821CD9043F72B.quest_desc": [
+		"A base for your drones."
+	]
+	"quest.2C5821CD9043F72B.title": "Drone Hub"
+	"quest.2CCF522E002D4D92.quest_desc": [
+		"&6Thick Air&r's respirator (paper, string, charcoal): helps in thin air. Not the same as"
+		"Smog's respirator."
+	]
+	"quest.2CCF522E002D4D92.title": "Air Respirator"
 	"quest.2CE27670B22613B3.quest_desc": [
 		"Apply a Block of Experience to a fluid hatch. Right-click to store your own levels as"
 		"liquid experience; sneak-right-click to take them back."
 	]
 	"quest.2CE27670B22613B3.title": "Experience Hatch"
+	"quest.2CE2E4FBE8339897.quest_desc": [
+		"Brass casing, redstone torch and transmitter: connects radar to other machines."
+	]
+	"quest.2CE2E4FBE8339897.title": "Data Link"
+	"quest.2D3BE4E1574155BC.quest_desc": [
+		"A base for many meals."
+	]
+	"quest.2D3BE4E1574155BC.title": "Cooked Rice"
+	"quest.2D48D5DB94BF1979.quest_desc": [
+		"Pulls items in and pushes them out, with filters."
+	]
+	"quest.2D48D5DB94BF1979.title": "Hopper Upgrade"
 	"quest.2D89FEC40D52AEA2.quest_desc": [
 		"Same ingredients as the funnel. Put it over a belt to &asplit, filter and balance&r items"
 		"across belts."
@@ -280,10 +821,30 @@
 		"Make a &astack&r."
 	]
 	"quest.2DD1199EE570E8A6.title": "Automate: Andesite Alloy"
+	"quest.2DD644438104E15A.quest_desc": [
+		"Brass casing, electron tube and redstone link: marks you as friendly."
+	]
+	"quest.2DD644438104E15A.title": "Identification Transponder"
 	"quest.2E3F189B4FBB8213.quest_desc": [
 		"Same smithing upgrade, with an &aanvil&r instead of an enchanting table."
 	]
 	"quest.2E3F189B4FBB8213.title": "Blaze Forger"
+	"quest.2E52F82D051E855F.quest_desc": [
+		"Paper, electron tube and redstone: choose what radar sees."
+	]
+	"quest.2E52F82D051E855F.title": "Detection Filter"
+	"quest.2E6F6CB4B39FF8FE.quest_desc": [
+		"Spyglass, brass sheet and black dye."
+	]
+	"quest.2E6F6CB4B39FF8FE.title": "Scope"
+	"quest.2EAEFDD17395F2DB.quest_desc": [
+		"Cut a porkchop on the board. Meat cuts cook faster and stack into meals."
+	]
+	"quest.2EAEFDD17395F2DB.title": "Raw Bacon"
+	"quest.2F37EAD823F5C5A1.quest_desc": [
+		"Combines filters into one network."
+	]
+	"quest.2F37EAD823F5C5A1.title": "Network Controller"
 	"quest.2F3B184CE57794CA.quest_desc": [
 		"&eChanged in this pack:&r a &aQuantum Pearl&r and an &aamethyst shard&r make 4 Warp Dust."
 	]
@@ -292,19 +853,68 @@
 		"Base, crank and hammer, built over an oil deposit, pump &acrude oil&r."
 	]
 	"quest.2F4686DB77BD1C7C.title": "Pumpjack"
+	"quest.2F50915EC162CD62.quest_desc": [
+		"Fangs and vexes. Drops a Totem of Undying."
+	]
+	"quest.2F50915EC162CD62.title": "Evoker"
+	"quest.2F7B3CC7044ABB69.quest_desc": [
+		"Cuts through terrain."
+	]
+	"quest.2F7B3CC7044ABB69.title": "Rock Cutting Wheel"
+	"quest.2F8A12AA39826B5F.quest_desc": [
+		"Iron ingots, iron nuggets and wooden slabs: the basic cannonball."
+	]
+	"quest.2F8A12AA39826B5F.title": "Solid Shot"
+	"quest.2FA74C71CCB3010E.quest_desc": [
+		"Lets water in and out of the tanks."
+	]
+	"quest.2FA74C71CCB3010E.title": "Ballast Vent"
 	"quest.2FC01DCFD815E793.quest_desc": [
 		"A &abrass sheet&r and &aandesite alloy&r. The business end of a Deployer."
 	]
 	"quest.2FC01DCFD815E793.title": "Brass Hand"
+	"quest.2FEB14F8B42244B0.quest_desc": [
+		"Hit their fireballs back."
+	]
+	"quest.2FEB14F8B42244B0.title": "Ghasts"
+	"quest.302F7A79DA6CDED1.quest_desc": [
+		"Cook an egg in the skillet."
+	]
+	"quest.302F7A79DA6CDED1.title": "Fried Egg"
+	"quest.3056509D9518AA4D.quest_desc": [
+		"&6Farmer's Delight&r: a &aknife&r cuts food, harvests straw from grass, and gets more"
+		"drops from animals. Flint and a stick."
+	]
+	"quest.3056509D9518AA4D.title": "Flint Knife"
 	"quest.30690D9174F34F2D.quest_desc": [
 		"Teleports you back to your spawn point."
 	]
 	"quest.30690D9174F34F2D.title": "Return Scroll"
+	"quest.307B7F558FE98190.quest_desc": [
+		"Plan where you're going."
+	]
+	"quest.307B7F558FE98190.title": "Navigation Table"
+	"quest.315E6012D36080BC.quest_desc": [
+		"Senses tilt, for auto-leveling."
+	]
+	"quest.315E6012D36080BC.title": "Gimbal Sensor"
+	"quest.316983E7A8C8D912.quest_desc": [
+		"The casing for autocannon rounds."
+	]
+	"quest.316983E7A8C8D912.title": "Autocannon Cartridge"
 	"quest.3188AB5143C724A6.quest_desc": [
 		"Brass needs &6heat&r, and heat comes from a &aBlaze Burner&r. Craft an"
 		"&aEmpty Blaze Burner&r from &airon sheets&r and &anetherrack&r."
 	]
 	"quest.3188AB5143C724A6.title": "Empty Blaze Burner"
+	"quest.31C9C301A68F80A3.quest_desc": [
+		"Axes. Shield up."
+	]
+	"quest.31C9C301A68F80A3.title": "Vindicators"
+	"quest.324B5B374FEE171F.quest_desc": [
+		"Open your network from anywhere nearby."
+	]
+	"quest.324B5B374FEE171F.title": "Wireless Terminal"
 	"quest.32E70B970B951381.quest_desc": [
 		"&cElytras are disabled.&r End ships no longer carry one, and gliding is blocked even if"
 		"you find one."
@@ -317,11 +927,27 @@
 		"advanced machines."
 	]
 	"quest.3371D99BDCDED5AC.title": "Brass Casing"
+	"quest.3473E7F36010A291.quest_desc": [
+		"Feasts are placed blocks that serve several plates. One feeds a whole squad before a raid."
+	]
+	"quest.3473E7F36010A291.title": "Roast Chicken Feast"
 	"quest.34E9EC54D3ED4DE2.quest_desc": [
 		"&eThis pack's own recipe:&r compact &a9 Blocks of Coal&r in a Basin over a &6Superheated&r"
 		"burner to make &b1 Diamond&r. Automate it and make a &astack&r (576 coal blocks)."
 	]
 	"quest.34E9EC54D3ED4DE2.title": "Automate: Diamonds"
+	"quest.3516F58AAEBDAF62.quest_desc": [
+		"Netherite upgrade: holds far more air."
+	]
+	"quest.3516F58AAEBDAF62.title": "Reinforced Air Bladder"
+	"quest.3527520056C4B53A.quest_desc": [
+		"Heavier vehicles."
+	]
+	"quest.3527520056C4B53A.title": "Large Tire"
+	"quest.3583295B288EBDC6.quest_desc": [
+		"Crushed end stone: part of the levitite process (see JEI)."
+	]
+	"quest.3583295B288EBDC6.title": "End Stone Powder"
 	"quest.359CB1C16A2C769F.quest_desc": [
 		"Sequenced assembly on a &asturdy sheet&r with a &adiamond&r and a &aRedstone Pearl&r."
 	]
@@ -330,14 +956,103 @@
 		"Quantum casing, Quantum Mechanism, Redstone Pearl and a transmitter. Links portals."
 	]
 	"quest.361D29A4C61B6861.title": "Advanced TP Link"
+	"quest.363DDA5259789DDD.quest_desc": [
+		"&6Improved Mobs&r: mobs get stronger the longer you play. The &dDifficulty&r number"
+		"(bottom right) goes up over time. Higher difficulty means better gear, more health, and"
+		"mobs that break blocks to reach you."
+	]
+	"quest.363DDA5259789DDD.title": "First Blood"
+	"quest.367A3FC09B9D2759.quest_desc": [
+		"Compact 6 soot."
+	]
+	"quest.367A3FC09B9D2759.title": "Graphite"
 	"quest.367C2F2B0C2B6767.quest_desc": [
 		"Step on it to warp to a linked plate. Made with Warp Dust."
 	]
 	"quest.367C2F2B0C2B6767.title": "Warp Plate"
+	"quest.36AAE0F95A2E1194.quest_desc": [
+		"&6Rolled Homogeneous Armor&r: armor plating in many camo colors. Protects against cannon"
+		"fire."
+	]
+	"quest.36AAE0F95A2E1194.title": "Hardened Steel Armor"
+	"quest.36E772B547DD464B.quest_desc": [
+		"Pulls nearby items in. Great for clearing loot after a fight."
+	]
+	"quest.36E772B547DD464B.title": "Magnet Upgrade"
+	"quest.377AA8FD1BA2A3FC.quest_desc": [
+		"A way in and out."
+	]
+	"quest.377AA8FD1BA2A3FC.title": "Armored Hatch"
+	"quest.381EFD6DCD13A8ED.quest_desc": [
+		"Actuator fins, brass casing, steel and a powder charge."
+	]
+	"quest.381EFD6DCD13A8ED.title": "Rocket Motor"
+	"quest.385048FDBEED3462.quest_desc": [
+		"Iron plates, glass, a compass and redstone. Aim your drops from the air."
+	]
+	"quest.385048FDBEED3462.title": "Bombsight"
+	"quest.38531C3CA7566C6E.quest_desc": [
+		"Sturdier blades."
+	]
+	"quest.38531C3CA7566C6E.title": "Andesite Propeller"
 	"quest.386FB1A022BFF30E.quest_desc": [
 		"Production goals for Andesite-tier machines. Make these with &amachines&r, not by hand."
 	]
 	"quest.386FB1A022BFF30E.title": "Andesite Automation"
+	"quest.38F621FA929A1DD8.quest_desc": [
+		"&6Create: The Air War&r. Arm your aircraft. (Its launchers and their ammo are removed in this"
+		"pack; guns, bombs and missile blocks remain.)"
+	]
+	"quest.38F621FA929A1DD8.title": "Aircraft Machine Gun"
+	"quest.38FD043F88311C72.quest_desc": [
+		"A gearbox and a precision mechanism each. They let radar &aaim a cannon mount&r for you."
+	]
+	"quest.38FD043F88311C72.title": "Auto Yaw and Pitch Controllers"
+	"quest.390997AC21E3AFB3.quest_desc": [
+		"Adds buoyancy."
+	]
+	"quest.390997AC21E3AFB3.title": "Floater"
+	"quest.392E87A3E40E4C76.quest_desc": [
+		"Temperate biomes."
+	]
+	"quest.392E87A3E40E4C76.title": "Onion"
+	"quest.398902EC58D4FE30.quest_desc": [
+		"Paper, precision mechanism and redstone: choose what gets shot at."
+	]
+	"quest.398902EC58D4FE30.title": "Targeting Filter"
+	"quest.39B7178398319DC1.quest_desc": [
+		"Brass casing, comparator, precision mechanism and redstone: fires when on target."
+	]
+	"quest.39B7178398319DC1.title": "Fire Controller"
+	"quest.3A6991406BB1CE62.quest_desc": [
+		"&6Create: The Air War&r: a first-person attack drone. Place it, link it with the Drone"
+		"Joystick, and fly."
+	]
+	"quest.3A6991406BB1CE62.title": "FPV Drone"
+	"quest.3A964BAC2C4E7B3A.quest_desc": [
+		"Crops grow faster on it, and mushrooms grow into colonies."
+	]
+	"quest.3A964BAC2C4E7B3A.title": "Rich Soil"
+	"quest.3B2B86194B0D7B30.quest_desc": [
+		"Iron, leather and string. The base for every backpack upgrade."
+	]
+	"quest.3B2B86194B0D7B30.title": "Backpack Upgrade Base"
+	"quest.3B31101BA6D1CD75.quest_desc": [
+		"Electron tube, precision mechanism and redstone: shells that steer."
+	]
+	"quest.3B31101BA6D1CD75.title": "Guided Fuze"
+	"quest.3BABEFE16AC81C7F.quest_desc": [
+		"Command drones from a vehicle."
+	]
+	"quest.3BABEFE16AC81C7F.title": "Commander Seat"
+	"quest.3BCB9BC5F3C84756.quest_desc": [
+		"Near beaches."
+	]
+	"quest.3BCB9BC5F3C84756.title": "Cabbage"
+	"quest.3BD3289A683A729A.quest_desc": [
+		"Armor-piercing ammo for the autocannon."
+	]
+	"quest.3BD3289A683A729A.title": "AP Autocannon Round"
 	"quest.3BD47489393A7320.quest_desc": [
 		"Find a &cBlaze&r (a Nether fortress blaze spawner is ideal) and use the Empty Blaze Burner"
 		"on it to capture it."
@@ -350,28 +1065,117 @@
 		"cogwheel doubles or halves the speed."
 	]
 	"quest.3BF3768260E3F121.title": "Cogwheels"
+	"quest.3C0083216B96355F.quest_desc": [
+		"A rapid-fire cannon from a cast &abreech&r and &abarrel&r. Feeds on cartridges."
+	]
+	"quest.3C0083216B96355F.title": "Autocannon"
+	"quest.3D42DEA97763E9D2.quest_desc": [
+		"Settle wastewater in a basin with a mixer."
+	]
+	"quest.3D42DEA97763E9D2.title": "Clarified Water"
 	"quest.3E2D23E1D3A0EBE4.quest_desc": [
 		"Everything starts with rotation. Head to the &6Andesite Age&r."
 	]
 	"quest.3E2D23E1D3A0EBE4.title": "Start Building"
+	"quest.3E8A5CA51D5E3551.quest_desc": [
+		"Outputs 0-15 redstone for the pollution around it. Turn on scrubbers automatically."
+	]
+	"quest.3E8A5CA51D5E3551.title": "Smog Sensor"
+	"quest.3E8CDCFA219066BF.quest_desc": [
+		"Skips across water."
+	]
+	"quest.3E8CDCFA219066BF.title": "HE Bouncing Bomb"
+	"quest.3EA769AC23CBEC0F.quest_desc": [
+		"Armor-piercing high explosive."
+	]
+	"quest.3EA769AC23CBEC0F.title": "APHE Bomb"
 	"quest.3EBBCA8C5D0936F3.quest_desc": [
 		"Fill the cake base with liquid experience using a Spout."
 	]
 	"quest.3EBBCA8C5D0936F3.title": "Cake o' Enchanting"
+	"quest.3EF1E1D409B7DDAD.quest_desc": [
+		"Iron bars, white wool and andesite alloy. Goes in an Air Scrubber. Clogged cartridges"
+		"come back clean with &abulk washing&r (fan through water)."
+	]
+	"quest.3EF1E1D409B7DDAD.title": "Filter Cartridge"
+	"quest.3F82F140108CBD1D.quest_desc": [
+		"Mechanical crafting: brass plates, an electron tube, a &aWired Fuze&r, a powder charge,"
+		"redstone, string and guncotton. Stick it to a wall and set it off remotely."
+	]
+	"quest.3F82F140108CBD1D.title": "C4 Charge"
+	"quest.405CADB4D11C95CC.quest_desc": [
+		"A better key."
+	]
+	"quest.405CADB4D11C95CC.title": "Gold Key"
+	"quest.4081D65FB1B1B03E.quest_desc": [
+		"Cast iron, iron plate, guncotton and a heavy pressure plate. Stops vehicles."
+	]
+	"quest.4081D65FB1B1B03E.title": "Large Mine"
 	"quest.40B15D449F2EBE71.quest_desc": [
 		"Smithing: a &aBlaze Burner&r, an &aenchanting table&r and a &aBlaze Upgrade Smithing"
 		"Template&r. Enchants items automatically with liquid experience."
 	]
 	"quest.40B15D449F2EBE71.title": "Blaze Enchanter"
+	"quest.40D51604C8B3AE17.quest_desc": [
+		"Mill hardened nitro into &aNitropowder&r: a stronger charge filling than gunpowder."
+	]
+	"quest.40D51604C8B3AE17.title": "Nitropowder"
+	"quest.40F499E79AE3DD52.quest_desc": [
+		"Mechanical crafting: explosive filling, iron and wooden slabs. Shells need a &afuze&r to"
+		"go off."
+	]
+	"quest.40F499E79AE3DD52.title": "High Explosive Shell"
+	"quest.410E56CB8C715403.quest_desc": [
+		"Iron sheets, iron bars, andesite casing and a shaft. Spin it and give it a cartridge to"
+		"clean the chunk around it. Pipe in water for a faster, sulfur-catching wet filter."
+	]
+	"quest.410E56CB8C715403.title": "Air Scrubber"
+	"quest.412783421E3F2B5F.quest_desc": [
+		"&cNo air in the End&r: bring backtanks and air bladders."
+	]
+	"quest.412783421E3F2B5F.title": "The Ender Dragon"
 	"quest.41370BD350C0E8DF.quest_desc": [
 		"Andesite alloy and a shaft. The entry point to Enchantment Industry; its Ponder shows how"
 		"it turns items and enchantments into &aliquid experience&r."
 	]
 	"quest.41370BD350C0E8DF.title": "Mechanical Grindstone"
+	"quest.41380124E301CF88.quest_desc": [
+		"Mix organic compost with water in a basin. Sprinklers spray it to speed up crops."
+	]
+	"quest.41380124E301CF88.title": "Liquid Fertilizer"
+	"quest.4197D2995C3D7FE3.quest_desc": [
+		"Iron plates, a dispenser and redstone. Mount it on an aircraft."
+	]
+	"quest.4197D2995C3D7FE3.title": "Rocket Pod Section"
+	"quest.41CD81FE0E6AA722.quest_desc": [
+		"Spins up, then fires very fast. Power it with redstone."
+	]
+	"quest.41CD81FE0E6AA722.title": "Minigun"
+	"quest.41F3783BD41BD8AD.quest_desc": [
+		"Lays a smoke screen."
+	]
+	"quest.41F3783BD41BD8AD.title": "Smoke Shell"
 	"quest.4257FB3FAF262265.quest_desc": [
 		"Compact &aeggs, sugar and lapis&r in a Basin."
 	]
 	"quest.4257FB3FAF262265.title": "Cake Base o' Enchanting"
+	"quest.42A23A4ACF5E0DBA.quest_desc": [
+		"Outputs redstone by height: the basis of altitude hold."
+	]
+	"quest.42A23A4ACF5E0DBA.title": "Altitude Sensor"
+	"quest.42E06B591264712B.quest_desc": [
+		"Copper, iron nuggets and guncotton. Guards a harbor."
+	]
+	"quest.42E06B591264712B.title": "Sea Mine"
+	"quest.42F7C1E1748DCE3D.quest_desc": [
+		"Program flight logic with Cimulink circuits."
+	]
+	"quest.42F7C1E1748DCE3D.title": "Circuit"
+	"quest.438EF50C90497E4F.quest_desc": [
+		"Andesite casing, iron sheet, shaft and gunpowder. A mount turns and aims a cannon with"
+		"rotational power; assemble the cannon on it."
+	]
+	"quest.438EF50C90497E4F.title": "Cannon Mount"
 	"quest.43B65B6F74E24201.quest_desc": [
 		"&cWaystones don't generate&r in the world or in villages. You have to craft them, and every"
 		"waystone recipe runs on &dTelejuice&r: Quantum Pearls, Quantum Casings and Quantum Paper."
@@ -379,15 +1183,65 @@
 		"You'll learn to make it in the &dQuantum Expansion&r."
 	]
 	"quest.43B65B6F74E24201.title": "Waystones Are Built, Not Found"
+	"quest.44241F8B25C03EB8.quest_desc": [
+		"An air-to-air missile. Mechanical crafting with a &aProximity Fuze&r and a precision"
+		"mechanism."
+	]
+	"quest.44241F8B25C03EB8.title": "AIM-9 Sidewinder"
+	"quest.446D9B17AB7994FD.quest_desc": [
+		"Brass casing, a radar dish and a receiver: compact radar for aircraft."
+	]
+	"quest.446D9B17AB7994FD.title": "Plane Radar"
+	"quest.44BEA75788C0D2BC.quest_desc": [
+		"Shot balls and gunpowder: bursts into fragments."
+	]
+	"quest.44BEA75788C0D2BC.title": "Shrapnel Shell"
+	"quest.45338D757CFC7C63.quest_desc": [
+		"Iron sheet and andesite alloy. Pipe exhaust from a machine to a smokestack elsewhere."
+		"A broken duct leaks and smokes."
+	]
+	"quest.45338D757CFC7C63.title": "Exhaust Duct"
+	"quest.453E0E92B7BA6611.quest_desc": [
+		"Keeps trains from colliding."
+	]
+	"quest.453E0E92B7BA6611.title": "Train Signal"
+	"quest.459817C4038930C4.quest_desc": [
+		"Links and flies FPV drones."
+	]
+	"quest.459817C4038930C4.title": "Drone Joystick"
 	"quest.45BDA6C768B90B56.quest_desc": [
 		"Blow kelp through &afire&r with an Encased Fan (smoking). Make a &astack&r of Dried Kelp."
 	]
 	"quest.45BDA6C768B90B56.title": "Automate: Dried Kelp"
+	"quest.45EF11E35D7CAB2D.quest_desc": [
+		"String, guncotton and iron nuggets (makes 2). Booby-trap a doorway."
+	]
+	"quest.45EF11E35D7CAB2D.title": "Tripwire Coil"
+	"quest.460F2822FC8D77BC.quest_desc": [
+		"Marks an area radar weapons won't fire into."
+	]
+	"quest.460F2822FC8D77BC.title": "Radar Safe Zone Designator"
+	"quest.463608773F5CEE47.quest_desc": [
+		"Lead and copper nuggets into a blank gatling round."
+	]
+	"quest.463608773F5CEE47.title": "Gatling Round"
 	"quest.4680D4EEDDCD2B02.quest_desc": [
 		"&eChanged in this pack:&r waystones don't generate. Mechanical crafting: Warp Stone,"
 		"&d3 Quantum Pearls&r, &d2 Quantum Casings&r, casings and bricks."
 	]
 	"quest.4680D4EEDDCD2B02.title": "Waystone"
+	"quest.4706D48B2397DBEB.quest_desc": [
+		"A boss that destroys blocks. Fight it far from your base."
+	]
+	"quest.4706D48B2397DBEB.title": "The Wither"
+	"quest.47DAF49FAD3BD9FB.quest_desc": [
+		"Bread, patty, cabbage, tomato, onion."
+	]
+	"quest.47DAF49FAD3BD9FB.title": "Hamburger"
+	"quest.47EF23A2057ECF4E.quest_desc": [
+		"They climb walls. Walls alone will not stop them."
+	]
+	"quest.47EF23A2057ECF4E.title": "Spiders"
 	"quest.47FAA13063C15889.quest_desc": [
 		"A &aWater Wheel&r turns when water flows past it. It's your first source of"
 		"&6stress capacity&r (SU). Every machine uses some; the goggles show how much is left."
@@ -397,6 +1251,39 @@
 		"A &asteel sheet&r on &aSteel Casing&r. The shell for oil and engine machinery."
 	]
 	"quest.48768D4D201D8CE7.title": "Heavy Machinery Casing"
+	"quest.48B1B3FC63F633F8.quest_desc": [
+		"Assemble and stop trains at a &aStation&r. Check the Ponder."
+	]
+	"quest.48B1B3FC63F633F8.title": "Train Station"
+	"quest.48BD6C1FF6EEBB8E.quest_desc": [
+		"Desert zombies. They make you hungry."
+	]
+	"quest.48BD6C1FF6EEBB8E.title": "Husks"
+	"quest.4A5F8E84D4A3E786.quest_desc": [
+		"Deny an area of sea."
+	]
+	"quest.4A5F8E84D4A3E786.title": "Underwater Mine"
+	"quest.4AB1E382B8490E57.quest_desc": [
+		"Brass casing, brass sheets, an electron tube and iron bars. Put it in an exhaust line:"
+		"it catches soot, more the faster it spins. Pipe water in to wash out sulfur."
+	]
+	"quest.4AB1E382B8490E57.title": "Electrostatic Precipitator"
+	"quest.4B274D3E2316F111.quest_desc": [
+		"Lead balls into a blank shotgun round."
+	]
+	"quest.4B274D3E2316F111.title": "Shotgun Round"
+	"quest.4B42BE877F72A499.quest_desc": [
+		"A self-stabilizing propeller bearing."
+	]
+	"quest.4B42BE877F72A499.title": "Gyroscopic Propeller Bearing"
+	"quest.4BCEC493225826A4.quest_desc": [
+		"Copper to iron."
+	]
+	"quest.4BCEC493225826A4.title": "Iron Tier"
+	"quest.4BF2549A5697EC75.quest_desc": [
+		"Tell friend from foe."
+	]
+	"quest.4BF2549A5697EC75.title": "Identification Filter"
 	"quest.4C0B58935DA7AACD.quest_desc": [
 		"Compact &aliquid experience&r into a solid &aBlock of Experience&r."
 	]
@@ -417,22 +1304,94 @@
 		"A chorus fruit farm feeding a heated mixer. Fill a &astack&r of Telejuice buckets (16)."
 	]
 	"quest.4D1D21B956A310AC.title": "Automate: Telejuice"
+	"quest.4D59F0C8C2DE0CB2.quest_desc": [
+		"Control surfaces."
+	]
+	"quest.4D59F0C8C2DE0CB2.title": "Flap Bearing"
+	"quest.4D699D6ADDDBDDE5.quest_desc": [
+		"Iron plate, nuggets and red wool. Safely cut enemy tripwires."
+	]
+	"quest.4D699D6ADDDBDDE5.title": "Wire Cutters"
 	"quest.4DA0DEC5FD32700E.quest_desc": [
 		"Fill a &astack&r of Bucket o' Enchanting (16) from an automated setup."
 	]
 	"quest.4DA0DEC5FD32700E.title": "Automate: Liquid Experience"
+	"quest.4DB1904CB77CFEAE.quest_desc": [
+		"&6Create Aeronautics: AMBUSH&r: enemies attack in planned &cambushes&r and &cinvasions&r,"
+		"including &cairships, armored cars and anti-air&r built with the same Create tech you"
+		"use. Enemy airships can appear on their own."
+		"&aPrepare:&r radar to see them coming (Radar chapter), anti-air guns, and an air-raid"
+		"siren."
+	]
+	"quest.4DB1904CB77CFEAE.title": "Ambush!"
+	"quest.4E215730E6F0B136.quest_desc": [
+		"Gunpowder, a lead nugget and paper: flintlock ammo."
+	]
+	"quest.4E215730E6F0B136.title": "Paper Cartridge"
+	"quest.4EB5ADD78C50BDC2.quest_desc": [
+		"&6Create: Bits 'n' Tracks&r: Sable-driven &atank treads&r. Check the Ponder for a track setup."
+	]
+	"quest.4EB5ADD78C50BDC2.title": "Tank Tread"
+	"quest.4F0949D1FAB33BD1.quest_desc": [
+		"Ammunition for Arcon cannons."
+	]
+	"quest.4F0949D1FAB33BD1.title": "BOPS Armor-Piercing Shell"
+	"quest.4F2CCD3CA4F4ED74.quest_desc": [
+		"Warm biomes."
+	]
+	"quest.4F2CCD3CA4F4ED74.title": "Tomato"
+	"quest.4F2DB21B147A7C58.quest_desc": [
+		"Gold to diamond."
+	]
+	"quest.4F2DB21B147A7C58.title": "Diamond Tier"
 	"quest.4FC33F44C920C77C.quest_desc": [
 		"Refined from crude oil. Needed for &cnapalm&r."
 	]
 	"quest.4FC33F44C920C77C.title": "Gasoline"
+	"quest.4FF0B24C57E15BD3.quest_desc": [
+		"Andesite alloy, iron sheet, flint and steel and a stripped log: your first gun."
+	]
+	"quest.4FF0B24C57E15BD3.title": "Flintlock"
 	"quest.500E380CBF65328A.quest_desc": [
 		"Put &airon ingots&r on the Depot and let the Press flatten them into &aIron Sheets&r."
 	]
 	"quest.500E380CBF65328A.title": "Iron Sheets"
+	"quest.50822B0BBA2CD21E.quest_desc": [
+		"Fly drones wirelessly."
+	]
+	"quest.50822B0BBA2CD21E.title": "Drone Remote Controller"
+	"quest.5083A2BCC04083A8.quest_desc": [
+		"Pushes and pulls parts of your craft precisely."
+	]
+	"quest.5083A2BCC04083A8.title": "Hydraulic Linear Actuator"
+	"quest.5098E62B79F885D8.quest_desc": [
+		"&6Enhanced AI&r: skeletons aim better and keep their distance. Fight from cover."
+	]
+	"quest.5098E62B79F885D8.title": "Snipers"
 	"quest.50CD930018A90F12.quest_desc": [
 		"Everything quantum starts in &dthe End&r: bring back &achorus fruit&r (and plant some)."
 	]
 	"quest.50CD930018A90F12.title": "Chorus Fruit"
+	"quest.5116C8CBF8F4C26B.quest_desc": [
+		"Andesite casing, piston pole and gunpowder. Pushes charges and shells into the breech."
+	]
+	"quest.5116C8CBF8F4C26B.title": "Cannon Loader"
+	"quest.515DC0FA59FD5614.quest_desc": [
+		"Row, row, row."
+	]
+	"quest.515DC0FA59FD5614.title": "Oar of Boat"
+	"quest.5194AC4C99BEB854.quest_desc": [
+		"Mechanical crafting with a propeller and an impact fuze. Sinks ships."
+	]
+	"quest.5194AC4C99BEB854.title": "Sea Torpedo"
+	"quest.521CA3B1F77D8E70.quest_desc": [
+		"Create trains run on &aTrain Track&r."
+	]
+	"quest.521CA3B1F77D8E70.title": "Train Track"
+	"quest.528707EC128E396E.quest_desc": [
+		"Iron plates, copper, a note block and a shaft. Warn your base when bombers come."
+	]
+	"quest.528707EC128E396E.title": "Air-Raid Siren"
 	"quest.5329946572EF2539.quest_desc": [
 		"Press a &aBlock of Experience&r into an &aEnchanting Template&r."
 	]
@@ -441,11 +1400,15 @@
 		"Loop the sequenced assembly line so it runs unattended. Make &a5 Precision Mechanisms&r."
 	]
 	"quest.537966C61051FF3E.title": "Automate: Precision Mechanisms"
+	"quest.53A9557C86F6A159.quest_desc": [
+		"A storage terminal with a crafting grid that pulls straight from the network."
+	]
+	"quest.53A9557C86F6A159.title": "Crafting Terminal"
 	"quest.53C1D57D1C14787F.quest_desc": [
 		"You've built the core Andesite machines. This &aunlocks the Brass Age&r, and the"
 		"&6Automation&r chapter has goals for putting these machines to work."
 		""
-		"&7Requires: Press & Depot, Basin and Mixer, Belts and Iron Sheets.&r"
+		"&7Requires: Press and Depot, Basin and Mixer, Belts and Iron Sheets.&r"
 		""
 		"Next up: you'll need a captured &cBlaze&r to make brass."
 	]
@@ -455,15 +1418,65 @@
 		"teleporter."
 	]
 	"quest.53FCAEF396A40468.title": "Quantum Mechanism"
+	"quest.5459DE3C6BCF979E.quest_desc": [
+		"See under water. (A different block from the Air War sonar.)"
+	]
+	"quest.5459DE3C6BCF979E.title": "Sonar (Deep Seas)"
+	"quest.5480C8B5E1657A00.quest_desc": [
+		"Holds a belt of autocannon rounds for continuous fire."
+	]
+	"quest.5480C8B5E1657A00.title": "Autocannon Ammo Container"
+	"quest.54A10483D0EE3E7F.quest_desc": [
+		"&6Create: High Seas&r. Boats are Sable physics objects too (see the Physics Assembler in"
+		"Aeronautics). A rudder steers."
+	]
+	"quest.54A10483D0EE3E7F.title": "Rudder"
+	"quest.54DE44FFAE0A9DDE.quest_desc": [
+		"&6Sophisticated Backpacks&r: leather, string and a chest. Wear it or place it."
+	]
+	"quest.54DE44FFAE0A9DDE.title": "Backpack"
 	"quest.54F28171B8869203.quest_desc": [
 		"Made with an iron sheet. A &aMechanical Harvester&r on a moving contraption harvests"
 		"fully grown crops and replants them: the basis of any farm."
 	]
 	"quest.54F28171B8869203.title": "Mechanical Harvester"
+	"quest.55133A80FE1B9D72.quest_desc": [
+		"Break tall grass or wheat with a knife."
+	]
+	"quest.55133A80FE1B9D72.title": "Straw"
+	"quest.5616C2CB21D1F5E0.quest_desc": [
+		"Goes off on contact. Put a fuze on a shell before loading it."
+	]
+	"quest.5616C2CB21D1F5E0.title": "Impact Fuze"
+	"quest.5654679C05A47678.quest_desc": [
+		"&aLevitite&r provides lift: build it into a hull to make it float."
+	]
+	"quest.5654679C05A47678.title": "Levitite"
+	"quest.56C06FAADEC153C4.quest_desc": [
+		"Blaze burner, brass and iron sheets: welds cannon parts together."
+	]
+	"quest.56C06FAADEC153C4.title": "Cannon Welder"
+	"quest.56DD42619431371D.quest_desc": [
+		"A long barrel for the flintlock: more range."
+	]
+	"quest.56DD42619431371D.title": "Musket Barrel"
 	"quest.57B7CCC186625ABD.quest_desc": [
 		"Your first bucket of &acrude oil&r."
 	]
 	"quest.57B7CCC186625ABD.title": "Crude Oil"
+	"quest.58136A6ECBF2CA4A.quest_desc": [
+		"Mount blades on a &aPropeller Bearing&r and spin it for thrust."
+	]
+	"quest.58136A6ECBF2CA4A.title": "Propeller Bearing"
+	"quest.58281E71C2982F6E.quest_desc": [
+		"&6CBC Ballistic Computer&r: calculates trajectories so you can hit what you aim at."
+	]
+	"quest.58281E71C2982F6E.title": "Ballistic Computer"
+	"quest.58601A41B035E394.quest_desc": [
+		"Right-click a placed chest or barrel with a tier upgrade to make it bigger &awithout"
+		"emptying it&r. Copper first (copper ingots and a lever), then up the tiers."
+	]
+	"quest.58601A41B035E394.title": "Chest Tier Upgrades"
 	"quest.591FA47EC216B85D.quest_desc": [
 		"Some recipes need a &6Superheated&r burner. This pack has three fuel tiers, and each one"
 		"needs superheat to produce, so you climb them in order:"
@@ -473,15 +1486,95 @@
 		"&63. Napalm&r: 1 hour per bucket (made in the &6Industrial Age&r)"
 	]
 	"quest.591FA47EC216B85D.title": "Fuel Tiers"
+	"quest.593880FB761DDE5A.quest_desc": [
+		"Mechanical crafting: precision mechanism, electron tube, brass and sturdy sheets, a"
+		"propeller, a powder charge, guncotton and an impact fuze."
+	]
+	"quest.593880FB761DDE5A.title": "Cruise Missile"
+	"quest.597A3E429F55275A.quest_desc": [
+		"Doors that work on a moving train."
+	]
+	"quest.597A3E429F55275A.title": "Train Door"
+	"quest.598BE4ADE1531AFA.quest_desc": [
+		"Drives your boat through the water."
+	]
+	"quest.598BE4ADE1531AFA.title": "Boat Engine"
+	"quest.59C4C64E295DD12D.quest_desc": [
+		"Fine maneuvering under water."
+	]
+	"quest.59C4C64E295DD12D.title": "Water Thruster"
+	"quest.59C7A4B8DD096B55.quest_desc": [
+		"Tilts rotors to steer."
+	]
+	"quest.59C7A4B8DD096B55.title": "Tilting Propeller Bearing"
+	"quest.5A3BA4624706AB01.quest_desc": [
+		"Industrial iron, an electron tube and a lightning rod."
+	]
+	"quest.5A3BA4624706AB01.title": "Radar Receiver"
+	"quest.5AFAAE84D66D6BA3.quest_desc": [
+		"Thin air down here too (see Pollution and Air): bring a backtank."
+	]
+	"quest.5AFAAE84D66D6BA3.title": "Into the Nether"
+	"quest.5B0A036B4AB20650.quest_desc": [
+		"The press form for shotgun shells."
+	]
+	"quest.5B0A036B4AB20650.title": "Shotgun Shell Press Form"
+	"quest.5B0AB69264381253.quest_desc": [
+		"Adds a &aprecision mechanism&r and a cogwheel to the steel-and-brass build."
+	]
+	"quest.5B0AB69264381253.title": "Gatling"
+	"quest.5B24BCB91BBD80FB.quest_desc": [
+		"&6Tom's Simple Storage&r is this pack's storage network. The &aInventory Connector&r"
+		"joins every touching chest, barrel and vault into one network. Needs a diamond and an"
+		"ender pearl."
+	]
+	"quest.5B24BCB91BBD80FB.title": "Inventory Connector"
+	"quest.5B2A171A8BB00B84.quest_desc": [
+		"Iron, bricks and a campfire. The heat source for pots and skillets."
+	]
+	"quest.5B2A171A8BB00B84.title": "Stove"
+	"quest.5B90707D8FDB5662.quest_desc": [
+		"Outputs redstone when a train passes."
+	]
+	"quest.5B90707D8FDB5662.title": "Train Observer"
+	"quest.5B9696024A7D8AC9.quest_desc": [
+		"Items you walk over go straight into the backpack."
+	]
+	"quest.5B9696024A7D8AC9.title": "Pickup Upgrade"
+	"quest.5BC063A06F708BDE.quest_desc": [
+		"The submarine's command console."
+	]
+	"quest.5BC063A06F708BDE.title": "Onboard Computer"
 	"quest.5C326BE896F9406D.quest_desc": [
 		"The furnace makes &amolten steel&r; cast it into &aSteel Ingots&r."
 	]
 	"quest.5C326BE896F9406D.title": "Steel"
+	"quest.5C8F73A18227EF75.quest_desc": [
+		"&6Steam 'n' Rails&r adds more to trains: a handcar for quick trips."
+	]
+	"quest.5C8F73A18227EF75.title": "Handcar"
 	"quest.5D03F1D941E5D2B8.quest_desc": [
 		"Made with iron sheets. A &aMechanical Drill&r mines whatever is in front of it: the heart"
 		"of cobblestone generators and tunnel borers."
 	]
 	"quest.5D03F1D941E5D2B8.title": "Mechanical Drill"
+	"quest.5D19704DF98EF7C1.quest_desc": [
+		"The strongest barrels are &abuilt up&r from steel layers with a Cannon Builder, then"
+		"bored with a Cannon Drill. Check the Ponder."
+	]
+	"quest.5D19704DF98EF7C1.title": "Built-Up Steel Cannon"
+	"quest.5E4C130E5B208860.quest_desc": [
+		"&6Create: Armored Constructs&r: tank-style vehicle cannons."
+	]
+	"quest.5E4C130E5B208860.title": "Arcon Cannon Barrel"
+	"quest.5F40C639C270FBD0.quest_desc": [
+		"Bastion guards. They never calm down."
+	]
+	"quest.5F40C639C270FBD0.title": "Piglin Brute"
+	"quest.5F57791FE7C5E54E.quest_desc": [
+		"Mechanical crafting: brass and steel sheets, andesite alloy and a stripped log."
+	]
+	"quest.5F57791FE7C5E54E.title": "Shotgun"
 	"quest.60A8E36CAE45E950.quest_desc": [
 		"&eThis pack's own recipe:&r &aCrushing Wheels&r crushing &aNether Bricks&r (the block) have a"
 		"&a5% chance&r to drop &aNetherite Scrap&r. Netherrack is endless, so this is renewable."
@@ -505,6 +1598,25 @@
 		"&a100 mB of Seed Oil&r over a &6heated&r burner to make &aBiomass&r."
 	]
 	"quest.6112990A4F373F3B.title": "Biomass"
+	"quest.6117481665174663.quest_desc": [
+		"&6Create: Slice and Dice&r: a cogwheel, andesite casing and turntable. Put a knife in it"
+		"and it runs &acutting board recipes&r on items below it, like a press on a depot or belt."
+		"Check the Ponder."
+	]
+	"quest.6117481665174663.title": "Slicer"
+	"quest.614588AD6D3684C0.quest_desc": [
+		"Add a lead nugget to a blank round."
+	]
+	"quest.614588AD6D3684C0.title": "Revolver Round"
+	"quest.61EA0CE43165502E.quest_desc": [
+		"Fly it yourself: a &aSteering Wheel&r on your craft lets you steer from the seat."
+	]
+	"quest.61EA0CE43165502E.title": "Steering Wheel"
+	"quest.628849AB04278591.quest_desc": [
+		"Brass sheet, compass, electron tube, steel and precision mechanism: steers the missile"
+		"onto a radar track."
+	]
+	"quest.628849AB04278591.title": "Guidance Computer"
 	"quest.62C2BF76845D80A0.quest_desc": [
 		"A &aBasin&r holds ingredients; a &aMechanical Mixer&r above it mixes them, and a Press"
 		"above it compacts them. Many recipes need &6heat&r from a burner under the basin; you'll"
@@ -516,23 +1628,81 @@
 		"a hatch. Check the Ponder for the full multiblock."
 	]
 	"quest.62D79935090F608A.title": "Blast Furnace"
+	"quest.62E11FB1B49183D9.quest_desc": [
+		"Slowness arrows in cold biomes."
+	]
+	"quest.62E11FB1B49183D9.title": "Strays"
+	"quest.62E99830472736C1.quest_desc": [
+		"Iron sheets: flat radar panels."
+	]
+	"quest.62E99830472736C1.title": "Radar Plate"
 	"quest.6306F2A0E0D78360.quest_desc": [
 		"Sequenced assembly with heavy plates, lead and nickel sheets, steel cogwheels and screws."
 		"JEI shows every step."
 	]
 	"quest.6306F2A0E0D78360.title": "Steel Mechanism"
-	"quest.63DA6FB61B0FE89C.quest_desc": [
-		"Ender pearls and Telejuice into a mixer, automatically. Make a &astack&r (16)."
+	"quest.636673A39A09D339.quest_desc": [
+		"Gunpowder, iron plate, shot balls and a pressure plate."
 	]
-	"quest.63DA6FB61B0FE89C.title": "Automate: Quantum Pearls"
+	"quest.636673A39A09D339.title": "Small Mine"
+	"quest.6393779977E23D30.quest_desc": [
+		"Redstone torch, lever, copper and iron plate. Sets off your C4."
+	]
+	"quest.6393779977E23D30.title": "Detonator"
 	"quest.64156283A7F5D425.quest_desc": [
 		"Press brass ingots into &aBrass Sheets&r on a Depot, like iron and gold."
 	]
 	"quest.64156283A7F5D425.title": "Brass Sheets"
+	"quest.653667B88343242F.quest_desc": [
+		"For when they get too close."
+	]
+	"quest.653667B88343242F.title": "Bayonet"
+	"quest.658C20D3D998E1FC.quest_desc": [
+		"Crush or mill charcoal."
+	]
+	"quest.658C20D3D998E1FC.title": "Charcoal Dust"
+	"quest.65B386CAEB47A994.quest_desc": [
+		"&6Synaxis&r: precision controls for Sable craft (circuits, Lua, motors and actuators)."
+	]
+	"quest.65B386CAEB47A994.title": "Control Chair"
+	"quest.661BA95EC4E158D5.quest_desc": [
+		"Hearty and simple."
+	]
+	"quest.661BA95EC4E158D5.title": "Vegetable Soup"
+	"quest.6629BCD414634293.quest_desc": [
+		"Every Warnautics explosive uses &aPacked Guncotton&r, Big Cannons' high explosive"
+		"(check JEI for how it's made)."
+	]
+	"quest.6629BCD414634293.title": "Packed Guncotton"
 	"quest.663C120074F50910.quest_desc": [
 		"A waystone shared by everyone who uses the same color. Uses Quantum Casings too."
 	]
 	"quest.663C120074F50910.title": "Sharestone"
+	"quest.663EC1BF344C859B.quest_desc": [
+		"Call your train."
+	]
+	"quest.663EC1BF344C859B.title": "Conductor Whistle"
+	"quest.66447527701EAC29.quest_desc": [
+		"Shows the wind."
+	]
+	"quest.66447527701EAC29.title": "Wind Vane"
+	"quest.666707D21D56B27F.quest_desc": [
+		"Read water pressure at a glance."
+	]
+	"quest.666707D21D56B27F.title": "Pressure Goggles"
+	"quest.669054B8698F5052.quest_desc": [
+		"Lift and thrust."
+	]
+	"quest.669054B8698F5052.title": "Drone Propeller"
+	"quest.66C3EC98853BC5DF.quest_desc": [
+		"&6CBC Aeronautics Missiles&r: brass casing, steel, iron sheet and precision mechanism."
+		"Launches guided missiles."
+	]
+	"quest.66C3EC98853BC5DF.title": "Missile Mount"
+	"quest.672FD2FD5E0B970A.quest_desc": [
+		"Dropped from aircraft into water."
+	]
+	"quest.672FD2FD5E0B970A.title": "Aerial Torpedo"
 	"quest.67454231A804793A.quest_desc": [
 		"The Coke Oven bakes &acoal&r into &aCoal Coke&r, the fuel for the blast furnace."
 	]
@@ -542,32 +1712,69 @@
 		"a player (placing, clicking, applying), and it's the key machine for sequenced assembly."
 	]
 	"quest.674633D31D85B876.title": "Deployer"
+	"quest.679F6C0F323E288F.quest_desc": [
+		"Simple, cheap blades."
+	]
+	"quest.679F6C0F323E288F.title": "Wooden Propeller"
 	"quest.67A8D26B5BBD67D5.quest_desc": [
 		"Feed copper and zinc into a heated Mixer automatically. Make a &astack&r of Brass Ingots."
 	]
 	"quest.67A8D26B5BBD67D5.title": "Automate: Brass"
+	"quest.681D7475EC18C5EA.quest_desc": [
+		"Underwater thrust."
+	]
+	"quest.681D7475EC18C5EA.title": "Submarine Propeller"
 	"quest.6831CB5CFFFE83CA.quest_desc": [
 		"Casings make machines tidy and are an ingredient in many recipes, including &dwaystones&r."
 	]
 	"quest.6831CB5CFFFE83CA.title": "Andesite Casing"
+	"quest.689AB4054B803CCE.quest_desc": [
+		"Uses a &aMechanical Arm&r: pick targets for your missiles."
+	]
+	"quest.689AB4054B803CCE.title": "Targeting Interface"
 	"quest.690304EEF8A85B66.quest_desc": [
 		"The first Create material. Combine &aandesite&r with &airon nuggets&r (or zinc nuggets)."
 		"Check &aJEI&r for the recipe: press &aU&r on an item to see how it's made."
 	]
 	"quest.690304EEF8A85B66.title": "Andesite Alloy"
+	"quest.6965B2C1A9D2D96A.quest_desc": [
+		"Heats basins and boilers with liquid fuel. Very dirty on waste oil, clean on refined oil."
+	]
+	"quest.6965B2C1A9D2D96A.title": "Oil Burner"
 	"quest.6A0F5E3A470D0D6D.quest_desc": [
 		"Brass casing, electron tube, Quantum Mechanism and Redstone Pearl. Fill it with"
 		"&dTelejuice&r to teleport to a paired destination."
 	]
 	"quest.6A0F5E3A470D0D6D.title": "Entity Teleporter"
+	"quest.6A3136FC8C67D6A5.quest_desc": [
+		"Copper, glass panes and string. Spot targets by eye before you track them by radar."
+	]
+	"quest.6A3136FC8C67D6A5.title": "Binoculars"
+	"quest.6A815378A5DE98C6.quest_desc": [
+		"&6Create Deep Seas&r. Flood and empty &aBallast Tanks&r to dive and surface."
+	]
+	"quest.6A815378A5DE98C6.title": "Ballast Tank"
+	"quest.6A99365878ECA1A9.quest_desc": [
+		"Tomatoes in the pot."
+	]
+	"quest.6A99365878ECA1A9.title": "Tomato Sauce"
 	"quest.6AF6E11AB857B769.quest_desc": [
 		"&aPolished Rose Quartz&r on an &aIron Sheet&r: the 'circuit' of Create machines."
 	]
 	"quest.6AF6E11AB857B769.title": "Electron Tube"
+	"quest.6BB4725031FEA927.quest_desc": [
+		"Mark a spot on the water."
+	]
+	"quest.6BB4725031FEA927.title": "Buoy"
 	"quest.6BEC794B9B7ED2B9.quest_desc": [
 		"Belts are made from &adried kelp&r. Gather &akelp&r from any ocean."
 	]
 	"quest.6BEC794B9B7ED2B9.title": "Kelp"
+	"quest.6C3CFAF816C70C1A.quest_desc": [
+		"&6Trigger Mobs&r: some mobs spawn &ccarrying guns&r and fire them at you. Armor up and"
+		"keep moving."
+	]
+	"quest.6C3CFAF816C70C1A.title": "Armed and Dangerous"
 	"quest.6CFFC5E6FB4D423C.quest_desc": [
 		"&eChanged in this pack:&r brewing Biofuel now needs a &6Superheated&r burner. Mix"
 		"&aSugar + Cinder Flour + 2 Biomass&r to make &a125 mB&r."
@@ -575,6 +1782,11 @@
 		"Bootstrap it with Blaze Cakes. Once it's running, Biofuel can keep its own mixer hot."
 	]
 	"quest.6CFFC5E6FB4D423C.title": "Tier 2: Biofuel"
+	"quest.6D0FA79299F60AAC.quest_desc": [
+		"Bricks, iron, a water bucket and a wooden shovel. Put it on a stove and cook meals that"
+		"give &aNourishment&r and &aComfort&r."
+	]
+	"quest.6D0FA79299F60AAC.title": "Cooking Pot"
 	"quest.6D4D3B1AE4194237.quest_desc": [
 		"Grinds items: gravel to flint, flowers to dye, and more. Look up any item in JEI under"
 		"&aMilling&r."
@@ -585,6 +1797,22 @@
 		"slower speed. Gear it up with a large-to-small cogwheel pair."
 	]
 	"quest.6D7A35883B8B3DFF.title": "Large Water Wheel"
+	"quest.6DA7A77B9BBA1369.quest_desc": [
+		"A propeller you can control."
+	]
+	"quest.6DA7A77B9BBA1369.title": "Smart Propeller"
+	"quest.6DFA7706AC394262.quest_desc": [
+		"Zinc: the missile body that carries the warhead."
+	]
+	"quest.6DFA7706AC394262.title": "Payload Casing"
+	"quest.6F217E9F810098F7.quest_desc": [
+		"Compact industrial sludge. Crush it for dust and a chance of metals, or smelt it into brick."
+	]
+	"quest.6F217E9F810098F7.title": "Sludge Cake"
+	"quest.6F3BBA2B34BC0A91.quest_desc": [
+		"Electron tube, iron plates, brass nuggets and redstone. Marks targets."
+	]
+	"quest.6F3BBA2B34BC0A91.title": "Target Designator"
 	"quest.6FC902C0AAB2722B.quest_desc": [
 		"&eChanged in this pack:&r mechanical crafting with &a7 Quantum Pearls&r, amethyst and"
 		"emeralds."
@@ -594,10 +1822,36 @@
 		"&eChanged in this pack:&r every scroll is made from &dQuantum Paper&r."
 	]
 	"quest.708ABE7F0EE91DFA.title": "Blank Scroll"
+	"quest.7127B39888B240ED.quest_desc": [
+		"4 straw."
+	]
+	"quest.7127B39888B240ED.title": "Canvas"
+	"quest.71AA12F89FADBAA6.quest_desc": [
+		"&6Offroad&r: ground vehicles are Sable physics objects (see the Physics Assembler in"
+		"Aeronautics). Mount wheels on a &aWheel Mount&r."
+	]
+	"quest.71AA12F89FADBAA6.title": "Wheel Mount"
+	"quest.71CD320A773018D0.quest_desc": [
+		"Surround a backpack with iron for more slots. It keeps its contents."
+	]
+	"quest.71CD320A773018D0.title": "Iron Backpack"
+	"quest.71E0AD84F1CF7715.quest_desc": [
+		"Copper and a redstone torch. Its color shows the air quality around you."
+	]
+	"quest.71E0AD84F1CF7715.title": "Safety Lantern"
+	"quest.7232B86A04A1181F.quest_desc": [
+		"&6Create&r: a multiblock that holds a huge amount of items. Place several side by side to"
+		"make it bigger. Hook it to your Tom's network like any chest."
+	]
+	"quest.7232B86A04A1181F.title": "Item Vault"
 	"quest.728E9D32BE764BA7.quest_desc": [
 		"Links teleporters together. Advanced component, brass sheet, redstone pearl, transmitter."
 	]
 	"quest.728E9D32BE764BA7.title": "TP Link"
+	"quest.7298096382EF849F.quest_desc": [
+		"Automates ballast pumping."
+	]
+	"quest.7298096382EF849F.title": "Pump Controller"
 	"quest.72BF8D911FA88129.quest_desc": [
 		"Mix &aChorus Fruit + 250 mB water&r over a &6heated&r burner to make &dTelejuice&r"
 		"(Quantum Fluid)."
@@ -613,6 +1867,18 @@
 		"waystone scroll."
 	]
 	"quest.731740FB69570BAB.title": "Quantum Paper"
+	"quest.73638BEF242FD8D0.quest_desc": [
+		"Drives the tracks."
+	]
+	"quest.73638BEF242FD8D0.title": "Flanged Cogwheel"
+	"quest.7391A72D1E941C14.quest_desc": [
+		"Rotor blades."
+	]
+	"quest.7391A72D1E941C14.title": "Drone Blade"
+	"quest.73A80F40FCC06F47.quest_desc": [
+		"Wheels, planks and a shaft: a field carriage to drag a light cannon around."
+	]
+	"quest.73A80F40FCC06F47.title": "Cannon Carriage"
 	"quest.74777FCB60E4E957.quest_desc": [
 		"Blow &agravel&r through water with an &aEncased Fan&r (washing) for iron nuggets, then"
 		"have a &aMechanical Press&r over a &aBasin&r compact them: &a9 nuggets&r into an ingot,"
@@ -621,6 +1887,10 @@
 		"Make a &astack&r of nuggets, a &astack&r of ingots and &a7 Blocks of Iron&r."
 	]
 	"quest.74777FCB60E4E957.title": "Automate: Iron"
+	"quest.7495980C8CC73268.quest_desc": [
+		"Iron bars, quartz and redstone: bursts near a target."
+	]
+	"quest.7495980C8CC73268.title": "Proximity Fuze"
 	"quest.749FE3E4AD2CCE5B.quest_desc": [
 		"Sends items to a paired destination. Brass casing, chute, barrel, Quantum Mechanism."
 	]
@@ -632,10 +1902,31 @@
 		"&a/ftbteams party create <name>&r, then invite your teammates."
 	]
 	"quest.74CDBCF76E1C34D2.title": "Form a Team"
+	"quest.74CFBB049C996D12.quest_desc": [
+		"&6CBC Military Supplement&r: torpedoes are assembled in stages (see JEI) and fired from a"
+		"torpedo tube."
+	]
+	"quest.74CFBB049C996D12.title": "Basic Torpedo"
+	"quest.75DA6E9988F3AA8E.quest_desc": [
+		"The medium bomb's recipe plus &aSturdy Sheets&r."
+	]
+	"quest.75DA6E9988F3AA8E.title": "Large Bomb"
+	"quest.763D4204A08B0422.quest_desc": [
+		"Sequenced assembly: brass sheet and gunpowder, pressed with the form."
+	]
+	"quest.763D4204A08B0422.title": "Revolver Shell"
+	"quest.7647AA74DA277AB7.quest_desc": [
+		"Bullets are made of &alead&r. Mine and smelt lead ore."
+	]
+	"quest.7647AA74DA277AB7.title": "Lead"
 	"quest.768786DC2818C9FB.quest_desc": [
 		"Another distillation product: aviation fuel."
 	]
 	"quest.768786DC2818C9FB.title": "Kerosene"
+	"quest.76CED96AB6CE2651.quest_desc": [
+		"A classic signal arm."
+	]
+	"quest.76CED96AB6CE2651.title": "Semaphore"
 	"quest.76F59EFACD9DBDED.quest_desc": [
 		"Fill a Blaze Cake Base with &a250 mB of lava&r using a Spout."
 		""
@@ -643,6 +1934,10 @@
 		"Mechanical Arm, Deployer or Funnel."
 	]
 	"quest.76F59EFACD9DBDED.title": "Tier 1: Blaze Cake"
+	"quest.7723D422C390F52B.quest_desc": [
+		"&6Create: Droneworks Simulated&r: the heart of a drone. Check the Ponder for a basic build."
+	]
+	"quest.7723D422C390F52B.title": "Drone Core"
 	"quest.772EB687B23B503B.quest_desc": [
 		"Protect your base with &aFTB Chunks&r. Open the claim map from the FTB buttons in your"
 		"inventory and drag across chunks to claim them for your team."
@@ -654,11 +1949,19 @@
 		"Moves a block to a paired destination. Needs an Item Teleporter and a Deployer."
 	]
 	"quest.7750562BA513BD83.title": "Block Teleporter"
+	"quest.77518E8FBF4A5EBF.quest_desc": [
+		"Stonecut an iron ingot. A Press with this form stamps shells."
+	]
+	"quest.77518E8FBF4A5EBF.title": "Revolver Shell Press Form"
 	"quest.77578E1470294AE0.quest_desc": [
 		"A &aGearbox&r turns rotation 90 degrees in any horizontal direction, and is more compact"
 		"than a cog pair."
 	]
 	"quest.77578E1470294AE0.title": "Gearbox"
+	"quest.779A31FF93D9F4FD.quest_desc": [
+		"Iron and brass sheets, gunpowder, copper nuggets and a cogwheel."
+	]
+	"quest.779A31FF93D9F4FD.title": "Frag Grenade"
 	"quest.77BD910B208F5E79.quest_desc": [
 		"Pumpjack to distillation tower, no hands. Fill a &astack&r of Gasoline buckets (16)."
 	]
@@ -667,10 +1970,64 @@
 		"Cast iron tank, pipe, sheet and fireproof bricks: where materials go in."
 	]
 	"quest.77DB7EDAF5F47B92.title": "Blast Furnace Hatch"
+	"quest.77F672E923133118.quest_desc": [
+		"Glass, brass sheet and an electron tube. Hold it for a live pollution reading."
+		"Engineer's Goggles show the state of every Smog machine."
+	]
+	"quest.77F672E923133118.title": "Aerometer"
+	"quest.77F9BCF4792E9119.quest_desc": [
+		"Makes &aoxygen&r for your crew. Submarines need air."
+	]
+	"quest.77F9BCF4792E9119.title": "Electrolyzer"
+	"quest.785134420AE70E3C.quest_desc": [
+		"&6CBC Military Supplement&r: aerial bombs for Big Cannons-style payloads."
+	]
+	"quest.785134420AE70E3C.title": "HE Bomb"
 	"quest.788F9D6BEE492895.quest_desc": [
 		"Keep the coke oven fed. Make a &astack&r of Coal Coke."
 	]
 	"quest.788F9D6BEE492895.title": "Automate: Coal Coke"
+	"quest.78B7A9898E0C4DA1.quest_desc": [
+		"Measures depth pressure."
+	]
+	"quest.78B7A9898E0C4DA1.title": "Pressure Barometer"
+	"quest.792CC832BC6F5671.quest_desc": [
+		"Mechanical crafting: steel, brass and steel sheets, andesite alloy, a cogwheel and a log."
+	]
+	"quest.792CC832BC6F5671.title": "Revolver"
+	"quest.7966DB5B8803ECF8.quest_desc": [
+		"Dirt, straw, bone meal and &atree bark&r (strip logs on the cutting board). Place it and"
+		"it slowly turns into &aRich Soil&r."
+	]
+	"quest.7966DB5B8803ECF8.title": "Organic Compost"
+	"quest.799B3A7B52938525.quest_desc": [
+		"Hot air balloons: a &aHot Air Burner&r under an envelope gives adjustable lift."
+	]
+	"quest.799B3A7B52938525.title": "Hot Air Burner"
+	"quest.79AFAE2A1B4CB9E2.quest_desc": [
+		"Lets cannons fire on their own."
+	]
+	"quest.79AFAE2A1B4CB9E2.title": "Automatic Cannon Controller"
+	"quest.7A0CFA70DB594577.quest_desc": [
+		"Drive the train yourself."
+	]
+	"quest.7A0CFA70DB594577.title": "Train Controls"
+	"quest.7A1C29BC7A1E7837.quest_desc": [
+		"&6CBC: Firepower Components&r. A compact mount for cannons on vehicles and ships."
+	]
+	"quest.7A1C29BC7A1E7837.title": "Compact Cannon Mount"
+	"quest.7AB9FC5B547B2BA9.quest_desc": [
+		"Put rubber on the road."
+	]
+	"quest.7AB9FC5B547B2BA9.title": "Tire"
+	"quest.7AD7EE7AAC074AE1.quest_desc": [
+		"Diamond to netherite: the biggest chest."
+	]
+	"quest.7AD7EE7AAC074AE1.title": "Netherite Tier"
+	"quest.7AEBA39C3151BF3B.quest_desc": [
+		"Washed-out sulfur. Neutralize it in a basin (limestone works) back to clarified water."
+	]
+	"quest.7AEBA39C3151BF3B.title": "Acidic Runoff"
 	"quest.7B00515BF7869680.quest_desc": [
 		"Create Wars is a &6Create&r pack about building a faction that can &cfight&r: aircraft, artillery,"
 		"radar-guided missiles, armored trains and submarines."
@@ -680,12 +2037,58 @@
 	]
 	"quest.7B00515BF7869680.quest_subtitle": "Open the book. You did it."
 	"quest.7B00515BF7869680.title": "Welcome to Create Wars"
+	"quest.7B036FB0C0449878.quest_desc": [
+		"Heavy-duty drive belt."
+	]
+	"quest.7B036FB0C0449878.title": "Industrial Belt"
+	"quest.7B0DBA63C3D5D511.quest_desc": [
+		"Reach storage that isn't next to the connector."
+	]
+	"quest.7B0DBA63C3D5D511.title": "Inventory Cable"
+	"quest.7B4891B86DBC4114.quest_desc": [
+		"Real food for a long fight."
+	]
+	"quest.7B4891B86DBC4114.title": "Beef Stew"
+	"quest.7B58D6CB05D0188E.quest_desc": [
+		"For things below you."
+	]
+	"quest.7B58D6CB05D0188E.title": "Depth Charge"
+	"quest.7B757D6F1FE22F44.quest_desc": [
+		"&6Create: Warnautics&r: bombs fall with &aBig Cannons ballistics&r. Cast iron, iron plate,"
+		"guncotton and a powder charge. Combine two for a bigger rack."
+	]
+	"quest.7B757D6F1FE22F44.title": "Small Bomb"
+	"quest.7C1A8620A78BA4B6.quest_desc": [
+		"Pillagers patrol and raid villages with crossbows."
+	]
+	"quest.7C1A8620A78BA4B6.title": "Raiders"
 	"quest.7C25C2287D94AE08.quest_desc": [
 		"Fill a &aRailway Casing&r with &a1000 mB of Telejuice&r using a Spout."
 	]
 	"quest.7C25C2287D94AE08.title": "Quantum Casing"
+	"quest.7D0A81063D367284.quest_desc": [
+		"&6Sophisticated Storage&r: chests that take upgrades and can be tiered up. Planks and a"
+		"lever (any wood works)."
+	]
+	"quest.7D0A81063D367284.title": "Sophisticated Chest"
+	"quest.7D15B372452C5020.quest_desc": [
+		"Netherite upgrade of the wireless terminal: much longer range."
+	]
+	"quest.7D15B372452C5020.title": "Advanced Wireless Terminal"
+	"quest.7D6935F4DE704537.quest_desc": [
+		"Chute, fluid pipe, brass and steel sheets: fires rockets."
+	]
+	"quest.7D6935F4DE704537.title": "Launcher"
+	"quest.7E06F1098287576C.quest_desc": [
+		"A longer barrel for the revolver."
+	]
+	"quest.7E06F1098287576C.title": "Revolver: Long Barrel"
 	"quest.7EF44200E09553BD.quest_desc": [
 		"Collect your first bucket of liquid experience (&aBucket o' Enchanting&r)."
 	]
 	"quest.7EF44200E09553BD.title": "Liquid Experience"
+	"quest.7FB9FCEB172EFC2A.quest_desc": [
+		"The explosive end."
+	]
+	"quest.7FB9FCEB172EFC2A.title": "Torpedo Warhead"
 }

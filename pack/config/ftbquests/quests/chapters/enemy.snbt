@@ -1,0 +1,622 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "enemy"
+	group: "541CE08481D1C6C5"
+	icon: {
+		id: "minecraft:zombie_head"
+	}
+	id: "706C3C2934D87936"
+	images: [ ]
+	order_index: 16
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"3E2D23E1D3A0EBE4"
+			]
+			id: "363DDA5259789DDD"
+			rewards: [
+				{
+					id: "07192D7BB70D682E"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "6221A81EAB308EDF"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					count: 1
+					id: "6EEB5FB4FECF20C1"
+					item: {
+						count: 1
+						id: "minecraft:shield"
+					}
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					entity: "minecraft:zombie"
+					id: "076D9BADC112F1BF"
+					type: "kill"
+					value: 10L
+				}
+			]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"363DDA5259789DDD"
+			]
+			id: "47EF23A2057ECF4E"
+			rewards: [
+				{
+					id: "432F9B8D8531D0C6"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:spider"
+					id: "6C283C609A2B71CB"
+					type: "kill"
+					value: 5L
+				}
+			]
+			x: -4.8d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"363DDA5259789DDD"
+			]
+			id: "48BD6C1FF6EEBB8E"
+			rewards: [
+				{
+					id: "72F7C59D40450987"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:husk"
+					id: "4EEDF57BF609AE2C"
+					type: "kill"
+					value: 5L
+				}
+			]
+			x: -7.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"363DDA5259789DDD"
+			]
+			id: "1BF438DC607E8E62"
+			rewards: [
+				{
+					id: "035B50523833B035"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:zombie_villager"
+					id: "1A27C5F88D819A53"
+					type: "kill"
+					value: 3L
+				}
+			]
+			x: -6.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"363DDA5259789DDD"
+			]
+			id: "5098E62B79F885D8"
+			rewards: [
+				{
+					id: "5BC2D81DFCEB3D40"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "7ACAFDBEB155EA46"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					entity: "minecraft:skeleton"
+					id: "734B0DA12CFD7B00"
+					type: "kill"
+					value: 10L
+				}
+			]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5098E62B79F885D8"
+			]
+			id: "62E11FB1B49183D9"
+			rewards: [
+				{
+					id: "33B1AED0B6F88E08"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:stray"
+					id: "6757FCF794923709"
+					type: "kill"
+					value: 5L
+				}
+			]
+			x: 1.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"5098E62B79F885D8"
+			]
+			id: "2363FC61C8D84632"
+			rewards: [
+				{
+					id: "5859C655E68EE361"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:bogged"
+					id: "137FC14E93CFEA25"
+					type: "kill"
+					value: 3L
+				}
+			]
+			x: 1.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"5098E62B79F885D8"
+			]
+			id: "10994D153CA9FABA"
+			rewards: [
+				{
+					id: "65DF095D90B82DE6"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "0782F5E6FFDD6C41"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					entity: "minecraft:creeper"
+					id: "3806B41995698D41"
+					type: "kill"
+					value: 5L
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"10994D153CA9FABA"
+			]
+			id: "2B4BFECA3D6F7D80"
+			rewards: [
+				{
+					id: "5D1DB155653A495E"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:enderman"
+					id: "6E7546D7F9FCBA6F"
+					type: "kill"
+					value: 3L
+				}
+			]
+			x: 8.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"10994D153CA9FABA"
+			]
+			id: "0EF9790E6AD7081C"
+			rewards: [
+				{
+					id: "3D37436FF9214A83"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:witch"
+					id: "110F373690B7DD9F"
+					type: "kill"
+					value: 2L
+				}
+			]
+			x: 8.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"10994D153CA9FABA"
+			]
+			id: "6C3CFAF816C70C1A"
+			rewards: [
+				{
+					id: "7D1A830AE29F2234"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "63D7C24DA45B6505"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					entity: "minecraft:zombie"
+					id: "7C2A27D46A099FF1"
+					type: "kill"
+					value: 25L
+				}
+			]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6C3CFAF816C70C1A"
+			]
+			id: "7C1A8620A78BA4B6"
+			rewards: [
+				{
+					id: "63F5F0311D5F9FC6"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "58C379B7D4DA710E"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					entity: "minecraft:pillager"
+					id: "08B94B4C5A9F9221"
+					type: "kill"
+					value: 10L
+				}
+			]
+			x: 22.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7C1A8620A78BA4B6"
+			]
+			id: "31C9C301A68F80A3"
+			rewards: [
+				{
+					id: "53D0038880F744AB"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:vindicator"
+					id: "129CAC7C21FB0EC6"
+					type: "kill"
+					value: 5L
+				}
+			]
+			x: 23.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"7C1A8620A78BA4B6"
+			]
+			id: "2F50915EC162CD62"
+			rewards: [
+				{
+					id: "4C6A9F925D9211DF"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:evoker"
+					id: "13826EDA55D484DD"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 20.8d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"7C1A8620A78BA4B6"
+			]
+			id: "11FDB45C5A84681B"
+			rewards: [
+				{
+					id: "2024A2C01EEFBBAA"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:ravager"
+					id: "3DAA3F764748691C"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 22.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"7C1A8620A78BA4B6"
+			]
+			id: "4DB1904CB77CFEAE"
+			rewards: [
+				{
+					id: "12C1BD0190BD7B6F"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "716B5EDA0BB255DD"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "4672B08D4A18BB44"
+					type: "checkmark"
+				}
+			]
+			x: 29.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4DB1904CB77CFEAE"
+			]
+			id: "5AFAAE84D66D6BA3"
+			rewards: [
+				{
+					id: "06F0085995933527"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "7F7BD0821F1D9E15"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					entity: "minecraft:blaze"
+					id: "693BD722F23EF3CD"
+					type: "kill"
+					value: 10L
+				}
+			]
+			x: 36.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5AFAAE84D66D6BA3"
+			]
+			id: "23E16B7EDA0A0A85"
+			rewards: [
+				{
+					id: "070AA657EDECDAD9"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:wither_skeleton"
+					id: "0F7C8F9D324195D5"
+					type: "kill"
+					value: 5L
+				}
+			]
+			x: 37.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"5AFAAE84D66D6BA3"
+			]
+			id: "2FEB14F8B42244B0"
+			rewards: [
+				{
+					id: "0A11E3BD60FFAD73"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:ghast"
+					id: "76F5893FD525B92B"
+					type: "kill"
+					value: 3L
+				}
+			]
+			x: 34.8d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"5AFAAE84D66D6BA3"
+			]
+			id: "5F40C639C270FBD0"
+			rewards: [
+				{
+					id: "64EA871F17E6E602"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:piglin_brute"
+					id: "0B1E36BE84A336B3"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 36.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"4706D48B2397DBEB"
+			]
+			id: "1D3C5F87BC0291E0"
+			rewards: [
+				{
+					id: "70DECFCA83291F0C"
+					type: "xp"
+					xp: 160
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:elder_guardian"
+					id: "1231CE0F52066EC3"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 41.8d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"5AFAAE84D66D6BA3"
+			]
+			id: "4706D48B2397DBEB"
+			rewards: [
+				{
+					id: "6D3ECCDB33887A3F"
+					type: "xp"
+					xp: 400
+				}
+				{
+					id: "3BFB043EF78DC60F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					entity: "minecraft:wither"
+					id: "760B79C4C1F92A75"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 43.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4706D48B2397DBEB"
+			]
+			id: "412783421E3F2B5F"
+			rewards: [
+				{
+					id: "701F3D4ACDE10B73"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:ender_dragon"
+					id: "6EE930B14C916EA7"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 43.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"4706D48B2397DBEB"
+			]
+			id: "17A6D73E23678BDD"
+			rewards: [
+				{
+					id: "742D7555CABEDB85"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:warden"
+					id: "4068A66C7379ABA1"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 44.2d
+			y: 2.31d
+		}
+	]
+}

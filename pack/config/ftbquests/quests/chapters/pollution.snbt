@@ -1,0 +1,963 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "pollution"
+	group: "79CD1FEEFEBE8885"
+	icon: {
+		id: "smog:air_scrubber"
+	}
+	id: "233471EFD5752016"
+	images: [ ]
+	order_index: 19
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"3E2D23E1D3A0EBE4"
+			]
+			id: "0E100C9DE8E82065"
+			rewards: [
+				{
+					id: "634E2EDA506BD934"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "7DF113074EEA1AC8"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "706BED03951B43BF"
+					item: {
+						count: 1
+						id: "create:copper_backtank"
+					}
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "1D93F6395FDD6F39"
+					item: {
+						count: 1
+						id: "create:copper_backtank"
+					}
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0E100C9DE8E82065"
+			]
+			id: "149E2F64521FBDE6"
+			rewards: [
+				{
+					id: "22C363E01C27ADBE"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "02753FE0522BCEF0"
+					item: {
+						count: 1
+						id: "create:copper_diving_helmet"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6E1B00A70D45F4B5"
+					item: {
+						count: 1
+						id: "create:copper_diving_helmet"
+					}
+					type: "item"
+				}
+			]
+			x: -5.8d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"0E100C9DE8E82065"
+			]
+			id: "1F6B36437C9F338E"
+			rewards: [
+				{
+					id: "4BBB808653EE2C0A"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "0A9E8AE8E20171CB"
+					item: {
+						count: 1
+						id: "thick_air:air_bladder"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3B633EB7EE928A7F"
+					item: {
+						count: 1
+						id: "thick_air:air_bladder"
+					}
+					type: "item"
+				}
+			]
+			x: -8.55d
+			y: 2.09d
+		}
+		{
+			dependencies: [
+				"1F6B36437C9F338E"
+			]
+			id: "3516F58AAEBDAF62"
+			rewards: [
+				{
+					id: "7328C9F39852E3E6"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "336F5BE8B1C1276A"
+					item: {
+						count: 1
+						id: "thick_air:reinforced_air_bladder"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1D463B90E8DA7E44"
+					item: {
+						count: 1
+						id: "thick_air:reinforced_air_bladder"
+					}
+					type: "item"
+				}
+			]
+			x: -9.63d
+			y: 3.53d
+		}
+		{
+			dependencies: [
+				"0E100C9DE8E82065"
+			]
+			id: "71E0AD84F1CF7715"
+			rewards: [
+				{
+					id: "1FCF66E9415923B6"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "359612E7D435585A"
+					item: {
+						count: 1
+						id: "thick_air:safety_lantern"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "145DDA894DCF3F86"
+					item: {
+						count: 1
+						id: "thick_air:safety_lantern"
+					}
+					type: "item"
+				}
+			]
+			x: -8.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"0E100C9DE8E82065"
+			]
+			id: "2CCF522E002D4D92"
+			rewards: [
+				{
+					id: "2B3E471E8F14BDD1"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "7212AD0AC4FFA129"
+					item: {
+						count: 1
+						id: "thick_air:respirator"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "65C79EB984879FE0"
+					item: {
+						count: 1
+						id: "thick_air:respirator"
+					}
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"0E100C9DE8E82065"
+			]
+			id: "1735BB1FF6FB4780"
+			rewards: [
+				{
+					id: "505BF47AF7DE68EB"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "00616EB8FB7D4407"
+					item: {
+						count: 1
+						id: "thick_air:soulfire_bottle"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "27F4B968897568B1"
+					item: {
+						count: 1
+						id: "thick_air:soulfire_bottle"
+					}
+					type: "item"
+				}
+			]
+			x: -5.45d
+			y: 2.09d
+		}
+		{
+			dependencies: [
+				"0E100C9DE8E82065"
+				"690304EEF8A85B66"
+			]
+			id: "27C7E3679A99E65E"
+			rewards: [
+				{
+					id: "2677EA6889458B46"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "77EBB61599520399"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "7280CFA3F3565A13"
+					item: {
+						count: 1
+						id: "smog:flue"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					count: 12L
+					id: "375349323F7926AB"
+					item: {
+						count: 1
+						id: "smog:flue"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"27C7E3679A99E65E"
+			]
+			id: "45338D757CFC7C63"
+			rewards: [
+				{
+					id: "2917CEBA4547C4ED"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "3267F332AFF2A538"
+					item: {
+						count: 1
+						id: "smog:exhaust_duct"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "579259DEB19A64A1"
+					item: {
+						count: 1
+						id: "smog:exhaust_duct"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"27C7E3679A99E65E"
+			]
+			id: "2416A967A69FD188"
+			rewards: [
+				{
+					id: "6507D2E342830BDF"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "208C7216330B5FAD"
+					item: {
+						count: 1
+						id: "smog:soot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "5B8ED1ABEC385476"
+					item: {
+						count: 1
+						id: "smog:soot"
+					}
+					type: "item"
+				}
+			]
+			x: -0.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"2416A967A69FD188"
+			]
+			id: "367A3FC09B9D2759"
+			rewards: [
+				{
+					id: "72F15528C5101FD0"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "607BF4287C78CC02"
+					item: {
+						count: 1
+						id: "smog:graphite"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "692F8DC0A81F29E2"
+					item: {
+						count: 1
+						id: "smog:graphite"
+					}
+					type: "item"
+				}
+			]
+			x: -0.0d
+			y: 4.4d
+		}
+		{
+			dependencies: [
+				"27C7E3679A99E65E"
+			]
+			id: "3EF1E1D409B7DDAD"
+			rewards: [
+				{
+					id: "6A539D26EC035C5A"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "279C90725FA343E2"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "2C9B5BBE1146F101"
+					item: {
+						count: 1
+						id: "smog:filter_cartridge"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					count: 2L
+					id: "55BA506367B4819B"
+					item: {
+						count: 1
+						id: "smog:filter_cartridge"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3EF1E1D409B7DDAD"
+			]
+			id: "012C8C453F6577FE"
+			rewards: [
+				{
+					id: "0D17E74E646A3C49"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "623D7834D0CC50E0"
+					item: {
+						count: 1
+						id: "smog:respirator"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "28DFE1456A72816E"
+					item: {
+						count: 1
+						id: "smog:respirator"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"3EF1E1D409B7DDAD"
+			]
+			id: "2AAC2846CE112D90"
+			rewards: [
+				{
+					id: "0972C6B5268160CC"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "3BB9842816ED1C66"
+					item: {
+						count: 1
+						id: "smog:filter_medium"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "15EB04559E4CA96E"
+					item: {
+						count: 1
+						id: "smog:filter_medium"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"3EF1E1D409B7DDAD"
+				"6831CB5CFFFE83CA"
+			]
+			id: "410E56CB8C715403"
+			rewards: [
+				{
+					id: "280104678560E369"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "0BED317B3D4D2496"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "18ADBBE0EB1CAE94"
+					item: {
+						count: 1
+						id: "smog:air_scrubber"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "244A7D071471557F"
+					item: {
+						count: 1
+						id: "smog:air_scrubber"
+					}
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"410E56CB8C715403"
+			]
+			id: "119F31071255E1D5"
+			rewards: [
+				{
+					id: "691E2256AC6522F8"
+					type: "xp"
+					xp: 160
+				}
+				{
+					count: 3
+					id: "3C7223C65E524BBA"
+					item: {
+						count: 1
+						id: "smog:air_scrubber"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 25L
+					id: "733C36DD6D75C018"
+					item: {
+						count: 1
+						id: "smog:air_scrubber"
+					}
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"410E56CB8C715403"
+			]
+			id: "0D1C293AEDBE7585"
+			rewards: [
+				{
+					id: "067540EDE26E3255"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "7FA2566BAAFB09BC"
+					item: {
+						count: 1
+						id: "smog:industrial_wastewater_bucket"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5858686AFBAD77B7"
+					item: {
+						count: 1
+						id: "smog:industrial_wastewater_bucket"
+					}
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"0D1C293AEDBE7585"
+			]
+			id: "3D42DEA97763E9D2"
+			rewards: [
+				{
+					id: "2B84716EEA2785B9"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "0947460161873A85"
+					item: {
+						count: 1
+						id: "smog:clarified_water_bucket"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "26277C50F05857A8"
+					item: {
+						count: 1
+						id: "smog:clarified_water_bucket"
+					}
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 4.4d
+		}
+		{
+			dependencies: [
+				"3D42DEA97763E9D2"
+			]
+			id: "6F217E9F810098F7"
+			rewards: [
+				{
+					id: "5E1F5A384B514D31"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "6A934A11CE47FF98"
+					item: {
+						count: 1
+						id: "smog:sludge_cake"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "04EE021A1F3B0698"
+					item: {
+						count: 1
+						id: "smog:sludge_cake"
+					}
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 6.2d
+		}
+		{
+			dependencies: [
+				"410E56CB8C715403"
+				"60B90AF4C95E818F"
+			]
+			id: "77F672E923133118"
+			rewards: [
+				{
+					id: "56A7C14C3F85E3D6"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "0461B476FA76D164"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "6B26315A97DC009E"
+					item: {
+						count: 1
+						id: "smog:aerometer"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "387A8C492E902572"
+					item: {
+						count: 1
+						id: "smog:aerometer"
+					}
+					type: "item"
+				}
+			]
+			x: 21.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"77F672E923133118"
+			]
+			id: "3E8A5CA51D5E3551"
+			rewards: [
+				{
+					id: "2866933CE81688E9"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "28AFC15FD6856419"
+					item: {
+						count: 1
+						id: "smog:smog_sensor"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5C282288FD393502"
+					item: {
+						count: 1
+						id: "smog:smog_sensor"
+					}
+					type: "item"
+				}
+			]
+			x: 21.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"77F672E923133118"
+			]
+			id: "6965B2C1A9D2D96A"
+			rewards: [
+				{
+					id: "7D3F46B17FCF1FD6"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "1175501438CB9CE1"
+					item: {
+						count: 1
+						id: "smog:oil_burner"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "22D934065B6F8D93"
+					item: {
+						count: 1
+						id: "smog:oil_burner"
+					}
+					type: "item"
+				}
+			]
+			x: 21.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"6965B2C1A9D2D96A"
+			]
+			id: "196090EA37747DAD"
+			rewards: [
+				{
+					id: "409337C8C3D55B5E"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "1C3E7454D8448F3F"
+					item: {
+						count: 1
+						id: "smog:refined_oil_bucket"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "07C5F73F3850A733"
+					item: {
+						count: 1
+						id: "smog:refined_oil_bucket"
+					}
+					type: "item"
+				}
+			]
+			x: 21.0d
+			y: 4.4d
+		}
+		{
+			dependencies: [
+				"77F672E923133118"
+				"3371D99BDCDED5AC"
+			]
+			id: "4AB1E382B8490E57"
+			rewards: [
+				{
+					id: "389056ABD90BB23D"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "4DE65EB39D897C10"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "3E4ECE2C544162A1"
+					item: {
+						count: 1
+						id: "smog:electrostatic_precipitator"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "364930584557667E"
+					item: {
+						count: 1
+						id: "smog:electrostatic_precipitator"
+					}
+					type: "item"
+				}
+			]
+			x: 28.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4AB1E382B8490E57"
+			]
+			id: "07E8DC1BE76E7D93"
+			rewards: [
+				{
+					id: "3EE2C82154CE72E2"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "5AC7D64658727777"
+					item: {
+						count: 1
+						id: "smog:brass_filter_cartridge"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0668633434080CB5"
+					item: {
+						count: 1
+						id: "smog:brass_filter_cartridge"
+					}
+					type: "item"
+				}
+			]
+			x: 28.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"4AB1E382B8490E57"
+			]
+			id: "7AEBA39C3151BF3B"
+			rewards: [
+				{
+					id: "2FFE5B96235DD5C7"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "298B03563AE193B4"
+					item: {
+						count: 1
+						id: "smog:acidic_runoff_bucket"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0B4F8C3A76CDFAD6"
+					item: {
+						count: 1
+						id: "smog:acidic_runoff_bucket"
+					}
+					type: "item"
+				}
+			]
+			x: 28.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"4AB1E382B8490E57"
+				"109B3C60E36DD5D4"
+			]
+			id: "1010F3ECFE297C65"
+			rewards: [
+				{
+					id: "45FA741E11501A91"
+					type: "xp"
+					xp: 240
+				}
+				{
+					id: "09FA78925F195E07"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "6ECABF1A8CD93CFE"
+					item: {
+						count: 1
+						id: "smog:precision_filter_cartridge"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "58829879FDE5C672"
+					item: {
+						count: 1
+						id: "smog:precision_filter_cartridge"
+					}
+					type: "item"
+				}
+			]
+			x: 35.0d
+			y: 0.0d
+		}
+	]
+}

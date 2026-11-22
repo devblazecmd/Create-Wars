@@ -10,39 +10,91 @@ hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "047db2bdc32b8e3dcfb1b3e35c54c9cbdfbe9541ec387d3bff529c2cb59a6ac2"
+hash = "f0608863ba7654c5cab55a16eec078144eefba5ef4ea15d912b9e868692b7a1f"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/aeronautics.snbt"
+hash = "a911ec20741e98ec0d0895bc3229468898bffbbe652f00adeae96447d2790b40"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/armored.snbt"
+hash = "38f97e97e4347fae6dfd5022fb2589afef56a6cd6cf38c77ddcd0dc5ab731b7c"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/artillery.snbt"
+hash = "9edf4e5ef020af81667aea3b3ba1ec360c782a90d21ba447b0135b70b4679673"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/automation.snbt"
-hash = "ca4fcbc9d9c030043549a3571838036005a28052ffe6b3581253e8d3b7534e25"
+hash = "598aa9ab1ff4920e8a7812e3534d8a055c25f200406d76801df745434723bf88"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/brass_and_precision.snbt"
-hash = "16e78d276d4ff963bde8622c408a52ffeafc0ff98c1d8ef0b7badd598f1c674a"
+hash = "42735843c453a368b767ce44810e4ea7fb93685170bb648d397ba0898c403f78"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/demolitions.snbt"
+hash = "da9f0022de759f1a464bf97d24aba04dfd447cb1d6d38cce57be73ad9da23b80"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/drones.snbt"
+hash = "b50556955aab94f9e842ffd2d33826ed2293570c65a5bc7db7e33e9fd91112dd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/enchanting.snbt"
-hash = "a49ce62d8880abe0fe1b413487fdb2c9911619cc6e8790dd137fd7eb54a10649"
+hash = "fe014219b61facdb31b75426fe75b818a2f7cdaa45f64f72928fb73ee2a6063d"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/enemy.snbt"
+hash = "4b4f921b8f2232e23b4bf28d1285a6bad20ef6e77e370f5e13150b659fe06629"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/food.snbt"
+hash = "13e562ca23c602c36e15746e5d54780d93316a1a33c9f18b27036fa520fb1779"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/heat.snbt"
-hash = "9ff1a239e0a34bbf92024c3203bd34af34d84d557ef8b1191a1f06f8be231e96"
+hash = "a0063c090f1656eaaa4547e760430e2e3e0a7ebd5d3f978dff942e7d619d202d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/industrial.snbt"
-hash = "7026c11af87f9889ba35c40e6021f74513658b82c15b943b06d8997f52c22bb9"
+hash = "ef6f1ea979f5c6bd5a002cd5ddff87ca5da7040df12b2ad0716fd4236b647cbc"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/infantry.snbt"
+hash = "4767b64b4a085f42a6d85cbf27708508088dbb1c126de0aa23f796c637d44af1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/kinetics.snbt"
-hash = "a760527e489c2e4af70b4856a2cb873d1fe42881ef3735c3483a2426dbf64b71"
+hash = "a485111aea0435b6469a725d67d7b5d0f4580209937093d95621d42e548947e2"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/naval.snbt"
+hash = "ae070bd3544079f6c5ba71a33e5d933898a1b860c38304142fe5a3963f9096d3"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/pollution.snbt"
+hash = "141df473b31e63035154b843a501c4da6760c0c42ca2c47e6ee511ad703a49fe"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/quantum.snbt"
-hash = "822c9952446cf926e67ab6075517042c262dccf1b2939c3da2cb3aea9f17dfbb"
+hash = "043223df66cb4845e73e87b38393fc26846868e8c56b94fa77eacfdacbfc487d"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/radar.snbt"
+hash = "a6ca5273080d59e2219a398cb943726b2df752fadb9ecf02e03147e26ce085b0"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/rail.snbt"
+hash = "54927f469eadb34e87a22abfdc01be95e6b25fec7cdf01d87e4cf0bf7e820a42"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/storage.snbt"
+hash = "4f7e82e6faa0ec0d6f739617c55fe0fe71835d55ec5d74d0736bb415e3d758fa"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "e3523d799753d851e8a7fd69c14284aedf9d4927f9093b99d88e5bad53bde5d5"
+hash = "5fa4bfb451a8e6165f27981242c43b7fb2e809d10c9b552d8682a6b3c23be1b1"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -50,7 +102,15 @@ hash = "59e6f33cb9b5b2593319a35b8e70e99d32e8834c38f7206fa7ec59de1f16c4d9"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "220dca72e527b427c03e4e94f2f3b4afc1c3365851c9f2a010246b55a50f8341"
+hash = "15aab6f700c41749bac1fbaef787f7e841ed800f01ccadfb0a9722baeabc1f41"
+
+[[files]]
+file = "config/improvedmobs/client.toml"
+hash = "47356fc6aacaec8a0ea4a0d0a5d1302301af8873d57fee37abcf42ffa8f349ed"
+
+[[files]]
+file = "config/smog-common.toml"
+hash = "b83ef67a46273583c26595ee0e6a93321d0512bbc348dbc08681c8cd78b855d6"
 
 [[files]]
 file = "config/waystones-common.toml"
@@ -97,6 +157,10 @@ file = "kubejs/server_scripts/netherite_scrap_crushing.js"
 hash = "aacf037918fcde0be6e799d161253dece48fbe20695d1bdaea08121f5bd05734"
 
 [[files]]
+file = "kubejs/server_scripts/potr_tools_removed.js"
+hash = "59f1bf9bd730e6b821d6fb3836da8e3b177bbe150c7d65bdda734613e08daf1a"
+
+[[files]]
 file = "kubejs/server_scripts/quantum_pearl_recipe.js"
 hash = "6fdde86a9da80c4736a0e36c631861c71593a82295ff3d81c4e54459a705de39"
 
@@ -111,6 +175,11 @@ hash = "7e436f2bb2bf99a72eac3d02790ded889c9c16cf5a86ebf7467360651b0269db"
 [[files]]
 file = "mods/alternate-current.pw.toml"
 hash = "18cf2b63d293ba0738c1073690fbd2c62305b161f76d346a551a66a9bbf8af32"
+metafile = true
+
+[[files]]
+file = "mods/ambush.pw.toml"
+hash = "daefaf67564d03ffe3468318033bc99df93069690c369b10e456631a14ceb4ed"
 metafile = true
 
 [[files]]
@@ -299,6 +368,11 @@ hash = "639880c5b956436d71ff2e5ec17837f963a3e81ae84e03be6b5c35a919ddc20f"
 metafile = true
 
 [[files]]
+file = "mods/create-smog.pw.toml"
+hash = "983e2d977cb9acea159fd1d033e098d6846747b7a5013145bf4e33832b8120ac"
+metafile = true
+
+[[files]]
 file = "mods/create-steam-n-rails-1.21.1.pw.toml"
 hash = "80332cead695f1e3c27e99133a48709767d1106f836792bb2fc4d594b88f1a68"
 metafile = true
@@ -311,6 +385,11 @@ metafile = true
 [[files]]
 file = "mods/create-the-air-war.pw.toml"
 hash = "422fd5cf73322f4379b04dc0a3d8dc952b8faeadd2f287d40e31db596db72c83"
+metafile = true
+
+[[files]]
+file = "mods/create-warnautics.pw.toml"
+hash = "134f02a1af52c0c1942956faddd80b1610b832d13b30da99773c5a2a1234a7f5"
 metafile = true
 
 [[files]]
@@ -339,6 +418,11 @@ hash = "b6a535a801939a78f255203f7b28319773becca20cc88348f8764f4078816300"
 metafile = true
 
 [[files]]
+file = "mods/curios.pw.toml"
+hash = "e622857e271e0ebd3d80f84f8230474d76f0150354cb06832deac2134448cbcb"
+metafile = true
+
+[[files]]
 file = "mods/enhanced-ai.pw.toml"
 hash = "23a6993b43d774f77e8a94f7ccd7fcb537f9ea6ab5118cad50c7574288a776a8"
 metafile = true
@@ -354,6 +438,11 @@ hash = "972cf82be646ff7dbf7c47d63a09e212d28d5113eff78d85ee831ec4c0c9a8c7"
 metafile = true
 
 [[files]]
+file = "mods/farmers-delight.pw.toml"
+hash = "97347efd9e808841d72fe3599da8a11add8422e97f89ae1c85cdfc0acfa18f96"
+metafile = true
+
+[[files]]
 file = "mods/fastfurnace.pw.toml"
 hash = "632f283dcdbb6a5011c03fa1d3e2fa84b1686e8f718550ccaae427b5b9880403"
 metafile = true
@@ -366,6 +455,11 @@ metafile = true
 [[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "73360e397134d238ee8fd21d33fd7f9275e9441f74f8f1b6ed92278877c0b9f1"
+metafile = true
+
+[[files]]
+file = "mods/forgeendertech.pw.toml"
+hash = "0c1b9625beb7476450c24c2ded127d6a8b3fbbd7365baa1355964a29080f3e4a"
 metafile = true
 
 [[files]]
@@ -439,6 +533,11 @@ hash = "af4465a52c59ed914f3b924bedb844cee7867b2682a356592aafb7246fd33427"
 metafile = true
 
 [[files]]
+file = "mods/kotlin-for-forge.pw.toml"
+hash = "52be2f8af37fa9a10f817b3a676e56c9cdf33a3632048d8e922312878244b794"
+metafile = true
+
+[[files]]
 file = "mods/kubejs.pw.toml"
 hash = "be9f3f981dd69822b4a3e5ab6fd677ec69a4e01dcf66c62e239b6ef65f31f0fd"
 metafile = true
@@ -470,6 +569,11 @@ metafile = true
 [[files]]
 file = "mods/placebo.pw.toml"
 hash = "d94791108548d174758d587440c656f1a56884083fa3151bf90b515126482435"
+metafile = true
+
+[[files]]
+file = "mods/pollution-of-the-realms.pw.toml"
+hash = "c1a68cdd244e00eb76de9ad3c33e8043ba4bf7cda2c67ae60fcd6e59a9bbe9f4"
 metafile = true
 
 [[files]]
@@ -510,6 +614,11 @@ metafile = true
 [[files]]
 file = "mods/simulated-copycats.pw.toml"
 hash = "d51634fccfc5064d7f60f8863ba9b83c489d8e62e68f5d431f7c9fa7434a4c98"
+metafile = true
+
+[[files]]
+file = "mods/slice-and-dice.pw.toml"
+hash = "3c24accda8011a6a5e04c49c40e39617bb04ab3a549d8f2e8180d3246fddac39"
 metafile = true
 
 [[files]]
@@ -555,6 +664,11 @@ metafile = true
 [[files]]
 file = "mods/tfmg-community-edition.pw.toml"
 hash = "bbbc01c1738448c25664f5f6306ae0a4e90ab484d09c1666053e5378f480fddd"
+metafile = true
+
+[[files]]
+file = "mods/thick-air.pw.toml"
+hash = "408665374667fb701ab880ed3ba4c24ea7439b9262220784df9236346b5c6cb7"
 metafile = true
 
 [[files]]

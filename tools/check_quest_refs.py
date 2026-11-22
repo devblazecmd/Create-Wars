@@ -32,16 +32,19 @@ VANILLA_JAR = os.path.join(os.path.expanduser("~"), "AppData", "Roaming", "Prism
 
 MODEL_RE = re.compile(r"^assets/([a-z0-9_.-]+)/models/item/([a-z0-9_/.-]+)\.json$")
 LANG_RE = re.compile(r"^assets/[a-z0-9_.-]+/lang/en_us\.json$")
-LANG_KEY_RE = re.compile(r'"(?:item|block)\.([a-z0-9_-]+)\.([a-z0-9_/-]+)"\s*:')
+# entity.* too, so kill-task entity IDs are checked (2026-11-21)
+LANG_KEY_RE = re.compile(r'"(?:item|block|entity)\.([a-z0-9_-]+)\.([a-z0-9_/-]+)"\s*:')
 KJS_ITEM_RE = re.compile(r"""event\.create\(\s*['"]([a-z0-9_.-]+:[a-z0-9_/.-]+)['"]""")
 # Items that exist in the registry but the pack has taken out of play. Quests must not reference them.
-# Keep in sync with pack/kubejs/server_scripts/elytra_removed.js and air_war_launchers_removed.js.
+# Keep in sync with pack/kubejs/server_scripts/elytra_removed.js, air_war_launchers_removed.js and
+# potr_tools_removed.js.
 BANNED = {
     "minecraft:elytra",
     "create_the_air_wars:anti_aircraft_launcher", "create_the_air_wars:c75",
     "create_the_air_wars:vihr", "create_the_air_wars:vihr_rocket",
     "create_the_air_wars:heattrap", "create_the_air_wars:heattrap_charge",
-}
+} | {f"adpother:{t}_{k}" for t in ("iron", "gold", "diamond")
+     for k in ("filter_frame", "vacuum_bag", "vacuum_tube", "respirator")} | {"adpother:aerometer"}
 # Any quoted namespaced ID in quest SNBT (quest object IDs are bare hex, so they never match).
 REF_RE = re.compile(r'"#?([a-z0-9_.-]+:[a-z0-9_/.-]+)"')
 
