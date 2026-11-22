@@ -351,4 +351,5 @@ this tells you *why*, in prose, per pack version.
 - **Wire and spool unification (2026-11-22):** C&A copper wire (Rolling Mill only) and C&A empty spool are primary; TFMG's and the
   Air War's wire and TFMG's empty spool hidden and redirected. Both copper spools kept (each wires its own network) and renamed.
   Also: quest syncs now force-copy the quest folder after closing the game ([[../02-Bugs/Running game overwrites synced quest book]]).
+- **Lootr (2026-11-22):** per-player structure loot. Item-frame conversion off so End City elytras still get removed. Clean boot.
 

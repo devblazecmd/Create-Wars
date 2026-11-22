@@ -149,6 +149,10 @@ file = "config/improvedmobs/client.toml"
 hash = "47356fc6aacaec8a0ea4a0d0a5d1302301af8873d57fee37abcf42ffa8f349ed"
 
 [[files]]
+file = "config/lootr-common.toml"
+hash = "8aa10d3394842df83dd272aae3b156e396a293da2b56e57d80508e5076ff426b"
+
+[[files]]
 file = "config/smog-common.toml"
 hash = "e3f5063183ba49252644898ce1e3eadc002d2390d5734d1c68cec0fbaf3e0ad3"
 
@@ -788,6 +792,11 @@ metafile = true
 [[files]]
 file = "mods/lootedit-1.0.0.jar"
 hash = "269bdb818e6ae6b28a34d12df88e2a823d855d914dd68b214223a6fd1e71825b"
+
+[[files]]
+file = "mods/lootr.pw.toml"
+hash = "0d3683a8c533e1fb67bf0b1668089a322fc5f594f9610d441657378ab4f64383"
+metafile = true
 
 [[files]]
 file = "mods/mezzconfig.pw.toml"

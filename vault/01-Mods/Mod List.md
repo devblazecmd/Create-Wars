@@ -154,6 +154,7 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - [[Better Advanced Tooltips]] — dependency, required by KubeJS
 
 ## Utility / logistics
+- [[Lootr]] — per-player structure loot chests; item-frame conversion off to keep elytras out *(testing, added 2026-11-22)*
 - [[Create Ender Transmission]] — wireless cross-dimension power/item/fluid transmission for Create
 - [[Create Extra Copycats]] — a couple more copycat block types (collapsible, cabinet door)
 - [[Create TFMG Community Edition]] — community fork of The Factory Must Grow; heavier industry layer

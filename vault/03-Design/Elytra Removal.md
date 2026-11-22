@@ -33,3 +33,9 @@ pointless.
 `pack/kubejs/data/stellarity/loot_table/` (netherite scrap and diamonds, a netherite ingot, phantom membranes). The
 gliding block in `elytra_removed.js` still covers anything that slips through. Stellarity's elytra trail, dye and
 boost functions are harmless (nothing to glide with).
+
+## Update 2026-11-22: Lootr
+[[../01-Mods/Lootr|Lootr]] converts the End City elytra frame into its own per-player item frame by default, which
+`elytra_removed.js` doesn't watch. Its item-frame conversions are turned off in `pack/config/lootr-common.toml`, so the
+frame stays vanilla and gets emptied.
+
