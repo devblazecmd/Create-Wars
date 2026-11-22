@@ -73,3 +73,6 @@ Likely cause: clicking while in FTB Quests **edit mode**. Test quests with edit 
 - 2026-11-21: Quest-driven waves for **Defend Your Home**: custom `createwars:quest_scouting_party`,
   `quest_raiding_party` (reworked: spawns 12 blocks away, targets the quest owner, glowing, "Raid Captain" boss
   bar), `quest_warband`, `quest_siege`, plus 4 built-in vehicle/airship ambushes. All custom ones use `chance: 0`.
+
+- 2026-11-22 (owner: mobs overwhelming): natural ambush caps lowered: `maxNaturalActiveShipsPerPlayer` 8 -> **3**,
+  `maxNaturalActiveShipsGlobal` 16 -> **8**. Defend Your Home quest waves are unaffected (they're triggered).

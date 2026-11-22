@@ -30,3 +30,13 @@ Players reported creepers "killing us even though they can't see us". Causes in 
 "Xray range override chance" = 0.5` (half of mobs sense players through walls at 4-12 blocks). Owner chose **walls
 protect you**: both set to **0.0**. Kept: breaching creepers (7.5%, must see you first), launch creepers (5%), TNT-like
 creepers (25%). Shipped as `pack/config/enhancedai/server.toml`.
+
+- 2026-11-22 (owner: "a ton of mobs spawn on you when it becomes night", "can't escape them"):
+  - Despawn distances back to vanilla: `"Monsters despawning distance"` 112 -> **128**, `"Min monsters despawning distance"`
+    48 -> **32**. The config itself says lowering these "makes mobs more crowded around players".
+  - `Mobs.Targeting.Alert`: range 32 -> **16**, chance 0.5 -> **0.2** (fewer mobs piling in from far away).
+  - `Follow range override` 32-48 -> **16-24** (vanilla is about 16; easier to break off).
+  - `"Enable Pick up and throw"` -> **false** (zombies throwing creepers/zombies at players).
+  - `"Enable Teleport to target"` -> **false** (endermen teleporting mobs next to players).
+  - `"Leader spawn reinforcements chance"` 1.0 -> **0.3**.
+  - Note: Enhanced AI riding is only mobs riding spiders; the phantom carrying is Improved Mobs (see its note).

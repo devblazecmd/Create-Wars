@@ -10,7 +10,7 @@ hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
 file = "config/ambush-common.toml"
-hash = "7bc07777eb0cb8f3bf94ca760d532ded4d68ce7c67ca9f6c147032a7fbd4bb03"
+hash = "d623d71552468f69a6209da24c328bfea5f312e120fc10d258bc5f828a3b0a09"
 
 [[files]]
 file = "config/createnuclear-server.toml"
@@ -18,7 +18,7 @@ hash = "4c28b890f045198faeb65c7c5c9b35b83f8a8534142ef04c6342bd8c2bc80957"
 
 [[files]]
 file = "config/enhancedai/server.toml"
-hash = "ff51963ca97d5fb40f4ff9f24db84c3b675b033ee1a7e3c4ed8ce6f7722659c7"
+hash = "fc0dbbcd137b95ccbed0129f65f365dfd1365fb06a4d123da13c747a46b20f47"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
@@ -154,7 +154,7 @@ hash = "47356fc6aacaec8a0ea4a0d0a5d1302301af8873d57fee37abcf42ffa8f349ed"
 
 [[files]]
 file = "config/improvedmobs/common.toml"
-hash = "0d61dbd14cd4f28eb519153b4b80a9ee1d2d7410739cf1a4c38c5061d08658a7"
+hash = "39c3a357555c325bae52db6a070e1d6e95869ab6d8096047fd49a0576f3e88a1"
 
 [[files]]
 file = "config/lootr-common.toml"

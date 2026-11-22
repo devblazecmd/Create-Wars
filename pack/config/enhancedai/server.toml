@@ -369,7 +369,7 @@
 	#Let mobs use ender pearls as long as they have them in the either hands and when far enough from the target. Only mobs in the enhancedai:mobs/can_equip_pearl entity type tag will try to be equipped ender pearls.
 	"Enable Pearler mobs" = true
 	#Makes mobs pick up and throw other mobs. Mobs in the `enhancedai:mobs/pick_up_and_throw/can_be_picked_up` tag will be able to be picked up, while mobs in the `enhancedai:mobs/pick_up_and_throw/can_pick_up` tag will be able to pick up other mobs.
-	"Enable Pick up and throw" = true
+	"Enable Pick up and throw" = false
 	#Makes mobs ride other mobs. Mobs in the `enhancedai:mobs/riding/can_be_mounted` tag will be able to be mounted, while mobs in the `enhancedai:mobs/riding/can_mount` tag will be able to mount other mobs.
 	"Enable Riding" = true
 	#Makes mobs be able to sprint when near their target. Only entity types in `enhancedai:mobs/can_sprint` tag are affected by this feature.
@@ -379,7 +379,7 @@
 	#Prevent players from abusing water or 2 high gaps to bully endermen.
 	"Enable Teleport anti-cheese" = true
 	#Makes mobs teleport other mobs close to the target. Mobs in the `enhancedai:mobs/teleport_to_target/can_be_teleported` tag will be able to be picked up, while mobs in the `enhancedai:mobs/teleport_to_target/can_teleport` tag will be able to pick up other mobs.
-	"Enable Teleport to target" = true
+	"Enable Teleport to target" = false
 	#Makes mobs throw a web at a player, slowing them. Only entity types in the `enhancedai:mobs/throwing_web/can_throw_webs` tag will be affected. Entity types in `enhancedai:mobs/throwing_web/poisonous_webs` will throw poisonous webs and apply poison the same way as when a cave spider attacks an entity.
 	"Enable Web thrower" = true
 
@@ -495,7 +495,7 @@
 		"Charge per spawn" = 0.05
 		# Default: 1.0
 		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		"Leader spawn reinforcements chance" = 1.0
+		"Leader spawn reinforcements chance" = 0.3
 		"Reinforces can spawn as leader" = false
 		#If true, leader mobs will have 4x health and +10 armor.
 		"Bonus stats" = true
@@ -558,11 +558,11 @@
 		#How far away from any player monsters will instantly despawn? Vanilla is 128. Reducing this makes mobs more crowded around players.
 		# Default: 112
 		# Range: 0 ~ 128
-		"Monsters despawning distance" = 112
+		"Monsters despawning distance" = 128
 		#How far away from any player monsters will be able to randomly despawn? Vanilla is 32
 		# Default: 48
 		# Range: 0 ~ 128
-		"Min monsters despawning distance" = 48
+		"Min monsters despawning distance" = 32
 		#Spawn types in this list will not get AI changes. Valid values: NATURAL, CHUNK_GENERATION, SPAWNER, STRUCTURE, BREEDING, MOB_SUMMONED, JOCKEY, EVENT, CONVERSION, REINFORCEMENT, TRIGGERED, BUCKET, SPAWN_EGG, COMMAND, DISPENSER, PATROL.
 		"Blacklisted spawn types" = []
 
@@ -889,10 +889,10 @@
 		[Mobs.Targeting."Follow range override"]
 			# Default: 32.0
 			# Range: 0.0 ~ 128.0
-			Minimum = 32.0
+			Minimum = 16.0
 			# Default: 48.0
 			# Range: 0.0 ~ 128.0
-			Maximum = 48.0
+			Maximum = 24.0
 
 		#How far away can the mobs see targets even through walls. This only works with 'Better Nearby Targeting' enabled. Setting 'Max' to 0 will make mobs not able to see through walls. Use mods like Mobs Properties Randomness to have more control over the attribute; the attribute name is 'enhancedai:xray_follow_range'. Only mobs in the entity type tag `enhancedai:mobs/targeting/apply_xray` will be affected by this override.
 		[Mobs.Targeting."Xray range override"]
@@ -917,11 +917,11 @@
 			#Mobs in the entity type tag `enhancedai:mobs/targeting/alert_nearby` will alert nearby mobs in this range and target the player.
 			# Default: 32
 			# Range: > 0
-			Range = 32
+			Range = 16
 			#If a mob can be alerted.
 			# Default: 0.5
 			# Range: 0.0 ~ 1.0
-			"Chance for mob to be able to" = 0.5
+			"Chance for mob to be able to" = 0.2
 
 		[Mobs.Targeting."Better nearby targeting"]
 			#Mobs NearestAttackableTargetGoal will be replaced with mod's one for better configuration and targeting.

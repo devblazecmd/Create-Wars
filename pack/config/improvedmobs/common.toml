@@ -65,7 +65,7 @@
 	#[ATTRIBUTES, ARMOR, HELDITEMS, BLOCKBREAK, USEITEM, LADDER, STEAL, GUARDIAN, FLYING, TARGETVILLAGER, NEUTRALAGGRO]
 	#added here will disable that feature completely.
 	#E.g. ["GUARDIAN"] will disable the guardian feature
-	"Feature Blacklist" = []
+	"Feature Blacklist" = ["FLYING"]
 	#Mods can override this now with a datapack! Check for the message 'Following entity overrides are loaded' in your logs to see any overrides
 	#Entities added here will be blacklisted from that feature. Usage:
 	#<entity registry name | namespace | #tag> followed by any of:
@@ -173,9 +173,9 @@
 	#(Expression): Chance for neutral mobs to be aggressive
 	"Neutral Aggressive Chance" = "0"
 	#(Expression): Chance for mobs to be able to summon an aquatic mount
-	"Guardian Chance" = "0.5"
+	"Guardian Chance" = "0.1"
 	#(Expression): Chance for mobs to be able to summon a flying mount
-	"Flying Chance" = "0.5"
+	"Flying Chance" = "0"
 	#Set this to true to allow tnt thrown by mobs to destroy blocks
 	"TNT Block Destruction" = false
 	#(Expression): Chance for a mob to ignore line of sight

@@ -31,3 +31,7 @@ Players reported pigs "actively killing us". Cause: `"Neutral Aggressive Chance"
 hostile, pigs included) plus `"Ignore Sight" = "0.5"`. Owner chose **animals stay passive**: Neutral Aggressive Chance
 **0**, Ignore Sight **0.1**. Shipped as `pack/config/improvedmobs/common.toml` (server-side setting). Animals that already
 spawned hostile keep their AI; kill them.
+
+- 2026-11-22 (owner: "phantoms should NOT be able to carry other mobs EVER", mobs "very overwhelming", "can't escape"):
+  `"Feature Blacklist" = ["FLYING"]` and `"Flying Chance" = "0"` (the FLYING feature is mobs summoning a phantom mount);
+  `"Guardian Chance"` 0.5 -> 0.1 (water mounts).

@@ -24,11 +24,11 @@
 	#Soft cap for active AMBUSH ship records owned by one player before the natural scheduler pauses new opportunities.
 	# Default: 64
 	# Range: 1 ~ 128
-	maxNaturalActiveShipsPerPlayer = 8
+	maxNaturalActiveShipsPerPlayer = 3
 	#Soft global cap for active AMBUSH ship records before the natural scheduler pauses new opportunities.
 	# Default: 64
 	# Range: 1 ~ 192
-	maxNaturalActiveShipsGlobal = 16
+	maxNaturalActiveShipsGlobal = 8
 
 #Invasion-only ceilings. Increase late-wave quality instead of adding more hulls.
 [invasion]
