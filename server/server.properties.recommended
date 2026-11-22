@@ -1,0 +1,16 @@
+# Settings to change in the generated server.properties (leave everything else as generated).
+# Required: Create Aeronautics / Sable craft and contraptions move players; without this the server kicks them for "flying".
+allow-flight=true
+# It's a war pack.
+pvp=true
+# Big Create/Sable/cannon ticks can trip the vanilla watchdog and crash the server; -1 turns the watchdog off.
+max-tick-time=-1
+# Friends only.
+white-list=true
+enforce-whitelist=true
+online-mode=true
+# FTB Chunks handles protection; vanilla spawn protection just blocks building near spawn.
+spawn-protection=0
+# ~220 mods: keep these moderate for a small group.
+view-distance=10
+simulation-distance=8
