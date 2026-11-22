@@ -1,0 +1,40 @@
+{
+  "format": "easy",
+  "name": "Scouting Party (quest)",
+  "description": "Wave 1: 4 zombies and 2 skeletons. Started by the Defend Your Home quest of the same name (FTB Quests tag ambush:trigger:createwars:quest_scouting_party). Never fires on its own: chance 0.",
+  "cooldown_group": "createwars_quest_scouting_party",
+  "preset": "ground",
+  "chance": 0.0,
+  "cooldown_seconds": 600,
+  "distance": 14,
+  "mobs": [
+    {
+      "mob": "minecraft:zombie",
+      "amount": 4,
+      "persistent": true,
+      "target": "owner",
+      "target_range": 96,
+      "aggro_range": 80,
+      "deaggro_range": 112,
+      "aggro_through_walls": true,
+      "effects": [
+        "minecraft:glowing:600:0"
+      ]
+    },
+    {
+      "mob": "minecraft:skeleton",
+      "amount": 2,
+      "persistent": true,
+      "target": "owner",
+      "target_range": 96,
+      "aggro_range": 80,
+      "deaggro_range": 112,
+      "aggro_through_walls": true,
+      "effects": [
+        "minecraft:glowing:600:0"
+      ]
+    }
+  ],
+  "sound": "minecraft:entity.zombie.ambient",
+  "weight": 1
+}

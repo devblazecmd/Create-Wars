@@ -1,0 +1,60 @@
+{
+	id: "54CACBC1AF89E17B"
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{
+			id: "1127C44CA771A039"
+			item: {
+				count: 1
+				id: "minecraft:netherite_ingot"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "7F2157FF1E24DE5D"
+			item: {
+				count: 1
+				id: "minecraft:enchanted_golden_apple"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "1E2A57ECF9A314AE"
+			item: {
+				count: 1
+				id: "minecraft:totem_of_undying"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 16
+			id: "04D0DFD2B96A8D78"
+			item: {
+				count: 1
+				id: "minecraft:diamond"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 8
+			id: "463B6F7DFAF24A29"
+			item: {
+				count: 1
+				id: "minecraft:netherite_scrap"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 8
+			id: "2203B7CE21F1C898"
+			item: {
+				count: 1
+				id: "createwars:quantum_pearl"
+			}
+			weight: 2.0f
+		}
+	]
+}

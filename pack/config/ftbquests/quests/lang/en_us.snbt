@@ -79,6 +79,10 @@
 		"Put your machines to work: production goals for every tier"
 	]
 	"chapter.7415700D4D0CE1C8.title": "Automation"
+	"chapter.7DF726A5C25B0699.chapter_subtitle": [
+		"Call in enemy waves: each one harder, each one richer"
+	]
+	"chapter.7DF726A5C25B0699.title": "Defend Your Home"
 	"chapter.7E12579408EECDD7.chapter_subtitle": [
 		"Create Big Cannons: from log cannons to built-up steel and autocannons"
 	]
@@ -943,6 +947,12 @@
 		"Feasts are placed blocks that serve several plates. One feeds a whole squad before a raid."
 	]
 	"quest.3473E7F36010A291.title": "Roast Chicken Feast"
+	"quest.34D8A081AEFAEBB4.quest_desc": [
+		"&cBoss:&r the &6Storm Breaker&r, a high-altitude battle airship with escorts. Radar to find"
+		"it, guns to bring it down, oxygen to chase it up high."
+		"&aClick the checkmark when you're ready&r (quest edit mode OFF): the attack starts on the spot. Fight near your base."
+	]
+	"quest.34D8A081AEFAEBB4.title": "Wave 8: The Storm Breaker"
 	"quest.34E9EC54D3ED4DE2.quest_desc": [
 		"&eThis pack's own recipe:&r compact &a9 Blocks of Coal&r in a Basin over a &6Superheated&r"
 		"burner to make &b1 Diamond&r. Automate it and make a &astack&r (576 coal blocks)."
@@ -956,6 +966,12 @@
 		"Heavier vehicles."
 	]
 	"quest.3527520056C4B53A.title": "Large Tire"
+	"quest.3575C6B29A7007D0.quest_desc": [
+		"An illager &6armored car&r with a drill, built from real Create parts, rolls in. Stop the"
+		"crew. Cannons help."
+		"&aClick the checkmark when you're ready&r (quest edit mode OFF): the attack starts on the spot. Fight near your base."
+	]
+	"quest.3575C6B29A7007D0.title": "Wave 5: Armored Drill Car"
 	"quest.3583295B288EBDC6.quest_desc": [
 		"Crushed end stone: part of the levitite process (see JEI)."
 	]
@@ -1272,12 +1288,6 @@
 		"Desert zombies. They make you hungry."
 	]
 	"quest.48BD6C1FF6EEBB8E.title": "Husks"
-	"quest.49B7B6103781F910.quest_desc": [
-		"&cA test of your defenses.&r Click the checkmark when you're ready: an &6AMBUSH&r raiding"
-		"party of &cpillagers and vindicators&r attacks you on the spot. Kill the pillagers to win."
-		"&aBuild walls and get your team together first.&r"
-	]
-	"quest.49B7B6103781F910.title": "Raiding Party"
 	"quest.4A5F8E84D4A3E786.quest_desc": [
 		"Deny an area of sea."
 	]
@@ -1347,6 +1357,12 @@
 		"Gunpowder, a lead nugget and paper: flintlock ammo."
 	]
 	"quest.4E215730E6F0B136.title": "Paper Cartridge"
+	"quest.4E83FDAD16DA66F6.quest_desc": [
+		"An illager &6airship&r on patrol finds your base. Shoot it down: autocannons and"
+		"anti-air."
+		"&aClick the checkmark when you're ready&r (quest edit mode OFF): the attack starts on the spot. Fight near your base."
+	]
+	"quest.4E83FDAD16DA66F6.title": "Wave 6: Patrol Airship"
 	"quest.4EB5ADD78C50BDC2.quest_desc": [
 		"&6Create: Bits 'n' Tracks&r: Sable-driven &atank treads&r. Check the Ponder for a track setup."
 	]
@@ -1399,6 +1415,11 @@
 		"Andesite casing, piston pole and gunpowder. Pushes charges and shells into the breech."
 	]
 	"quest.5116C8CBF8F4C26B.title": "Cannon Loader"
+	"quest.5152DA4587C8F7C0.quest_desc": [
+		"A bigger illager band with an &5Evoker&r leader. Watch for fangs and vexes."
+		"&aClick the checkmark when you're ready&r (quest edit mode OFF): the attack starts on the spot. Fight near your base."
+	]
+	"quest.5152DA4587C8F7C0.title": "Wave 3: Warband"
 	"quest.515DC0FA59FD5614.quest_desc": [
 		"Row, row, row."
 	]
@@ -1581,6 +1602,11 @@
 		"&6Steam 'n' Rails&r adds more to trains: a handcar for quick trips."
 	]
 	"quest.5C8F73A18227EF75.title": "Handcar"
+	"quest.5CB151858BB0EC67.quest_desc": [
+		"Zombies and skeletons probe your walls."
+		"&aClick the checkmark when you're ready&r (quest edit mode OFF): the attack starts on the spot. Fight near your base."
+	]
+	"quest.5CB151858BB0EC67.title": "Wave 1: Scouting Party"
 	"quest.5D03F1D941E5D2B8.quest_desc": [
 		"Made with iron sheets. A &aMechanical Drill&r mines whatever is in front of it: the heart"
 		"of cobblestone generators and tunnel borers."
@@ -1820,6 +1846,11 @@
 		"give &aNourishment&r and &aComfort&r."
 	]
 	"quest.6D0FA79299F60AAC.title": "Cooking Pot"
+	"quest.6D2805A2182ECE10.quest_desc": [
+		"Pillagers and vindicators, led by a &cRaid Captain&r."
+		"&aClick the checkmark when you're ready&r (quest edit mode OFF): the attack starts on the spot. Fight near your base."
+	]
+	"quest.6D2805A2182ECE10.title": "Wave 2: Raiding Party"
 	"quest.6D4D3B1AE4194237.quest_desc": [
 		"Grinds items: gravel to flint, flowers to dye, and more. Look up any item in JEI under"
 		"&aMilling&r."
@@ -1940,6 +1971,11 @@
 		"torpedo tube."
 	]
 	"quest.74CFBB049C996D12.title": "Basic Torpedo"
+	"quest.7561AD7708EB75D1.quest_desc": [
+		"A cast-iron &6anti-air car&r with a heavy crew. Your aircraft are its targets."
+		"&aClick the checkmark when you're ready&r (quest edit mode OFF): the attack starts on the spot. Fight near your base."
+	]
+	"quest.7561AD7708EB75D1.title": "Wave 7: Anti-Air Battery"
 	"quest.75DA6E9988F3AA8E.quest_desc": [
 		"The medium bomb's recipe plus &aSturdy Sheets&r."
 	]
@@ -2012,6 +2048,12 @@
 		"Makes &aoxygen&r for your crew. Submarines need air."
 	]
 	"quest.77F9BCF4792E9119.title": "Electrolyzer"
+	"quest.7818999E3DE028B1.quest_desc": [
+		"A &cRavager&r leads the assault, with illagers and witches behind it. It breaks crops and"
+		"walls. Bring friends."
+		"&aClick the checkmark when you're ready&r (quest edit mode OFF): the attack starts on the spot. Fight near your base."
+	]
+	"quest.7818999E3DE028B1.title": "Wave 4: Siege"
 	"quest.785134420AE70E3C.quest_desc": [
 		"&6CBC Military Supplement&r: aerial bombs for Big Cannons-style payloads."
 	]
@@ -2124,4 +2166,8 @@
 		"The explosive end."
 	]
 	"quest.7FB9FCEB172EFC2A.title": "Torpedo Warhead"
+	"reward_table.54CACBC1AF89E17B.title": "War Trophy"
+	"reward_table.6D80D04DDC0C9FC3.title": "Spoils of War II"
+	"reward_table.770ACF92BAB50B96.title": "Spoils of War III"
+	"reward_table.77FF0F76C88F277E.title": "Spoils of War I"
 }

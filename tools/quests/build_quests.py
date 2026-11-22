@@ -38,12 +38,14 @@ def qid(*parts):
 # Content helpers
 # --------------------------------------------------------------------------------------------------
 def Q(slug, title, x, y, desc, tasks, deps=(), xp=10, items=(), subtitle=None, icon=None, shape=None,
-      size=None, optional=False, bonus=True, tags=()):
+      size=None, optional=False, bonus=True, tags=(), levels=None, rolls=()):
     # tags: FTB Quests object tags (QuestObjectBase writes "tags" as a string list when non-empty).
     # Used by AMBUSH: "ambush:trigger:<id>" starts that ambush when the quest is started.
     return dict(slug=slug, title=title, x=x, y=y, desc=desc, tasks=tasks, deps=list(deps), xp=xp,
                 items=list(items), subtitle=subtitle, icon=icon, shape=shape, size=size, optional=optional,
-                bonus=bonus, tags=list(tags))
+                bonus=bonus, tags=list(tags), levels=levels, rolls=list(rolls))
+    # levels: override the role-based whole-level bonus (levels_for).
+    # rolls: [(reward_table_slug, times)] -> that many FTB "random" rewards rolling REWARD_TABLES[slug].
 
 
 def bonus_count(task_count):
@@ -86,6 +88,33 @@ LEVELS_HUB = 2        # main-line hub quests
 LEVELS_AUTOMATE = 3   # automate quests (the grind)
 LEVELS_FINALE = 5     # last main-line quest of a chapter
 LEVELS_GATE = 10      # Age Complete gates
+
+# Reward tables for random rolls (owner 2026-11-21: Defend Your Home waves should have "good xp gains and
+# random rewards to feel worth it"). (item, count, weight). Every ID checked against the live registry.
+REWARD_TABLES = {
+    "war_spoils_1": dict(title="Spoils of War I", entries=[
+        ("minecraft:iron_ingot", 16, 10), ("minecraft:gold_ingot", 8, 8), ("create:andesite_alloy", 32, 8),
+        ("minecraft:cooked_beef", 16, 8), ("minecraft:arrow", 32, 6), ("minecraft:emerald", 6, 5),
+        ("minecraft:experience_bottle", 8, 4), ("minecraft:golden_apple", 2, 3), ("thick_air:air_bladder", 1, 3),
+        ("minecraft:totem_of_undying", 1, 1)]),
+    "war_spoils_2": dict(title="Spoils of War II", entries=[
+        ("minecraft:iron_block", 4, 10), ("create:brass_ingot", 16, 8), ("tfmg:steel_ingot", 8, 8),
+        ("createbigcannons:powder_charge", 8, 7), ("createbigcannons:he_shell", 4, 6),
+        ("farmersdelight:hamburger", 8, 6), ("createbigcannons:impact_fuze", 4, 5),
+        ("create:precision_mechanism", 2, 5), ("minecraft:experience_bottle", 16, 5),
+        ("minecraft:golden_apple", 4, 3), ("minecraft:diamond", 2, 2), ("minecraft:totem_of_undying", 1, 2)]),
+    "war_spoils_3": dict(title="Spoils of War III", entries=[
+        ("tfmg:steel_ingot", 24, 8), ("createbigcannons:he_shell", 8, 8), ("createbigcannons:ap_shell", 6, 6),
+        ("createbigcannons:autocannon_cartridge", 32, 6), ("createbigcannons:packed_guncotton", 8, 6),
+        ("createbigcannons:proximity_fuze", 4, 5), ("cbc_more_content:small_bomb", 4, 5),
+        ("create:precision_mechanism", 6, 5), ("minecraft:experience_bottle", 32, 5), ("minecraft:diamond", 4, 4),
+        ("cbc_more_content:c4", 2, 3), ("minecraft:netherite_scrap", 2, 3), ("minecraft:totem_of_undying", 1, 3),
+        ("minecraft:enchanted_golden_apple", 1, 1)]),
+    "war_trophy": dict(title="War Trophy", entries=[
+        ("minecraft:netherite_ingot", 1, 3), ("minecraft:enchanted_golden_apple", 2, 3),
+        ("minecraft:totem_of_undying", 2, 3), ("minecraft:diamond", 16, 3), ("minecraft:netherite_scrap", 8, 2),
+        ("createwars:quantum_pearl", 8, 2)]),
+}
 
 CHAPTERS = [
     # ----------------------------------------------------------------------------------------------
@@ -1300,12 +1329,6 @@ CHAPTERS = [
             "&aPrepare:&r radar to see them coming (Radar chapter), anti-air guns, and an air-raid",
             "siren.",
         ], [CHECK], xp=50),
-        Q("raiding_party", "Raiding Party", 0, 0, [
-            "&cA test of your defenses.&r Click the checkmark when you're ready: an &6AMBUSH&r raiding",
-            "party of &cpillagers and vindicators&r attacks you on the spot. Kill the pillagers to win.",
-            "&aBuild walls and get your team together first.&r",
-        ], [CHECK, kill("minecraft:pillager", 6)], xp=60, items=[("minecraft:totem_of_undying", 1)],
-          tags=["ambush:trigger:createwars:quest_raiding_party"]),
         Q("nether", "Into the Nether", 0, 0, [
             "Thin air down here too (see Pollution and Air): bring a backtank.",
         ], [kill("minecraft:blaze", 10)], xp=30),
@@ -1320,6 +1343,59 @@ CHAPTERS = [
             "&cNo air in the End&r: bring backtanks and air bladders.",
         ], [kill("minecraft:ender_dragon")], xp=100),
         Q("warden", "The Warden", 0, 0, ["Deep dark. Probably best avoided."], [kill("minecraft:warden")], xp=100),
+    ]),
+    # ----------------------------------------------------------------------------------------------
+    # Defend Your Home (owner 2026-11-21): a ladder of AMBUSH waves the player calls in, getting harder.
+    # Each quest: checkmark (starting the quest fires the ambush via its tag) + kill goal. Waves 1-4 are
+    # custom definitions in pack/kubejs/data/createwars/ambushes/; 5-8 are AMBUSH's own vehicles/ships.
+    dict(slug="defense", group="warfare", title="Defend Your Home",
+         subtitle="Call in enemy waves: each one harder, each one richer", icon="minecraft:bell",
+         unlock=[("enemy", "ambush")], quests=[
+        Q("wave_scouts", "Wave 1: Scouting Party", 0, 0, [
+            "Zombies and skeletons probe your walls.",
+            "&aClick the checkmark when you're ready&r (quest edit mode OFF): the attack starts on the spot. Fight near your base.",
+        ], [CHECK, kill("minecraft:zombie", 4)], xp=150, levels=3, rolls=[("war_spoils_1", 2)], bonus=False,
+          tags=["ambush:trigger:createwars:quest_scouting_party"]),
+        Q("wave_raiders", "Wave 2: Raiding Party", 0, 0, [
+            "Pillagers and vindicators, led by a &cRaid Captain&r.",
+            "&aClick the checkmark when you're ready&r (quest edit mode OFF): the attack starts on the spot. Fight near your base.",
+        ], [CHECK, kill("minecraft:pillager", 6)], xp=250, levels=5, rolls=[("war_spoils_1", 3)], bonus=False,
+          tags=["ambush:trigger:createwars:quest_raiding_party"]),
+        Q("wave_warband", "Wave 3: Warband", 0, 0, [
+            "A bigger illager band with an &5Evoker&r leader. Watch for fangs and vexes.",
+            "&aClick the checkmark when you're ready&r (quest edit mode OFF): the attack starts on the spot. Fight near your base.",
+        ], [CHECK, kill("minecraft:vindicator", 4), kill("minecraft:evoker", 1)], xp=400, levels=7,
+          rolls=[("war_spoils_2", 3)], bonus=False, tags=["ambush:trigger:createwars:quest_warband"]),
+        Q("wave_siege", "Wave 4: Siege", 0, 0, [
+            "A &cRavager&r leads the assault, with illagers and witches behind it. It breaks crops and",
+            "walls. Bring friends.",
+            "&aClick the checkmark when you're ready&r (quest edit mode OFF): the attack starts on the spot. Fight near your base.",
+        ], [CHECK, kill("minecraft:ravager", 1)], xp=600, levels=10, rolls=[("war_spoils_2", 4)], bonus=False,
+          tags=["ambush:trigger:createwars:quest_siege"]),
+        Q("wave_drill_car", "Wave 5: Armored Drill Car", 0, 0, [
+            "An illager &6armored car&r with a drill, built from real Create parts, rolls in. Stop the",
+            "crew. Cannons help.",
+            "&aClick the checkmark when you're ready&r (quest edit mode OFF): the attack starts on the spot. Fight near your base.",
+        ], [CHECK, kill("minecraft:pillager", 3)], xp=800, levels=12, rolls=[("war_spoils_3", 3)], bonus=False,
+          tags=["ambush:trigger:ambush:_illager_drill_car"]),
+        Q("wave_patrol_ship", "Wave 6: Patrol Airship", 0, 0, [
+            "An illager &6airship&r on patrol finds your base. Shoot it down: autocannons and",
+            "anti-air.",
+            "&aClick the checkmark when you're ready&r (quest edit mode OFF): the attack starts on the spot. Fight near your base.",
+        ], [CHECK, kill("minecraft:pillager", 4)], xp=1000, levels=15, rolls=[("war_spoils_3", 4)], bonus=False,
+          tags=["ambush:trigger:ambush:_illager_patrol_ship"]),
+        Q("wave_antiair", "Wave 7: Anti-Air Battery", 0, 0, [
+            "A cast-iron &6anti-air car&r with a heavy crew. Your aircraft are its targets.",
+            "&aClick the checkmark when you're ready&r (quest edit mode OFF): the attack starts on the spot. Fight near your base.",
+        ], [CHECK, kill("minecraft:pillager", 6)], xp=1200, levels=18, rolls=[("war_spoils_3", 5)], bonus=False,
+          tags=["ambush:trigger:ambush:_castiron_antiair_car"]),
+        Q("wave_storm_breaker", "Wave 8: The Storm Breaker", 0, 0, [
+            "&cBoss:&r the &6Storm Breaker&r, a high-altitude battle airship with escorts. Radar to find",
+            "it, guns to bring it down, oxygen to chase it up high.",
+            "&aClick the checkmark when you're ready&r (quest edit mode OFF): the attack starts on the spot. Fight near your base.",
+        ], [CHECK, kill("minecraft:pillager", 8)], xp=2000, levels=30,
+          rolls=[("war_spoils_3", 5), ("war_trophy", 1)], bonus=False, shape="hexagon",
+          tags=["ambush:trigger:ambush:_storm_breaker_boss_high_altitude_ship"]),
     ]),
     # ----------------------------------------------------------------------------------------------
     # Infrastructure (owner 2026-11-21): food and storage. Recipes read from the jars.
@@ -1892,9 +1968,17 @@ LAYOUTS = {
               "skeleton": dict(top=["stray"], bottom=["bogged"]),
               "creeper": dict(top=["enderman"], bottom=["witch"]),
               "raiders": dict(top=["vindicator", "evoker"], bottom=["ravager"]),
-              "ambush": dict(top=["raiding_party"]),
               "nether": dict(top=["wither_skeleton", "ghast"], bottom=["piglin_brute"]),
               "wither": dict(top=["ender_dragon"], bottom=["elder_guardian", "warden"])},
+        gate=None),
+    "defense": dict(
+        main=[("wave_scouts", -6, 1.5), ("wave_raiders", 0, 1.5), ("wave_warband", 6, 1.75),
+              ("wave_siege", 12, 1.75), ("wave_drill_car", 18, 2.0), ("wave_patrol_ship", 24, 2.0),
+              ("wave_antiair", 30, 2.0), ("wave_storm_breaker", 37, 2.5)],
+        hubs={},
+        # vehicle/airship waves need the matching weapons first
+        extra_deps={"wave_drill_car": ["artillery/cannon_mount"], "wave_patrol_ship": ["artillery/autocannon"],
+                    "wave_storm_breaker": ["radar/monitor"]},
         gate=None),
     "food": dict(
         main=[("knife", -6, 1.25), ("cutting_board", -1, 2.0), ("crops", 6, 2.0), ("stove", 13, 2.0),
@@ -2105,7 +2189,9 @@ def stack(i, count=1):
 
 
 def levels_for(ch, q):
-    """Whole-level bonus by role (see XP constants)."""
+    """Whole-level bonus by role (see XP constants). A quest's own `levels` wins."""
+    if q.get("levels") is not None:
+        return q["levels"]
     lay = LAYOUTS.get(ch["slug"], {})
     main = [e[0] for e in lay.get("main", [])]
     gate = lay.get("gate")
@@ -2172,6 +2258,12 @@ def build():
                 # ItemReward keeps the amount in its own "count"; the stack itself is count 1 (game format)
                 rewards.append({"id": qid(ch["slug"], q["slug"], "reward", str(n)), "type": "item",
                                 "item": stack(iid), "count": count})
+            for n, (table, times) in enumerate(q["rolls"]):
+                assert table in REWARD_TABLES, f"{ch['slug']}/{q['slug']}: unknown reward table {table}"
+                for k in range(times):
+                    # RandomReward.writeData: "table_id" is the table's ID as a LONG (not the hex string)
+                    rewards.append({"id": qid(ch["slug"], q["slug"], "roll", str(n), str(k)), "type": "random",
+                                    "table_id": Raw(f"{int(qid('table', table), 16)}L")})
             if q["bonus"]:
                 for n, (kind, iid, count) in enumerate(q["tasks"]):
                     if kind != "item":
@@ -2230,6 +2322,7 @@ def build():
                 os.remove(os.path.join(root, f))
     os.makedirs(os.path.join(OUT, "chapters"), exist_ok=True)
     os.makedirs(os.path.join(OUT, "lang"), exist_ok=True)
+    os.makedirs(os.path.join(OUT, "reward_tables"), exist_ok=True)
     # Full settings as FTB Quests 2101.1.39 writes them (captured from the game's own re-save on
     # 2026-11-21). Changed from defaults: default_quest_shape "circle", drop_loot_crates off.
     # progression_mode "linear" (spec v2): quests lock until dependencies are done, so chapter unlocks
@@ -2265,6 +2358,22 @@ def build():
              "chapter_groups.snbt": {"chapter_groups": [{"id": group_ids[g]} for g, _ in GROUPS]}}
     for slug, ch in chapter_files.items():
         files[os.path.join("chapters", f"{slug}.snbt")] = ch
+    # Reward tables (format from RewardTable.writeData, 2101.1.39): file reward_tables/<slug>.snbt,
+    # hex "id", "order_index", "loot_size", "rewards" list. Each entry: "id", item reward data
+    # ("item" stack + separate "count"), "weight" float only when not 1. "type" only for non-items.
+    for order, (slug, table) in enumerate(REWARD_TABLES.items()):
+        tid = qid("table", slug)
+        lang[f"reward_table.{tid}.title"] = table["title"]
+        entries = []
+        for n, (iid, count, weight) in enumerate(table["entries"]):
+            e = {"id": qid("table", slug, str(n)), "item": stack(iid)}
+            if count != 1:
+                e["count"] = count
+            if weight != 1:
+                e["weight"] = Raw(f"{float(weight)}f")
+            entries.append(e)
+        files[os.path.join("reward_tables", f"{slug}.snbt")] = {
+            "id": tid, "order_index": order, "loot_size": 1, "rewards": entries}
     files[os.path.join("lang", "en_us.snbt")] = lang
     for rel, content in files.items():
         with open(os.path.join(OUT, rel), "w", encoding="utf-8", newline="\n") as fh:

@@ -1,0 +1,130 @@
+{
+	id: "770ACF92BAB50B96"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{
+			count: 24
+			id: "02992572FB91A46F"
+			item: {
+				count: 1
+				id: "tfmg:steel_ingot"
+			}
+			weight: 8.0f
+		}
+		{
+			count: 8
+			id: "62BF5F0123E1C399"
+			item: {
+				count: 1
+				id: "createbigcannons:he_shell"
+			}
+			weight: 8.0f
+		}
+		{
+			count: 6
+			id: "7A81FB711C0B7D52"
+			item: {
+				count: 1
+				id: "createbigcannons:ap_shell"
+			}
+			weight: 6.0f
+		}
+		{
+			count: 32
+			id: "7EAD6912DCE95292"
+			item: {
+				count: 1
+				id: "createbigcannons:autocannon_cartridge"
+			}
+			weight: 6.0f
+		}
+		{
+			count: 8
+			id: "07DE23194862A655"
+			item: {
+				count: 1
+				id: "createbigcannons:packed_guncotton"
+			}
+			weight: 6.0f
+		}
+		{
+			count: 4
+			id: "59952E8C255C9B29"
+			item: {
+				count: 1
+				id: "createbigcannons:proximity_fuze"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 4
+			id: "449FDE2AE66FE86F"
+			item: {
+				count: 1
+				id: "cbc_more_content:small_bomb"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 6
+			id: "54DCA84866EB82D2"
+			item: {
+				count: 1
+				id: "create:precision_mechanism"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 32
+			id: "561DEEC52985D5DC"
+			item: {
+				count: 1
+				id: "minecraft:experience_bottle"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 4
+			id: "3A27B02BBC639B0C"
+			item: {
+				count: 1
+				id: "minecraft:diamond"
+			}
+			weight: 4.0f
+		}
+		{
+			count: 2
+			id: "3022CF61A6D2089B"
+			item: {
+				count: 1
+				id: "cbc_more_content:c4"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "3B29CA892503929A"
+			item: {
+				count: 1
+				id: "minecraft:netherite_scrap"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "5E90EDE6CE90DACA"
+			item: {
+				count: 1
+				id: "minecraft:totem_of_undying"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "4700F650238D1C84"
+			item: {
+				count: 1
+				id: "minecraft:enchanted_golden_apple"
+			}
+		}
+	]
+}

@@ -70,3 +70,6 @@ pillagers + 2 vindicators, `chance: 0` so it never fires naturally). It's used b
 target=<player> force=true result=true`, and the raiders arrived (a vindicator killed a villager seconds later).
 The owner's first try didn't fire because the checkmark never registered (the quest wasn't started).
 Likely cause: clicking while in FTB Quests **edit mode**. Test quests with edit mode off.
+- 2026-11-21: Quest-driven waves for **Defend Your Home**: custom `createwars:quest_scouting_party`,
+  `quest_raiding_party` (reworked: spawns 12 blocks away, targets the quest owner, glowing, "Raid Captain" boss
+  bar), `quest_warband`, `quest_siege`, plus 4 built-in vehicle/airship ambushes. All custom ones use `chance: 0`.

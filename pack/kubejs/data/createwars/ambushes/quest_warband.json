@@ -1,0 +1,60 @@
+{
+  "format": "easy",
+  "name": "Warband (quest)",
+  "description": "Wave 3: 6 pillagers, 4 vindicators, an evoker leader. Started by the Defend Your Home quest of the same name (FTB Quests tag ambush:trigger:createwars:quest_warband). Never fires on its own: chance 0.",
+  "cooldown_group": "createwars_quest_warband",
+  "preset": "ground",
+  "chance": 0.0,
+  "cooldown_seconds": 600,
+  "distance": 14,
+  "mobs": [
+    {
+      "mob": "minecraft:pillager",
+      "amount": 6,
+      "persistent": true,
+      "target": "owner",
+      "target_range": 96,
+      "aggro_range": 80,
+      "deaggro_range": 112,
+      "aggro_through_walls": true,
+      "effects": [
+        "minecraft:glowing:600:0"
+      ]
+    },
+    {
+      "mob": "minecraft:vindicator",
+      "amount": 4,
+      "persistent": true,
+      "target": "owner",
+      "target_range": 96,
+      "aggro_range": 80,
+      "deaggro_range": 112,
+      "aggro_through_walls": true,
+      "effects": [
+        "minecraft:glowing:600:0"
+      ]
+    },
+    {
+      "mob": "minecraft:evoker",
+      "amount": 1,
+      "persistent": true,
+      "target": "owner",
+      "target_range": 96,
+      "aggro_range": 80,
+      "deaggro_range": 112,
+      "aggro_through_walls": true,
+      "effects": [
+        "minecraft:glowing:600:0"
+      ],
+      "extra_health": 20,
+      "boss_bar": {
+        "name": "Warband Leader",
+        "color": "purple",
+        "audience": "nearby",
+        "range": 96
+      }
+    }
+  ],
+  "sound": "minecraft:event.raid.horn",
+  "weight": 1
+}

@@ -1,0 +1,114 @@
+{
+	id: "6D80D04DDC0C9FC3"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{
+			count: 4
+			id: "10E748325B933C83"
+			item: {
+				count: 1
+				id: "minecraft:iron_block"
+			}
+			weight: 10.0f
+		}
+		{
+			count: 16
+			id: "75BC1AF35A831A4B"
+			item: {
+				count: 1
+				id: "create:brass_ingot"
+			}
+			weight: 8.0f
+		}
+		{
+			count: 8
+			id: "3D64E97E39672E94"
+			item: {
+				count: 1
+				id: "tfmg:steel_ingot"
+			}
+			weight: 8.0f
+		}
+		{
+			count: 8
+			id: "1B69FEFC31095DDD"
+			item: {
+				count: 1
+				id: "createbigcannons:powder_charge"
+			}
+			weight: 7.0f
+		}
+		{
+			count: 4
+			id: "4FE7787D6246D3A9"
+			item: {
+				count: 1
+				id: "createbigcannons:he_shell"
+			}
+			weight: 6.0f
+		}
+		{
+			count: 8
+			id: "36662B3FF02C18DD"
+			item: {
+				count: 1
+				id: "farmersdelight:hamburger"
+			}
+			weight: 6.0f
+		}
+		{
+			count: 4
+			id: "595A894CA31F2999"
+			item: {
+				count: 1
+				id: "createbigcannons:impact_fuze"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 2
+			id: "7026421ECB4340E6"
+			item: {
+				count: 1
+				id: "create:precision_mechanism"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 16
+			id: "4F2DBEF52CD56F17"
+			item: {
+				count: 1
+				id: "minecraft:experience_bottle"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 4
+			id: "298C9FF79E505B51"
+			item: {
+				count: 1
+				id: "minecraft:golden_apple"
+			}
+			weight: 3.0f
+		}
+		{
+			count: 2
+			id: "121321F03D2B5567"
+			item: {
+				count: 1
+				id: "minecraft:diamond"
+			}
+			weight: 2.0f
+		}
+		{
+			id: "3246D4BE3D6FB87E"
+			item: {
+				count: 1
+				id: "minecraft:totem_of_undying"
+			}
+			weight: 2.0f
+		}
+	]
+}

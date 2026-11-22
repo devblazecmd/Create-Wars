@@ -1,0 +1,94 @@
+{
+	id: "77FF0F76C88F277E"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			count: 16
+			id: "7073331E0B272522"
+			item: {
+				count: 1
+				id: "minecraft:iron_ingot"
+			}
+			weight: 10.0f
+		}
+		{
+			count: 8
+			id: "5D8E3168AB35010D"
+			item: {
+				count: 1
+				id: "minecraft:gold_ingot"
+			}
+			weight: 8.0f
+		}
+		{
+			count: 32
+			id: "5A7D6123DB4CFA29"
+			item: {
+				count: 1
+				id: "create:andesite_alloy"
+			}
+			weight: 8.0f
+		}
+		{
+			count: 16
+			id: "6E1EE4EF81F693E5"
+			item: {
+				count: 1
+				id: "minecraft:cooked_beef"
+			}
+			weight: 8.0f
+		}
+		{
+			count: 32
+			id: "5C739EDA7BAD4356"
+			item: {
+				count: 1
+				id: "minecraft:arrow"
+			}
+			weight: 6.0f
+		}
+		{
+			count: 6
+			id: "1AD95FDC587179E8"
+			item: {
+				count: 1
+				id: "minecraft:emerald"
+			}
+			weight: 5.0f
+		}
+		{
+			count: 8
+			id: "438AEDC56238B7C3"
+			item: {
+				count: 1
+				id: "minecraft:experience_bottle"
+			}
+			weight: 4.0f
+		}
+		{
+			count: 2
+			id: "50BD33C7D8787A67"
+			item: {
+				count: 1
+				id: "minecraft:golden_apple"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "475A28BAB1611648"
+			item: {
+				count: 1
+				id: "thick_air:air_bladder"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "34E9E38E27968651"
+			item: {
+				count: 1
+				id: "minecraft:totem_of_undying"
+			}
+		}
+	]
+}

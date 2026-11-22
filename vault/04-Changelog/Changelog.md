@@ -313,3 +313,5 @@ this tells you *why*, in prose, per pack version.
 - **Fix (2026-11-21):** KubeJS startup error "Invalid file name: Uppercase 'R' in kubejs/data/cbcmoreshells/README.md".
   Notes can't live in `kubejs/data` (every file there is a resource); moved into `cbcmoreshells_fixes.js`.
   Raiding Party ambush quest confirmed working in game.
+- **Defend Your Home (2026-11-21):** new Warfare chapter of 8 escalating AMBUSH waves, with big XP, level rewards
+  and random reward tables (generator supports reward tables now). 22 chapters, 473 quests.

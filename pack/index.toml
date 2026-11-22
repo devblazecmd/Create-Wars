@@ -30,11 +30,15 @@ hash = "9edf4e5ef020af81667aea3b3ba1ec360c782a90d21ba447b0135b70b4679673"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/automation.snbt"
-hash = "9febb07e1fa4747dfbe1cfebf7cd15a6afdfe1c6ed7da5f4e465ce92e6b27f49"
+hash = "948bd57ae24bb4d7fb4f794eac68363e07ed05b2e435a824a48813bb66e81a28"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/brass_and_precision.snbt"
 hash = "42735843c453a368b767ce44810e4ea7fb93685170bb648d397ba0898c403f78"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/defense.snbt"
+hash = "b9348b0953a2543b266f7cc208b298f42ef285090e1ca5de9e73ec08a9d6e02b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/demolitions.snbt"
@@ -50,11 +54,11 @@ hash = "fe014219b61facdb31b75426fe75b818a2f7cdaa45f64f72928fb73ee2a6063d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/enemy.snbt"
-hash = "e09be1f309c6395f120fad6b50b6079e8d171394ede4c82d0e84cb9ce9d5813d"
+hash = "4b4f921b8f2232e23b4bf28d1285a6bad20ef6e77e370f5e13150b659fe06629"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/food.snbt"
-hash = "13e562ca23c602c36e15746e5d54780d93316a1a33c9f18b27036fa520fb1779"
+hash = "d8143dc1f5e07a0c3258b9f9981fdfbe2d34d5c41d386de6154e3bf31ddd2efd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/heat.snbt"
@@ -78,7 +82,7 @@ hash = "ae070bd3544079f6c5ba71a33e5d933898a1b860c38304142fe5a3963f9096d3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/pollution.snbt"
-hash = "141df473b31e63035154b843a501c4da6760c0c42ca2c47e6ee511ad703a49fe"
+hash = "38a0bf2402bc688fe4195dc02298284863e39d1bc4e9ae8b00bd67719ae971f5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/quantum.snbt"
@@ -94,7 +98,7 @@ hash = "67e5d2f522b6fe77f6bdd1c38c32fa0546489ed7ab12f235b5c616f1dd1120f8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage.snbt"
-hash = "4f7e82e6faa0ec0d6f739617c55fe0fe71835d55ec5d74d0736bb415e3d758fa"
+hash = "6ac3613db6837a12dc36ab5112b8368f4cba80a51c3dec255d1195ea3ba8c78e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
@@ -106,7 +110,23 @@ hash = "59e6f33cb9b5b2593319a35b8e70e99d32e8834c38f7206fa7ec59de1f16c4d9"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "dc3cddb08bef90cfb164dd0348ed72eb3b59a76307337b8db9aac68696964bff"
+hash = "fe0cbcba1698691ff28b0eb6eabf36bba91c0a84a6f7a5d74643deac31b55a80"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/war_spoils_1.snbt"
+hash = "e1de916d2fbb5bf7aed3e952920f1d54e40a1ebfe2fc4e5793c9ed1057524a84"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/war_spoils_2.snbt"
+hash = "76d3e09c7c8da0590a0cb0bc88a1fcc71eecaaff62f87ba5c5382e04d65e0872"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/war_spoils_3.snbt"
+hash = "97c3ff821fb210968e4563d9bd4de5c7eaac4692839475cc454f35a2b1e45a6b"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/war_trophy.snbt"
+hash = "37857ca3ce883e4ca7d628422a6d35001fd57f514f0104aec1cd6b6fb0b7d94e"
 
 [[files]]
 file = "config/improvedmobs/client.toml"
@@ -187,6 +207,18 @@ hash = "d194b56221756690aed380bf043c5bf9cb14ce36f28bd5cfb61d248340c00fe1"
 [[files]]
 file = "kubejs/data/createwars/ambushes/quest_raiding_party.json"
 hash = "1378d64178499f27faa3011f2d7ed7da3fa86c86ef0357a147d73ccc2b4fe962"
+
+[[files]]
+file = "kubejs/data/createwars/ambushes/quest_scouting_party.json"
+hash = "3c38da1db9702da2357b77f69732523f86157b0af1656ca01a2b84459e463dfd"
+
+[[files]]
+file = "kubejs/data/createwars/ambushes/quest_siege.json"
+hash = "4e6f5a13a0e20809143b9999bc6fbc783d780d10a816a5d91b966c2c397220a0"
+
+[[files]]
+file = "kubejs/data/createwars/ambushes/quest_warband.json"
+hash = "95c23a347f43ca4384681523874a0eca7aa99cdf476bb65c71e95eddf1211dbe"
 
 [[files]]
 file = "kubejs/server_scripts/.gitkeep"

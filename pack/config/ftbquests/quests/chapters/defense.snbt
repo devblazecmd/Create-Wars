@@ -1,0 +1,463 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "defense"
+	group: "541CE08481D1C6C5"
+	icon: {
+		id: "minecraft:bell"
+	}
+	id: "7DF726A5C25B0699"
+	images: [ ]
+	order_index: 17
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"4DB1904CB77CFEAE"
+			]
+			id: "5CB151858BB0EC67"
+			rewards: [
+				{
+					id: "7DB9035ED56982A4"
+					type: "xp"
+					xp: 600
+				}
+				{
+					id: "5DD557B4A4195672"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					id: "44D784030625BDE3"
+					table_id: 8646646812420024190L
+					type: "random"
+				}
+				{
+					id: "027DC372E7ADA616"
+					table_id: 8646646812420024190L
+					type: "random"
+				}
+			]
+			size: 1.5d
+			tags: [
+				"ambush:trigger:createwars:quest_scouting_party"
+			]
+			tasks: [
+				{
+					id: "63BB45EEF1BE6BA9"
+					type: "checkmark"
+				}
+				{
+					entity: "minecraft:zombie"
+					id: "382426DE91F369AB"
+					type: "kill"
+					value: 4L
+				}
+			]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5CB151858BB0EC67"
+			]
+			id: "6D2805A2182ECE10"
+			rewards: [
+				{
+					id: "1E1EFE956CB5C858"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "577044C5C1FF7953"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "71E4785CFEF52037"
+					table_id: 8646646812420024190L
+					type: "random"
+				}
+				{
+					id: "3FA0C6039B45FBC2"
+					table_id: 8646646812420024190L
+					type: "random"
+				}
+				{
+					id: "3ADE92DB79BDD605"
+					table_id: 8646646812420024190L
+					type: "random"
+				}
+			]
+			size: 1.5d
+			tags: [
+				"ambush:trigger:createwars:quest_raiding_party"
+			]
+			tasks: [
+				{
+					id: "179B42AE2B82FD9A"
+					type: "checkmark"
+				}
+				{
+					entity: "minecraft:pillager"
+					id: "63B94A3A8FA37A1B"
+					type: "kill"
+					value: 6L
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6D2805A2182ECE10"
+			]
+			id: "5152DA4587C8F7C0"
+			rewards: [
+				{
+					id: "63F10467886EB442"
+					type: "xp"
+					xp: 1600
+				}
+				{
+					id: "394A367353B9FD48"
+					type: "xp_levels"
+					xp_levels: 7
+				}
+				{
+					id: "30AB8D8EE5454952"
+					table_id: 7890535579975983043L
+					type: "random"
+				}
+				{
+					id: "78D4B068D2903B25"
+					table_id: 7890535579975983043L
+					type: "random"
+				}
+				{
+					id: "0E3AB5E5C0FAF5B8"
+					table_id: 7890535579975983043L
+					type: "random"
+				}
+			]
+			size: 1.75d
+			tags: [
+				"ambush:trigger:createwars:quest_warband"
+			]
+			tasks: [
+				{
+					id: "62D6BC4624B4AA6B"
+					type: "checkmark"
+				}
+				{
+					entity: "minecraft:vindicator"
+					id: "7443A4E5B12630BF"
+					type: "kill"
+					value: 4L
+				}
+				{
+					entity: "minecraft:evoker"
+					id: "46B3BB54A257BD44"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5152DA4587C8F7C0"
+			]
+			id: "7818999E3DE028B1"
+			rewards: [
+				{
+					id: "6D2271CFBA3A922B"
+					type: "xp"
+					xp: 2400
+				}
+				{
+					id: "1021F7D3C27AA4AE"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					id: "36721FE76136D8F4"
+					table_id: 7890535579975983043L
+					type: "random"
+				}
+				{
+					id: "797AE7EED0A310B5"
+					table_id: 7890535579975983043L
+					type: "random"
+				}
+				{
+					id: "58628FA68EC7667A"
+					table_id: 7890535579975983043L
+					type: "random"
+				}
+				{
+					id: "18B3220F52423889"
+					table_id: 7890535579975983043L
+					type: "random"
+				}
+			]
+			size: 1.75d
+			tags: [
+				"ambush:trigger:createwars:quest_siege"
+			]
+			tasks: [
+				{
+					id: "1A1C819D3D722526"
+					type: "checkmark"
+				}
+				{
+					entity: "minecraft:ravager"
+					id: "7B004B48EFD9A817"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7818999E3DE028B1"
+				"438EF50C90497E4F"
+			]
+			id: "3575C6B29A7007D0"
+			rewards: [
+				{
+					id: "5F24B064EF5C05C2"
+					type: "xp"
+					xp: 3200
+				}
+				{
+					id: "2AC122AC1FBDED8D"
+					type: "xp_levels"
+					xp_levels: 12
+				}
+				{
+					id: "6D166DBE695A093E"
+					table_id: 8577896669385132950L
+					type: "random"
+				}
+				{
+					id: "6E21658854F04456"
+					table_id: 8577896669385132950L
+					type: "random"
+				}
+				{
+					id: "02A89AE8498864C5"
+					table_id: 8577896669385132950L
+					type: "random"
+				}
+			]
+			size: 2.0d
+			tags: [
+				"ambush:trigger:ambush:_illager_drill_car"
+			]
+			tasks: [
+				{
+					id: "50A326E4BD12172E"
+					type: "checkmark"
+				}
+				{
+					entity: "minecraft:pillager"
+					id: "779C6646675A6056"
+					type: "kill"
+					value: 3L
+				}
+			]
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3575C6B29A7007D0"
+				"3C0083216B96355F"
+			]
+			id: "4E83FDAD16DA66F6"
+			rewards: [
+				{
+					id: "54ED2C2A5039E71E"
+					type: "xp"
+					xp: 4000
+				}
+				{
+					id: "744486203D36D144"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					id: "14DE6E716882E710"
+					table_id: 8577896669385132950L
+					type: "random"
+				}
+				{
+					id: "38357A272ACADFF1"
+					table_id: 8577896669385132950L
+					type: "random"
+				}
+				{
+					id: "20933CF99220D9AE"
+					table_id: 8577896669385132950L
+					type: "random"
+				}
+				{
+					id: "54FB447C43462F36"
+					table_id: 8577896669385132950L
+					type: "random"
+				}
+			]
+			size: 2.0d
+			tags: [
+				"ambush:trigger:ambush:_illager_patrol_ship"
+			]
+			tasks: [
+				{
+					id: "175A6AB66AD19814"
+					type: "checkmark"
+				}
+				{
+					entity: "minecraft:pillager"
+					id: "0969666B5C626E6C"
+					type: "kill"
+					value: 4L
+				}
+			]
+			x: 24.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4E83FDAD16DA66F6"
+			]
+			id: "7561AD7708EB75D1"
+			rewards: [
+				{
+					id: "67CB10ABD26D5BE5"
+					type: "xp"
+					xp: 4800
+				}
+				{
+					id: "740AA3BB66F9010E"
+					type: "xp_levels"
+					xp_levels: 18
+				}
+				{
+					id: "4F4E5CA327A81071"
+					table_id: 8577896669385132950L
+					type: "random"
+				}
+				{
+					id: "4472556C167F726A"
+					table_id: 8577896669385132950L
+					type: "random"
+				}
+				{
+					id: "19521E495D32419C"
+					table_id: 8577896669385132950L
+					type: "random"
+				}
+				{
+					id: "211505266FE4EBCD"
+					table_id: 8577896669385132950L
+					type: "random"
+				}
+				{
+					id: "51551B2FC440532F"
+					table_id: 8577896669385132950L
+					type: "random"
+				}
+			]
+			size: 2.0d
+			tags: [
+				"ambush:trigger:ambush:_castiron_antiair_car"
+			]
+			tasks: [
+				{
+					id: "51546330FA40B402"
+					type: "checkmark"
+				}
+				{
+					entity: "minecraft:pillager"
+					id: "63D60E936FE1E96A"
+					type: "kill"
+					value: 6L
+				}
+			]
+			x: 30.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7561AD7708EB75D1"
+				"135D466BB447FEEE"
+			]
+			id: "34D8A081AEFAEBB4"
+			rewards: [
+				{
+					id: "1D94483CD008EA17"
+					type: "xp"
+					xp: 8000
+				}
+				{
+					id: "5EC0EF91DEDD23BA"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					id: "7C6FDD2C2F3B2583"
+					table_id: 8577896669385132950L
+					type: "random"
+				}
+				{
+					id: "2D5D396A5DDECBC0"
+					table_id: 8577896669385132950L
+					type: "random"
+				}
+				{
+					id: "5C4D7F71EE57E564"
+					table_id: 8577896669385132950L
+					type: "random"
+				}
+				{
+					id: "28221E2C38D42E87"
+					table_id: 8577896669385132950L
+					type: "random"
+				}
+				{
+					id: "01EBB2DE57F3086D"
+					table_id: 8577896669385132950L
+					type: "random"
+				}
+				{
+					id: "16CFEFB84099C73B"
+					table_id: 6109919877215674747L
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 2.5d
+			tags: [
+				"ambush:trigger:ambush:_storm_breaker_boss_high_altitude_ship"
+			]
+			tasks: [
+				{
+					id: "12753CEA6E908C70"
+					type: "checkmark"
+				}
+				{
+					entity: "minecraft:pillager"
+					id: "0E5EAB9DA6094699"
+					type: "kill"
+					value: 8L
+				}
+			]
+			x: 37.0d
+			y: 0.0d
+		}
+	]
+}

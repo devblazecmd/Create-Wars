@@ -53,7 +53,8 @@ section, and the remaining chapters were built in the hub-and-spoke style.
 | | Rail Warfare (Create trains, Steam 'n' Rails, Who Touched My Train, Locometal) | Brass Age Complete | 17 |
 | | Armored Vehicles (Offroad, Bits 'n' Tracks, RHA, Armored Constructs) | Brass Age Complete | 17 |
 | | Drones (Droneworks, Air War FPV) | Brass Age Complete | 12 |
-| | Know Your Enemy (Improved Mobs, Enhanced AI, Trigger Mobs, AMBUSH; kill tasks on vanilla mobs) | Welcome | 24 |
+| | Know Your Enemy (Improved Mobs, Enhanced AI, Trigger Mobs, AMBUSH; kill tasks on vanilla mobs) | Welcome | 23 |
+| | Defend Your Home (AMBUSH waves the player calls in: 4 custom raids, then AMBUSH drill car, patrol airship, anti-air car, Storm Breaker boss) | Know Your Enemy's Ambush! (waves 5/6/8 also need Cannon Mount / Autocannon / Radar Monitor) | 8 |
 | | Demolitions (Create: Warnautics bombs, mines, C4, missiles) | Artillery's High Explosive Shell (medium bomb also needs Impact Fuze + Mechanical Crafter; AIM-9 needs Proximity Fuze) | 23 |
 | **Automation** | Automation: one hub per tier (Andesite, Brass, Heat, Industrial, Quantum, Enchanting) | Andesite Casing; each later hub also needs its chapter's key quest | 25 |
 
@@ -331,3 +332,12 @@ No unit tests exist for a quest book. Verification is layered:
 - 2026-11-21: **Raiding Party** quest (Know Your Enemy): first AMBUSH-triggered quest. Generator gained `tags=` on
   `Q()` (written as the `tags` string list). **Food Automation** hub in Automation (bread, cabbage leaves via
   Slicer, vegetable soup), needs `food/slicer`. 466 quests.
+- 2026-11-21: **Defend Your Home** (owner: "a Defend your home chapter that calls ambushes on you and goes up in
+  difficulty", "good xp gains and random rewards"). 8 waves; each is a checkmark (starting the quest fires its
+  AMBUSH tag) + a kill goal. Not repeatable (owner). Big XP (150→2000 ×4) and level rewards (3→30) via the new
+  `levels=` override. **Random rewards**: the generator now writes FTB **reward tables** (`reward_tables/*.snbt`:
+  Spoils of War I/II/III, War Trophy) and `random` rewards (`rolls=`), 2 to 6 rolls per wave (format from
+  `RewardTable.writeData` / `RandomReward.writeData`; `table_id` is a long). Raiding Party moved here from Know Your
+  Enemy. Boot: 22 chapters, 473 quests, 4 reward tables. Waves 5-8 use AMBUSH's built-in ambushes
+  (`ambush:_illager_drill_car`, `_illager_patrol_ship`, `_castiron_antiair_car`,
+  `_storm_breaker_boss_high_altitude_ship`): **not yet confirmed** they spawn when forced by a quest.
