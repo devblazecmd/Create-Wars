@@ -2,3 +2,5 @@
 * text=auto
 *.sh text eol=lf
 *.bat text eol=crlf
+# packwiz hashes the exact bytes on disk; GitHub must serve the same bytes, so never convert line endings in pack/
+pack/** -text

@@ -238,15 +238,15 @@ hash = "d47a9327525c734da68f9c5659e4ae15157e8d2cb691c9b910b00e572825cb6e"
 
 [[files]]
 file = "kubejs/data/create_the_air_wars/recipe/aim9x_mechanical_crafting.json"
-hash = "23e48986388c4c9bf2ca4b15b9555c48e472bf902a61bb7e2c0ce01d1bd1b2ee"
+hash = "75982d9a48025237da7d17bc1ff5331d37bfd02fc318ea31dce07fc5d6e8b8a6"
 
 [[files]]
 file = "kubejs/data/create_the_air_wars/recipe/tomahawk_mechanical_crafting.json"
-hash = "3c2685a9b902f368bc6eb0d251aa84da8e8236370c8b33209c456632577dc5bb"
+hash = "e9315522190c88e2011bdc3ba872488ee3e72a60314dbf7d1e9b91fcc1e57a0a"
 
 [[files]]
 file = "kubejs/data/create_the_air_wars/recipe/x25ml_mechanical_crafting.json"
-hash = "a61ff1d62ab70d562d691e37de0ec676aea7b41656553237f712f19a52704209"
+hash = "f2f237fe528982ab0d554eb4fd6551775cd1a2dec551e212d028652593a2ee5d"
 
 [[files]]
 file = "kubejs/data/createnuclear/neoforge/biome_modifier/lead_ore.json"
@@ -330,7 +330,7 @@ hash = "461acd1c3da92ce4b89900e31a17391efb2a44352885e85f9e2e6cf843aa35c7"
 
 [[files]]
 file = "kubejs/server_scripts/missing_recipes.js"
-hash = "8aa3ee9daf76b57845aec10747c7f688ee7a204622566fc36beb327b8ba7f28b"
+hash = "a94bc5d6f87f6c5a852f145252b5dd3d9c336c339898d5ba3092330d10afd080"
 
 [[files]]
 file = "kubejs/server_scripts/netherite_scrap_crushing.js"
@@ -338,7 +338,7 @@ hash = "aacf037918fcde0be6e799d161253dece48fbe20695d1bdaea08121f5bd05734"
 
 [[files]]
 file = "kubejs/server_scripts/nuclear_weapons.js"
-hash = "14eddd187f06679d4ff02b0ded53564010a64ba6db0259a428d20736f9eb949f"
+hash = "bfb79d4e9ffdfe4fcbb8855d10bfd722f6c2ce8ad3e9b679c6f6565fb4e3e526"
 
 [[files]]
 file = "kubejs/server_scripts/potr_tools_removed.js"
@@ -501,7 +501,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-big-cannons.pw.toml"
-hash = "f8c2334eb06dda015b6ea1f2a89ec90dc1a04b0e891d61d3b637efde4529c3e9"
+hash = "a0e9ff95570cd9af3374ca8b44aa095447baf94e565f46ae99819d52a9b48dc1"
 metafile = true
 
 [[files]]
@@ -586,7 +586,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-radars.pw.toml"
-hash = "184474f86bc32d2a7e9585760ff38354f60788b8bafe94ce9dbb40850b9c41ba"
+hash = "035f86b5c4c27664e1bb17d03b14cf19c5a0f540d9f0bfd2645075d6339b7e8b"
 metafile = true
 
 [[files]]
@@ -636,7 +636,7 @@ metafile = true
 
 [[files]]
 file = "mods/create.pw.toml"
-hash = "e66c8649557c5df5d660e64b635576f8aa836c05b14e915b8f4ae119c704d7bf"
+hash = "dcaf5f2e28db0b9a127d0167456832341045ddc9aec058c3d9fcf53f618d2404"
 metafile = true
 
 [[files]]
