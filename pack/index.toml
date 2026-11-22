@@ -417,6 +417,10 @@ file = "kubejs/server_scripts/export_registry_ids.js"
 hash = "06c4a711685d65dd550f1b0f2c25ab8bd95fd1ae5c32498d00919bae71c1b549"
 
 [[files]]
+file = "kubejs/server_scripts/leader_markers.js"
+hash = "37acbc36961b29a11985964f04e43bfae93907d163544f82bbbb0a85ae0c8b3c"
+
+[[files]]
 file = "kubejs/server_scripts/metal_unification.js"
 hash = "461acd1c3da92ce4b89900e31a17391efb2a44352885e85f9e2e6cf843aa35c7"
 

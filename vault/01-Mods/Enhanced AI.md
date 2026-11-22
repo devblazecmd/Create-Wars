@@ -40,3 +40,7 @@ creepers (25%). Shipped as `pack/config/enhancedai/server.toml`.
   - `"Enable Teleport to target"` -> **false** (endermen teleporting mobs next to players).
   - `"Leader spawn reinforcements chance"` 1.0 -> **0.3**.
   - Note: Enhanced AI riding is only mobs riding spiders; the phantom carrying is Improved Mobs (see its note).
+- 2026-11-22 (owner: make leaders more noticeable, then "no red tag and no boss bar"): `pack/kubejs/server_scripts/leader_markers.js`
+  gives leaders (`Leaders.isLeader`) a **red glowing outline** (glowing tag + scoreboard team `cw_leaders`, red). They already wear
+  Enhanced AI's leader banner. No custom name, so they still despawn normally. Not yet seen in game.
+
