@@ -294,7 +294,7 @@ hash = "492886424f6101060269d7e7751bc0876e3087842bc0fef27019af63a546e004"
 
 [[files]]
 file = "kubejs/server_scripts/metal_unification.js"
-hash = "5af0623d21a46257d1d92ec724c1838f984306c313ab34c0a2168b1e3eadc375"
+hash = "84bdf3ca8261b3f9a0dd7257872e182238425ab6ac3bf3c287485cde2c159e13"
 
 [[files]]
 file = "kubejs/server_scripts/netherite_scrap_crushing.js"

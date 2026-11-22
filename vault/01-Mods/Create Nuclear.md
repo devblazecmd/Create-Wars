@@ -49,4 +49,6 @@ apply here (first install), but **read the changelog before any future major-ver
 - `pack/config/createnuclear-server.toml`: **`warn_all_players = true`** and **`warning_distance_blocks = 256`**
   (defaults: false, 100). In a war pack a meltdown is a battlefield event. Everyone nearby gets a warning
   before the blast. (2026-11-22, owner approved "all of that".)
+- Its unheated mixer steel recipe is removed in `metal_unification.js` (2026-11-22, owner). See
+  [[../03-Design/Metal Unification]].
 - Everything else is at defaults: radiation on, world generation on, and the same meltdown power.

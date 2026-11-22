@@ -33,6 +33,9 @@ ServerEvents.recipes(event => {
     // outputs: always TFMG's
     others.forEach(id => event.replaceOutput({ output: id }, id, main))
   })
+  // Owner 2026-11-22: Create Nuclear's mixer steel (iron + coal dust, NO heat) skipped the heat progression.
+  // Early steel stays heated (CBC) or superheated (Gunsmithing); TFMG's blast furnace is the bulk route.
+  event.remove({ id: 'createnuclear:mixing/steel' })
   // Steel sheets: only make recipes accept any steel plate (both mods tag theirs as c:plates/steel).
   event.replaceInput({ input: 'cgs:steel_sheet' }, 'cgs:steel_sheet', '#c:plates/steel')
 })

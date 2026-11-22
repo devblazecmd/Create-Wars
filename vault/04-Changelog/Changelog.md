@@ -333,3 +333,6 @@ this tells you *why*, in prose, per pack version.
   asks for TFMG lead. Nuclear chapter renamed **Nuclear Age**; the nuke quest says claims *maybe* won't save anyone.
   [[../01-Mods/CBC Locometal Armor|CBC Locometal Armor]] set to `side = "both"` (owner), so it runs in single-player. Clean boot,
   0 failed recipes.
+- **Steel (2026-11-22):** removed Create Nuclear's unheated mixer steel (iron + coal dust), which skipped heat progression.
+  Early steel still needs a heated (CBC) or superheated (Gunsmithing) mixer; TFMG's blast furnace is the bulk route. Owner
+  decided not to force a single steel recipe. [[../03-Design/Metal Unification]].

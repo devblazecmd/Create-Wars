@@ -48,6 +48,12 @@ have "steel" or "lead" that didn't work in another mod's recipe.
   no duplicate. The Infantry "Lead" quest switched from `cgs:lead_ingot` to `tfmg:lead_ingot`. KubeJS
   modified recipes went from 16 to 49, with 0 failed.
 
+- 2026-11-22: **Create Nuclear's mixer steel removed** (`createnuclear:mixing/steel`: iron + coal dust, *no heat*).
+  It gave steel almost free and skipped the heat progression. Owner: "cut the nuclear one". Forcing a single steel
+  recipe (TFMG only) was considered and **not done**: Infantry and Artillery open after the Andesite Age and need
+  steel before the blast furnace. Steel routes left: CBC heated mixer (iron + coal), Gunsmithing superheated
+  mixer (iron + charcoal dust), TFMG blast furnace + casting (bulk).
+
 ## Open questions
 - Not yet checked in JEI that every replaced recipe shows correctly (KubeJS reported no errors).
 - **Not yet confirmed that the lead ore overrides work.** Biome modifiers are world-generation data. Check in
