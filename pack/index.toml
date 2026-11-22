@@ -114,7 +114,7 @@ hash = "34ed12808d59998a70abd217d9a44075a2228e3035733a39d9c5276457ee0c69"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "5fa4bfb451a8e6165f27981242c43b7fb2e809d10c9b552d8682a6b3c23be1b1"
+hash = "4c6f94b9324b946a02ddbbe4fe0cf8e61b015be0e25dfbe5ed370e1d2d374326"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -122,7 +122,7 @@ hash = "59e6f33cb9b5b2593319a35b8e70e99d32e8834c38f7206fa7ec59de1f16c4d9"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "34765176666572e062bf1344eaec220925a6eea59d2d5537370ab58d955f280f"
+hash = "b522085d3d92f292fc7d2f756bf803724fcca84b360572d880f3d7aec905a953"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/war_spoils_1.snbt"
@@ -365,6 +365,11 @@ file = "kubejs/startup_scripts/createwars_items.js"
 hash = "7e436f2bb2bf99a72eac3d02790ded889c9c16cf5a86ebf7467360651b0269db"
 
 [[files]]
+file = "mods/aeronautics-structures.pw.toml"
+hash = "2a8b9014e2a03441eb25964c9ee6e8f4fe531071a9387bd48905b6e159c35db0"
+metafile = true
+
+[[files]]
 file = "mods/alternate-current.pw.toml"
 hash = "18cf2b63d293ba0738c1073690fbd2c62305b161f76d346a551a66a9bbf8af32"
 metafile = true
@@ -550,6 +555,11 @@ hash = "9cbc43b7e0d958c45b733f1408ecf477f4fc199ded13ee2c5c85aeed8f20bddb"
 metafile = true
 
 [[files]]
+file = "mods/create-let-the-adventure-begin.pw.toml"
+hash = "3335da2dab4b7ce03ed925ca3c4237bc2a6b2b410109c14b1b1b5a3fef1221b9"
+metafile = true
+
+[[files]]
 file = "mods/create-misc-and-things.pw.toml"
 hash = "055a23471c72576d1f79e2edcd6a20bcaa59ac70c84480fc10069c6469b3f528"
 metafile = true
@@ -587,6 +597,11 @@ metafile = true
 [[files]]
 file = "mods/create-steam-n-rails-1.21.1.pw.toml"
 hash = "80332cead695f1e3c27e99133a48709767d1106f836792bb2fc4d594b88f1a68"
+metafile = true
+
+[[files]]
+file = "mods/create-structures-arise.pw.toml"
+hash = "d07e87a42a1f882ee71b9f68fc531b1b9dcf4637f69fcf0c80322e488cf79171"
 metafile = true
 
 [[files]]
@@ -702,6 +717,11 @@ metafile = true
 [[files]]
 file = "mods/ftb-teams-forge.pw.toml"
 hash = "d1665d3000a0857df2d4ea5d3b3a6c5e2b0a60b0c83f8c0f30f05b5305b1878f"
+metafile = true
+
+[[files]]
+file = "mods/ftb-ultimine-forge.pw.toml"
+hash = "3529bc9c3a7b54933869be1d1d84a948d091c3d6064bbb6b17874d7c153b4dca"
 metafile = true
 
 [[files]]

@@ -62,8 +62,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 1.2d
-			y: -2.31d
+			x: 1.68d
+			y: -2.26d
 		}
 		{
 			dependencies: [
@@ -92,8 +92,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -1.2d
-			y: -2.31d
+			x: 0.0d
+			y: -2.81d
 		}
 		{
 			dependencies: [
@@ -113,8 +113,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -1.2d
-			y: 2.31d
+			x: -1.68d
+			y: -2.26d
 		}
 		{
 			dependencies: [
@@ -134,8 +134,50 @@
 					type: "checkmark"
 				}
 			]
-			x: 1.2d
-			y: 2.31d
+			x: -1.68d
+			y: 2.26d
+		}
+		{
+			dependencies: [
+				"7B00515BF7869680"
+			]
+			id: "4DD101E5933E8C5C"
+			rewards: [
+				{
+					id: "6B4A084BBC3E3B12"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "126E9816A5B8633B"
+					type: "checkmark"
+				}
+			]
+			x: -0.0d
+			y: 2.81d
+		}
+		{
+			dependencies: [
+				"7B00515BF7869680"
+			]
+			id: "24E5BE670C61D1E3"
+			rewards: [
+				{
+					id: "21F0D2B2370BAAF3"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "3DED0B0139A56F72"
+					type: "checkmark"
+				}
+			]
+			x: 1.68d
+			y: 2.26d
 		}
 		{
 			dependencies: [

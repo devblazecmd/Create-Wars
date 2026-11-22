@@ -812,6 +812,11 @@
 		"A camera that feeds a monitor, for remote aiming."
 	]
 	"quest.24DAE58E17E18027.title": "Camera"
+	"quest.24E5BE670C61D1E3.quest_desc": [
+		"&6Lootr&r: structure chests (villages, outposts, forts, ruins) give &aevery player their own"
+		"loot&r. A chest someone else opened still has a roll for you. Opened chests change look."
+	]
+	"quest.24E5BE670C61D1E3.title": "Loot Is Per Player"
 	"quest.24EBC08912BF74CC.quest_desc": [
 		"Built from a proximity fuze: bursts near aircraft."
 	]
@@ -1650,6 +1655,13 @@
 		"siren."
 	]
 	"quest.4DB1904CB77CFEAE.title": "Ambush!"
+	"quest.4DD101E5933E8C5C.quest_desc": [
+		"&6FTB Ultimine&r: hold the &aUltimine key&r (default &a`&r, the grave key; change it in"
+		"Controls) and break a block to mine up to &a64&r connected blocks of the same kind: a whole"
+		"ore vein or tree. Costs hunger per block. Hold it and right-click to harvest crops, strip"
+		"logs or till soil in bulk."
+	]
+	"quest.4DD101E5933E8C5C.title": "Vein Mining"
 	"quest.4E215730E6F0B136.quest_desc": [
 		"Gunpowder, a lead nugget and paper: flintlock ammo."
 	]

@@ -355,4 +355,6 @@ this tells you *why*, in prose, per pack version.
 - **Villages and pillagers (2026-11-22):** CTOV (side fixed to both), Create: Pillager Arise, Illager Invasion (+ Puzzles Lib). Know
   Your Enemy gains an Illager Invasion row (11 quests, Invoker boss). Thick Air ceiling back to Y=192 (owner). 560 quests, clean boot.
   Open: Illager Invasion's Imbuing Table (over-max enchants) flagged to owner.
+- **Create buildings and vein mining (2026-11-22):** Create: Structures Arise, Create: Let The Adventure Begin, Create Aeronautics
+  Structures; FTB Ultimine. Welcome chapter: "Vein Mining" and "Loot Is Per Player" info quests. 562 quests, clean boot.
 

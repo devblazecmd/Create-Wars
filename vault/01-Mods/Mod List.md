@@ -111,6 +111,9 @@ all entries below except the open questions/rejected sections are `#mod/status/a
   the Sophisticated Controller still have recipes. See [[../03-Design/Quest Book|Quest Book]] decisions log.
 
 ## World generation (added 2026-11-21)
+- [[Create Structures Arise|Create: Structures Arise]] — 28 Create-built structures *(testing, added 2026-11-22)*
+- [[Create Let The Adventure Begin|Create: Let The Adventure Begin]] — Create-themed loot structures *(testing, added 2026-11-22)*
+- [[Create Aeronautics Structures]] — world-generated hot-air balloons (working/broken) *(testing, added 2026-11-22)*
 - [[ChoiceTheorem's Overhauled Village|CTOV]] — biome-styled villages and pillager outposts; `side` fixed to both *(testing, added 2026-11-22)*
 - [[Terralith]] + [[Tectonic]] — vanilla-block biomes plus big terrain (dep: [[Lithostitched]]) *(testing)*
 - [[Biomes O' Plenty]] — 50+ biomes with new woods (deps: [[TerraBlender]], [[GlitchCore]]) *(testing)*
@@ -157,6 +160,7 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - [[Better Advanced Tooltips]] — dependency, required by KubeJS
 
 ## Utility / logistics
+- [[FTB Ultimine]] — vein mining (hold ` and break); defaults 64 blocks *(testing, added 2026-11-22)*
 - [[Lootr]] — per-player structure loot chests; item-frame conversion off to keep elytras out *(testing, added 2026-11-22)*
 - [[Create Ender Transmission]] — wireless cross-dimension power/item/fluid transmission for Create
 - [[Create Extra Copycats]] — a couple more copycat block types (collapsible, cabinet door)

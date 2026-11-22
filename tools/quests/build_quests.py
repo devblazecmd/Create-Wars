@@ -151,6 +151,16 @@ CHAPTERS = [
             "",
             "You'll learn to make it in the &dQuantum Expansion&r.",
         ], [CHECK], deps=["no_elytra"], xp=10),
+        Q("ultimine", "Vein Mining", 0, 0, [
+            "&6FTB Ultimine&r: hold the &aUltimine key&r (default &a`&r, the grave key; change it in",
+            "Controls) and break a block to mine up to &a64&r connected blocks of the same kind: a whole",
+            "ore vein or tree. Costs hunger per block. Hold it and right-click to harvest crops, strip",
+            "logs or till soil in bulk.",
+        ], [CHECK], xp=10),
+        Q("lootr", "Loot Is Per Player", 0, 0, [
+            "&6Lootr&r: structure chests (villages, outposts, forts, ruins) give &aevery player their own",
+            "loot&r. A chest someone else opened still has a roll for you. Opened chests change look.",
+        ], [CHECK], xp=10),
         Q("next", "Start Building", 10, 0, [
             "Everything starts with rotation. Head to the &6Andesite Age&r.",
         ], [CHECK], deps=["waystones"], xp=20, items=[("minecraft:oak_log", 16)], shape="hexagon"),
@@ -2247,7 +2257,7 @@ CHAPTERS = [
 LAYOUTS = {
     "welcome": dict(
         main=[("welcome", 0, 2.0), ("next", 6, 1.5)],
-        hubs={"welcome": ["team", "claims", "no_elytra", "waystones"]},
+        hubs={"welcome": ["team", "claims", "no_elytra", "waystones", "ultimine", "lootr"]},
         gate=None),
     "kinetics": dict(
         main=[("find_andesite", -5, 1.25), ("andesite_alloy", 0, 2.0), ("casing", 7, 2.0), ("next", 13, 2.0)],
