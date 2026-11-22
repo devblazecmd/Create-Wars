@@ -27,7 +27,7 @@ Owner request 2026-11-22: "a good nuclear mod to add to the chaos". Chosen over 
   "Wasteland" biome. The Biome Irradiation Extractor restores it.
 - Adds its own **steel**, **lead**, thorium and nitrate ores, and irradiated animals.
 
-Uranium rods are also what [[CBC Enhanced Shells]] nukes cost. See [[../03-Design/Nuclear Weapons]].
+Uranium rods are also what [[CBC Enhanced Shells]] nukes cost. Quest chapter: **Nuclear Age**. See [[../03-Design/Nuclear Weapons]].
 
 ## Dependencies
 - Hard requires: [[Create]] (present).
@@ -41,10 +41,9 @@ apply here (first install), but **read the changelog before any future major-ver
 ## Known issues
 - [[../02-Bugs/Create Nuclear armor dye recipes fail to load]]: the 64 recipes that recolor anti-radiation
   armor with cloth don't load. The armor itself crafts.
-- **Duplicate metals:** its steel is folded into [[../03-Design/Steel Unification]]. Its **lead** is the third
-  lead in the pack (TFMG and Gunsmithing also add one). Not unified yet. Recipes that use lead mostly
-  take the `c:ingots/lead` tag, so any lead works, but raw lead now has competing smelting recipes.
-  Flagged to owner 2026-11-22.
+- **Duplicate metals:** its steel and lead are folded into TFMG's ([[../03-Design/Metal Unification]], owner
+  2026-11-22). Its lead ore no longer generates in new chunks. Its uranium and thorium are the only ones in
+  the pack.
 
 ## Config decisions
 - `pack/config/createnuclear-server.toml`: **`warn_all_players = true`** and **`warning_distance_blocks = 256`**

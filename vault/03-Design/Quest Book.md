@@ -326,7 +326,7 @@ No unit tests exist for a quest book. Verification is layered:
   starts; tagged tasks can be auto-completed). Not used yet; needs specific ambush IDs and testing.
 - 2026-11-21: **Portable Storage Interface** back in the book, in Rail Warfare (Train Controls hub) (owner
   approved the recommendation). Thick Air quest text updated to Y=192. Infantry steel quest now asks for
-  TFMG steel ([[Steel Unification]]). Armored Hatch quest replaced with **Sandbags**
+  TFMG steel ([[Metal Unification]]). Armored Hatch quest replaced with **Sandbags**
   ([[../02-Bugs/RHA hatch is not a registered item]]). `check_quest_refs.py` now uses the live registry export.
   Kill tasks confirmed: all 23 survived an in-game save of the book. 461 quests.
 - 2026-11-21: **Raiding Party** quest (Know Your Enemy): first AMBUSH-triggered quest. Generator gained `tags=` on
@@ -342,3 +342,5 @@ No unit tests exist for a quest book. Verification is layered:
   (`ambush:_illager_drill_car`, `_illager_patrol_ship`, `_castiron_antiair_car`,
   `_storm_breaker_boss_high_altitude_ship`): **not yet confirmed** they spawn when forced by a quest.
 - 2026-11-22: **Nuclear** chapter (Warfare, unlocked by Industrial Age steel): uranium and thorium chain, reactor parts, anti-radiation suit, then the nukes; H-Bomb finale gives 30 levels and 2 War Trophy rolls. 23 chapters, 496 quests.
+- 2026-11-22: Nuclear chapter renamed **Nuclear Age** (owner). Nuke quest: "Claims *maybe* won't save anyone". Infantry "Lead"
+  quest now asks for `tfmg:lead_ingot` (lead unified).

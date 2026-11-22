@@ -74,7 +74,7 @@ hash = "ef6f1ea979f5c6bd5a002cd5ddff87ca5da7040df12b2ad0716fd4236b647cbc"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/infantry.snbt"
-hash = "e7665fcba289724382e318c094138c6c393b3d8e95104f131f08548168ea88da"
+hash = "1c82c45a9eadb0aa582a286714bd611ae9811879591e99f7f0122ef0d2bb10b2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/kinetics.snbt"
@@ -118,7 +118,7 @@ hash = "59e6f33cb9b5b2593319a35b8e70e99d32e8834c38f7206fa7ec59de1f16c4d9"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "de7d4cb9e616f80ce5dd3f7cfabaa3b48f90807abe9c046eb5e40396ef8971b8"
+hash = "e12580ef8b3e4345e86752f4c0ffaaf78d3a045a59715a55925464efe832b100"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/war_spoils_1.snbt"
@@ -217,6 +217,14 @@ file = "kubejs/data/cbcmoreshells/loot_table/blocks/shelless_sap_shell.json"
 hash = "d194b56221756690aed380bf043c5bf9cb14ce36f28bd5cfb61d248340c00fe1"
 
 [[files]]
+file = "kubejs/data/cgs/neoforge/biome_modifier/add_lead_ore.json"
+hash = "d47a9327525c734da68f9c5659e4ae15157e8d2cb691c9b910b00e572825cb6e"
+
+[[files]]
+file = "kubejs/data/createnuclear/neoforge/biome_modifier/lead_ore.json"
+hash = "d47a9327525c734da68f9c5659e4ae15157e8d2cb691c9b910b00e572825cb6e"
+
+[[files]]
 file = "kubejs/data/createwars/ambushes/quest_raiding_party.json"
 hash = "1378d64178499f27faa3011f2d7ed7da3fa86c86ef0357a147d73ccc2b4fe962"
 
@@ -285,6 +293,10 @@ file = "kubejs/server_scripts/export_registry_ids.js"
 hash = "492886424f6101060269d7e7751bc0876e3087842bc0fef27019af63a546e004"
 
 [[files]]
+file = "kubejs/server_scripts/metal_unification.js"
+hash = "5af0623d21a46257d1d92ec724c1838f984306c313ab34c0a2168b1e3eadc375"
+
+[[files]]
 file = "kubejs/server_scripts/netherite_scrap_crushing.js"
 hash = "aacf037918fcde0be6e799d161253dece48fbe20695d1bdaea08121f5bd05734"
 
@@ -299,10 +311,6 @@ hash = "59f1bf9bd730e6b821d6fb3836da8e3b177bbe150c7d65bdda734613e08daf1a"
 [[files]]
 file = "kubejs/server_scripts/quantum_pearl_recipe.js"
 hash = "6fdde86a9da80c4736a0e36c631861c71593a82295ff3d81c4e54459a705de39"
-
-[[files]]
-file = "kubejs/server_scripts/steel_unification.js"
-hash = "64d3dc31706e4359652358d73f6d73941ef0b826ceb78fca8e0e59fbc9397c36"
 
 [[files]]
 file = "kubejs/server_scripts/tfmg_smog_sources.js"
@@ -388,7 +396,7 @@ metafile = true
 
 [[files]]
 file = "mods/cbc-locometal-armor.pw.toml"
-hash = "ae483c5af2ef43fd7afd785cbced8c5f78e235239732a51f44183dfb26adf1eb"
+hash = "ccf38ce5f3938241c4589a5f4afbcffe53a733311d3019209cb22b2ef70997ba"
 metafile = true
 
 [[files]]

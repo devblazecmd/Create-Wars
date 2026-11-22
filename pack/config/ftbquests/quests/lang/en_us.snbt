@@ -78,7 +78,7 @@
 	"chapter.7300735DFF8CCF2D.chapter_subtitle": [
 		"Reactors, radiation, and the shells that end wars"
 	]
-	"chapter.7300735DFF8CCF2D.title": "Nuclear"
+	"chapter.7300735DFF8CCF2D.title": "Nuclear Age"
 	"chapter.7415700D4D0CE1C8.chapter_subtitle": [
 		"Put your machines to work: production goals for every tier"
 	]
@@ -2017,7 +2017,7 @@
 	"quest.72424400C302B52D.quest_desc": [
 		"&aMechanical Crafting&r: a Big Cannons &cHE Shell&r wrapped in 8 uranium rods and lead,"
 		"with a &5Nether Star&r core. A mushroom cloud, and a blast that levels whole bases."
-		"&cClaims won't save anyone.&r Fire it from very far away, and never at home."
+		"&cClaims &omaybe&r&c won't save anyone.&r Fire it from very far away, and never at home."
 	]
 	"quest.72424400C302B52D.title": "Nuclear Shell"
 	"quest.728E9D32BE764BA7.quest_desc": [

@@ -73,7 +73,7 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 
 ## Trains (scope decided 2026-11-20: in, as armored rail warfare)
 - [[Steam 'n' Rails]] — unofficial NeoForge port, beta *(testing)*
-- [[CBC Locometal Armor]] — train armor vs. Big Cannons, server-side only *(testing)*
+- [[CBC Locometal Armor]] — train armor vs. Big Cannons; `side = both` since 2026-11-22 so it runs in single-player *(testing)*
 - [[Create Who Touched My Train|Create: Who Touched My Train]] — train locking/permissions *(testing)*
 
 ## Drones
@@ -231,8 +231,8 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - **Check `side =` after every `packwiz modrinth add`.** Modrinth marks some libraries server-only (e.g.
   [[Lithostitched]]), so packwiz writes `side = "server"` and the client installer skips the jar. Single-player
   runs an integrated server, so anything the game needs must be `both`. (2026-11-21: Tectonic crashed on
-  boot for this reason.) Still server-only on purpose: Alternate Current, CBC Locometal Armor; they don't
-  run in single-player.
+  boot for this reason.) Still server-only on purpose: Alternate Current (doesn't run in single-player). CBC Locometal Armor was
+  switched to `both` 2026-11-22 (owner).
 - **FTB family mods (Teams/Quests/Chunks/Library) are not on Modrinth at all.** `packwiz modrinth add
   ftb-teams` silently falls back to a fuzzy search and grabs the wrong project — always use
   `packwiz curseforge add <slug>-forge` for these (the CurseForge slug keeps a legacy `-forge` suffix even

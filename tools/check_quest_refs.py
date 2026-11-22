@@ -45,10 +45,13 @@ BANNED = {
     "create_the_air_wars:heattrap", "create_the_air_wars:heattrap_charge",
 } | {f"adpother:{t}_{k}" for t in ("iron", "gold", "diamond")
      for k in ("filter_frame", "vacuum_bag", "vacuum_tube", "respirator")} | {"adpother:aerometer"}
-# steel_unification.js: CBC and Gunsmithing steel are hidden; quests use TFMG's.
+# metal_unification.js: non-TFMG steel and lead are hidden; quests use TFMG's.
 BANNED |= {"createbigcannons:steel_ingot", "createbigcannons:steel_block",
            "cgs:steel_ingot", "cgs:steel_nugget", "cgs:steel_block",
-           "createnuclear:steel_ingot", "createnuclear:steel_nugget", "createnuclear:steel_block"}
+           "createnuclear:steel_ingot", "createnuclear:steel_nugget", "createnuclear:steel_block",
+           # lead (2026-11-22): quests use TFMG's
+           *{f"{m}:{f}" for m in ("cgs", "createnuclear") for f in ("lead_ingot", "lead_nugget", "lead_block",
+             "raw_lead", "raw_lead_block", "lead_ore", "deepslate_lead_ore")}}
 # nuclear_weapons.js: every CBC Enhanced Shells item is hidden except the four nukes.
 CBCES_KEEP = {"cbc_enhanced_shells:nuke_shell", "cbc_enhanced_shells:nuke_shell_mk2",
               "cbc_enhanced_shells:h_bomb_shell", "cbc_enhanced_shells:h_bomb_mini_shell"}

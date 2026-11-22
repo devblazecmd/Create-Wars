@@ -31,7 +31,7 @@
 					id: "16B8FC6A4C17B35C"
 					item: {
 						count: 1
-						id: "cgs:lead_ingot"
+						id: "tfmg:lead_ingot"
 					}
 					type: "item"
 				}
@@ -43,7 +43,7 @@
 					id: "00E76BF1AA8240C8"
 					item: {
 						count: 1
-						id: "cgs:lead_ingot"
+						id: "tfmg:lead_ingot"
 					}
 					type: "item"
 				}

@@ -710,7 +710,7 @@ CHAPTERS = [
          unlock=[("kinetics", "next")], quests=[
         Q("lead", "Lead", 0, 0, [
             "Bullets are made of &alead&r. Mine and smelt lead ore.",
-        ], [item("cgs:lead_ingot", 8)], xp=15),
+        ], [item("tfmg:lead_ingot", 8)], xp=15),
         Q("flintlock", "Flintlock", 0, 0, [
             "Andesite alloy, iron sheet, flint and steel and a stripped log: your first gun.",
         ], [item("cgs:flintlock")], xp=30),
@@ -1291,7 +1291,7 @@ CHAPTERS = [
     # Nuclear (owner 2026-11-22: "a good nuclear mod to add to the chaos"). Create Nuclear reactors and
     # radiation; nuke shells from CBC Enhanced Shells, re-gated on uranium rods by
     # pack/kubejs/server_scripts/nuclear_weapons.js. Recipe chain read from createnuclear-2.0.1's jar.
-    dict(slug="nuclear", group="warfare", title="Nuclear",
+    dict(slug="nuclear", group="warfare", title="Nuclear Age",
          subtitle="Reactors, radiation, and the shells that end wars", icon="cbc_enhanced_shells:nuke_shell",
          unlock=[("industrial", "steel")], quests=[
         Q("raw_uranium", "Uranium", 0, 0, [
@@ -1369,7 +1369,7 @@ CHAPTERS = [
         Q("nuke_shell", "Nuclear Shell", 0, 0, [
             "&aMechanical Crafting&r: a Big Cannons &cHE Shell&r wrapped in 8 uranium rods and lead,",
             "with a &5Nether Star&r core. A mushroom cloud, and a blast that levels whole bases.",
-            "&cClaims won't save anyone.&r Fire it from very far away, and never at home.",
+            "&cClaims &omaybe&r&c won't save anyone.&r Fire it from very far away, and never at home.",
         ], [item("cbc_enhanced_shells:nuke_shell")], xp=250),
         Q("h_bomb_mini", "Mini H-Bomb", 0, 0, [
             "Four nuclear shells, end crystals and nether stars: a smaller thermonuclear shell.",
