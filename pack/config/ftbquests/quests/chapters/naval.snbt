@@ -874,6 +874,8 @@
 		{
 			dependencies: [
 				"74CFBB049C996D12"
+				"6629BCD414634293"
+				"27B83168473D2123"
 			]
 			id: "7B58D6CB05D0188E"
 			rewards: [

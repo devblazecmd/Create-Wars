@@ -263,7 +263,8 @@
 	]
 	"quest.0A4151F48A770553.title": "Belts"
 	"quest.0ACD3C38CCC47073.quest_desc": [
-		"Warns of incoming torpedoes."
+		"A hydrophone: copper sheets, an electron tube, a note block and brass casing (pack recipe)."
+		"Warns you of incoming torpedoes."
 	]
 	"quest.0ACD3C38CCC47073.title": "Torpedo Detection Device"
 	"quest.0AED7F0E408DE000.quest_desc": [
@@ -301,7 +302,8 @@
 	]
 	"quest.0CC25CF336BC5A7A.title": "Steel Sheet"
 	"quest.0CD62493EF389622.quest_desc": [
-		"Reloads big cannons from a magazine."
+		"Brass casing and sheet, industrial iron, a &aCannon Loader&r and redstone. Reloads a big"
+		"cannon from a magazine, so it keeps firing without a loader crew."
 	]
 	"quest.0CD62493EF389622.title": "Cannon Magazine Loader"
 	"quest.0CD7E5A645ACC910.quest_desc": [
@@ -351,6 +353,11 @@
 		"Mass-produce the quantum supply chain."
 	]
 	"quest.0F1A32D940E5614D.title": "Quantum Automation"
+	"quest.0F710C47C2A97638.quest_desc": [
+		"Same parts as the Mechanical Servo, but it keeps turning step by step while a signal is"
+		"held."
+	]
+	"quest.0F710C47C2A97638.title": "Stepper Servo"
 	"quest.0F8FE5F9FB341304.quest_desc": [
 		"Compact gunpowder into &aPacked Gunpowder&r and put it in an &aEmpty Powder Charge&r"
 		"(wool and string). More charges = more range, and more strain on the barrel."
@@ -395,6 +402,10 @@
 		"Control engine and propeller power."
 	]
 	"quest.10F97F3E76257275.title": "Throttle Lever"
+	"quest.1129FA0B61122D2C.quest_desc": [
+		"Brass, brass casing and a transmitter: a 2x2 grid of buttons for weapons and gear."
+	]
+	"quest.1129FA0B61122D2C.title": "Button Panel"
 	"quest.112B7097521CB372.quest_desc": [
 		"Mix &ablaze powder, gunpowder and magma cream&r. The start of stronger propellant."
 	]
@@ -404,6 +415,10 @@
 		"air and the smog clouds."
 	]
 	"quest.119F31071255E1D5.title": "Scrubber Panel"
+	"quest.11CA58893FDF2BE1.quest_desc": [
+		"A pressure plate on brass casing: foot pedals for the rudder."
+	]
+	"quest.11CA58893FDF2BE1.title": "Pedal Module"
 	"quest.11FDB45C5A84681B.quest_desc": [
 		"A raid's heavy armor."
 	]
@@ -452,13 +467,18 @@
 		"through fire does it in bulk."
 	]
 	"quest.14AE92114CC90F48.title": "Dried Kelp"
+	"quest.14B98BF46C51736C.quest_desc": [
+		"The same, for rotation: a shaft instead of the chute. Power a front-line base from home."
+	]
+	"quest.14B98BF46C51736C.title": "Energy Transmitter"
 	"quest.14BCD8B12AE6EF84.quest_desc": [
 		"The biggest bomb. Mechanical crafting around a Large Bomb, with a precision mechanism and"
 		"sturdy sheets. &cBe careful where you drop it.&r"
 	]
 	"quest.14BCD8B12AE6EF84.title": "MOAB"
 	"quest.14F99FFA53D598FD.quest_desc": [
-		"Where the shell goes in."
+		"Where the round goes in: heavy plates, steel plates, steel blocks and a &aSteel"
+		"Mechanism&r (mechanical crafting)."
 	]
 	"quest.14F99FFA53D598FD.title": "Arcon Barrel Section (Breech)"
 	"quest.157B57B8355906AB.quest_desc": [
@@ -494,6 +514,10 @@
 		"Deep dark. Probably best avoided."
 	]
 	"quest.17A6D73E23678BDD.title": "The Warden"
+	"quest.17E18F4C217EB8F5.quest_desc": [
+		"Crafted from a button panel: a 3x3 grid."
+	]
+	"quest.17E18F4C217EB8F5.title": "Button Keypad"
 	"quest.1810AAC17B0A938A.quest_desc": [
 		"Craft &aQuartz&r with &aredstone dust&r to make &aRose Quartz&r."
 	]
@@ -514,6 +538,10 @@
 		"Adds &acast iron&r: punches through armor before exploding."
 	]
 	"quest.1A20D6A79DF02040.title": "Armor Piercing Shell"
+	"quest.1A380332FEC145A5.quest_desc": [
+		"The same, for fluids: a mechanical pump instead of the chute."
+	]
+	"quest.1A380332FEC145A5.title": "Fluid Transmitter"
 	"quest.1A4FD9D28FD574FC.quest_desc": [
 		"Tube chamber and barrel: the launcher."
 	]
@@ -538,13 +566,21 @@
 	]
 	"quest.1AF4C0EB171B91E8.title": "Crushing Wheels"
 	"quest.1AFDEB5FBC17B28A.quest_desc": [
-		"A small mount for autocannons on vehicles."
+		"A small autocannon mount for vehicles: andesite casing, brass sheet, shaft, cogwheel, iron"
+		"plate and gunpowder."
 	]
 	"quest.1AFDEB5FBC17B28A.title": "Compact Autocannon Mount"
 	"quest.1B28C23F7F0D9389.quest_desc": [
 		"Automates where a train goes."
 	]
 	"quest.1B28C23F7F0D9389.title": "Train Schedule"
+	"quest.1B29AC04A12AFBC1.quest_desc": [
+		"&6Create: Ender Transmission&r: quantum-linked logistics. Every Item Transmitter on the"
+		"same &aNetwork&r (1-10) shares items, across any distance and any dimension."
+		"&dPack recipe&r (mechanical crafting): obsidian, a chute, Quantum Casings, Quantum Pearls,"
+		"Advanced Components and a Quantum Mechanism."
+	]
+	"quest.1B29AC04A12AFBC1.title": "Item Transmitter"
 	"quest.1BD0EA51B5612C64.quest_desc": [
 		"Keep the heat on without lifting a finger."
 	]
@@ -588,7 +624,8 @@
 	]
 	"quest.1D63A6579136ED35.title": "Nuclear Shell Mk.II"
 	"quest.1D6EA8A5CB88FCDF.quest_desc": [
-		"Jet thrust for fast aircraft."
+		"&aMechanical Crafting&r: steel plates, TFMG &aTurbine Blades&r, a blaze burner and a fluid"
+		"pipe (pack recipe). Jet thrust for fast aircraft."
 	]
 	"quest.1D6EA8A5CB88FCDF.title": "Jet"
 	"quest.1DD53B0B1D8C1FB9.quest_desc": [
@@ -658,6 +695,10 @@
 		"encased fan blows through it, the same way soul fire haunts."
 	]
 	"quest.218446DD3532BE52.title": "Enriching Campfire"
+	"quest.21DC15A1F94748E8.quest_desc": [
+		"For aircraft: barely any mass, light protection. Aluminum sheets around a steel plate."
+	]
+	"quest.21DC15A1F94748E8.title": "Aluminum Hull Armor"
 	"quest.221AD5A5A71139A3.quest_desc": [
 		"Planks and iron. The base for storage upgrades."
 	]
@@ -687,7 +728,7 @@
 	]
 	"quest.244FA77672364CA5.title": "Drone Controls"
 	"quest.2461493636AB9AC8.quest_desc": [
-		"The business end."
+		"Steel plates, steel and a heavy plate (mechanical crafting)."
 	]
 	"quest.2461493636AB9AC8.title": "Arcon Cannon Muzzle"
 	"quest.2479F9ADF092F86D.quest_desc": [
@@ -789,13 +830,18 @@
 		"Short range and fragile, but it fires. &cBig Cannons are multiblocks&r: check each part's Ponder."
 	]
 	"quest.297C16F5F33DB4DD.title": "Log Cannon"
+	"quest.29A4036FFFE0C78C.quest_desc": [
+		"Crafted from a lever module: four throttle levers, one per engine."
+	]
+	"quest.29A4036FFFE0C78C.title": "Throttle Quadrant"
 	"quest.29CD29D4743899DA.quest_desc": [
 		"&aMechanical Crafting&r: casing, steel, a precision mechanism and a bucket of liquid"
 		"uranium."
 	]
 	"quest.29CD29D4743899DA.title": "Reactor Core"
 	"quest.29E6A06D262FC52F.quest_desc": [
-		"Mounts rockets under wings."
+		"Iron bars and iron sheets, makes 2 (pack recipe). Holds rockets and torpedoes under"
+		"aircraft; the Dual HE and APHE rockets are built on one."
 	]
 	"quest.29E6A06D262FC52F.title": "Rocket Bracket"
 	"quest.2A2F6D7284B0213C.quest_desc": [
@@ -925,6 +971,10 @@
 		"Fangs and vexes. Drops a Totem of Undying."
 	]
 	"quest.2F50915EC162CD62.title": "Evoker"
+	"quest.2F6A610835C74427.quest_desc": [
+		"Tougher and heavier than rolled steel: TFMG nickel, heavy plates and a steel block."
+	]
+	"quest.2F6A610835C74427.title": "Nickel Hull Armor"
 	"quest.2F7B3CC7044ABB69.quest_desc": [
 		"Cuts through terrain."
 	]
@@ -972,7 +1022,8 @@
 	]
 	"quest.315E6012D36080BC.title": "Gimbal Sensor"
 	"quest.316983E7A8C8D912.quest_desc": [
-		"The casing for autocannon rounds."
+		"Sequenced assembly: press an &aAutocannon Cartridge Sheet&r into a case. Fill it with powder"
+		"and add a round to make ammunition."
 	]
 	"quest.316983E7A8C8D912.title": "Autocannon Cartridge"
 	"quest.3188AB5143C724A6.quest_desc": [
@@ -1065,6 +1116,10 @@
 		"slashed styles)."
 	]
 	"quest.36AAE0F95A2E1194.title": "Hardened Steel Armor"
+	"quest.36B574ACD5B8C2FA.quest_desc": [
+		"Aircraft armor that takes more hits: Air War titanium sheets around an aluminum sheet."
+	]
+	"quest.36B574ACD5B8C2FA.title": "Titanium Hull Armor"
 	"quest.36E772B547DD464B.quest_desc": [
 		"Pulls nearby items in. Great for clearing loot after a fight."
 	]
@@ -1111,8 +1166,9 @@
 	]
 	"quest.39B7178398319DC1.title": "Fire Controller"
 	"quest.3A6991406BB1CE62.quest_desc": [
-		"&6Create: The Air War&r: a first-person attack drone. Place it, link it with the Drone"
-		"Joystick, and fly."
+		"&6Create: The Air War&r: a first-person attack drone. Four Andesite Propellers, a gyro"
+		"stabilizer, antenna, camera and packed guncotton (pack recipe). Place it, link it with the"
+		"Drone Joystick, and fly it into the target."
 	]
 	"quest.3A6991406BB1CE62.title": "FPV Drone"
 	"quest.3A964BAC2C4E7B3A.quest_desc": [
@@ -1168,7 +1224,8 @@
 	]
 	"quest.3E8A5CA51D5E3551.title": "Smog Sensor"
 	"quest.3E8CDCFA219066BF.quest_desc": [
-		"Skips across water."
+		"Iron sheets, packed guncotton and an &aImpact Fuze&r (pack recipe). Drop it low over water:"
+		"it skips along the surface into its target."
 	]
 	"quest.3E8CDCFA219066BF.title": "HE Bouncing Bomb"
 	"quest.3EA769AC23CBEC0F.quest_desc": [
@@ -1299,7 +1356,8 @@
 	]
 	"quest.453E0E92B7BA6611.title": "Train Signal"
 	"quest.459817C4038930C4.quest_desc": [
-		"Links and flies FPV drones."
+		"Brass sheets, an antenna, a monitor and an electron tube (pack recipe). Links to and flies"
+		"FPV drones."
 	]
 	"quest.459817C4038930C4.title": "Drone Joystick"
 	"quest.45BDA6C768B90B56.quest_desc": [
@@ -1377,6 +1435,12 @@
 		"Copper to iron."
 	]
 	"quest.4BCEC493225826A4.title": "Iron Tier"
+	"quest.4BEDE181FB336132.quest_desc": [
+		"&6Aeroworks&r: a real cockpit. A &aControl Stand&r (copper casing, redstone link, electron"
+		"tube, transmitter, precision mechanism) has &asockets&r for control modules. Sneak-right-click"
+		"it to bind each module to &aRedstone Link&r frequencies, then wire those to your craft."
+	]
+	"quest.4BEDE181FB336132.title": "Control Stand"
 	"quest.4BF2549A5697EC75.quest_desc": [
 		"Tell friend from foe."
 	]
@@ -1442,7 +1506,8 @@
 	]
 	"quest.4EB5ADD78C50BDC2.title": "Tank Tread"
 	"quest.4F0949D1FAB33BD1.quest_desc": [
-		"Ammunition for Arcon cannons."
+		"An AP shot in a brass case: AP Shot, two brass sheets and packed guncotton. Firing leaves a"
+		"&aSpent Cartridge Casing&r; reload it with an AP Shot and guncotton."
 	]
 	"quest.4F0949D1FAB33BD1.title": "BOPS Armor-Piercing Shell"
 	"quest.4F2CCD3CA4F4ED74.quest_desc": [
@@ -1519,6 +1584,12 @@
 		"Four nuclear shells, end crystals and nether stars: a smaller thermonuclear shell."
 	]
 	"quest.5225776D1012E391.title": "Mini H-Bomb"
+	"quest.527B674EBDE64D78.quest_desc": [
+		"&6Armored Constructs&r hull armor stops shells by its &atoughness&r and weighs the"
+		"vehicle down by its &amass&r. Rolled steel is the baseline: steel, steel plates and a"
+		"heavy plate, makes 8. A &astonecutter&r recolors any hull (15 camouflage patterns)."
+	]
+	"quest.527B674EBDE64D78.title": "Rolled Hull Armor"
 	"quest.528707EC128E396E.quest_desc": [
 		"Iron plates, copper, a note block and a shaft. Warn your base when bombers come."
 	]
@@ -1544,11 +1615,20 @@
 		"Next up: you'll need a captured &cBlaze&r to make brass."
 	]
 	"quest.53C1D57D1C14787F.title": "Andesite Age Complete"
+	"quest.53C388D6354E322F.quest_desc": [
+		"An analog lever on brass casing with a transmitter: one tilt lever. The base for the yoke"
+		"and throttle quadrant."
+	]
+	"quest.53C388D6354E322F.title": "Lever Module"
 	"quest.53FCAEF396A40468.quest_desc": [
 		"Sequenced assembly: Advanced Component, sturdy sheet and &dTelejuice&r. The heart of every"
 		"teleporter."
 	]
 	"quest.53FCAEF396A40468.title": "Quantum Mechanism"
+	"quest.542539A9D3F991D6.quest_desc": [
+		"Much tougher, and lighter than steel: fireclay, heavy plates and a diamond."
+	]
+	"quest.542539A9D3F991D6.title": "Ceramic Hull Armor"
 	"quest.5459DE3C6BCF979E.quest_desc": [
 		"See under water. (A different block from the Air War sonar.)"
 	]
@@ -1589,7 +1669,8 @@
 	]
 	"quest.5654679C05A47678.title": "Levitite"
 	"quest.56C06FAADEC153C4.quest_desc": [
-		"Blaze burner, brass and iron sheets: welds cannon parts together."
+		"A &aBlaze Burner&r (Brass Age), brass and iron sheets. Welds built-up cannon parts"
+		"together."
 	]
 	"quest.56C06FAADEC153C4.title": "Cannon Welder"
 	"quest.56DD42619431371D.quest_desc": [
@@ -1605,7 +1686,9 @@
 	]
 	"quest.58136A6ECBF2CA4A.title": "Propeller Bearing"
 	"quest.58281E71C2982F6E.quest_desc": [
-		"&6CBC Ballistic Computer&r: calculates trajectories so you can hit what you aim at."
+		"&6CBC Ballistic Computer&r: brass casing, electron tube, precision mechanism, shaft and a"
+		"display board. Calculates the trajectory so you hit what you aim at."
+		"&eNeeds the Brass Age.&r Automate brass (Automation chapter) to keep these guns fed."
 	]
 	"quest.58281E71C2982F6E.title": "Ballistic Computer"
 	"quest.58601A41B035E394.quest_desc": [
@@ -1705,7 +1788,9 @@
 	]
 	"quest.5D19704DF98EF7C1.title": "Built-Up Steel Cannon"
 	"quest.5E4C130E5B208860.quest_desc": [
-		"&6Create: Armored Constructs&r: tank-style vehicle cannons."
+		"&6Create: Armored Constructs&r: a tank gun. Assemble Breech, Barrel sections, an"
+		"Intermediate Muzzle and a Muzzle in a line. Pack recipes (the mod ships without any):"
+		"&aMechanical Crafting&r from heavy plates and steel. Barrels come 2 at a time."
 	]
 	"quest.5E4C130E5B208860.title": "Arcon Cannon Barrel"
 	"quest.5F40C639C270FBD0.quest_desc": [
@@ -1849,7 +1934,8 @@
 	]
 	"quest.66C3EC98853BC5DF.title": "Missile Mount"
 	"quest.672FD2FD5E0B970A.quest_desc": [
-		"Dropped from aircraft into water."
+		"A &aBasic Torpedo&r fixed to a &aRocket Bracket&r with two iron sheets (pack recipe)."
+		"Dropped from aircraft into water, it runs to the target like a ship's torpedo."
 	]
 	"quest.672FD2FD5E0B970A.title": "Aerial Torpedo"
 	"quest.67454231A804793A.quest_desc": [
@@ -2009,6 +2095,14 @@
 		"Copper and a redstone torch. Its color shows the air quality around you."
 	]
 	"quest.71E0AD84F1CF7715.title": "Safety Lantern"
+	"quest.72194779A11AA636.quest_desc": [
+		"A valve handle on brass casing: a steering wheel. Dye it any color."
+	]
+	"quest.72194779A11AA636.title": "Wheel Module"
+	"quest.723094AEB5AA27D1.quest_desc": [
+		"A lever module, brass and brass casing: pitch and roll in one control."
+	]
+	"quest.723094AEB5AA27D1.title": "Yoke Module"
 	"quest.7232B86A04A1181F.quest_desc": [
 		"&6Create&r: a multiblock that holds a huge amount of items. Place several side by side to"
 		"make it bigger. Hook it to your Tom's network like any chest."
@@ -2047,6 +2141,10 @@
 		"Drives the tracks."
 	]
 	"quest.73638BEF242FD8D0.title": "Flanged Cogwheel"
+	"quest.73795B54B8F784EE.quest_desc": [
+		"An analog lever, brass casing and a transmitter: two tilt axes on one stick."
+	]
+	"quest.73795B54B8F784EE.title": "Joystick Module"
 	"quest.7391A72D1E941C14.quest_desc": [
 		"Rotor blades."
 	]
@@ -2071,6 +2169,15 @@
 		"Sends items to a paired destination. Brass casing, chute, barrel, Quantum Mechanism."
 	]
 	"quest.749FE3E4AD2CCE5B.title": "Item Teleporter"
+	"quest.74B4F6E49CBE121B.quest_desc": [
+		"The same console in brass casing: a desk-style cockpit for bigger craft."
+	]
+	"quest.74B4F6E49CBE121B.title": "Control Desk"
+	"quest.74C9A5D8523819F4.quest_desc": [
+		"Keeps the chunks around it loaded, so remote machines keep running. A beacon wrapped in"
+		"Quantum Casings and Quantum Pearls, with a Quantum Mechanism (pack recipe)."
+	]
+	"quest.74C9A5D8523819F4.title": "Chunk Loader"
 	"quest.74CDBCF76E1C34D2.quest_desc": [
 		"Factions are &aFTB Teams&r. Quest progress is shared by everyone on your team."
 		""
@@ -2166,6 +2273,11 @@
 		"&aClick the checkmark when you're ready&r (quest edit mode OFF): the attack starts on the spot. Fight near your base."
 	]
 	"quest.7818999E3DE028B1.title": "Wave 4: Siege"
+	"quest.781EB13B3D3031E6.quest_desc": [
+		"&6Aeroworks&r: a flywheel and a Gimbal Sensor. Powered by rotation, it holds your craft"
+		"level and steady."
+	]
+	"quest.781EB13B3D3031E6.title": "Gyroscope"
 	"quest.785134420AE70E3C.quest_desc": [
 		"&6CBC Military Supplement&r: aerial bombs for Big Cannons-style payloads."
 	]
@@ -2182,6 +2294,10 @@
 		"Mechanical crafting: steel, brass and steel sheets, andesite alloy, a cogwheel and a log."
 	]
 	"quest.792CC832BC6F5671.title": "Revolver"
+	"quest.792E4CF39E03634A.quest_desc": [
+		"The toughest armor: coal coke, heavy plates and netherite scrap (mechanical crafting)."
+	]
+	"quest.792E4CF39E03634A.title": "Boron Hull Armor"
 	"quest.7966DB5B8803ECF8.quest_desc": [
 		"Dirt, straw, bone meal and &atree bark&r (strip logs on the cutting board). Place it and"
 		"it slowly turns into &aRich Soil&r."
@@ -2192,7 +2308,8 @@
 	]
 	"quest.799B3A7B52938525.title": "Hot Air Burner"
 	"quest.79AFAE2A1B4CB9E2.quest_desc": [
-		"Lets cannons fire on their own."
+		"Industrial iron, a brass sheet, redstone and a comparator. Lets a mounted cannon aim and"
+		"fire on its own."
 	]
 	"quest.79AFAE2A1B4CB9E2.title": "Automatic Cannon Controller"
 	"quest.7A0CFA70DB594577.quest_desc": [
@@ -2200,7 +2317,9 @@
 	]
 	"quest.7A0CFA70DB594577.title": "Train Controls"
 	"quest.7A1C29BC7A1E7837.quest_desc": [
-		"&6CBC: Firepower Components&r. A compact mount for cannons on vehicles and ships."
+		"&6CBC: Firepower Components&r: a compact mount for cannons on vehicles and ships. Brass"
+		"casing, shaft, cogwheel, iron plate and gunpowder."
+		"&eNeeds the Brass Age.&r Automate brass (Automation chapter) to keep these guns fed."
 	]
 	"quest.7A1C29BC7A1E7837.title": "Compact Cannon Mount"
 	"quest.7AB9FC5B547B2BA9.quest_desc": [
@@ -2232,12 +2351,18 @@
 		"Reach storage that isn't next to the connector."
 	]
 	"quest.7B0DBA63C3D5D511.title": "Inventory Cable"
+	"quest.7B3E1F92DCD2B92E.quest_desc": [
+		"Precision mechanism, sequenced gearshift, electron tube and brass. Turns to the angle a"
+		"redstone signal asks for: drives flaps, rudders and turrets from your controls."
+	]
+	"quest.7B3E1F92DCD2B92E.title": "Mechanical Servo"
 	"quest.7B4891B86DBC4114.quest_desc": [
 		"Real food for a long fight."
 	]
 	"quest.7B4891B86DBC4114.title": "Beef Stew"
 	"quest.7B58D6CB05D0188E.quest_desc": [
-		"For things below you."
+		"Iron sheets, packed guncotton and a &aTimed Fuze&r (pack recipe). Roll it off the stern"
+		"over a submarine."
 	]
 	"quest.7B58D6CB05D0188E.title": "Depth Charge"
 	"quest.7B757D6F1FE22F44.quest_desc": [

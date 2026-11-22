@@ -94,6 +94,7 @@
 		{
 			dependencies: [
 				"72BF8D911FA88129"
+				"047B724128CA8638"
 			]
 			id: "7C25C2287D94AE08"
 			rewards: [
@@ -303,7 +304,11 @@
 		{
 			dependencies: [
 				"135F39054A742654"
+				"7C25C2287D94AE08"
+				"6FC902C0AAB2722B"
+				"731740FB69570BAB"
 			]
+			hide_dependency_lines: true
 			id: "4680D4EEDDCD2B02"
 			rewards: [
 				{
@@ -542,7 +547,9 @@
 		{
 			dependencies: [
 				"4680D4EEDDCD2B02"
+				"2180ADB6E46AC859"
 			]
+			hide_dependency_lines: true
 			id: "359CB1C16A2C769F"
 			rewards: [
 				{
@@ -666,7 +673,7 @@
 				{
 					id: "2E1AC3137184B66F"
 					type: "xp_levels"
-					xp_levels: 5
+					xp_levels: 2
 				}
 				{
 					id: "05ADEC2A9DC49D42"
@@ -822,6 +829,147 @@
 			]
 			x: 31.8d
 			y: -2.31d
+		}
+		{
+			dependencies: [
+				"6A0F5E3A470D0D6D"
+			]
+			id: "1B29AC04A12AFBC1"
+			rewards: [
+				{
+					id: "3FBD2242A8598823"
+					type: "xp"
+					xp: 400
+				}
+				{
+					id: "26560725B3225726"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "53824D3226A75EAC"
+					item: {
+						count: 1
+						id: "createendertransmission:item_transmitter"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					count: 2L
+					id: "76CAF70C8975BF60"
+					item: {
+						count: 1
+						id: "createendertransmission:item_transmitter"
+					}
+					type: "item"
+				}
+			]
+			x: 40.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1B29AC04A12AFBC1"
+			]
+			id: "1A380332FEC145A5"
+			rewards: [
+				{
+					id: "2BECCCED11E06DE3"
+					type: "xp"
+					xp: 240
+				}
+				{
+					id: "63F1D19220FF7273"
+					item: {
+						count: 1
+						id: "createendertransmission:fluid_transmitter"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "3F34EF71352254D2"
+					item: {
+						count: 1
+						id: "createendertransmission:fluid_transmitter"
+					}
+					type: "item"
+				}
+			]
+			x: 41.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"1B29AC04A12AFBC1"
+			]
+			id: "14B98BF46C51736C"
+			rewards: [
+				{
+					id: "3E534E2CFF1D25F4"
+					type: "xp"
+					xp: 240
+				}
+				{
+					id: "114D51E9B0F5C87C"
+					item: {
+						count: 1
+						id: "createendertransmission:energy_transmitter"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "1EA5321F31C00395"
+					item: {
+						count: 1
+						id: "createendertransmission:energy_transmitter"
+					}
+					type: "item"
+				}
+			]
+			x: 38.8d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"1B29AC04A12AFBC1"
+			]
+			id: "74C9A5D8523819F4"
+			rewards: [
+				{
+					id: "145FE370410CB38C"
+					type: "xp"
+					xp: 320
+				}
+				{
+					id: "659C60B99CCB071D"
+					item: {
+						count: 1
+						id: "createendertransmission:chunk_loader"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "694ECEFC97DF6064"
+					item: {
+						count: 1
+						id: "createendertransmission:chunk_loader"
+					}
+					type: "item"
+				}
+			]
+			x: 40.0d
+			y: 2.6d
 		}
 	]
 }

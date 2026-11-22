@@ -929,6 +929,7 @@
 		{
 			dependencies: [
 				"5D19704DF98EF7C1"
+				"3BD47489393A7320"
 			]
 			id: "56C06FAADEC153C4"
 			rewards: [
@@ -1029,7 +1030,7 @@
 					id: "28A82F519141E86A"
 					item: {
 						count: 1
-						id: "createbigcannons:autocannon_cartridge"
+						id: "createbigcannons:empty_autocannon_cartridge"
 					}
 					type: "item"
 				}
@@ -1040,7 +1041,7 @@
 					id: "30C452E283B1B8AA"
 					item: {
 						count: 1
-						id: "createbigcannons:autocannon_cartridge"
+						id: "createbigcannons:empty_autocannon_cartridge"
 					}
 					type: "item"
 				}
@@ -1118,6 +1119,7 @@
 		{
 			dependencies: [
 				"3C0083216B96355F"
+				"3371D99BDCDED5AC"
 			]
 			id: "7A1C29BC7A1E7837"
 			rewards: [
@@ -1228,7 +1230,9 @@
 		{
 			dependencies: [
 				"7A1C29BC7A1E7837"
+				"5116C8CBF8F4C26B"
 			]
+			hide_dependency_lines: true
 			id: "0CD62493EF389622"
 			rewards: [
 				{
@@ -1261,6 +1265,7 @@
 		{
 			dependencies: [
 				"7A1C29BC7A1E7837"
+				"109B3C60E36DD5D4"
 			]
 			id: "58281E71C2982F6E"
 			rewards: [

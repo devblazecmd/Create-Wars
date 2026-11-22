@@ -682,6 +682,7 @@
 		{
 			dependencies: [
 				"5F57791FE7C5E54E"
+				"109B3C60E36DD5D4"
 			]
 			id: "5B0AB69264381253"
 			rewards: [
@@ -863,6 +864,7 @@
 		{
 			dependencies: [
 				"7D6935F4DE704537"
+				"3BD47489393A7320"
 			]
 			id: "29652E2BA6AE13B3"
 			rewards: [
@@ -902,6 +904,7 @@
 		{
 			dependencies: [
 				"29652E2BA6AE13B3"
+				"0E100C9DE8E82065"
 			]
 			id: "01417E6752358717"
 			rewards: [

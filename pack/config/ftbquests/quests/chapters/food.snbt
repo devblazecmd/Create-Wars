@@ -683,7 +683,9 @@
 		{
 			dependencies: [
 				"6D0FA79299F60AAC"
+				"55133A80FE1B9D72"
 			]
+			hide_dependency_lines: true
 			id: "7966DB5B8803ECF8"
 			rewards: [
 				{

@@ -190,12 +190,13 @@
 					type: "item"
 				}
 			]
-			x: -2.2d
-			y: 2.31d
+			x: -2.55d
+			y: 2.09d
 		}
 		{
 			dependencies: [
 				"7AB9FC5B547B2BA9"
+				"1AF4C0EB171B91E8"
 			]
 			id: "2F7B3CC7044ABB69"
 			rewards: [
@@ -223,12 +224,13 @@
 					type: "item"
 				}
 			]
-			x: 0.2d
-			y: 2.31d
+			x: -1.0d
+			y: 2.6d
 		}
 		{
 			dependencies: [
 				"7AB9FC5B547B2BA9"
+				"7B036FB0C0449878"
 			]
 			id: "4EB5ADD78C50BDC2"
 			rewards: [
@@ -337,7 +339,7 @@
 		}
 		{
 			dependencies: [
-				"4EB5ADD78C50BDC2"
+				"7AB9FC5B547B2BA9"
 			]
 			id: "7B036FB0C0449878"
 			rewards: [
@@ -366,8 +368,8 @@
 					type: "item"
 				}
 			]
-			x: 4.8d
-			y: 2.31d
+			x: 0.55d
+			y: 2.09d
 		}
 		{
 			dependencies: [
@@ -400,8 +402,8 @@
 					type: "item"
 				}
 			]
-			x: 7.2d
-			y: 2.31d
+			x: 6.0d
+			y: 2.6d
 		}
 		{
 			dependencies: [
@@ -475,12 +477,13 @@
 					type: "item"
 				}
 			]
-			x: 13.0d
-			y: -2.6d
+			x: 14.2d
+			y: -2.31d
 		}
 		{
 			dependencies: [
 				"36AAE0F95A2E1194"
+				"6306F2A0E0D78360"
 			]
 			id: "5E4C130E5B208860"
 			rewards: [
@@ -585,7 +588,215 @@
 		}
 		{
 			dependencies: [
+				"36AAE0F95A2E1194"
+				"5C326BE896F9406D"
+			]
+			id: "527B674EBDE64D78"
+			rewards: [
+				{
+					id: "69DC6763EA1AB335"
+					type: "xp"
+					xp: 160
+				}
+				{
+					count: 2
+					id: "4F60ECC69A6CFFFB"
+					item: {
+						count: 1
+						id: "arcon:hull_rolled_green"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "4D07C325CAD83E84"
+					item: {
+						count: 1
+						id: "arcon:hull_rolled_green"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"527B674EBDE64D78"
+			]
+			id: "2F6A610835C74427"
+			rewards: [
+				{
+					id: "284CA636B9FB4DD3"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "50E761DFEF95615D"
+					item: {
+						count: 1
+						id: "arcon:hull_nickel_green"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "0903FDAAC4EF2890"
+					item: {
+						count: 1
+						id: "arcon:hull_nickel_green"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 4.4d
+		}
+		{
+			dependencies: [
+				"2F6A610835C74427"
+			]
+			id: "542539A9D3F991D6"
+			rewards: [
+				{
+					id: "4B368F712883BE9E"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "3FBB665244CE3B44"
+					item: {
+						count: 1
+						id: "arcon:hull_ceramic_green"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "7A7302CA20A566B8"
+					item: {
+						count: 1
+						id: "arcon:hull_ceramic_green"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 6.2d
+		}
+		{
+			dependencies: [
+				"542539A9D3F991D6"
+			]
+			id: "792E4CF39E03634A"
+			rewards: [
+				{
+					id: "5268FFCFEAE61901"
+					type: "xp"
+					xp: 240
+				}
+				{
+					id: "02AB39670DAFE7C4"
+					item: {
+						count: 1
+						id: "arcon:hull_boron_green"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "44E7209C5727511E"
+					item: {
+						count: 1
+						id: "arcon:hull_boron_green"
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"36AAE0F95A2E1194"
+			]
+			id: "21DC15A1F94748E8"
+			rewards: [
+				{
+					id: "48984B149B692E07"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 2
+					id: "6A4D18C31D830682"
+					item: {
+						count: 1
+						id: "arcon:hull_aluminum_neutral_gray"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "416D1531AA3331AF"
+					item: {
+						count: 1
+						id: "arcon:hull_aluminum_neutral_gray"
+					}
+					type: "item"
+				}
+			]
+			x: 11.8d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"21DC15A1F94748E8"
+			]
+			id: "36B574ACD5B8C2FA"
+			rewards: [
+				{
+					id: "513D57DA2EE5C3C3"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "59C053C0EF2DC215"
+					item: {
+						count: 1
+						id: "arcon:hull_titanium_neutral_gray"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "2D49380E64AAE77F"
+					item: {
+						count: 1
+						id: "arcon:hull_titanium_neutral_gray"
+					}
+					type: "item"
+				}
+			]
+			x: 10.97d
+			y: -3.9d
+		}
+		{
+			dependencies: [
 				"5E4C130E5B208860"
+				"6629BCD414634293"
 			]
 			id: "4F0949D1FAB33BD1"
 			rewards: [

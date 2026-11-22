@@ -13,6 +13,9 @@
 	quests: [
 		{
 			dependencies: [
+				"38531C3CA7566C6E"
+				"58136A6ECBF2CA4A"
+				"315E6012D36080BC"
 				"4C20D3C1C2FAB4CF"
 			]
 			id: "7723D422C390F52B"
@@ -364,6 +367,7 @@
 		{
 			dependencies: [
 				"50822B0BBA2CD21E"
+				"6629BCD414634293"
 			]
 			id: "3A6991406BB1CE62"
 			rewards: [

@@ -340,6 +340,8 @@
 		{
 			dependencies: [
 				"5C326BE896F9406D"
+				"27527B6B1D4EAB19"
+				"6306F2A0E0D78360"
 			]
 			id: "48768D4D201D8CE7"
 			rewards: [

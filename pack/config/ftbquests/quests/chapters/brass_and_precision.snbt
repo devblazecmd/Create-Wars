@@ -150,6 +150,8 @@
 		{
 			dependencies: [
 				"60B90AF4C95E818F"
+				"6AF6E11AB857B769"
+				"2FC01DCFD815E793"
 			]
 			id: "3371D99BDCDED5AC"
 			rewards: [

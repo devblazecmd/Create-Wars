@@ -22,15 +22,15 @@ hash = "f0608863ba7654c5cab55a16eec078144eefba5ef4ea15d912b9e868692b7a1f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/aeronautics.snbt"
-hash = "a911ec20741e98ec0d0895bc3229468898bffbbe652f00adeae96447d2790b40"
+hash = "6aaba3bb3fca2c829f1caa1038199fe7516206c6409b60b3fa28da1bc4906ae7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/armored.snbt"
-hash = "1404b34e3cfa9b7c6a797799f65127797f3365b520a9c5ca7e3a6c664cf4ac43"
+hash = "1d35890908094b609e8a4b30865cc917e9c4268da27073292ee3d5b9d5f0c2c9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/artillery.snbt"
-hash = "9edf4e5ef020af81667aea3b3ba1ec360c782a90d21ba447b0135b70b4679673"
+hash = "86b7e2ef5083b521032c2ea2ea3d4e4a2e427d73593f0ab3b2ef216d7cc073c4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/automation.snbt"
@@ -38,7 +38,7 @@ hash = "62d28b5d217e250f9aa78918655791064c69da0c57c07782ed166293e2ba842f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/brass_and_precision.snbt"
-hash = "42735843c453a368b767ce44810e4ea7fb93685170bb648d397ba0898c403f78"
+hash = "ebd74521ed96c02597f8f64fe87779ae358a01f0ef6e97953e250ef094b17b30"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/defense.snbt"
@@ -50,11 +50,11 @@ hash = "da9f0022de759f1a464bf97d24aba04dfd447cb1d6d38cce57be73ad9da23b80"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/drones.snbt"
-hash = "b50556955aab94f9e842ffd2d33826ed2293570c65a5bc7db7e33e9fd91112dd"
+hash = "e2f0defb095afc7d1e37b54e561e8cffcd040e1445297ccdec8c9bb4e6f677de"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/enchanting.snbt"
-hash = "fe014219b61facdb31b75426fe75b818a2f7cdaa45f64f72928fb73ee2a6063d"
+hash = "efce6c12862eb91654d90ed2e2c13a254859d2993b818e815ac87b2d5e53542c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/enemy.snbt"
@@ -62,23 +62,23 @@ hash = "0c9cce4879dcc5ba80ba78bee1b45fee349d003a690d5ba3fae9621faa3d9acc"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/food.snbt"
-hash = "16e1fb3f89e8f422bb04ed77a4172ea1e0c888088f81683840001fc92d8cdcda"
+hash = "13d9c57f15098626b00818ecf90ff43d1999ce39ba81e42ab4749df667e80313"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/heat.snbt"
-hash = "a0063c090f1656eaaa4547e760430e2e3e0a7ebd5d3f978dff942e7d619d202d"
+hash = "0a19f5c2f7700ce3c05bbd9bc6ca76772ce819976d99b669646fdcc4630d4048"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/industrial.snbt"
-hash = "ef6f1ea979f5c6bd5a002cd5ddff87ca5da7040df12b2ad0716fd4236b647cbc"
+hash = "b9405a29be462cab77cdc927d7f4834e070879a84af976c5799eb9d3d53b910d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/infantry.snbt"
-hash = "1c82c45a9eadb0aa582a286714bd611ae9811879591e99f7f0122ef0d2bb10b2"
+hash = "032864bb3e121224e3d651a59770df8daf4811cb9380a02fba089411a78fe26a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/kinetics.snbt"
-hash = "a485111aea0435b6469a725d67d7b5d0f4580209937093d95621d42e548947e2"
+hash = "3fac80bab0085b8c8f1cb544d2a9e836179d11b401a0591cd3d0f30a934b18a3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/naval.snbt"
@@ -86,27 +86,27 @@ hash = "ae070bd3544079f6c5ba71a33e5d933898a1b860c38304142fe5a3963f9096d3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/nuclear.snbt"
-hash = "d55749dd79fe63273ff50e3ec024106766856ea26c39a8e22a7cda619cb10b02"
+hash = "ff6df8d4b53dec9f66f8c7901dcd216f00c4947bb837512db63b9542170871e4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/pollution.snbt"
-hash = "cfb4205c062bf747d1494d241ce8a822cc60a57c20647a0fbf9b7664bccc6fae"
+hash = "b20888bd9c29a75e9b3a4ef3528336118db3946495868cd0dd8af422f0a9bfc5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/quantum.snbt"
-hash = "043223df66cb4845e73e87b38393fc26846868e8c56b94fa77eacfdacbfc487d"
+hash = "9453e07782f0f39964b21d758e6f8bb44ffa2708542ee565d45c36f3ab7da3aa"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/radar.snbt"
-hash = "a6ca5273080d59e2219a398cb943726b2df752fadb9ecf02e03147e26ce085b0"
+hash = "c38c2cd9732b836985ef956a182bef90eab3ce0dc299888bf944ce02fa30ca00"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/rail.snbt"
-hash = "67e5d2f522b6fe77f6bdd1c38c32fa0546489ed7ab12f235b5c616f1dd1120f8"
+hash = "2d49fbf96f2234d70e2a0b121e7f953067fc2c31ba0aa0cac798dca8f4de8655"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage.snbt"
-hash = "64f57c1769f9e023c8f0bd8811974a11c3c7fabde2b2a1814ce91564c54d771c"
+hash = "a5ebceb46ee2d57b6661f1be3f9b0ebcd1196a9ed8b8d46bcb1a480176edaeec"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
@@ -118,7 +118,7 @@ hash = "59e6f33cb9b5b2593319a35b8e70e99d32e8834c38f7206fa7ec59de1f16c4d9"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "e12580ef8b3e4345e86752f4c0ffaaf78d3a045a59715a55925464efe832b100"
+hash = "ecde923ca923665b38b4f041e7a61ddc79759c0cbd8268e3bde787c28456c8b0"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/war_spoils_1.snbt"
@@ -130,7 +130,7 @@ hash = "76d3e09c7c8da0590a0cb0bc88a1fcc71eecaaff62f87ba5c5382e04d65e0872"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/war_spoils_3.snbt"
-hash = "97c3ff821fb210968e4563d9bd4de5c7eaac4692839475cc454f35a2b1e45a6b"
+hash = "4d7b94905ace075ed3db8513ff68b65fe02ce479b0625597694d8a49770fa589"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/war_trophy.snbt"
@@ -289,12 +289,20 @@ file = "kubejs/server_scripts/elytra_removed.js"
 hash = "3fdaa8c2dfe468cb67b383d787fdbef4274ac3251da12abc5003a8be2df6f545"
 
 [[files]]
+file = "kubejs/server_scripts/ender_transmission_quantum.js"
+hash = "fd7b2f94a3d536e94d2869d510edff2b060da6ce37bdff60ec58324d0ce373e1"
+
+[[files]]
 file = "kubejs/server_scripts/export_registry_ids.js"
 hash = "06c4a711685d65dd550f1b0f2c25ab8bd95fd1ae5c32498d00919bae71c1b549"
 
 [[files]]
 file = "kubejs/server_scripts/metal_unification.js"
 hash = "461acd1c3da92ce4b89900e31a17391efb2a44352885e85f9e2e6cf843aa35c7"
+
+[[files]]
+file = "kubejs/server_scripts/missing_recipes.js"
+hash = "815a83f43f0a70d5382ec7ff154eabe8dd62b532a3b34e823ca3ddc08d74e85d"
 
 [[files]]
 file = "kubejs/server_scripts/netherite_scrap_crushing.js"

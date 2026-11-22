@@ -343,7 +343,7 @@
 		}
 		{
 			dependencies: [
-				"51ABB649DF339B40"
+				"7CEBB4B0BE358E76"
 			]
 			id: "030523533305C9CD"
 			rewards: [
@@ -420,7 +420,7 @@
 				}
 			]
 			x: 21.0d
-			y: -2.6d
+			y: 6.2d
 		}
 		{
 			dependencies: [
@@ -561,12 +561,12 @@
 					type: "item"
 				}
 			]
-			x: 29.2d
-			y: -2.31d
+			x: 28.0d
+			y: -2.6d
 		}
 		{
 			dependencies: [
-				"7153EFC543EF00EA"
+				"51ABB649DF339B40"
 			]
 			id: "34C95B3009441921"
 			rewards: [
@@ -596,12 +596,12 @@
 					type: "item"
 				}
 			]
-			x: 26.8d
-			y: -2.31d
+			x: 21.0d
+			y: -2.6d
 		}
 		{
 			dependencies: [
-				"7153EFC543EF00EA"
+				"34C95B3009441921"
 			]
 			id: "217E89066B455C87"
 			rewards: [
@@ -630,12 +630,12 @@
 					type: "item"
 				}
 			]
-			x: 26.45d
-			y: 2.09d
+			x: 22.67d
+			y: -4.59d
 		}
 		{
 			dependencies: [
-				"7153EFC543EF00EA"
+				"34C95B3009441921"
 			]
 			id: "29CD29D4743899DA"
 			rewards: [
@@ -663,8 +663,8 @@
 					type: "item"
 				}
 			]
-			x: 28.0d
-			y: 2.6d
+			x: 19.33d
+			y: -4.59d
 		}
 		{
 			dependencies: [
@@ -697,12 +697,14 @@
 					type: "item"
 				}
 			]
-			x: 29.55d
-			y: 2.09d
+			x: 28.0d
+			y: 2.6d
 		}
 		{
 			dependencies: [
 				"51ABB649DF339B40"
+				"34C95B3009441921"
+				"7232B86A04A1181F"
 			]
 			id: "7153EFC543EF00EA"
 			rewards: [
@@ -815,7 +817,9 @@
 		{
 			dependencies: [
 				"72424400C302B52D"
+				"2E3CBB0BC9E0B8B0"
 			]
+			hide_dependency_lines: true
 			id: "1D63A6579136ED35"
 			rewards: [
 				{

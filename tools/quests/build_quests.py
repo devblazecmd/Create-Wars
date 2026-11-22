@@ -105,7 +105,7 @@ REWARD_TABLES = {
         ("minecraft:golden_apple", 4, 3), ("minecraft:diamond", 2, 2), ("minecraft:totem_of_undying", 1, 2)]),
     "war_spoils_3": dict(title="Spoils of War III", entries=[
         ("tfmg:steel_ingot", 24, 8), ("createbigcannons:he_shell", 8, 8), ("createbigcannons:ap_shell", 6, 6),
-        ("createbigcannons:autocannon_cartridge", 32, 6), ("createbigcannons:packed_guncotton", 8, 6),
+        ("createbigcannons:ap_autocannon_round", 16, 6), ("createbigcannons:packed_guncotton", 8, 6),
         ("createbigcannons:proximity_fuze", 4, 5), ("cbc_more_content:small_bomb", 4, 5),
         ("create:precision_mechanism", 6, 5), ("minecraft:experience_bottle", 32, 5), ("minecraft:diamond", 4, 4),
         ("cbc_more_content:c4", 2, 3), ("minecraft:netherite_scrap", 2, 3), ("minecraft:totem_of_undying", 1, 3),
@@ -543,6 +543,24 @@ CHAPTERS = [
             "Mechanical crafting with an Entity Teleporter, Quantum Mechanism and more: build portals",
             "of your own shape. Each base needs at least 256 mB of Telejuice.",
         ], [item("createteleporters:custom_portal_base")], xp=75),
+        # Create: Ender Transmission (owner 2026-11-22: "should be a quantum thing", recipes made harder with
+        # quantum items: pack/kubejs/server_scripts/ender_transmission_quantum.js)
+        Q("item_transmitter", "Item Transmitter", 0, 0, [
+            "&6Create: Ender Transmission&r: quantum-linked logistics. Every Item Transmitter on the",
+            "same &aNetwork&r (1-10) shares items, across any distance and any dimension.",
+            "&dPack recipe&r (mechanical crafting): obsidian, a chute, Quantum Casings, Quantum Pearls,",
+            "Advanced Components and a Quantum Mechanism.",
+        ], [item("createendertransmission:item_transmitter", 2)], xp=100),
+        Q("fluid_transmitter", "Fluid Transmitter", 0, 0, [
+            "The same, for fluids: a mechanical pump instead of the chute.",
+        ], [item("createendertransmission:fluid_transmitter", 2)], xp=60),
+        Q("energy_transmitter", "Energy Transmitter", 0, 0, [
+            "The same, for rotation: a shaft instead of the chute. Power a front-line base from home.",
+        ], [item("createendertransmission:energy_transmitter", 2)], xp=60),
+        Q("chunk_loader", "Chunk Loader", 0, 0, [
+            "Keeps the chunks around it loaded, so remote machines keep running. A beacon wrapped in",
+            "Quantum Casings and Quantum Pearls, with a Quantum Mechanism (pack recipe).",
+        ], [item("createendertransmission:chunk_loader")], xp=80),
     ]),
     # ----------------------------------------------------------------------------------------------
     dict(slug="enchanting", group="expansions", title="Enchanting Expansion",
@@ -671,14 +689,16 @@ CHAPTERS = [
             "Andesite casing, fluid pipe, iron and a piston pole. Bores out cast and built-up barrels.",
         ], [item("createbigcannons:cannon_drill")], xp=20),
         Q("cannon_welder", "Cannon Welder", 0, 0, [
-            "Blaze burner, brass and iron sheets: welds cannon parts together.",
+            "A &aBlaze Burner&r (Brass Age), brass and iron sheets. Welds built-up cannon parts",
+            "together.",
         ], [item("createbigcannons:cannon_welder")], xp=25),
         Q("autocannon", "Autocannon", 0, 0, [
             "A rapid-fire cannon from a cast &abreech&r and &abarrel&r. Feeds on cartridges.",
         ], [item("createbigcannons:cast_iron_autocannon_breech"), item("createbigcannons:cast_iron_autocannon_barrel")], xp=50),
         Q("autocannon_cartridge", "Autocannon Cartridge", 0, 0, [
-            "The casing for autocannon rounds.",
-        ], [item("createbigcannons:autocannon_cartridge", 4)], xp=15),
+            "Sequenced assembly: press an &aAutocannon Cartridge Sheet&r into a case. Fill it with powder",
+            "and add a round to make ammunition.",
+        ], [item("createbigcannons:empty_autocannon_cartridge", 4)], xp=15),
         Q("ap_autocannon_round", "AP Autocannon Round", 0, 0, [
             "Armor-piercing ammo for the autocannon.",
         ], [item("createbigcannons:ap_autocannon_round", 8)], xp=20),
@@ -686,19 +706,26 @@ CHAPTERS = [
             "Holds a belt of autocannon rounds for continuous fire.",
         ], [item("createbigcannons:autocannon_ammo_container")], xp=20),
         Q("firepower", "Compact Cannon Mount", 0, 0, [
-            "&6CBC: Firepower Components&r. A compact mount for cannons on vehicles and ships.",
+            "&6CBC: Firepower Components&r: a compact mount for cannons on vehicles and ships. Brass",
+            "casing, shaft, cogwheel, iron plate and gunpowder.",
+            "&eNeeds the Brass Age.&r Automate brass (Automation chapter) to keep these guns fed.",
         ], [item("cbc_firepower_components:compact_cannon_mount")], xp=40),
         Q("compact_autocannon_mount", "Compact Autocannon Mount", 0, 0, [
-            "A small mount for autocannons on vehicles.",
+            "A small autocannon mount for vehicles: andesite casing, brass sheet, shaft, cogwheel, iron",
+            "plate and gunpowder.",
         ], [item("cbc_firepower_components:compact_autocannon_mount")], xp=25),
         Q("auto_cannon_controller", "Automatic Cannon Controller", 0, 0, [
-            "Lets cannons fire on their own.",
+            "Industrial iron, a brass sheet, redstone and a comparator. Lets a mounted cannon aim and",
+            "fire on its own.",
         ], [item("cbc_firepower_components:automatic_cannon_controller")], xp=30),
         Q("magazine_loader", "Cannon Magazine Loader", 0, 0, [
-            "Reloads big cannons from a magazine.",
+            "Brass casing and sheet, industrial iron, a &aCannon Loader&r and redstone. Reloads a big",
+            "cannon from a magazine, so it keeps firing without a loader crew.",
         ], [item("cbc_firepower_components:cannon_magazine_loader")], xp=30),
         Q("ballistic_computer", "Ballistic Computer", 0, 0, [
-            "&6CBC Ballistic Computer&r: calculates trajectories so you can hit what you aim at.",
+            "&6CBC Ballistic Computer&r: brass casing, electron tube, precision mechanism, shaft and a",
+            "display board. Calculates the trajectory so you hit what you aim at.",
+            "&eNeeds the Brass Age.&r Automate brass (Automation chapter) to keep these guns fed.",
         ], [item("cbcballistic:ballistic_computer")], xp=40),
         Q("nethersteel", "Nethersteel", 0, 0, [
             "The top cannon material. Cast a barrel from molten &anethersteel&r.",
@@ -938,6 +965,51 @@ CHAPTERS = [
         Q("gimbal_sensor", "Gimbal Sensor", 0, 0, [
             "Senses tilt, for auto-leveling.",
         ], [item("simulated:gimbal_sensor")], xp=15),
+        Q("gyroscope", "Gyroscope", 0, 0, [
+            "&6Aeroworks&r: a flywheel and a Gimbal Sensor. Powered by rotation, it holds your craft",
+            "level and steady.",
+        ], [item("aeroworks:gyroscope")], xp=25),
+        Q("cockpit", "Control Stand", 0, 0, [
+            "&6Aeroworks&r: a real cockpit. A &aControl Stand&r (copper casing, redstone link, electron",
+            "tube, transmitter, precision mechanism) has &asockets&r for control modules. Sneak-right-click",
+            "it to bind each module to &aRedstone Link&r frequencies, then wire those to your craft.",
+        ], [item("aeroworks:control_stand")], xp=40),
+        Q("control_desk", "Control Desk", 0, 0, [
+            "The same console in brass casing: a desk-style cockpit for bigger craft.",
+        ], [item("aeroworks:control_desk")], xp=25),
+        Q("lever_module", "Lever Module", 0, 0, [
+            "An analog lever on brass casing with a transmitter: one tilt lever. The base for the yoke",
+            "and throttle quadrant.",
+        ], [item("aeroworks:lever_module")], xp=15),
+        Q("yoke_module", "Yoke Module", 0, 0, [
+            "A lever module, brass and brass casing: pitch and roll in one control.",
+        ], [item("aeroworks:yoke_module")], xp=20),
+        Q("throttle_quadrant_module", "Throttle Quadrant", 0, 0, [
+            "Crafted from a lever module: four throttle levers, one per engine.",
+        ], [item("aeroworks:throttle_quadrant_module")], xp=20),
+        Q("joystick_module", "Joystick Module", 0, 0, [
+            "An analog lever, brass casing and a transmitter: two tilt axes on one stick.",
+        ], [item("aeroworks:joystick_module")], xp=20),
+        Q("pedal_module", "Pedal Module", 0, 0, [
+            "A pressure plate on brass casing: foot pedals for the rudder.",
+        ], [item("aeroworks:pedal_module")], xp=15),
+        Q("button_panel_module", "Button Panel", 0, 0, [
+            "Brass, brass casing and a transmitter: a 2x2 grid of buttons for weapons and gear.",
+        ], [item("aeroworks:button_panel_module")], xp=15),
+        Q("button_keypad_module", "Button Keypad", 0, 0, [
+            "Crafted from a button panel: a 3x3 grid.",
+        ], [item("aeroworks:button_keypad_module")], xp=15),
+        Q("wheel_module", "Wheel Module", 0, 0, [
+            "A valve handle on brass casing: a steering wheel. Dye it any color.",
+        ], [item("aeroworks:wheel_module")], xp=15),
+        Q("mechanical_servo", "Mechanical Servo", 0, 0, [
+            "Precision mechanism, sequenced gearshift, electron tube and brass. Turns to the angle a",
+            "redstone signal asks for: drives flaps, rudders and turrets from your controls.",
+        ], [item("aeroworks:mechanical_servo")], xp=30),
+        Q("stepper_servo", "Stepper Servo", 0, 0, [
+            "Same parts as the Mechanical Servo, but it keeps turning step by step while a signal is",
+            "held.",
+        ], [item("aeroworks:stepper_servo")], xp=25),
         Q("air_weapons", "Aircraft Machine Gun", 0, 0, [
             "&6Create: The Air War&r. Arm your aircraft. (Its launchers and their ammo are removed in this",
             "pack; guns, bombs and missile blocks remain.)",
@@ -970,19 +1042,23 @@ CHAPTERS = [
             "Armor-piercing high explosive.",
         ], [item("cbcmoreshells:aphe_bomb")], xp=20),
         Q("bouncing_bomb", "HE Bouncing Bomb", 0, 0, [
-            "Skips across water.",
+            "Iron sheets, packed guncotton and an &aImpact Fuze&r (pack recipe). Drop it low over water:",
+            "it skips along the surface into its target.",
         ], [item("cbcmoreshells:he_bouncing_bomb")], xp=20),
         Q("aerial_torpedo", "Aerial Torpedo", 0, 0, [
-            "Dropped from aircraft into water.",
+            "A &aBasic Torpedo&r fixed to a &aRocket Bracket&r with two iron sheets (pack recipe).",
+            "Dropped from aircraft into water, it runs to the target like a ship's torpedo.",
         ], [item("cbcmoreshells:racked_torpedo")], xp=25),
         Q("rocket_bracket", "Rocket Bracket", 0, 0, [
-            "Mounts rockets under wings.",
+            "Iron bars and iron sheets, makes 2 (pack recipe). Holds rockets and torpedoes under",
+            "aircraft; the Dual HE and APHE rockets are built on one.",
         ], [item("cbcmoreshells:rocket_bracket")], xp=20),
         Q("synaxis", "Control Chair", 0, 0, [
             "&6Synaxis&r: precision controls for Sable craft (circuits, Lua, motors and actuators).",
         ], [item("synaxis:control_chair")], xp=40),
         Q("jet", "Jet", 0, 0, [
-            "Jet thrust for fast aircraft.",
+            "&aMechanical Crafting&r: steel plates, TFMG &aTurbine Blades&r, a blaze burner and a fluid",
+            "pipe (pack recipe). Jet thrust for fast aircraft.",
         ], [item("synaxis:jet")], xp=25),
         Q("circuit", "Circuit", 0, 0, [
             "Program flight logic with Cimulink circuits.",
@@ -1070,13 +1146,15 @@ CHAPTERS = [
             "Tube chamber and barrel: the launcher.",
         ], [item("cbcmoreshells:steel_torpedo_tube_chamber"), item("cbcmoreshells:steel_torpedo_tube_barrel")], xp=30),
         Q("depth_charge", "Depth Charge", 0, 0, [
-            "For things below you.",
+            "Iron sheets, packed guncotton and a &aTimed Fuze&r (pack recipe). Roll it off the stern",
+            "over a submarine.",
         ], [item("cbcmoreshells:depth_charge")], xp=20),
         Q("mine", "Underwater Mine", 0, 0, [
             "Deny an area of sea.",
         ], [item("create_submarine:underwater_mine")], xp=20),
         Q("torpedo_detector", "Torpedo Detection Device", 0, 0, [
-            "Warns of incoming torpedoes.",
+            "A hydrophone: copper sheets, an electron tube, a note block and brass casing (pack recipe).",
+            "Warns you of incoming torpedoes.",
         ], [item("cbcmoreshells:torpedo_detection_device")], xp=25),
     ]),
     # ----------------------------------------------------------------------------------------------
@@ -1173,11 +1251,41 @@ CHAPTERS = [
             "Also from the stonecutter (iron block). Cheap cover for gun nests and trenches.",
         ], [item("rha:sandbaggreen", 8)], xp=15),
         Q("arcon", "Arcon Cannon Barrel", 0, 0, [
-            "&6Create: Armored Constructs&r: tank-style vehicle cannons.",
+            "&6Create: Armored Constructs&r: a tank gun. Assemble Breech, Barrel sections, an",
+            "Intermediate Muzzle and a Muzzle in a line. Pack recipes (the mod ships without any):",
+            "&aMechanical Crafting&r from heavy plates and steel. Barrels come 2 at a time.",
         ], [item("arcon:arcon_cannon_barrel")], xp=50),
-        Q("arcon_muzzle", "Arcon Cannon Muzzle", 0, 0, ["The business end."], [item("arcon:arcon_cannon_muzzle")], xp=20),
-        Q("arcon_breech", "Arcon Barrel Section (Breech)", 0, 0, ["Where the shell goes in."], [item("arcon:arcon_barrel_section")], xp=20),
-        Q("bops", "BOPS Armor-Piercing Shell", 0, 0, ["Ammunition for Arcon cannons."], [item("arcon:bops", 8)], xp=25),
+        Q("arcon_muzzle", "Arcon Cannon Muzzle", 0, 0, [
+            "Steel plates, steel and a heavy plate (mechanical crafting).",
+        ], [item("arcon:arcon_cannon_muzzle")], xp=20),
+        Q("arcon_breech", "Arcon Barrel Section (Breech)", 0, 0, [
+            "Where the round goes in: heavy plates, steel plates, steel blocks and a &aSteel",
+            "Mechanism&r (mechanical crafting).",
+        ], [item("arcon:arcon_barrel_section")], xp=20),
+        Q("hull_rolled", "Rolled Hull Armor", 0, 0, [
+            "&6Armored Constructs&r hull armor stops shells by its &atoughness&r and weighs the",
+            "vehicle down by its &amass&r. Rolled steel is the baseline: steel, steel plates and a",
+            "heavy plate, makes 8. A &astonecutter&r recolors any hull (15 camouflage patterns).",
+        ], [item("arcon:hull_rolled_green", 16)], xp=40),
+        Q("hull_nickel", "Nickel Hull Armor", 0, 0, [
+            "Tougher and heavier than rolled steel: TFMG nickel, heavy plates and a steel block.",
+        ], [item("arcon:hull_nickel_green", 8)], xp=30),
+        Q("hull_ceramic", "Ceramic Hull Armor", 0, 0, [
+            "Much tougher, and lighter than steel: fireclay, heavy plates and a diamond.",
+        ], [item("arcon:hull_ceramic_green", 8)], xp=40),
+        Q("hull_boron", "Boron Hull Armor", 0, 0, [
+            "The toughest armor: coal coke, heavy plates and netherite scrap (mechanical crafting).",
+        ], [item("arcon:hull_boron_green", 8)], xp=60),
+        Q("hull_aluminum", "Aluminum Hull Armor", 0, 0, [
+            "For aircraft: barely any mass, light protection. Aluminum sheets around a steel plate.",
+        ], [item("arcon:hull_aluminum_neutral_gray", 16)], xp=30),
+        Q("hull_titanium", "Titanium Hull Armor", 0, 0, [
+            "Aircraft armor that takes more hits: Air War titanium sheets around an aluminum sheet.",
+        ], [item("arcon:hull_titanium_neutral_gray", 8)], xp=40),
+        Q("bops", "BOPS Armor-Piercing Shell", 0, 0, [
+            "An AP shot in a brass case: AP Shot, two brass sheets and packed guncotton. Firing leaves a",
+            "&aSpent Cartridge Casing&r; reload it with an AP Shot and guncotton.",
+        ], [item("arcon:bops", 8)], xp=25),
     ]),
     # ----------------------------------------------------------------------------------------------
     dict(slug="drones", group="warfare", title="Drones",
@@ -1200,10 +1308,14 @@ CHAPTERS = [
         Q("drone_controls", "Drone Controls", 0, 0, ["On-board controls."], [item("droneworks:drone_controls")], xp=15),
         Q("commander_seat", "Commander Seat", 0, 0, ["Command drones from a vehicle."], [item("droneworks:commander_seat")], xp=20),
         Q("fpv", "FPV Drone", 0, 0, [
-            "&6Create: The Air War&r: a first-person attack drone. Place it, link it with the Drone",
-            "Joystick, and fly.",
+            "&6Create: The Air War&r: a first-person attack drone. Four Andesite Propellers, a gyro",
+            "stabilizer, antenna, camera and packed guncotton (pack recipe). Place it, link it with the",
+            "Drone Joystick, and fly it into the target.",
         ], [item("create_the_air_wars:fpv_drone")], xp=50),
-        Q("drone_joystick", "Drone Joystick", 0, 0, ["Links and flies FPV drones."], [item("create_the_air_wars:drone_controller")], xp=20),
+        Q("drone_joystick", "Drone Joystick", 0, 0, [
+            "Brass sheets, an antenna, a monitor and an electron tube (pack recipe). Links to and flies",
+            "FPV drones.",
+        ], [item("create_the_air_wars:drone_controller")], xp=20),
     ]),
     # ----------------------------------------------------------------------------------------------
     # Create: Warnautics (mod ID cbc_more_content), owner 2026-11-21. Recipes read from the jar.
@@ -1891,15 +2003,19 @@ LAYOUTS = {
     "kinetics": dict(
         main=[("find_andesite", -5, 1.25), ("andesite_alloy", 0, 2.0), ("casing", 7, 2.0), ("next", 13, 2.0)],
         hubs={"andesite_alloy": dict(top=["shafts_cogs"], bottom=["cogwheels"]),
-              "casing": dict(top=["millstone", "press", "basin_mixer"], bottom=["kelp"])},
+              "casing": dict(top=["millstone", "press", "basin_mixer"], bottom=["kelp", "gearbox"])},
         chains={"shafts_cogs": ["water_wheel", "large_water_wheel"],  # owner: shaft -> water wheel -> large
-                "cogwheels": ["gearbox", "vertical_gearbox"],          # owner: cogs -> gearboxes
+                # 2026-11-22 audit: gearboxes need andesite casing, so they moved to the casing hub
+                "gearbox": ["vertical_gearbox"],
                 "press": ["iron_sheets"],                              # owner: press & depot -> iron sheets
                 "kelp": ["dried_kelp", "belts"]},                      # owner: kelp -> dried kelp -> belts
         fans={"iron_sheets": ["saw_drill", "harvester", "drill", "fan"],    # owner: iron sheets unlock these
               "press": (["gold_sheets"], -60),                              # owner: press -> gold sheet tree
               "gold_sheets": (["wrench_goggles", "goggles"], 0, 90),        # owner: gold sheets -> tools
               "dried_kelp": (["tunnel"], 90)},                              # owner: dried kelp -> tunnels
+        # 2026-11-22 audit: cogwheels are made from shafts; casing-hub machines need both
+        hidden_deps={"cogwheels": ["shafts_cogs"]},
+        extra_deps={"casing": ["shafts_cogs", "cogwheels"]},
         gate=("next", ["casing", "press", "basin_mixer", "belts", "iron_sheets"])),
     "brass_and_precision": dict(
         main=[("empty_burner", -9, 1.25), ("blaze", -5, 1.5), ("brass", 0, 2.0), ("brass_casing", 8, 2.0),
@@ -1911,6 +2027,7 @@ LAYOUTS = {
                 "deployer": ["precision"]},                           # deployers assemble precision mechs
         fans={"electron_tube": ["brass_funnel", "brass_tunnel"],
               "precision": ["mech_arm", "speed_controller"]},
+        extra_deps={"brass_casing": ["electron_tube", "brass_hand"]},   # 2026-11-22 audit: deployer/crafter
         gate=("next", ["brass_casing", "electron_tube", "deployer", "precision", "crafter"])),
     "industrial": dict(
         main=[("cast_iron", -6, 1.25), ("coke_oven", -1, 2.0), ("blast_furnace", 6, 2.0), ("steel", 13, 2.0),
@@ -1921,7 +2038,8 @@ LAYOUTS = {
               "heavy_casing": dict(top=["surface_scanner"], bottom=["engine"]),
               "pumpjack": dict(top=["crude_oil"]),
               "distillation": dict(top=["gasoline", "diesel", "kerosene"], bottom=["aluminum"])},
-        extra_deps={"napalm": ["heat/biofuel"]},   # napalm needs biofuel (Heat Expansion)
+        extra_deps={"napalm": ["heat/biofuel"],   # napalm needs biofuel (Heat Expansion)
+                    "heavy_casing": ["steel_casing", "steel_mechanism"]},   # 2026-11-22 audit
         gate=None),
     "heat": dict(
         main=[("tiers", -5, 1.5), ("blaze_cake", 1, 2.0), ("biofuel", 8, 2.0)],
@@ -1929,17 +2047,23 @@ LAYOUTS = {
               "blaze_cake": dict(bottom=["biomass"]),
               "biofuel": dict(top=["straw"])},
         chains={"cinder_flour": ["cake_base"]},
+        extra_deps={"blaze_cake": ["cake_base"]},   # 2026-11-22 audit
         gate=None),
     "quantum": dict(
         main=[("chorus", -6, 1.25), ("telejuice", -1, 2.0), ("quantum_pearl", 6, 2.0), ("waystone", 13, 2.0),
-              ("advanced_part", 20, 1.75), ("quantum_mechanism", 26, 2.0), ("teleporter", 33, 2.0)],
+              ("advanced_part", 20, 1.75), ("quantum_mechanism", 26, 2.0), ("teleporter", 33, 2.0),
+              ("item_transmitter", 40, 2.0)],
         hubs={"telejuice": dict(top=["quantum_casing"], bottom=["quantum_paper"]),
               "quantum_pearl": dict(top=["warp_dust"], bottom=["redstone_pearl"]),
               "waystone": dict(top=["blank_scroll"], bottom=["sharestone", "portstone", "warp_plate"]),
               "quantum_mechanism": dict(top=["tp_link"], bottom=["item_tp"]),
-              "teleporter": dict(top=["adv_tplink", "custom_portal"])},
+              "teleporter": dict(top=["adv_tplink", "custom_portal"]),
+              "item_transmitter": dict(top=["fluid_transmitter", "energy_transmitter"], bottom=["chunk_loader"])},
         chains={"warp_dust": ["warp_stone"], "item_tp": ["block_teleporter"]},
         fans={"blank_scroll": ["warp_scroll", "return_scroll"]},
+        # 2026-11-22 audit: recipe order
+        extra_deps={"quantum_casing": ["rail/railway_casing"]},
+        hidden_deps={"waystone": ["quantum_casing", "warp_stone", "quantum_paper"], "advanced_part": ["redstone_pearl"]},
         gate=None),
     "enchanting": dict(
         main=[("grindstone", -6, 1.25), ("liquid_xp", -1, 2.0), ("xp_block", 6, 2.0), ("blaze_enchanter", 13, 2.0)],
@@ -1947,6 +2071,7 @@ LAYOUTS = {
               "xp_block": dict(top=["enchanting_template"], bottom=["xp_hatch", "xp_lantern"]),
               "blaze_enchanter": dict(top=["blaze_forger"], bottom=["printer"])},
         chains={"xp_cake_base": ["xp_cake"]},
+        extra_deps={"printer": ["heat/spout"]},   # 2026-11-22 audit
         gate=None),
     "artillery": dict(
         main=[("log_cannon", -6, 1.25), ("cannon_mount", -1, 2.0), ("powder", 6, 2.0), ("shells", 13, 2.0),
@@ -1963,6 +2088,11 @@ LAYOUTS = {
         chains={"congealed_nitro": ["hardened_nitro", "nitropowder"],
                 "impact_fuze": ["timed_fuze", "proximity_fuze"],
                 "autocannon_cartridge": ["ap_autocannon_round"]},
+        # owner 2026-11-22: brass parts stay in view as a pull toward brass automation
+        extra_deps={"firepower": ["brass_and_precision/brass_casing"],
+                    "ballistic_computer": ["brass_and_precision/precision"],
+                    "cannon_welder": ["brass_and_precision/blaze"]},
+        hidden_deps={"magazine_loader": ["cannon_loader"]},
         gate=None),
     "infantry": dict(
         main=[("lead", -6, 1.25), ("flintlock", -1, 2.0), ("steel", 6, 2.0), ("revolver", 13, 2.0),
@@ -1977,6 +2107,8 @@ LAYOUTS = {
         chains={"press_form_revolver": ["shell_revolver", "round_revolver"],
                 "press_form_shotgun": ["shell_shotgun", "round_shotgun"],
                 "nailgun": ["nails"]},
+        extra_deps={"gatling": ["brass_and_precision/precision"], "blazegun": ["brass_and_precision/blaze"],
+                    "nailgun": ["pollution/backtank"]},   # 2026-11-22 audit
         gate=None),
     "radar": dict(
         main=[("binoculars", -6, 1.25), ("radar_bearing", -1, 2.0), ("monitor", 6, 2.0), ("auto_aim", 13, 2.0),
@@ -1988,18 +2120,28 @@ LAYOUTS = {
               "missile_mount": dict(top=["actuator_fins"], bottom=["payload_casing"]),
               "guidance": dict(top=["targeting_interface"], bottom=["air_prox_fuze"])},
         chains={"fire_controller": ["fire_arc"], "actuator_fins": ["rocket_motor"]},
+        extra_deps={"monitor": ["radar_dish", "radar_receiver"]},   # 2026-11-22 audit
+        hidden_deps={"auto_aim": ["detection_filter", "targeting_filter", "ident_filter"]},
         gate=None),
     "aeronautics": dict(
         main=[("physics_assembler", -6, 1.25), ("levitite", -1, 2.0), ("hot_air", 6, 2.0), ("propeller", 13, 2.0),
-              ("controls", 20, 2.0), ("air_weapons", 27, 2.0), ("aerial_ordnance", 34, 2.0), ("synaxis", 41, 2.0)],
+              ("controls", 20, 2.0), ("cockpit", 27, 2.0), ("air_weapons", 34, 2.0), ("aerial_ordnance", 41, 2.0),
+              ("synaxis", 48, 2.0)],
         hubs={"levitite": dict(top=["end_stone_powder"], bottom=["pearlescent_levitite"]),
               "hot_air": dict(top=["steam_vent"], bottom=["aviators_goggles"]),
-              "propeller": dict(top=["wooden_propeller", "andesite_propeller"], bottom=["smart_propeller", "gyro_propeller"]),
+              "propeller": dict(top=["andesite_propeller"], bottom=["smart_propeller", "gyro_propeller"]),
               "controls": dict(top=["throttle", "altitude_sensor"], bottom=["navigation_table", "gimbal_sensor"]),
+              "cockpit": dict(top=["control_desk", "lever_module", "joystick_module"],
+                              bottom=["pedal_module", "button_panel_module", "wheel_module"]),
               "air_weapons": dict(top=["minigun", "air_camera", "rocket_engine"], bottom=["sc_250", "aim9x", "tomahawk"]),
-              "aerial_ordnance": dict(top=["aphe_bomb", "bouncing_bomb"], bottom=["aerial_torpedo", "rocket_bracket"]),
-              "synaxis": dict(top=["jet"], bottom=["circuit", "hydraulic_actuator"])},
-        chains={"end_stone_powder": ["levitite_blend"], "air_camera": ["air_monitor"]},
+              "aerial_ordnance": dict(top=["aphe_bomb", "bouncing_bomb"], bottom=["rocket_bracket"]),
+              "synaxis": dict(top=["jet", "mechanical_servo"], bottom=["circuit", "hydraulic_actuator"])},
+        chains={"end_stone_powder": ["levitite_blend"], "air_camera": ["air_monitor"],
+                "andesite_propeller": ["wooden_propeller"], "gimbal_sensor": ["gyroscope"], "rocket_bracket": ["aerial_torpedo"],
+                "button_panel_module": ["button_keypad_module"], "mechanical_servo": ["stepper_servo"]},
+        fans={"lever_module": ["yoke_module", "throttle_quadrant_module"]},
+        extra_deps={"aerial_ordnance": ["artillery/shells"], "aphe_bomb": ["artillery/ap_shell"],
+                    "bouncing_bomb": ["demolitions/guncotton"], "aerial_torpedo": ["naval/torpedo"]},
         gate=None),
     "naval": dict(
         main=[("rudder", -6, 1.25), ("boat_engine", -1, 2.0), ("ballast", 6, 2.0), ("oxygen", 13, 2.0),
@@ -2009,21 +2151,29 @@ LAYOUTS = {
               "oxygen": dict(top=["diffuser", "decompression"], bottom=["diving_gear", "pressure_goggles"]),
               "command": dict(top=["sub_sonar", "barometer"], bottom=["alarm", "pump_controller"]),
               "torpedo": dict(top=["torpedo_head", "torpedo_tube"], bottom=["depth_charge", "mine", "torpedo_detector"])},
+        extra_deps={"depth_charge": ["demolitions/guncotton", "artillery/timed_fuze"]},   # 2026-11-22 audit
         gate=None),
     "rail": dict(
         main=[("track", -6, 1.25), ("station", -1, 2.0), ("train_controls", 6, 2.0), ("snr", 13, 2.0),
               ("armored_train", 20, 2.0)],
-        hubs={"station": dict(top=["signal", "observer"], bottom=["schedule"]),
-              "train_controls": dict(top=["railway_casing"], bottom=["train_door", "psi"]),
+        hubs={"track": dict(top=["railway_casing"]),
+              "station": dict(top=["signal", "observer"], bottom=["schedule"]),
+              "train_controls": dict(bottom=["train_door", "psi"]),
               "snr": dict(top=["semaphore", "whistle"], bottom=["fuel_tank", "fuel_interface"]),
               "armored_train": dict(top=["iron_key", "gold_key"], bottom=["locometal"])},
+        extra_deps={"station": ["railway_casing"]},   # 2026-11-22 audit
         gate=None),
     "armored": dict(
         main=[("wheel_mount", -6, 1.25), ("tires", -1, 2.0), ("tracks", 6, 2.0), ("armor", 13, 2.0), ("arcon", 20, 2.0)],
-        hubs={"tires": dict(top=["small_tire", "large_tire"], bottom=["monstrous_tire", "rockcutting_wheel"]),
-              "tracks": dict(top=["grouser", "suspension"], bottom=["industrial_belt", "flanged_cog"]),
-              "armor": dict(top=["sandbags"]),
+        hubs={"tires": dict(top=["small_tire", "large_tire"], bottom=["monstrous_tire", "rockcutting_wheel", "industrial_belt"]),
+              "tracks": dict(top=["grouser", "suspension"], bottom=["flanged_cog"]),
+              "armor": dict(top=["sandbags", "hull_aluminum"], bottom=["hull_rolled"]),
               "arcon": dict(top=["arcon_muzzle", "arcon_breech"], bottom=["bops"])},
+        chains={"hull_rolled": ["hull_nickel", "hull_ceramic", "hull_boron"], "hull_aluminum": ["hull_titanium"]},
+        # 2026-11-22 audit; Arcon armor and guns use TFMG heavy plates and steel
+        extra_deps={"tracks": ["industrial_belt"], "rockcutting_wheel": ["automation/crushing"],
+                    "hull_rolled": ["industrial/steel"], "arcon": ["industrial/steel_mechanism"],
+                    "bops": ["demolitions/guncotton"]},
         gate=None),
     "drones": dict(
         main=[("drone_core", -1, 2.0), ("drone_camera", 6, 2.0), ("remote", 13, 2.0), ("fpv", 20, 2.0)],
@@ -2031,6 +2181,9 @@ LAYOUTS = {
               "drone_camera": dict(top=["drone_hub"]),
               "remote": dict(top=["drone_controls"], bottom=["commander_seat"]),
               "fpv": dict(top=["drone_joystick"])},
+        extra_deps={"drone_core": ["aeronautics/andesite_propeller", "aeronautics/propeller",
+                                   "aeronautics/gimbal_sensor"],   # 2026-11-22 audit
+                    "fpv": ["demolitions/guncotton"]},
         gate=None),
     "demolitions": dict(
         main=[("guncotton", -6, 1.25), ("small_bomb", -1, 2.0), ("medium_bomb", 6, 2.0), ("large_bomb", 13, 2.0),
@@ -2052,15 +2205,17 @@ LAYOUTS = {
               ("nuke_shell", 35, 2.25), ("nuke_shell_mk2", 42, 2.25), ("h_bomb", 49, 2.75)],
         hubs={"raw_uranium": dict(top=["raw_thorium"]),
               "uranium_powder": dict(top=["enriched_soul_soil"]),
-              "uranium_rod": dict(top=["hazmat"], bottom=["graphene"]),
-              "reactor_controller": dict(top=["reactor_blueprint", "reactor_casing"],
-                                         bottom=["reactor_frame", "reactor_core", "nitrogen"]),
+              "uranium_rod": dict(top=["reactor_casing"], bottom=["graphene"]),
+              "reactor_controller": dict(top=["reactor_blueprint"], bottom=["nitrogen"]),
               "nuke_shell": dict(bottom=["h_bomb_mini"])},
         chains={"raw_thorium": ["thorium_ingot", "thorium_rod"], "enriched_soul_soil": ["enriching_campfire"],
-                "graphene": ["graphite_rod"]},
+                "graphene": ["graphite_rod", "hazmat"]},   # 2026-11-22 audit: the suit needs graphite rods
+        fans={"reactor_casing": ["reactor_frame", "reactor_core"]},
+        hidden_deps={"nuke_shell_mk2": ["thorium_rod"]},
         # rods and the controller are mechanical crafting; the nuke is built around a Big Cannons HE shell
         extra_deps={"uranium_rod": ["brass_and_precision/crafter"], "enriched_yellowcake": ["enriching_campfire"],
-                    "nuke_shell": ["artillery/shells"]},
+                    "nuke_shell": ["artillery/shells"],
+                    "reactor_controller": ["reactor_casing", "storage/item_vault"]},
         gate=None),
     "pollution": dict(
         main=[("backtank", -7, 1.5), ("flue", 0, 2.0), ("filter_cartridge", 7, 2.0), ("air_scrubber", 14, 2.0),
@@ -2073,7 +2228,8 @@ LAYOUTS = {
               "precipitator": dict(top=["brass_cartridge"], bottom=["acidic_runoff"])},
         chains={"air_bladder": ["reinforced_bladder"], "soot": ["graphite"],
                 "wastewater": ["clarified_water", "sludge_cake"], "oil_burner": ["refined_oil"]},
-        extra_deps={"flue": ["kinetics/andesite_alloy"], "air_scrubber": ["kinetics/casing"],
+        extra_deps={"backtank": ["kinetics/shafts_cogs"], "filter_medium": ["soot"],   # 2026-11-22 audit
+                    "flue": ["kinetics/andesite_alloy"], "air_scrubber": ["kinetics/casing"],
                     "aerometer": ["brass_and_precision/brass"], "precipitator": ["brass_and_precision/brass_casing"],
                     "precision_cartridge": ["brass_and_precision/precision"]},
         gate=None),
@@ -2109,6 +2265,7 @@ LAYOUTS = {
         chains={"straw": ["canvas", "basket"],    # recipe order: straw -> canvas -> basket
                 "skillet": ["fried_egg"]},
         extra_deps={"slicer": ["kinetics/casing"]},   # andesite casing + turntable
+        hidden_deps={"compost": ["straw"]},   # 2026-11-22 audit: organic compost uses straw
         gate=None),
     "storage": dict(
         main=[("backpack", -6, 1.25), ("chest", -1, 2.0), ("copper_tier", 6, 2.0), ("item_vault", 13, 2.0),
@@ -2122,7 +2279,7 @@ LAYOUTS = {
         chains={"bp_upgrade_base": ["pickup_upgrade", "magnet_upgrade"],   # magnet is crafted from pickup
                 "iron_tier": ["gold_tier", "diamond_tier", "netherite_tier"]},   # tier upgrade order
         fans={"ss_upgrade_base": ["stack_upgrade", "compacting_upgrade", "hopper_upgrade"]},
-        extra_deps={"item_vault": ["kinetics/iron_sheets"]},
+        extra_deps={"item_vault": ["kinetics/iron_sheets"], "adv_wireless_terminal": ["wireless_terminal"]},
         gate=None),
     "automation": dict(
         # owner: separate bubbles, not a connected line. Top row = Ages tiers, bottom row = Expansions.
@@ -2225,6 +2382,11 @@ def apply_layout(ch):
             put(slug, cx + fr * math.cos(ang), cy - fr * math.sin(ang), [center], ang)
     for slug, extra in lay.get("extra_deps", {}).items():
         by[slug]["deps"] = by[slug]["deps"] + list(extra)
+    # hidden_deps: same-chapter prerequisites whose line would cross the chapter. The quest's lines are hidden
+    # (FTB only has a per-quest switch), so use sparingly. 2026-11-22 quest audit.
+    for slug, extra in lay.get("hidden_deps", {}).items():
+        by[slug]["deps"] = by[slug]["deps"] + list(extra)
+        by[slug]["hide_lines"] = True
     if lay["gate"]:
         slug, req = lay["gate"]
         by[slug].update(deps=list(req), hide_lines=True)

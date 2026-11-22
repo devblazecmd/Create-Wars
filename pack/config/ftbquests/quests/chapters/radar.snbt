@@ -194,6 +194,8 @@
 		{
 			dependencies: [
 				"083D0860E2942759"
+				"0470831658F15E52"
+				"5A3BA4624706AB01"
 			]
 			id: "135D466BB447FEEE"
 			rewards: [
@@ -365,7 +367,11 @@
 		{
 			dependencies: [
 				"135D466BB447FEEE"
+				"2E52F82D051E855F"
+				"398902EC58D4FE30"
+				"4BF2549A5697EC75"
 			]
+			hide_dependency_lines: true
 			id: "38FD043F88311C72"
 			rewards: [
 				{

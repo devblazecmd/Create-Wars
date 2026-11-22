@@ -55,6 +55,7 @@
 		{
 			dependencies: [
 				"521CA3B1F77D8E70"
+				"047B724128CA8638"
 			]
 			id: "48B1B3FC63F633F8"
 			rewards: [
@@ -232,7 +233,7 @@
 		}
 		{
 			dependencies: [
-				"7A0CFA70DB594577"
+				"521CA3B1F77D8E70"
 			]
 			id: "047B724128CA8638"
 			rewards: [
@@ -261,7 +262,7 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
+			x: -6.0d
 			y: -2.6d
 		}
 		{

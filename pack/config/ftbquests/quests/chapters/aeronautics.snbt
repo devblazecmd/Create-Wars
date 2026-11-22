@@ -337,7 +337,7 @@
 		}
 		{
 			dependencies: [
-				"58136A6ECBF2CA4A"
+				"38531C3CA7566C6E"
 			]
 			id: "679F6C0F323E288F"
 			rewards: [
@@ -365,8 +365,8 @@
 					type: "item"
 				}
 			]
-			x: 14.2d
-			y: -2.31d
+			x: 13.0d
+			y: -4.4d
 		}
 		{
 			dependencies: [
@@ -398,8 +398,8 @@
 					type: "item"
 				}
 			]
-			x: 11.8d
-			y: -2.31d
+			x: 13.0d
+			y: -2.6d
 		}
 		{
 			dependencies: [
@@ -640,7 +640,442 @@
 		}
 		{
 			dependencies: [
+				"315E6012D36080BC"
+			]
+			id: "781EB13B3D3031E6"
+			rewards: [
+				{
+					id: "47B0FD8A240D5657"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "1EC597FBB298E944"
+					item: {
+						count: 1
+						id: "aeroworks:gyroscope"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2287E1BEB0C64E6C"
+					item: {
+						count: 1
+						id: "aeroworks:gyroscope"
+					}
+					type: "item"
+				}
+			]
+			x: 22.03d
+			y: 3.9d
+		}
+		{
+			dependencies: [
 				"61EA0CE43165502E"
+			]
+			id: "4BEDE181FB336132"
+			rewards: [
+				{
+					id: "52B8007346284407"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "011940AC35470F7A"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "303F27E483CD4AA9"
+					item: {
+						count: 1
+						id: "aeroworks:control_stand"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "50B0FC7373BFC49D"
+					item: {
+						count: 1
+						id: "aeroworks:control_stand"
+					}
+					type: "item"
+				}
+			]
+			x: 27.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4BEDE181FB336132"
+			]
+			id: "74B4F6E49CBE121B"
+			rewards: [
+				{
+					id: "23881237983AB3FB"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "6AD63C15221D9888"
+					item: {
+						count: 1
+						id: "aeroworks:control_desk"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "156554BA6B0699F9"
+					item: {
+						count: 1
+						id: "aeroworks:control_desk"
+					}
+					type: "item"
+				}
+			]
+			x: 28.68d
+			y: -2.26d
+		}
+		{
+			dependencies: [
+				"4BEDE181FB336132"
+			]
+			id: "53C388D6354E322F"
+			rewards: [
+				{
+					id: "67F4CF65C25468A3"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "3BCBF9FF997A8131"
+					item: {
+						count: 1
+						id: "aeroworks:lever_module"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5944710F46B484D1"
+					item: {
+						count: 1
+						id: "aeroworks:lever_module"
+					}
+					type: "item"
+				}
+			]
+			x: 27.0d
+			y: -2.81d
+		}
+		{
+			dependencies: [
+				"53C388D6354E322F"
+			]
+			id: "723094AEB5AA27D1"
+			rewards: [
+				{
+					id: "69F2C91C35921D59"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "37DDB8E3BD4F23B1"
+					item: {
+						count: 1
+						id: "aeroworks:yoke_module"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6941A7F3E4F67B7D"
+					item: {
+						count: 1
+						id: "aeroworks:yoke_module"
+					}
+					type: "item"
+				}
+			]
+			x: 28.67d
+			y: -4.8d
+		}
+		{
+			dependencies: [
+				"53C388D6354E322F"
+			]
+			id: "29A4036FFFE0C78C"
+			rewards: [
+				{
+					id: "2DAFA537A89CBEB2"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "415B04A2B56D17F4"
+					item: {
+						count: 1
+						id: "aeroworks:throttle_quadrant_module"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "40AD95A4B4B32592"
+					item: {
+						count: 1
+						id: "aeroworks:throttle_quadrant_module"
+					}
+					type: "item"
+				}
+			]
+			x: 25.33d
+			y: -4.8d
+		}
+		{
+			dependencies: [
+				"4BEDE181FB336132"
+			]
+			id: "73795B54B8F784EE"
+			rewards: [
+				{
+					id: "7861A6BABA64B6B9"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "20CEDC9023F948D6"
+					item: {
+						count: 1
+						id: "aeroworks:joystick_module"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "33BACB99582EBFA0"
+					item: {
+						count: 1
+						id: "aeroworks:joystick_module"
+					}
+					type: "item"
+				}
+			]
+			x: 25.32d
+			y: -2.26d
+		}
+		{
+			dependencies: [
+				"4BEDE181FB336132"
+			]
+			id: "11CA58893FDF2BE1"
+			rewards: [
+				{
+					id: "189C1DB159E9BACC"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "0234D578C4860872"
+					item: {
+						count: 1
+						id: "aeroworks:pedal_module"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2FC9628C0A2527EB"
+					item: {
+						count: 1
+						id: "aeroworks:pedal_module"
+					}
+					type: "item"
+				}
+			]
+			x: 25.32d
+			y: 2.26d
+		}
+		{
+			dependencies: [
+				"4BEDE181FB336132"
+			]
+			id: "1129FA0B61122D2C"
+			rewards: [
+				{
+					id: "614C8E731D3194FD"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "3CD7D66262644BA0"
+					item: {
+						count: 1
+						id: "aeroworks:button_panel_module"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3BB9E36474309BA6"
+					item: {
+						count: 1
+						id: "aeroworks:button_panel_module"
+					}
+					type: "item"
+				}
+			]
+			x: 27.0d
+			y: 2.81d
+		}
+		{
+			dependencies: [
+				"1129FA0B61122D2C"
+			]
+			id: "17E18F4C217EB8F5"
+			rewards: [
+				{
+					id: "2EE99794BE36D4AC"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "63638BEEBE6128A6"
+					item: {
+						count: 1
+						id: "aeroworks:button_keypad_module"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "28524E7D791FAC3B"
+					item: {
+						count: 1
+						id: "aeroworks:button_keypad_module"
+					}
+					type: "item"
+				}
+			]
+			x: 27.0d
+			y: 4.61d
+		}
+		{
+			dependencies: [
+				"4BEDE181FB336132"
+			]
+			id: "72194779A11AA636"
+			rewards: [
+				{
+					id: "236046E9EF21AA8B"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "08E351DAA48B86FB"
+					item: {
+						count: 1
+						id: "aeroworks:wheel_module"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "65867430A1DCF5C3"
+					item: {
+						count: 1
+						id: "aeroworks:wheel_module"
+					}
+					type: "item"
+				}
+			]
+			x: 28.68d
+			y: 2.26d
+		}
+		{
+			dependencies: [
+				"65B386CAEB47A994"
+			]
+			id: "7B3E1F92DCD2B92E"
+			rewards: [
+				{
+					id: "6234D19D4AC727C1"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "6545A2AD065BF8DA"
+					item: {
+						count: 1
+						id: "aeroworks:mechanical_servo"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1638252D16F29140"
+					item: {
+						count: 1
+						id: "aeroworks:mechanical_servo"
+					}
+					type: "item"
+				}
+			]
+			x: 46.8d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"7B3E1F92DCD2B92E"
+			]
+			id: "0F710C47C2A97638"
+			rewards: [
+				{
+					id: "4BD236F2F193C953"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "24D814CF6A481D90"
+					item: {
+						count: 1
+						id: "aeroworks:stepper_servo"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "78808CD710DA9942"
+					item: {
+						count: 1
+						id: "aeroworks:stepper_servo"
+					}
+					type: "item"
+				}
+			]
+			x: 45.97d
+			y: -3.9d
+		}
+		{
+			dependencies: [
+				"4BEDE181FB336132"
 			]
 			id: "38F621FA929A1DD8"
 			rewards: [
@@ -674,7 +1109,7 @@
 					type: "item"
 				}
 			]
-			x: 27.0d
+			x: 34.0d
 			y: 0.0d
 		}
 		{
@@ -707,7 +1142,7 @@
 					type: "item"
 				}
 			]
-			x: 28.68d
+			x: 35.68d
 			y: -2.26d
 		}
 		{
@@ -740,7 +1175,7 @@
 					type: "item"
 				}
 			]
-			x: 27.0d
+			x: 34.0d
 			y: -2.81d
 		}
 		{
@@ -773,7 +1208,7 @@
 					type: "item"
 				}
 			]
-			x: 27.0d
+			x: 34.0d
 			y: -4.61d
 		}
 		{
@@ -806,7 +1241,7 @@
 					type: "item"
 				}
 			]
-			x: 25.32d
+			x: 32.32d
 			y: -2.26d
 		}
 		{
@@ -839,7 +1274,7 @@
 					type: "item"
 				}
 			]
-			x: 25.32d
+			x: 32.32d
 			y: 2.26d
 		}
 		{
@@ -872,7 +1307,7 @@
 					type: "item"
 				}
 			]
-			x: 27.0d
+			x: 34.0d
 			y: 2.81d
 		}
 		{
@@ -905,12 +1340,13 @@
 					type: "item"
 				}
 			]
-			x: 28.68d
+			x: 35.68d
 			y: 2.26d
 		}
 		{
 			dependencies: [
 				"38F621FA929A1DD8"
+				"40F499E79AE3DD52"
 			]
 			id: "785134420AE70E3C"
 			rewards: [
@@ -944,12 +1380,13 @@
 					type: "item"
 				}
 			]
-			x: 34.0d
+			x: 41.0d
 			y: 0.0d
 		}
 		{
 			dependencies: [
 				"785134420AE70E3C"
+				"1A20D6A79DF02040"
 			]
 			id: "3EA769AC23CBEC0F"
 			rewards: [
@@ -977,12 +1414,13 @@
 					type: "item"
 				}
 			]
-			x: 35.2d
+			x: 42.2d
 			y: -2.31d
 		}
 		{
 			dependencies: [
 				"785134420AE70E3C"
+				"6629BCD414634293"
 			]
 			id: "3E8CDCFA219066BF"
 			rewards: [
@@ -1010,12 +1448,13 @@
 					type: "item"
 				}
 			]
-			x: 32.8d
+			x: 39.8d
 			y: -2.31d
 		}
 		{
 			dependencies: [
-				"785134420AE70E3C"
+				"29E6A06D262FC52F"
+				"74CFBB049C996D12"
 			]
 			id: "672FD2FD5E0B970A"
 			rewards: [
@@ -1043,8 +1482,8 @@
 					type: "item"
 				}
 			]
-			x: 32.8d
-			y: 2.31d
+			x: 41.0d
+			y: 4.4d
 		}
 		{
 			dependencies: [
@@ -1076,8 +1515,8 @@
 					type: "item"
 				}
 			]
-			x: 35.2d
-			y: 2.31d
+			x: 41.0d
+			y: 2.6d
 		}
 		{
 			dependencies: [
@@ -1115,7 +1554,7 @@
 					type: "item"
 				}
 			]
-			x: 41.0d
+			x: 48.0d
 			y: 0.0d
 		}
 		{
@@ -1148,8 +1587,8 @@
 					type: "item"
 				}
 			]
-			x: 41.0d
-			y: -2.6d
+			x: 49.2d
+			y: -2.31d
 		}
 		{
 			dependencies: [
@@ -1181,7 +1620,7 @@
 					type: "item"
 				}
 			]
-			x: 39.8d
+			x: 46.8d
 			y: 2.31d
 		}
 		{
@@ -1214,7 +1653,7 @@
 					type: "item"
 				}
 			]
-			x: 42.2d
+			x: 49.2d
 			y: 2.31d
 		}
 	]

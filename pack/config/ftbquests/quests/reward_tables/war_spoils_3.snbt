@@ -31,11 +31,11 @@
 			weight: 6.0f
 		}
 		{
-			count: 32
+			count: 16
 			id: "7EAD6912DCE95292"
 			item: {
 				count: 1
-				id: "createbigcannons:autocannon_cartridge"
+				id: "createbigcannons:ap_autocannon_round"
 			}
 			weight: 6.0f
 		}
