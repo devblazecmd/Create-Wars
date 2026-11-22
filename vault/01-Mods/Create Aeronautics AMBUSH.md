@@ -59,3 +59,11 @@ Older note (before the caps):
 **Open (performance and balance):** the defaults allow 64 natural airships per player and 64 globally,
 and up to 50 ships and 200 entities per invasion. That's a lot of Sable physics bodies on a multiplayer
 server. Tune it after a playtest. This ties into the open mob-balance decision (see [[Mod List]], PvE threat).
+
+## Quest hook (used 2026-11-21)
+FTB Quests integration: a quest tagged `ambush:trigger:<namespace:id>` runs `AmbushRuntime.triggerChained`
+for the team's online members when the quest is **started** (IDs without a namespace get `ambush:`).
+The pack defines its own ambush in `pack/kubejs/data/createwars/ambushes/quest_raiding_party.json` (6
+pillagers + 2 vindicators, `chance: 0` so it never fires naturally). It's used by Know Your Enemy →
+**Raiding Party** (checkmark to start, then kill 6 pillagers). It loaded (206 definitions, 0 rejected).
+**Not yet confirmed in game** that clicking the checkmark spawns the raid.

@@ -308,3 +308,5 @@ this tells you *why*, in prose, per pack version.
   ([[../02-Bugs/RHA hatch is not a registered item]]); quest checker uses the live registry; existing log
   noise logged ([[../02-Bugs/Cross-mod compat noise on server boot]]). Decisions: cannons **can** raid claims
   (FTB Chunks already blocks ordinary explosions in claims); cheap early steel stays.
+- **More Shells fixes, Ambush quest, food automation (2026-11-21):** Dual HE/APHE rockets craftable; 11 More
+  Shells blocks drop again; Raiding Party quest triggers a custom AMBUSH raid; Food Automation hub. 466 quests.

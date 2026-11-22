@@ -63,3 +63,13 @@ Still non-fatal, and the same count on every boot (309 loot-table lines, checked
 
 **Possible fixes if they matter:** a KubeJS recipe for the two dual rockets, and KubeJS loot tables for the
 CBC More Shells blocks that drop nothing. Not done yet; flag to the owner if players notice.
+
+## Fixed 2026-11-21 (owner approved)
+- **Dual HE / Dual APHE rockets craftable again:** `pack/kubejs/server_scripts/cbcmoreshells_fixes.js` adds the same
+  recipe (rocket + rocket bracket + rocket) in the 1.21 format, IDs `createwars:cbcmoreshells/dual_*_rocket`. The
+  upstream files still log their parse errors; that's expected.
+- **11 shell/rocket/torpedo blocks drop again:** `pack/kubejs/data/cbcmoreshells/loot_table/blocks/*.json`
+  overrides, in CBC 5.11.7's own format (`copy_components` with `createbigcannons:tracer` and `:fuze`).
+  cbcmoreshells loot errors went **16 → 5**. The 5 left are blocks with no registered item
+  (`landing_indicator`, `dish_plate`, `round_dish_plate`, `slate_steel_block`, `light_apbc_shell`), which have nothing to drop.
+- Delete both when the mod (CBC Military Supplement, namespace `cbcmoreshells`) fixes them upstream.

@@ -328,3 +328,6 @@ No unit tests exist for a quest book. Verification is layered:
   TFMG steel ([[Steel Unification]]). Armored Hatch quest replaced with **Sandbags**
   ([[../02-Bugs/RHA hatch is not a registered item]]). `check_quest_refs.py` now uses the live registry export.
   Kill tasks confirmed: all 23 survived an in-game save of the book. 461 quests.
+- 2026-11-21: **Raiding Party** quest (Know Your Enemy): first AMBUSH-triggered quest. Generator gained `tags=` on
+  `Q()` (written as the `tags` string list). **Food Automation** hub in Automation (bread, cabbage leaves via
+  Slicer, vegetable soup), needs `food/slicer`. 466 quests.
