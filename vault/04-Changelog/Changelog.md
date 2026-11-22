@@ -336,3 +336,7 @@ this tells you *why*, in prose, per pack version.
 - **Steel (2026-11-22):** removed Create Nuclear's unheated mixer steel (iron + coal dust), which skipped heat progression.
   Early steel still needs a heated (CBC) or superheated (Gunsmithing) mixer; TFMG's blast furnace is the bulk route. Owner
   decided not to force a single steel recipe. [[../03-Design/Metal Unification]].
+- **Quest audit (2026-11-22):** new `tools/audit_quests.py`, using a live recipe export (`export_registry_ids.js` now also
+  writes `createwars_recipes.json`). Fixed: [[../02-Bugs/Gunsmithing steel sheet needed hidden steel]]. Found:
+  [[../02-Bugs/Quest items with no survival recipe]] (owner decision pending), plus recipe-order gaps, thin descriptions,
+  uncovered mods and XP skew (reported to owner).

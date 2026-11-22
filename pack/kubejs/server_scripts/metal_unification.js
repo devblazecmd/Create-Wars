@@ -36,6 +36,14 @@ ServerEvents.recipes(event => {
   // Owner 2026-11-22: Create Nuclear's mixer steel (iron + coal dust, NO heat) skipped the heat progression.
   // Early steel stays heated (CBC) or superheated (Gunsmithing); TFMG's blast furnace is the bulk route.
   event.remove({ id: 'createnuclear:mixing/steel' })
+  // Gunsmithing's steel sheet press only took cgs:steel_ingot, and replaceInput doesn't reach Create processing
+  // recipes (no KubeJS Create schema), so it needed the hidden ingot. Found by tools/audit_quests.py 2026-11-22.
+  event.remove({ id: 'cgs:pressing/steel_ingot' })
+  event.custom({
+    type: 'create:pressing',
+    ingredients: [{ tag: 'c:ingots/steel' }],
+    results: [{ id: 'cgs:steel_sheet' }]
+  }).id('createwars:pressing/steel_sheet')
   // Steel sheets: only make recipes accept any steel plate (both mods tag theirs as c:plates/steel).
   event.replaceInput({ input: 'cgs:steel_sheet' }, 'cgs:steel_sheet', '#c:plates/steel')
 })

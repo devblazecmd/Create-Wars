@@ -290,11 +290,11 @@ hash = "3fdaa8c2dfe468cb67b383d787fdbef4274ac3251da12abc5003a8be2df6f545"
 
 [[files]]
 file = "kubejs/server_scripts/export_registry_ids.js"
-hash = "492886424f6101060269d7e7751bc0876e3087842bc0fef27019af63a546e004"
+hash = "06c4a711685d65dd550f1b0f2c25ab8bd95fd1ae5c32498d00919bae71c1b549"
 
 [[files]]
 file = "kubejs/server_scripts/metal_unification.js"
-hash = "84bdf3ca8261b3f9a0dd7257872e182238425ab6ac3bf3c287485cde2c159e13"
+hash = "461acd1c3da92ce4b89900e31a17391efb2a44352885e85f9e2e6cf843aa35c7"
 
 [[files]]
 file = "kubejs/server_scripts/netherite_scrap_crushing.js"
