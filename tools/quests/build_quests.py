@@ -2278,7 +2278,7 @@ LAYOUTS = {
         # a boiler needs lit blaze burners; the engine needs gold sheets; brass parts stay visible but locked
         extra_deps={"steam_engine": ["brass_and_precision/blaze", "kinetics/gold_sheets"],
                     "smart_fluid_pipe": ["brass_and_precision/electron_tube"],
-                    "electric_motor": ["brass_and_precision/brass_casing", "capacitor", "copper_spool"],
+                    "electric_motor": ["brass_and_precision/brass_casing"],   # owner: no capacitor/spool lines to the motor
                     "copper_spool": ["spool"]},   # owner: copper spool requires copper wire and spool (both drawn)
         hidden_deps={
                      "electric_pump": ["mechanical_pump"]},

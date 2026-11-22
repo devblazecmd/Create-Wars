@@ -78,6 +78,11 @@ ACCEPTED_ORDER.update({
     ("brass_and_precision", s): "owner 2026-11-22: no lines from Brass Hand/Electron Tube to the Brass Casing hub"
     for s in ("deployer", "crafter")
 })
+ACCEPTED_ORDER.update({
+    ("copper", s): "owner 2026-11-22: no lines from Capacitor/Copper Spool to the Electric Motor"
+    for s in ("electric_motor", "alternator", "electric_pump", "portable_energy_interface", "tesla_coil",
+              "modular_accumulator")
+})
 
 NATURAL_HINTS = ("_ore", "raw_", "_log", "_sapling", "_seeds", "spawn_egg")
 

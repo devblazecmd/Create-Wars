@@ -368,4 +368,6 @@ No unit tests exist for a quest book. Verification is layered:
   spool looked like it had no requirements while its lines were hidden).
 - 2026-11-22: Brass Age: Brass Casing no longer links to Brass Hand / Electron Tube (owner: no lines there). Deployer and
   Mechanical Crafter are accepted audit exceptions. (The Brass Age Complete gate still requires Electron Tube.)
+- 2026-11-22: Copper Expansion: no lines from Capacitor / Copper Spool to the Electric Motor (owner). Copper Spool keeps its
+  drawn Copper Wire + Spool requirements.
 
