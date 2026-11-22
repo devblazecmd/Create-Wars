@@ -74,6 +74,10 @@ ACCEPTED_ORDER = {
     ("kinetics", s): "owner 2026-11-22: no lines from Shafts/Cogwheels to the Andesite Casing hub"
     for s in ("basin_mixer", "fan", "gearbox", "millstone", "press", "wrench_goggles")
 }
+ACCEPTED_ORDER.update({
+    ("brass_and_precision", s): "owner 2026-11-22: no lines from Brass Hand/Electron Tube to the Brass Casing hub"
+    for s in ("deployer", "crafter")
+})
 
 NATURAL_HINTS = ("_ore", "raw_", "_log", "_sapling", "_seeds", "spawn_egg")
 

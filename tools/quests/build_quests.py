@@ -2247,7 +2247,7 @@ LAYOUTS = {
                 "deployer": ["precision"]},                           # deployers assemble precision mechs
         fans={"electron_tube": ["brass_funnel", "brass_tunnel"],
               "precision": ["mech_arm", "speed_controller"]},
-        extra_deps={"brass_casing": ["electron_tube", "brass_hand"]},   # 2026-11-22 audit: deployer/crafter
+        # owner 2026-11-22: no lines from Brass Hand / Electron Tube to the Brass Casing hub
         gate=("next", ["brass_casing", "electron_tube", "deployer", "precision", "crafter"])),
     "industrial": dict(
         main=[("cast_iron", -6, 1.25), ("coke_oven", -1, 2.0), ("blast_furnace", 6, 2.0), ("steel", 13, 2.0),

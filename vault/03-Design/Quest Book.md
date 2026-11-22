@@ -366,4 +366,6 @@ No unit tests exist for a quest book. Verification is layered:
   Casing hub (owner: no lines there). The audit lists the casing machines that use shafts/cogs as accepted exceptions
   (`ACCEPTED_ORDER` in `tools/audit_quests.py`). Copper Spool and Electric Motor dependency lines are drawn now (owner: the
   spool looked like it had no requirements while its lines were hidden).
+- 2026-11-22: Brass Age: Brass Casing no longer links to Brass Hand / Electron Tube (owner: no lines there). Deployer and
+  Mechanical Crafter are accepted audit exceptions. (The Brass Age Complete gate still requires Electron Tube.)
 
