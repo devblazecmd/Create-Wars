@@ -1,0 +1,905 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "nuclear"
+	group: "541CE08481D1C6C5"
+	icon: {
+		id: "cbc_enhanced_shells:nuke_shell"
+	}
+	id: "7300735DFF8CCF2D"
+	images: [ ]
+	order_index: 16
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"5C326BE896F9406D"
+			]
+			id: "4C92BC6C73EA306C"
+			rewards: [
+				{
+					id: "1923C33DFB25E98C"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "7F84C4DA90C55C21"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "66E06F9B6FAEBF91"
+					item: {
+						count: 1
+						id: "createnuclear:raw_uranium"
+					}
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 8L
+					id: "2BC2D8A4CCD48A12"
+					item: {
+						count: 1
+						id: "createnuclear:raw_uranium"
+					}
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4C92BC6C73EA306C"
+			]
+			id: "4F582B3F637B9DF4"
+			rewards: [
+				{
+					id: "02882EB48D09B6B6"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "4F82F70CB39DBEAD"
+					item: {
+						count: 1
+						id: "createnuclear:raw_thorium"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "1DEF48DDFA4F13F6"
+					item: {
+						count: 1
+						id: "createnuclear:raw_thorium"
+					}
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"4F582B3F637B9DF4"
+			]
+			id: "12DEA2DEFB681BBE"
+			rewards: [
+				{
+					id: "635D9DDCD87C90B9"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "1407DDC025C952C0"
+					item: {
+						count: 1
+						id: "createnuclear:thorium_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "2513613E7F0C864D"
+					item: {
+						count: 1
+						id: "createnuclear:thorium_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: -4.4d
+		}
+		{
+			dependencies: [
+				"12DEA2DEFB681BBE"
+			]
+			id: "2E3CBB0BC9E0B8B0"
+			rewards: [
+				{
+					id: "36DCEFD74760F0CD"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "5F000E6F0A98005F"
+					item: {
+						count: 1
+						id: "createnuclear:thorium_rod"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "12C653D797954ED0"
+					item: {
+						count: 1
+						id: "createnuclear:thorium_rod"
+					}
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: -6.2d
+		}
+		{
+			dependencies: [
+				"4C92BC6C73EA306C"
+			]
+			id: "09F05D7759AB902E"
+			rewards: [
+				{
+					id: "75BB9BE92A42F0DE"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "388ADA7193B348D6"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					count: 2
+					id: "29CD373E5B62DE82"
+					item: {
+						count: 1
+						id: "createnuclear:uranium_powder"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					count: 16L
+					id: "3A99645C9D31CA5C"
+					item: {
+						count: 1
+						id: "createnuclear:uranium_powder"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"09F05D7759AB902E"
+			]
+			id: "62E731AF8B737E44"
+			rewards: [
+				{
+					id: "7F8D570C5693C78C"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "54338FC2B25D1824"
+					item: {
+						count: 1
+						id: "createnuclear:enriched_soul_soil"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7DF2B841C2278974"
+					item: {
+						count: 1
+						id: "createnuclear:enriched_soul_soil"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"62E731AF8B737E44"
+			]
+			id: "218446DD3532BE52"
+			rewards: [
+				{
+					id: "7110A5C22341328A"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "2F0BC86D13C94852"
+					item: {
+						count: 1
+						id: "createnuclear:enriching_campfire"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "347CCE0EF6E9699E"
+					item: {
+						count: 1
+						id: "createnuclear:enriching_campfire"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -4.4d
+		}
+		{
+			dependencies: [
+				"09F05D7759AB902E"
+			]
+			id: "6D5E029DCC15797C"
+			rewards: [
+				{
+					id: "4604176357F58FEB"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "07D872FCCED4F6C1"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "3B6BC84EE1EFD50B"
+					item: {
+						count: 1
+						id: "createnuclear:yellowcake"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					count: 8L
+					id: "4F469BA3C76889AA"
+					item: {
+						count: 1
+						id: "createnuclear:yellowcake"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6D5E029DCC15797C"
+				"218446DD3532BE52"
+			]
+			id: "415DCC8C641DB388"
+			rewards: [
+				{
+					id: "278B0B123BA3E0A4"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "5C298645312D616C"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "6ED2F395213DE1BB"
+					item: {
+						count: 1
+						id: "createnuclear:enriched_yellowcake"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					count: 8L
+					id: "1FE2D0DBACD16E3F"
+					item: {
+						count: 1
+						id: "createnuclear:enriched_yellowcake"
+					}
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"51ABB649DF339B40"
+			]
+			id: "030523533305C9CD"
+			rewards: [
+				{
+					id: "456837E29FE024CC"
+					type: "xp"
+					xp: 240
+				}
+				{
+					id: "2BF5BF4610CF31E9"
+					item: {
+						count: 1
+						id: "createnuclear:default_anti_radiation_helmet"
+					}
+					type: "item"
+				}
+				{
+					id: "1ECC6B5676CCCD52"
+					item: {
+						count: 1
+						id: "createnuclear:default_anti_radiation_chestplate"
+					}
+					type: "item"
+				}
+				{
+					id: "523A01D8F33734AC"
+					item: {
+						count: 1
+						id: "createnuclear:default_anti_radiation_leggings"
+					}
+					type: "item"
+				}
+				{
+					id: "067BFC7E429794AB"
+					item: {
+						count: 1
+						id: "createnuclear:default_anti_radiation_boots"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "223A35E5CE45F739"
+					item: {
+						count: 1
+						id: "createnuclear:default_anti_radiation_helmet"
+					}
+					type: "item"
+				}
+				{
+					id: "0CE34BE92AEBA7B7"
+					item: {
+						count: 1
+						id: "createnuclear:default_anti_radiation_chestplate"
+					}
+					type: "item"
+				}
+				{
+					id: "50BB23AC0EC9CFFB"
+					item: {
+						count: 1
+						id: "createnuclear:default_anti_radiation_leggings"
+					}
+					type: "item"
+				}
+				{
+					id: "23F6A0582388C508"
+					item: {
+						count: 1
+						id: "createnuclear:default_anti_radiation_boots"
+					}
+					type: "item"
+				}
+			]
+			x: 21.0d
+			y: -2.6d
+		}
+		{
+			dependencies: [
+				"51ABB649DF339B40"
+			]
+			id: "60FCA6A7CAC5BEBF"
+			rewards: [
+				{
+					id: "410F5CA5003094E7"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "3B61DFF22E22E617"
+					item: {
+						count: 1
+						id: "createnuclear:graphene"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "5EB4DFC256088F9D"
+					item: {
+						count: 1
+						id: "createnuclear:graphene"
+					}
+					type: "item"
+				}
+			]
+			x: 21.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"60FCA6A7CAC5BEBF"
+			]
+			id: "7CEBB4B0BE358E76"
+			rewards: [
+				{
+					id: "0591729303D31414"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "4B3A55C80AB03C0A"
+					item: {
+						count: 1
+						id: "createnuclear:graphite_rod"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "44A2E1B7E95B6D9E"
+					item: {
+						count: 1
+						id: "createnuclear:graphite_rod"
+					}
+					type: "item"
+				}
+			]
+			x: 21.0d
+			y: 4.4d
+		}
+		{
+			dependencies: [
+				"415DCC8C641DB388"
+				"28B372346FDAC614"
+			]
+			id: "51ABB649DF339B40"
+			rewards: [
+				{
+					id: "4D81BE043834347C"
+					type: "xp"
+					xp: 240
+				}
+				{
+					id: "7BA003BAF0AE2B5A"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "09E5963CE10D6F07"
+					item: {
+						count: 1
+						id: "createnuclear:uranium_rod"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					count: 4L
+					id: "385C1F421B96594D"
+					item: {
+						count: 1
+						id: "createnuclear:uranium_rod"
+					}
+					type: "item"
+				}
+			]
+			x: 21.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7153EFC543EF00EA"
+			]
+			id: "2F08F7225E5B99D0"
+			rewards: [
+				{
+					id: "4D9CBCEEE6675E3B"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "6468D22DDF35D3E9"
+					item: {
+						count: 1
+						id: "createnuclear:reactor_blueprint_item"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "613D240E70F980A3"
+					item: {
+						count: 1
+						id: "createnuclear:reactor_blueprint_item"
+					}
+					type: "item"
+				}
+			]
+			x: 29.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"7153EFC543EF00EA"
+			]
+			id: "34C95B3009441921"
+			rewards: [
+				{
+					id: "61B56FC53CB8F582"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 2
+					id: "7044524905DEBBBE"
+					item: {
+						count: 1
+						id: "createnuclear:reactor_casing"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "716898D6F0F70A46"
+					item: {
+						count: 1
+						id: "createnuclear:reactor_casing"
+					}
+					type: "item"
+				}
+			]
+			x: 26.8d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"7153EFC543EF00EA"
+			]
+			id: "217E89066B455C87"
+			rewards: [
+				{
+					id: "37E16289CE029677"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "3861D9B10403A950"
+					item: {
+						count: 1
+						id: "createnuclear:reactor_frame"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "2AB12A88D9696E25"
+					item: {
+						count: 1
+						id: "createnuclear:reactor_frame"
+					}
+					type: "item"
+				}
+			]
+			x: 26.45d
+			y: 2.09d
+		}
+		{
+			dependencies: [
+				"7153EFC543EF00EA"
+			]
+			id: "29CD29D4743899DA"
+			rewards: [
+				{
+					id: "4B936E96704DF5C6"
+					type: "xp"
+					xp: 160
+				}
+				{
+					id: "53466114D35B544E"
+					item: {
+						count: 1
+						id: "createnuclear:reactor_core"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "77679256F49D9738"
+					item: {
+						count: 1
+						id: "createnuclear:reactor_core"
+					}
+					type: "item"
+				}
+			]
+			x: 28.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"7153EFC543EF00EA"
+			]
+			id: "2DC9D22EAFD82C48"
+			rewards: [
+				{
+					id: "22F75D0975C2A384"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "3DB387F606BC7C38"
+					item: {
+						count: 1
+						id: "createnuclear:cooled_nitrogen_concentrate"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "01E5C962D808C462"
+					item: {
+						count: 1
+						id: "createnuclear:cooled_nitrogen_concentrate"
+					}
+					type: "item"
+				}
+			]
+			x: 29.55d
+			y: 2.09d
+		}
+		{
+			dependencies: [
+				"51ABB649DF339B40"
+			]
+			id: "7153EFC543EF00EA"
+			rewards: [
+				{
+					id: "3D1DAF1EE6BB6FBF"
+					type: "xp"
+					xp: 600
+				}
+				{
+					id: "69A21D000C57828C"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "79CB9BC823982971"
+					item: {
+						count: 1
+						id: "createnuclear:reactor_controller"
+					}
+					type: "item"
+				}
+			]
+			size: 2.25d
+			tasks: [
+				{
+					id: "4619A2E5F026EBCD"
+					item: {
+						count: 1
+						id: "createnuclear:reactor_controller"
+					}
+					type: "item"
+				}
+			]
+			x: 28.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7153EFC543EF00EA"
+				"40F499E79AE3DD52"
+			]
+			id: "72424400C302B52D"
+			rewards: [
+				{
+					id: "4E1CA6D48DEAA2E2"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "371BC855D9EEDB0C"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "6CF390A00B31CB09"
+					item: {
+						count: 1
+						id: "cbc_enhanced_shells:nuke_shell"
+					}
+					type: "item"
+				}
+			]
+			size: 2.25d
+			tasks: [
+				{
+					id: "1EA6E5F7469F744F"
+					item: {
+						count: 1
+						id: "cbc_enhanced_shells:nuke_shell"
+					}
+					type: "item"
+				}
+			]
+			x: 35.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"72424400C302B52D"
+			]
+			id: "5225776D1012E391"
+			rewards: [
+				{
+					id: "269069227B1725C1"
+					type: "xp"
+					xp: 1200
+				}
+				{
+					id: "43CED2CE8527ABCA"
+					item: {
+						count: 1
+						id: "cbc_enhanced_shells:h_bomb_mini_shell"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "54610148A056B555"
+					item: {
+						count: 1
+						id: "cbc_enhanced_shells:h_bomb_mini_shell"
+					}
+					type: "item"
+				}
+			]
+			x: 35.0d
+			y: 2.6d
+		}
+		{
+			dependencies: [
+				"72424400C302B52D"
+			]
+			id: "1D63A6579136ED35"
+			rewards: [
+				{
+					id: "1204622B6FBE830E"
+					type: "xp"
+					xp: 1600
+				}
+				{
+					id: "3556D08B5559386B"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "041BFE1D00CA9DD5"
+					item: {
+						count: 1
+						id: "cbc_enhanced_shells:nuke_shell_mk2"
+					}
+					type: "item"
+				}
+			]
+			size: 2.25d
+			tasks: [
+				{
+					id: "677D88CA0414CEE0"
+					item: {
+						count: 1
+						id: "cbc_enhanced_shells:nuke_shell_mk2"
+					}
+					type: "item"
+				}
+			]
+			x: 42.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1D63A6579136ED35"
+			]
+			id: "08D30B70E04A17D4"
+			rewards: [
+				{
+					id: "4E2491AFFC8C27CD"
+					type: "xp"
+					xp: 3000
+				}
+				{
+					id: "74EABFA6CCE93615"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					id: "2DBDA94DDE68D95C"
+					table_id: 6109919877215674747L
+					type: "random"
+				}
+				{
+					id: "26EBF6349E79DCAA"
+					table_id: 6109919877215674747L
+					type: "random"
+				}
+				{
+					id: "17F736841D9E895A"
+					item: {
+						count: 1
+						id: "cbc_enhanced_shells:h_bomb_shell"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.75d
+			tasks: [
+				{
+					id: "73344839D5A8E8BC"
+					item: {
+						count: 1
+						id: "cbc_enhanced_shells:h_bomb_shell"
+					}
+					type: "item"
+				}
+			]
+			x: 49.0d
+			y: 0.0d
+		}
+	]
+}

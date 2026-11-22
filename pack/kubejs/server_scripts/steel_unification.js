@@ -1,17 +1,17 @@
 // One steel for the whole pack. Project owner decision 2026-11-21: "All interchangeable".
-// Three mods each add steel: TFMG (tfmg:), Create Big Cannons (createbigcannons:) and Create: Gunsmithing
-// (cgs:). All three already tag their items into the shared c: tags, so:
+// Four mods each add steel: TFMG (tfmg:), Create Big Cannons (createbigcannons:), Create: Gunsmithing
+// (cgs:) and Create Nuclear (createnuclear:, added 2026-11-22). All of them already tag their items into the shared c: tags, so:
 //   1. Every recipe that asks for a specific steel item now accepts the c: tag (any mod's steel works).
 //   2. Every recipe that makes CBC or Gunsmithing steel makes TFMG steel instead (TFMG is the main
 //      steel: its blast furnace line exists to make it).
-//   3. CBC and Gunsmithing steel are hidden from JEI. Copies already in a world still work everywhere,
+//   3. CBC, Gunsmithing and Create Nuclear steel are hidden from JEI. Copies already in a world still work everywhere,
 //      because they keep their c: tags.
 // See vault/03-Design/Steel Unification.md.
 const STEEL_FORMS = [
   // [c: tag, TFMG item (the one kept), other mods' items]
-  ['c:ingots/steel', 'tfmg:steel_ingot', ['createbigcannons:steel_ingot', 'cgs:steel_ingot']],
-  ['c:nuggets/steel', 'tfmg:steel_nugget', ['cgs:steel_nugget']],   // CBC has no steel nugget item
-  ['c:storage_blocks/steel', 'tfmg:steel_block', ['createbigcannons:steel_block', 'cgs:steel_block']]
+  ['c:ingots/steel', 'tfmg:steel_ingot', ['createbigcannons:steel_ingot', 'cgs:steel_ingot', 'createnuclear:steel_ingot']],
+  ['c:nuggets/steel', 'tfmg:steel_nugget', ['cgs:steel_nugget', 'createnuclear:steel_nugget']],   // CBC has no steel nugget item
+  ['c:storage_blocks/steel', 'tfmg:steel_block', ['createbigcannons:steel_block', 'cgs:steel_block', 'createnuclear:steel_block']]
 ]
 
 ServerEvents.recipes(event => {

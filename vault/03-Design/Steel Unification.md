@@ -6,7 +6,7 @@ status: active
 # Steel Unification
 
 ## Goal
-One steel for the whole pack. Three mods each added their own steel ingot, so a player could have
+One steel for the whole pack. Three mods (four since Create Nuclear, 2026-11-22) each added their own steel ingot, so a player could have
 "steel" that didn't work in another mod's recipe. Owner decision 2026-11-21: **all interchangeable**.
 
 ## Mechanics
@@ -27,6 +27,9 @@ One steel for the whole pack. Three mods each added their own steel ingot, so a 
 - 2026-11-21: Unified (owner chose "all interchangeable").
 - 2026-11-21: **Cheap early steel stays** (owner). CBC's and Gunsmithing's mixer recipes still work, so
   steel exists before the Industrial Age, and TFMG's blast furnace is the high-volume route.
+
+- 2026-11-22: [[../01-Mods/Create Nuclear|Create Nuclear]]'s steel ingot, nugget and block added to the hidden set (it
+  tags them into the same `c:` tags). Its reactor recipes already ask for `c:ingots/steel`.
 
 ## Open questions
 - Not yet checked in JEI that every replaced recipe shows correctly (KubeJS reported no errors).

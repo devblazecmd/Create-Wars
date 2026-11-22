@@ -24,6 +24,7 @@ instead of re-reading every note after a Minecraft update.
 - `#mod/category/storage` — inventory/logistics (backpacks, storage upgrades, etc.)
 - `#mod/category/environment` — world-state simulation such as pollution, acid rain and smog (PoTR, Create: Smog)
 - `#mod/category/food` — crops, cooking, meals and their automation (Farmer's Delight and addons)
+- `#mod/category/power` — large-scale power generation and its fuel chains (Create Nuclear)
 - `#mod/category/teams` — factions/claims/questing (FTB Teams/Quests/Chunks and similar)
 - `#mod/category/optimization` — client/server performance mods (rendering, memory, chunk loading, etc.)
 - `#mod/category/scripting` — KubeJS/CraftTweaker and similar

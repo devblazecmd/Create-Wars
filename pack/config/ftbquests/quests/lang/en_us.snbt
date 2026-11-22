@@ -75,6 +75,10 @@
 		"Smarter, tougher, armed mobs and enemy fleets"
 	]
 	"chapter.706C3C2934D87936.title": "Know Your Enemy"
+	"chapter.7300735DFF8CCF2D.chapter_subtitle": [
+		"Reactors, radiation, and the shells that end wars"
+	]
+	"chapter.7300735DFF8CCF2D.title": "Nuclear"
 	"chapter.7415700D4D0CE1C8.chapter_subtitle": [
 		"Put your machines to work: production goals for every tier"
 	]
@@ -130,6 +134,11 @@
 		"Liquid levitite blend. JEI shows how it sets into solid levitite."
 	]
 	"quest.02BA6E0ADEE99DA1.title": "Levitite Blend"
+	"quest.030523533305C9CD.quest_desc": [
+		"Brass, lead and graphite rods. Wear the full set around reactors and fuel."
+		"Any lead works."
+	]
+	"quest.030523533305C9CD.title": "Anti-Radiation Suit"
 	"quest.03495FB874BD1066.quest_desc": [
 		"Andesite casing, fluid pipe, iron and a piston pole. Bores out cast and built-up barrels."
 	]
@@ -217,6 +226,11 @@
 		"&aTip:&r Create's Millstone turns wild crops into seeds too."
 	]
 	"quest.08ADF7B023180415.title": "Wild Crops"
+	"quest.08D30B70E04A17D4.quest_desc": [
+		"&cThe end of the war.&r Three Mk.II nuclear shells, end crystals and nether stars. A"
+		"thermonuclear dome and a shockwave in rings. There is nothing bigger."
+	]
+	"quest.08D30B70E04A17D4.title": "H-Bomb"
 	"quest.092D0A0E2DF0AEE9.quest_desc": [
 		"Turns nuggets into ingots and ingots into blocks as they come in."
 	]
@@ -238,6 +252,11 @@
 		"Same idea, turned on its side: a &aVertical Gearbox&r sends rotation up or down."
 	]
 	"quest.09D33D79CA336A9E.title": "Vertical Gearbox"
+	"quest.09F05D7759AB902E.quest_desc": [
+		"Crush raw uranium (Crushing Wheels), then crush the crushed uranium again. Crushing"
+		"&agranite&r also gives a little."
+	]
+	"quest.09F05D7759AB902E.title": "Uranium Powder"
 	"quest.0A4151F48A770553.quest_desc": [
 		"Dried kelp makes &aBelts&r, which move items between machines. Place a belt by using"
 		"it on two shafts."
@@ -394,6 +413,11 @@
 		"Place one on the train and one facing it on the platform. Supply runs to the front."
 	]
 	"quest.12A25766728BDFA9.title": "Portable Storage Interface"
+	"quest.12DEA2DEFB681BBE.quest_desc": [
+		"Crush raw thorium into dust, turn it into &aliquid thorium&r, and compact it in a basin"
+		"(check JEI for every step)."
+	]
+	"quest.12DEA2DEFB681BBE.title": "Thorium Ingot"
 	"quest.135D466BB447FEEE.quest_desc": [
 		"Brass casing, electron tube and precision mechanism. Shows radar contacts."
 	]
@@ -558,6 +582,11 @@
 		"Ocean monument boss. Mining Fatigue."
 	]
 	"quest.1D3C5F87BC0291E0.title": "Elder Guardian"
+	"quest.1D63A6579136ED35.quest_desc": [
+		"&aMechanical Crafting&r: a nuclear shell with more uranium, thorium rods and enriched"
+		"yellowcake. Bigger."
+	]
+	"quest.1D63A6579136ED35.title": "Nuclear Shell Mk.II"
 	"quest.1D6EA8A5CB88FCDF.quest_desc": [
 		"Jet thrust for fast aircraft."
 	]
@@ -616,10 +645,19 @@
 		"A &aDistillation Controller&r and outputs on steel tanks refine crude oil into fuels."
 	]
 	"quest.211EEEFFBA86CF3D.title": "Distillation Tower"
+	"quest.217E89066B455C87.quest_desc": [
+		"&aMechanical Crafting&r: casing, steel, reinforced glass (glass and lead) and a bucket."
+	]
+	"quest.217E89066B455C87.title": "Reactor Frame"
 	"quest.2180ADB6E46AC859.quest_desc": [
 		"Mix an &aender pearl&r with &arose quartz&r. A core part of teleporter tech."
 	]
 	"quest.2180ADB6E46AC859.title": "Redstone Pearl"
+	"quest.218446DD3532BE52.quest_desc": [
+		"Logs and sticks around Enriched Soul Soil. Its green fire &aenriches&r anything an"
+		"encased fan blows through it, the same way soul fire haunts."
+	]
+	"quest.218446DD3532BE52.title": "Enriching Campfire"
 	"quest.221AD5A5A71139A3.quest_desc": [
 		"Planks and iron. The base for storage upgrades."
 	]
@@ -751,6 +789,11 @@
 		"Short range and fragile, but it fires. &cBig Cannons are multiblocks&r: check each part's Ponder."
 	]
 	"quest.297C16F5F33DB4DD.title": "Log Cannon"
+	"quest.29CD29D4743899DA.quest_desc": [
+		"&aMechanical Crafting&r: casing, steel, a precision mechanism and a bucket of liquid"
+		"uranium."
+	]
+	"quest.29CD29D4743899DA.title": "Reactor Core"
 	"quest.29E6A06D262FC52F.quest_desc": [
 		"Mounts rockets under wings."
 	]
@@ -827,6 +870,11 @@
 		"when you look at machines."
 	]
 	"quest.2DA10E741DEED39B.title": "Engineer's Goggles"
+	"quest.2DC9D22EAFD82C48.quest_desc": [
+		"Smelt nitrate ore into &bnitrogen concentrate&r, then fan it through &bpowder snow&r."
+		"Nitrogen coolant keeps bigger reactors from melting down."
+	]
+	"quest.2DC9D22EAFD82C48.title": "Coolant"
 	"quest.2DD1199EE570E8A6.quest_desc": [
 		"Feed andesite and iron (or zinc) nuggets into a &aMixer&r over a Basin, no heat needed."
 		"Make a &astack&r."
@@ -836,6 +884,10 @@
 		"Brass casing, electron tube and redstone link: marks you as friendly."
 	]
 	"quest.2DD644438104E15A.title": "Identification Transponder"
+	"quest.2E3CBB0BC9E0B8B0.quest_desc": [
+		"&aMechanical Crafting&r from thorium ingots."
+	]
+	"quest.2E3CBB0BC9E0B8B0.title": "Thorium Rod"
 	"quest.2E3F189B4FBB8213.quest_desc": [
 		"Same smithing upgrade, with an &aanvil&r instead of an enchanting table."
 	]
@@ -852,6 +904,11 @@
 		"Cut a porkchop on the board. Meat cuts cook faster and stack into meals."
 	]
 	"quest.2EAEFDD17395F2DB.title": "Raw Bacon"
+	"quest.2F08F7225E5B99D0.quest_desc": [
+		"Steel, a display board, an empty schematic and a precision mechanism. It shows where"
+		"every reactor part goes."
+	]
+	"quest.2F08F7225E5B99D0.title": "Reactor Blueprint"
 	"quest.2F37EAD823F5C5A1.quest_desc": [
 		"Combines filters into one network."
 	]
@@ -947,6 +1004,10 @@
 		"Feasts are placed blocks that serve several plates. One feeds a whole squad before a raid."
 	]
 	"quest.3473E7F36010A291.title": "Roast Chicken Feast"
+	"quest.34C95B3009441921.quest_desc": [
+		"Apply steel to a brass casing."
+	]
+	"quest.34C95B3009441921.title": "Reactor Casing"
 	"quest.34D8A081AEFAEBB4.quest_desc": [
 		"&cBoss:&r the &6Storm Breaker&r, a high-altitude battle airship with escorts. Radar to find"
 		"it, guns to bring it down, oxygen to chase it up high."
@@ -1171,6 +1232,10 @@
 		"Mix organic compost with water in a basin. Sprinklers spray it to speed up crops."
 	]
 	"quest.41380124E301CF88.title": "Liquid Fertilizer"
+	"quest.415DCC8C641DB388.quest_desc": [
+		"Blow yellowcake through the &aEnriching Campfire&r with an encased fan."
+	]
+	"quest.415DCC8C641DB388.title": "Enriched Yellowcake"
 	"quest.4197D2995C3D7FE3.quest_desc": [
 		"Iron plates, a dispenser and redstone. Mount it on an aircraft."
 	]
@@ -1327,6 +1392,12 @@
 		"&7Requires: Electron Tube, Deployer, Precision Mechanism and Mechanical Crafter.&r"
 	]
 	"quest.4C20D3C1C2FAB4CF.title": "Brass Age Complete"
+	"quest.4C92BC6C73EA306C.quest_desc": [
+		"&6Create Nuclear&r: uranium and thorium ores generate underground."
+		"&cUranium is radioactive.&r Carry too much for too long and you get &cRadiation&r. Store it,"
+		"don't hoard it in your pockets."
+	]
+	"quest.4C92BC6C73EA306C.title": "Uranium"
 	"quest.4CC67633097B3200.quest_desc": [
 		"Brass casing, a precision mechanism, brass sheets and andesite alloy. An Arm picks items"
 		"up and drops them into machines, depots and chests in range."
@@ -1386,6 +1457,10 @@
 		"Also from the stonecutter (iron block). Cheap cover for gun nests and trenches."
 	]
 	"quest.4F432EC45797F61B.title": "Sandbags"
+	"quest.4F582B3F637B9DF4.quest_desc": [
+		"The second reactor fuel: weaker than uranium, but it runs cooler."
+	]
+	"quest.4F582B3F637B9DF4.title": "Thorium"
 	"quest.4FC33F44C920C77C.quest_desc": [
 		"Refined from crude oil. Needed for &cnapalm&r."
 	]
@@ -1431,10 +1506,19 @@
 		"Mechanical crafting with a propeller and an impact fuze. Sinks ships."
 	]
 	"quest.5194AC4C99BEB854.title": "Sea Torpedo"
+	"quest.51ABB649DF339B40.quest_desc": [
+		"&aMechanical Crafting&r from enriched yellowcake. Reactor fuel, and the core of every"
+		"nuclear shell."
+	]
+	"quest.51ABB649DF339B40.title": "Uranium Rod"
 	"quest.521CA3B1F77D8E70.quest_desc": [
 		"Create trains run on &aTrain Track&r."
 	]
 	"quest.521CA3B1F77D8E70.title": "Train Track"
+	"quest.5225776D1012E391.quest_desc": [
+		"Four nuclear shells, end crystals and nether stars: a smaller thermonuclear shell."
+	]
+	"quest.5225776D1012E391.title": "Mini H-Bomb"
 	"quest.528707EC128E396E.quest_desc": [
 		"Iron plates, copper, a note block and a shaft. Warn your base when bombers come."
 	]
@@ -1645,6 +1729,10 @@
 		"Mix &acopper&r and &azinc&r in a Basin over a lit Blaze Burner."
 	]
 	"quest.60B90AF4C95E818F.title": "Brass Ingot"
+	"quest.60FCA6A7CAC5BEBF.quest_desc": [
+		"Press coal dust."
+	]
+	"quest.60FCA6A7CAC5BEBF.title": "Graphene"
 	"quest.610E62DABE42F45B.quest_desc": [
 		"Crush &azinc ore&r, wash the crushed ore with a fan, and smelt it. Make a &astack&r of Zinc"
 		"Ingots."
@@ -1689,6 +1777,10 @@
 		"Slowness arrows in cold biomes."
 	]
 	"quest.62E11FB1B49183D9.title": "Strays"
+	"quest.62E731AF8B737E44.quest_desc": [
+		"Soul soil, obsidian and a &5Nether Star&r."
+	]
+	"quest.62E731AF8B737E44.title": "Enriched Soul Soil"
 	"quest.62E99830472736C1.quest_desc": [
 		"Iron sheets: flat radar panels."
 	]
@@ -1859,6 +1951,10 @@
 		"&aMilling&r."
 	]
 	"quest.6D4D3B1AE4194237.title": "Millstone"
+	"quest.6D5E029DCC15797C.quest_desc": [
+		"Turn uranium powder into &aliquid uranium&r (check JEI), then compact it in a basin."
+	]
+	"quest.6D5E029DCC15797C.title": "Yellowcake"
 	"quest.6D7A35883B8B3DFF.quest_desc": [
 		"Bigger wheel, more power: a &aLarge Water Wheel&r gives far more stress capacity, at a"
 		"slower speed. Gear it up with a large-to-small cogwheel pair."
@@ -1893,6 +1989,13 @@
 		"4 straw."
 	]
 	"quest.7127B39888B240ED.title": "Canvas"
+	"quest.7153EFC543EF00EA.quest_desc": [
+		"&aMechanical Crafting&r: a &5Nether Star&r, netherite, an item vault and casings."
+		"Build the reactor the blueprint shows, load rods, and it makes &6millions of SU&r."
+		"&cIf it overheats, it melts down:&r a nuclear explosion that leaves a &cWasteland&r"
+		"biome behind. Everyone within 256 blocks gets a warning first. A reactor is a target."
+	]
+	"quest.7153EFC543EF00EA.title": "Reactor Controller"
 	"quest.71AA12F89FADBAA6.quest_desc": [
 		"&6Offroad&r: ground vehicles are Sable physics objects (see the Physics Assembler in"
 		"Aeronautics). Mount wheels on a &aWheel Mount&r."
@@ -1911,6 +2014,12 @@
 		"make it bigger. Hook it to your Tom's network like any chest."
 	]
 	"quest.7232B86A04A1181F.title": "Item Vault"
+	"quest.72424400C302B52D.quest_desc": [
+		"&aMechanical Crafting&r: a Big Cannons &cHE Shell&r wrapped in 8 uranium rods and lead,"
+		"with a &5Nether Star&r core. A mushroom cloud, and a blast that levels whole bases."
+		"&cClaims won't save anyone.&r Fire it from very far away, and never at home."
+	]
+	"quest.72424400C302B52D.title": "Nuclear Shell"
 	"quest.728E9D32BE764BA7.quest_desc": [
 		"Links teleporters together. Advanced component, brass sheet, redstone pearl, transmitter."
 	]
@@ -2144,6 +2253,10 @@
 		"Fill a &aRailway Casing&r with &a1000 mB of Telejuice&r using a Spout."
 	]
 	"quest.7C25C2287D94AE08.title": "Quantum Casing"
+	"quest.7CEBB4B0BE358E76.quest_desc": [
+		"&aMechanical Crafting&r: steel and graphene. Graphite rods &bcool&r a reactor."
+	]
+	"quest.7CEBB4B0BE358E76.title": "Graphite Rod"
 	"quest.7D0A81063D367284.quest_desc": [
 		"&6Sophisticated Storage&r: chests that take upgrades and can be tiered up. Planks and a"
 		"lever (any wood works)."

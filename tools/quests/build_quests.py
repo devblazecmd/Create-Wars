@@ -1288,6 +1288,103 @@ CHAPTERS = [
         ], [item("cbc_more_content:moab")], xp=100),
     ]),
     # ----------------------------------------------------------------------------------------------
+    # Nuclear (owner 2026-11-22: "a good nuclear mod to add to the chaos"). Create Nuclear reactors and
+    # radiation; nuke shells from CBC Enhanced Shells, re-gated on uranium rods by
+    # pack/kubejs/server_scripts/nuclear_weapons.js. Recipe chain read from createnuclear-2.0.1's jar.
+    dict(slug="nuclear", group="warfare", title="Nuclear",
+         subtitle="Reactors, radiation, and the shells that end wars", icon="cbc_enhanced_shells:nuke_shell",
+         unlock=[("industrial", "steel")], quests=[
+        Q("raw_uranium", "Uranium", 0, 0, [
+            "&6Create Nuclear&r: uranium and thorium ores generate underground.",
+            "&cUranium is radioactive.&r Carry too much for too long and you get &cRadiation&r. Store it,",
+            "don't hoard it in your pockets.",
+        ], [item("createnuclear:raw_uranium", 8)], xp=40),
+        Q("raw_thorium", "Thorium", 0, 0, [
+            "The second reactor fuel: weaker than uranium, but it runs cooler.",
+        ], [item("createnuclear:raw_thorium", 4)], xp=20),
+        Q("thorium_ingot", "Thorium Ingot", 0, 0, [
+            "Crush raw thorium into dust, turn it into &aliquid thorium&r, and compact it in a basin",
+            "(check JEI for every step).",
+        ], [item("createnuclear:thorium_ingot", 4)], xp=25),
+        Q("thorium_rod", "Thorium Rod", 0, 0, [
+            "&aMechanical Crafting&r from thorium ingots.",
+        ], [item("createnuclear:thorium_rod", 2)], xp=30),
+        Q("uranium_powder", "Uranium Powder", 0, 0, [
+            "Crush raw uranium (Crushing Wheels), then crush the crushed uranium again. Crushing",
+            "&agranite&r also gives a little.",
+        ], [item("createnuclear:uranium_powder", 16)], xp=30),
+        Q("enriched_soul_soil", "Enriched Soul Soil", 0, 0, [
+            "Soul soil, obsidian and a &5Nether Star&r.",
+        ], [item("createnuclear:enriched_soul_soil")], xp=30),
+        Q("enriching_campfire", "Enriching Campfire", 0, 0, [
+            "Logs and sticks around Enriched Soul Soil. Its green fire &aenriches&r anything an",
+            "encased fan blows through it, the same way soul fire haunts.",
+        ], [item("createnuclear:enriching_campfire")], xp=30),
+        Q("yellowcake", "Yellowcake", 0, 0, [
+            "Turn uranium powder into &aliquid uranium&r (check JEI), then compact it in a basin.",
+        ], [item("createnuclear:yellowcake", 8)], xp=40),
+        Q("enriched_yellowcake", "Enriched Yellowcake", 0, 0, [
+            "Blow yellowcake through the &aEnriching Campfire&r with an encased fan.",
+        ], [item("createnuclear:enriched_yellowcake", 8)], xp=50),
+        Q("hazmat", "Anti-Radiation Suit", 0, 0, [
+            "Brass, lead and graphite rods. Wear the full set around reactors and fuel.",
+            "Any lead works.",
+        ], [item("createnuclear:default_anti_radiation_helmet"), item("createnuclear:default_anti_radiation_chestplate"),
+            item("createnuclear:default_anti_radiation_leggings"), item("createnuclear:default_anti_radiation_boots")],
+          xp=60),
+        Q("graphene", "Graphene", 0, 0, [
+            "Press coal dust.",
+        ], [item("createnuclear:graphene", 4)], xp=20),
+        Q("graphite_rod", "Graphite Rod", 0, 0, [
+            "&aMechanical Crafting&r: steel and graphene. Graphite rods &bcool&r a reactor.",
+        ], [item("createnuclear:graphite_rod", 4)], xp=30),
+        Q("uranium_rod", "Uranium Rod", 0, 0, [
+            "&aMechanical Crafting&r from enriched yellowcake. Reactor fuel, and the core of every",
+            "nuclear shell.",
+        ], [item("createnuclear:uranium_rod", 4)], xp=60),
+        Q("reactor_blueprint", "Reactor Blueprint", 0, 0, [
+            "Steel, a display board, an empty schematic and a precision mechanism. It shows where",
+            "every reactor part goes.",
+        ], [item("createnuclear:reactor_blueprint_item")], xp=30),
+        Q("reactor_casing", "Reactor Casing", 0, 0, [
+            "Apply steel to a brass casing.",
+        ], [item("createnuclear:reactor_casing", 16)], xp=30),
+        Q("reactor_frame", "Reactor Frame", 0, 0, [
+            "&aMechanical Crafting&r: casing, steel, reinforced glass (glass and lead) and a bucket.",
+        ], [item("createnuclear:reactor_frame", 4)], xp=30),
+        Q("reactor_core", "Reactor Core", 0, 0, [
+            "&aMechanical Crafting&r: casing, steel, a precision mechanism and a bucket of liquid",
+            "uranium.",
+        ], [item("createnuclear:reactor_core")], xp=40),
+        Q("nitrogen", "Coolant", 0, 0, [
+            "Smelt nitrate ore into &bnitrogen concentrate&r, then fan it through &bpowder snow&r.",
+            "Nitrogen coolant keeps bigger reactors from melting down.",
+        ], [item("createnuclear:cooled_nitrogen_concentrate", 4)], xp=30),
+        Q("reactor_controller", "Reactor Controller", 0, 0, [
+            "&aMechanical Crafting&r: a &5Nether Star&r, netherite, an item vault and casings.",
+            "Build the reactor the blueprint shows, load rods, and it makes &6millions of SU&r.",
+            "&cIf it overheats, it melts down:&r a nuclear explosion that leaves a &cWasteland&r",
+            "biome behind. Everyone within 256 blocks gets a warning first. A reactor is a target.",
+        ], [item("createnuclear:reactor_controller")], xp=150),
+        Q("nuke_shell", "Nuclear Shell", 0, 0, [
+            "&aMechanical Crafting&r: a Big Cannons &cHE Shell&r wrapped in 8 uranium rods and lead,",
+            "with a &5Nether Star&r core. A mushroom cloud, and a blast that levels whole bases.",
+            "&cClaims won't save anyone.&r Fire it from very far away, and never at home.",
+        ], [item("cbc_enhanced_shells:nuke_shell")], xp=250),
+        Q("h_bomb_mini", "Mini H-Bomb", 0, 0, [
+            "Four nuclear shells, end crystals and nether stars: a smaller thermonuclear shell.",
+        ], [item("cbc_enhanced_shells:h_bomb_mini_shell")], xp=300),
+        Q("nuke_shell_mk2", "Nuclear Shell Mk.II", 0, 0, [
+            "&aMechanical Crafting&r: a nuclear shell with more uranium, thorium rods and enriched",
+            "yellowcake. Bigger.",
+        ], [item("cbc_enhanced_shells:nuke_shell_mk2")], xp=400),
+        Q("h_bomb", "H-Bomb", 0, 0, [
+            "&cThe end of the war.&r Three Mk.II nuclear shells, end crystals and nether stars. A",
+            "thermonuclear dome and a shockwave in rings. There is nothing bigger.",
+        ], [item("cbc_enhanced_shells:h_bomb_shell")], xp=750, levels=30, rolls=[("war_trophy", 2)],
+          shape="hexagon"),
+    ]),
+    # ----------------------------------------------------------------------------------------------
     # Know Your Enemy (owner 2026-11-21: "mobs quests"). Improved Mobs, Enhanced AI, Trigger Mobs, AMBUSH.
     # None of these add new mob types; they upgrade vanilla ones, so these are kill tasks on vanilla mobs.
     dict(slug="enemy", group="warfare", title="Know Your Enemy",
@@ -1948,6 +2045,22 @@ LAYOUTS = {
         # mechanical crafting needs the Brass Age crafter; fuzes come from Artillery
         extra_deps={"medium_bomb": ["artillery/impact_fuze", "brass_and_precision/crafter"],
                     "aim9": ["artillery/proximity_fuze"]},
+        gate=None),
+    "nuclear": dict(
+        main=[("raw_uranium", -7, 1.5), ("uranium_powder", 0, 2.0), ("yellowcake", 7, 2.0),
+              ("enriched_yellowcake", 14, 2.0), ("uranium_rod", 21, 2.0), ("reactor_controller", 28, 2.25),
+              ("nuke_shell", 35, 2.25), ("nuke_shell_mk2", 42, 2.25), ("h_bomb", 49, 2.75)],
+        hubs={"raw_uranium": dict(top=["raw_thorium"]),
+              "uranium_powder": dict(top=["enriched_soul_soil"]),
+              "uranium_rod": dict(top=["hazmat"], bottom=["graphene"]),
+              "reactor_controller": dict(top=["reactor_blueprint", "reactor_casing"],
+                                         bottom=["reactor_frame", "reactor_core", "nitrogen"]),
+              "nuke_shell": dict(bottom=["h_bomb_mini"])},
+        chains={"raw_thorium": ["thorium_ingot", "thorium_rod"], "enriched_soul_soil": ["enriching_campfire"],
+                "graphene": ["graphite_rod"]},
+        # rods and the controller are mechanical crafting; the nuke is built around a Big Cannons HE shell
+        extra_deps={"uranium_rod": ["brass_and_precision/crafter"], "enriched_yellowcake": ["enriching_campfire"],
+                    "nuke_shell": ["artillery/shells"]},
         gate=None),
     "pollution": dict(
         main=[("backtank", -7, 1.5), ("flue", 0, 2.0), ("filter_cartridge", 7, 2.0), ("air_scrubber", 14, 2.0),

@@ -321,3 +321,9 @@ this tells you *why*, in prose, per pack version.
   crashed in single-player). Boot OK in the existing world; **new terrain needs a new world**.
 - **Graves (2026-11-21):** GraveStone Mod + Curios and Sable compat patches. Owner-only graves, sneak pickup on. Two add-ons
   had `side = "server"` from Modrinth; fixed to `both`.
+- **Nuclear (2026-11-22):** added [[../01-Mods/Create Nuclear|Create Nuclear]] (reactors, radiation, meltdowns) and
+  [[../01-Mods/CBC Enhanced Shells|CBC Enhanced Shells]], keeping only its nukes (rest hidden). Nukes re-gated on uranium
+  rods: [[../03-Design/Nuclear Weapons]]. Enhanced Shells pinned to 1.2.5 (1.5.1 crashed the game against Firepower
+  Components). Create Nuclear's steel joins [[../03-Design/Steel Unification|steel unification]]. Meltdown warnings go to
+  everyone within 256 blocks. New Warfare chapter "Nuclear": 23 chapters, 496 quests. Clean boot, 0 failed recipes. Known
+  issue: [[../02-Bugs/Create Nuclear armor dye recipes fail to load]].

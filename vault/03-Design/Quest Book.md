@@ -341,3 +341,4 @@ No unit tests exist for a quest book. Verification is layered:
   Enemy. Boot: 22 chapters, 473 quests, 4 reward tables. Waves 5-8 use AMBUSH's built-in ambushes
   (`ambush:_illager_drill_car`, `_illager_patrol_ship`, `_castiron_antiair_car`,
   `_storm_breaker_boss_high_altitude_ship`): **not yet confirmed** they spawn when forced by a quest.
+- 2026-11-22: **Nuclear** chapter (Warfare, unlocked by Industrial Age steel): uranium and thorium chain, reactor parts, anti-radiation suit, then the nukes; H-Bomb finale gives 30 levels and 2 War Trophy rolls. 23 chapters, 496 quests.

@@ -27,6 +27,12 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - [[Create The Air War|Create: The Air War]] — aircraft weapons for Aeronautics *(testing)*
 - [[Create Warnautics|Create: Warnautics]] — CBC bombs, MOAB, mines, C4, AIM-9, rocket pods; mod ID
   `cbc_more_content` *(testing, added 2026-11-21)*
+- [[CBC Enhanced Shells]] — **only the nukes** (Nuclear Shell Mk.I/II, Mini H-Bomb, H-Bomb); the other ~100
+  shells are hidden. Pinned to 1.2.5 for Firepower Components' range. *(testing, added 2026-11-22)*
+
+## Nuclear (added 2026-11-22)
+- [[Create Nuclear]] — uranium/thorium, reactors (millions of SU), radiation, meltdowns that leave a
+  Wasteland biome. Its uranium rods gate the nukes: [[../03-Design/Nuclear Weapons]] *(testing)*
 
 ## Infantry / personal weapons
 - [[Create Gunsmithing|Create: Gunsmithing]] — steampunk guns crafted via Create machines *(testing)*
@@ -216,6 +222,12 @@ all entries below except the open questions/rejected sections are `#mod/status/a
   a config pass together once in-game to check for duplicate/overlapping content.
 
 ## Distribution gotchas (for future adds)
+- **`packwiz curseforge add` can rewrite existing dependencies.** Adding [[CBC Enhanced Shells]] (2026-11-22)
+  re-wrote `create.pw.toml` and `create-big-cannons.pw.toml` to CurseForge sources. `git diff pack/mods`
+  after every CurseForge add, and `git checkout` those files back.
+- **Optional dependencies still enforce version ranges.** [[CBC Firepower Components]] only accepts
+  CBC Enhanced Shells `[1.2.2,1.3.0)`, and the newest version crashed the game on load. Check
+  `neoforge.mods.toml` of the mods already installed, not just the new one.
 - **Check `side =` after every `packwiz modrinth add`.** Modrinth marks some libraries server-only (e.g.
   [[Lithostitched]]), so packwiz writes `side = "server"` and the client installer skips the jar. Single-player
   runs an integrated server, so anything the game needs must be `both`. (2026-11-21: Tectonic crashed on

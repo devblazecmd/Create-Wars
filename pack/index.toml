@@ -13,6 +13,10 @@ file = "config/ambush-common.toml"
 hash = "7bc07777eb0cb8f3bf94ca760d532ded4d68ce7c67ca9f6c147032a7fbd4bb03"
 
 [[files]]
+file = "config/createnuclear-server.toml"
+hash = "4c28b890f045198faeb65c7c5c9b35b83f8a8534142ef04c6342bd8c2bc80957"
+
+[[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "f0608863ba7654c5cab55a16eec078144eefba5ef4ea15d912b9e868692b7a1f"
 
@@ -30,7 +34,7 @@ hash = "9edf4e5ef020af81667aea3b3ba1ec360c782a90d21ba447b0135b70b4679673"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/automation.snbt"
-hash = "948bd57ae24bb4d7fb4f794eac68363e07ed05b2e435a824a48813bb66e81a28"
+hash = "62d28b5d217e250f9aa78918655791064c69da0c57c07782ed166293e2ba842f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/brass_and_precision.snbt"
@@ -38,7 +42,7 @@ hash = "42735843c453a368b767ce44810e4ea7fb93685170bb648d397ba0898c403f78"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/defense.snbt"
-hash = "b9348b0953a2543b266f7cc208b298f42ef285090e1ca5de9e73ec08a9d6e02b"
+hash = "fe78e76fd145cc62a7aa62a2fa829dc1ce4431196106565b6ba1845e6d0a87f5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/demolitions.snbt"
@@ -54,11 +58,11 @@ hash = "fe014219b61facdb31b75426fe75b818a2f7cdaa45f64f72928fb73ee2a6063d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/enemy.snbt"
-hash = "4b4f921b8f2232e23b4bf28d1285a6bad20ef6e77e370f5e13150b659fe06629"
+hash = "0c9cce4879dcc5ba80ba78bee1b45fee349d003a690d5ba3fae9621faa3d9acc"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/food.snbt"
-hash = "d8143dc1f5e07a0c3258b9f9981fdfbe2d34d5c41d386de6154e3bf31ddd2efd"
+hash = "16e1fb3f89e8f422bb04ed77a4172ea1e0c888088f81683840001fc92d8cdcda"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/heat.snbt"
@@ -81,8 +85,12 @@ file = "config/ftbquests/quests/chapters/naval.snbt"
 hash = "ae070bd3544079f6c5ba71a33e5d933898a1b860c38304142fe5a3963f9096d3"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/nuclear.snbt"
+hash = "d55749dd79fe63273ff50e3ec024106766856ea26c39a8e22a7cda619cb10b02"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/pollution.snbt"
-hash = "38a0bf2402bc688fe4195dc02298284863e39d1bc4e9ae8b00bd67719ae971f5"
+hash = "cfb4205c062bf747d1494d241ce8a822cc60a57c20647a0fbf9b7664bccc6fae"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/quantum.snbt"
@@ -98,7 +106,7 @@ hash = "67e5d2f522b6fe77f6bdd1c38c32fa0546489ed7ab12f235b5c616f1dd1120f8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage.snbt"
-hash = "6ac3613db6837a12dc36ab5112b8368f4cba80a51c3dec255d1195ea3ba8c78e"
+hash = "64f57c1769f9e023c8f0bd8811974a11c3c7fabde2b2a1814ce91564c54d771c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
@@ -110,7 +118,7 @@ hash = "59e6f33cb9b5b2593319a35b8e70e99d32e8834c38f7206fa7ec59de1f16c4d9"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "5c22f755e357d2121696e63066e99d45999dfdceb165bba59d5150d42616bb25"
+hash = "de7d4cb9e616f80ce5dd3f7cfabaa3b48f90807abe9c046eb5e40396ef8971b8"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/war_spoils_1.snbt"
@@ -281,6 +289,10 @@ file = "kubejs/server_scripts/netherite_scrap_crushing.js"
 hash = "aacf037918fcde0be6e799d161253dece48fbe20695d1bdaea08121f5bd05734"
 
 [[files]]
+file = "kubejs/server_scripts/nuclear_weapons.js"
+hash = "14eddd187f06679d4ff02b0ded53564010a64ba6db0259a428d20736f9eb949f"
+
+[[files]]
 file = "kubejs/server_scripts/potr_tools_removed.js"
 hash = "59f1bf9bd730e6b821d6fb3836da8e3b177bbe150c7d65bdda734613e08daf1a"
 
@@ -290,7 +302,7 @@ hash = "6fdde86a9da80c4736a0e36c631861c71593a82295ff3d81c4e54459a705de39"
 
 [[files]]
 file = "kubejs/server_scripts/steel_unification.js"
-hash = "b74f43987cd51ebe3bb468d443046439b224292f3964bb4ce1840acd7bef7460"
+hash = "64d3dc31706e4359652358d73f6d73941ef0b826ceb78fca8e0e59fbc9397c36"
 
 [[files]]
 file = "kubejs/server_scripts/tfmg_smog_sources.js"
@@ -365,6 +377,11 @@ hash = "957f7c50fde4ebb69a1894ed45e6fa04f1eaa1e026f7c76b12e0565012f25817"
 metafile = true
 
 [[files]]
+file = "mods/cbc-enchanced-shells-create-big-cannons.pw.toml"
+hash = "b1bbae5562cc281cff6eead6fa9d740f302a87a09e4140634e1b42934beb37f9"
+metafile = true
+
+[[files]]
 file = "mods/cbc-firepower-components.pw.toml"
 hash = "e3b9cf3dc36c72e8e2133441094d4be55bc03372ad25c8ab403ca71fdfd46de4"
 metafile = true
@@ -426,7 +443,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-big-cannons.pw.toml"
-hash = "a0e9ff95570cd9af3374ca8b44aa095447baf94e565f46ae99819d52a9b48dc1"
+hash = "f8c2334eb06dda015b6ea1f2a89ec90dc1a04b0e891d61d3b637efde4529c3e9"
 metafile = true
 
 [[files]]
@@ -546,7 +563,7 @@ metafile = true
 
 [[files]]
 file = "mods/create.pw.toml"
-hash = "dcaf5f2e28db0b9a127d0167456832341045ddc9aec058c3d9fcf53f618d2404"
+hash = "e66c8649557c5df5d660e64b635576f8aa836c05b14e915b8f4ae119c704d7bf"
 metafile = true
 
 [[files]]
@@ -557,6 +574,11 @@ metafile = true
 [[files]]
 file = "mods/createbetterfps.pw.toml"
 hash = "b6a535a801939a78f255203f7b28319773becca20cc88348f8764f4078816300"
+metafile = true
+
+[[files]]
+file = "mods/createnuclear.pw.toml"
+hash = "70a3ec14e121837aefc0c7f32d934bdf50d214d5a8d4c0020ce2d7428a22a051"
 metafile = true
 
 [[files]]

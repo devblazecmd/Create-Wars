@@ -47,7 +47,11 @@ BANNED = {
      for k in ("filter_frame", "vacuum_bag", "vacuum_tube", "respirator")} | {"adpother:aerometer"}
 # steel_unification.js: CBC and Gunsmithing steel are hidden; quests use TFMG's.
 BANNED |= {"createbigcannons:steel_ingot", "createbigcannons:steel_block",
-           "cgs:steel_ingot", "cgs:steel_nugget", "cgs:steel_block"}
+           "cgs:steel_ingot", "cgs:steel_nugget", "cgs:steel_block",
+           "createnuclear:steel_ingot", "createnuclear:steel_nugget", "createnuclear:steel_block"}
+# nuclear_weapons.js: every CBC Enhanced Shells item is hidden except the four nukes.
+CBCES_KEEP = {"cbc_enhanced_shells:nuke_shell", "cbc_enhanced_shells:nuke_shell_mk2",
+              "cbc_enhanced_shells:h_bomb_shell", "cbc_enhanced_shells:h_bomb_mini_shell"}
 # Any quoted namespaced ID in quest SNBT (quest object IDs are bare hex, so they never match).
 REF_RE = re.compile(r'"#?([a-z0-9_.-]+:[a-z0-9_/.-]+)"')
 
@@ -130,7 +134,8 @@ def main(argv):
     refs = referenced_ids(quests_dir)
     unknown = {r: locs for r, locs in refs.items() if r not in usable and r not in known["block"]}
     block_only = {r: locs for r, locs in refs.items() if r not in usable and r in known["block"]}
-    banned = {r: locs for r, locs in refs.items() if r in BANNED}
+    banned = {r: locs for r, locs in refs.items()
+              if r in BANNED or (r.startswith("cbc_enhanced_shells:") and r not in CBCES_KEEP)}
 
     print(f"known items: {len(known['item'])}  entities: {len(known['entity'])}  referenced: {len(refs)}  "
           f"unknown: {len(unknown)}  block-only: {len(block_only)}  banned: {len(banned)}")
