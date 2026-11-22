@@ -66,4 +66,7 @@ for the team's online members when the quest is **started** (IDs without a names
 The pack defines its own ambush in `pack/kubejs/data/createwars/ambushes/quest_raiding_party.json` (6
 pillagers + 2 vindicators, `chance: 0` so it never fires naturally). It's used by Know Your Enemy →
 **Raiding Party** (checkmark to start, then kill 6 pillagers). It loaded (206 definitions, 0 rejected).
-**Not yet confirmed in game** that clicking the checkmark spawns the raid.
+**Confirmed in game 2026-11-21:** clicking the checkmark logs `Ambush command id=createwars:quest_raiding_party
+target=<player> force=true result=true`, and the raiders arrived (a vindicator killed a villager seconds later).
+The owner's first try didn't fire because the checkmark never registered (the quest wasn't started).
+Likely cause: clicking while in FTB Quests **edit mode**. Test quests with edit mode off.

@@ -310,3 +310,6 @@ this tells you *why*, in prose, per pack version.
   (FTB Chunks already blocks ordinary explosions in claims); cheap early steel stays.
 - **More Shells fixes, Ambush quest, food automation (2026-11-21):** Dual HE/APHE rockets craftable; 11 More
   Shells blocks drop again; Raiding Party quest triggers a custom AMBUSH raid; Food Automation hub. 466 quests.
+- **Fix (2026-11-21):** KubeJS startup error "Invalid file name: Uppercase 'R' in kubejs/data/cbcmoreshells/README.md".
+  Notes can't live in `kubejs/data` (every file there is a resource); moved into `cbcmoreshells_fixes.js`.
+  Raiding Party ambush quest confirmed working in game.

@@ -141,10 +141,6 @@ file = "kubejs/client_scripts/.gitkeep"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
-file = "kubejs/data/cbcmoreshells/README.md"
-hash = "4e0da477421ae79a467e248eddf267789e9115156a646aab888916ab3ca8b876"
-
-[[files]]
 file = "kubejs/data/cbcmoreshells/loot_table/blocks/airdropped_shrapnel_torpedo.json"
 hash = "5a803b9f15b5a4e58c6fc6c74df4cf9b2417e81d326b759e6721f0f0d7b84ffd"
 
@@ -206,7 +202,7 @@ hash = "71059c1f475cd166f63b428a940f0a5eef516220fa6eeff3b7709e05e4cd74cd"
 
 [[files]]
 file = "kubejs/server_scripts/cbcmoreshells_fixes.js"
-hash = "1b78e148344fd9d84291a6894c29abb6e5176fd87af919c090614a662986a3f1"
+hash = "09cc643d6a4e03de289a7a4997ee857226525dc0d47dd83fa6b48f18331ded9f"
 
 [[files]]
 file = "kubejs/server_scripts/diamond_compacting.js"
