@@ -695,9 +695,11 @@ CHAPTERS = [
         Q("bayonet", "Bayonet", 0, 0, [
             "For when they get too close.",
         ], [item("cgs:bayonet")], xp=10),
-        Q("steel", "Gun Steel", 0, 0, [
-            "Mix &acharcoal dust&r with &airon&r for Gunsmithing steel. Better guns need it.",
-        ], [item("cgs:steel_ingot", 4)], xp=25),
+        Q("steel", "Steel", 0, 0, [
+            "Mix &acharcoal dust&r with &airon&r to make steel. Better guns need it.",
+            "&aOne steel:&r every mod's steel is the same item here, so steel from the Industrial",
+            "Age blast furnace works too.",
+        ], [item("tfmg:steel_ingot", 4)], xp=25),
         Q("charcoal_dust", "Charcoal Dust", 0, 0, [
             "Crush or mill charcoal.",
         ], [item("cgs:charcoal_dust", 4)], xp=10),
@@ -1102,6 +1104,10 @@ CHAPTERS = [
         Q("locometal", "Riveted Locometal", 0, 0, [
             "Armored-train looks.",
         ], [item("railways:riveted_locometal", 8)], xp=15),
+        Q("psi", "Portable Storage Interface", 0, 0, [
+            "Moves items between a moving train (or ship, or vehicle) and storage at a station.",
+            "Place one on the train and one facing it on the platform. Supply runs to the front.",
+        ], [item("create:portable_storage_interface", 2)], xp=25),
     ]),
     # ----------------------------------------------------------------------------------------------
     dict(slug="armored", group="warfare", title="Armored Vehicles",
@@ -1127,9 +1133,14 @@ CHAPTERS = [
         Q("flanged_cog", "Flanged Cogwheel", 0, 0, ["Drives the tracks."], [item("bits_n_tracks:flanged_cogwheel", 4)], xp=15),
         Q("armor", "Hardened Steel Armor", 0, 0, [
             "&6Rolled Homogeneous Armor&r: armor plating in many camo colors. Protects against cannon",
-            "fire.",
+            "fire. Cut an &airon block&r in a &astonecutter&r (any color, also layered, riveted and",
+            "slashed styles).",
         ], [item("rha:hardsteelolive", 16)], xp=40),
-        Q("hatch", "Armored Hatch", 0, 0, ["A way in and out."], [item("rha:hatcholive")], xp=15),
+        # owner-facing fix 2026-11-21: RHA hatches have no recipe and rha:hatcholive is not registered
+        # (game saved it as ftbquests:missing_item), so sandbags replace the old Armored Hatch quest.
+        Q("sandbags", "Sandbags", 0, 0, [
+            "Also from the stonecutter (iron block). Cheap cover for gun nests and trenches.",
+        ], [item("rha:sandbaggreen", 8)], xp=15),
         Q("arcon", "Arcon Cannon Barrel", 0, 0, [
             "&6Create: Armored Constructs&r: tank-style vehicle cannons.",
         ], [item("arcon:arcon_cannon_barrel")], xp=50),
@@ -1456,14 +1467,14 @@ CHAPTERS = [
     ]),
     # ----------------------------------------------------------------------------------------------
     # Pollution and Air (owner 2026-11-21). Create: Smog is the ONLY way to handle pollution (PoTR's own
-    # tools are removed by kubejs potr_tools_removed.js). Thick Air: no air below Y=0 / above Y=128.
+    # tools are removed by kubejs potr_tools_removed.js). Thick Air: no air below Y=0 / above Y=192 (pack config).
     dict(slug="pollution", group="infrastructure", title="Pollution and Air",
          subtitle="Create: Smog cleans up your factory; bring oxygen up high and deep down",
          icon="smog:air_scrubber", unlock=[("welcome", "next")], quests=[
         Q("backtank", "Copper Backtank", 0, 0, [
-            "&6Thick Air&r: you slowly run out of air &cbelow Y=0&r, &cabove Y=128&r, and in the Nether.",
+            "&6Thick Air&r: you slowly run out of air &cbelow Y=0&r, &cabove Y=192&r, and in the Nether.",
             "The End has no air at all. A &aBacktank&r with a &aDiving Helmet&r is your air supply.",
-            "&cPilots:&r flying above Y=128 needs this too.",
+            "&cPilots:&r flying above Y=192 needs this too.",
         ], [item("create:copper_backtank")], xp=40),
         Q("diving_helmet", "Copper Diving Helmet", 0, 0, [
             "Wear it with the backtank to breathe from it.",
@@ -1803,7 +1814,7 @@ LAYOUTS = {
         main=[("track", -6, 1.25), ("station", -1, 2.0), ("train_controls", 6, 2.0), ("snr", 13, 2.0),
               ("armored_train", 20, 2.0)],
         hubs={"station": dict(top=["signal", "observer"], bottom=["schedule"]),
-              "train_controls": dict(top=["railway_casing"], bottom=["train_door"]),
+              "train_controls": dict(top=["railway_casing"], bottom=["train_door", "psi"]),
               "snr": dict(top=["semaphore", "whistle"], bottom=["fuel_tank", "fuel_interface"]),
               "armored_train": dict(top=["iron_key", "gold_key"], bottom=["locometal"])},
         gate=None),
@@ -1811,7 +1822,7 @@ LAYOUTS = {
         main=[("wheel_mount", -6, 1.25), ("tires", -1, 2.0), ("tracks", 6, 2.0), ("armor", 13, 2.0), ("arcon", 20, 2.0)],
         hubs={"tires": dict(top=["small_tire", "large_tire"], bottom=["monstrous_tire", "rockcutting_wheel"]),
               "tracks": dict(top=["grouser", "suspension"], bottom=["industrial_belt", "flanged_cog"]),
-              "armor": dict(top=["hatch"]),
+              "armor": dict(top=["sandbags"]),
               "arcon": dict(top=["arcon_muzzle", "arcon_breech"], bottom=["bops"])},
         gate=None),
     "drones": dict(

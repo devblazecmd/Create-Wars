@@ -295,8 +295,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 2.6d
+			x: 4.8d
+			y: 2.31d
 		}
 		{
 			dependencies: [
@@ -607,6 +607,40 @@
 			]
 			x: 20.0d
 			y: 2.6d
+		}
+		{
+			dependencies: [
+				"7A0CFA70DB594577"
+			]
+			id: "12A25766728BDFA9"
+			rewards: [
+				{
+					id: "240829DCB71CC097"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "1328BA2D3BF1212B"
+					item: {
+						count: 1
+						id: "create:portable_storage_interface"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "1756D046B84FBE9D"
+					item: {
+						count: 1
+						id: "create:portable_storage_interface"
+					}
+					type: "item"
+				}
+			]
+			x: 7.2d
+			y: 2.31d
 		}
 	]
 }

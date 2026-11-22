@@ -448,28 +448,29 @@
 			dependencies: [
 				"36AAE0F95A2E1194"
 			]
-			id: "377AA8FD1BA2A3FC"
+			id: "4F432EC45797F61B"
 			rewards: [
 				{
-					id: "51A4CDDBC4E3567D"
+					id: "2680F03E92B9A718"
 					type: "xp"
 					xp: 60
 				}
 				{
-					id: "2FDBCAFBB1D0F51D"
+					id: "3B97EC62477FAB46"
 					item: {
 						count: 1
-						id: "rha:hatcholive"
+						id: "rha:sandbaggreen"
 					}
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "2E30F0FEB689B653"
+					count: 8L
+					id: "359007F116D761D3"
 					item: {
 						count: 1
-						id: "rha:hatcholive"
+						id: "rha:sandbaggreen"
 					}
 					type: "item"
 				}

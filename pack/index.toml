@@ -9,6 +9,10 @@ file = "config/.gitkeep"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
+file = "config/ambush-common.toml"
+hash = "7bc07777eb0cb8f3bf94ca760d532ded4d68ce7c67ca9f6c147032a7fbd4bb03"
+
+[[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "f0608863ba7654c5cab55a16eec078144eefba5ef4ea15d912b9e868692b7a1f"
 
@@ -18,7 +22,7 @@ hash = "a911ec20741e98ec0d0895bc3229468898bffbbe652f00adeae96447d2790b40"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/armored.snbt"
-hash = "38f97e97e4347fae6dfd5022fb2589afef56a6cd6cf38c77ddcd0dc5ab731b7c"
+hash = "1404b34e3cfa9b7c6a797799f65127797f3365b520a9c5ca7e3a6c664cf4ac43"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/artillery.snbt"
@@ -62,7 +66,7 @@ hash = "ef6f1ea979f5c6bd5a002cd5ddff87ca5da7040df12b2ad0716fd4236b647cbc"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/infantry.snbt"
-hash = "4767b64b4a085f42a6d85cbf27708508088dbb1c126de0aa23f796c637d44af1"
+hash = "e7665fcba289724382e318c094138c6c393b3d8e95104f131f08548168ea88da"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/kinetics.snbt"
@@ -86,7 +90,7 @@ hash = "a6ca5273080d59e2219a398cb943726b2df752fadb9ecf02e03147e26ce085b0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/rail.snbt"
-hash = "54927f469eadb34e87a22abfdc01be95e6b25fec7cdf01d87e4cf0bf7e820a42"
+hash = "67e5d2f522b6fe77f6bdd1c38c32fa0546489ed7ab12f235b5c616f1dd1120f8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage.snbt"
@@ -102,7 +106,7 @@ hash = "59e6f33cb9b5b2593319a35b8e70e99d32e8834c38f7206fa7ec59de1f16c4d9"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "15aab6f700c41749bac1fbaef787f7e841ed800f01ccadfb0a9722baeabc1f41"
+hash = "1f1bf6a61ba3dcc81d01a1991e4c2366f9a4a1622d40d7de6f0282d2e5939b45"
 
 [[files]]
 file = "config/improvedmobs/client.toml"
@@ -110,7 +114,11 @@ hash = "47356fc6aacaec8a0ea4a0d0a5d1302301af8873d57fee37abcf42ffa8f349ed"
 
 [[files]]
 file = "config/smog-common.toml"
-hash = "b83ef67a46273583c26595ee0e6a93321d0512bbc348dbc08681c8cd78b855d6"
+hash = "e3f5063183ba49252644898ce1e3eadc002d2390d5734d1c68cec0fbaf3e0ad3"
+
+[[files]]
+file = "config/thick_air-common.toml"
+hash = "04ab519ab3719806020c0a229d563ac0245bafe604c8c4a528ff3e9108c2fa00"
 
 [[files]]
 file = "config/waystones-common.toml"
@@ -153,6 +161,10 @@ file = "kubejs/server_scripts/elytra_removed.js"
 hash = "3fdaa8c2dfe468cb67b383d787fdbef4274ac3251da12abc5003a8be2df6f545"
 
 [[files]]
+file = "kubejs/server_scripts/export_registry_ids.js"
+hash = "492886424f6101060269d7e7751bc0876e3087842bc0fef27019af63a546e004"
+
+[[files]]
 file = "kubejs/server_scripts/netherite_scrap_crushing.js"
 hash = "aacf037918fcde0be6e799d161253dece48fbe20695d1bdaea08121f5bd05734"
 
@@ -163,6 +175,14 @@ hash = "59f1bf9bd730e6b821d6fb3836da8e3b177bbe150c7d65bdda734613e08daf1a"
 [[files]]
 file = "kubejs/server_scripts/quantum_pearl_recipe.js"
 hash = "6fdde86a9da80c4736a0e36c631861c71593a82295ff3d81c4e54459a705de39"
+
+[[files]]
+file = "kubejs/server_scripts/steel_unification.js"
+hash = "b74f43987cd51ebe3bb468d443046439b224292f3964bb4ce1840acd7bef7460"
+
+[[files]]
+file = "kubejs/server_scripts/tfmg_smog_sources.js"
+hash = "b50b128a0f3e0182f73122332d5b4c1f1fda5a2076af472de2b9ece734f17862"
 
 [[files]]
 file = "kubejs/server_scripts/waystones_quantum.js"

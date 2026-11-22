@@ -307,9 +307,9 @@
 	]
 	"quest.0DE91D880C27E0AF.title": "Stock"
 	"quest.0E100C9DE8E82065.quest_desc": [
-		"&6Thick Air&r: you slowly run out of air &cbelow Y=0&r, &cabove Y=128&r, and in the Nether."
+		"&6Thick Air&r: you slowly run out of air &cbelow Y=0&r, &cabove Y=192&r, and in the Nether."
 		"The End has no air at all. A &aBacktank&r with a &aDiving Helmet&r is your air supply."
-		"&cPilots:&r flying above Y=128 needs this too."
+		"&cPilots:&r flying above Y=192 needs this too."
 	]
 	"quest.0E100C9DE8E82065.title": "Copper Backtank"
 	"quest.0E5FBD9105AE2934.quest_desc": [
@@ -385,6 +385,11 @@
 		"A raid's heavy armor."
 	]
 	"quest.11FDB45C5A84681B.title": "Ravager"
+	"quest.12A25766728BDFA9.quest_desc": [
+		"Moves items between a moving train (or ship, or vehicle) and storage at a station."
+		"Place one on the train and one facing it on the platform. Supply runs to the front."
+	]
+	"quest.12A25766728BDFA9.title": "Portable Storage Interface"
 	"quest.135D466BB447FEEE.quest_desc": [
 		"Brass casing, electron tube and precision mechanism. Shows radar contacts."
 	]
@@ -660,9 +665,11 @@
 	]
 	"quest.24F9886D990D5FBD.title": "AIM-9X"
 	"quest.2519832DF78B9EB9.quest_desc": [
-		"Mix &acharcoal dust&r with &airon&r for Gunsmithing steel. Better guns need it."
+		"Mix &acharcoal dust&r with &airon&r to make steel. Better guns need it."
+		"&aOne steel:&r every mod's steel is the same item here, so steel from the Industrial"
+		"Age blast furnace works too."
 	]
-	"quest.2519832DF78B9EB9.title": "Gun Steel"
+	"quest.2519832DF78B9EB9.title": "Steel"
 	"quest.252033B55A5BDA67.quest_desc": [
 		"Blowing through &alava&r smelts items, &awater&r washes them, &afire&r smokes them. A fan"
 		"is the cheapest way to process in bulk."
@@ -972,17 +979,14 @@
 	"quest.367C2F2B0C2B6767.title": "Warp Plate"
 	"quest.36AAE0F95A2E1194.quest_desc": [
 		"&6Rolled Homogeneous Armor&r: armor plating in many camo colors. Protects against cannon"
-		"fire."
+		"fire. Cut an &airon block&r in a &astonecutter&r (any color, also layered, riveted and"
+		"slashed styles)."
 	]
 	"quest.36AAE0F95A2E1194.title": "Hardened Steel Armor"
 	"quest.36E772B547DD464B.quest_desc": [
 		"Pulls nearby items in. Great for clearing loot after a fight."
 	]
 	"quest.36E772B547DD464B.title": "Magnet Upgrade"
-	"quest.377AA8FD1BA2A3FC.quest_desc": [
-		"A way in and out."
-	]
-	"quest.377AA8FD1BA2A3FC.title": "Armored Hatch"
 	"quest.381EFD6DCD13A8ED.quest_desc": [
 		"Actuator fins, brass casing, steel and a powder charge."
 	]
@@ -1344,6 +1348,10 @@
 		"Gold to diamond."
 	]
 	"quest.4F2DB21B147A7C58.title": "Diamond Tier"
+	"quest.4F432EC45797F61B.quest_desc": [
+		"Also from the stonecutter (iron block). Cheap cover for gun nests and trenches."
+	]
+	"quest.4F432EC45797F61B.title": "Sandbags"
 	"quest.4FC33F44C920C77C.quest_desc": [
 		"Refined from crude oil. Needed for &cnapalm&r."
 	]

@@ -32,8 +32,8 @@ VANILLA_JAR = os.path.join(os.path.expanduser("~"), "AppData", "Roaming", "Prism
 
 MODEL_RE = re.compile(r"^assets/([a-z0-9_.-]+)/models/item/([a-z0-9_/.-]+)\.json$")
 LANG_RE = re.compile(r"^assets/[a-z0-9_.-]+/lang/en_us\.json$")
-# entity.* too, so kill-task entity IDs are checked (2026-11-21)
-LANG_KEY_RE = re.compile(r'"(?:item|block|entity)\.([a-z0-9_-]+)\.([a-z0-9_/-]+)"\s*:')
+# kind (item/block/entity), namespace, path. Entities so kill-task IDs are checked (2026-11-21).
+LANG_KEY_RE = re.compile(r'"(item|block|entity)\.([a-z0-9_-]+)\.([a-z0-9_/-]+)"\s*:')
 KJS_ITEM_RE = re.compile(r"""event\.create\(\s*['"]([a-z0-9_.-]+:[a-z0-9_/.-]+)['"]""")
 # Items that exist in the registry but the pack has taken out of play. Quests must not reference them.
 # Keep in sync with pack/kubejs/server_scripts/elytra_removed.js, air_war_launchers_removed.js and
@@ -45,18 +45,25 @@ BANNED = {
     "create_the_air_wars:heattrap", "create_the_air_wars:heattrap_charge",
 } | {f"adpother:{t}_{k}" for t in ("iron", "gold", "diamond")
      for k in ("filter_frame", "vacuum_bag", "vacuum_tube", "respirator")} | {"adpother:aerometer"}
+# steel_unification.js: CBC and Gunsmithing steel are hidden; quests use TFMG's.
+BANNED |= {"createbigcannons:steel_ingot", "createbigcannons:steel_block",
+           "cgs:steel_ingot", "cgs:steel_nugget", "cgs:steel_block"}
 # Any quoted namespaced ID in quest SNBT (quest object IDs are bare hex, so they never match).
 REF_RE = re.compile(r'"#?([a-z0-9_.-]+:[a-z0-9_/.-]+)"')
 
 
 def scan_jar(zf, known):
+    """known = {"item": set, "block": set, "entity": set}. An item model counts as an item.
+    A block name alone does NOT make an item (2026-11-21: rha:hatcholive is a block with no item form,
+    and the game turned that quest task into ftbquests:missing_item)."""
     for name in zf.namelist():
         m = MODEL_RE.match(name)
         if m:
-            known.add(f"{m.group(1)}:{m.group(2)}")
+            known["item"].add(f"{m.group(1)}:{m.group(2)}")
         elif LANG_RE.match(name):
             text = zf.read(name).decode("utf-8", "replace")
-            known.update(f"{a}:{b}" for a, b in LANG_KEY_RE.findall(text))
+            for kind, a, b in LANG_KEY_RE.findall(text):
+                known[kind].add(f"{a}:{b}")
         elif name.startswith("META-INF/jarjar/") and name.endswith(".jar"):
             try:
                 with zipfile.ZipFile(io.BytesIO(zf.read(name))) as inner:
@@ -66,7 +73,7 @@ def scan_jar(zf, known):
 
 
 def known_ids(instance):
-    known = set()
+    known = {"item": set(), "block": set(), "entity": set()}
     mods = os.path.join(instance, "minecraft", "mods")
     jars = [os.path.join(mods, f) for f in os.listdir(mods) if f.endswith(".jar")]
     jars.append(VANILLA_JAR)
@@ -78,7 +85,7 @@ def known_ids(instance):
         for f in os.listdir(startup):
             if f.endswith(".js"):
                 with open(os.path.join(startup, f), encoding="utf-8") as fh:
-                    known.update(KJS_ITEM_RE.findall(fh.read()))
+                    known["item"].update(KJS_ITEM_RE.findall(fh.read()))
     return known
 
 
@@ -106,16 +113,34 @@ def main(argv):
     quests_dir = args[0] if args else DEFAULT_QUESTS
 
     known = known_ids(instance)
+    usable = known["item"] | known["entity"]
+    # Authoritative when present: the live registry, exported by pack/kubejs/server_scripts/
+    # export_registry_ids.js on the last server load. Jar scanning can't see items that ship assets but
+    # are never registered.
+    export = os.path.join(instance, "minecraft", "kubejs", "exported", "createwars_registry.json")
+    source = "jar scan"
+    if os.path.isfile(export):
+        import json
+        with open(export, encoding="utf-8") as fh:
+            reg = json.load(fh)
+        usable = set(reg["items"]) | set(reg["entities"])
+        known["block"] = known["block"] - usable
+        source = f"live registry export ({os.path.getmtime(export) and 'kubejs/exported/createwars_registry.json'})"
+    print(f"ID source: {source}")
     refs = referenced_ids(quests_dir)
-    unknown = {r: locs for r, locs in refs.items() if r not in known}
+    unknown = {r: locs for r, locs in refs.items() if r not in usable and r not in known["block"]}
+    block_only = {r: locs for r, locs in refs.items() if r not in usable and r in known["block"]}
     banned = {r: locs for r, locs in refs.items() if r in BANNED}
 
-    print(f"known IDs: {len(known)}  referenced: {len(refs)}  unknown: {len(unknown)}  banned: {len(banned)}")
+    print(f"known items: {len(known['item'])}  entities: {len(known['entity'])}  referenced: {len(refs)}  "
+          f"unknown: {len(unknown)}  block-only: {len(block_only)}  banned: {len(banned)}")
     for ref, locs in sorted(unknown.items()):
         print(f"  UNKNOWN {ref}  at {', '.join(locs)}")
+    for ref, locs in sorted(block_only.items()):
+        print(f"  BLOCK-ONLY {ref}  at {', '.join(locs)}  (a block with no item form: an item task can't be completed)")
     for ref, locs in sorted(banned.items()):
         print(f"  BANNED  {ref}  at {', '.join(locs)}  (removed from play by a pack script)")
-    return 1 if unknown or banned else 0
+    return 1 if unknown or banned or block_only else 0
 
 
 if __name__ == "__main__":

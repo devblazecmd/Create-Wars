@@ -243,7 +243,7 @@
 					id: "15B16059BBAD7C60"
 					item: {
 						count: 1
-						id: "cgs:steel_ingot"
+						id: "tfmg:steel_ingot"
 					}
 					type: "item"
 				}
@@ -255,7 +255,7 @@
 					id: "4EA5EE5E7BF0D40F"
 					item: {
 						count: 1
-						id: "cgs:steel_ingot"
+						id: "tfmg:steel_ingot"
 					}
 					type: "item"
 				}
