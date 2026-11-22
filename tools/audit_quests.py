@@ -69,6 +69,12 @@ for key, q in quests.items():
     for it, _ in task_items(q):
         taught[it].append(key)
 
+# Order gaps the owner accepted on purpose (quest key -> why).
+ACCEPTED_ORDER = {
+    ("kinetics", s): "owner 2026-11-22: no lines from Shafts/Cogwheels to the Andesite Casing hub"
+    for s in ("basin_mixer", "fan", "gearbox", "millstone", "press", "wrench_goggles")
+}
+
 NATURAL_HINTS = ("_ore", "raw_", "_log", "_sapling", "_seeds", "spawn_egg")
 
 
@@ -112,7 +118,7 @@ for key, q in quests.items():
                 if teachers and not any(t in anc or t[0] in anc_ch for t in teachers):
                     need.append((i, teachers))
             blockers.append(need)
-        if real and all(blockers):
+        if real and all(blockers) and key not in ACCEPTED_ORDER:
             need = min(blockers, key=len)
             same = all(t[0] == key[0] for _, ts in need for t in ts)
             kind = "same chapter" if same else "other chapter"

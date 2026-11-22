@@ -2222,7 +2222,7 @@ LAYOUTS = {
         gate=None),
     "kinetics": dict(
         main=[("find_andesite", -5, 1.25), ("andesite_alloy", 0, 2.0), ("casing", 7, 2.0), ("next", 13, 2.0)],
-        hubs={"andesite_alloy": dict(top=["shafts_cogs"], bottom=["cogwheels"]),
+        hubs={"andesite_alloy": dict(top=["shafts_cogs"]),
               "casing": dict(top=["millstone", "press", "basin_mixer"], bottom=["kelp", "gearbox"])},
         chains={"shafts_cogs": ["water_wheel", "large_water_wheel"],  # owner: shaft -> water wheel -> large
                 # 2026-11-22 audit: gearboxes need andesite casing, so they moved to the casing hub
@@ -2232,10 +2232,10 @@ LAYOUTS = {
         fans={"iron_sheets": ["saw_drill", "harvester", "drill", "fan"],    # owner: iron sheets unlock these
               "press": (["gold_sheets"], -60),                              # owner: press -> gold sheet tree
               "gold_sheets": (["wrench_goggles", "goggles"], 0, 90),        # owner: gold sheets -> tools
-              "dried_kelp": (["tunnel"], 90)},                              # owner: dried kelp -> tunnels
-        # 2026-11-22 audit: cogwheels are made from shafts; casing-hub machines need both
-        hidden_deps={"cogwheels": ["shafts_cogs"]},
-        extra_deps={"casing": ["shafts_cogs", "cogwheels"]},
+              "dried_kelp": (["tunnel"], 90),                               # owner: dried kelp -> tunnels
+              "shafts_cogs": (["cogwheels"], 70)},                          # owner 2026-11-22: cogs branch off shafts
+        # owner 2026-11-22: no lines from shafts/cogwheels to the casing hub (the audit flags casing machines that
+        # use shafts/cogs; accepted, they are basic parts taught right next to it)
         gate=("next", ["casing", "press", "basin_mixer", "belts", "iron_sheets"])),
     "brass_and_precision": dict(
         main=[("empty_burner", -9, 1.25), ("blaze", -5, 1.5), ("brass", 0, 2.0), ("brass_casing", 8, 2.0),

@@ -362,3 +362,8 @@ No unit tests exist for a quest book. Verification is layered:
 - 2026-11-22: **Nuclear Age moved to the Ages tab** (owner kept moving it in game; the generator's `group` overwrote it on
   every sync). In-game edits to the book never stick: change `build_quests.py` instead.
 - 2026-11-22: Owner confirmed: Advanced Component does **not** require the Waystone.
+- 2026-11-22: Andesite Age: **Cogwheels branch off Shafts** (owner), and Shafts/Cogwheels no longer link to the Andesite
+  Casing hub (owner: no lines there). The audit lists the casing machines that use shafts/cogs as accepted exceptions
+  (`ACCEPTED_ORDER` in `tools/audit_quests.py`). Copper Spool and Electric Motor dependency lines are drawn now (owner: the
+  spool looked like it had no requirements while its lines were hidden).
+

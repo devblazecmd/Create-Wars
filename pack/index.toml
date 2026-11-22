@@ -82,7 +82,7 @@ hash = "02b265ceaaa95c375ca72ea57798153adf1be854a9f780605476ce79465f915a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/kinetics.snbt"
-hash = "3fac80bab0085b8c8f1cb544d2a9e836179d11b401a0591cd3d0f30a934b18a3"
+hash = "f03eb6ced4c4f21327708f7daa26b4a1eb5e980b5f47d363f0b357f5289620b2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/naval.snbt"

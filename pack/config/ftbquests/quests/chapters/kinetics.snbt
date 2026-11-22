@@ -203,10 +203,8 @@
 		}
 		{
 			dependencies: [
-				"690304EEF8A85B66"
 				"257D9DE8F5DF9281"
 			]
-			hide_dependency_lines: true
 			id: "3BF3768260E3F121"
 			rewards: [
 				{
@@ -251,8 +249,8 @@
 					type: "item"
 				}
 			]
-			x: -0.0d
-			y: 2.6d
+			x: -2.44d
+			y: -3.49d
 		}
 		{
 			dependencies: [
@@ -791,8 +789,6 @@
 		{
 			dependencies: [
 				"690304EEF8A85B66"
-				"257D9DE8F5DF9281"
-				"3BF3768260E3F121"
 			]
 			id: "6831CB5CFFFE83CA"
 			rewards: [
