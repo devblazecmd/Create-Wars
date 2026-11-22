@@ -1,15 +1,59 @@
 {
   "format": "easy",
   "name": "Raiding Party (quest)",
-  "description": "Started by the Know Your Enemy 'Raiding Party' quest (FTB Quests tag ambush:trigger:createwars:quest_raiding_party). Never fires on its own: chance 0.",
+  "description": "Started by the Know Your Enemy 'Raiding Party' quest (FTB Quests tag ambush:trigger:createwars:quest_raiding_party). Never fires on its own: chance 0. Spawns close, targets the quest owner, glows, and shows a boss bar so the player notices it (2026-11-21: first version spawned 24 blocks out and went after villagers).",
   "cooldown_group": "createwars_quest_raiding_party",
   "preset": "ground",
   "chance": 0.0,
   "cooldown_seconds": 600,
-  "distance": 24,
+  "distance": 12,
   "mobs": [
-    { "mob": "minecraft:pillager", "amount": 6 },
-    { "mob": "minecraft:vindicator", "amount": 2 }
+    {
+      "mob": "minecraft:pillager",
+      "amount": 6,
+      "persistent": true,
+      "target": "owner",
+      "target_range": 96,
+      "aggro_range": 80,
+      "deaggro_range": 112,
+      "aggro_through_walls": true,
+      "effects": [
+        "minecraft:glowing:600:0"
+      ]
+    },
+    {
+      "mob": "minecraft:vindicator",
+      "amount": 1,
+      "persistent": true,
+      "target": "owner",
+      "target_range": 96,
+      "aggro_range": 80,
+      "deaggro_range": 112,
+      "aggro_through_walls": true,
+      "extra_health": 12,
+      "effects": [
+        "minecraft:glowing:600:0"
+      ],
+      "boss_bar": {
+        "name": "Raid Captain",
+        "color": "red",
+        "audience": "nearby",
+        "range": 96
+      }
+    },
+    {
+      "mob": "minecraft:vindicator",
+      "amount": 1,
+      "persistent": true,
+      "target": "owner",
+      "target_range": 96,
+      "aggro_range": 80,
+      "deaggro_range": 112,
+      "aggro_through_walls": true,
+      "effects": [
+        "minecraft:glowing:600:0"
+      ]
+    }
   ],
   "sound": "minecraft:event.raid.horn",
   "weight": 1

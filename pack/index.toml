@@ -186,7 +186,7 @@ hash = "d194b56221756690aed380bf043c5bf9cb14ce36f28bd5cfb61d248340c00fe1"
 
 [[files]]
 file = "kubejs/data/createwars/ambushes/quest_raiding_party.json"
-hash = "c2e1445f32ab05b8e18fad9662cb75d6f23c625c5a3dd880b409f46abe2b0352"
+hash = "1378d64178499f27faa3011f2d7ed7da3fa86c86ef0357a147d73ccc2b4fe962"
 
 [[files]]
 file = "kubejs/server_scripts/.gitkeep"
