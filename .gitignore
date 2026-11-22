@@ -6,3 +6,7 @@ vault/.obsidian/workspace-mobile.json
 # OS cruft
 Thumbs.db
 .DS_Store
+
+# server logs (contain player IP addresses) must never be committed to the public repo
+server.log
+*.log
