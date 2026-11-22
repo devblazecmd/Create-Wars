@@ -50,3 +50,5 @@ None logged yet.
   `minecraft:overworld=yellow,0:green,192:yellow`), so normal flying is free and only high-altitude flights
   need gear. **Revisit** if a biome/terrain mod raises mountain heights (owner is considering one).
   Below Y=0, the Nether and the End are unchanged.
+- 2026-11-21 (owner): ceiling raised again **Y=192 → Y=256** after adding [[Tectonic]] + [[Terralith]] terrain. Only the
+  tallest peaks and high flights need oxygen now. Quest text updated.

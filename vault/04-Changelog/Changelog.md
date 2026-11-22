@@ -315,3 +315,7 @@ this tells you *why*, in prose, per pack version.
   Raiding Party ambush quest confirmed working in game.
 - **Defend Your Home (2026-11-21):** new Warfare chapter of 8 escalating AMBUSH waves, with big XP, level rewards
   and random reward tables (generator supports reward tables now). 22 chapters, 473 quests.
+- **World generation (2026-11-21):** added Terralith + Tectonic (+ Lithostitched), Biomes O' Plenty (+ TerraBlender,
+  GlitchCore), Incendium and Stellarity. Thick Air ceiling raised to Y=256. Stellarity tweaks: vanilla pearl drops kept,
+  elytra sources swapped for loot, one broken fishing table patched. Fixed Lithostitched `side = "server"` (Tectonic
+  crashed in single-player). Boot OK in the existing world; **new terrain needs a new world**.

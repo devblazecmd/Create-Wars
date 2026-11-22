@@ -311,9 +311,9 @@
 	]
 	"quest.0DE91D880C27E0AF.title": "Stock"
 	"quest.0E100C9DE8E82065.quest_desc": [
-		"&6Thick Air&r: you slowly run out of air &cbelow Y=0&r, &cabove Y=192&r, and in the Nether."
+		"&6Thick Air&r: you slowly run out of air &cbelow Y=0&r, &cabove Y=256&r, and in the Nether."
 		"The End has no air at all. A &aBacktank&r with a &aDiving Helmet&r is your air supply."
-		"&cPilots:&r flying above Y=192 needs this too."
+		"&cPilots:&r flying above Y=256 needs this too."
 	]
 	"quest.0E100C9DE8E82065.title": "Copper Backtank"
 	"quest.0E5FBD9105AE2934.quest_desc": [

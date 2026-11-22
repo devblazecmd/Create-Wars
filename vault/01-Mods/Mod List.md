@@ -102,6 +102,14 @@ all entries below except the open questions/rejected sections are `#mod/status/a
   Iron Chests-style mod). For now this is enforced in the quest book only; Create package logistics and
   the Sophisticated Controller still have recipes. See [[../03-Design/Quest Book|Quest Book]] decisions log.
 
+## World generation (added 2026-11-21)
+- [[Terralith]] + [[Tectonic]] — vanilla-block biomes plus big terrain (dep: [[Lithostitched]]) *(testing)*
+- [[Biomes O' Plenty]] — 50+ biomes with new woods (deps: [[TerraBlender]], [[GlitchCore]]) *(testing)*
+- [[Incendium]] — Nether biomes and structures *(testing)*
+- [[Stellarity]] — full End overhaul; pearls kept, elytras swapped for loot (see note) *(testing)*
+- Rejected for now: BetterNether/BetterEnd (no 1.21.1 NeoForge), Nullscape (owner chose Stellarity alone),
+  Oh The Biomes We've Gone and Regions Unexplored (overlap with BOP), Amplified Nether, End Remastered.
+
 ## Environment / pollution
 - [[Pollution of the Realms]] — pollution simulation: smog clouds, acid rain, oil spills, crop and health
   damage (dep: [[ForgeEndertech]]) *(testing, added 2026-11-21)*
@@ -204,6 +212,11 @@ all entries below except the open questions/rejected sections are `#mod/status/a
   a config pass together once in-game to check for duplicate/overlapping content.
 
 ## Distribution gotchas (for future adds)
+- **Check `side =` after every `packwiz modrinth add`.** Modrinth marks some libraries server-only (e.g.
+  [[Lithostitched]]), so packwiz writes `side = "server"` and the client installer skips the jar. Single-player
+  runs an integrated server, so anything the game needs must be `both`. (2026-11-21: Tectonic crashed on
+  boot for this reason.) Still server-only on purpose: Alternate Current, CBC Locometal Armor; they don't
+  run in single-player.
 - **FTB family mods (Teams/Quests/Chunks/Library) are not on Modrinth at all.** `packwiz modrinth add
   ftb-teams` silently falls back to a fuzzy search and grabs the wrong project — always use
   `packwiz curseforge add <slug>-forge` for these (the CurseForge slug keeps a legacy `-forge` suffix even

@@ -110,7 +110,7 @@ hash = "59e6f33cb9b5b2593319a35b8e70e99d32e8834c38f7206fa7ec59de1f16c4d9"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "fe0cbcba1698691ff28b0eb6eabf36bba91c0a84a6f7a5d74643deac31b55a80"
+hash = "5d188b5bb6b03b944212e9b5c623c81117eaaca6f978379f81c5c26d438b0acf"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/war_spoils_1.snbt"
@@ -138,7 +138,7 @@ hash = "e3f5063183ba49252644898ce1e3eadc002d2390d5734d1c68cec0fbaf3e0ad3"
 
 [[files]]
 file = "config/thick_air-common.toml"
-hash = "04ab519ab3719806020c0a229d563ac0245bafe604c8c4a528ff3e9108c2fa00"
+hash = "7acde0a4c60e95b2648fafdd65b053e724e23cd45eac5d8fc261ecb2db4269be"
 
 [[files]]
 file = "config/waystones-common.toml"
@@ -219,6 +219,30 @@ hash = "4e6f5a13a0e20809143b9999bc6fbc783d780d10a816a5d91b966c2c397220a0"
 [[files]]
 file = "kubejs/data/createwars/ambushes/quest_warband.json"
 hash = "95c23a347f43ca4384681523874a0eca7aa99cdf476bb65c71e95eddf1211dbe"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_table/entities/enderman.json"
+hash = "ac53ec9b0d4bc4be556a6920a650d4b15e08468aefd4c3be65e72caf60ba1490"
+
+[[files]]
+file = "kubejs/data/stellarity/loot_table/end_city/vault/elytra.json"
+hash = "bdca1f898b89189724dc64d51dc73003ea31be6a7c28b17b1e75f82bad201789"
+
+[[files]]
+file = "kubejs/data/stellarity/loot_table/items/elytra/dragon_wings.json"
+hash = "c15d3725594aa501ad6eac4d947d7e2b7bcbef0fc0d495c871d347a226ed3fa6"
+
+[[files]]
+file = "kubejs/data/stellarity/loot_table/items/elytra/empress_wings.json"
+hash = "c15d3725594aa501ad6eac4d947d7e2b7bcbef0fc0d495c871d347a226ed3fa6"
+
+[[files]]
+file = "kubejs/data/stellarity/loot_table/items/elytra/phantom_wings.json"
+hash = "eb34805ee5ab68a139724b4e166823fd86fc4c84802941670b299c7c1c534537"
+
+[[files]]
+file = "kubejs/data/stellarity/loot_table/void_fishing/drops/warped_marsh.json"
+hash = "baeab6fcb86434b4f7535517b7c62916ce7aa0923c2933bdeaff260b0b2dfd1f"
 
 [[files]]
 file = "kubejs/server_scripts/.gitkeep"
@@ -309,6 +333,11 @@ metafile = true
 [[files]]
 file = "mods/better-advanced-tooltips.pw.toml"
 hash = "03084ff4f74cedc1b8ac6c85a98842f75956fb4fa811d285d8ca7caa8d54da5d"
+metafile = true
+
+[[files]]
+file = "mods/biomes-o-plenty.pw.toml"
+hash = "a4931e5abbec081a08ab3a1d69b2d470596b6361d707a7756f6ad34c0f21f81e"
 metafile = true
 
 [[files]]
@@ -597,6 +626,11 @@ hash = "35779b39ddc06059ec483b33de2ecfdc3adb95c0a49e69b6701fb0024827e2f5"
 metafile = true
 
 [[files]]
+file = "mods/glitchcore.pw.toml"
+hash = "e53646f88aeb6bd54c38db50da972abdac91e83c145a8f974107b0ca103b15bc"
+metafile = true
+
+[[files]]
 file = "mods/hots-aerostuff.pw.toml"
 hash = "a7e9187482cf225fbdb3769e860989040d41508106c4672c49439ed4f0d94af1"
 metafile = true
@@ -609,6 +643,11 @@ metafile = true
 [[files]]
 file = "mods/improved-mobs.pw.toml"
 hash = "ab0928c81d3f51116315f3733bc92fe44abc6dbf1e1ea5433de22e6b1692e37c"
+metafile = true
+
+[[files]]
+file = "mods/incendium.pw.toml"
+hash = "391f5b0b0fcae3ce77be6ab211435228faec79cb92c50d69471c52ba36b139d6"
 metafile = true
 
 [[files]]
@@ -649,6 +688,11 @@ metafile = true
 [[files]]
 file = "mods/ldlib.pw.toml"
 hash = "3c703781ea00c9cf968e1051b57b9ee28380a0cd0f038d1087b91d884cc30fb7"
+metafile = true
+
+[[files]]
+file = "mods/lithostitched.pw.toml"
+hash = "c0611d8448bc043f372a008a435e14aa238ba8fca52fd1d79634424576ea9e12"
 metafile = true
 
 [[files]]
@@ -751,6 +795,11 @@ hash = "589ce9acb7d0fd2cb2323d871daba07615f5b7b5ed6a06cfa813740a4012c2fa"
 metafile = true
 
 [[files]]
+file = "mods/stellarity.pw.toml"
+hash = "2a0794f30a563dc48063728a9b452125c4e45749283f103e396ec1890e518a14"
+metafile = true
+
+[[files]]
 file = "mods/strut-your-stuff.pw.toml"
 hash = "aa89e067824ca42d818a81a6d02ce5296ce662d834c35dd2ff0d81189d3bc3f9"
 metafile = true
@@ -761,8 +810,23 @@ hash = "b4a00c641876aeb50fd1de78c4eb3a61cc0089749ffa14a71abbd3949056c7b4"
 metafile = true
 
 [[files]]
+file = "mods/tectonic.pw.toml"
+hash = "dd46fad79cf33a00123be0a74c73581da72cd98503ef23822a624a08f4b10ff2"
+metafile = true
+
+[[files]]
 file = "mods/tenshilib.pw.toml"
 hash = "584bb0949e80ae13565cfc33ec2bcf2f3a0aa1242a8ef7346cddf4bc0fa2ee45"
+metafile = true
+
+[[files]]
+file = "mods/terrablender.pw.toml"
+hash = "15962183bec2468058c70e87aa32e902a08489b0f86741088cdc9aa958ba4931"
+metafile = true
+
+[[files]]
+file = "mods/terralith.pw.toml"
+hash = "da7ee99189ad35aac094919fe33cac647d98533b23c228f10d4811f08989e2b8"
 metafile = true
 
 [[files]]

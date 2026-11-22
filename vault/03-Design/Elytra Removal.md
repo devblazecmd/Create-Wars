@@ -26,3 +26,10 @@ pointless.
 - If a new mod adds an elytra recipe, loot entry or a custom elytra-like item, the item removal won't
   catch it. The gliding backstop catches anything that uses vanilla fall-flying.
 - Not yet tested in game.
+
+## Update 2026-11-21: Stellarity
+[[../01-Mods/Stellarity|Stellarity]] adds elytra sources: an End City vault, Phantom Wings (phantom drop), Dragon Wings
+(dragon extra drop) and Empress Wings (boss). Per the owner, all of them are swapped for loot through overrides in
+`pack/kubejs/data/stellarity/loot_table/` (netherite scrap and diamonds, a netherite ingot, phantom membranes). The
+gliding block in `elytra_removed.js` still covers anything that slips through. Stellarity's elytra trail, dye and
+boost functions are harmless (nothing to glide with).

@@ -1551,14 +1551,14 @@ CHAPTERS = [
     ]),
     # ----------------------------------------------------------------------------------------------
     # Pollution and Air (owner 2026-11-21). Create: Smog is the ONLY way to handle pollution (PoTR's own
-    # tools are removed by kubejs potr_tools_removed.js). Thick Air: no air below Y=0 / above Y=192 (pack config).
+    # tools are removed by kubejs potr_tools_removed.js). Thick Air: no air below Y=0 / above Y=256 (pack config).
     dict(slug="pollution", group="infrastructure", title="Pollution and Air",
          subtitle="Create: Smog cleans up your factory; bring oxygen up high and deep down",
          icon="smog:air_scrubber", unlock=[("welcome", "next")], quests=[
         Q("backtank", "Copper Backtank", 0, 0, [
-            "&6Thick Air&r: you slowly run out of air &cbelow Y=0&r, &cabove Y=192&r, and in the Nether.",
+            "&6Thick Air&r: you slowly run out of air &cbelow Y=0&r, &cabove Y=256&r, and in the Nether.",
             "The End has no air at all. A &aBacktank&r with a &aDiving Helmet&r is your air supply.",
-            "&cPilots:&r flying above Y=192 needs this too.",
+            "&cPilots:&r flying above Y=256 needs this too.",
         ], [item("create:copper_backtank")], xp=40),
         Q("diving_helmet", "Copper Diving Helmet", 0, 0, [
             "Wear it with the backtank to breathe from it.",
