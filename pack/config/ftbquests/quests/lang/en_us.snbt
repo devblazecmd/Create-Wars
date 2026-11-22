@@ -2378,6 +2378,7 @@
 	"quest.75DA6E9988F3AA8E.title": "Large Bomb"
 	"quest.763A8D151E82F962.quest_desc": [
 		"Copper wire wound on a spool. Use it on two connectors to wire them together."
+		"TFMG has its own &aCopper Spool (TFMG Cable)&r for its cable insulators; the two don't mix."
 	]
 	"quest.763A8D151E82F962.title": "Copper Spool"
 	"quest.763D4204A08B0422.quest_desc": [

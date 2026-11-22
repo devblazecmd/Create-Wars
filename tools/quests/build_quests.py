@@ -434,6 +434,7 @@ CHAPTERS = [
         ], [item("createaddition:copper_wire", 8)], xp=10),
         Q("copper_spool", "Copper Spool", 0, 0, [
             "Copper wire wound on a spool. Use it on two connectors to wire them together.",
+            "TFMG has its own &aCopper Spool (TFMG Cable)&r for its cable insulators; the two don't mix.",
         ], [item("createaddition:copper_spool", 2)], xp=15),
         Q("electric_motor", "Electric Motor", 0, 0, [
             "&aMechanical Crafting&r: copper spool, capacitor, iron rods, brass sheets and andesite",

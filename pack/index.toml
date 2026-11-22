@@ -122,7 +122,7 @@ hash = "59e6f33cb9b5b2593319a35b8e70e99d32e8834c38f7206fa7ec59de1f16c4d9"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "5049b3f558967b7360ad189e187d868da054d2d1b1dea54c72f57ce5bc86a54d"
+hash = "32c2e37603b99ac6f9648324e5233dd7228245ec6d79d7aabc496cef87a32be8"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/war_spoils_1.snbt"
@@ -161,6 +161,10 @@ file = "config/waystones-common.toml"
 hash = "af87c3b7d04c7ef28ad1bafe13f249b011c21c8c42c19539a1ddf86003ed9043"
 
 [[files]]
+file = "kubejs/assets/createaddition/lang/en_us.json"
+hash = "0ffc448bfd0128736491cec1d80e527cbe31b57b84170c1ea72bf167c779db20"
+
+[[files]]
 file = "kubejs/assets/createwars/lang/en_us.json"
 hash = "52a9be2d768bf218afe804df95ff7415e90c1e15b67509f8576d80646a370135"
 
@@ -171,6 +175,10 @@ hash = "934330948736a32068eacf6f7d0eff5e0f6d09e6f9f8a0b6a65e4bf6a369b397"
 [[files]]
 file = "kubejs/assets/createwars/textures/item/quantum_pearl.png"
 hash = "65ea0b7a29d3df1b25aafbacad2dbb010a65158bc8b08d41ca9b788ff050189d"
+
+[[files]]
+file = "kubejs/assets/tfmg/lang/en_us.json"
+hash = "d4448047722cabdec87b70e9ba63d9c9eac0af4352b46e317252b798dcd4ecda"
 
 [[files]]
 file = "kubejs/client_scripts/.gitkeep"
@@ -223,6 +231,18 @@ hash = "d194b56221756690aed380bf043c5bf9cb14ce36f28bd5cfb61d248340c00fe1"
 [[files]]
 file = "kubejs/data/cgs/neoforge/biome_modifier/add_lead_ore.json"
 hash = "d47a9327525c734da68f9c5659e4ae15157e8d2cb691c9b910b00e572825cb6e"
+
+[[files]]
+file = "kubejs/data/create_the_air_wars/recipe/aim9x_mechanical_crafting.json"
+hash = "23e48986388c4c9bf2ca4b15b9555c48e472bf902a61bb7e2c0ce01d1bd1b2ee"
+
+[[files]]
+file = "kubejs/data/create_the_air_wars/recipe/tomahawk_mechanical_crafting.json"
+hash = "3c2685a9b902f368bc6eb0d251aa84da8e8236370c8b33209c456632577dc5bb"
+
+[[files]]
+file = "kubejs/data/create_the_air_wars/recipe/x25ml_mechanical_crafting.json"
+hash = "a61ff1d62ab70d562d691e37de0ec676aea7b41656553237f712f19a52704209"
 
 [[files]]
 file = "kubejs/data/createnuclear/neoforge/biome_modifier/lead_ore.json"
@@ -331,6 +351,10 @@ hash = "b50b128a0f3e0182f73122332d5b4c1f1fda5a2076af472de2b9ece734f17862"
 [[files]]
 file = "kubejs/server_scripts/waystones_quantum.js"
 hash = "3a9ab0d9a39c7f32d54ff22f3e2e563816df328fb21b9c06393dea8276b49060"
+
+[[files]]
+file = "kubejs/server_scripts/wire_unification.js"
+hash = "a26acb79ff1a21d799032dd9d64243273d926c3f0d44943033a5f0c3f25b8045"
 
 [[files]]
 file = "kubejs/startup_scripts/createwars_items.js"

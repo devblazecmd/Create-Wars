@@ -38,6 +38,21 @@ have "steel" or "lead" that didn't work in another mod's recipe.
   recipe event; fixed the same day.
 - Quests: the Infantry "Steel" and "Lead" quests ask for TFMG's. `check_quest_refs.py` bans the hidden IDs.
 
+## Wire and spool (2026-11-22)
+Owner: "pick one set to be primary" -> **Create Crafts and Additions** (chosen over TFMG; recommended).
+- **Copper wire:** C&A's, made only by the Rolling Mill (copper sheet). TFMG's ingot-stonecutter wire
+  (`tfmg:copper_wire_from_ingots_copper_stonecutting`) and The Air War's crafted `create_the_air_wars:wires` are
+  removed and hidden. Inputs take `#c:wires/copper`. Script: `pack/kubejs/server_scripts/wire_unification.js`.
+  - The Air War's AIM-9X, Tomahawk and X-25ML are Create mechanical-crafting recipes, which `replaceInput` doesn't
+    reach, so they're overridden as data files in `pack/kubejs/data/create_the_air_wars/recipe/` with the key
+    changed to the tag.
+- **Empty spool:** C&A's (iron sheets + iron rods). TFMG's wooden empty spool is removed and hidden; TFMG's copper,
+  aluminum and constantan spools are wound on the C&A spool.
+- **Copper spools: both kept.** Each is the wiring tool for its own mod's network (C&A connectors vs TFMG cable
+  insulators) and TFMG uses its own as a part. Renamed with resource-pack lang overrides in `pack/kubejs/assets/`:
+  "Copper Spool (C&A)" and "Copper Spool (TFMG Cable)".
+- Aluminum and constantan wire (TFMG only) and iron, gold and electrum wire (C&A only) had no duplicates.
+
 ## Decisions log
 - 2026-11-21: Steel unified (owner chose "all interchangeable").
 - 2026-11-21: **Cheap early steel stays** (owner). CBC's and Gunsmithing's mixer recipes still work, so

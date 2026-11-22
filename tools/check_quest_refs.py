@@ -52,6 +52,8 @@ BANNED |= {"createbigcannons:steel_ingot", "createbigcannons:steel_block",
            # lead (2026-11-22): quests use TFMG's
            *{f"{m}:{f}" for m in ("cgs", "createnuclear") for f in ("lead_ingot", "lead_nugget", "lead_block",
              "raw_lead", "raw_lead_block", "lead_ore", "deepslate_lead_ore")}}
+# wire_unification.js (2026-11-22): C&A wire + spool are primary
+BANNED |= {"tfmg:copper_wire", "create_the_air_wars:wires", "tfmg:empty_spool"}
 # nuclear_weapons.js: every CBC Enhanced Shells item is hidden except the four nukes.
 CBCES_KEEP = {"cbc_enhanced_shells:nuke_shell", "cbc_enhanced_shells:nuke_shell_mk2",
               "cbc_enhanced_shells:h_bomb_shell", "cbc_enhanced_shells:h_bomb_mini_shell"}
