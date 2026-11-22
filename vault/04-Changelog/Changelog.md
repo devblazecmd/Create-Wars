@@ -357,4 +357,6 @@ this tells you *why*, in prose, per pack version.
   Open: Illager Invasion's Imbuing Table (over-max enchants) flagged to owner.
 - **Create buildings and vein mining (2026-11-22):** Create: Structures Arise, Create: Let The Adventure Begin, Create Aeronautics
   Structures; FTB Ultimine. Welcome chapter: "Vein Mining" and "Loot Is Per Player" info quests. 562 quests, clean boot.
+- **Enchants and trims (2026-11-22):** More Enchants (21 enchantments; PvP concerns flagged in its note) and Functional Armor Trim
+  (config shipped). Clean boot.
 
