@@ -277,6 +277,90 @@ file = "kubejs/data/createwars/ambushes/quest_warband.json"
 hash = "95c23a347f43ca4384681523874a0eca7aa99cdf476bb65c71e95eddf1211dbe"
 
 [[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/beach.json"
+hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/christmas.json"
+hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/dark_forest.json"
+hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/desert.json"
+hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/desert_oasis.json"
+hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/jungle.json"
+hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/jungle_tree.json"
+hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/mesa.json"
+hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/mesa_fortified.json"
+hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/mountain.json"
+hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/mountain_alpine.json"
+hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/mushroom.json"
+hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/plains.json"
+hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/plains_fortified.json"
+hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/savanna.json"
+hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/savanna_na.json"
+hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/snowy.json"
+hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/swamp.json"
+hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/swamp_fortified.json"
+hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/taiga.json"
+hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/taiga_fortified.json"
+hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
+
+[[files]]
 file = "kubejs/data/minecraft/loot_table/entities/enderman.json"
 hash = "ac53ec9b0d4bc4be556a6920a650d4b15e08468aefd4c3be65e72caf60ba1490"
 
