@@ -10,7 +10,7 @@ last_verified: "2026-11-21 (client boot into existing world; new terrain needs a
 **Source:** [Modrinth](https://modrinth.com/mod/tectonic)
 
 ## Role in Create Wars
-Terrain shaping: much taller mountains, deeper valleys, real rivers. Works with Terralith. Big terrain for [[Create Aeronautics]] flying; peaks matter for [[Thick Air]] (ceiling raised to Y=256 for it).
+Terrain shaping: much taller mountains, deeper valleys, real rivers. Works with Terralith. Big terrain for [[Create Aeronautics]] flying; peaks matter for [[Thick Air]] (ceiling was raised to Y=256 for it, then set back to Y=192 on 2026-11-22, so the tallest peaks need air gear).
 
 ## Dependencies
 - Hard requires: [[Lithostitched]] (crashes with `NoClassDefFoundError: ...LithostitchedBuiltInRegistries` if missing)

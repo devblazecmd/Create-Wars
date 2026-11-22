@@ -39,6 +39,8 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - [[NTGL NukaTeam's Gun Lib|NTGL]] — dependency gun library (dep: [[GeckoLib]]) *(testing)*
 
 ## PvE threat
+- [[Illager Invasion]] — new illager types + Invoker boss, join raids; Illager Forts, Labyrinths (dep: [[Puzzles Lib]]) *(testing, added 2026-11-22)*
+- [[Create Pillager Arise|Create: Pillager Arise]] — 10 Create-built pillager structures (blimp, cathedral, fortress gate, village) *(testing, added 2026-11-22)*
 - [[Trigger Mobs]] — mobs spawn with and fire Gunsmithing/NTGL guns *(testing)*
 - [[Improved Mobs]] — mob gear/stat scaling, block breaking (dep: [[TenshiLib]]) *(testing)*
 - [[Enhanced AI]] — breaching creepers, mining zombies, sniping skeletons (dep: [[InsaneLib]]) *(testing,
@@ -109,6 +111,7 @@ all entries below except the open questions/rejected sections are `#mod/status/a
   the Sophisticated Controller still have recipes. See [[../03-Design/Quest Book|Quest Book]] decisions log.
 
 ## World generation (added 2026-11-21)
+- [[ChoiceTheorem's Overhauled Village|CTOV]] — biome-styled villages and pillager outposts; `side` fixed to both *(testing, added 2026-11-22)*
 - [[Terralith]] + [[Tectonic]] — vanilla-block biomes plus big terrain (dep: [[Lithostitched]]) *(testing)*
 - [[Biomes O' Plenty]] — 50+ biomes with new woods (deps: [[TerraBlender]], [[GlitchCore]]) *(testing)*
 - [[Incendium]] — Nether biomes and structures *(testing)*

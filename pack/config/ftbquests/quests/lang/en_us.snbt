@@ -356,9 +356,9 @@
 	]
 	"quest.0DE91D880C27E0AF.title": "Stock"
 	"quest.0E100C9DE8E82065.quest_desc": [
-		"&6Thick Air&r: you slowly run out of air &cbelow Y=0&r, &cabove Y=256&r, and in the Nether."
+		"&6Thick Air&r: you slowly run out of air &cbelow Y=0&r, &cabove Y=192&r, and in the Nether."
 		"The End has no air at all. A &aBacktank&r with a &aDiving Helmet&r is your air supply."
-		"&cPilots:&r flying above Y=256 needs this too."
+		"&cPilots:&r flying above Y=192 needs this too."
 	]
 	"quest.0E100C9DE8E82065.title": "Copper Backtank"
 	"quest.0E5FBD9105AE2934.quest_desc": [
@@ -448,6 +448,10 @@
 		"A raid's heavy armor."
 	]
 	"quest.11FDB45C5A84681B.title": "Ravager"
+	"quest.1298DB0145DC3F6E.quest_desc": [
+		"The Necromancer's undead illagers."
+	]
+	"quest.1298DB0145DC3F6E.title": "Surrendered"
 	"quest.12A25766728BDFA9.quest_desc": [
 		"Moves items between a moving train (or ship, or vehicle) and storage at a station."
 		"Place one on the train and one facing it on the platform. Supply runs to the front."
@@ -506,6 +510,10 @@
 		"Roll a copper ingot."
 	]
 	"quest.14ED0DFC2655F555.title": "Copper Rod"
+	"quest.14F4496BA65A8740.quest_desc": [
+		"A fire caster. Found at Firecaller huts."
+	]
+	"quest.14F4496BA65A8740.title": "Firecaller"
 	"quest.14F99FFA53D598FD.quest_desc": [
 		"Where the round goes in: heavy plates, steel plates, steel blocks and a &aSteel"
 		"Mechanism&r (mechanical crafting)."
@@ -863,6 +871,10 @@
 		"Clock, iron and redstone: bursts after a set time, for airbursts."
 	]
 	"quest.27B83168473D2123.title": "Timed Fuze"
+	"quest.27BEB29B0CACBE8F.quest_desc": [
+		"A magic caster. Found at Sorcerer huts."
+	]
+	"quest.27BEB29B0CACBE8F.title": "Sorcerer"
 	"quest.27C7E3679A99E65E.quest_desc": [
 		"&6Create: Smog&r: anything that burns pollutes its chunk. Pollution here is handled &aonly"
 		"with Create machines&r. Stack smokestacks on a source: &a12 tall&r sends most of the smoke"
@@ -1122,6 +1134,12 @@
 		"&aEmpty Blaze Burner&r from &airon sheets&r and &anetherrack&r."
 	]
 	"quest.3188AB5143C724A6.title": "Empty Blaze Burner"
+	"quest.31C45B812830C2D5.quest_desc": [
+		"&6Illager Invasion&r: a whole new illager army. They join raids, and guard new structures:"
+		"&cIllager Forts&r, &cLabyrinths&r, &cIllusioner Towers&r, and Firecaller and Sorcerer huts."
+		"Start with the &aProvoker&r."
+	]
+	"quest.31C45B812830C2D5.title": "Illager Invasion"
 	"quest.31C9C301A68F80A3.quest_desc": [
 		"Axes. Shield up."
 	]
@@ -1176,6 +1194,10 @@
 		"&aClick the checkmark when you're ready&r (quest edit mode OFF): the attack starts on the spot. Fight near your base."
 	]
 	"quest.3575C6B29A7007D0.title": "Wave 5: Armored Drill Car"
+	"quest.3578897E87BC07AF.quest_desc": [
+		"A spellcaster scholar of the illagers."
+	]
+	"quest.3578897E87BC07AF.title": "Archivist"
 	"quest.3583295B288EBDC6.quest_desc": [
 		"Crushed end stone: part of the levitite process (see JEI)."
 	]
@@ -1323,6 +1345,10 @@
 		"Settle wastewater in a basin with a mixer."
 	]
 	"quest.3D42DEA97763E9D2.title": "Clarified Water"
+	"quest.3DDDAE7916041D79.quest_desc": [
+		"A shield-bearing brute. Get around the shield."
+	]
+	"quest.3DDDAE7916041D79.title": "Basher"
 	"quest.3E2D23E1D3A0EBE4.quest_desc": [
 		"Everything starts with rotation. Head to the &6Andesite Age&r."
 	]
@@ -1426,6 +1452,10 @@
 		"Outputs redstone by height: the basis of altitude hold."
 	]
 	"quest.42A23A4ACF5E0DBA.title": "Altitude Sensor"
+	"quest.42A312B2143E049C.quest_desc": [
+		"Throws hatchets from range."
+	]
+	"quest.42A312B2143E049C.title": "Marauder"
 	"quest.42E06B591264712B.quest_desc": [
 		"Copper, iron nuggets and guncotton. Guards a harbor."
 	]
@@ -1660,6 +1690,10 @@
 		"and Napalm needs it."
 	]
 	"quest.4FC33F44C920C77C.title": "Gasoline"
+	"quest.4FC97BFD3583B16A.quest_desc": [
+		"The heavy infantry of the invasion."
+	]
+	"quest.4FC97BFD3583B16A.title": "Inquisitor"
 	"quest.4FF0B24C57E15BD3.quest_desc": [
 		"Andesite alloy, iron sheet, flint and steel and a stripped log: your first gun."
 	]
@@ -1956,6 +1990,10 @@
 		"Mechanical crafting: brass and steel sheets, andesite alloy and a stripped log."
 	]
 	"quest.5F57791FE7C5E54E.title": "Shotgun"
+	"quest.5FC5AF17035E86EE.quest_desc": [
+		"Throws potions. Kill it before it supports the rest."
+	]
+	"quest.5FC5AF17035E86EE.title": "Alchemist"
 	"quest.60A8E36CAE45E950.quest_desc": [
 		"&eThis pack's own recipe:&r &aCrushing Wheels&r crushing &aNether Bricks&r (the block) have a"
 		"&a5% chance&r to drop &aNetherite Scrap&r. Netherrack is endless, so this is renewable."
@@ -2212,6 +2250,10 @@
 		"and throttle with redstone."
 	]
 	"quest.6DA7A77B9BBA1369.title": "Smart Propeller"
+	"quest.6DC04ED3ECE631A7.quest_desc": [
+		"&cBoss:&r the Invoker leads the invasion, with a boss bar and fangs. Bring a team."
+	]
+	"quest.6DC04ED3ECE631A7.title": "The Invoker"
 	"quest.6DFA7706AC394262.quest_desc": [
 		"Zinc: the missile body that carries the warhead."
 	]
@@ -2473,6 +2515,10 @@
 		"An iron pressurizer, industrial iron and a water bucket. Measures depth by pressure."
 	]
 	"quest.78B7A9898E0C4DA1.title": "Pressure Barometer"
+	"quest.7920789DD9C2605F.quest_desc": [
+		"Raises the dead as Surrendered. Kill the caster first."
+	]
+	"quest.7920789DD9C2605F.title": "Necromancer"
 	"quest.792CC832BC6F5671.quest_desc": [
 		"Mechanical crafting: steel, brass and steel sheets, andesite alloy, a cogwheel and a log."
 	]
@@ -2556,7 +2602,9 @@
 	]
 	"quest.7B757D6F1FE22F44.title": "Small Bomb"
 	"quest.7C1A8620A78BA4B6.quest_desc": [
-		"Pillagers patrol and raid villages with crossbows."
+		"Pillagers patrol and raid villages with crossbows. &6CTOV&r outposts are styled to each"
+		"biome, and &6Create: Pillager Arise&r adds mechanized pillager bases: towers, camps, a"
+		"fortress gate, a cathedral, even a pillager village and a blimp."
 	]
 	"quest.7C1A8620A78BA4B6.title": "Raiders"
 	"quest.7C25C2287D94AE08.quest_desc": [

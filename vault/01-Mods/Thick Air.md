@@ -52,3 +52,6 @@ None logged yet.
   Below Y=0, the Nether and the End are unchanged.
 - 2026-11-21 (owner): ceiling raised again **Y=192 → Y=256** after adding [[Tectonic]] + [[Terralith]] terrain. Only the
   tallest peaks and high flights need oxygen now. Quest text updated.
+- 2026-11-22 (owner): ceiling back down **Y=256 -> Y=192**. With [[Tectonic]] terrain, the highest peaks now sit in thin air,
+  so climbing them needs a backtank or air bladders.
+

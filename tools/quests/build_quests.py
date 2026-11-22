@@ -1716,11 +1716,39 @@ CHAPTERS = [
             "keep moving.",
         ], [kill("minecraft:zombie", 25)], xp=40),
         Q("raiders", "Raiders", 0, 0, [
-            "Pillagers patrol and raid villages with crossbows.",
+            "Pillagers patrol and raid villages with crossbows. &6CTOV&r outposts are styled to each",
+            "biome, and &6Create: Pillager Arise&r adds mechanized pillager bases: towers, camps, a",
+            "fortress gate, a cathedral, even a pillager village and a blimp.",
         ], [kill("minecraft:pillager", 10)], xp=30),
         Q("vindicator", "Vindicators", 0, 0, ["Axes. Shield up."], [kill("minecraft:vindicator", 5)], xp=15),
         Q("evoker", "Evoker", 0, 0, ["Fangs and vexes. Drops a Totem of Undying."], [kill("minecraft:evoker")], xp=25),
         Q("ravager", "Ravager", 0, 0, ["A raid's heavy armor."], [kill("minecraft:ravager")], xp=25),
+        # Illager Invasion (owner 2026-11-22: "more pillager things"). Entity IDs from the live registry.
+        Q("invasion", "Illager Invasion", 0, 0, [
+            "&6Illager Invasion&r: a whole new illager army. They join raids, and guard new structures:",
+            "&cIllager Forts&r, &cLabyrinths&r, &cIllusioner Towers&r, and Firecaller and Sorcerer huts.",
+            "Start with the &aProvoker&r.",
+        ], [kill("illagerinvasion:provoker", 3)], xp=40),
+        Q("basher", "Basher", 0, 0, ["A shield-bearing brute. Get around the shield."],
+          [kill("illagerinvasion:basher", 3)], xp=15),
+        Q("marauder", "Marauder", 0, 0, ["Throws hatchets from range."], [kill("illagerinvasion:marauder", 3)], xp=15),
+        Q("inquisitor", "Inquisitor", 0, 0, ["The heavy infantry of the invasion."],
+          [kill("illagerinvasion:inquisitor", 2)], xp=25),
+        Q("alchemist", "Alchemist", 0, 0, ["Throws potions. Kill it before it supports the rest."],
+          [kill("illagerinvasion:alchemist", 2)], xp=20),
+        Q("firecaller", "Firecaller", 0, 0, ["A fire caster. Found at Firecaller huts."],
+          [kill("illagerinvasion:firecaller", 2)], xp=20),
+        Q("sorcerer", "Sorcerer", 0, 0, ["A magic caster. Found at Sorcerer huts."],
+          [kill("illagerinvasion:sorcerer", 2)], xp=20),
+        Q("archivist", "Archivist", 0, 0, ["A spellcaster scholar of the illagers."],
+          [kill("illagerinvasion:archivist", 2)], xp=20),
+        Q("necromancer", "Necromancer", 0, 0, ["Raises the dead as Surrendered. Kill the caster first."],
+          [kill("illagerinvasion:necromancer", 2)], xp=25),
+        Q("surrendered", "Surrendered", 0, 0, ["The Necromancer's undead illagers."],
+          [kill("illagerinvasion:surrendered", 5)], xp=15),
+        Q("invoker", "The Invoker", 0, 0, [
+            "&cBoss:&r the Invoker leads the invasion, with a boss bar and fangs. Bring a team.",
+        ], [kill("illagerinvasion:invoker")], xp=150, levels=10, rolls=[("war_trophy", 1)], shape="hexagon"),
         Q("ambush", "Ambush!", 0, 0, [
             "&6Create Aeronautics: AMBUSH&r: enemies attack in planned &cambushes&r and &cinvasions&r,",
             "including &cairships, armored cars and anti-air&r built with the same Create tech you",
@@ -1983,14 +2011,14 @@ CHAPTERS = [
     ]),
     # ----------------------------------------------------------------------------------------------
     # Pollution and Air (owner 2026-11-21). Create: Smog is the ONLY way to handle pollution (PoTR's own
-    # tools are removed by kubejs potr_tools_removed.js). Thick Air: no air below Y=0 / above Y=256 (pack config).
+    # tools are removed by kubejs potr_tools_removed.js). Thick Air: no air below Y=0 / above Y=192 (pack config).
     dict(slug="pollution", group="infrastructure", title="Pollution and Air",
          subtitle="Create: Smog cleans up your factory; bring oxygen up high and deep down",
          icon="smog:air_scrubber", unlock=[("welcome", "next")], quests=[
         Q("backtank", "Copper Backtank", 0, 0, [
-            "&6Thick Air&r: you slowly run out of air &cbelow Y=0&r, &cabove Y=256&r, and in the Nether.",
+            "&6Thick Air&r: you slowly run out of air &cbelow Y=0&r, &cabove Y=192&r, and in the Nether.",
             "The End has no air at all. A &aBacktank&r with a &aDiving Helmet&r is your air supply.",
-            "&cPilots:&r flying above Y=256 needs this too.",
+            "&cPilots:&r flying above Y=192 needs this too.",
         ], [item("create:copper_backtank")], xp=40),
         Q("diving_helmet", "Copper Diving Helmet", 0, 0, [
             "Wear it with the backtank to breathe from it.",
@@ -2480,13 +2508,19 @@ LAYOUTS = {
         gate=None),
     "enemy": dict(
         main=[("first_blood", -6, 1.5), ("skeleton", 1, 2.0), ("creeper", 8, 2.0), ("armed", 15, 2.0),
-              ("raiders", 22, 2.0), ("ambush", 29, 2.0), ("nether", 36, 2.0), ("wither", 43, 2.0)],
+              ("raiders", 22, 2.0), ("ambush", 29, 2.0), ("nether", 36, 2.0), ("wither", 43, 2.0),
+              ("invasion", 36, 2.0, 11), ("invoker", 45, 2.25, 11)],
         hubs={"first_blood": dict(top=["spider", "husk"], bottom=["zombie_villager"]),
               "skeleton": dict(top=["stray"], bottom=["bogged"]),
               "creeper": dict(top=["enderman"], bottom=["witch"]),
               "raiders": dict(top=["vindicator", "evoker"], bottom=["ravager"]),
               "nether": dict(top=["wither_skeleton", "ghast"], bottom=["piglin_brute"]),
-              "wither": dict(top=["ender_dragon"], bottom=["elder_guardian", "warden"])},
+              "wither": dict(top=["ender_dragon"], bottom=["elder_guardian", "warden"]),
+              "invasion": dict(top=["basher", "marauder"], bottom=["firecaller", "necromancer"])},
+        chains={"basher": ["inquisitor"], "marauder": ["alchemist"], "firecaller": ["sorcerer", "archivist"],
+                "necromancer": ["surrendered"]},
+        # Illager Invasion sits on a second row under Raiders, so Ambush (Defend Your Home's unlock) doesn't move
+        main_deps={"invasion": ["raiders"]},
         gate=None),
     "defense": dict(
         main=[("wave_scouts", -6, 1.5), ("wave_raiders", 0, 1.5), ("wave_warband", 6, 1.75),

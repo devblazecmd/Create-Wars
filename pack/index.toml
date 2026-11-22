@@ -62,7 +62,7 @@ hash = "bb88d6ff4b02d346084c070ec0d035fec4c0a6e71d8ed94bee841d859273977d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/enemy.snbt"
-hash = "f305ce7dc10ac721cb5232e6ce06e2c2c82faf8553dfd4bce20ee9d8f961dfe7"
+hash = "bc84066fefbe18c91b5c86bb9c5c11cf9160ec40eb6fd873c33c1aad1b68c3d8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/food.snbt"
@@ -122,7 +122,7 @@ hash = "59e6f33cb9b5b2593319a35b8e70e99d32e8834c38f7206fa7ec59de1f16c4d9"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "32c2e37603b99ac6f9648324e5233dd7228245ec6d79d7aabc496cef87a32be8"
+hash = "34765176666572e062bf1344eaec220925a6eea59d2d5537370ab58d955f280f"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/war_spoils_1.snbt"
@@ -158,7 +158,7 @@ hash = "e3f5063183ba49252644898ce1e3eadc002d2390d5734d1c68cec0fbaf3e0ad3"
 
 [[files]]
 file = "config/thick_air-common.toml"
-hash = "7acde0a4c60e95b2648fafdd65b053e724e23cd45eac5d8fc261ecb2db4269be"
+hash = "04ab519ab3719806020c0a229d563ac0245bafe604c8c4a528ff3e9108c2fa00"
 
 [[files]]
 file = "config/waystones-common.toml"
@@ -560,6 +560,11 @@ hash = "a6ee1697ee2f3a890c04c30a141de645b2903c164eb0e1ccd2a61a22bd2e9a3e"
 metafile = true
 
 [[files]]
+file = "mods/create-pillager-arise.pw.toml"
+hash = "39636876dcdbd0115b27812ed33ad271bd26ce33dc93429d5cf26eab4cf82c06"
+metafile = true
+
+[[files]]
 file = "mods/create-radar-fire-arc.pw.toml"
 hash = "40b2272abd6a0914ce2fa78836e9ea841a2d82c02a237100afd0297f8992ab6b"
 metafile = true
@@ -627,6 +632,11 @@ metafile = true
 [[files]]
 file = "mods/createnuclear.pw.toml"
 hash = "70a3ec14e121837aefc0c7f32d934bdf50d214d5a8d4c0020ce2d7428a22a051"
+metafile = true
+
+[[files]]
+file = "mods/ct-overhaul-village.pw.toml"
+hash = "c5fca9eb7028486e6d9f71823077465e22946031968f8cc0ede491d317978394"
 metafile = true
 
 [[files]]
@@ -730,6 +740,11 @@ hash = "a7e9187482cf225fbdb3769e860989040d41508106c4672c49439ed4f0d94af1"
 metafile = true
 
 [[files]]
+file = "mods/illager-invasion.pw.toml"
+hash = "bf9baef8bb1145e580ae8ee57b285e22838e943c56a96ffb424fd02bf99c468e"
+metafile = true
+
+[[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "4601b9be31b6e131dca8a148c974d015444bcac7c82fcb66fbd8751a67933a5d"
 metafile = true
@@ -821,6 +836,11 @@ metafile = true
 [[files]]
 file = "mods/pollution-of-the-realms.pw.toml"
 hash = "c1a68cdd244e00eb76de9ad3c33e8043ba4bf7cda2c67ae60fcd6e59a9bbe9f4"
+metafile = true
+
+[[files]]
+file = "mods/puzzles-lib.pw.toml"
+hash = "d465abcc806c0d4fdeefb6a5e774cca4fff0ffd27d7c75954ab4688f4c9eaf05"
 metafile = true
 
 [[files]]

@@ -352,4 +352,7 @@ this tells you *why*, in prose, per pack version.
   Air War's wire and TFMG's empty spool hidden and redirected. Both copper spools kept (each wires its own network) and renamed.
   Also: quest syncs now force-copy the quest folder after closing the game ([[../02-Bugs/Running game overwrites synced quest book]]).
 - **Lootr (2026-11-22):** per-player structure loot. Item-frame conversion off so End City elytras still get removed. Clean boot.
+- **Villages and pillagers (2026-11-22):** CTOV (side fixed to both), Create: Pillager Arise, Illager Invasion (+ Puzzles Lib). Know
+  Your Enemy gains an Illager Invasion row (11 quests, Invoker boss). Thick Air ceiling back to Y=192 (owner). 560 quests, clean boot.
+  Open: Illager Invasion's Imbuing Table (over-max enchants) flagged to owner.
 
