@@ -1340,6 +1340,9 @@ CHAPTERS = [
             "A boss that destroys blocks. Fight it far from your base.",
         ], [kill("minecraft:wither")], xp=100),
         Q("ender_dragon", "The Ender Dragon", 0, 0, [
+            "&6Stellarity&r: the dragon is &cnot there when you arrive&r. You summon it: place &a4 End",
+            "Crystals&r on the 4 sparkling spots around the exit portal at the center of the main island.",
+            "It's a real boss: 300 health, armor, and invulnerable while any crystal stands.",
             "&cNo air in the End&r: bring backtanks and air bladders.",
         ], [kill("minecraft:ender_dragon")], xp=100),
         Q("warden", "The Warden", 0, 0, ["Deep dark. Probably best avoided."], [kill("minecraft:warden")], xp=100),

@@ -12,6 +12,14 @@ last_verified: "2026-11-21 (client boot into existing world; new terrain needs a
 ## Role in Create Wars
 Full End overhaul (data pack packaged as a mod): new terrain and biomes, items and weapons, mobs, a boss (the Empress), the Altar of the Accursed, redesigned **strongholds**. Owner chose it alone (not with Nullscape) on 2026-11-21. Don't add it to an already-generated End.
 
+## The dragon fight (confirmed 2026-11-21)
+Owner reported "im not seeing a ender dragon". **Expected Stellarity behavior, not a bug.** Stellarity turns the vanilla
+fight off (level.dat `DragonFight.DragonKilled: true` right after first entry) and runs its own through
+`far_end:structures/exit_portal/main`. **There's no dragon until it's summoned:** place **4 End Crystals** on the 4
+sparkling (`wax_off` particle) spots around the exit portal, at (0,62.5,-4), (-4,62.5,0), (0,62.5,4) and (4,62.5,0).
+`stellarity:mobs/dragon/spawn/summon` then spawns a 300-HP armored dragon (tags `fe.ender_dragon`). The Know
+Your Enemy dragon quest explains this. Admin helper: `/function stellarity:_cmd/ender_dragon.kill`.
+
 ## Dependencies
 - Hard requires: none
 

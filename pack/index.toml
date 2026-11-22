@@ -110,7 +110,7 @@ hash = "59e6f33cb9b5b2593319a35b8e70e99d32e8834c38f7206fa7ec59de1f16c4d9"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "5d188b5bb6b03b944212e9b5c623c81117eaaca6f978379f81c5c26d438b0acf"
+hash = "5c22f755e357d2121696e63066e99d45999dfdceb165bba59d5150d42616bb25"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/war_spoils_1.snbt"
