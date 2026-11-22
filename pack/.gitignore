@@ -4,3 +4,5 @@ mods/*.jar
 resourcepacks/*.zip
 shaderpacks/*.zip
 *.disabled
+# raw jars that are part of the pack (indexed by hash, not packwiz metadata) must be committed
+!mods/lootedit-1.0.0.jar
