@@ -16,7 +16,7 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - [[Loot Edit]] — **custom** loot-table export/override tool (needs NeoForge >=21.1.267) *(testing)*
 
 ## Combat
-- [[Functional Armor Trim]] — trims give armor/speed/etc. bonuses by material *(testing, added 2026-11-22)*
+- ~~[[Functional Armor Trim]]~~ — removed 2026-11-22: crashes dedicated servers (loads a client class)
 - [[More Enchants]] — 21 extra enchantments (several strong in PvP; flagged) *(testing, added 2026-11-22)*
 - [[Create Big Cannons]] — multiblock artillery, autocannons, projectiles/fuzes; explicitly built for PvP
 - [[Ritchie's Projectile Library]] — dependency, required by Create Big Cannons

@@ -1,5 +1,5 @@
 ---
-tags: [mod/status/testing, mod/category/combat, mc-version/1.21.1, loader/neoforge]
+tags: [mod/status/removed, mod/category/combat, mc-version/1.21.1, loader/neoforge]
 mod_id: functional-armor-trim
 pack_version_pinned: "1.21-1 (functionalarmortrim-neoforge-1.21-1.jar)"
 last_verified: "2026-11-22 (client boot into world, clean load)"
@@ -27,3 +27,9 @@ None in the boot log.
 ## Config decisions
 Defaults kept; shipped so the server and every client use the same values. PvP note: a full netherite-trimmed set adds
 +8 armor on top of the armor itself.
+
+## Removed 2026-11-22
+**Crashes dedicated servers.** On the first UltraServers boot, `FunctionalArmorTrimNeoForge.attributes` (line 80) loaded
+`net.minecraft.client.multiplayer.ClientLevel` during Improved Mobs' equipment scoring, and a dedicated server can't load
+client classes ("Attempted to load class ... for invalid dist DEDICATED_SERVER"). Single-player never showed it. The mod
+adds its own attributes, so it can't be server-skipped either. Removed with its config.
