@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cbcmoreshells:shelless_incendiary_he_shell",
+          "functions": [
+            {
+              "function": "minecraft:copy_name",
+              "source": "block_entity"
+            },
+            {
+              "function": "minecraft:copy_components",
+              "source": "block_entity",
+              "include": [
+                "createbigcannons:tracer",
+                "createbigcannons:fuze"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "cbcmoreshells:blocks/shelless_incendiary_he_shell"
+}

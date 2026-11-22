@@ -1,0 +1,16 @@
+{
+  "format": "easy",
+  "name": "Raiding Party (quest)",
+  "description": "Started by the Know Your Enemy 'Raiding Party' quest (FTB Quests tag ambush:trigger:createwars:quest_raiding_party). Never fires on its own: chance 0.",
+  "cooldown_group": "createwars_quest_raiding_party",
+  "preset": "ground",
+  "chance": 0.0,
+  "cooldown_seconds": 600,
+  "distance": 24,
+  "mobs": [
+    { "mob": "minecraft:pillager", "amount": 6 },
+    { "mob": "minecraft:vindicator", "amount": 2 }
+  ],
+  "sound": "minecraft:event.raid.horn",
+  "weight": 1
+}
