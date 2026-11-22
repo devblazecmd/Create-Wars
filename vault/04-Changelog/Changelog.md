@@ -359,4 +359,6 @@ this tells you *why*, in prose, per pack version.
   Structures; FTB Ultimine. Welcome chapter: "Vein Mining" and "Loot Is Per Player" info quests. 562 quests, clean boot.
 - **Enchants and trims (2026-11-22):** More Enchants (21 enchantments; PvP concerns flagged in its note) and Functional Armor Trim
   (config shipped). Clean boot.
+- **Server kit (2026-11-22):** pushed to GitHub; `server/` start scripts and setup guide; packs auto-update from the public repo
+  ([[../03-Design/Server Deployment]]). Owner to make the repo public and pick a host.
 
