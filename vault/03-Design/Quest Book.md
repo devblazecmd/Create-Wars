@@ -323,3 +323,8 @@ No unit tests exist for a quest book. Verification is layered:
   tools are not quested (disabled). 21 chapters, 460 quests.
 - Possible later: AMBUSH's FTB Quests hook (quest tag `ambush:trigger:<id>` starts an ambush when the quest
   starts; tagged tasks can be auto-completed). Not used yet; needs specific ambush IDs and testing.
+- 2026-11-21: **Portable Storage Interface** back in the book, in Rail Warfare (Train Controls hub) (owner
+  approved the recommendation). Thick Air quest text updated to Y=192. Infantry steel quest now asks for
+  TFMG steel ([[Steel Unification]]). Armored Hatch quest replaced with **Sandbags**
+  ([[../02-Bugs/RHA hatch is not a registered item]]). `check_quest_refs.py` now uses the live registry export.
+  Kill tasks confirmed: all 23 survived an in-game save of the book. 461 quests.

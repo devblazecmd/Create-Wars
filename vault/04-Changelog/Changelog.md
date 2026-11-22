@@ -302,3 +302,9 @@ this tells you *why*, in prose, per pack version.
   (filter frames, vacuum bags and tubes, respirators, aerometer) disabled via KubeJS. Thick Air boot-tested clean.
 - **Quest book: Pollution and Air + Know Your Enemy (2026-11-21):** kill-task support added. 21 chapters, 460 quests,
   0 unknown item/entity IDs.
+- **Recommendations pass (2026-11-21):** Thick Air ceiling Y=192; Ambush caps (natural 8/player, 16 total;
+  invasions 12 ships, 80 mobs); [[../03-Design/Steel Unification|steel unified]] on TFMG steel; TFMG firebox, coke oven and
+  blast furnace now pollute (Smog); PSI quest added back; Armored Hatch quest fixed
+  ([[../02-Bugs/RHA hatch is not a registered item]]); quest checker uses the live registry; existing log
+  noise logged ([[../02-Bugs/Cross-mod compat noise on server boot]]). Decisions: cannons **can** raid claims
+  (FTB Chunks already blocks ordinary explosions in claims); cheap early steel stays.

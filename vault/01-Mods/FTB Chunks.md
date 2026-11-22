@@ -31,7 +31,14 @@ Added via `packwiz curseforge add ftb-chunks-forge` on 2026-09-01; resolved to `
 None logged yet.
 
 ## Config decisions
-None yet. Claim rules need to explicitly account for airborne/moving Create contraptions
+- 2026-11-21 (owner): **Cannons can raid claimed bases.** It's a war pack: walls are defense and artillery
+  is offense. Defaults kept: `team_prop_defaults.def_allow_explosions: false` and
+  `protect_unknown_explosions: true`, so ordinary explosions (creepers, TNT, Warnautics bombs) **don't**
+  damage claims. [[Create Big Cannons]] shells break blocks on **impact** (penetration), which should get
+  through claim protection. **Not yet confirmed in game:** fire a cannon at a claimed wall and record what
+  breaks. If bombs should also raid, set `def_allow_explosions: true` (owner decision).
+
+Earlier note: claim rules need to explicitly account for airborne/moving Create contraptions
 ([[Create Aeronautics]], [[CBC Aeronautics Missiles]]) crossing claim boundaries — default chunk-protection
 mods aren't always contraption-aware.
 

@@ -50,7 +50,12 @@ declares no dependencies, so the table above was read from the jar's `neoforge.m
 None in the boot log. Not playtested yet.
 
 ## Config decisions
-None yet; `config/ambush-common.toml` is at default and is **not** shipped in `pack/config/`.
+- 2026-11-21 (owner): `pack/config/ambush-common.toml` now ships with the pack.
+  `maxNaturalActiveShipsPerPlayer` 64 → **8**, `maxNaturalActiveShipsGlobal` 64 → **16**,
+  `invasionMaxSimultaneousShips` 50 → **12**, `invasionMaxLiveEntities` 200 → **80**. Everything else is default.
+  Reason: each ship is a Sable physics body, and these defaults were sized for single-player.
+
+Older note (before the caps):
 **Open (performance and balance):** the defaults allow 64 natural airships per player and 64 globally,
 and up to 50 ships and 200 entities per invasion. That's a lot of Sable physics bodies on a multiplayer
 server. Tune it after a playtest. This ties into the open mob-balance decision (see [[Mod List]], PvE threat).

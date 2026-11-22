@@ -51,4 +51,10 @@ None logged yet.
   precipitators, scrubbers, respirator and sensors act on PoTR's pollution. Considered and rejected: dropping
   PoTR for Smog `BUILT_IN` (which would fix the TFMG coke oven and blast furnace gap and add Smog's waste-water
   side). Revisit if the [[../02-Bugs/PoTR coremod misses TFMG coke oven and blast furnace|TFMG gap]] matters.
-
+- 2026-11-21: added `tfmg:firebox=20:combustion` to the emitters (it has Create's `blaze` heat property, so it
+  scales and switches off). Smog's default TFMG entries (`industrial_blast_furnace`, `diesel_engine`,
+  `coal_burner`) **don't exist** in TFMG Community 1.3.3a; they're skipped harmlessly.
+- 2026-11-21: TFMG Coke Oven and Blast Furnace pollute via `pack/kubejs/server_scripts/tfmg_smog_sources.js`
+  (they have no `lit` state, so a config entry would pollute while idle). Uses `Smog.add` while the block
+  entity's `currentRecipe` is set. **Smokestacks can't vent this pollution**; scrubbers clean it. Ran 40+ s in
+  game with no errors, but not yet observed with a working coke oven.

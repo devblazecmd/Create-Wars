@@ -1,5 +1,5 @@
 ---
-tags: [bug/status/open, bug/severity/minor, bug/type/compat, mc-version/1.21.1, loader/neoforge]
+tags: [bug/status/mitigated, bug/severity/minor, bug/type/compat, mc-version/1.21.1, loader/neoforge]
 affected_mods: ["[[../01-Mods/Pollution of the Realms|Pollution of the Realms]]", "[[../01-Mods/Create TFMG Community Edition|TFMG]]"]
 date_opened: "2026-11-21"
 ---
@@ -37,3 +37,8 @@ sources through its own model; check in game.
 
 ## Environment
 Pack after the 2026-11-21 pollution addition; NeoForge 21.1.267.
+
+## Mitigation 2026-11-21
+Owner chose to script it. `pack/kubejs/server_scripts/tfmg_smog_sources.js` makes both machines
+pollute in **Smog's** model while working (see [[../01-Mods/Create Smog|Create: Smog]]). They still don't produce
+PoTR gas, so this stays open until PoTR updates its TFMG hooks.

@@ -1,6 +1,6 @@
 ---
 tags: [bug/status/open, bug/severity/cosmetic, bug/type/config, mc-version/1.21.1, loader/neoforge]
-affected_mods: ["[[../01-Mods/Create Connected]]", "[[../01-Mods/Create Misc and Things]]", "[[../01-Mods/Create TFMG Community Edition]]"]
+affected_mods: ["[[../01-Mods/Steam 'n' Rails]]", "[[../01-Mods/CBC More Shells]]", "[[../01-Mods/Create Connected]]", "[[../01-Mods/Create Misc and Things]]", "[[../01-Mods/Create TFMG Community Edition]]"]
 date_opened: "2026-09-01"
 date_resolved: ""
 ---
@@ -48,3 +48,18 @@ noise as normal for a large curated pack.
 See [[../01-Mods/Create Copycats Plus|Create: Copycats+]]'s note for a related but separate finding from
 the same boot test: [[../01-Mods/Sable|Sable]] logging `Unknown block: copycats:copycat_catwalk` on every
 dimension load, also non-fatal.
+
+## Update 2026-11-21: newer sources (counts from a full client boot)
+Still non-fatal, and the same count on every boot (309 loot-table lines, checked across 3 logs), so a
+*change* in these numbers is the signal to look closer:
+| Source | Count | What it is |
+|---|---|---|
+| `railways` (Steam 'n' Rails) | 276 loot tables | Compat track variants for wood mods we don't have (`track_byg_*`, `track_tfc_*`, ...). Pure noise. |
+| `cbcmoreshells` | 16 loot tables | Some use `minecraft:copy_nbt` (removed in 1.21), others point at items that don't exist (e.g. `landing_indicator`). Those blocks may **drop nothing** when broken. |
+| `cbcmoreshells` | 2 recipes | `dual_he_rocket` and `dual_aphe_rocket` use the old `{"item":...}` result format, so those two rockets have **no recipe** in this pack. Real upstream bug. |
+| `create_connected` | 16 loot tables | As above (dye depot compat). |
+| `arcon` (Armored Constructs) | 1 loot table | Compat/upstream noise. |
+| `create_things_and_misc` | ~6 recipes | As above (sail/chair compat). |
+
+**Possible fixes if they matter:** a KubeJS recipe for the two dual rockets, and KubeJS loot tables for the
+CBC More Shells blocks that drop nothing. Not done yet; flag to the owner if players notice.

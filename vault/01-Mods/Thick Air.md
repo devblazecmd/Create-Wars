@@ -46,4 +46,7 @@ Oxygen branch (Copper Backtank hub) of the **Pollution and Air** chapter. Boot-t
 None logged yet.
 
 ## Config decisions
-None yet; defaults (Y<0, Y>128).
+- 2026-11-21 (owner): overworld ceiling raised **Y=128 → Y=192** (`pack/config/thick_air-common.toml`,
+  `minecraft:overworld=yellow,0:green,192:yellow`), so normal flying is free and only high-altitude flights
+  need gear. **Revisit** if a biome/terrain mod raises mountain heights (owner is considering one).
+  Below Y=0, the Nether and the End are unchanged.
