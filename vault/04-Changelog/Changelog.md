@@ -361,4 +361,6 @@ this tells you *why*, in prose, per pack version.
   (config shipped). Clean boot.
 - **Server kit (2026-11-22):** pushed to GitHub; `server/` start scripts and setup guide; packs auto-update from the public repo
   ([[../03-Design/Server Deployment]]). Owner to make the repo public and pick a host.
+- **Client performance (2026-11-22):** Dynamic FPS, More Culling (+ Cloth Config), Sodium Extra, Reese's Sodium Options; Complementary
+  Reimagined shader pack. Clean boot.
 

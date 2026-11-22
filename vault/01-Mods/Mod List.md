@@ -188,6 +188,10 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - [[CreateBetterFps]] — client-side FPS optimization for Create when shaders are on
 
 ## Optimization
+- Client additions 2026-11-22 (owner: "any other client side opti mods"), all `side = "client"`, clean boot:
+  **Dynamic FPS** (throttles when unfocused/idle), **More Culling** (leaf/block culling; pulled in **Cloth Config**,
+  `both`), **Sodium Extra** (fog/particle/animation toggles), **Reese's Sodium Options** (options menu). Skipped:
+  Lithium (server logic; risk with Sable/Aeronautics physics, test separately), Noisium (last update 2024, overlaps C2ME).
 - Shader pack: **Complementary Reimagined** r5.10 (`pack/shaderpacks/`, client-only) for [[Iris]] *(added 2026-11-22)*
 - [[Sodium]] — base rendering-optimization engine; now has native NeoForge support (see its note — this
   replaced [[Embeddium]], which was added by mistake first)
