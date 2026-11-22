@@ -319,3 +319,5 @@ this tells you *why*, in prose, per pack version.
   GlitchCore), Incendium and Stellarity. Thick Air ceiling raised to Y=256. Stellarity tweaks: vanilla pearl drops kept,
   elytra sources swapped for loot, one broken fishing table patched. Fixed Lithostitched `side = "server"` (Tectonic
   crashed in single-player). Boot OK in the existing world; **new terrain needs a new world**.
+- **Graves (2026-11-21):** GraveStone Mod + Curios and Sable compat patches. Owner-only graves, sneak pickup on. Two add-ons
+  had `side = "server"` from Modrinth; fixed to `both`.

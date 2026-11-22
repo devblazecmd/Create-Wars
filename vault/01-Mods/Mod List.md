@@ -128,6 +128,10 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - [[Create Enchantment Industry|Create: Enchantment Industry]] — automated enchanting with liquid XP
   (dep: [[Create Dragons Plus|Create: Dragons Plus]]) *(testing)*
 
+## Death / graves (added 2026-11-21)
+- [[GraveStone Mod]] — grave with your items on death; **owner-only**, sneak to recover *(testing)*
+- [[Gravestone x Curios API Compat]] (dep: [[BaguetteLib]]) and [[Gravestone and Sable Compatibility Patch]] (graves stay on airships)
+
 ## Teams / claims / questing
 - [[FTB Teams]] — faction/team system; natural unit for PvP factions
 - [[FTB Quests]] — questing/progression, can gate pack progression through quest chains

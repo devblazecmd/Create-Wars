@@ -129,6 +129,10 @@ file = "config/ftbquests/quests/reward_tables/war_trophy.snbt"
 hash = "37857ca3ce883e4ca7d628422a6d35001fd57f514f0104aec1cd6b6fb0b7d94e"
 
 [[files]]
+file = "config/gravestone-server.toml"
+hash = "f93c280168e2c0287fb53a24556a5184527c2ffd5741c11b931f076d6afc83e5"
+
+[[files]]
 file = "config/improvedmobs/client.toml"
 hash = "47356fc6aacaec8a0ea4a0d0a5d1302301af8873d57fee37abcf42ffa8f349ed"
 
@@ -323,6 +327,11 @@ metafile = true
 [[files]]
 file = "mods/badoptimizations.pw.toml"
 hash = "dd56ff2bcc4253d1d70c08333632743fb56cdc4cf5518dc6afc024164633145d"
+metafile = true
+
+[[files]]
+file = "mods/baguettelib.pw.toml"
+hash = "ad964c7bc216dc509aba7cc617456a340e7746565e79d0cd4fab8a4d31ec95ed"
 metafile = true
 
 [[files]]
@@ -628,6 +637,21 @@ metafile = true
 [[files]]
 file = "mods/glitchcore.pw.toml"
 hash = "e53646f88aeb6bd54c38db50da972abdac91e83c145a8f974107b0ca103b15bc"
+metafile = true
+
+[[files]]
+file = "mods/gravestone-and-sable-compatibility-patch.pw.toml"
+hash = "6baec0ac505606e2066b5a00a5873cc6895f0ca639a0bfabd74bf408dcf25749"
+metafile = true
+
+[[files]]
+file = "mods/gravestone-mod.pw.toml"
+hash = "d18f1ea4c6c1c2f99f18a8725d11e14c93abd29988df24c967794fc52e9c969c"
+metafile = true
+
+[[files]]
+file = "mods/gravestone-x-curios-api-compat.pw.toml"
+hash = "8453a3b688360367868e7f5c7e641c1aa06d2967adfb88bc7cb8187c46e2179f"
 metafile = true
 
 [[files]]
