@@ -340,3 +340,9 @@ this tells you *why*, in prose, per pack version.
   writes `createwars_recipes.json`). Fixed: [[../02-Bugs/Gunsmithing steel sheet needed hidden steel]]. Found:
   [[../02-Bugs/Quest items with no survival recipe]] (owner decision pending), plus recipe-order gaps, thin descriptions,
   uncovered mods and XP skew (reported to owner).
+- **Quest deep dive (2026-11-22):** recipes for every uncraftable quest item ([[../02-Bugs/Quest items with no survival recipe]]:
+  Armored Constructs had none at all); Ender Transmission made quantum tech; Aeroworks, Ender Transmission and hull-armor
+  quests; recipe-order fixes (audit: 0 left); 109 descriptions rewritten; Artillery/Infantry brass parts locked behind the
+  Brass Age. Defend Your Home and Automation XP confirmed as intended challenge tiers. 519 quests, clean boot, 0 failed
+  recipes.
+

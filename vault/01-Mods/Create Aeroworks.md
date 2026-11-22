@@ -26,3 +26,7 @@ None logged yet.
 
 ## Config decisions
 None yet.
+- 2026-11-22 (owner: Aeroworks "should def have some quests"): Aeronautics chapter **Control Stand** hub with
+  the Control Desk, Lever Module (fans to Yoke + Throttle Quadrant), Joystick, Pedal, Button Panel -> Keypad,
+  Wheel; Gyroscope chained after the Gimbal Sensor; Mechanical -> Stepper Servo on the Synaxis hub. No recipe
+  changes.

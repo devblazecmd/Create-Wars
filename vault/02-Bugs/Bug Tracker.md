@@ -17,8 +17,6 @@ not by a code/config fix. What's below is what's left after that.
 - [[Cross-mod compat noise on server boot]] — cosmetic, non-fatal recipe/loot-table errors from
   Create: Connected, Create: Misc and Things, and TFMG Community Edition's optional cross-mod compat
   content.
-- [[Quest items with no survival recipe]]: **major**. Armored Constructs ships with no recipes; 5 Military
-  Supplement items, Synaxis jet and the Air War FPV drone + joystick can't be crafted. Their quests can't be finished.
 - [[Create Nuclear armor dye recipes fail to load]]: 64 recolor recipes have an empty smithing template.
   Cosmetic only.
 - [[Client model load errors]] — empty/invalid model JSON in Create: Radars, Create: The Air War
@@ -28,6 +26,8 @@ not by a code/config fix. What's below is what's left after that.
 *(none)*
 
 ## Fixed
+- [[Quest items with no survival recipe]]: pack recipes for Armored Constructs, Military Supplement, Synaxis
+  jet and Air War FPV drone items.
 - [[Gunsmithing steel sheet needed hidden steel]]: steel sheets needed hidden Gunsmithing steel after unification.
 - [[Explosions crash - Shaolib missing Synaxis]]: Tomahawk (and likely any explosion) crashed the
   server; fixed by adding Synaxis + deps.

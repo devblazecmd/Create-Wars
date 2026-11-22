@@ -119,7 +119,7 @@
 	]
 	"quest.01B274AEC6E98520.title": "Spout"
 	"quest.01DB109F38C332AE.quest_desc": [
-		"Stamped with the shotgun press form."
+		"Sequenced assembly on a blank shotgun round, with nails or blaze powder (makes 8)."
 	]
 	"quest.01DB109F38C332AE.title": "Shotgun Shell"
 	"quest.0202D14D081DFB44.quest_desc": [
@@ -127,7 +127,8 @@
 	]
 	"quest.0202D14D081DFB44.title": "S-8 Rocket"
 	"quest.026989985A23357E.quest_desc": [
-		"Smooths the ride."
+		"A sturdy sheet, a spring, a shaft and zinc nuggets (makes 4). Smooths the ride over"
+		"rough ground."
 	]
 	"quest.026989985A23357E.title": "Suspension Piece"
 	"quest.02BA6E0ADEE99DA1.quest_desc": [
@@ -149,7 +150,7 @@
 	]
 	"quest.036B26DACF1DA03A.title": "Train Lock"
 	"quest.03B65E923ACB37ED.quest_desc": [
-		"Track grip."
+		"Industrial iron and iron nuggets (makes 8). The cleats that give tank treads grip."
 	]
 	"quest.03B65E923ACB37ED.title": "Grouser"
 	"quest.0470831658F15E52.quest_desc": [
@@ -161,7 +162,7 @@
 	]
 	"quest.047B724128CA8638.title": "Train Casing"
 	"quest.04D5C8ED75ADC36D.quest_desc": [
-		"Smelt congealed nitro."
+		"Smelt congealed nitro. Crush or mill it into Nitropowder, the stronger propellant."
 	]
 	"quest.04D5C8ED75ADC36D.title": "Hardened Nitro"
 	"quest.054F56945A0D2185.quest_desc": [
@@ -174,7 +175,7 @@
 	]
 	"quest.05898BDC6E712A72.title": "Mechanical Saw"
 	"quest.05DA4FF98AE373A1.quest_desc": [
-		"Cabbage leaves and filling."
+		"Cabbage with meat, fish, vegetables or mushrooms in the Cooking Pot."
 	]
 	"quest.05DA4FF98AE373A1.title": "Cabbage Rolls"
 	"quest.05FD55AEF439EB0C.quest_desc": [
@@ -201,7 +202,8 @@
 	]
 	"quest.06A39428AF78928B.title": "Find Andesite"
 	"quest.06FB04B9C71307E7.quest_desc": [
-		"Sound the alarm."
+		"A redstone lamp, note block, electron tube, iron sheet and red glass. Sounds when it gets"
+		"a redstone signal."
 	]
 	"quest.06FB04B9C71307E7.title": "Industrial Alarm"
 	"quest.0784C2E3B1ED63AB.quest_desc": [
@@ -209,11 +211,12 @@
 	]
 	"quest.0784C2E3B1ED63AB.title": "Actuator Fins"
 	"quest.07BF44C0797C1380.quest_desc": [
-		"Each slot holds more items. Higher tiers hold far more."
+		"An upgrade base and logs. Each slot holds more items; higher tiers hold far more."
 	]
 	"quest.07BF44C0797C1380.title": "Stack Upgrade Tier 1"
 	"quest.07E8DC1BE76E7D93.quest_desc": [
-		"Lasts 4x longer."
+		"A brass sheet on a filter cartridge. Lasts 4x longer. Wash a clogged one with a"
+		"fan through water to clean it and get the soot back."
 	]
 	"quest.07E8DC1BE76E7D93.title": "Brass Filter Cartridge"
 	"quest.083D0860E2942759.quest_desc": [
@@ -241,11 +244,11 @@
 	]
 	"quest.0962E263FFA273D1.title": "Physics Assembler"
 	"quest.098FA67A40C809DB.quest_desc": [
-		"Refuel a train at a station."
+		"Train Casing and a chute. Refuel a train while it waits at a station."
 	]
 	"quest.098FA67A40C809DB.title": "Portable Fuel Interface"
 	"quest.09ACA9567831BCFF.quest_desc": [
-		"Light vehicles."
+		"A shaft and dried kelp (makes 4). Light vehicles."
 	]
 	"quest.09ACA9567831BCFF.title": "Small Tire"
 	"quest.09D33D79CA336A9E.quest_desc": [
@@ -280,7 +283,7 @@
 	]
 	"quest.0B4492CE16040D3F.title": "Automate: Gravel"
 	"quest.0C31FEEDB9F4C0F8.quest_desc": [
-		"Grows in shallow water."
+		"Wild rice grows in shallow water. Plant it in water one block deep."
 	]
 	"quest.0C31FEEDB9F4C0F8.title": "Rice"
 	"quest.0C34CAA169348117.quest_desc": [
@@ -316,11 +319,12 @@
 	]
 	"quest.0D1C293AEDBE7585.title": "Industrial Wastewater"
 	"quest.0D6FAA54E3DC19FA.quest_desc": [
-		"Stay put."
+		"An iron block, chain, iron sheet and ingot. Drop it to hold your ship in place."
 	]
 	"quest.0D6FAA54E3DC19FA.title": "Anchor"
 	"quest.0D9AA173E29EA08E.quest_desc": [
-		"Another way to fill an envelope."
+		"A copper block and gold sheets. Fills an envelope with steam from a boiler, instead"
+		"of hot air from a burner."
 	]
 	"quest.0D9AA173E29EA08E.title": "Steam Vent"
 	"quest.0D9F1985E16955EF.quest_desc": [
@@ -342,7 +346,7 @@
 	]
 	"quest.0E5FBD9105AE2934.title": "Blaze Cake Base"
 	"quest.0E7AAD972EAEA28F.quest_desc": [
-		"For the biggest builds."
+		"A dried kelp block and a shaft (makes 4). For the biggest builds."
 	]
 	"quest.0E7AAD972EAEA28F.title": "Monstrous Tire"
 	"quest.0EF9790E6AD7081C.quest_desc": [
@@ -373,7 +377,7 @@
 	]
 	"quest.0FB364E6D5715082.title": "Automate: Blaze Cakes"
 	"quest.0FC5913EC2DC28C7.quest_desc": [
-		"Dough and filling."
+		"Dough, cabbage, onion, meat and a brown mushroom in the Cooking Pot."
 	]
 	"quest.0FC5913EC2DC28C7.title": "Dumplings"
 	"quest.1010F3ECFE297C65.quest_desc": [
@@ -391,7 +395,8 @@
 	]
 	"quest.109B3C60E36DD5D4.title": "Precision Mechanism"
 	"quest.10EEAA6ABB049773.quest_desc": [
-		"Diving chestplate and leggings for swimming outside."
+		"Copper and andesite alloy. Chestplate and leggings for swimming outside the hull. Wear"
+		"them with a Copper Backtank and Diving Helmet."
 	]
 	"quest.10EEAA6ABB049773.title": "Diving Gear"
 	"quest.10F87A2D17CAB073.quest_desc": [
@@ -399,7 +404,7 @@
 	]
 	"quest.10F87A2D17CAB073.title": "Automate: Steel"
 	"quest.10F97F3E76257275.quest_desc": [
-		"Control engine and propeller power."
+		"Brass casing and a stick. Sets engine and propeller power from the seat."
 	]
 	"quest.10F97F3E76257275.title": "Throttle Lever"
 	"quest.1129FA0B61122D2C.quest_desc": [
@@ -468,7 +473,8 @@
 	]
 	"quest.14AE92114CC90F48.title": "Dried Kelp"
 	"quest.14B98BF46C51736C.quest_desc": [
-		"The same, for rotation: a shaft instead of the chute. Power a front-line base from home."
+		"The same recipe with a &aShaft&r in place of the chute. Sends rotation to every"
+		"Energy Transmitter on the Network: power a front-line base from home."
 	]
 	"quest.14B98BF46C51736C.title": "Energy Transmitter"
 	"quest.14BCD8B12AE6EF84.quest_desc": [
@@ -490,15 +496,16 @@
 	]
 	"quest.15F66045D0C797A4.title": "Tomahawk"
 	"quest.162B154459B5939E.quest_desc": [
-		"Armored-train looks."
+		"Stonecut an iron block. Steam 'n' Rails' armored train plating. With &6CBC Locometal"
+		"Armor&r it resists cannon fire."
 	]
 	"quest.162B154459B5939E.title": "Riveted Locometal"
 	"quest.170A73A299563CC2.quest_desc": [
-		"Nailgun ammo."
+		"Iron nuggets (crafting or sequenced assembly). Nailgun ammo."
 	]
 	"quest.170A73A299563CC2.title": "Nails"
 	"quest.17101C72A1903A91.quest_desc": [
-		"Opens your locked trains."
+		"&6Who Touched My Train&r: iron. Lock your train so only key holders can drive it."
 	]
 	"quest.17101C72A1903A91.title": "Iron Key"
 	"quest.1735BB1FF6FB4780.quest_desc": [
@@ -507,7 +514,8 @@
 	]
 	"quest.1735BB1FF6FB4780.title": "Bottle of Soulfire"
 	"quest.1738721036346250.quest_desc": [
-		"Spreads oxygen through the hull."
+		"A propeller, nozzle, item drain, redstone link and electron tube. Spreads the"
+		"electrolyzer's oxygen through the hull."
 	]
 	"quest.1738721036346250.title": "Oxygen Diffuser"
 	"quest.17A6D73E23678BDD.quest_desc": [
@@ -539,11 +547,13 @@
 	]
 	"quest.1A20D6A79DF02040.title": "Armor Piercing Shell"
 	"quest.1A380332FEC145A5.quest_desc": [
-		"The same, for fluids: a mechanical pump instead of the chute."
+		"The same recipe with a &aMechanical Pump&r in place of the chute. Moves fluids"
+		"between Fluid Transmitters on the same Network."
 	]
 	"quest.1A380332FEC145A5.title": "Fluid Transmitter"
 	"quest.1A4FD9D28FD574FC.quest_desc": [
-		"Tube chamber and barrel: the launcher."
+		"Iron plates (mechanical crafting) make the chamber; convert it to get the barrel. The"
+		"launcher for torpedoes."
 	]
 	"quest.1A4FD9D28FD574FC.title": "Torpedo Tube"
 	"quest.1AB2FB971E4C51CC.quest_desc": [
@@ -571,7 +581,7 @@
 	]
 	"quest.1AFDEB5FBC17B28A.title": "Compact Autocannon Mount"
 	"quest.1B28C23F7F0D9389.quest_desc": [
-		"Automates where a train goes."
+		"Paper and an obsidian sheet. Give it to a train's conductor to run a route on its own."
 	]
 	"quest.1B28C23F7F0D9389.title": "Train Schedule"
 	"quest.1B29AC04A12AFBC1.quest_desc": [
@@ -594,7 +604,7 @@
 	]
 	"quest.1C0A64D0E5145EF4.title": "Warp Scroll"
 	"quest.1C23EC68FAEA93EF.quest_desc": [
-		"Another distillation product: engine fuel."
+		"Another Distillation Tower output. Diesel runs TFMG's diesel engines."
 	]
 	"quest.1C23EC68FAEA93EF.title": "Diesel"
 	"quest.1C79F0536FCB42A7.quest_desc": [
@@ -641,7 +651,7 @@
 	]
 	"quest.1EFEBE35ACDF5803.title": "Tier 3 Fuel: Napalm"
 	"quest.1F391BB7B007C12F.quest_desc": [
-		"Every pilot needs a pair."
+		"Engineer's Goggles and leather. Goggles for pilots."
 	]
 	"quest.1F391BB7B007C12F.title": "Aviator's Goggles"
 	"quest.1F6B36437C9F338E.quest_desc": [
@@ -653,7 +663,8 @@
 	]
 	"quest.1FE66342C645AA64.title": "Printer"
 	"quest.2046EC2EB85F2020.quest_desc": [
-		"An upgraded levitite."
+		"A stronger levitite, made from levitite (see JEI for the step). More lift for"
+		"the same space."
 	]
 	"quest.2046EC2EB85F2020.title": "Pearlescent Levitite"
 	"quest.205AA396405C0F61.quest_desc": [
@@ -724,7 +735,8 @@
 	]
 	"quest.2416A967A69FD188.title": "Soot"
 	"quest.244FA77672364CA5.quest_desc": [
-		"On-board controls."
+		"Six transmitters, a gyroscopic mechanism and brass casing. The drone's on-board flight"
+		"controller."
 	]
 	"quest.244FA77672364CA5.title": "Drone Controls"
 	"quest.2461493636AB9AC8.quest_desc": [
@@ -732,7 +744,8 @@
 	]
 	"quest.2461493636AB9AC8.title": "Arcon Cannon Muzzle"
 	"quest.2479F9ADF092F86D.quest_desc": [
-		"A droppable bomb."
+		"&6The Air War&r: titanium sheets, an activator and a big explosive (mechanical"
+		"crafting). A free-fall bomb."
 	]
 	"quest.2479F9ADF092F86D.title": "SC250 Bomb"
 	"quest.24DAE58E17E18027.quest_desc": [
@@ -744,7 +757,8 @@
 	]
 	"quest.24EBC08912BF74CC.title": "Aircraft Proximity Fuze"
 	"quest.24F9886D990D5FBD.quest_desc": [
-		"A short-range infrared missile."
+		"&6The Air War&r: titanium, a chip, wires, an explosive, an activator and a rocket"
+		"engine (mechanical crafting). A short-range infrared missile."
 	]
 	"quest.24F9886D990D5FBD.title": "AIM-9X"
 	"quest.2519832DF78B9EB9.quest_desc": [
@@ -759,7 +773,7 @@
 	]
 	"quest.252033B55A5BDA67.title": "Encased Fan"
 	"quest.252D8DF36E7599EE.quest_desc": [
-		"See what your drone sees."
+		"Iron, a spyglass and a transmitter. Sends what the drone sees to your remote."
 	]
 	"quest.252D8DF36E7599EE.title": "Drone Camera"
 	"quest.257D9DE8F5DF9281.quest_desc": [
@@ -808,7 +822,7 @@
 	]
 	"quest.2820B4A2B63AB6CF.title": "Polished Rose Quartz"
 	"quest.282B8F98D1E419E7.quest_desc": [
-		"Iron to gold."
+		"Gold and a lever. Iron to gold."
 	]
 	"quest.282B8F98D1E419E7.title": "Gold Tier"
 	"quest.28B372346FDAC614.quest_desc": [
@@ -845,7 +859,8 @@
 	]
 	"quest.29E6A06D262FC52F.title": "Rocket Bracket"
 	"quest.2A2F6D7284B0213C.quest_desc": [
-		"A compact one-way teleport point. Uses Quantum Casings too."
+		"Mechanical crafting: a Quantum Casing, a Warp Stone, andesite casing, stone bricks and"
+		"dye. A one-way teleport point: it only sends you, it can't be a destination."
 	]
 	"quest.2A2F6D7284B0213C.title": "Portstone"
 	"quest.2A8180943E58554F.quest_desc": [
@@ -861,7 +876,7 @@
 	]
 	"quest.2AAC2846CE112D90.title": "Filter Medium"
 	"quest.2AC057F850BF58B8.quest_desc": [
-		"Liquid-fueled trains."
+		"A fluid tank and a sturdy sheet. Lets a train run on liquid fuel."
 	]
 	"quest.2AC057F850BF58B8.title": "Fuel Tank"
 	"quest.2B4BFECA3D6F7D80.quest_desc": [
@@ -869,7 +884,8 @@
 	]
 	"quest.2B4BFECA3D6F7D80.title": "Endermen"
 	"quest.2BFAFF067189BF14.quest_desc": [
-		"Come up from the deep safely."
+		"Copper sheets, glass and a mechanical pump. Come up from depth without getting the"
+		"bends."
 	]
 	"quest.2BFAFF067189BF14.title": "Decompression Chamber"
 	"quest.2C489D95F51758A5.quest_desc": [
@@ -877,11 +893,11 @@
 	]
 	"quest.2C489D95F51758A5.title": "Monitor (Air War)"
 	"quest.2C4D537C18CE8E78.quest_desc": [
-		"Same idea as the chest, in barrel form."
+		"Planks, slabs and a lever. A Sophisticated chest in barrel form: same tiers and upgrades."
 	]
 	"quest.2C4D537C18CE8E78.title": "Sophisticated Barrel"
 	"quest.2C5821CD9043F72B.quest_desc": [
-		"A base for your drones."
+		"An iron block and black dye. A base where drones land and recharge."
 	]
 	"quest.2C5821CD9043F72B.title": "Drone Hub"
 	"quest.2CCF522E002D4D92.quest_desc": [
@@ -899,7 +915,7 @@
 	]
 	"quest.2CE2E4FBE8339897.title": "Data Link"
 	"quest.2D3BE4E1574155BC.quest_desc": [
-		"A base for many meals."
+		"Rice and a bowl in the Cooking Pot. The base for many meals."
 	]
 	"quest.2D3BE4E1574155BC.title": "Cooked Rice"
 	"quest.2D48D5DB94BF1979.quest_desc": [
@@ -935,7 +951,8 @@
 	]
 	"quest.2E3CBB0BC9E0B8B0.title": "Thorium Rod"
 	"quest.2E3F189B4FBB8213.quest_desc": [
-		"Same smithing upgrade, with an &aanvil&r instead of an enchanting table."
+		"Smithing table: a Blaze Upgrade template, a Blaze Burner and an anvil. Repairs and"
+		"combines enchanted gear with liquid experience."
 	]
 	"quest.2E3F189B4FBB8213.title": "Blaze Forger"
 	"quest.2E52F82D051E855F.quest_desc": [
@@ -956,7 +973,8 @@
 	]
 	"quest.2F08F7225E5B99D0.title": "Reactor Blueprint"
 	"quest.2F37EAD823F5C5A1.quest_desc": [
-		"Combines filters into one network."
+		"Brass casing, a precision mechanism and all three filters (detection, targeting,"
+		"identification). Applies them to a whole radar network at once."
 	]
 	"quest.2F37EAD823F5C5A1.title": "Network Controller"
 	"quest.2F3B184CE57794CA.quest_desc": [
@@ -976,7 +994,8 @@
 	]
 	"quest.2F6A610835C74427.title": "Nickel Hull Armor"
 	"quest.2F7B3CC7044ABB69.quest_desc": [
-		"Cuts through terrain."
+		"A Crushing Wheel, industrial iron and iron plates. A wheel that cuts through"
+		"terrain as it drives."
 	]
 	"quest.2F7B3CC7044ABB69.title": "Rock Cutting Wheel"
 	"quest.2F8A12AA39826B5F.quest_desc": [
@@ -984,7 +1003,7 @@
 	]
 	"quest.2F8A12AA39826B5F.title": "Solid Shot"
 	"quest.2FA74C71CCB3010E.quest_desc": [
-		"Lets water in and out of the tanks."
+		"A copper block and copper nuggets. Lets water in and out of the ballast tanks."
 	]
 	"quest.2FA74C71CCB3010E.title": "Ballast Vent"
 	"quest.2FC01DCFD815E793.quest_desc": [
@@ -1010,15 +1029,18 @@
 	]
 	"quest.3056509D9518AA4D.title": "Flint Knife"
 	"quest.30690D9174F34F2D.quest_desc": [
-		"Teleports you back to your spawn point."
+		"Quantum Paper, a gold nugget and purple dye. One use: teleports you to your spawn"
+		"point."
 	]
 	"quest.30690D9174F34F2D.title": "Return Scroll"
 	"quest.307B7F558FE98190.quest_desc": [
-		"Plan where you're going."
+		"Brass casing, a brass sheet and a precision mechanism. Plots a course and can"
+		"steer the craft toward it."
 	]
 	"quest.307B7F558FE98190.title": "Navigation Table"
 	"quest.315E6012D36080BC.quest_desc": [
-		"Senses tilt, for auto-leveling."
+		"Brass casing, a compass and a gyroscopic mechanism. Outputs redstone by tilt: the"
+		"sensor behind auto-leveling."
 	]
 	"quest.315E6012D36080BC.title": "Gimbal Sensor"
 	"quest.316983E7A8C8D912.quest_desc": [
@@ -1036,7 +1058,8 @@
 	]
 	"quest.31C9C301A68F80A3.title": "Vindicators"
 	"quest.324B5B374FEE171F.quest_desc": [
-		"Open your network from anywhere nearby."
+		"A spyglass, comparator, ender pearl, glowstone, glass and planks. Opens your network"
+		"from anywhere nearby."
 	]
 	"quest.324B5B374FEE171F.title": "Wireless Terminal"
 	"quest.32E70B970B951381.quest_desc": [
@@ -1075,7 +1098,7 @@
 	]
 	"quest.3516F58AAEBDAF62.title": "Reinforced Air Bladder"
 	"quest.3527520056C4B53A.quest_desc": [
-		"Heavier vehicles."
+		"A belt and a shaft (makes 4). Heavier vehicles."
 	]
 	"quest.3527520056C4B53A.title": "Large Tire"
 	"quest.3575C6B29A7007D0.quest_desc": [
@@ -1107,7 +1130,8 @@
 	]
 	"quest.367A3FC09B9D2759.title": "Graphite"
 	"quest.367C2F2B0C2B6767.quest_desc": [
-		"Step on it to warp to a linked plate. Made with Warp Dust."
+		"Mechanical crafting: Warp Dust, andesite casing, stone bricks and flint (makes 2)."
+		"Step on one to warp to the plate it is linked to."
 	]
 	"quest.367C2F2B0C2B6767.title": "Warp Plate"
 	"quest.36AAE0F95A2E1194.quest_desc": [
@@ -1133,7 +1157,8 @@
 	]
 	"quest.385048FDBEED3462.title": "Bombsight"
 	"quest.38531C3CA7566C6E.quest_desc": [
-		"Sturdier blades."
+		"Wooden slabs, a Create propeller and a shaft. Sturdier blades for a Propeller"
+		"Bearing."
 	]
 	"quest.38531C3CA7566C6E.title": "Andesite Propeller"
 	"quest.386FB1A022BFF30E.quest_desc": [
@@ -1150,11 +1175,11 @@
 	]
 	"quest.38FD043F88311C72.title": "Auto Yaw and Pitch Controllers"
 	"quest.390997AC21E3AFB3.quest_desc": [
-		"Adds buoyancy."
+		"Wool and a phycological membrane. Adds buoyancy so the hull floats higher."
 	]
 	"quest.390997AC21E3AFB3.title": "Floater"
 	"quest.392E87A3E40E4C76.quest_desc": [
-		"Temperate biomes."
+		"Wild onions grow in temperate biomes. Plant the onions themselves."
 	]
 	"quest.392E87A3E40E4C76.title": "Onion"
 	"quest.398902EC58D4FE30.quest_desc": [
@@ -1184,15 +1209,15 @@
 	]
 	"quest.3B31101BA6D1CD75.title": "Guided Fuze"
 	"quest.3BABEFE16AC81C7F.quest_desc": [
-		"Command drones from a vehicle."
+		"A seat, a transmitter and a precision mechanism. Command your drones from a vehicle."
 	]
 	"quest.3BABEFE16AC81C7F.title": "Commander Seat"
 	"quest.3BCB9BC5F3C84756.quest_desc": [
-		"Near beaches."
+		"Wild cabbages grow near beaches. Cut them with a knife for seeds."
 	]
 	"quest.3BCB9BC5F3C84756.title": "Cabbage"
 	"quest.3BD3289A683A729A.quest_desc": [
-		"Armor-piercing ammo for the autocannon."
+		"Cast iron and iron (makes 8). Armor-piercing ammo for the autocannon."
 	]
 	"quest.3BD3289A683A729A.title": "AP Autocannon Round"
 	"quest.3BD47489393A7320.quest_desc": [
@@ -1229,7 +1254,8 @@
 	]
 	"quest.3E8CDCFA219066BF.title": "HE Bouncing Bomb"
 	"quest.3EA769AC23CBEC0F.quest_desc": [
-		"Armor-piercing high explosive."
+		"Mechanical crafting: an AP Shell, iron plates and a propeller. Armor-piercing high"
+		"explosive for armored targets."
 	]
 	"quest.3EA769AC23CBEC0F.title": "APHE Bomb"
 	"quest.3EBBCA8C5D0936F3.quest_desc": [
@@ -1247,7 +1273,7 @@
 	]
 	"quest.3F82F140108CBD1D.title": "C4 Charge"
 	"quest.405CADB4D11C95CC.quest_desc": [
-		"A better key."
+		"Gold, gold nuggets and a golden sheet. A key that opens more of your trains."
 	]
 	"quest.405CADB4D11C95CC.title": "Gold Key"
 	"quest.4081D65FB1B1B03E.quest_desc": [
@@ -1302,7 +1328,7 @@
 	]
 	"quest.41CD81FE0E6AA722.title": "Minigun"
 	"quest.41F3783BD41BD8AD.quest_desc": [
-		"Lays a smoke screen."
+		"A hay bale in an iron shell: bursts into a smoke screen to hide an advance."
 	]
 	"quest.41F3783BD41BD8AD.title": "Smoke Shell"
 	"quest.4257FB3FAF262265.quest_desc": [
@@ -1318,7 +1344,8 @@
 	]
 	"quest.42E06B591264712B.title": "Sea Mine"
 	"quest.42F7C1E1748DCE3D.quest_desc": [
-		"Program flight logic with Cimulink circuits."
+		"Deploy a precision control circuit blank onto brass casing. Program flight logic"
+		"with Cimulink circuits."
 	]
 	"quest.42F7C1E1748DCE3D.title": "Circuit"
 	"quest.438EF50C90497E4F.quest_desc": [
@@ -1352,7 +1379,8 @@
 	]
 	"quest.45338D757CFC7C63.title": "Exhaust Duct"
 	"quest.453E0E92B7BA6611.quest_desc": [
-		"Keeps trains from colliding."
+		"Train Casing and an electron tube (makes 2). Splits track into blocks so trains don't"
+		"collide."
 	]
 	"quest.453E0E92B7BA6611.title": "Train Signal"
 	"quest.459817C4038930C4.quest_desc": [
@@ -1369,7 +1397,8 @@
 	]
 	"quest.45EF11E35D7CAB2D.title": "Tripwire Coil"
 	"quest.460F2822FC8D77BC.quest_desc": [
-		"Marks an area radar weapons won't fire into."
+		"Paper, a compass and redstone. Marks an area your radar weapons won't fire into, such as"
+		"your own base."
 	]
 	"quest.460F2822FC8D77BC.title": "Radar Safe Zone Designator"
 	"quest.463608773F5CEE47.quest_desc": [
@@ -1390,7 +1419,7 @@
 	]
 	"quest.47BD23F65E10529D.title": "Food Automation"
 	"quest.47DAF49FAD3BD9FB.quest_desc": [
-		"Bread, patty, cabbage, tomato, onion."
+		"Bread, a beef patty, a leafy green, tomato and onion."
 	]
 	"quest.47DAF49FAD3BD9FB.title": "Hamburger"
 	"quest.47EF23A2057ECF4E.quest_desc": [
@@ -1415,7 +1444,7 @@
 	]
 	"quest.48BD6C1FF6EEBB8E.title": "Husks"
 	"quest.4A5F8E84D4A3E786.quest_desc": [
-		"Deny an area of sea."
+		"Industrial iron and TNT. Deny an area of sea to enemy submarines."
 	]
 	"quest.4A5F8E84D4A3E786.title": "Underwater Mine"
 	"quest.4AB1E382B8490E57.quest_desc": [
@@ -1428,11 +1457,12 @@
 	]
 	"quest.4B274D3E2316F111.title": "Shotgun Round"
 	"quest.4B42BE877F72A499.quest_desc": [
-		"A self-stabilizing propeller bearing."
+		"Brass casing, wooden slabs and a gyroscopic mechanism. A propeller bearing that"
+		"keeps itself level."
 	]
 	"quest.4B42BE877F72A499.title": "Gyroscopic Propeller Bearing"
 	"quest.4BCEC493225826A4.quest_desc": [
-		"Copper to iron."
+		"Iron and a lever. Use it on a copper chest to upgrade it in place: contents stay."
 	]
 	"quest.4BCEC493225826A4.title": "Iron Tier"
 	"quest.4BEDE181FB336132.quest_desc": [
@@ -1442,7 +1472,8 @@
 	]
 	"quest.4BEDE181FB336132.title": "Control Stand"
 	"quest.4BF2549A5697EC75.quest_desc": [
-		"Tell friend from foe."
+		"Paper, an electron tube and redstone. Tells friend from foe, so your guns leave"
+		"transponder-marked craft alone."
 	]
 	"quest.4BF2549A5697EC75.title": "Identification Filter"
 	"quest.4C0B58935DA7AACD.quest_desc": [
@@ -1472,7 +1503,7 @@
 	]
 	"quest.4D1D21B956A310AC.title": "Automate: Telejuice"
 	"quest.4D59F0C8C2DE0CB2.quest_desc": [
-		"Control surfaces."
+		"A mechanical bearing, torsion spring, clutch and gearshift. Moves control surfaces."
 	]
 	"quest.4D59F0C8C2DE0CB2.title": "Flap Bearing"
 	"quest.4D699D6ADDDBDDE5.quest_desc": [
@@ -1511,11 +1542,11 @@
 	]
 	"quest.4F0949D1FAB33BD1.title": "BOPS Armor-Piercing Shell"
 	"quest.4F2CCD3CA4F4ED74.quest_desc": [
-		"Warm biomes."
+		"Find wild tomatoes in warm biomes, cut them with a knife for seeds, and plant them."
 	]
 	"quest.4F2CCD3CA4F4ED74.title": "Tomato"
 	"quest.4F2DB21B147A7C58.quest_desc": [
-		"Gold to diamond."
+		"Diamonds and a lever. Gold to diamond."
 	]
 	"quest.4F2DB21B147A7C58.title": "Diamond Tier"
 	"quest.4F432EC45797F61B.quest_desc": [
@@ -1527,7 +1558,8 @@
 	]
 	"quest.4F582B3F637B9DF4.title": "Thorium"
 	"quest.4FC33F44C920C77C.quest_desc": [
-		"Refined from crude oil. Needed for &cnapalm&r."
+		"The Distillation Tower splits crude oil into fuels. &aGasoline&r is one of its outputs,"
+		"and Napalm needs it."
 	]
 	"quest.4FC33F44C920C77C.title": "Gasoline"
 	"quest.4FF0B24C57E15BD3.quest_desc": [
@@ -1539,11 +1571,12 @@
 	]
 	"quest.500E380CBF65328A.title": "Iron Sheets"
 	"quest.50822B0BBA2CD21E.quest_desc": [
-		"Fly drones wirelessly."
+		"A transmitter, precision mechanism and compass. Fly drones wirelessly."
 	]
 	"quest.50822B0BBA2CD21E.title": "Drone Remote Controller"
 	"quest.5083A2BCC04083A8.quest_desc": [
-		"Pushes and pulls parts of your craft precisely."
+		"A mechanical piston, piston pole, shaft, brass casing and a sequenced"
+		"gearshift. Pushes and pulls parts of your craft precisely."
 	]
 	"quest.5083A2BCC04083A8.title": "Hydraulic Linear Actuator"
 	"quest.5098E62B79F885D8.quest_desc": [
@@ -1564,7 +1597,7 @@
 	]
 	"quest.5152DA4587C8F7C0.title": "Wave 3: Warband"
 	"quest.515DC0FA59FD5614.quest_desc": [
-		"Row, row, row."
+		"Sticks and planks. Row a small boat by hand."
 	]
 	"quest.515DC0FA59FD5614.title": "Oar of Boat"
 	"quest.5194AC4C99BEB854.quest_desc": [
@@ -1577,7 +1610,8 @@
 	]
 	"quest.51ABB649DF339B40.title": "Uranium Rod"
 	"quest.521CA3B1F77D8E70.quest_desc": [
-		"Create trains run on &aTrain Track&r."
+		"Sequenced assembly: sleepers, iron nuggets and zinc nuggets (makes 32 at a time). Create"
+		"trains run on Train Track."
 	]
 	"quest.521CA3B1F77D8E70.title": "Train Track"
 	"quest.5225776D1012E391.quest_desc": [
@@ -1634,7 +1668,7 @@
 	]
 	"quest.5459DE3C6BCF979E.title": "Sonar (Deep Seas)"
 	"quest.5480C8B5E1657A00.quest_desc": [
-		"Holds a belt of autocannon rounds for continuous fire."
+		"Brass and iron sheets. Holds a belt of autocannon rounds for continuous fire."
 	]
 	"quest.5480C8B5E1657A00.title": "Autocannon Ammo Container"
 	"quest.54A10483D0EE3E7F.quest_desc": [
@@ -1661,7 +1695,8 @@
 	]
 	"quest.55D36CF33F3CCCBB.title": "Automate: Bread"
 	"quest.5616C2CB21D1F5E0.quest_desc": [
-		"Goes off on contact. Put a fuze on a shell before loading it."
+		"An impact fuze head and redstone (makes 2). Goes off on contact. Put a fuze on a shell"
+		"before you load it."
 	]
 	"quest.5616C2CB21D1F5E0.title": "Impact Fuze"
 	"quest.5654679C05A47678.quest_desc": [
@@ -1674,11 +1709,12 @@
 	]
 	"quest.56C06FAADEC153C4.title": "Cannon Welder"
 	"quest.56DD42619431371D.quest_desc": [
-		"A long barrel for the flintlock: more range."
+		"Iron sheets and a stripped log. A longer flintlock barrel: more range."
 	]
 	"quest.56DD42619431371D.title": "Musket Barrel"
 	"quest.57B7CCC186625ABD.quest_desc": [
-		"Your first bucket of &acrude oil&r."
+		"Build the Pumpjack over an oil deposit (find one with the Surface Scanner) and pump"
+		"&aCrude Oil&r into a tank. Fill a bucket from the tank."
 	]
 	"quest.57B7CCC186625ABD.title": "Crude Oil"
 	"quest.58136A6ECBF2CA4A.quest_desc": [
@@ -1711,19 +1747,20 @@
 	]
 	"quest.593880FB761DDE5A.title": "Cruise Missile"
 	"quest.597A3E429F55275A.quest_desc": [
-		"Doors that work on a moving train."
+		"Train Casing and a wooden door (makes 2). Doors that work on a moving train."
 	]
 	"quest.597A3E429F55275A.title": "Train Door"
 	"quest.598BE4ADE1531AFA.quest_desc": [
-		"Drives your boat through the water."
+		"&6Create: High Seas&r: a blast furnace, a propeller and a lever. Burns fuel to drive"
+		"your boat."
 	]
 	"quest.598BE4ADE1531AFA.title": "Boat Engine"
 	"quest.59C4C64E295DD12D.quest_desc": [
-		"Fine maneuvering under water."
+		"A mechanical pump, a copper block and a propeller. A water jet for fine maneuvering."
 	]
 	"quest.59C4C64E295DD12D.title": "Water Thruster"
 	"quest.59C7A4B8DD096B55.quest_desc": [
-		"Tilts rotors to steer."
+		"A Propeller Bearing and a Gimbal Sensor. Tilts its rotor to steer the drone."
 	]
 	"quest.59C7A4B8DD096B55.title": "Tilting Propeller Bearing"
 	"quest.5A3BA4624706AB01.quest_desc": [
@@ -1735,7 +1772,7 @@
 	]
 	"quest.5AFAAE84D66D6BA3.title": "Into the Nether"
 	"quest.5B0A036B4AB20650.quest_desc": [
-		"The press form for shotgun shells."
+		"Stonecut an iron ingot. A Press with this form stamps shotgun shells."
 	]
 	"quest.5B0A036B4AB20650.title": "Shotgun Shell Press Form"
 	"quest.5B0AB69264381253.quest_desc": [
@@ -1753,7 +1790,7 @@
 	]
 	"quest.5B2A171A8BB00B84.title": "Stove"
 	"quest.5B90707D8FDB5662.quest_desc": [
-		"Outputs redstone when a train passes."
+		"Train Casing and a pressure plate. Outputs redstone when a train passes."
 	]
 	"quest.5B90707D8FDB5662.title": "Train Observer"
 	"quest.5B9696024A7D8AC9.quest_desc": [
@@ -1761,7 +1798,8 @@
 	]
 	"quest.5B9696024A7D8AC9.title": "Pickup Upgrade"
 	"quest.5BC063A06F708BDE.quest_desc": [
-		"The submarine's command console."
+		"A crafter slot cover, planks and a transmitter. The submarine's command console: drive and"
+		"dive from here."
 	]
 	"quest.5BC063A06F708BDE.title": "Onboard Computer"
 	"quest.5C326BE896F9406D.quest_desc": [
@@ -1888,7 +1926,7 @@
 	]
 	"quest.64156283A7F5D425.title": "Brass Sheets"
 	"quest.653667B88343242F.quest_desc": [
-		"For when they get too close."
+		"Iron and brass sheets. Fixes to the flintlock for when they get too close."
 	]
 	"quest.653667B88343242F.title": "Bayonet"
 	"quest.658C20D3D998E1FC.quest_desc": [
@@ -1900,7 +1938,7 @@
 	]
 	"quest.65B386CAEB47A994.title": "Control Chair"
 	"quest.661BA95EC4E158D5.quest_desc": [
-		"Hearty and simple."
+		"Carrot, potato, beetroot and a leafy green in the Cooking Pot."
 	]
 	"quest.661BA95EC4E158D5.title": "Vegetable Soup"
 	"quest.6629BCD414634293.quest_desc": [
@@ -1913,19 +1951,20 @@
 	]
 	"quest.663C120074F50910.title": "Sharestone"
 	"quest.663EC1BF344C859B.quest_desc": [
-		"Call your train."
+		"Copper and a brass nugget. Call your train to you."
 	]
 	"quest.663EC1BF344C859B.title": "Conductor Whistle"
 	"quest.66447527701EAC29.quest_desc": [
-		"Shows the wind."
+		"An arrow and copper. Shows which way the wind blows, for sailing."
 	]
 	"quest.66447527701EAC29.title": "Wind Vane"
 	"quest.666707D21D56B27F.quest_desc": [
-		"Read water pressure at a glance."
+		"Engineer's Goggles, an electron tube and red glass. Shows water pressure at a"
+		"glance."
 	]
 	"quest.666707D21D56B27F.title": "Pressure Goggles"
 	"quest.669054B8698F5052.quest_desc": [
-		"Lift and thrust."
+		"An Andesite Propeller and a Gimbal Sensor (makes 4). Drone lift and thrust."
 	]
 	"quest.669054B8698F5052.title": "Drone Propeller"
 	"quest.66C3EC98853BC5DF.quest_desc": [
@@ -1948,7 +1987,7 @@
 	]
 	"quest.674633D31D85B876.title": "Deployer"
 	"quest.679F6C0F323E288F.quest_desc": [
-		"Simple, cheap blades."
+		"Convert an Andesite Propeller in a crafting grid. Light, cheap blades."
 	]
 	"quest.679F6C0F323E288F.title": "Wooden Propeller"
 	"quest.67A8D26B5BBD67D5.quest_desc": [
@@ -1956,7 +1995,7 @@
 	]
 	"quest.67A8D26B5BBD67D5.title": "Automate: Brass"
 	"quest.681D7475EC18C5EA.quest_desc": [
-		"Underwater thrust."
+		"A propeller, industrial iron and a shaft. Thrust under water."
 	]
 	"quest.681D7475EC18C5EA.title": "Submarine Propeller"
 	"quest.6831CB5CFFFE83CA.quest_desc": [
@@ -1990,7 +2029,7 @@
 	]
 	"quest.6A815378A5DE98C6.title": "Ballast Tank"
 	"quest.6A99365878ECA1A9.quest_desc": [
-		"Tomatoes in the pot."
+		"Two tomatoes and a bowl in the Cooking Pot (or a Create mixer)."
 	]
 	"quest.6A99365878ECA1A9.title": "Tomato Sauce"
 	"quest.6AF6E11AB857B769.quest_desc": [
@@ -1998,7 +2037,7 @@
 	]
 	"quest.6AF6E11AB857B769.title": "Electron Tube"
 	"quest.6BB4725031FEA927.quest_desc": [
-		"Mark a spot on the water."
+		"Red and white wool. Marks a spot on the water: channels, mines, rally points."
 	]
 	"quest.6BB4725031FEA927.title": "Buoy"
 	"quest.6BEC794B9B7ED2B9.quest_desc": [
@@ -2047,7 +2086,8 @@
 	]
 	"quest.6D7A35883B8B3DFF.title": "Large Water Wheel"
 	"quest.6DA7A77B9BBA1369.quest_desc": [
-		"A propeller you can control."
+		"Brass casing, a gyroscopic mechanism and a propeller. A propeller you can steer"
+		"and throttle with redstone."
 	]
 	"quest.6DA7A77B9BBA1369.title": "Smart Propeller"
 	"quest.6DFA7706AC394262.quest_desc": [
@@ -2119,7 +2159,8 @@
 	]
 	"quest.728E9D32BE764BA7.title": "TP Link"
 	"quest.7298096382EF849F.quest_desc": [
-		"Automates ballast pumping."
+		"A copper block, a mechanical pump and a transmitter. Runs the ballast pumps from one"
+		"place."
 	]
 	"quest.7298096382EF849F.title": "Pump Controller"
 	"quest.72BF8D911FA88129.quest_desc": [
@@ -2138,7 +2179,7 @@
 	]
 	"quest.731740FB69570BAB.title": "Quantum Paper"
 	"quest.73638BEF242FD8D0.quest_desc": [
-		"Drives the tracks."
+		"Two cogwheels and an industrial belt (makes 4). The sprocket that drives the treads."
 	]
 	"quest.73638BEF242FD8D0.title": "Flanged Cogwheel"
 	"quest.73795B54B8F784EE.quest_desc": [
@@ -2146,7 +2187,7 @@
 	]
 	"quest.73795B54B8F784EE.title": "Joystick Module"
 	"quest.7391A72D1E941C14.quest_desc": [
-		"Rotor blades."
+		"A sail frame, black dye and iron (makes 4). Rotor blades."
 	]
 	"quest.7391A72D1E941C14.title": "Drone Blade"
 	"quest.73A80F40FCC06F47.quest_desc": [
@@ -2208,11 +2249,12 @@
 	]
 	"quest.7647AA74DA277AB7.title": "Lead"
 	"quest.768786DC2818C9FB.quest_desc": [
-		"Another distillation product: aviation fuel."
+		"Another Distillation Tower output: aviation fuel for jet and turbine engines."
 	]
 	"quest.768786DC2818C9FB.title": "Kerosene"
 	"quest.76CED96AB6CE2651.quest_desc": [
-		"A classic signal arm."
+		"&6Steam 'n' Rails&r: andesite casing, a fence, iron plate and an electron tube. A signal"
+		"arm that shows a Train Signal's state."
 	]
 	"quest.76CED96AB6CE2651.title": "Semaphore"
 	"quest.76F59EFACD9DBDED.quest_desc": [
@@ -2287,7 +2329,7 @@
 	]
 	"quest.788F9D6BEE492895.title": "Automate: Coal Coke"
 	"quest.78B7A9898E0C4DA1.quest_desc": [
-		"Measures depth pressure."
+		"An iron pressurizer, industrial iron and a water bucket. Measures depth by pressure."
 	]
 	"quest.78B7A9898E0C4DA1.title": "Pressure Barometer"
 	"quest.792CC832BC6F5671.quest_desc": [
@@ -2313,7 +2355,7 @@
 	]
 	"quest.79AFAE2A1B4CB9E2.title": "Automatic Cannon Controller"
 	"quest.7A0CFA70DB594577.quest_desc": [
-		"Drive the train yourself."
+		"Train Casing, a lever and a precision mechanism. Drive the train yourself."
 	]
 	"quest.7A0CFA70DB594577.title": "Train Controls"
 	"quest.7A1C29BC7A1E7837.quest_desc": [
@@ -2323,11 +2365,11 @@
 	]
 	"quest.7A1C29BC7A1E7837.title": "Compact Cannon Mount"
 	"quest.7AB9FC5B547B2BA9.quest_desc": [
-		"Put rubber on the road."
+		"&6Offroad&r: dried kelp and a shaft (makes 4). Standard wheels for a ground vehicle."
 	]
 	"quest.7AB9FC5B547B2BA9.title": "Tire"
 	"quest.7AD7EE7AAC074AE1.quest_desc": [
-		"Diamond to netherite: the biggest chest."
+		"A netherite ingot and a lever. Diamond to netherite: the biggest chest."
 	]
 	"quest.7AD7EE7AAC074AE1.title": "Netherite Tier"
 	"quest.7AEBA39C3151BF3B.quest_desc": [
@@ -2344,11 +2386,13 @@
 	"quest.7B00515BF7869680.quest_subtitle": "Open the book. You did it."
 	"quest.7B00515BF7869680.title": "Welcome to Create Wars"
 	"quest.7B036FB0C0449878.quest_desc": [
-		"Heavy-duty drive belt."
+		"A belt and iron nuggets (makes 4). The heavy drive belt tank treads are built"
+		"around."
 	]
 	"quest.7B036FB0C0449878.title": "Industrial Belt"
 	"quest.7B0DBA63C3D5D511.quest_desc": [
-		"Reach storage that isn't next to the connector."
+		"Planks, sticks, a chest and a trapdoor (makes 6). Reach storage that isn't next to the"
+		"connector."
 	]
 	"quest.7B0DBA63C3D5D511.title": "Inventory Cable"
 	"quest.7B3E1F92DCD2B92E.quest_desc": [
@@ -2357,7 +2401,7 @@
 	]
 	"quest.7B3E1F92DCD2B92E.title": "Mechanical Servo"
 	"quest.7B4891B86DBC4114.quest_desc": [
-		"Real food for a long fight."
+		"Raw beef, carrot and potato in the Cooking Pot. Real food for a long fight."
 	]
 	"quest.7B4891B86DBC4114.title": "Beef Stew"
 	"quest.7B58D6CB05D0188E.quest_desc": [
@@ -2404,7 +2448,8 @@
 	]
 	"quest.7EF44200E09553BD.title": "Liquid Experience"
 	"quest.7FB9FCEB172EFC2A.quest_desc": [
-		"The explosive end."
+		"Sequenced assembly: iron sheets, packed gunpowder, redstone and a brass nugget. The"
+		"explosive end of a torpedo."
 	]
 	"quest.7FB9FCEB172EFC2A.title": "Torpedo Warhead"
 	"reward_table.54CACBC1AF89E17B.title": "War Trophy"

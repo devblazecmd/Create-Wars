@@ -1,8 +1,8 @@
 ---
-tags: [bug/status/open, bug/severity/major, bug/type/version-incompatibility, mc-version/1.21.1, loader/neoforge]
+tags: [bug/status/fixed, bug/severity/major, bug/type/version-incompatibility, mc-version/1.21.1, loader/neoforge]
 affected_mods: ["[[../01-Mods/Create Armored Constructs]]", "[[../01-Mods/CBC Military Supplement]]", "[[../01-Mods/Synaxis]]", "[[../01-Mods/Create The Air War]]", "[[../01-Mods/FTB Quests]]"]
 date_opened: "2026-11-22"
-date_resolved: ""
+date_resolved: "2026-11-22"
 ---
 
 # Quest items with no survival recipe
@@ -29,5 +29,9 @@ Fluid buckets (filled with a spout or by hand), Big Cannons cannon parts (castin
 `createbigcannons:autocannon_cartridge`.
 
 ## Fix
-Owner decision pending. Options: write KubeJS recipes for them, drop the quests, or (for Armored Constructs)
-treat the mod as creative-only or replace it.
+Owner 2026-11-22: "fix those item give them recipes". `pack/kubejs/server_scripts/missing_recipes.js` adds
+recipes for every item above (and the Military Supplement APHE bouncing bomb, Synaxis jet rudder, Armored
+Constructs hulls, tank gun, BOPS and steel seat). The Rangefinder has no item form, so it got none.
+The Autocannon Cartridge quest was asking for the loaded round; it now asks for
+`empty_autocannon_cartridge`, and Spoils of War III gives AP autocannon rounds instead of bare cartridges.
+After the fix the audit's NO RECIPE list holds only things made by mechanics. KubeJS: 0 failed recipes.

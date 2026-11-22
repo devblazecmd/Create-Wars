@@ -20,6 +20,9 @@ Added via `packwiz modrinth add create-the-air-war` on 2026-11-20; resolved to `
 
 ## Known issues
 - [[../02-Bugs/Client model load errors|Client model load errors]]: the FAB-1500 model uses an invalid rotation.
+- 2026-11-22: `fpv_drone` and `drone_controller` have no recipe in 5.00. Pack recipes added in
+  `missing_recipes.js` (drone: 4 Andesite Propellers, gyro stabilizer, antenna, camera, packed guncotton;
+  joystick: brass sheets, antenna, monitor, electron tube). [[../02-Bugs/Quest items with no survival recipe]]
 
 ## Config decisions
 - 2026-11-21: **Launchers and their ammo removed from survival** (project owner's call) by

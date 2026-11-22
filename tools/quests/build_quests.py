@@ -437,19 +437,21 @@ CHAPTERS = [
             "Base, crank and hammer, built over an oil deposit, pump &acrude oil&r.",
         ], [item("tfmg:pumpjack_base"), item("tfmg:pumpjack_crank"), item("tfmg:pumpjack_hammer")], xp=50),
         Q("crude_oil", "Crude Oil", 0, 0, [
-            "Your first bucket of &acrude oil&r.",
+            "Build the Pumpjack over an oil deposit (find one with the Surface Scanner) and pump",
+            "&aCrude Oil&r into a tank. Fill a bucket from the tank.",
         ], [item("tfmg:crude_oil_bucket")], xp=30),
         Q("distillation", "Distillation Tower", 0, 0, [
             "A &aDistillation Controller&r and outputs on steel tanks refine crude oil into fuels.",
         ], [item("tfmg:steel_distillation_controller"), item("tfmg:steel_distillation_output", 2)], xp=50),
         Q("gasoline", "Gasoline", 0, 0, [
-            "Refined from crude oil. Needed for &cnapalm&r.",
+            "The Distillation Tower splits crude oil into fuels. &aGasoline&r is one of its outputs,",
+            "and Napalm needs it.",
         ], [item("tfmg:gasoline_bucket")], xp=25),
         Q("diesel", "Diesel", 0, 0, [
-            "Another distillation product: engine fuel.",
+            "Another Distillation Tower output. Diesel runs TFMG's diesel engines.",
         ], [item("tfmg:diesel_bucket")], xp=20),
         Q("kerosene", "Kerosene", 0, 0, [
-            "Another distillation product: aviation fuel.",
+            "Another Distillation Tower output: aviation fuel for jet and turbine engines.",
         ], [item("tfmg:kerosene_bucket")], xp=20),
         Q("aluminum", "Aluminum", 0, 0, [
             "Process &abauxite&r in a chemical vat for &aAluminum Ingots&r. Napalm needs them.",
@@ -502,10 +504,12 @@ CHAPTERS = [
             "A waystone shared by everyone who uses the same color. Uses Quantum Casings too.",
         ], [item("waystones:purple_sharestone")], xp=25),
         Q("portstone", "Portstone", 0, 0, [
-            "A compact one-way teleport point. Uses Quantum Casings too.",
+            "Mechanical crafting: a Quantum Casing, a Warp Stone, andesite casing, stone bricks and",
+            "dye. A one-way teleport point: it only sends you, it can't be a destination.",
         ], [item("waystones:white_portstone")], xp=25),
         Q("warp_plate", "Warp Plate", 0, 0, [
-            "Step on it to warp to a linked plate. Made with Warp Dust.",
+            "Mechanical crafting: Warp Dust, andesite casing, stone bricks and flint (makes 2).",
+            "Step on one to warp to the plate it is linked to.",
         ], [item("waystones:warp_plate", 2)], xp=25),
         Q("blank_scroll", "Blank Scroll", 0, 0, [
             "&eChanged in this pack:&r every scroll is made from &dQuantum Paper&r.",
@@ -514,7 +518,8 @@ CHAPTERS = [
             "One-time teleport to a waystone. Uses a &dQuantum Pearl&r in this pack.",
         ], [item("waystones:warp_scroll")], xp=20),
         Q("return_scroll", "Return Scroll", 0, 0, [
-            "Teleports you back to your spawn point.",
+            "Quantum Paper, a gold nugget and purple dye. One use: teleports you to your spawn",
+            "point.",
         ], [item("waystones:return_scroll")], xp=20),
         Q("advanced_part", "Advanced Component", 0, 0, [
             "Sequenced assembly on a &asturdy sheet&r with a &adiamond&r and a &aRedstone Pearl&r.",
@@ -552,10 +557,12 @@ CHAPTERS = [
             "Advanced Components and a Quantum Mechanism.",
         ], [item("createendertransmission:item_transmitter", 2)], xp=100),
         Q("fluid_transmitter", "Fluid Transmitter", 0, 0, [
-            "The same, for fluids: a mechanical pump instead of the chute.",
+            "The same recipe with a &aMechanical Pump&r in place of the chute. Moves fluids",
+            "between Fluid Transmitters on the same Network.",
         ], [item("createendertransmission:fluid_transmitter", 2)], xp=60),
         Q("energy_transmitter", "Energy Transmitter", 0, 0, [
-            "The same, for rotation: a shaft instead of the chute. Power a front-line base from home.",
+            "The same recipe with a &aShaft&r in place of the chute. Sends rotation to every",
+            "Energy Transmitter on the Network: power a front-line base from home.",
         ], [item("createendertransmission:energy_transmitter", 2)], xp=60),
         Q("chunk_loader", "Chunk Loader", 0, 0, [
             "Keeps the chunks around it loaded, so remote machines keep running. A beacon wrapped in",
@@ -597,7 +604,8 @@ CHAPTERS = [
             "Template&r. Enchants items automatically with liquid experience.",
         ], [item("create_enchantment_industry:blaze_enchanter")], xp=60),
         Q("blaze_forger", "Blaze Forger", 0, 0, [
-            "Same smithing upgrade, with an &aanvil&r instead of an enchanting table.",
+            "Smithing table: a Blaze Upgrade template, a Blaze Burner and an anvil. Repairs and",
+            "combines enchanted gear with liquid experience.",
         ], [item("create_enchantment_industry:blaze_forger")], xp=40),
         Q("printer", "Printer", 0, 0, [
             "Brass sheet, a Spout and a block of iron. Copies books and enchanted books.",
@@ -635,7 +643,7 @@ CHAPTERS = [
             "Mix &ablaze powder, gunpowder and magma cream&r. The start of stronger propellant.",
         ], [item("createbigcannons:congealed_nitro")], xp=15),
         Q("hardened_nitro", "Hardened Nitro", 0, 0, [
-            "Smelt congealed nitro.",
+            "Smelt congealed nitro. Crush or mill it into Nitropowder, the stronger propellant.",
         ], [item("createbigcannons:hardened_nitro")], xp=15),
         Q("nitropowder", "Nitropowder", 0, 0, [
             "Mill hardened nitro into &aNitropowder&r: a stronger charge filling than gunpowder.",
@@ -651,10 +659,11 @@ CHAPTERS = [
             "Shot balls and gunpowder: bursts into fragments.",
         ], [item("createbigcannons:shrapnel_shell")], xp=20),
         Q("smoke_shell", "Smoke Shell", 0, 0, [
-            "Lays a smoke screen.",
+            "A hay bale in an iron shell: bursts into a smoke screen to hide an advance.",
         ], [item("createbigcannons:smoke_shell")], xp=15),
         Q("impact_fuze", "Impact Fuze", 0, 0, [
-            "Goes off on contact. Put a fuze on a shell before loading it.",
+            "An impact fuze head and redstone (makes 2). Goes off on contact. Put a fuze on a shell",
+            "before you load it.",
         ], [item("createbigcannons:impact_fuze", 2)], xp=15),
         Q("timed_fuze", "Timed Fuze", 0, 0, [
             "Clock, iron and redstone: bursts after a set time, for airbursts.",
@@ -700,10 +709,10 @@ CHAPTERS = [
             "and add a round to make ammunition.",
         ], [item("createbigcannons:empty_autocannon_cartridge", 4)], xp=15),
         Q("ap_autocannon_round", "AP Autocannon Round", 0, 0, [
-            "Armor-piercing ammo for the autocannon.",
+            "Cast iron and iron (makes 8). Armor-piercing ammo for the autocannon.",
         ], [item("createbigcannons:ap_autocannon_round", 8)], xp=20),
         Q("ammo_container", "Autocannon Ammo Container", 0, 0, [
-            "Holds a belt of autocannon rounds for continuous fire.",
+            "Brass and iron sheets. Holds a belt of autocannon rounds for continuous fire.",
         ], [item("createbigcannons:autocannon_ammo_container")], xp=20),
         Q("firepower", "Compact Cannon Mount", 0, 0, [
             "&6CBC: Firepower Components&r: a compact mount for cannons on vehicles and ships. Brass",
@@ -745,13 +754,13 @@ CHAPTERS = [
             "Gunpowder, a lead nugget and paper: flintlock ammo.",
         ], [item("cgs:paper_cartridge", 8)], xp=15),
         Q("musket_barrel", "Musket Barrel", 0, 0, [
-            "A long barrel for the flintlock: more range.",
+            "Iron sheets and a stripped log. A longer flintlock barrel: more range.",
         ], [item("cgs:flintlock_long_barrel")], xp=15),
         Q("stock", "Stock", 0, 0, [
             "Brass sheet and a stripped log: steadies your aim.",
         ], [item("cgs:stock")], xp=15),
         Q("bayonet", "Bayonet", 0, 0, [
-            "For when they get too close.",
+            "Iron and brass sheets. Fixes to the flintlock for when they get too close.",
         ], [item("cgs:bayonet")], xp=10),
         Q("steel", "Steel", 0, 0, [
             "Mix &acharcoal dust&r with &airon&r to make steel. Better guns need it.",
@@ -786,10 +795,10 @@ CHAPTERS = [
             "Mechanical crafting: brass and steel sheets, andesite alloy and a stripped log.",
         ], [item("cgs:shotgun")], xp=40),
         Q("press_form_shotgun", "Shotgun Shell Press Form", 0, 0, [
-            "The press form for shotgun shells.",
+            "Stonecut an iron ingot. A Press with this form stamps shotgun shells.",
         ], [item("cgs:press_form_shotgun")], xp=10),
         Q("shell_shotgun", "Shotgun Shell", 0, 0, [
-            "Stamped with the shotgun press form.",
+            "Sequenced assembly on a blank shotgun round, with nails or blaze powder (makes 8).",
         ], [item("cgs:shell_shotgun", 8)], xp=15),
         Q("round_shotgun", "Shotgun Round", 0, 0, [
             "Lead balls into a blank shotgun round.",
@@ -816,7 +825,7 @@ CHAPTERS = [
             "Runs off a &acopper backtank&r: precision mechanism, valve, pipe, brass and iron sheets.",
         ], [item("cgs:nailgun")], xp=50),
         Q("nails", "Nails", 0, 0, [
-            "Nailgun ammo.",
+            "Iron nuggets (crafting or sequenced assembly). Nailgun ammo.",
         ], [item("cgs:nail", 32)], xp=15),
         Q("ballistazooka", "Ballistazooka", 0, 0, [
             "A &aflywheel&r, string, brass and iron sheets: a handheld ballista.",
@@ -855,7 +864,8 @@ CHAPTERS = [
             "Paper, precision mechanism and redstone: choose what gets shot at.",
         ], [item("create_radar:target_filter_item")], xp=15),
         Q("ident_filter", "Identification Filter", 0, 0, [
-            "Tell friend from foe.",
+            "Paper, an electron tube and redstone. Tells friend from foe, so your guns leave",
+            "transponder-marked craft alone.",
         ], [item("create_radar:ident_filter_item")], xp=15),
         Q("auto_aim", "Auto Yaw and Pitch Controllers", 0, 0, [
             "A gearbox and a precision mechanism each. They let radar &aaim a cannon mount&r for you.",
@@ -877,10 +887,12 @@ CHAPTERS = [
             "Brass casing, electron tube and redstone link: marks you as friendly.",
         ], [item("create_radar:identification_transponder")], xp=25),
         Q("network_controller", "Network Controller", 0, 0, [
-            "Combines filters into one network.",
+            "Brass casing, a precision mechanism and all three filters (detection, targeting,",
+            "identification). Applies them to a whole radar network at once.",
         ], [item("create_radar:network_filterer")], xp=30),
         Q("safe_zone", "Radar Safe Zone Designator", 0, 0, [
-            "Marks an area radar weapons won't fire into.",
+            "Paper, a compass and redstone. Marks an area your radar weapons won't fire into, such as",
+            "your own base.",
         ], [item("create_radar:radar_safe_zone_designator")], xp=20),
         Q("missile_mount", "Missile Mount", 0, 0, [
             "&6CBC Aeronautics Missiles&r: brass casing, steel, iron sheet and precision mechanism.",
@@ -924,46 +936,53 @@ CHAPTERS = [
             "Liquid levitite blend. JEI shows how it sets into solid levitite.",
         ], [item("aeronautics:levitite_blend_bucket")], xp=20),
         Q("pearlescent_levitite", "Pearlescent Levitite", 0, 0, [
-            "An upgraded levitite.",
+            "A stronger levitite, made from levitite (see JEI for the step). More lift for",
+            "the same space.",
         ], [item("aeronautics:pearlescent_levitite", 4)], xp=25),
         Q("hot_air", "Hot Air Burner", 0, 0, [
             "Hot air balloons: a &aHot Air Burner&r under an envelope gives adjustable lift.",
         ], [item("aeronautics:adjustable_burner")], xp=30),
         Q("steam_vent", "Steam Vent", 0, 0, [
-            "Another way to fill an envelope.",
+            "A copper block and gold sheets. Fills an envelope with steam from a boiler, instead",
+            "of hot air from a burner.",
         ], [item("aeronautics:steam_vent")], xp=15),
         Q("aviators_goggles", "Aviator's Goggles", 0, 0, [
-            "Every pilot needs a pair.",
+            "Engineer's Goggles and leather. Goggles for pilots.",
         ], [item("aeronautics:aviators_goggles")], xp=15),
         Q("propeller", "Propeller Bearing", 0, 0, [
             "Mount blades on a &aPropeller Bearing&r and spin it for thrust.",
         ], [item("aeronautics:propeller_bearing")], xp=35),
         Q("wooden_propeller", "Wooden Propeller", 0, 0, [
-            "Simple, cheap blades.",
+            "Convert an Andesite Propeller in a crafting grid. Light, cheap blades.",
         ], [item("aeronautics:wooden_propeller")], xp=15),
         Q("andesite_propeller", "Andesite Propeller", 0, 0, [
-            "Sturdier blades.",
+            "Wooden slabs, a Create propeller and a shaft. Sturdier blades for a Propeller",
+            "Bearing.",
         ], [item("aeronautics:andesite_propeller")], xp=15),
         Q("smart_propeller", "Smart Propeller", 0, 0, [
-            "A propeller you can control.",
+            "Brass casing, a gyroscopic mechanism and a propeller. A propeller you can steer",
+            "and throttle with redstone.",
         ], [item("aeronautics:smart_propeller")], xp=20),
         Q("gyro_propeller", "Gyroscopic Propeller Bearing", 0, 0, [
-            "A self-stabilizing propeller bearing.",
+            "Brass casing, wooden slabs and a gyroscopic mechanism. A propeller bearing that",
+            "keeps itself level.",
         ], [item("aeronautics:gyroscopic_propeller_bearing")], xp=25),
         Q("controls", "Steering Wheel", 0, 0, [
             "Fly it yourself: a &aSteering Wheel&r on your craft lets you steer from the seat.",
         ], [item("simulated:steering_wheel")], xp=35),
         Q("throttle", "Throttle Lever", 0, 0, [
-            "Control engine and propeller power.",
+            "Brass casing and a stick. Sets engine and propeller power from the seat.",
         ], [item("simulated:throttle_lever")], xp=15),
         Q("altitude_sensor", "Altitude Sensor", 0, 0, [
             "Outputs redstone by height: the basis of altitude hold.",
         ], [item("simulated:altitude_sensor")], xp=15),
         Q("navigation_table", "Navigation Table", 0, 0, [
-            "Plan where you're going.",
+            "Brass casing, a brass sheet and a precision mechanism. Plots a course and can",
+            "steer the craft toward it.",
         ], [item("simulated:navigation_table")], xp=15),
         Q("gimbal_sensor", "Gimbal Sensor", 0, 0, [
-            "Senses tilt, for auto-leveling.",
+            "Brass casing, a compass and a gyroscopic mechanism. Outputs redstone by tilt: the",
+            "sensor behind auto-leveling.",
         ], [item("simulated:gimbal_sensor")], xp=15),
         Q("gyroscope", "Gyroscope", 0, 0, [
             "&6Aeroworks&r: a flywheel and a Gimbal Sensor. Powered by rotation, it holds your craft",
@@ -1027,10 +1046,12 @@ CHAPTERS = [
             "Thrust from lava fuel; redstone sets the throttle.",
         ], [item("create_the_air_wars:rocket_engine")], xp=25),
         Q("sc_250", "SC250 Bomb", 0, 0, [
-            "A droppable bomb.",
+            "&6The Air War&r: titanium sheets, an activator and a big explosive (mechanical",
+            "crafting). A free-fall bomb.",
         ], [item("create_the_air_wars:sc_250")], xp=20),
         Q("aim9x", "AIM-9X", 0, 0, [
-            "A short-range infrared missile.",
+            "&6The Air War&r: titanium, a chip, wires, an explosive, an activator and a rocket",
+            "engine (mechanical crafting). A short-range infrared missile.",
         ], [item("create_the_air_wars:aim9x")], xp=25),
         Q("tomahawk", "Tomahawk", 0, 0, [
             "A long-range guided missile: set its target with the Target Gunner Gadget.",
@@ -1039,7 +1060,8 @@ CHAPTERS = [
             "&6CBC Military Supplement&r: aerial bombs for Big Cannons-style payloads.",
         ], [item("cbcmoreshells:he_bomb")], xp=30),
         Q("aphe_bomb", "APHE Bomb", 0, 0, [
-            "Armor-piercing high explosive.",
+            "Mechanical crafting: an AP Shell, iron plates and a propeller. Armor-piercing high",
+            "explosive for armored targets.",
         ], [item("cbcmoreshells:aphe_bomb")], xp=20),
         Q("bouncing_bomb", "HE Bouncing Bomb", 0, 0, [
             "Iron sheets, packed guncotton and an &aImpact Fuze&r (pack recipe). Drop it low over water:",
@@ -1061,10 +1083,12 @@ CHAPTERS = [
             "pipe (pack recipe). Jet thrust for fast aircraft.",
         ], [item("synaxis:jet")], xp=25),
         Q("circuit", "Circuit", 0, 0, [
-            "Program flight logic with Cimulink circuits.",
+            "Deploy a precision control circuit blank onto brass casing. Program flight logic",
+            "with Cimulink circuits.",
         ], [item("synaxis:circuit")], xp=20),
         Q("hydraulic_actuator", "Hydraulic Linear Actuator", 0, 0, [
-            "Pushes and pulls parts of your craft precisely.",
+            "A mechanical piston, piston pole, shaft, brass casing and a sequenced",
+            "gearshift. Pushes and pulls parts of your craft precisely.",
         ], [item("synaxis:hydraulic_linear_actuator")], xp=20),
     ]),
     # ----------------------------------------------------------------------------------------------
@@ -1076,81 +1100,91 @@ CHAPTERS = [
             "Aeronautics). A rudder steers.",
         ], [item("create_high_seas:rudder")], xp=20),
         Q("boat_engine", "Boat Engine", 0, 0, [
-            "Drives your boat through the water.",
+            "&6Create: High Seas&r: a blast furnace, a propeller and a lever. Burns fuel to drive",
+            "your boat.",
         ], [item("create_high_seas:boat_engine")], xp=30),
         Q("anchor", "Anchor", 0, 0, [
-            "Stay put.",
+            "An iron block, chain, iron sheet and ingot. Drop it to hold your ship in place.",
         ], [item("create_high_seas:anchor")], xp=15),
         Q("buoy", "Buoy", 0, 0, [
-            "Mark a spot on the water.",
+            "Red and white wool. Marks a spot on the water: channels, mines, rally points.",
         ], [item("create_high_seas:buoy")], xp=10),
         Q("wind_vane", "Wind Vane", 0, 0, [
-            "Shows the wind.",
+            "An arrow and copper. Shows which way the wind blows, for sailing.",
         ], [item("create_high_seas:wind_vane")], xp=10),
         Q("oar", "Oar of Boat", 0, 0, [
-            "Row, row, row.",
+            "Sticks and planks. Row a small boat by hand.",
         ], [item("create_high_seas:oar_of_boat")], xp=10),
         Q("ballast", "Ballast Tank", 0, 0, [
             "&6Create Deep Seas&r. Flood and empty &aBallast Tanks&r to dive and surface.",
         ], [item("create_submarine:ballast_tank")], xp=40),
         Q("ballast_vent", "Ballast Vent", 0, 0, [
-            "Lets water in and out of the tanks.",
+            "A copper block and copper nuggets. Lets water in and out of the ballast tanks.",
         ], [item("create_submarine:ballast_vent")], xp=15),
         Q("floater", "Floater", 0, 0, [
-            "Adds buoyancy.",
+            "Wool and a phycological membrane. Adds buoyancy so the hull floats higher.",
         ], [item("create_submarine:floater")], xp=15),
         Q("sub_propeller", "Submarine Propeller", 0, 0, [
-            "Underwater thrust.",
+            "A propeller, industrial iron and a shaft. Thrust under water.",
         ], [item("create_submarine:submarine_propeller")], xp=20),
         Q("water_thruster", "Water Thruster", 0, 0, [
-            "Fine maneuvering under water.",
+            "A mechanical pump, a copper block and a propeller. A water jet for fine maneuvering.",
         ], [item("create_submarine:water_thruster")], xp=20),
         Q("oxygen", "Electrolyzer", 0, 0, [
             "Makes &aoxygen&r for your crew. Submarines need air.",
         ], [item("create_submarine:electrolyzer")], xp=40),
         Q("diffuser", "Oxygen Diffuser", 0, 0, [
-            "Spreads oxygen through the hull.",
+            "A propeller, nozzle, item drain, redstone link and electron tube. Spreads the",
+            "electrolyzer's oxygen through the hull.",
         ], [item("create_submarine:oxygene_diffuser")], xp=20),
         Q("decompression", "Decompression Chamber", 0, 0, [
-            "Come up from the deep safely.",
+            "Copper sheets, glass and a mechanical pump. Come up from depth without getting the",
+            "bends.",
         ], [item("create_submarine:decompression_chamber")], xp=20),
         Q("diving_gear", "Diving Gear", 0, 0, [
-            "Diving chestplate and leggings for swimming outside.",
+            "Copper and andesite alloy. Chestplate and leggings for swimming outside the hull. Wear",
+            "them with a Copper Backtank and Diving Helmet.",
         ], [item("create_submarine:diving_chestplate"), item("create_submarine:diving_leggings")], xp=25),
         Q("pressure_goggles", "Pressure Goggles", 0, 0, [
-            "Read water pressure at a glance.",
+            "Engineer's Goggles, an electron tube and red glass. Shows water pressure at a",
+            "glance.",
         ], [item("create_submarine:pressure_goggles")], xp=15),
         Q("command", "Onboard Computer", 0, 0, [
-            "The submarine's command console.",
+            "A crafter slot cover, planks and a transmitter. The submarine's command console: drive and",
+            "dive from here.",
         ], [item("create_submarine:command_sub")], xp=40),
         Q("sub_sonar", "Sonar (Deep Seas)", 0, 0, [
             "See under water. (A different block from the Air War sonar.)",
         ], [item("create_submarine:sonar")], xp=25),
         Q("barometer", "Pressure Barometer", 0, 0, [
-            "Measures depth pressure.",
+            "An iron pressurizer, industrial iron and a water bucket. Measures depth by pressure.",
         ], [item("create_submarine:barometer")], xp=15),
         Q("alarm", "Industrial Alarm", 0, 0, [
-            "Sound the alarm.",
+            "A redstone lamp, note block, electron tube, iron sheet and red glass. Sounds when it gets",
+            "a redstone signal.",
         ], [item("create_submarine:industrial_alarm")], xp=10),
         Q("pump_controller", "Pump Controller", 0, 0, [
-            "Automates ballast pumping.",
+            "A copper block, a mechanical pump and a transmitter. Runs the ballast pumps from one",
+            "place.",
         ], [item("create_submarine:pump_controller")], xp=20),
         Q("torpedo", "Basic Torpedo", 0, 0, [
             "&6CBC Military Supplement&r: torpedoes are assembled in stages (see JEI) and fired from a",
             "torpedo tube.",
         ], [item("cbcmoreshells:primary_torpedo")], xp=40),
         Q("torpedo_head", "Torpedo Warhead", 0, 0, [
-            "The explosive end.",
+            "Sequenced assembly: iron sheets, packed gunpowder, redstone and a brass nugget. The",
+            "explosive end of a torpedo.",
         ], [item("cbcmoreshells:torpedo_head")], xp=20),
         Q("torpedo_tube", "Torpedo Tube", 0, 0, [
-            "Tube chamber and barrel: the launcher.",
+            "Iron plates (mechanical crafting) make the chamber; convert it to get the barrel. The",
+            "launcher for torpedoes.",
         ], [item("cbcmoreshells:steel_torpedo_tube_chamber"), item("cbcmoreshells:steel_torpedo_tube_barrel")], xp=30),
         Q("depth_charge", "Depth Charge", 0, 0, [
             "Iron sheets, packed guncotton and a &aTimed Fuze&r (pack recipe). Roll it off the stern",
             "over a submarine.",
         ], [item("cbcmoreshells:depth_charge")], xp=20),
         Q("mine", "Underwater Mine", 0, 0, [
-            "Deny an area of sea.",
+            "Industrial iron and TNT. Deny an area of sea to enemy submarines.",
         ], [item("create_submarine:underwater_mine")], xp=20),
         Q("torpedo_detector", "Torpedo Detection Device", 0, 0, [
             "A hydrophone: copper sheets, an electron tube, a note block and brass casing (pack recipe).",
@@ -1162,56 +1196,60 @@ CHAPTERS = [
          subtitle="Create trains, Steam 'n' Rails and armored trains", icon="create:controls",
          unlock=[("brass_and_precision", "next")], quests=[
         Q("track", "Train Track", 0, 0, [
-            "Create trains run on &aTrain Track&r.",
+            "Sequenced assembly: sleepers, iron nuggets and zinc nuggets (makes 32 at a time). Create",
+            "trains run on Train Track.",
         ], [item("create:track", 32)], xp=20),
         Q("station", "Train Station", 0, 0, [
             "Assemble and stop trains at a &aStation&r. Check the Ponder.",
         ], [item("create:track_station")], xp=35),
         Q("signal", "Train Signal", 0, 0, [
-            "Keeps trains from colliding.",
+            "Train Casing and an electron tube (makes 2). Splits track into blocks so trains don't",
+            "collide.",
         ], [item("create:track_signal", 2)], xp=15),
         Q("observer", "Train Observer", 0, 0, [
-            "Outputs redstone when a train passes.",
+            "Train Casing and a pressure plate. Outputs redstone when a train passes.",
         ], [item("create:track_observer")], xp=15),
         Q("schedule", "Train Schedule", 0, 0, [
-            "Automates where a train goes.",
+            "Paper and an obsidian sheet. Give it to a train's conductor to run a route on its own.",
         ], [item("create:schedule")], xp=20),
         Q("train_controls", "Train Controls", 0, 0, [
-            "Drive the train yourself.",
+            "Train Casing, a lever and a precision mechanism. Drive the train yourself.",
         ], [item("create:controls")], xp=35),
         Q("railway_casing", "Train Casing", 0, 0, [
             "Brass casing material for train parts (and Quantum Casing).",
         ], [item("create:railway_casing", 4)], xp=15),
         Q("train_door", "Train Door", 0, 0, [
-            "Doors that work on a moving train.",
+            "Train Casing and a wooden door (makes 2). Doors that work on a moving train.",
         ], [item("create:train_door", 2)], xp=10),
         Q("snr", "Handcar", 0, 0, [
             "&6Steam 'n' Rails&r adds more to trains: a handcar for quick trips.",
         ], [item("railways:handcar")], xp=30),
         Q("semaphore", "Semaphore", 0, 0, [
-            "A classic signal arm.",
+            "&6Steam 'n' Rails&r: andesite casing, a fence, iron plate and an electron tube. A signal",
+            "arm that shows a Train Signal's state.",
         ], [item("railways:semaphore")], xp=15),
         Q("whistle", "Conductor Whistle", 0, 0, [
-            "Call your train.",
+            "Copper and a brass nugget. Call your train to you.",
         ], [item("railways:conductor_whistle")], xp=15),
         Q("fuel_tank", "Fuel Tank", 0, 0, [
-            "Liquid-fueled trains.",
+            "A fluid tank and a sturdy sheet. Lets a train run on liquid fuel.",
         ], [item("railways:fuel_tank")], xp=15),
         Q("fuel_interface", "Portable Fuel Interface", 0, 0, [
-            "Refuel a train at a station.",
+            "Train Casing and a chute. Refuel a train while it waits at a station.",
         ], [item("railways:portable_fuel_interface")], xp=15),
         Q("armored_train", "Train Lock", 0, 0, [
             "&6Create: Who Touched My Train&r: lock your train against other teams. In this pack, train",
             "blocks also resist cannon fire (&6CBC: Locometal Armor&r, server-side).",
         ], [item("who_touched_my_train:train_lock")], xp=40),
         Q("iron_key", "Iron Key", 0, 0, [
-            "Opens your locked trains.",
+            "&6Who Touched My Train&r: iron. Lock your train so only key holders can drive it.",
         ], [item("who_touched_my_train:iron_key")], xp=10),
         Q("gold_key", "Gold Key", 0, 0, [
-            "A better key.",
+            "Gold, gold nuggets and a golden sheet. A key that opens more of your trains.",
         ], [item("who_touched_my_train:gold_key")], xp=15),
         Q("locometal", "Riveted Locometal", 0, 0, [
-            "Armored-train looks.",
+            "Stonecut an iron block. Steam 'n' Rails' armored train plating. With &6CBC Locometal",
+            "Armor&r it resists cannon fire.",
         ], [item("railways:riveted_locometal", 8)], xp=15),
         Q("psi", "Portable Storage Interface", 0, 0, [
             "Moves items between a moving train (or ship, or vehicle) and storage at a station.",
@@ -1227,19 +1265,38 @@ CHAPTERS = [
             "Aeronautics). Mount wheels on a &aWheel Mount&r.",
         ], [item("offroad:wheel_mount", 4)], xp=25),
         Q("tires", "Tire", 0, 0, [
-            "Put rubber on the road.",
+            "&6Offroad&r: dried kelp and a shaft (makes 4). Standard wheels for a ground vehicle.",
         ], [item("offroad:tire", 4)], xp=30),
-        Q("small_tire", "Small Tire", 0, 0, ["Light vehicles."], [item("offroad:small_tire", 4)], xp=10),
-        Q("large_tire", "Large Tire", 0, 0, ["Heavier vehicles."], [item("offroad:large_tire", 4)], xp=15),
-        Q("monstrous_tire", "Monstrous Tire", 0, 0, ["For the biggest builds."], [item("offroad:monstrous_tire", 4)], xp=20),
-        Q("rockcutting_wheel", "Rock Cutting Wheel", 0, 0, ["Cuts through terrain."], [item("offroad:rockcutting_wheel")], xp=20),
+        Q("small_tire", "Small Tire", 0, 0, [
+            "A shaft and dried kelp (makes 4). Light vehicles.",
+        ], [item("offroad:small_tire", 4)], xp=10),
+        Q("large_tire", "Large Tire", 0, 0, [
+            "A belt and a shaft (makes 4). Heavier vehicles.",
+        ], [item("offroad:large_tire", 4)], xp=15),
+        Q("monstrous_tire", "Monstrous Tire", 0, 0, [
+            "A dried kelp block and a shaft (makes 4). For the biggest builds.",
+        ], [item("offroad:monstrous_tire", 4)], xp=20),
+        Q("rockcutting_wheel", "Rock Cutting Wheel", 0, 0, [
+            "A Crushing Wheel, industrial iron and iron plates. A wheel that cuts through",
+            "terrain as it drives.",
+        ], [item("offroad:rockcutting_wheel")], xp=20),
         Q("tracks", "Tank Tread", 0, 0, [
             "&6Create: Bits 'n' Tracks&r: Sable-driven &atank treads&r. Check the Ponder for a track setup.",
         ], [item("bits_n_tracks:tank_tread", 16)], xp=40),
-        Q("grouser", "Grouser", 0, 0, ["Track grip."], [item("bits_n_tracks:grouser", 8)], xp=15),
-        Q("suspension", "Suspension Piece", 0, 0, ["Smooths the ride."], [item("bits_n_tracks:suspension_piece", 4)], xp=15),
-        Q("industrial_belt", "Industrial Belt", 0, 0, ["Heavy-duty drive belt."], [item("bits_n_tracks:industrial_belt", 4)], xp=15),
-        Q("flanged_cog", "Flanged Cogwheel", 0, 0, ["Drives the tracks."], [item("bits_n_tracks:flanged_cogwheel", 4)], xp=15),
+        Q("grouser", "Grouser", 0, 0, [
+            "Industrial iron and iron nuggets (makes 8). The cleats that give tank treads grip.",
+        ], [item("bits_n_tracks:grouser", 8)], xp=15),
+        Q("suspension", "Suspension Piece", 0, 0, [
+            "A sturdy sheet, a spring, a shaft and zinc nuggets (makes 4). Smooths the ride over",
+            "rough ground.",
+        ], [item("bits_n_tracks:suspension_piece", 4)], xp=15),
+        Q("industrial_belt", "Industrial Belt", 0, 0, [
+            "A belt and iron nuggets (makes 4). The heavy drive belt tank treads are built",
+            "around.",
+        ], [item("bits_n_tracks:industrial_belt", 4)], xp=15),
+        Q("flanged_cog", "Flanged Cogwheel", 0, 0, [
+            "Two cogwheels and an industrial belt (makes 4). The sprocket that drives the treads.",
+        ], [item("bits_n_tracks:flanged_cogwheel", 4)], xp=15),
         Q("armor", "Hardened Steel Armor", 0, 0, [
             "&6Rolled Homogeneous Armor&r: armor plating in many camo colors. Protects against cannon",
             "fire. Cut an &airon block&r in a &astonecutter&r (any color, also layered, riveted and",
@@ -1294,19 +1351,34 @@ CHAPTERS = [
         Q("drone_core", "Drone Core", 0, 0, [
             "&6Create: Droneworks Simulated&r: the heart of a drone. Check the Ponder for a basic build.",
         ], [item("droneworks:drone_core")], xp=40),
-        Q("drone_blade", "Drone Blade", 0, 0, ["Rotor blades."], [item("droneworks:drone_blade", 4)], xp=15),
-        Q("drone_propeller", "Drone Propeller", 0, 0, ["Lift and thrust."], [item("droneworks:drone_propeller", 4)], xp=15),
-        Q("tilting_bearing", "Tilting Propeller Bearing", 0, 0, ["Tilts rotors to steer."], [item("droneworks:tilting_propeller_bearing")], xp=20),
-        Q("flap_bearing", "Flap Bearing", 0, 0, ["Control surfaces."], [item("droneworks:flap_bearing")], xp=15),
+        Q("drone_blade", "Drone Blade", 0, 0, [
+            "A sail frame, black dye and iron (makes 4). Rotor blades.",
+        ], [item("droneworks:drone_blade", 4)], xp=15),
+        Q("drone_propeller", "Drone Propeller", 0, 0, [
+            "An Andesite Propeller and a Gimbal Sensor (makes 4). Drone lift and thrust.",
+        ], [item("droneworks:drone_propeller", 4)], xp=15),
+        Q("tilting_bearing", "Tilting Propeller Bearing", 0, 0, [
+            "A Propeller Bearing and a Gimbal Sensor. Tilts its rotor to steer the drone.",
+        ], [item("droneworks:tilting_propeller_bearing")], xp=20),
+        Q("flap_bearing", "Flap Bearing", 0, 0, [
+            "A mechanical bearing, torsion spring, clutch and gearshift. Moves control surfaces.",
+        ], [item("droneworks:flap_bearing")], xp=15),
         Q("drone_camera", "Drone Camera", 0, 0, [
-            "See what your drone sees.",
+            "Iron, a spyglass and a transmitter. Sends what the drone sees to your remote.",
         ], [item("droneworks:drone_camera")], xp=35),
-        Q("drone_hub", "Drone Hub", 0, 0, ["A base for your drones."], [item("droneworks:drone_hub")], xp=20),
+        Q("drone_hub", "Drone Hub", 0, 0, [
+            "An iron block and black dye. A base where drones land and recharge.",
+        ], [item("droneworks:drone_hub")], xp=20),
         Q("remote", "Drone Remote Controller", 0, 0, [
-            "Fly drones wirelessly.",
+            "A transmitter, precision mechanism and compass. Fly drones wirelessly.",
         ], [item("droneworks:drone_remote_control")], xp=40),
-        Q("drone_controls", "Drone Controls", 0, 0, ["On-board controls."], [item("droneworks:drone_controls")], xp=15),
-        Q("commander_seat", "Commander Seat", 0, 0, ["Command drones from a vehicle."], [item("droneworks:commander_seat")], xp=20),
+        Q("drone_controls", "Drone Controls", 0, 0, [
+            "Six transmitters, a gyroscopic mechanism and brass casing. The drone's on-board flight",
+            "controller.",
+        ], [item("droneworks:drone_controls")], xp=15),
+        Q("commander_seat", "Commander Seat", 0, 0, [
+            "A seat, a transmitter and a precision mechanism. Command your drones from a vehicle.",
+        ], [item("droneworks:commander_seat")], xp=20),
         Q("fpv", "FPV Drone", 0, 0, [
             "&6Create: The Air War&r: a first-person attack drone. Four Andesite Propellers, a gyro",
             "stabilizer, antenna, camera and packed guncotton (pack recipe). Place it, link it with the",
@@ -1636,10 +1708,18 @@ CHAPTERS = [
             "Find wild crops in the world and break them for seeds and produce. Plant them.",
             "&aTip:&r Create's Millstone turns wild crops into seeds too.",
         ], [item("farmersdelight:cabbage")], xp=20),
-        Q("tomato", "Tomato", 0, 0, ["Warm biomes."], [item("farmersdelight:tomato", 8)], xp=10),
-        Q("cabbage_more", "Cabbage", 0, 0, ["Near beaches."], [item("farmersdelight:cabbage", 8)], xp=10),
-        Q("onion", "Onion", 0, 0, ["Temperate biomes."], [item("farmersdelight:onion", 8)], xp=10),
-        Q("rice", "Rice", 0, 0, ["Grows in shallow water."], [item("farmersdelight:rice", 8)], xp=10),
+        Q("tomato", "Tomato", 0, 0, [
+            "Find wild tomatoes in warm biomes, cut them with a knife for seeds, and plant them.",
+        ], [item("farmersdelight:tomato", 8)], xp=10),
+        Q("cabbage_more", "Cabbage", 0, 0, [
+            "Wild cabbages grow near beaches. Cut them with a knife for seeds.",
+        ], [item("farmersdelight:cabbage", 8)], xp=10),
+        Q("onion", "Onion", 0, 0, [
+            "Wild onions grow in temperate biomes. Plant the onions themselves.",
+        ], [item("farmersdelight:onion", 8)], xp=10),
+        Q("rice", "Rice", 0, 0, [
+            "Wild rice grows in shallow water. Plant it in water one block deep.",
+        ], [item("farmersdelight:rice", 8)], xp=10),
         Q("stove", "Stove", 0, 0, [
             "Iron, bricks and a campfire. The heat source for pots and skillets.",
         ], [item("farmersdelight:stove")], xp=25),
@@ -1651,10 +1731,18 @@ CHAPTERS = [
             "Bricks, iron, a water bucket and a wooden shovel. Put it on a stove and cook meals that",
             "give &aNourishment&r and &aComfort&r.",
         ], [item("farmersdelight:cooking_pot")], xp=40),
-        Q("tomato_sauce", "Tomato Sauce", 0, 0, ["Tomatoes in the pot."], [item("farmersdelight:tomato_sauce", 2)], xp=10),
-        Q("cooked_rice", "Cooked Rice", 0, 0, ["A base for many meals."], [item("farmersdelight:cooked_rice", 4)], xp=10),
-        Q("vegetable_soup", "Vegetable Soup", 0, 0, ["Hearty and simple."], [item("farmersdelight:vegetable_soup", 2)], xp=15),
-        Q("beef_stew", "Beef Stew", 0, 0, ["Real food for a long fight."], [item("farmersdelight:beef_stew", 2)], xp=15),
+        Q("tomato_sauce", "Tomato Sauce", 0, 0, [
+            "Two tomatoes and a bowl in the Cooking Pot (or a Create mixer).",
+        ], [item("farmersdelight:tomato_sauce", 2)], xp=10),
+        Q("cooked_rice", "Cooked Rice", 0, 0, [
+            "Rice and a bowl in the Cooking Pot. The base for many meals.",
+        ], [item("farmersdelight:cooked_rice", 4)], xp=10),
+        Q("vegetable_soup", "Vegetable Soup", 0, 0, [
+            "Carrot, potato, beetroot and a leafy green in the Cooking Pot.",
+        ], [item("farmersdelight:vegetable_soup", 2)], xp=15),
+        Q("beef_stew", "Beef Stew", 0, 0, [
+            "Raw beef, carrot and potato in the Cooking Pot. Real food for a long fight.",
+        ], [item("farmersdelight:beef_stew", 2)], xp=15),
         Q("compost", "Organic Compost", 0, 0, [
             "Dirt, straw, bone meal and &atree bark&r (strip logs on the cutting board). Place it and",
             "it slowly turns into &aRich Soil&r.",
@@ -1676,9 +1764,15 @@ CHAPTERS = [
         Q("feast", "Roast Chicken Feast", 0, 0, [
             "Feasts are placed blocks that serve several plates. One feeds a whole squad before a raid.",
         ], [item("farmersdelight:roast_chicken_block")], xp=60),
-        Q("hamburger", "Hamburger", 0, 0, ["Bread, patty, cabbage, tomato, onion."], [item("farmersdelight:hamburger", 4)], xp=20),
-        Q("cabbage_rolls", "Cabbage Rolls", 0, 0, ["Cabbage leaves and filling."], [item("farmersdelight:cabbage_rolls", 4)], xp=15),
-        Q("dumplings", "Dumplings", 0, 0, ["Dough and filling."], [item("farmersdelight:dumplings", 4)], xp=15),
+        Q("hamburger", "Hamburger", 0, 0, [
+            "Bread, a beef patty, a leafy green, tomato and onion.",
+        ], [item("farmersdelight:hamburger", 4)], xp=20),
+        Q("cabbage_rolls", "Cabbage Rolls", 0, 0, [
+            "Cabbage with meat, fish, vegetables or mushrooms in the Cooking Pot.",
+        ], [item("farmersdelight:cabbage_rolls", 4)], xp=15),
+        Q("dumplings", "Dumplings", 0, 0, [
+            "Dough, cabbage, onion, meat and a brown mushroom in the Cooking Pot.",
+        ], [item("farmersdelight:dumplings", 4)], xp=15),
     ]),
     # ----------------------------------------------------------------------------------------------
     dict(slug="storage", group="infrastructure", title="Storage",
@@ -1706,7 +1800,7 @@ CHAPTERS = [
             "lever (any wood works).",
         ], [item("sophisticatedstorage:chest")], xp=20),
         Q("barrel", "Sophisticated Barrel", 0, 0, [
-            "Same idea as the chest, in barrel form.",
+            "Planks, slabs and a lever. A Sophisticated chest in barrel form: same tiers and upgrades.",
         ], [item("sophisticatedstorage:barrel")], xp=10),
         Q("packing_tape", "Packing Tape", 0, 0, [
             "Slime and paper. Tape a full chest to pick it up with everything inside.",
@@ -1715,7 +1809,7 @@ CHAPTERS = [
             "Planks and iron. The base for storage upgrades.",
         ], [item("sophisticatedstorage:upgrade_base")], xp=10),
         Q("stack_upgrade", "Stack Upgrade Tier 1", 0, 0, [
-            "Each slot holds more items. Higher tiers hold far more.",
+            "An upgrade base and logs. Each slot holds more items; higher tiers hold far more.",
         ], [item("sophisticatedstorage:stack_upgrade_tier_1")], xp=15),
         Q("compacting_upgrade", "Compacting Upgrade", 0, 0, [
             "Turns nuggets into ingots and ingots into blocks as they come in.",
@@ -1727,11 +1821,17 @@ CHAPTERS = [
             "Right-click a placed chest or barrel with a tier upgrade to make it bigger &awithout",
             "emptying it&r. Copper first (copper ingots and a lever), then up the tiers.",
         ], [item("sophisticatedstorage:basic_to_copper_tier_upgrade")], xp=25),
-        Q("iron_tier", "Iron Tier", 0, 0, ["Copper to iron."], [item("sophisticatedstorage:copper_to_iron_tier_upgrade")], xp=15),
-        Q("gold_tier", "Gold Tier", 0, 0, ["Iron to gold."], [item("sophisticatedstorage:iron_to_gold_tier_upgrade")], xp=20),
-        Q("diamond_tier", "Diamond Tier", 0, 0, ["Gold to diamond."], [item("sophisticatedstorage:gold_to_diamond_tier_upgrade")], xp=30),
+        Q("iron_tier", "Iron Tier", 0, 0, [
+            "Iron and a lever. Use it on a copper chest to upgrade it in place: contents stay.",
+        ], [item("sophisticatedstorage:copper_to_iron_tier_upgrade")], xp=15),
+        Q("gold_tier", "Gold Tier", 0, 0, [
+            "Gold and a lever. Iron to gold.",
+        ], [item("sophisticatedstorage:iron_to_gold_tier_upgrade")], xp=20),
+        Q("diamond_tier", "Diamond Tier", 0, 0, [
+            "Diamonds and a lever. Gold to diamond.",
+        ], [item("sophisticatedstorage:gold_to_diamond_tier_upgrade")], xp=30),
         Q("netherite_tier", "Netherite Tier", 0, 0, [
-            "Diamond to netherite: the biggest chest.",
+            "A netherite ingot and a lever. Diamond to netherite: the biggest chest.",
         ], [item("sophisticatedstorage:diamond_to_netherite_tier_upgrade")], xp=40),
         Q("item_vault", "Item Vault", 0, 0, [
             "&6Create&r: a multiblock that holds a huge amount of items. Place several side by side to",
@@ -1743,7 +1843,8 @@ CHAPTERS = [
             "ender pearl.",
         ], [item("toms_storage:inventory_connector")], xp=40),
         Q("inventory_cable", "Inventory Cable", 0, 0, [
-            "Reach storage that isn't next to the connector.",
+            "Planks, sticks, a chest and a trapdoor (makes 6). Reach storage that isn't next to the",
+            "connector.",
         ], [item("toms_storage:inventory_cable", 6)], xp=10),
         Q("inventory_interface", "Inventory Interface", 0, 0, [
             "Lets hoppers, funnels and pipes insert into and extract from the whole network.",
@@ -1752,7 +1853,8 @@ CHAPTERS = [
             "See and search everything on the network from one screen.",
         ], [item("toms_storage:storage_terminal")], xp=40),
         Q("wireless_terminal", "Wireless Terminal", 0, 0, [
-            "Open your network from anywhere nearby.",
+            "A spyglass, comparator, ender pearl, glowstone, glass and planks. Opens your network",
+            "from anywhere nearby.",
         ], [item("toms_storage:wireless_terminal")], xp=25),
         Q("crafting_terminal", "Crafting Terminal", 0, 0, [
             "A storage terminal with a crafting grid that pulls straight from the network.",
@@ -1850,7 +1952,8 @@ CHAPTERS = [
             "it catches soot, more the faster it spins. Pipe water in to wash out sulfur.",
         ], [item("smog:electrostatic_precipitator")], xp=40),
         Q("brass_cartridge", "Brass Filter Cartridge", 0, 0, [
-            "Lasts 4x longer.",
+            "A brass sheet on a filter cartridge. Lasts 4x longer. Wash a clogged one with a",
+            "fan through water to clean it and get the soot back.",
         ], [item("smog:brass_filter_cartridge")], xp=20),
         Q("acidic_runoff", "Acidic Runoff", 0, 0, [
             "Washed-out sulfur. Neutralize it in a basin (limestone works) back to clarified water.",
@@ -2063,7 +2166,9 @@ LAYOUTS = {
         fans={"blank_scroll": ["warp_scroll", "return_scroll"]},
         # 2026-11-22 audit: recipe order
         extra_deps={"quantum_casing": ["rail/railway_casing"]},
-        hidden_deps={"waystone": ["quantum_casing", "warp_stone", "quantum_paper"], "advanced_part": ["redstone_pearl"]},
+        main_deps={"advanced_part": ["quantum_pearl"]},
+        hidden_deps={"waystone": ["quantum_casing", "warp_stone", "quantum_paper"], "advanced_part": ["redstone_pearl"],
+                     "quantum_mechanism": ["quantum_casing"]},
         gate=None),
     "enchanting": dict(
         main=[("grindstone", -6, 1.25), ("liquid_xp", -1, 2.0), ("xp_block", 6, 2.0), ("blaze_enchanter", 13, 2.0)],
@@ -2382,6 +2487,10 @@ def apply_layout(ch):
             put(slug, cx + fr * math.cos(ang), cy - fr * math.sin(ang), [center], ang)
     for slug, extra in lay.get("extra_deps", {}).items():
         by[slug]["deps"] = by[slug]["deps"] + list(extra)
+    # main_deps: replace a main-line quest's dependency on the previous hub (owner 2026-11-22: Advanced Component
+    # doesn't need the Waystone; its recipe has no waystone parts).
+    for slug, deps in lay.get("main_deps", {}).items():
+        by[slug]["deps"] = list(deps)
     # hidden_deps: same-chapter prerequisites whose line would cross the chapter. The quest's lines are hidden
     # (FTB only has a per-quest switch), so use sparingly. 2026-11-22 quest audit.
     for slug, extra in lay.get("hidden_deps", {}).items():

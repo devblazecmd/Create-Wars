@@ -22,15 +22,15 @@ hash = "f0608863ba7654c5cab55a16eec078144eefba5ef4ea15d912b9e868692b7a1f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/aeronautics.snbt"
-hash = "6aaba3bb3fca2c829f1caa1038199fe7516206c6409b60b3fa28da1bc4906ae7"
+hash = "ecc3da3c25747f5c4a6b8a6390513c62e39d6ea6657e4f7eff5ce7eac598b819"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/armored.snbt"
-hash = "1d35890908094b609e8a4b30865cc917e9c4268da27073292ee3d5b9d5f0c2c9"
+hash = "d5af2ba8536980b0c7bca8f2b79cad8459a3013629c0d8934a536b873f8c5b21"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/artillery.snbt"
-hash = "86b7e2ef5083b521032c2ea2ea3d4e4a2e427d73593f0ab3b2ef216d7cc073c4"
+hash = "b7d647e64490751059fea6113e9a78e4c40300d49063e68206787870ea9b32e1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/automation.snbt"
@@ -50,7 +50,7 @@ hash = "da9f0022de759f1a464bf97d24aba04dfd447cb1d6d38cce57be73ad9da23b80"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/drones.snbt"
-hash = "e2f0defb095afc7d1e37b54e561e8cffcd040e1445297ccdec8c9bb4e6f677de"
+hash = "042f616f83fc38b272ea4bdddb8ba99f42cf817e5af8fd2feae45fbbc9096058"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/enchanting.snbt"
@@ -82,7 +82,7 @@ hash = "3fac80bab0085b8c8f1cb544d2a9e836179d11b401a0591cd3d0f30a934b18a3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/naval.snbt"
-hash = "ae070bd3544079f6c5ba71a33e5d933898a1b860c38304142fe5a3963f9096d3"
+hash = "1e16ebb5d8a89f087d0e59a6b9748ec479c2910bf66df1c6ec82de5c17280945"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/nuclear.snbt"
@@ -94,7 +94,7 @@ hash = "b20888bd9c29a75e9b3a4ef3528336118db3946495868cd0dd8af422f0a9bfc5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/quantum.snbt"
-hash = "9453e07782f0f39964b21d758e6f8bb44ffa2708542ee565d45c36f3ab7da3aa"
+hash = "4f5e71d86ec968bc865c01cbee647627a51bae0611c660b9f1e86ceb507ec57e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/radar.snbt"
@@ -118,7 +118,7 @@ hash = "59e6f33cb9b5b2593319a35b8e70e99d32e8834c38f7206fa7ec59de1f16c4d9"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "ecde923ca923665b38b4f041e7a61ddc79759c0cbd8268e3bde787c28456c8b0"
+hash = "d60cd4a40be695f57d01680f4a5061d554bc402570094891b50b3f27240380b7"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/war_spoils_1.snbt"
@@ -302,7 +302,7 @@ hash = "461acd1c3da92ce4b89900e31a17391efb2a44352885e85f9e2e6cf843aa35c7"
 
 [[files]]
 file = "kubejs/server_scripts/missing_recipes.js"
-hash = "815a83f43f0a70d5382ec7ff154eabe8dd62b532a3b34e823ca3ddc08d74e85d"
+hash = "8aa3ee9daf76b57845aec10747c7f688ee7a204622566fc36beb327b8ba7f28b"
 
 [[files]]
 file = "kubejs/server_scripts/netherite_scrap_crushing.js"

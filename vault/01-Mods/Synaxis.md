@@ -23,6 +23,9 @@ Added via `packwiz modrinth add synaxis` on 2026-11-21.
 
 ## Known issues
 - [[../02-Bugs/Explosions crash - Shaolib missing Synaxis]]
+- 2026-11-22: `jet` and `jet_rudder` have no recipe in 1.6.3 (also `propeller`, `propeller_blade`, `anchor`, which
+  aren't quested). Pack recipes added for the jet (mechanical crafting: steel plates, TFMG turbine blades,
+  blaze burner, fluid pipe) and the rudder. [[../02-Bugs/Quest items with no survival recipe]]
 
 ## Config decisions
 None yet.

@@ -546,7 +546,7 @@
 		}
 		{
 			dependencies: [
-				"4680D4EEDDCD2B02"
+				"135F39054A742654"
 				"2180ADB6E46AC859"
 			]
 			hide_dependency_lines: true
@@ -589,7 +589,9 @@
 		{
 			dependencies: [
 				"359CB1C16A2C769F"
+				"7C25C2287D94AE08"
 			]
+			hide_dependency_lines: true
 			id: "53FCAEF396A40468"
 			rewards: [
 				{

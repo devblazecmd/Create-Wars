@@ -344,3 +344,12 @@ No unit tests exist for a quest book. Verification is layered:
 - 2026-11-22: **Nuclear** chapter (Warfare, unlocked by Industrial Age steel): uranium and thorium chain, reactor parts, anti-radiation suit, then the nukes; H-Bomb finale gives 30 levels and 2 War Trophy rolls. 23 chapters, 496 quests.
 - 2026-11-22: Nuclear chapter renamed **Nuclear Age** (owner). Nuke quest: "Claims *maybe* won't save anyone". Infantry "Lead"
   quest now asks for `tfmg:lead_ingot` (lead unified).
+- 2026-11-22: **Deep audit** (`tools/audit_quests.py`, live recipe export). Owner answers: (1) give the uncraftable items
+  recipes; (2) fix recipe order, and keep Artillery's brass parts in view but locked behind the Brass Age, as a pull
+  toward brass automation; (3) deepen descriptions; (4) Defend Your Home and Automation are **challenge tiers** and
+  keep their big XP on purpose; (5) Aeroworks and Ender Transmission get quests, and Ender Transmission is quantum tech
+  with harder recipes. Result: 0 order gaps; 109 descriptions rewritten from the real recipes; new quests: 6 hull
+  armors (Armored), Aeroworks cockpit (Aeronautics), Ender Transmission (Quantum). Kinetics: gearboxes moved to the
+  Andesite Casing hub (they need casing). Rail: Train Casing moved to the first hub. Generator gained `hidden_deps`
+  (dependency without a drawn line) and `main_deps` (replace a main-line dependency). Advanced Component no longer
+  requires the Waystone (owner). 519 quests.

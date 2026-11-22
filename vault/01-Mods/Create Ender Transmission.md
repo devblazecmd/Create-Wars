@@ -29,3 +29,9 @@ None logged yet.
 None yet. Worth a balance discussion once installed — infinite-range wireless transmission is powerful and
 may need range/throughput limits for multiplayer war balance (someone shouldn't be able to trivially supply
 a front-line base from an untouchable home base).
+- 2026-11-22 (owner: "ender trans should be a quantum thing and its recipes need to be adjusted to call for
+  more quantum items to make it hard to get"): `pack/kubejs/server_scripts/ender_transmission_quantum.js`.
+  Each transmitter: 5x5 mechanical crafting of 8 Quantum Casings, 6 Quantum Pearls, 2 Advanced Components, a
+  Quantum Mechanism, 6 obsidian and 2 of the chute/pump/shaft (was ender pearls, an ender eye and precision
+  mechanisms). Chunk Loader: beacon + 4 Quantum Casings + 4 Quantum Pearls + a Quantum Mechanism (was 8
+  obsidian around a beacon). Quests: Quantum Expansion, after the Entity Teleporter.
