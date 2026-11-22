@@ -17,6 +17,10 @@ file = "config/createnuclear-server.toml"
 hash = "4c28b890f045198faeb65c7c5c9b35b83f8a8534142ef04c6342bd8c2bc80957"
 
 [[files]]
+file = "config/enhancedai/server.toml"
+hash = "ff51963ca97d5fb40f4ff9f24db84c3b675b033ee1a7e3c4ed8ce6f7722659c7"
+
+[[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "f0608863ba7654c5cab55a16eec078144eefba5ef4ea15d912b9e868692b7a1f"
 
@@ -147,6 +151,10 @@ hash = "f93c280168e2c0287fb53a24556a5184527c2ffd5741c11b931f076d6afc83e5"
 [[files]]
 file = "config/improvedmobs/client.toml"
 hash = "47356fc6aacaec8a0ea4a0d0a5d1302301af8873d57fee37abcf42ffa8f349ed"
+
+[[files]]
+file = "config/improvedmobs/common.toml"
+hash = "0d61dbd14cd4f28eb519153b4b80a9ee1d2d7410739cf1a4c38c5061d08658a7"
 
 [[files]]
 file = "config/lootr-common.toml"

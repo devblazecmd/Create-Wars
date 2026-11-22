@@ -363,4 +363,7 @@ this tells you *why*, in prose, per pack version.
   ([[../03-Design/Server Deployment]]). Owner to make the repo public and pick a host.
 - **Client performance (2026-11-22):** Dynamic FPS, More Culling (+ Cloth Config), Sodium Extra, Reese's Sodium Options; Complementary
   Reimagined shader pack. Clean boot.
+- **Mob tuning after first server test (2026-11-22, owner):** animals no longer spawn hostile (Improved Mobs neutral aggression 0,
+  ignore-sight 0.1); creepers can't explode through walls and mobs don't see through walls (Enhanced AI 0.0/0.0). This settles part
+  of the open mob-balance decision (CLAUDE.md): the rest of Improved Mobs / Enhanced AI stays at defaults.
 

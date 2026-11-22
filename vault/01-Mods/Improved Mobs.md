@@ -25,3 +25,9 @@ Block-breaking mobs vs. player bases: decide whether [[FTB Chunks]] claimed area
 - 2026-11-21: Difficulty overlay (`Difficulty X.X` HUD text) moved from top-left to **bottom-right** (owner:
   it clashed with the top-left of the screen). `pack/config/improvedmobs/client.toml`,
   `"Difficulty location" = "BOTTOMRIGHT"`. Still shown; difficulty scaling itself unchanged.
+
+## Config decisions (2026-11-22, owner, after the first server test)
+Players reported pigs "actively killing us". Cause: `"Neutral Aggressive Chance" = "0.05"` (about 1 in 20 animals spawns
+hostile, pigs included) plus `"Ignore Sight" = "0.5"`. Owner chose **animals stay passive**: Neutral Aggressive Chance
+**0**, Ignore Sight **0.1**. Shipped as `pack/config/improvedmobs/common.toml` (server-side setting). Animals that already
+spawned hostile keep their AI; kill them.
