@@ -796,7 +796,6 @@
 				"3789B6937D0F2AC7"
 				"403EEC901700CF83"
 			]
-			hide_dependency_lines: true
 			id: "763A8D151E82F962"
 			rewards: [
 				{
@@ -834,7 +833,6 @@
 				"722BD515250F1E67"
 				"763A8D151E82F962"
 			]
-			hide_dependency_lines: true
 			id: "6E9F388055BE2E9B"
 			rewards: [
 				{
