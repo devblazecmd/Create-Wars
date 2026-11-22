@@ -188,6 +188,7 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - [[CreateBetterFps]] — client-side FPS optimization for Create when shaders are on
 
 ## Optimization
+- Shader pack: **Complementary Reimagined** r5.10 (`pack/shaderpacks/`, client-only) for [[Iris]] *(added 2026-11-22)*
 - [[Sodium]] — base rendering-optimization engine; now has native NeoForge support (see its note — this
   replaced [[Embeddium]], which was added by mistake first)
 - [[Iris Shaders|Iris]] — shader pack loader; replaces "Oculus," which never got a 1.21.1/NeoForge build
