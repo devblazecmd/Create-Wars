@@ -26,6 +26,7 @@ not by a code/config fix. What's below is what's left after that.
 *(none)*
 
 ## Fixed
+- [[Running game overwrites synced quest book]]: close the game before syncing quest changes.
 - [[Quest items with no survival recipe]]: pack recipes for Armored Constructs, Military Supplement, Synaxis
   jet and Air War FPV drone items.
 - [[Gunsmithing steel sheet needed hidden steel]]: steel sheets needed hidden Gunsmithing steel after unification.
