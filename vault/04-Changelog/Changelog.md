@@ -396,3 +396,5 @@ this tells you *why*, in prose, per pack version.
   Added **Create: Fishery Industry** 5.1.2 (Frame Trap and Bait Trap fishing, Mechanical Peeler, seafood): an Agriculture
   Seafood group and fishery quests in the Food chapter. Book: 31 chapters, 911 quests.
   See [[../03-Design/Quest Book v4 - Capability Map]].
+- **2026-11-23:** added WTHIT 12.10.3 (+ Bad Packets 0.8.2) and Mouse Tweaks 2.26.1 (client); AMBUSH grace period (10 h of
+  play) and a 2 h gap between natural ambushes (`ambush_grace.js`).

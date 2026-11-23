@@ -76,3 +76,14 @@ Likely cause: clicking while in FTB Quests **edit mode**. Test quests with edit 
 
 - 2026-11-22 (owner: mobs overwhelming): natural ambush caps lowered: `maxNaturalActiveShipsPerPlayer` 8 -> **3**,
   `maxNaturalActiveShipsGlobal` 16 -> **8**. Defend Your Home quest waves are unaffected (they're triggered).
+
+## Grace period and raid gap (2026-11-23)
+Owner: "ambush needs a grace period starting fresh hitting raids are very hard to fight", "10hrs of real playtime",
+"there NEEDS to be time between raids so they cant spawn back to back", "2hrs". AMBUSH has no grace setting.
+`pack/kubejs/server_scripts/ambush_grace.js` drives its one server-wide switch, `/ambush admin spawning` (a toggle that
+returns the new state, 1 = on; saved with the world; quest-forced ambushes ignore it):
+- OFF for the first **10 hours of play** (server ticks with at least one player online, kept in server persistent data).
+- OFF while any `ambush_owned` mob is alive and for **2 hours of play** after the last one is gone.
+- Players get a chat line on login while the grace lasts; everyone gets one when it ends.
+Server-wide, not per player (owner asked; AMBUSH has no per-player switch). If an op toggles spawning by hand, the
+script won't notice until the next state change or restart. **Not yet boot-tested** (shipped in the v2 server zip).

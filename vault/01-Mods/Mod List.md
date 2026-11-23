@@ -166,6 +166,8 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 
 ## Utility / logistics
 - [[FTB Ultimine]] — vein mining (hold ` and break); defaults 64 blocks *(testing, added 2026-11-22)*
+- [[WTHIT]] — look-at overlay for blocks and entities (dep: [[Bad Packets]]) *(testing, added 2026-11-23)*
+- [[Mouse Tweaks]] — inventory drag/scroll tweaks, client only *(testing, added 2026-11-23)*
 - [[Lootr]] — per-player structure loot chests; item-frame conversion off to keep elytras out *(testing, added 2026-11-22)*
 - [[Create Ender Transmission]] — wireless cross-dimension power/item/fluid transmission for Create
 - [[Create Extra Copycats]] — a couple more copycat block types (collapsible, cabinet door)
