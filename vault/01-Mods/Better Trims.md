@@ -1,7 +1,7 @@
 ---
 tags: [mod/status/testing, mod/category/combat, mc-version/1.21.1, loader/neoforge]
 mod_id: functionalarmortrim
-pack_version_pinned: "1.21.1-1.2.1 (better-trims-armor-and-weapons-1.21.1-1.2.1.jar, raw jar in pack/mods/)"
+pack_version_pinned: "1.21.1-1.3.0 (better-trims-armor-and-weapons-1.21.1-1.3.0.jar, raw jar in pack/mods/)"
 last_verified: "2026-11-22 (1.2.1: client boot, tool trims verified in-game data; dedicated server not yet confirmed)"
 ---
 
@@ -44,4 +44,10 @@ trim recipe and JEI accept tools. Verified with a temporary KubeJS check on the 
 gets +0.25 attack speed, bow + iron trim +10% arrow damage (`functionalarmortrim:arrow_damage`), diamond chestplate + iron
 trim +2 armor. No icon visuals for trimmed tools (tooltip only). New configs shipped: `functionalarmortrim_tools.json`,
 `functionalarmortrim_ranged.json`. Client-code scan unchanged (dist guard intact, GameRendererMixin client-only).
+
+## 1.3.0 (2026-11-22): armor trims only (owner: intended)
+Removes tool/weapon trimming again: no `trimmable_armor` / `trimmable_tools` tags, no "Weapons & Tools" smithing-template
+tooltip (`ModClient.onTooltip`, `toolTrimmingEnabled` removed), no `TRIMMABLE_TOOLS` tag key. The tool/ranged bonus code
+is still in the jar but unreachable without a way to trim tools. `FunctionalArmorTrimNeoForge` is byte-identical to 1.2.1,
+so the dedicated-server fix is unchanged. The tools/ranged configs were dropped from the pack.
 
