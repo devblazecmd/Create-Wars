@@ -376,3 +376,8 @@ this tells you *why*, in prose, per pack version.
   trimmed (Linear/Tracks/Charge/Frost templates, with visible icon patterns). Better Trims 1.3.0 keeps vanilla armor templates
   armor-only and applies its tool/ranged bonuses to Tool Trims' trims; restored `functionalarmortrim_tools.json` and
   `functionalarmortrim_ranged.json` to the pack (they were dropped on the belief the bonus code was unreachable).
+- **Better Trims 1.4.0 (2026-11-22):** Tool Trims' four weapon/tool templates now show in the creative Ingredients tab
+  (Tool Trims' 1.21.1 build only gives them via `/function tooltrims:get_items`).
+- **Better Trims 1.4.0 + test enchants (2026-11-22):** Better Trims 1.4.0 (Tool Trims compat) replaces 1.3.0; Tool Trims tools get
+  Better Trims bonuses (verified). More Enchants' 8 test enchantments neutralised and hidden from JEI.
+

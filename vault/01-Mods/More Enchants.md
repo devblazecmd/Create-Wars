@@ -32,3 +32,13 @@ None in the boot log.
 - **Gravity** (armor): changes gravity; with Jump V it may let players float or glide, which works against the elytra
   ban's "air travel goes through Aeronautics" intent. Not tested.
 - Stacks with Illager Invasion's Imbuing Table (over-max levels).
+
+## Test enchantments removed from play (2026-11-22, owner: "testing enchants ... cut those")
+The jar ships 8 leftover test enchantments, `enchantments:test_entity_effect/{hit_block, location_changed,
+post_attack_aa, post_attack_av, post_attack_va, post_attack_vv, projectile_spawned, tick}` (each runs a debug function).
+They aren't in any enchanting/trade tag, but they appeared as books in JEI and could be rolled by loot that enchants
+from the whole registry. A datapack can't delete a registry entry, so each is overridden in
+`pack/kubejs/data/enchantments/enchantment/test_entity_effect/` to apply to `#createwars:none` (an empty item tag) with no
+effects, and `pack/kubejs/client_scripts/hide_test_enchants.js` hides their books from JEI. Verified: `canEnchant` is
+false for them, the world loads, More Enchants' real enchantments (e.g. Strength) are unaffected.
+

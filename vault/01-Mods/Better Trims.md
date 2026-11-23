@@ -1,7 +1,7 @@
 ---
 tags: [mod/status/testing, mod/category/combat, mc-version/1.21.1, loader/neoforge]
 mod_id: functionalarmortrim
-pack_version_pinned: "1.21.1-1.3.0 (better-trims-armor-and-weapons-1.21.1-1.3.0.jar, raw jar in pack/mods/)"
+pack_version_pinned: "1.21.1-1.4.0 (better-trims-armor-and-weapons-1.21.1-1.4.0.jar, raw jar in pack/mods/)"
 last_verified: "2026-11-22 (1.2.1: client boot, tool trims verified in-game data; dedicated server not yet confirmed)"
 ---
 
@@ -56,4 +56,18 @@ so the dedicated-server fix is unchanged. The tools/ranged configs were dropped 
 tools/weapons with visible icon patterns, so Better Trims' tool and ranged bonuses are reachable again. The
 `functionalarmortrim_tools.json` / `functionalarmortrim_ranged.json` configs are back in the pack (mod defaults).
 Vanilla armor templates stay armor-only on purpose (no weapon art exists for vanilla patterns).
+
+## 1.4.0 (2026-11-22): Tool Trims templates in creative
+When [[Tool Trims]] is loaded, adds its four templates (Linear, Tracks, Charge, Frost) to the creative Ingredients tab
+(and search). Tool Trims' 1.21.1 build has no creative entries of its own. The stacks match Tool Trims'
+`set_<pattern>_template` item modifiers: spawn egg + custom name, `custom_model_data` 315001, marker `entity_data`,
+`custom_data {"tooltrims:item":"template"}`, lore. No behavior change without Tool Trims. Jar sha256 `62659daa…ccba`.
+Not yet verified in-game.
+
+## 1.4.0 (2026-11-22): Tool Trims compatibility
+Adds `ToolTrimsCompat`: when `tool_trims` is loaded, puts its four templates (linear/tracks/charge/frost, spawn-egg
+based) in the Ingredients creative tab. Only other change: the constructor registers it; `attributes()` (the dedicated-
+server fix) is unchanged and the new class has no client references. Tool Trims writes the vanilla `minecraft:trim`
+component (pattern `tooltrims:*`), so Better Trims' bonuses apply. Verified on the test instance: diamond sword with
+`tooltrims:frost` + diamond trim gets +1 attack damage and +2 mining efficiency (tools config).
 

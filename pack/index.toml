@@ -209,6 +209,10 @@ file = "kubejs/client_scripts/.gitkeep"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
+file = "kubejs/client_scripts/hide_test_enchants.js"
+hash = "4c5ab5a661744abca9cad0933440aae52f7de0cf37c6949dca2e4bb5f42e7ce9"
+
+[[files]]
 file = "kubejs/data/cbcmoreshells/loot_table/blocks/airdropped_shrapnel_torpedo.json"
 hash = "5a803b9f15b5a4e58c6fc6c74df4cf9b2417e81d326b759e6721f0f0d7b84ffd"
 
@@ -287,6 +291,10 @@ hash = "4e6f5a13a0e20809143b9999bc6fbc783d780d10a816a5d91b966c2c397220a0"
 [[files]]
 file = "kubejs/data/createwars/ambushes/quest_warband.json"
 hash = "95c23a347f43ca4384681523874a0eca7aa99cdf476bb65c71e95eddf1211dbe"
+
+[[files]]
+file = "kubejs/data/createwars/tags/item/none.json"
+hash = "f74498097708215ee46031db7467ce3abed880ed8188eff156e81993d9787e31"
 
 [[files]]
 file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/beach.json"
@@ -371,6 +379,38 @@ hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
 [[files]]
 file = "kubejs/data/ctov/lithostitched/worldgen_modifier/waystone/taiga_fortified.json"
 hash = "dde16d3a50a88042f53059e2f2ce8477eaafc54fdb13d05a6e29df0cf9ba98ca"
+
+[[files]]
+file = "kubejs/data/enchantments/enchantment/test_entity_effect/hit_block.json"
+hash = "cad8139d9e8bd4a1b5153466101a65b629ec04be030bac1d50b5864c16f6195b"
+
+[[files]]
+file = "kubejs/data/enchantments/enchantment/test_entity_effect/location_changed.json"
+hash = "74f43e58249bd0e50bcb49d9ce3fecf0537f4dc2074eec6b5febcbdc9e663c8a"
+
+[[files]]
+file = "kubejs/data/enchantments/enchantment/test_entity_effect/post_attack_aa.json"
+hash = "d7f405df15b6066cfeb6bb60ba7323771a03b23dfb22aa6698f4d4e0d1c8bc30"
+
+[[files]]
+file = "kubejs/data/enchantments/enchantment/test_entity_effect/post_attack_av.json"
+hash = "3446397d4575029658abc24ed1d0f7b39e826e80a49c09fd1d4ff05fb87d02be"
+
+[[files]]
+file = "kubejs/data/enchantments/enchantment/test_entity_effect/post_attack_va.json"
+hash = "b12e9984219afbfa6f9ef422bb1375ea176c5008b87546a81771aef2d7175c64"
+
+[[files]]
+file = "kubejs/data/enchantments/enchantment/test_entity_effect/post_attack_vv.json"
+hash = "8fb69b024507923910e0cb64c1ac1ddd669b316bf89efd89fe629123809f499c"
+
+[[files]]
+file = "kubejs/data/enchantments/enchantment/test_entity_effect/projectile_spawned.json"
+hash = "a173a7a20158320dbfe845448a2c2dd1751f19f5743324f410a4440e50e69632"
+
+[[files]]
+file = "kubejs/data/enchantments/enchantment/test_entity_effect/tick.json"
+hash = "1b83e53c098cc63416748c7399f0a8d1520df8ea98b4a13b6047c9bbb0c3638f"
 
 [[files]]
 file = "kubejs/data/minecraft/loot_table/entities/enderman.json"
@@ -518,8 +558,8 @@ hash = "03084ff4f74cedc1b8ac6c85a98842f75956fb4fa811d285d8ca7caa8d54da5d"
 metafile = true
 
 [[files]]
-file = "mods/better-trims-armor-and-weapons-1.21.1-1.3.0.jar"
-hash = "38b1bdff7ab4ebbe04bfaa5a337298ae486fed039a69a26a268edfca466e7c0d"
+file = "mods/better-trims-armor-and-weapons-1.21.1-1.4.0.jar"
+hash = "62659daa5064a8de4c21e707af3c9c996f532ffdfa4d5d9c4758102eb389ccba"
 
 [[files]]
 file = "mods/biomes-o-plenty.pw.toml"
