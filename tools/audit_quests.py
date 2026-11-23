@@ -10,8 +10,10 @@ Checks:
   3. DEAD RECIPE    items whose every recipe needs a hidden item (directly, not via tag)
   4. ORDER          quest asks for X, every recipe for X needs Y, and Y is the task of another quest that
                     is NOT a prerequisite (so the book can send you to X before teaching Y)
-  5. COVERAGE       mods (namespaces) with items in the registry but no quest mentioning any of them
-  6. XP             XP points and levels per chapter
+  5. STACK          Automation-tab automate (auto_*) item tasks asking for less than a full stack (export max_stack)
+  6. COVERAGE       mods (namespaces) with items in the registry but no quest mentioning any of them
+  7. FARM_NEEDS     Agriculture milk/egg dependencies (frozen in the generator) vs the live recipes
+  8. XP             XP points and levels per chapter
 Usage: python tools/audit_quests.py [--instance PATH]
 """
 import collections, copy, json, os, sys
@@ -31,6 +33,8 @@ hidden = set(rec["hidden"])
 chapters = copy.deepcopy(B.CHAPTERS)
 for ch in chapters:
     B.apply_layout(ch)
+# Automation tab chapters (Quest Book v4: one per tier). An automate quest never "teaches" an item.
+AUTOMATION_CHAPTERS = {ch["slug"] for ch in chapters if ch["group"] == "automation"}
 quests = {}  # (chapter, slug) -> quest
 for ch in chapters:
     for i, q in enumerate(ch["quests"]):
@@ -66,6 +70,8 @@ for r in rec["recipes"]:
             makes[o].append(r)
 taught = collections.defaultdict(list)  # item -> [(chapter, slug)] quests that ask for it
 for key, q in quests.items():
+    if key[0] in AUTOMATION_CHAPTERS:
+        continue  # automate quests are challenges, not where an item is taught (Quest Book v4)
     for it, _ in task_items(q):
         taught[it].append(key)
 
@@ -74,6 +80,10 @@ ACCEPTED_ORDER = {
     ("kinetics", s): "owner 2026-11-22: no lines from Shafts/Cogwheels to the Andesite Casing hub"
     for s in ("basin_mixer", "fan", "gearbox", "millstone", "press", "wrench_goggles")
 }
+ACCEPTED_ORDER.update({
+    ("food", "fish_cod"): "2026-11-23: cod is fished; its only 'recipes' are CBC More Shells torpedo by-products",
+    ("food", "sushi"): "2026-11-23: rolls need fish slices (Fishing branch) and cooked rice (Cooking Pot); the text says so",
+})
 ACCEPTED_ORDER.update({
     ("brass_and_precision", s): "owner 2026-11-22: no lines from Brass Hand/Electron Tube to the Brass Casing hub"
     for s in ("deployer", "crafter")
@@ -91,7 +101,7 @@ def title(key):
     return f"{key[0]}/{key[1]} \"{quests[key]['title']}\""
 
 
-report = collections.OrderedDict((k, []) for k in ("NO RECIPE", "HIDDEN", "DEAD RECIPE", "ORDER"))
+report = collections.OrderedDict((k, []) for k in ("NO RECIPE", "HIDDEN", "DEAD RECIPE", "ORDER", "STACK"))
 for key, q in quests.items():
     for it, n in task_items(q):
         if it in hidden:
@@ -113,6 +123,8 @@ for key, q in quests.items():
         # ORDER: every recipe for X needs some item Y that the book teaches somewhere the player may not
         # have been yet. Y counts as known if a teaching quest is a prerequisite, or if it is taught in another
         # chapter the player must already have progressed through. Vanilla items are always known.
+        if key[0] in AUTOMATION_CHAPTERS:
+            continue  # challenge quests: inputs may come from anywhere; NO RECIPE still covers obtainability
         anc = ancestors(key)
         anc_ch = {a[0] for a in anc} - {key[0]}
         blockers = []
@@ -122,8 +134,6 @@ for key, q in quests.items():
                 if i.startswith("#") or i == it or i.startswith("minecraft:"):
                     continue
                 teachers = [t for t in taught.get(i, []) if t != key]
-                if len(teachers) > 1:
-                    teachers = [t for t in teachers if t[0] != "automation"] or teachers
                 if teachers and not any(t in anc or t[0] in anc_ch for t in teachers):
                     need.append((i, teachers))
             blockers.append(need)
@@ -141,10 +151,86 @@ for slug, tb in B.REWARD_TABLES.items():
         if it in hidden:
             report["HIDDEN"].append(f"reward table {slug} gives hidden {it}")
 
+# STACK (owner 2026-11-23): "the automate tasks should require at min a full stack of the item". Every item task of
+# an Automation-tab "auto_" quest asks for at least the item's max stack size (registry export "max_stack"; absent = 64).
+max_stack = reg.get("max_stack")
+if max_stack is None:
+    report["STACK"].append("registry export has no max_stack (boot once with the current export_registry_ids.js)")
+else:
+    for key, q in quests.items():
+        if key[0] not in AUTOMATION_CHAPTERS or not key[1].startswith("auto_"):
+            continue  # only "Automate:" goals (e.g. Crushing Wheels is a build-the-machine quest)
+        for kind, it, n in q["tasks"]:
+            if kind == "item" and n < max_stack.get(it, 64):
+                report["STACK"].append(f"{title(key)}: {it} x{n} < full stack {max_stack.get(it, 64)}")
+
 for k, lines in report.items():
     print(f"\n=== {k} ({len(lines)})")
     for line in sorted(lines):
         print("  " + line)
+
+# ---- Agriculture milk/egg rule (Quest Book v4) ----
+# build_quests.FARM_NEEDS is frozen (the generator must run without an instance export). Recompute it here from the
+# live recipes: an item needs milk/eggs when EVERY recipe does, recursively through intermediates (chocolate, tea,
+# pie crust). Recipes that loop back to the item or a dish being checked (cake <- cake slices) are ignored, and an
+# item with only looping recipes is natural (pumpkin <- pumpkin slices).
+NEED_ROOTS = {"milk": {"minecraft:milk_bucket", "farmersdelight:milk_bottle", "#c:milk", "#c:drinks/milk",
+                       "minecraft:milk", "neoforge:milk", "#c:buckets/milk"},
+              "eggs": {"minecraft:egg", "#c:eggs"}}
+
+
+NEED_MEMO = {}  # (item, kind) -> True/False once known; loop markers (ints) depend on the path, so not cached
+
+
+def needs_ing(it, kind, stack=()):
+    """True / False, or the stack index a looping recipe returns to (no information).
+    Memoised: Create: Fishery Industry's bait-trap recipes (lobster <- fish <- steaks <- lobster ...) made the plain
+    recursion exponential (2026-11-23)."""
+    if (it, kind) in NEED_MEMO:
+        return NEED_MEMO[(it, kind)]
+    r = _needs_ing(it, kind, stack)
+    if r is True or r is False:
+        NEED_MEMO[(it, kind)] = r
+    return r
+
+
+def _needs_ing(it, kind, stack=()):
+    if it in NEED_ROOTS[kind]:
+        return True
+    if it.startswith("#") or len(stack) > 6:
+        return False
+    if it in stack:
+        return stack.index(it)
+    rs = makes.get(it, [])
+    if not rs:
+        return False
+    verdicts, here, loop_to = [], len(stack), len(stack)
+    for r in rs:
+        vs = [needs_ing(i, kind, stack + (it,)) for i in set(r["in"]) if not i.startswith("#c:tools")]
+        if any(v is True for v in vs):
+            verdicts.append(True)
+            continue
+        loops = [v for v in vs if v is not True and v is not False]
+        if loops:
+            loop_to = min(loop_to, min(loops))
+            continue
+        verdicts.append(False)
+    if not verdicts:
+        return loop_to if loop_to < here else False
+    return all(verdicts)
+
+
+farm_needs = {}
+for _grp, iid, _n, _t in B.FARM:
+    if isinstance(iid, tuple) or iid in ("minecraft:milk_bucket", "minecraft:egg"):
+        continue  # trees (log + leaves) and the animal products themselves
+    kinds = [k for k in ("milk", "eggs") if needs_ing(iid, k) is True]
+    if kinds:
+        farm_needs[iid] = kinds
+diff = {i for i in set(farm_needs) | set(B.FARM_NEEDS) if farm_needs.get(i) != B.FARM_NEEDS.get(i)}
+print(f"\n=== FARM_NEEDS (milk/egg rule) vs live recipes ({len(diff)})")
+for i in sorted(diff):
+    print(f"  {i}: generator {B.FARM_NEEDS.get(i)}  recipes {farm_needs.get(i)}")
 
 # ---- coverage ----
 refs = set()
@@ -166,7 +252,7 @@ print("  " + ", ".join(f"{ns} {n}" for ns, n in used_ns.most_common()))
 print("\n=== XP per chapter (points x XP_SCALE, levels)")
 tot_p = tot_l = 0
 for ch in chapters:
-    p = sum(q["xp"] * B.XP_SCALE for q in ch["quests"])
+    p = sum(q["xp"] * B.XP_SCALE * (B.AUTOMATE_XP_MULT if B.is_automate(ch, q) else 1) for q in ch["quests"])
     lv = sum(B.levels_for(ch, q) for q in ch["quests"])
     tot_p += p
     tot_l += lv

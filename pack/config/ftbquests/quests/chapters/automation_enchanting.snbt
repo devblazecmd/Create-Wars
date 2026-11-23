@@ -1,0 +1,78 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "automation_enchanting"
+	group: "5DC36AFDE29DAA60"
+	icon: {
+		id: "create_enchantment_industry:experience_bucket"
+	}
+	id: "33D1E374A73C1A17"
+	images: [ ]
+	order_index: 29
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"7EF44200E09553BD"
+			]
+			id: "0C3E6CD025DD5F0B"
+			rewards: [
+				{
+					id: "12B260E19778CAD7"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "20CDBCCD7672BF3B"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "484EDC620712B655"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0C3E6CD025DD5F0B"
+			]
+			id: "4DA0DEC5FD32700E"
+			rewards: [
+				{
+					id: "7924F2B8DD7E949D"
+					type: "xp"
+					xp: 600
+				}
+				{
+					id: "153C6DB632D5D516"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					id: "0BDC47D9149224A2"
+					table_id: 1217703315816509440L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "6CF38868C6D5B390"
+					item: {
+						count: 1
+						id: "create_enchantment_industry:experience_bucket"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.6d
+		}
+	]
+}

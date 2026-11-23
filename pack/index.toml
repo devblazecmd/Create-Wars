@@ -22,11 +22,15 @@ hash = "fc0dbbcd137b95ccbed0129f65f365dfd1365fb06a4d123da13c747a46b20f47"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "f0608863ba7654c5cab55a16eec078144eefba5ef4ea15d912b9e868692b7a1f"
+hash = "ae40fbb2aec52baa6873c1c064b4eb0b9a8580275224fc5487487aab984c32e9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/aeronautics.snbt"
 hash = "0c519ac1d59c1cb188213a838e362562af47ff1e1e7406282bdec7f6f1b0b53f"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/agriculture.snbt"
+hash = "4b2abcf3291e610da7eb35764e9fbf238c65adcf3c2a73526906b7cbb5d3fa1d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/armored.snbt"
@@ -37,8 +41,32 @@ file = "config/ftbquests/quests/chapters/artillery.snbt"
 hash = "2834e7f5b9b5613380471a885ffe336331482bdda85315fd0bfb749f0ecd7793"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/automation.snbt"
-hash = "ab9293ed9e8acaaddda816ee2285e39f03fed6870cb39d1202125809f1e84552"
+file = "config/ftbquests/quests/chapters/automation_andesite.snbt"
+hash = "864754f626cd67371654582ac6fd4773bca183838b013cf3ff71d2264779edba"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/automation_brass.snbt"
+hash = "68a149272637698dbdaa445b34dcc226a5a44998f4b84c6e845d874115476434"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/automation_enchanting.snbt"
+hash = "eca50223c47271a627f0f6301b4c521fe20d618b866e7b0df106b0c300bc3cc3"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/automation_heat.snbt"
+hash = "6aa803b7f27a7075e69f1d1ceab7cafa259c9b50d6ce06d1db62f3e06d31208e"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/automation_industrial.snbt"
+hash = "4f96ad794ec686dd5837ce7919215d3432daab0534a79fbcc83d10de5c33246f"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/automation_ore.snbt"
+hash = "eacafe8f8029508c87f0c66501625eb39f8645e25361074ea5fec19d397ceff2"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/automation_quantum.snbt"
+hash = "67a186fca8b1eaf5658f856ee9cc226d3b9b9321fece19a1e3c1e6d6b9ce8d1e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/brass_and_precision.snbt"
@@ -50,7 +78,7 @@ hash = "5862a253850e5d029be4ea6cff0c2c1b9531db3b11ff2d464baba4175d49b02b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/defense.snbt"
-hash = "70adcf6ba910595abe35f94ac973d439478fa25280c5559989f0463a32bcc8e9"
+hash = "17fe5d6d9abcdc0c7249d5790ec4767939d6c0b51a0fc0656bfc2d5cab758864"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/demolitions.snbt"
@@ -70,7 +98,7 @@ hash = "bc84066fefbe18c91b5c86bb9c5c11cf9160ec40eb6fd873c33c1aad1b68c3d8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/food.snbt"
-hash = "7b6768860e8d9d5f293d84d644e44ba13b7f5c4a40732d7b254495f3a2c82555"
+hash = "b84c9991edea7c34d18dd2108b7b201642ff08c1b3775689ba4c199238e97e6d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/heat.snbt"
@@ -126,7 +154,11 @@ hash = "59e6f33cb9b5b2593319a35b8e70e99d32e8834c38f7206fa7ec59de1f16c4d9"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "b522085d3d92f292fc7d2f756bf803724fcca84b360572d880f3d7aec905a953"
+hash = "ed040929c0a8e63942e3ed063a405ed3772d54eaf89215f40afebe6be392b297"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/engineers_cache.snbt"
+hash = "b819fe2151db7f643bfb4094274de4bf5ce97cfaccf928cb9bf7fb1ca3799018"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/war_spoils_1.snbt"
@@ -142,7 +174,7 @@ hash = "4d7b94905ace075ed3db8513ff68b65fe02ce479b0625597694d8a49770fa589"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/war_trophy.snbt"
-hash = "37857ca3ce883e4ca7d628422a6d35001fd57f514f0104aec1cd6b6fb0b7d94e"
+hash = "a24d278f808ef5d24bd8c0b6788353ccfb7c103bfaad3c29c7ff5b8a21cb9008"
 
 [[files]]
 file = "config/functionalarmortrim.json"
@@ -466,7 +498,7 @@ hash = "fd7b2f94a3d536e94d2869d510edff2b060da6ce37bdff60ec58324d0ce373e1"
 
 [[files]]
 file = "kubejs/server_scripts/export_registry_ids.js"
-hash = "06c4a711685d65dd550f1b0f2c25ab8bd95fd1ae5c32498d00919bae71c1b549"
+hash = "9ef95c1fab082abb98f46e60ba7a8083e4773ca4c427a6d00ff0e40488caaff9"
 
 [[files]]
 file = "kubejs/server_scripts/leader_markers.js"
@@ -704,6 +736,11 @@ metafile = true
 [[files]]
 file = "mods/create-ender-transmission.pw.toml"
 hash = "dba1cec5505db9aa2a65d9cc14f017a956a6e2044c006db1d48ff92c59871992"
+metafile = true
+
+[[files]]
+file = "mods/create-fishery-industry.pw.toml"
+hash = "7fa59c071e073a24c3cde69d1822e4428a47571d084efd57ef7aa7f677195ce5"
 metafile = true
 
 [[files]]

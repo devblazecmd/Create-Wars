@@ -21,5 +21,5 @@ Crafts & Additions only turns diamonds into grit. Added 2026-11-21 at the projec
   sequenced-assembly step.
 
 ## Quest book
-Taught by **Automate: Diamonds** in the Automation chapter (Heat Automation hub); the separate Heat
+Taught by **Automate: Diamonds**, in the Ore Automation chapter since 2026-11-23 (was the Heat Automation hub); the separate Heat
 Expansion quest was removed 2026-11-21. See [[Quest Book]].

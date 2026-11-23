@@ -221,8 +221,8 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
-			y: 2.6d
+			x: -2.2d
+			y: 2.31d
 		}
 		{
 			dependencies: [
@@ -1003,6 +1003,461 @@
 			]
 			x: 41.0d
 			y: 2.6d
+		}
+		{
+			dependencies: [
+				"207A6631CA77A8EC"
+			]
+			id: "7CA594E22D4342D7"
+			rewards: [
+				{
+					id: "223E05F40D34049A"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "74F30225701EF752"
+					item: {
+						count: 1
+						id: "minecraft:fishing_rod"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "71290F58826682E8"
+					item: {
+						count: 1
+						id: "minecraft:fishing_rod"
+					}
+					type: "item"
+				}
+			]
+			x: 0.2d
+			y: 2.31d
+		}
+		{
+			dependencies: [
+				"7CA594E22D4342D7"
+			]
+			id: "6E5E6509CE32E013"
+			rewards: [
+				{
+					id: "77CFACEF3186C3D2"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "0AD7AB38D61E4BCF"
+					item: {
+						count: 1
+						id: "minecraft:cod"
+					}
+					type: "item"
+				}
+				{
+					id: "053511CCC03D6AA0"
+					item: {
+						count: 1
+						id: "minecraft:salmon"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "39D914F8D4BA9F24"
+					item: {
+						count: 1
+						id: "minecraft:cod"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "49458D3EAB3D7B6C"
+					item: {
+						count: 1
+						id: "minecraft:salmon"
+					}
+					type: "item"
+				}
+			]
+			x: 1.03d
+			y: 3.9d
+		}
+		{
+			dependencies: [
+				"6E5E6509CE32E013"
+			]
+			id: "1F43E2535E139319"
+			rewards: [
+				{
+					id: "0F81AB644C8E048F"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "5E0DCF7942E9B566"
+					item: {
+						count: 1
+						id: "minecraft:pufferfish"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "40456D6BCB02D5E3"
+					item: {
+						count: 1
+						id: "minecraft:pufferfish"
+					}
+					type: "item"
+				}
+			]
+			x: 3.61d
+			y: 3.56d
+		}
+		{
+			dependencies: [
+				"6E5E6509CE32E013"
+			]
+			id: "73B701AF88A87639"
+			rewards: [
+				{
+					id: "30C269A7F01E81CF"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "20623B435DA86D62"
+					item: {
+						count: 1
+						id: "farmersdelight:cod_slice"
+					}
+					type: "item"
+				}
+				{
+					id: "4CCD051BA6C0B215"
+					item: {
+						count: 1
+						id: "farmersdelight:salmon_slice"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "2C912259228285CA"
+					item: {
+						count: 1
+						id: "farmersdelight:cod_slice"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "663622144802CB27"
+					item: {
+						count: 1
+						id: "farmersdelight:salmon_slice"
+					}
+					type: "item"
+				}
+			]
+			x: 1.86d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"73B701AF88A87639"
+			]
+			id: "3FBAC9E934B9E561"
+			rewards: [
+				{
+					id: "1D1C4D89CF091B02"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "5D74E6FDA4605CC3"
+					item: {
+						count: 1
+						id: "farmersdelight:cod_roll"
+					}
+					type: "item"
+				}
+				{
+					id: "7C188D6C142C3DE5"
+					item: {
+						count: 1
+						id: "farmersdelight:salmon_roll"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "6DB723FAAB640959"
+					item: {
+						count: 1
+						id: "farmersdelight:cod_roll"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "5D308AD579036373"
+					item: {
+						count: 1
+						id: "farmersdelight:salmon_roll"
+					}
+					type: "item"
+				}
+			]
+			x: 2.69d
+			y: 7.1d
+		}
+		{
+			dependencies: [
+				"6A99365878ECA1A9"
+			]
+			id: "383DAE64E511F83A"
+			rewards: [
+				{
+					id: "627945A978BE4F85"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "3B85B68E937F9FB9"
+					item: {
+						count: 1
+						id: "farmersdelight:fish_stew"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "464E91F376EC9EFA"
+					item: {
+						count: 1
+						id: "farmersdelight:fish_stew"
+					}
+					type: "item"
+				}
+			]
+			x: 22.03d
+			y: -3.9d
+		}
+		{
+			dependencies: [
+				"7CA594E22D4342D7"
+				"257D9DE8F5DF9281"
+			]
+			id: "545D0853A4D87489"
+			rewards: [
+				{
+					id: "71FEFDC36849CC9C"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "55298BC3505ECDF6"
+					item: {
+						count: 1
+						id: "createfisheryindustry:frame_trap"
+					}
+					type: "item"
+				}
+				{
+					id: "3133C62D377D8CBB"
+					item: {
+						count: 1
+						id: "createfisheryindustry:trap_bearing"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1BF2305DB3D98549"
+					item: {
+						count: 1
+						id: "createfisheryindustry:frame_trap"
+					}
+					type: "item"
+				}
+				{
+					id: "72286BAA74FC6528"
+					item: {
+						count: 1
+						id: "createfisheryindustry:trap_bearing"
+					}
+					type: "item"
+				}
+			]
+			x: -1.6d
+			y: 4.4d
+		}
+		{
+			dependencies: [
+				"7CA594E22D4342D7"
+			]
+			id: "29223CA60F2B71F1"
+			rewards: [
+				{
+					id: "0E5E3AEE6A8B8A24"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "3A8E9DBE18069F8C"
+					item: {
+						count: 1
+						id: "createfisheryindustry:bait_trap"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0FEBE8597688F1E8"
+					item: {
+						count: 1
+						id: "createfisheryindustry:bait_trap"
+					}
+					type: "item"
+				}
+			]
+			x: -0.9d
+			y: 6.3d
+		}
+		{
+			dependencies: [
+				"29223CA60F2B71F1"
+			]
+			id: "349E01B3EFC69CE7"
+			rewards: [
+				{
+					id: "344EAD3D0CAC8C5D"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "46FA04B08DA812DC"
+					item: {
+						count: 1
+						id: "createfisheryindustry:raw_lobster"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "27597F4F8D1329E9"
+					item: {
+						count: 1
+						id: "createfisheryindustry:raw_lobster"
+					}
+					type: "item"
+				}
+			]
+			x: -1.4d
+			y: 8.2d
+		}
+		{
+			dependencies: [
+				"6E5E6509CE32E013"
+				"6831CB5CFFFE83CA"
+			]
+			id: "7D68A9CC1359838B"
+			rewards: [
+				{
+					id: "5AAFBC213A38366D"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "42DF9BE01D5F92E3"
+					item: {
+						count: 1
+						id: "createfisheryindustry:mechanical_peeler"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2E59B78ED513E4A4"
+					item: {
+						count: 1
+						id: "createfisheryindustry:mechanical_peeler"
+					}
+					type: "item"
+				}
+			]
+			x: 3.9d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"7D68A9CC1359838B"
+			]
+			id: "40E46B6091948CA7"
+			rewards: [
+				{
+					id: "3CDCB8D25E9EC093"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "3E2FA4FABC8F92BC"
+					item: {
+						count: 1
+						id: "createfisheryindustry:cod_steak"
+					}
+					type: "item"
+				}
+				{
+					id: "66E9143CA27CEFD5"
+					item: {
+						count: 1
+						id: "createfisheryindustry:salmon_steak"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "22676832C2DE065D"
+					item: {
+						count: 1
+						id: "createfisheryindustry:cod_steak"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "72083DD299616ADF"
+					item: {
+						count: 1
+						id: "createfisheryindustry:salmon_steak"
+					}
+					type: "item"
+				}
+			]
+			x: 4.6d
+			y: 7.3d
 		}
 	]
 }

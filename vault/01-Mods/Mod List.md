@@ -138,6 +138,8 @@ all entries below except the open questions/rejected sections are `#mod/status/a
 - [[Farmer's Delight]] — crops, cutting board, cooking pot, meals and feasts *(testing, added 2026-11-21)*
 - [[Create Slice and Dice|Create: Slice & Dice]] — Slicer and Sprinkler that automate Farmer's Delight
   (dep: [[Kotlin for Forge]]) *(testing, added 2026-11-21)*
+- [[Create Fishery Industry|Create: Fishery Industry]] — Frame Trap / Mesh Trap automated fishing, Mechanical Peeler,
+  harpoons *(testing, added 2026-11-23)*
 
 ## Automation / progression
 - [[Create Enchantment Industry|Create: Enchantment Industry]] — automated enchanting with liquid XP

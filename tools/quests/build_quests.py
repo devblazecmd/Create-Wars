@@ -21,6 +21,7 @@ Spec: vault/03-Design/Quest Book.md   Plan: vault/03-Design/Quest Book - Plan.md
 """
 import hashlib
 import math
+import re
 import os
 
 
@@ -38,14 +39,16 @@ def qid(*parts):
 # Content helpers
 # --------------------------------------------------------------------------------------------------
 def Q(slug, title, x, y, desc, tasks, deps=(), xp=10, items=(), subtitle=None, icon=None, shape=None,
-      size=None, optional=False, bonus=True, tags=(), levels=None, rolls=()):
+      size=None, optional=False, bonus=True, tags=(), levels=None, rolls=(), id_chapter=None):
     # tags: FTB Quests object tags (QuestObjectBase writes "tags" as a string list when non-empty).
     # Used by AMBUSH: "ambush:trigger:<id>" starts that ambush when the quest is started.
     return dict(slug=slug, title=title, x=x, y=y, desc=desc, tasks=tasks, deps=list(deps), xp=xp,
                 items=list(items), subtitle=subtitle, icon=icon, shape=shape, size=size, optional=optional,
-                bonus=bonus, tags=list(tags), levels=levels, rolls=list(rolls))
+                bonus=bonus, tags=list(tags), levels=levels, rolls=list(rolls), id_chapter=id_chapter)
     # levels: override the role-based whole-level bonus (levels_for).
     # rolls: [(reward_table_slug, times)] -> that many FTB "random" rewards rolling REWARD_TABLES[slug].
+    # id_chapter: derive this quest's IDs (quest, tasks, rewards) from another chapter slug, so a quest moved to a
+    # new chapter keeps its ID and team progress (Quest Book v4, 2026-11-23). A chapter dict can set it for all.
 
 
 def bonus_count(task_count):
@@ -75,6 +78,7 @@ GROUPS = [
     ("infrastructure", "Infrastructure"),   # owner 2026-11-21: food + storage
     ("warfare", "Warfare"),
     ("automation", "Automation"),
+    ("challenges", "Challenges"),     # Quest Book v4 (2026-11-23): Defend Your Home, Bounties
 ]
 
 # A "stack" for automate quests (spec v2: automate = make one stack). 16-stackers get 16.
@@ -110,11 +114,1036 @@ REWARD_TABLES = {
         ("create:precision_mechanism", 6, 5), ("minecraft:experience_bottle", 32, 5), ("minecraft:diamond", 4, 4),
         ("cbc_more_content:c4", 2, 3), ("minecraft:netherite_scrap", 2, 3), ("minecraft:totem_of_undying", 1, 3),
         ("minecraft:enchanted_golden_apple", 1, 1)]),
+    # Quest Book v4 (owner 2026-11-23): automate quests no longer hand back the item you automated; they roll this
+    # instead: things you can't make (budding amethyst, templates, sea and ancient-city loot), no enchanted books.
+    "engineers_cache": dict(title="Engineer's Cache", entries=[
+        ("minecraft:experience_bottle", 16, 12), ("minecraft:diamond", 4, 8), ("minecraft:budding_amethyst", 1, 6),
+        ("minecraft:echo_shard", 2, 4), ("minecraft:nautilus_shell", 2, 4), ("minecraft:name_tag", 2, 4),
+        ("minecraft:netherite_upgrade_smithing_template", 1, 3), ("minecraft:heart_of_the_sea", 1, 2),
+        ("minecraft:sniffer_egg", 1, 2), ("minecraft:ominous_trial_key", 1, 2), ("minecraft:totem_of_undying", 1, 2),
+        ("minecraft:enchanted_golden_apple", 1, 1)] + [
+        (f"minecraft:{t}_armor_trim_smithing_template", 1, 1) for t in (   # trims give Better Trims bonuses
+            "bolt", "coast", "dune", "eye", "flow", "host", "raiser", "rib", "sentry", "shaper", "silence", "snout",
+            "spire", "tide", "vex", "ward", "wayfinder", "wild")]),
     "war_trophy": dict(title="War Trophy", entries=[
         ("minecraft:netherite_ingot", 1, 3), ("minecraft:enchanted_golden_apple", 2, 3),
         ("minecraft:totem_of_undying", 2, 3), ("minecraft:diamond", 16, 3), ("minecraft:netherite_scrap", 8, 2),
         ("createwars:quantum_pearl", 8, 2)]),
 }
+
+# --------------------------------------------------------------------------------------------------
+# Agriculture (Quest Book v4, 2026-11-23). Spec: vault/03-Design/Quest Book v4 - automation-agriculture.md
+# Owner: every crop and meat, every food item in the pack (vanilla, Create, Crafts & Additions, all of Farmer's
+# Delight: "it is a challenge tier after all") and the animal products, in three separate circles: Crop
+# Automation, Food Automation, Animal Product Automation. Item quests: +2 levels, double XP and an Engineer's Cache roll; the big payout is in
+# completion capstones per sub-hub and circle, and the "Feed the Army" finale ("the hubs need to feel worth the
+# work getting to them"). Amounts: at least a full stack (owner), from the registry export's max_stack.
+# Names come from the game's en_us lang files; IDs and recipes from the live export (2026-11-23).
+# --------------------------------------------------------------------------------------------------
+# circle hubs: (slug, title, icon, desc)
+FARM_CIRCLES = [
+    ("crop_auto", "Crop Automation", "minecraft:wheat", [
+        "Every crop and every meat, by the stack, with no hands on the harvest.",
+    ]),
+    ("food_auto", "Food Automation", "minecraft:bread", [
+        "Feed an army without lifting a knife. Make these with &amachines&r, not by hand.",
+    ]),
+    ("animal_auto", "Animal Product Automation", "minecraft:white_wool", [
+        "Milk, wool, leather, eggs and feathers from farms that run themselves.",
+    ]),
+]
+# sub-hubs: (slug, title, circle, icon, capstone icon, desc)
+FARM_GROUPS = [
+    ("farm_crops", "Crops", "crop_auto", "create:mechanical_harvester", "minecraft:hay_block", [
+        "Every crop in the pack, vanilla and Farmer's Delight.",
+    ]),
+    ("farm_meats", "Meats", "crop_auto", "minecraft:iron_sword", "farmersdelight:ham", [
+        "Every raw meat and fish.",
+    ]),
+    # owner 2026-11-23: "we should also add logs and leaves then since its ag we should have fertilizer"
+    ("farm_trees", "Forestry", "crop_auto", "create:mechanical_saw", "minecraft:oak_sapling", [
+        "Every tree in the pack, vanilla and Biomes O' Plenty: a stack of logs and a stack of leaves each.",
+    ]),
+    ("farm_fertilizer", "Fertilizer", "crop_auto", "farmersdelight:organic_compost", "farmersdelight:rich_soil", [
+        "Bone meal, compost, rich soil and liquid fertilizer to keep the fields growing.",
+    ]),
+    ("farm_fan", "Fan Cooking", "food_auto", "create:encased_fan", "minecraft:cooked_beef", [
+        "An &aEncased Fan&r blowing through fire smokes food on belts and depots.",
+    ]),
+    ("farm_slicer", "Slicer", "food_auto", "sliceanddice:slicer", "farmersdelight:cabbage_leaf", [
+        "A &aSlicer&r holding a knife runs Farmer's Delight cutting board recipes.",
+    ]),
+    ("farm_mixing", "Mixing", "food_auto", "create:mechanical_mixer", "farmersdelight:beef_stew", [
+        "In this pack the Farmer's Delight cooking pot meals are also &aMixer&r recipes.",
+    ]),
+    ("farm_spout", "Spout", "food_auto", "create:spout", "create:sweet_roll", [
+        "A &aSpout&r fills food with honey, milk, chocolate and tea.",
+    ]),
+    ("farm_bakery", "Bakery", "food_auto", "create:millstone", "minecraft:cake", [
+        "Flour, dough, cookies, pies and cakes.",
+    ]),
+    ("farm_assembly", "Assembly", "food_auto", "create:mechanical_crafter", "farmersdelight:hamburger", [
+        "Sandwiches, salads, rolls and plates put together without hands.",
+    ]),
+    # owner 2026-11-23: Create: Fishery Industry added ("oh we didnt add in the fishing mod")
+    ("farm_seafood", "Seafood", "food_auto", "createfisheryindustry:mechanical_peeler", "createfisheryindustry:seafood_chowder", [
+        "&aCreate: Fishery Industry&r: a &aMechanical Peeler&r splits fish into steaks and skin, Bait Traps catch",
+        "lobsters, Frame Traps pull up mussels.",
+    ]),
+    ("farm_feasts", "Feasts", "food_auto", "farmersdelight:roast_chicken_block", "farmersdelight:shepherds_pie_block", [
+        "Whole feasts: place them and serve everyone.",
+    ]),
+]
+FARM_XP = {"farm_seafood": 40, "farm_crops": 30, "farm_meats": 30, "farm_trees": 30, "farm_fertilizer": 35, "animal_auto": 30, "farm_fan": 35, "farm_slicer": 35,
+           "farm_mixing": 40, "farm_spout": 40, "farm_bakery": 40, "farm_assembly": 40, "farm_feasts": 60}
+# Quests kept from the old Automation chapter: same slugs, IDs from "automation" (progress kept), own XP and text.
+FARM_LEGACY = {"food_auto", "auto_bread", "auto_cabbage_leaf", "auto_soup"}
+FARM_SLUGS = {"farmersdelight:vegetable_soup": "auto_soup", "minecraft:milk_bucket": "auto_milk",
+              "minecraft:egg": "auto_eggs", "minecraft:white_wool": "auto_wool", "minecraft:feather": "auto_feathers",
+              "minecraft:leather": "auto_leather"}
+FARM_LEGACY_XP = {"auto_bread": 40, "auto_cabbage_leaf": 40, "auto_soup": 50}
+# Per-item descriptions, from the recipe export (2026-11-23) and FD recipe files (ingredient alternatives).
+_S = "Make a &astack&r."  # short form for FARM_DESC
+FARM_DESC = {
+    # kept from the old Automation chapter (2026-11-21)
+    "minecraft:bread": [
+        "Mill wheat into flour, mix flour and water into dough, then bake it with an encased fan",
+        "blowing through fire. Make a &astack&r.",
+    ],
+    "farmersdelight:cabbage_leaf": [
+        "Feed cabbages under a &aSlicer&r holding a knife (it runs cutting board recipes). Make a",
+        "&astack&r.",
+    ],
+    "farmersdelight:vegetable_soup": [
+        "Keep a cooking pot on a stove fed with funnels and pull the soup out. Make a &astack&r",
+        "(16).",
+    ],
+    # ---- Crops ----
+    "minecraft:wheat": ["Farmland and a &aMechanical Harvester&r on a contraption sweeping the rows. It replants", "as it goes. " + _S],
+    "minecraft:carrot": ["Harvester rows, same as wheat. " + _S],
+    "minecraft:potato": ["Harvester rows, same as wheat. " + _S],
+    "minecraft:beetroot": ["Harvester rows, same as wheat. " + _S],
+    "minecraft:sugar_cane": ["Plant it next to water. A Harvester or &aMechanical Saw&r passing over cuts the tops and", "leaves the base to regrow. " + _S],
+    "minecraft:melon_slice": ["Melon stems and a &aMechanical Saw&r cutting the melons. Each melon breaks into slices.", _S],
+    "minecraft:pumpkin": ["Pumpkin stems and a &aMechanical Saw&r cutting the pumpkins. " + _S],
+    "minecraft:apple": ["Oak and dark oak leaves drop apples. A tree farm with &aMechanical Saws&r and leaf", "breakers keeps them coming. " + _S],
+    "minecraft:cocoa_beans": ["Cocoa pods grow on the sides of jungle logs. " + _S],
+    "minecraft:sweet_berries": ["Sweet berry bushes regrow after picking. Keep them picked without hands. " + _S],
+    "minecraft:glow_berries": ["Cave vines hanging from a ceiling. Also: &aHaunting&r sweet berries with a fan blowing", "through soul fire turns them into glow berries. " + _S],
+    "minecraft:nether_wart": ["Grows on soul sand in any dimension. Harvester rows work. " + _S],
+    "farmersdelight:cabbage": ["Farmer's Delight crop from wild cabbages. Harvester rows. " + _S],
+    "farmersdelight:tomato": ["Farmer's Delight crop from wild tomatoes. Tomatoes climb ropes as they grow. " + _S],
+    "farmersdelight:onion": ["Farmer's Delight crop from wild onions. Harvester rows. " + _S],
+    "farmersdelight:rice": ["Plant rice in shallow water. Panicles &aMill&r into rice (Millstone or Crushing Wheels).", _S],
+    "minecraft:brown_mushroom": ["Mushrooms on &arich soil&r grow into colonies. A &aSlicer&r with a knife cuts a colony into", "mushrooms. " + _S],
+    "minecraft:red_mushroom": ["Mushrooms on &arich soil&r grow into colonies. A &aSlicer&r with a knife cuts a colony into", "mushrooms. " + _S],
+    # ---- Meats ----
+    "minecraft:beef": ["A cow pen: breed them with Deployers holding wheat, and kill the adults with Deployers", "holding a sword. " + _S],
+    "minecraft:porkchop": ["A pig pen: breed with carrots, potatoes or beetroot, kill with Deployers. " + _S],
+    "minecraft:chicken": ["A chicken pen: breed with seeds, kill with Deployers. A Bait Trap baited with seeds works too.", _S],
+    "minecraft:mutton": ["A sheep pen: breed with wheat, kill with Deployers. " + _S],
+    "minecraft:rabbit": ["A rabbit pen: breed with carrots or dandelions, kill with Deployers. A Bait Trap baited with", "carrots works too. " + _S],
+    "minecraft:cod": ["A &aFrame Trap&r (Create: Fishery Industry) on a moving contraption in water catches fish. " + _S],
+    "minecraft:salmon": ["A &aFrame Trap&r on a moving contraption in rivers or cold oceans catches salmon. " + _S],
+    "farmersdelight:ham": ["Pigs and hoglins killed with a &aknife&r drop Ham. Try a Deployer holding a knife.", _S],
+    # ---- Forestry: per-tree text is generated (farm_tree_desc) ----
+    # ---- Fertilizer ----
+    "minecraft:bone_meal": ["Mill bones (or calcite) with a &aMillstone&r or Crushing Wheels. " + _S],
+    "create:tree_fertilizer": ["Bone meal, 2 flowers and one of each coral (Mechanical Crafters). " + _S],
+    "farmersdelight:organic_compost": ["Dirt, 2 straw, 2 bone meal and 4 tree bark (or 4 bone meal and 2 rotten flesh), on",
+                                       "Mechanical Crafters. Tree bark: a Slicer holding an axe strips logs. " + _S],
+    "farmersdelight:rich_soil": ["Spout liquid fertilizer onto organic compost. " + _S],
+    "sliceanddice:fertilizer_bucket": ["Mixer: organic compost or tree fertilizer with water. A &aSpout&r fills buckets.",
+                                       "Fill &a16&r buckets."],
+    # ---- Fan Cooking ----
+    "minecraft:cooked_beef": ["Raw beef on a belt through a fan blowing over fire (smoking). " + _S],
+    "minecraft:cooked_porkchop": ["Raw porkchops through a smoking fan. " + _S],
+    "minecraft:cooked_chicken": ["Raw chicken through a smoking fan. " + _S],
+    "minecraft:cooked_mutton": ["Raw mutton through a smoking fan. " + _S],
+    "minecraft:cooked_rabbit": ["Raw rabbit through a smoking fan. " + _S],
+    "minecraft:cooked_cod": ["Raw cod through a smoking fan. " + _S],
+    "minecraft:cooked_salmon": ["Raw salmon through a smoking fan. " + _S],
+    "minecraft:baked_potato": ["Potatoes through a smoking fan. " + _S],
+    "farmersdelight:beef_patty": ["Minced beef through a smoking fan. " + _S],
+    "farmersdelight:cooked_bacon": ["Raw bacon through a smoking fan. " + _S],
+    "farmersdelight:cooked_chicken_cuts": ["Raw chicken cuts through a smoking fan (or slice cooked chicken). " + _S],
+    "farmersdelight:cooked_mutton_chops": ["Raw mutton chops through a smoking fan (or slice cooked mutton). " + _S],
+    "farmersdelight:cooked_cod_slice": ["Raw cod slices have no smoking recipe: blow them through &alava&r (blasting), or slice", "cooked cod. " + _S],
+    "farmersdelight:cooked_salmon_slice": ["Raw salmon slices through a smoking fan (or slice cooked salmon). " + _S],
+    "farmersdelight:fried_egg": ["Eggs through a smoking fan. Make a &astack&r (16)."],
+    "farmersdelight:smoked_ham": ["Ham through a smoking fan. Smoking is the only recipe for it. " + _S],
+    # ---- Slicer ----
+    "farmersdelight:minced_beef": ["Raw beef under a Slicer with a knife. " + _S],
+    "farmersdelight:bacon": ["Raw porkchops under a Slicer with a knife. " + _S],
+    "farmersdelight:chicken_cuts": ["Raw chicken under a Slicer with a knife. " + _S],
+    "farmersdelight:mutton_chops": ["Raw mutton under a Slicer with a knife. " + _S],
+    "farmersdelight:cod_slice": ["Raw cod under a Slicer with a knife. " + _S],
+    "farmersdelight:salmon_slice": ["Raw salmon under a Slicer with a knife. " + _S],
+    "farmersdelight:pumpkin_slice": ["Pumpkins under a Slicer with a knife. " + _S],
+    "farmersdelight:raw_pasta": ["Dough under a Slicer with a knife. Dough: mill wheat into flour, then mix it with water.", _S],
+    # ---- Mixing (bowl recipes: feed bowls in with the ingredients) ----
+    "farmersdelight:tomato_sauce": ["Mixer: 2 tomatoes and a bowl. Make a &astack&r (16)."],
+    "farmersdelight:cooked_rice": ["Mixer: rice and a bowl. Make a &astack&r (16)."],
+    "farmersdelight:beef_stew": ["Mixer: raw beef, carrot, potato and a bowl. Make a &astack&r (16)."],
+    "farmersdelight:chicken_soup": ["Mixer: raw chicken, carrot, a leafy green, any vegetable but melon, and a bowl.", "Make a &astack&r (16)."],
+    "farmersdelight:fish_stew": ["Mixer: raw fish, onion, tomato sauce and a bowl. Make a &astack&r (16)."],
+    "farmersdelight:baked_cod_stew": ["Mixer: raw cod, potato, tomato, an egg and a bowl. Make a &astack&r (16)."],
+    "farmersdelight:bone_broth": ["Mixer: a bone, a bowl, and glow berries, a mushroom, hanging roots or glow lichen.", "Make a &astack&r (16)."],
+    "farmersdelight:onion_soup": ["Mixer: 2 onions, bread, milk and a bowl. Make a &astack&r (16)."],
+    "farmersdelight:pumpkin_soup": ["Mixer: pumpkin slice, raw pork, a leafy green, milk and a bowl. Make a &astack&r (16)."],
+    "farmersdelight:noodle_soup": ["Mixer: pasta, raw pork, dried kelp, an egg and a bowl. Make a &astack&r (16)."],
+    "farmersdelight:vegetable_noodles": ["Mixer: pasta, carrot, a mushroom, a leafy green, any vegetable but melon, and a", "bowl. Make a &astack&r (16)."],
+    "farmersdelight:fried_rice": ["Mixer: rice, an egg, carrot, onion and a bowl. Make a &astack&r (16)."],
+    "farmersdelight:mushroom_rice": ["Mixer: rice, both mushrooms, carrot, potato and a bowl. Make a &astack&r (16)."],
+    "farmersdelight:cabbage_rolls": ["Mixer: cabbage plus any raw meat, fish, vegetable or mushroom. " + _S],
+    "farmersdelight:dumplings": ["Mixer: dough, cabbage, onion, and raw chicken, pork or beef (or a brown mushroom).", _S],
+    "farmersdelight:ratatouille": ["Mixer: tomato, onion, beetroot, any vegetable but melon, and a bowl. Make a &astack&r", "(16)."],
+    "farmersdelight:pasta_with_meatballs": ["Mixer: pasta, minced beef, tomato sauce and a bowl. Make a &astack&r (16)."],
+    "farmersdelight:pasta_with_mutton_chop": ["Mixer: pasta, raw mutton, tomato sauce and a bowl. Make a &astack&r (16)."],
+    "farmersdelight:squid_ink_pasta": ["Mixer: pasta, raw fish, tomato, an ink sac and a bowl. Make a &astack&r (16)."],
+    "farmersdelight:glow_berry_custard": ["Mixer: glow berries, milk, an egg, sugar and a glass bottle. Make a &astack&r (16)."],
+    "farmersdelight:hot_cocoa": ["Mixer: 2 cocoa beans, milk, sugar and a glass bottle, or Spout chocolate into a bottle.", "Make a &astack&r (16)."],
+    "farmersdelight:apple_cider": ["Mixer: 2 apples, sugar and a glass bottle. Make a &astack&r (16)."],
+    "farmersdelight:dog_food": ["Mixer: rice, raw meat, rotten flesh, bone meal and a bowl. Make a &astack&r (16)."],
+    "minecraft:mushroom_stew": ["Mixer: both mushrooms and a bowl. Make a &astack&r (16)."],
+    "minecraft:beetroot_soup": ["Mixer: 3 beetroot and a bowl. Make a &astack&r (16)."],
+    "minecraft:rabbit_stew": ["Mixer: raw rabbit, carrot, potato, both mushrooms and a bowl. Make a &astack&r (16)."],
+    # ---- Spout ----
+    "minecraft:honey_bottle": ["Bee hives give honey: pipes pull it from a full hive as fluid. Spout it into glass", "bottles. Make a &astack&r (16)."],
+    "farmersdelight:milk_bottle": ["Spout milk into glass bottles. Make a &astack&r (16)."],
+    "create:sweet_roll": ["Spout milk onto bread. " + _S],
+    "create:honeyed_apple": ["Spout honey onto apples. " + _S],
+    "create:chocolate_glazed_berries": ["Spout chocolate onto sweet berries. Chocolate: Mixer with milk, sugar and cocoa beans.", _S],
+    "create:builders_tea": ["Spout tea into glass bottles. Tea: Mixer with leaves, water and milk. Make a &astack&r (16)."],
+    "createaddition:honey_cake": ["Compact dough, eggs and sugar into a cake base, bake it with a smoking fan, then Spout", "honey on. " + _S],
+    "createaddition:chocolate_cake": ["Compact dough, eggs and sugar into a cake base, bake it with a smoking fan, then Spout", "chocolate on. " + _S],
+    # ---- Bakery ----
+    "farmersdelight:wheat_dough": ["3 wheat and an egg (Mechanical Crafters). " + _S],
+    "create:bar_of_chocolate": ["Compact chocolate (Mixer: milk, sugar, cocoa beans) with a Press over a basin. " + _S],
+    "farmersdelight:pie_crust": ["Mixer: 3 wheat flour and milk. " + _S],
+    "minecraft:cookie": ["Wheat and cocoa beans (Mechanical Crafters). " + _S],
+    "farmersdelight:honey_cookie": ["2 wheat and a honey bottle (Mechanical Crafters). " + _S],
+    "farmersdelight:sweet_berry_cookie": ["2 wheat and sweet berries (Mechanical Crafters). " + _S],
+    "minecraft:pumpkin_pie": ["Pumpkin, sugar and an egg (Mechanical Crafters). " + _S],
+    "minecraft:cake": ["Spout milk onto a baked cake base (dough, eggs and sugar compacted, then smoked), or let", "Mechanical Crafters run the normal recipe. Make &a8&r."],
+    "farmersdelight:apple_pie": ["Pie crust, apples, sugar and wheat (Mechanical Crafters). " + _S],
+    "farmersdelight:chocolate_pie": ["Spout chocolate onto a pie crust. " + _S],
+    "farmersdelight:sweet_berry_cheesecake": ["Pie crust, sweet berries and milk (Mechanical Crafters). " + _S],
+    "farmersdelight:melon_popsicle": ["Melon slices, ice and a stick (Mechanical Crafters). " + _S],
+    # ---- Assembly (crafting recipes: Mechanical Crafters run them) ----
+    "farmersdelight:hamburger": ["Bread, beef patty, a leafy green, tomato and onion. " + _S],
+    "farmersdelight:bacon_sandwich": ["Bread, cooked bacon, a leafy green and tomato. " + _S],
+    "farmersdelight:chicken_sandwich": ["Bread, cooked chicken, a leafy green and carrot. " + _S],
+    "farmersdelight:egg_sandwich": ["Bread and 2 fried eggs. " + _S],
+    "farmersdelight:mutton_wrap": ["Bread, cooked mutton, a leafy green and onion. " + _S],
+    "farmersdelight:bacon_and_eggs": ["2 cooked bacon, 2 fried eggs and a bowl. Make a &astack&r (16)."],
+    "farmersdelight:steak_and_potatoes": ["Steak, a baked potato, cooked rice, onion and a bowl. Make a &astack&r (16)."],
+    "farmersdelight:roasted_mutton_chops": ["Cooked mutton chops, cooked rice, beetroot, tomato and a bowl. Make a &astack&r (16)."],
+    "farmersdelight:grilled_salmon": ["Cooked salmon, cabbage, onion, sweet berries and a bowl. Make a &astack&r (16)."],
+    "farmersdelight:stuffed_potato": ["A baked potato, cooked beef and milk. " + _S],
+    "farmersdelight:barbecue_stick": ["Any cooked meat, onion, tomato and a stick. " + _S],
+    "farmersdelight:mixed_salad": ["Beetroot, tomato, a leafy green and a bowl. Make a &astack&r (16)."],
+    "farmersdelight:fruit_salad": ["Apple, 2 melon slices, a pumpkin slice, 2 berries and a bowl. Make a &astack&r (16)."],
+    "farmersdelight:nether_salad": ["Crimson and warped fungus in a bowl. Make a &astack&r (16)."],
+    "farmersdelight:kelp_roll": ["Cooked rice, dried kelp and a vegetable. " + _S],
+    "farmersdelight:cod_roll": ["2 raw cod slices and cooked rice. " + _S],
+    "farmersdelight:salmon_roll": ["2 raw salmon slices and cooked rice. " + _S],
+    "farmersdelight:melon_juice": ["4 melon slices, sugar and a glass bottle. Make a &astack&r (16)."],
+    "farmersdelight:horse_feed": ["2 apples, a golden carrot, a hay bale and a rice bale. Make a &astack&r (16)."],
+    "minecraft:golden_carrot": ["A carrot ringed with gold nuggets. " + _S],
+    "minecraft:golden_apple": ["An apple ringed with gold ingots: 8 per apple, so 512 gold for a stack. " + _S],
+    # ---- Seafood (Create: Fishery Industry; recipes from the export, 2026-11-23) ----
+    "createfisheryindustry:raw_lobster": ["A &aBait Trap&r (Mesh Trap plus a lantern) baited with fish, steaks, mussels or fish skin catches",
+                       "lobsters. " + _S],
+    "createfisheryindustry:raw_blue_mussel": ["Fishing loot: a &aFrame Trap&r on a moving contraption in water pulls up mussels. " + _S],
+    "createfisheryindustry:raw_mediterranean_mussel": ["Fishing loot: a &aFrame Trap&r on a moving contraption in water pulls up mussels. " + _S],
+    "createfisheryindustry:cod_steak": ["A &aMechanical Peeler&r peels raw cod into a steak and fish skin. " + _S],
+    "createfisheryindustry:salmon_steak": ["A &aMechanical Peeler&r peels raw salmon into a steak and fish skin. " + _S],
+    "createfisheryindustry:fish_skin": ["Comes off every fish the Mechanical Peeler peels. " + _S],
+    "createfisheryindustry:cooked_cod_steak": ["Cod steaks through a smoking fan. " + _S],
+    "createfisheryindustry:cooked_salmon_steak": ["Salmon steaks through a smoking fan. " + _S],
+    "createfisheryindustry:cooked_lobster": ["Raw lobster through a smoking fan. " + _S],
+    "createfisheryindustry:cooked_blue_mussel": ["Blue mussels through a smoking fan. " + _S],
+    "createfisheryindustry:cooked_mediterranean_mussel": ["Mediterranean mussels through a smoking fan. " + _S],
+    "createfisheryindustry:roasted_fish_skin": ["Fish skin through a smoking fan. Good lobster bait. " + _S],
+    "createfisheryindustry:lobster_soup": ["Mixer: raw lobster, kelp and milk make the soup; a Spout fills bowls. " + _S],
+    "createfisheryindustry:mussel_soup": ["Mixer: mussels and milk make the soup; a Spout fills bowls. " + _S],
+    "createfisheryindustry:seafood_chowder": ["Mixer: lobster, mussels, a raw fish steak, kelp and milk; a Spout fills bowls. " + _S],
+    "createfisheryindustry:seafood_steak": ["A cooked fish steak, steak and cooked lobster (Mechanical Crafters). " + _S],
+    # ---- Feasts (crafted as a placeable block; serve portions with bowls) ----
+    "farmersdelight:roast_chicken_block": ["Cooked chicken, bread, 2 baked potatoes, 2 carrots, onion, an egg and a bowl.", "Make &a4&r."],
+    "farmersdelight:shepherds_pie_block": ["3 cooked mutton, 2 baked potatoes, 2 onions, milk and a bowl. Make &a4&r."],
+    "farmersdelight:honey_glazed_ham_block": ["Smoked ham, a honey bottle, 4 sweet berries, 2 cooked rice and a bowl. Make &a4&r."],
+    "farmersdelight:stuffed_pumpkin_block": ["Mixer: a pumpkin, rice, potato, onion, a brown mushroom, a berry and any vegetable", "but melon. Make &a4&r."],
+    "farmersdelight:gleaming_salad_block": ["2 cabbages, 2 glow berries, a golden carrot, a honey bottle, beetroot, tomato and a", "bowl. Make &a4&r."],
+    "farmersdelight:rice_roll_medley_block": ["2 cod rolls, 3 salmon rolls, 3 kelp roll slices and a bowl. Make &a4&r."],
+    # ---- added 2026-11-23 (owner: "we use chocolate, sugar and honey but don't have an automate";
+    #      flour and dough dropped: "we dont need dough and flour") ----
+    "minecraft:sugar": ["Mill sugar cane with a &aMillstone&r or Crushing Wheels. " + _S],
+    "createaddition:cake_base_baked": ["Compact dough, an egg and 2 sugar into a cake base, then bake it with a smoking fan.", _S],
+    "create:chocolate_bucket": ["Mixer: milk, sugar and cocoa beans make liquid chocolate. A &aSpout&r fills buckets.", "Fill &a16&r buckets."],
+    "create:honey_bucket": ["Pipes pull honey out of full bee hives as a fluid. A &aSpout&r fills buckets. Fill &a16&r", "buckets."],
+    "minecraft:honeycomb": ["Full bee hives give honeycomb when sheared: try Deployers holding shears. " + _S],
+    # ---- Animal Products ----
+    "minecraft:milk_bucket": ["Cows give milk to any bucket used on them: try Deployers holding empty buckets. Drain", "the milk into a tank for Spouts and Mixers. Fill &a16&r buckets."],
+    "minecraft:white_wool": ["Sheep regrow wool after shearing: try Deployers holding shears. Dyed wool washes white", "in a fan blowing through water. " + _S],
+    "minecraft:leather": ["Cows drop leather when killed. Your beef farm makes it too. " + _S],
+    "minecraft:egg": ["Chickens lay eggs on their own. Catch them with hoppers or funnels under the pen.", "Make a &astack&r (16)."],
+    "minecraft:feather": ["Chickens drop feathers when killed; a Bait Trap baited with seeds gives them too. " + _S],
+}
+FARM = [
+    # farm_crops
+    ("farm_crops", "minecraft:wheat", STACK, "Wheat"),
+    ("farm_crops", "minecraft:carrot", STACK, "Carrot"),
+    ("farm_crops", "minecraft:potato", STACK, "Potato"),
+    ("farm_crops", "minecraft:beetroot", STACK, "Beetroot"),
+    ("farm_crops", "minecraft:sugar_cane", STACK, "Sugar Cane"),
+    ("farm_crops", "minecraft:melon_slice", STACK, "Melon Slice"),
+    ("farm_crops", "minecraft:pumpkin", STACK, "Pumpkin"),
+    ("farm_crops", "minecraft:apple", STACK, "Apple"),
+    ("farm_crops", "minecraft:cocoa_beans", STACK, "Cocoa Beans"),
+    ("farm_crops", "minecraft:sweet_berries", STACK, "Sweet Berries"),
+    ("farm_crops", "minecraft:glow_berries", STACK, "Glow Berries"),
+    ("farm_crops", "minecraft:nether_wart", STACK, "Nether Wart"),
+    ("farm_crops", "farmersdelight:cabbage", STACK, "Cabbage"),
+    ("farm_crops", "farmersdelight:tomato", STACK, "Tomato"),
+    ("farm_crops", "farmersdelight:onion", STACK, "Onion"),
+    ("farm_crops", "farmersdelight:rice", STACK, "Rice"),
+    ("farm_crops", "minecraft:brown_mushroom", STACK, "Brown Mushroom"),
+    ("farm_crops", "minecraft:red_mushroom", STACK, "Red Mushroom"),
+    # farm_meats
+    ("farm_meats", "minecraft:beef", STACK, "Raw Beef"),
+    ("farm_meats", "minecraft:porkchop", STACK, "Raw Porkchop"),
+    ("farm_meats", "minecraft:chicken", STACK, "Raw Chicken"),
+    ("farm_meats", "minecraft:mutton", STACK, "Raw Mutton"),
+    ("farm_meats", "minecraft:rabbit", STACK, "Raw Rabbit"),
+    ("farm_meats", "minecraft:cod", STACK, "Raw Cod"),
+    ("farm_meats", "minecraft:salmon", STACK, "Raw Salmon"),
+    ("farm_meats", "farmersdelight:ham", STACK, "Ham"),
+    # farm_trees: one quest per tree, a stack of logs AND leaves (owner 2026-11-23). Maple uses red maple leaves.
+    ("farm_trees", ("minecraft:oak_log", "minecraft:oak_leaves"), STACK, "Oak"),
+    ("farm_trees", ("minecraft:spruce_log", "minecraft:spruce_leaves"), STACK, "Spruce"),
+    ("farm_trees", ("minecraft:birch_log", "minecraft:birch_leaves"), STACK, "Birch"),
+    ("farm_trees", ("minecraft:jungle_log", "minecraft:jungle_leaves"), STACK, "Jungle"),
+    ("farm_trees", ("minecraft:acacia_log", "minecraft:acacia_leaves"), STACK, "Acacia"),
+    ("farm_trees", ("minecraft:dark_oak_log", "minecraft:dark_oak_leaves"), STACK, "Dark Oak"),
+    ("farm_trees", ("minecraft:mangrove_log", "minecraft:mangrove_leaves"), STACK, "Mangrove"),
+    ("farm_trees", ("minecraft:cherry_log", "minecraft:cherry_leaves"), STACK, "Cherry"),
+    ("farm_trees", ("biomesoplenty:fir_log", "biomesoplenty:fir_leaves"), STACK, "Fir"),
+    ("farm_trees", ("biomesoplenty:pine_log", "biomesoplenty:pine_leaves"), STACK, "Pine"),
+    ("farm_trees", ("biomesoplenty:maple_log", "biomesoplenty:red_maple_leaves"), STACK, "Maple"),
+    ("farm_trees", ("biomesoplenty:redwood_log", "biomesoplenty:redwood_leaves"), STACK, "Redwood"),
+    ("farm_trees", ("biomesoplenty:mahogany_log", "biomesoplenty:mahogany_leaves"), STACK, "Mahogany"),
+    ("farm_trees", ("biomesoplenty:jacaranda_log", "biomesoplenty:jacaranda_leaves"), STACK, "Jacaranda"),
+    ("farm_trees", ("biomesoplenty:palm_log", "biomesoplenty:palm_leaves"), STACK, "Palm"),
+    ("farm_trees", ("biomesoplenty:willow_log", "biomesoplenty:willow_leaves"), STACK, "Willow"),
+    ("farm_trees", ("biomesoplenty:dead_log", "biomesoplenty:dead_leaves"), STACK, "Dead"),
+    ("farm_trees", ("biomesoplenty:magic_log", "biomesoplenty:magic_leaves"), STACK, "Magic"),
+    ("farm_trees", ("biomesoplenty:umbran_log", "biomesoplenty:umbran_leaves"), STACK, "Umbran"),
+    ("farm_trees", ("biomesoplenty:hellbark_log", "biomesoplenty:hellbark_leaves"), STACK, "Hellbark"),
+    ("farm_trees", ("biomesoplenty:empyreal_log", "biomesoplenty:empyreal_leaves"), STACK, "Empyreal"),
+    # farm_fertilizer
+    ("farm_fertilizer", "minecraft:bone_meal", STACK, "Bone Meal"),
+    ("farm_fertilizer", "create:tree_fertilizer", STACK, "Tree Fertilizer"),
+    ("farm_fertilizer", "farmersdelight:organic_compost", STACK, "Organic Compost"),
+    ("farm_fertilizer", "farmersdelight:rich_soil", STACK, "Rich Soil"),
+    ("farm_fertilizer", "sliceanddice:fertilizer_bucket", STACK16, "Liquid Fertilizer"),
+    # farm_fan
+    ("farm_fan", "minecraft:cooked_beef", STACK, "Steak"),
+    ("farm_fan", "minecraft:cooked_porkchop", STACK, "Cooked Porkchop"),
+    ("farm_fan", "minecraft:cooked_chicken", STACK, "Cooked Chicken"),
+    ("farm_fan", "minecraft:cooked_mutton", STACK, "Cooked Mutton"),
+    ("farm_fan", "minecraft:cooked_rabbit", STACK, "Cooked Rabbit"),
+    ("farm_fan", "minecraft:cooked_cod", STACK, "Cooked Cod"),
+    ("farm_fan", "minecraft:cooked_salmon", STACK, "Cooked Salmon"),
+    ("farm_fan", "minecraft:baked_potato", STACK, "Baked Potato"),
+    ("farm_fan", "farmersdelight:beef_patty", STACK, "Beef Patty"),
+    ("farm_fan", "farmersdelight:cooked_bacon", STACK, "Cooked Bacon"),
+    ("farm_fan", "farmersdelight:cooked_chicken_cuts", STACK, "Cooked Chicken Cuts"),
+    ("farm_fan", "farmersdelight:cooked_mutton_chops", STACK, "Cooked Mutton Chops"),
+    ("farm_fan", "farmersdelight:cooked_cod_slice", STACK, "Cooked Cod Slice"),
+    ("farm_fan", "farmersdelight:cooked_salmon_slice", STACK, "Cooked Salmon Slice"),
+    ("farm_fan", "farmersdelight:fried_egg", STACK, "Fried Egg"),
+    ("farm_fan", "farmersdelight:smoked_ham", STACK, "Smoked Ham"),
+    # farm_slicer
+    ("farm_slicer", "farmersdelight:cabbage_leaf", STACK, "Cabbage Leaf"),
+    ("farm_slicer", "farmersdelight:minced_beef", STACK, "Minced Beef"),
+    ("farm_slicer", "farmersdelight:bacon", STACK, "Raw Bacon"),
+    ("farm_slicer", "farmersdelight:chicken_cuts", STACK, "Raw Chicken Cuts"),
+    ("farm_slicer", "farmersdelight:mutton_chops", STACK, "Raw Mutton Chops"),
+    ("farm_slicer", "farmersdelight:cod_slice", STACK, "Raw Cod Slice"),
+    ("farm_slicer", "farmersdelight:salmon_slice", STACK, "Raw Salmon Slice"),
+    ("farm_slicer", "farmersdelight:pumpkin_slice", STACK, "Pumpkin Slice"),
+    ("farm_slicer", "farmersdelight:raw_pasta", STACK, "Raw Pasta"),
+    # farm_mixing
+    ("farm_mixing", "farmersdelight:vegetable_soup", STACK16, "Vegetable Soup"),
+    ("farm_mixing", "farmersdelight:tomato_sauce", STACK, "Tomato Sauce"),
+    ("farm_mixing", "farmersdelight:cooked_rice", STACK16, "Cooked Rice"),
+    ("farm_mixing", "farmersdelight:beef_stew", STACK16, "Beef Stew"),
+    ("farm_mixing", "farmersdelight:chicken_soup", STACK16, "Chicken Soup"),
+    ("farm_mixing", "farmersdelight:fish_stew", STACK16, "Fish Stew"),
+    ("farm_mixing", "farmersdelight:baked_cod_stew", STACK16, "Baked Cod Stew"),
+    ("farm_mixing", "farmersdelight:bone_broth", STACK16, "Bone Broth"),
+    ("farm_mixing", "farmersdelight:onion_soup", STACK16, "Onion Soup"),
+    ("farm_mixing", "farmersdelight:pumpkin_soup", STACK16, "Pumpkin Soup"),
+    ("farm_mixing", "farmersdelight:noodle_soup", STACK16, "Noodle Soup"),
+    ("farm_mixing", "farmersdelight:vegetable_noodles", STACK16, "Vegetable Noodles"),
+    ("farm_mixing", "farmersdelight:fried_rice", STACK16, "Fried Rice"),
+    ("farm_mixing", "farmersdelight:mushroom_rice", STACK16, "Mushroom Rice"),
+    ("farm_mixing", "farmersdelight:cabbage_rolls", STACK, "Cabbage Rolls"),
+    ("farm_mixing", "farmersdelight:dumplings", STACK, "Dumplings"),
+    ("farm_mixing", "farmersdelight:ratatouille", STACK16, "Ratatouille"),
+    ("farm_mixing", "farmersdelight:pasta_with_meatballs", STACK16, "Pasta with Meatballs"),
+    ("farm_mixing", "farmersdelight:pasta_with_mutton_chop", STACK16, "Pasta with Mutton Chop"),
+    ("farm_mixing", "farmersdelight:squid_ink_pasta", STACK16, "Squid Ink Pasta"),
+    ("farm_mixing", "farmersdelight:glow_berry_custard", STACK16, "Glow Berry Custard"),
+    ("farm_mixing", "farmersdelight:hot_cocoa", STACK16, "Hot Cocoa"),
+    ("farm_mixing", "farmersdelight:apple_cider", STACK16, "Apple Cider"),
+    ("farm_mixing", "farmersdelight:dog_food", STACK16, "Dog Food"),
+    ("farm_mixing", "minecraft:mushroom_stew", STACK16, "Mushroom Stew"),
+    ("farm_mixing", "minecraft:beetroot_soup", STACK16, "Beetroot Soup"),
+    ("farm_mixing", "minecraft:rabbit_stew", STACK16, "Rabbit Stew"),
+    ("farm_mixing", "create:chocolate_bucket", STACK16, "Chocolate"),  # owner 2026-11-23: ingredient used by other foods
+    # farm_spout
+    ("farm_spout", "minecraft:honey_bottle", STACK16, "Honey Bottle"),
+    ("farm_spout", "farmersdelight:milk_bottle", STACK16, "Milk Bottle"),
+    ("farm_spout", "create:sweet_roll", STACK, "Sweet Roll"),
+    ("farm_spout", "create:honeyed_apple", STACK, "Honeyed Apple"),
+    ("farm_spout", "create:chocolate_glazed_berries", STACK, "Chocolate Glazed Berries"),
+    ("farm_spout", "create:builders_tea", STACK16, "Builder's Tea"),
+    ("farm_spout", "createaddition:honey_cake", STACK, "Honey Cake"),
+    ("farm_spout", "createaddition:chocolate_cake", STACK, "Chocolate Cake"),
+    # farm_bakery
+    ("farm_bakery", "minecraft:sugar", STACK, "Sugar"),  # owner 2026-11-23: ingredient used by other foods
+    ("farm_bakery", "minecraft:bread", STACK, "Bread"),
+    ("farm_bakery", "farmersdelight:wheat_dough", STACK, "Wheat Dough"),
+    ("farm_bakery", "create:bar_of_chocolate", STACK, "Bar of Chocolate"),
+    ("farm_bakery", "farmersdelight:pie_crust", STACK, "Pie Crust"),
+    ("farm_bakery", "minecraft:cookie", STACK, "Cookie"),
+    ("farm_bakery", "farmersdelight:honey_cookie", STACK, "Honey Cookie"),
+    ("farm_bakery", "farmersdelight:sweet_berry_cookie", STACK, "Sweet Berry Cookie"),
+    ("farm_bakery", "minecraft:pumpkin_pie", STACK, "Pumpkin Pie"),
+    ("farm_bakery", "minecraft:cake", 8, "Cake"),
+    ("farm_bakery", "farmersdelight:apple_pie", STACK, "Apple Pie"),
+    ("farm_bakery", "farmersdelight:chocolate_pie", STACK, "Chocolate Pie"),
+    ("farm_bakery", "farmersdelight:sweet_berry_cheesecake", STACK, "Sweet Berry Cheesecake"),
+    ("farm_bakery", "farmersdelight:melon_popsicle", STACK, "Melon Popsicle"),
+    ("farm_bakery", "createaddition:cake_base_baked", STACK, "Baked Cake Base"),  # owner 2026-11-23: ingredient used by other foods
+    # farm_assembly
+    ("farm_assembly", "farmersdelight:hamburger", STACK, "Hamburger"),
+    ("farm_assembly", "farmersdelight:bacon_sandwich", STACK, "Bacon Sandwich"),
+    ("farm_assembly", "farmersdelight:chicken_sandwich", STACK, "Chicken Sandwich"),
+    ("farm_assembly", "farmersdelight:egg_sandwich", STACK, "Egg Sandwich"),
+    ("farm_assembly", "farmersdelight:mutton_wrap", STACK, "Mutton Wrap"),
+    ("farm_assembly", "farmersdelight:bacon_and_eggs", STACK16, "Bacon and Eggs"),
+    ("farm_assembly", "farmersdelight:steak_and_potatoes", STACK16, "Steak and Potatoes"),
+    ("farm_assembly", "farmersdelight:roasted_mutton_chops", STACK16, "Roasted Mutton Chops"),
+    ("farm_assembly", "farmersdelight:grilled_salmon", STACK16, "Grilled Salmon"),
+    ("farm_assembly", "farmersdelight:stuffed_potato", STACK, "Stuffed Potato"),
+    ("farm_assembly", "farmersdelight:barbecue_stick", STACK, "Barbecue on a Stick"),
+    ("farm_assembly", "farmersdelight:mixed_salad", STACK16, "Mixed Salad"),
+    ("farm_assembly", "farmersdelight:fruit_salad", STACK16, "Fruit Salad"),
+    ("farm_assembly", "farmersdelight:nether_salad", STACK16, "Nether Salad"),
+    ("farm_assembly", "farmersdelight:kelp_roll", STACK, "Kelp Roll"),
+    ("farm_assembly", "farmersdelight:cod_roll", STACK, "Cod Roll"),
+    ("farm_assembly", "farmersdelight:salmon_roll", STACK, "Salmon Roll"),
+    ("farm_assembly", "farmersdelight:melon_juice", STACK16, "Melon Juice"),
+    ("farm_assembly", "farmersdelight:horse_feed", STACK16, "Horse Feed"),
+    ("farm_assembly", "minecraft:golden_carrot", STACK, "Golden Carrot"),
+    ("farm_assembly", "minecraft:golden_apple", STACK, "Golden Apple"),
+    # farm_seafood (Create: Fishery Industry, 2026-11-23)
+    ("farm_seafood", "createfisheryindustry:raw_lobster", STACK, "Raw Lobster"),
+    ("farm_seafood", "createfisheryindustry:raw_blue_mussel", STACK, "Raw Blue Mussel"),
+    ("farm_seafood", "createfisheryindustry:raw_mediterranean_mussel", STACK, "Raw Mediterranean Mussel"),
+    ("farm_seafood", "createfisheryindustry:cod_steak", STACK, "Cod Steak"),
+    ("farm_seafood", "createfisheryindustry:salmon_steak", STACK, "Salmon Steak"),
+    ("farm_seafood", "createfisheryindustry:fish_skin", STACK, "Fish Skin"),
+    ("farm_seafood", "createfisheryindustry:cooked_cod_steak", STACK, "Cooked Cod Steak"),
+    ("farm_seafood", "createfisheryindustry:cooked_salmon_steak", STACK, "Cooked Salmon Steak"),
+    ("farm_seafood", "createfisheryindustry:cooked_lobster", STACK, "Cooked Lobster"),
+    ("farm_seafood", "createfisheryindustry:cooked_blue_mussel", STACK, "Cooked Blue Mussel"),
+    ("farm_seafood", "createfisheryindustry:cooked_mediterranean_mussel", STACK, "Cooked Mediterranean Mussel"),
+    ("farm_seafood", "createfisheryindustry:roasted_fish_skin", STACK, "Roasted Fish Skin"),
+    ("farm_seafood", "createfisheryindustry:lobster_soup", STACK, "Lobster Soup"),
+    ("farm_seafood", "createfisheryindustry:mussel_soup", STACK, "Mussel Soup"),
+    ("farm_seafood", "createfisheryindustry:seafood_chowder", STACK, "Seafood Chowder"),
+    ("farm_seafood", "createfisheryindustry:seafood_steak", STACK, "Seafood Steak"),
+    # farm_feasts
+    ("farm_feasts", "farmersdelight:roast_chicken_block", 4, "Roast Chicken"),
+    ("farm_feasts", "farmersdelight:shepherds_pie_block", 4, "Shepherd's Pie"),
+    ("farm_feasts", "farmersdelight:honey_glazed_ham_block", 4, "Honey Glazed Ham"),
+    ("farm_feasts", "farmersdelight:stuffed_pumpkin_block", 4, "Stuffed Pumpkin"),
+    ("farm_feasts", "farmersdelight:gleaming_salad_block", 4, "Gleaming Salad"),
+    ("farm_feasts", "farmersdelight:rice_roll_medley_block", 4, "Rice Roll Medley"),
+    # animal_auto
+    ("animal_auto", "minecraft:milk_bucket", STACK16, "Milk Bucket"),
+    ("animal_auto", "minecraft:white_wool", STACK, "White Wool"),
+    ("animal_auto", "minecraft:leather", STACK, "Leather"),
+    ("animal_auto", "minecraft:egg", STACK16, "Egg"),
+    ("animal_auto", "minecraft:feather", STACK, "Feather"),
+    ("animal_auto", "create:honey_bucket", STACK16, "Honey"),  # owner 2026-11-23: ingredient used by other foods
+    ("animal_auto", "minecraft:honeycomb", STACK, "Honeycomb"),  # owner 2026-11-23: ingredient used by other foods
+]
+FARM_NEEDS = {
+    "farmersdelight:fried_egg": ["eggs"],
+    "farmersdelight:baked_cod_stew": ["eggs"],
+    "farmersdelight:onion_soup": ["milk"],
+    "farmersdelight:pumpkin_soup": ["milk"],
+    "farmersdelight:noodle_soup": ["eggs"],
+    "farmersdelight:fried_rice": ["eggs"],
+    "farmersdelight:glow_berry_custard": ["milk", "eggs"],
+    "farmersdelight:hot_cocoa": ["milk"],
+    "farmersdelight:milk_bottle": ["milk"],
+    "create:sweet_roll": ["milk"],
+    "create:chocolate_glazed_berries": ["milk"],
+    "create:builders_tea": ["milk"],
+    "createaddition:honey_cake": ["eggs"],
+    "createaddition:chocolate_cake": ["milk", "eggs"],
+    "farmersdelight:wheat_dough": ["eggs"],
+    "createaddition:cake_base_baked": ["eggs"],
+    "createfisheryindustry:lobster_soup": ["milk"],
+    "createfisheryindustry:mussel_soup": ["milk"],
+    "createfisheryindustry:seafood_chowder": ["milk"],
+    "create:bar_of_chocolate": ["milk"],
+    "farmersdelight:pie_crust": ["milk"],
+    "minecraft:pumpkin_pie": ["eggs"],
+    "minecraft:cake": ["milk", "eggs"],
+    "farmersdelight:apple_pie": ["milk"],
+    "farmersdelight:chocolate_pie": ["milk"],
+    "farmersdelight:sweet_berry_cheesecake": ["milk"],
+    "farmersdelight:stuffed_potato": ["milk"],
+    "farmersdelight:roast_chicken_block": ["eggs"],
+    "farmersdelight:shepherds_pie_block": ["milk"],
+}
+
+
+
+
+def farm_tree_desc(title, log):
+    sapling = "propagules" if log == "minecraft:mangrove_log" else "saplings"
+    return [f"Grow {title} {sapling} and fell the trees with &aMechanical Saws&r. Leaf blocks only drop to shears:",
+            "try Deployers holding shears. Make a &astack&r of each."]
+
+
+def farm_capstone_levels(n):
+    """Spec: half the sub-hub's quest count, rounded up, at least 5."""
+    return max(5, math.ceil(n / 2))
+
+
+
+FARM_CIRCLE_CAPS = [  # (slug, title, levels, icon, desc)
+    ("master_farmer", "Master Farmer", 15, "minecraft:golden_hoe", ["Every crop and every meat in the pack, automated."]),
+    ("master_chef", "Master Chef", 25, "farmersdelight:cooking_pot",
+     ["Every food in the pack, made by machines. The army eats well."]),
+    ("master_rancher", "Master Rancher", 15, "minecraft:lead", ["Milk, wool, leather, eggs and feathers on tap."]),
+]
+
+
+# --------------------------------------------------------------------------------------------------
+# Grouped automation chapters (Quest Book v4). Agriculture was the first; owner 2026-11-23: "now with what weve done
+# with ag we need to do to andesite". A chapter spec G describes circles (hubs), method groups (sub-hubs) around
+# them, one automate quest per row, a "<group> Mastered" capstone per group, a master capstone per circle and an
+# optional finale. grouped_quests(G) builds the quests; grouped_layout(G) places them (see below the layout
+# constants).
+#   G = dict(
+#     circles=[(slug, title, icon, desc, xp)],          first circle's hub receives the chapter unlock
+#     groups=[(slug, title, circle, icon, cap_icon, desc)],
+#     rows=[(group or circle, item id | (ids...), count, title)],   a circle as group = items straight on its hub
+#     desc={item id: [lines]}, slugs={item id | tuple: slug}, desc_fn=callable(title, iid) for tuple rows,
+#     legacy=set(slugs whose IDs come from "automation"), legacy_xp={slug: xp}, xp={group: xp}, item_levels=int,
+#     needs={item id: [kinds]} + needs_note="... from X.", group_prefix="farm_", cap_table=reward table slug,
+#     masters=[(slug, title, levels, icon, desc, circle)], finale=(slug, title, levels, icon, desc, rolls) | None,
+#     group_quest={group slug: dict(title, desc, tasks, xp)}   an existing quest as a group's entry quest,
+#     extra_deps={slug: ["chapter/quest"]})
+def grouped_members(G):
+    out = {}
+    for grp, iid, count, title in G["rows"]:
+        out.setdefault(grp, []).append((iid, count, title))
+    return out
+
+
+def grouped_slug(G, iid):
+    if iid in G.get("slugs", {}):
+        return G["slugs"][iid]
+    if isinstance(iid, tuple):                     # trees: auto_<wood>
+        return "auto_" + iid[0].split(":")[1].removesuffix("_log")
+    return "auto_" + iid.split(":")[1].removesuffix("_block")
+
+
+def grouped_cap_slug(G, group):
+    return "cap_" + group.removeprefix(G.get("group_prefix", ""))
+
+
+def grouped_quests(G):
+    members = grouped_members(G)
+    legacy = G.get("legacy", set())
+    qs = []
+    for slug, title, icon, desc, xp in G["circles"]:
+        qs.append(Q(slug, title, 0, 0, desc, [CHECK], xp=xp, icon=icon,
+                    id_chapter="automation" if slug in legacy else None))
+    for slug, title, circle, icon, cap_icon, desc in G["groups"]:
+        o = G.get("group_quest", {}).get(slug, {})  # an existing quest as the group's entry (e.g. Crushing Wheels)
+        qs.append(Q(slug, o.get("title", title), 0, 0, o.get("desc", desc), o.get("tasks", [CHECK]), deps=[circle],
+                    xp=o.get("xp", 20), levels=2, icon=icon, id_chapter="automation" if slug in legacy else None))
+    for grp, items in members.items():
+        for iid, count, title in items:
+            slug = grouped_slug(G, iid)
+            ids = list(iid) if isinstance(iid, tuple) else [iid]
+            amount = "a &astack&r" if count in (STACK, STACK16) else f"&a{count}&r"
+            desc = G.get("desc", {}).get(iid) or G.get("desc", {}).get(ids[0]) or (
+                G["desc_fn"](title, iid) if isinstance(iid, tuple) and "desc_fn" in G else
+                [f"Make {amount} of {title} with machines, not by hand."])
+            needs = G.get("needs", {}).get(iid, [])
+            if needs:
+                desc = desc + ["", "&7Needs " + " and ".join(needs) + " " + G["needs_note"]]
+            qs.append(Q(slug, f"Automate: {title}", 0, 0, desc, [item(i, count) for i in ids], deps=[grp],
+                        xp=G.get("legacy_xp", {}).get(slug, G["xp"][grp]), levels=G["item_levels"],
+                        id_chapter="automation" if slug in legacy else None))
+    for slug, title, circle, icon, cap_icon, desc in G["groups"]:
+        n = len(members[slug])
+        qs.append(Q(grouped_cap_slug(G, slug), f"{title} Mastered", 0, 0, [
+            f"Every quest under &a{title}&r is done: {n} production lines running on their own.",
+        ], [CHECK], xp=100, levels=farm_capstone_levels(n), icon=cap_icon, shape="diamond",
+            rolls=[(G["cap_table"], 2 if n >= 20 else 1)]))
+    for slug, title, levels, icon, desc, circle in G["masters"]:
+        qs.append(Q(slug, title, 0, 0, desc, [CHECK], xp=250, levels=levels, icon=icon, shape="octagon",
+                    rolls=[("war_trophy", 1)]))
+    if G.get("finale"):
+        slug, title, levels, icon, desc, rolls = G["finale"]
+        qs.append(Q(slug, title, 0, 0, desc, [CHECK], xp=500, levels=levels, icon=icon, shape="gear", rolls=rolls))
+    seen = set()
+    for q in qs:  # e.g. zinc ingot "auto_zinc" vs block of zinc, whose default slug is also "auto_zinc"
+        assert q["slug"] not in seen, f"grouped chapter: duplicate quest slug {q['slug']} (add it to G['slugs'])"
+        seen.add(q["slug"])
+    return qs
+
+
+AGRICULTURE = dict(
+    circles=[(s, t, i, d, 20 if s == "food_auto" else 25) for s, t, i, d in FARM_CIRCLES],
+    groups=FARM_GROUPS, rows=FARM, desc=FARM_DESC, slugs=FARM_SLUGS,
+    desc_fn=lambda title, iid: farm_tree_desc(title, iid[0]),
+    legacy=FARM_LEGACY, legacy_xp=FARM_LEGACY_XP, xp=FARM_XP, item_levels=2,
+    needs=FARM_NEEDS, needs_note="from Animal Product Automation.", group_prefix="farm_", cap_table="war_spoils_2",
+    masters=[(s, t, lv, i, d, c) for (s, t, lv, i, d), c in zip(FARM_CIRCLE_CAPS, ("crop_auto", "food_auto", "animal_auto"))],
+    finale=("feed_the_army", "Feed the Army", 30, "farmersdelight:honey_glazed_ham_block",
+            ["Farmer, Chef and Rancher. Your faction never goes hungry again."], [("war_trophy", 2)]),
+    extra_deps={"food_auto": ["food/slicer"], "animal_auto": ["brass_and_precision/deployer"]},
+)
+
+
+def agriculture_quests():
+    return grouped_quests(AGRICULTURE)
+
+
+
+
+# Andesite Automation (Quest Book v4, owner 2026-11-23: "now with what weve done with ag we need to do to andesite").
+# Spec: vault/03-Design/Quest Book v4 - automation-andesite.md. No machines (owner: "leave out machines but tunnels
+# chute and basins would be needed just like gearboxes cogs and casings"). Item quests +2 levels like Agriculture.
+# The 7 quests from before keep their IDs (legacy: IDs from "automation") and their text and XP.
+_AS = "Make a &astack&r."
+ANDESITE = dict(
+    circles=[("andesite_auto", "Andesite Automation", "create:andesite_alloy", [
+        "Production goals for Andesite-tier machines. Make these with &amachines&r, not by hand.",
+    ], 20)],
+    groups=[
+        ("and_stone", "Stone", "andesite_auto", "create:mechanical_drill", "minecraft:stone_bricks", [
+            "Generators and drills: every stone the Andesite Age needs, without a pickaxe.",
+        ]),
+        ("and_milling", "Milling and Crushing", "andesite_auto", "create:millstone", "create:crushing_wheel", [
+            "A &aMillstone&r or &aCrushing Wheels&r grind blocks down into gravel, sand and powders.",
+        ]),
+        ("and_washing", "Washing", "andesite_auto", "minecraft:water_bucket", "minecraft:clay_ball", [
+            "An &aEncased Fan&r blowing through water washes items on belts and depots.",
+        ]),
+        ("and_fan", "Fan Processing", "andesite_auto", "create:encased_fan", "minecraft:glass", [
+            "A fan blowing through &alava&r smelts, through &afire&r smokes.",
+        ]),
+        ("and_metals", "Metals", "andesite_auto", "create:mechanical_press", "minecraft:iron_block", [
+            "Ingots, blocks and sheets: a &aMechanical Press&r over a basin compacts, over a belt it flattens.",
+        ]),
+        ("and_parts", "Kinetic Parts", "andesite_auto", "create:cogwheel", "create:large_cogwheel", [
+            "Shafts, cogs, belts, casings and the logistics parts every factory is built from.",
+        ]),
+    ],
+    rows=[
+        ("and_stone", "minecraft:cobblestone", STACK, "Cobblestone"),
+        ("and_stone", "minecraft:stone", STACK, "Stone"),
+        ("and_stone", "minecraft:smooth_stone", STACK, "Smooth Stone"),
+        ("and_stone", "minecraft:andesite", STACK, "Andesite"),
+        ("and_stone", "minecraft:diorite", STACK, "Diorite"),
+        ("and_stone", "minecraft:granite", STACK, "Granite"),
+        ("and_stone", "minecraft:basalt", STACK, "Basalt"),
+        ("and_stone", "minecraft:cobbled_deepslate", STACK, "Cobbled Deepslate"),
+        ("and_stone", "minecraft:obsidian", STACK, "Obsidian"),
+        ("and_stone", "create:limestone", STACK, "Limestone"),
+        ("and_stone", "create:scoria", STACK, "Scoria"),
+        ("and_milling", "minecraft:gravel", STACK, "Gravel"),
+        ("and_milling", "minecraft:sand", STACK, "Sand"),
+        ("and_milling", "minecraft:red_sand", STACK, "Red Sand"),
+        ("and_milling", "create:cinder_flour", STACK, "Cinder Flour"),
+        ("and_milling", "create:powdered_obsidian", STACK, "Powdered Obsidian"),
+        ("and_washing", "minecraft:flint", STACK, "Flint"),
+        ("and_washing", "minecraft:clay_ball", STACK, "Clay Ball"),
+        ("and_washing", "minecraft:gold_nugget", STACK, "Gold Nugget"),
+        ("and_washing", "minecraft:quartz", STACK, "Nether Quartz"),
+        ("and_fan", "minecraft:glass", STACK, "Glass"),
+        ("and_fan", "minecraft:charcoal", STACK, "Charcoal"),
+        ("and_fan", "minecraft:brick", STACK, "Brick"),
+        ("and_fan", "minecraft:terracotta", STACK, "Terracotta"),
+        ("and_fan", "minecraft:dried_kelp", STACK, "Dried Kelp"),
+        ("and_metals", ("minecraft:iron_nugget", "minecraft:iron_ingot", "minecraft:iron_block"), STACK, "Iron"),
+        ("and_metals", "minecraft:gold_ingot", STACK, "Gold Ingot"),
+        ("and_metals", "create:iron_sheet", STACK, "Iron Sheets"),
+        ("and_metals", "create:golden_sheet", STACK, "Golden Sheet"),
+        ("and_metals", "create:andesite_alloy", STACK, "Andesite Alloy"),
+        ("and_parts", "create:shaft", STACK, "Shaft"),
+        ("and_parts", "create:cogwheel", STACK, "Cogwheel"),
+        ("and_parts", "create:large_cogwheel", STACK, "Large Cogwheel"),
+        ("and_parts", "create:belt_connector", STACK, "Mechanical Belt"),
+        ("and_parts", "create:andesite_casing", STACK, "Andesite Casing"),
+        ("and_parts", "create:gearbox", STACK, "Gearbox"),
+        ("and_parts", "create:andesite_tunnel", STACK, "Andesite Tunnel"),
+        ("and_parts", "create:chute", STACK, "Chute"),
+        ("and_parts", "create:basin", STACK, "Basin"),
+    ],
+    slugs={"minecraft:cobblestone": "auto_cobble", "minecraft:gravel": "auto_gravel", "create:andesite_alloy": "auto_alloy",
+           ("minecraft:iron_nugget", "minecraft:iron_ingot", "minecraft:iron_block"): "auto_iron",
+           "create:iron_sheet": "auto_sheets", "minecraft:dried_kelp": "auto_kelp"},
+    legacy={"andesite_auto", "auto_cobble", "auto_gravel", "auto_alloy", "auto_iron", "auto_sheets", "auto_kelp"},
+    legacy_xp={"auto_cobble": 30, "auto_gravel": 30, "auto_alloy": 30, "auto_iron": 80, "auto_sheets": 40, "auto_kelp": 30},
+    xp={"and_stone": 30, "and_milling": 30, "and_washing": 30, "and_fan": 30, "and_metals": 40, "and_parts": 40},
+    item_levels=2, group_prefix="and_", cap_table="war_spoils_1",
+    masters=[("andesite_mastered", "Andesite Mastered", 15, "create:andesite_alloy_block", [
+        "Every Andesite-tier material and part, made by machines. The foundation of every factory.",
+    ], "andesite_auto")],
+    finale=None,
+    desc={
+        # kept from before (2026-11-21/22)
+        "minecraft:cobblestone": ["A cobblestone generator with a &aMechanical Drill&r mining it nonstop. Make a &astack&r."],
+        "minecraft:gravel": ["Feed cobblestone into a &aMillstone&r. Make a &astack&r of gravel."],
+        "create:andesite_alloy": ["Feed andesite and iron (or zinc) nuggets into a &aMixer&r over a Basin, no heat needed.",
+                                  "Make a &astack&r."],
+        "minecraft:iron_nugget": [
+            "Blow &agravel&r through water with an &aEncased Fan&r (washing) for iron nuggets, then",
+            "have a &aMechanical Press&r over a &aBasin&r compact them: &a9 nuggets&r into an ingot,",
+            "&a9 ingots&r into a block.",
+            "",
+            "Make a &astack&r each of nuggets, ingots and Blocks of Iron.",
+        ],
+        "create:iron_sheet": ["A Press over a belt of iron ingots. Make a &astack&r of Iron Sheets."],
+        "minecraft:dried_kelp": ["Blow kelp through &afire&r with an Encased Fan (smoking). Make a &astack&r of Dried Kelp."],
+        # new (recipes from the export, 2026-11-23)
+        "minecraft:stone": ["Cobblestone through a fan blowing through lava. " + _AS],
+        "minecraft:smooth_stone": ["Stone through a lava fan a second time. " + _AS],
+        "minecraft:andesite": ["Press over a basin: 2 flint, gravel and lava compact into andesite. " + _AS],
+        "minecraft:diorite": ["Press over a basin: 2 flint, calcite and lava compact into diorite. " + _AS],
+        "minecraft:granite": ["Press over a basin: 2 flint, red sand and lava compact into granite. " + _AS],
+        "minecraft:basalt": ["A basalt generator: lava flowing over soul soil next to blue ice. A Drill mines it. " + _AS],
+        "minecraft:cobbled_deepslate": ["A cobblestone generator below Y=0 makes cobbled deepslate. A Drill mines it. " + _AS],
+        "minecraft:obsidian": ["Wash magma blocks with a fan blowing through water. " + _AS],
+        "create:limestone": ["Lava flowing into &ahoney&r makes limestone. A Drill mines it. " + _AS],
+        "create:scoria": ["Lava flowing into &achocolate&r makes scoria. A Drill mines it. " + _AS],
+        "minecraft:sand": ["Crush gravel with Crushing Wheels. " + _AS],
+        "minecraft:red_sand": ["Mill or crush granite. " + _AS],
+        "create:cinder_flour": ["Crush netherrack with Crushing Wheels. " + _AS],
+        "create:powdered_obsidian": ["Crush obsidian with Crushing Wheels. " + _AS],
+        "minecraft:flint": ["Wash gravel with a fan blowing through water. " + _AS],
+        "minecraft:clay_ball": ["Wash sand with a fan blowing through water. " + _AS],
+        "minecraft:gold_nugget": ["Wash crushed gold ore, or crush tuff with Crushing Wheels. " + _AS],
+        "minecraft:quartz": ["Wash soul sand with a fan blowing through water. " + _AS],
+        "minecraft:glass": ["Sand through a fan blowing through lava. " + _AS],
+        "minecraft:charcoal": ["Logs through a lava fan, or a Press compacting 2 logs over a basin. " + _AS],
+        "minecraft:brick": ["Clay balls through a lava fan. " + _AS],
+        "minecraft:terracotta": ["Clay blocks through a lava fan. " + _AS],
+        "minecraft:gold_ingot": ["Crushed gold ore through a lava fan, or a Press compacting 9 nuggets over a basin. " + _AS],
+        "create:golden_sheet": ["A Press over a belt of gold ingots. " + _AS],
+        "create:shaft": ["A &aMechanical Saw&r cuts andesite alloy into shafts. " + _AS],
+        "create:cogwheel": ["Deployers press planks onto shafts. " + _AS],
+        "create:large_cogwheel": ["Deployers press planks onto cogwheels. " + _AS],
+        "create:belt_connector": ["Dried kelp on &aMechanical Crafters&r. " + _AS],
+        "create:andesite_casing": ["Deployers apply andesite alloy to stripped logs. " + _AS],
+        "create:gearbox": ["Andesite casing and cogwheels on Mechanical Crafters. " + _AS],
+        "create:andesite_tunnel": ["Andesite alloy and dried kelp on Mechanical Crafters. " + _AS],
+        "create:chute": ["Iron ingots and iron sheets on Mechanical Crafters. " + _AS],
+        "create:basin": ["Andesite alloy on Mechanical Crafters. " + _AS],
+    },
+)
+
+
+# Brass Automation (Quest Book v4, owner 2026-11-23: "now do the same for brass"). Spec:
+# vault/03-Design/Quest Book v4 - automation-brass.md. Same rules as Andesite: no machines, logistics parts in, +2
+# levels. The quests from before keep their IDs (legacy). Ore Processing (Crushing Wheels, crushed ores, zinc) and
+# redstone moved to Ore Automation (owner 2026-11-23).
+BRASS = dict(
+    circles=[("brass_auto", "Brass Automation", "create:brass_ingot", ["Production goals for the Brass Age."], 25)],
+    groups=[
+        ("brs_brass", "Brass", "brass_auto", "create:mechanical_mixer", "create:brass_block", [
+            "Copper and zinc into a heated &aMixer&r, then pressed, compacted and cut into every brass form.",
+        ]),
+        ("brs_rose", "Rose Quartz", "brass_auto", "create:rose_quartz", "create:polished_rose_quartz", [
+            "Quartz and redstone into rose quartz, polished by Deployers holding sand paper, into electron tubes.",
+        ]),
+        ("brs_precision", "Precision", "brass_auto", "create:precision_mechanism", "create:brass_hand", [
+            "Sequenced assembly and the parts it needs.",
+        ]),
+        ("brs_logistics", "Brass Logistics", "brass_auto", "create:brass_funnel", "create:smart_chute", [
+            "Casings, funnels, tunnels and chutes for a smarter factory.",
+        ]),
+    ],
+    rows=[
+        ("brs_brass", "create:brass_ingot", STACK, "Brass"),
+        ("brs_brass", "create:brass_nugget", STACK, "Brass Nugget"),
+        ("brs_brass", "create:brass_block", STACK, "Block of Brass"),
+        ("brs_brass", "create:brass_sheet", STACK, "Brass Sheet"),
+        ("brs_brass", "create:zinc_block", STACK, "Block of Zinc"),
+        ("brs_rose", "create:rose_quartz", STACK, "Rose Quartz"),
+        ("brs_rose", "create:polished_rose_quartz", STACK, "Polished Rose Quartz"),
+        ("brs_rose", "create:electron_tube", STACK, "Electron Tubes"),
+        ("brs_precision", "create:precision_mechanism", STACK, "Precision Mechanisms"),
+        ("brs_precision", "create:brass_hand", STACK, "Brass Hand"),
+        ("brs_precision", "create:sand_paper", STACK16, "Sand Paper"),
+        ("brs_precision", "create:red_sand_paper", STACK16, "Red Sand Paper"),
+        ("brs_logistics", "create:brass_casing", STACK, "Brass Casing"),
+        ("brs_logistics", "create:brass_funnel", STACK, "Brass Funnel"),
+        ("brs_logistics", "create:brass_tunnel", STACK, "Brass Tunnel"),
+        ("brs_logistics", "create:smart_chute", STACK, "Smart Chute"),
+        ("brs_logistics", "create:empty_blaze_burner", STACK, "Empty Blaze Burner"),
+    ],
+    slugs={"create:brass_ingot": "auto_brass", "create:electron_tube": "auto_tubes",
+           "create:precision_mechanism": "auto_precision",
+           "create:brass_block": "auto_brass_block", "create:zinc_block": "auto_zinc_block"},  # default would clash
+    legacy={"brass_auto", "auto_brass", "auto_tubes", "auto_precision"},
+    legacy_xp={"auto_brass": 40, "auto_tubes": 40, "auto_precision": 60},
+    xp={"brs_brass": 40, "brs_rose": 40, "brs_precision": 50, "brs_logistics": 45},
+    item_levels=2, group_prefix="brs_", cap_table="war_spoils_2",
+    masters=[("brass_mastered", "Brass Automation Mastered", 20, "create:brass_block", [
+        "Every Brass-tier material and part, made by machines. Precision on an industrial scale.",
+    ], "brass_auto")],
+    finale=None,
+    desc={
+        # kept from before (2026-11-21/23)
+        "create:brass_ingot": ["Feed copper and zinc into a heated Mixer automatically. Make a &astack&r of Brass Ingots."],
+        "create:electron_tube": ["Make a &astack&r of Electron Tubes without crafting them by hand (Deployers on a belt work)."],
+        "create:precision_mechanism": ["Loop the sequenced assembly line so it runs unattended. Make a &astack&r of Precision",
+                                       "Mechanisms."],
+        # new (recipes from the export, 2026-11-23)
+        "create:brass_nugget": ["Mechanical Crafters split brass ingots into nuggets. " + _AS],
+        "create:brass_block": ["A Press over a basin compacts 9 brass ingots into a block. " + _AS],
+        "create:brass_sheet": ["A Press over a belt of brass ingots. " + _AS],
+        "create:zinc_block": ["A Press over a basin compacts 9 zinc ingots into a block. " + _AS],
+        "create:rose_quartz": ["Quartz and 5 redstone on Mechanical Crafters. " + _AS],
+        "create:polished_rose_quartz": ["Deployers holding sand paper polish rose quartz (a Mechanical Peeler does too). " + _AS],
+        "create:brass_hand": ["Brass sheets and andesite alloy on Mechanical Crafters. " + _AS],
+        "create:sand_paper": ["Sand and paper on Mechanical Crafters. It doesn't stack: make &a16&r."],
+        "create:red_sand_paper": ["Red sand and paper on Mechanical Crafters. It doesn't stack: make &a16&r."],
+        "create:brass_casing": ["Deployers apply brass ingots to stripped logs. " + _AS],
+        "create:brass_funnel": ["A brass ingot, dried kelp and an electron tube on Mechanical Crafters. " + _AS],
+        "create:brass_tunnel": ["Brass ingots, dried kelp and an electron tube on Mechanical Crafters. " + _AS],
+        "create:smart_chute": ["A chute, brass sheets and an electron tube on Mechanical Crafters. " + _AS],
+        "create:empty_blaze_burner": ["Iron sheets and netherrack on Mechanical Crafters. " + _AS],
+    },
+)
+
+
+# Ore Automation (Quest Book v4, owner 2026-11-23: "now do ore and this will include diamond and netherite bcs they
+# are ore NOT heat items"). Spec: vault/03-Design/Quest Book v4 - automation-ore.md. Brass's Ore Processing group moved
+# here (owner), scope is every ore except nuclear (owner). Moved quests keep their IDs (legacy).
+ORE = dict(
+    circles=[("ore_auto", "Ore Automation", "minecraft:raw_iron", [
+        "Every ore in the pack, mined, crushed and refined by machines. Diamonds and netherite too.",
+    ], 25)],
+    groups=[
+        ("ore_mining", "Mining", "ore_auto", "create:mechanical_drill", "minecraft:raw_iron_block", [
+            "Ores don't regrow: a &aMechanical Drill&r on a moving contraption (a mining rig or tunnel bore) brings",
+            "them in.",
+        ]),
+        ("crushing", "Crushing", "ore_auto", "create:crushing_wheel", "create:crushed_raw_zinc", []),
+        ("ore_ingots", "Ingots", "ore_auto", "create:encased_fan", "minecraft:copper_block", [
+            "Crushed ore through a fan blowing through lava smelts it, with a better yield than raw ore.",
+        ]),
+        ("ore_gems", "Gems and Dusts", "ore_auto", "minecraft:lapis_lazuli", "minecraft:emerald_block", [
+            "Crushing Wheels turn gem ores into gems and dust.",
+        ]),
+        ("ore_diamond", "Diamonds", "ore_auto", "minecraft:diamond", "minecraft:diamond_block", [
+            "&eThis pack's own recipe:&r diamonds are compacted from coal over a &6superheated&r burner.",
+        ]),
+        ("ore_netherite", "Netherite", "ore_auto", "minecraft:netherite_scrap", "minecraft:netherite_block", [
+            "&eThis pack's own recipe:&r crushing Nether Bricks can drop Netherite Scrap.",
+        ]),
+    ],
+    group_quest={"crushing": dict(title="Crushing Wheels", xp=20, tasks=[item("create:crushing_wheel", 2)], desc=[
+        "Andesite alloy, planks and stone (mechanical crafting). Two &aCrushing Wheels&r spinning",
+        "toward each other crush ores into &acrushed ore&r: far more metal per ore than smelting.",
+    ])},
+    rows=[
+        ("ore_mining", "minecraft:raw_iron", STACK, "Raw Iron"),
+        ("ore_mining", "minecraft:raw_copper", STACK, "Raw Copper"),
+        ("ore_mining", "minecraft:raw_gold", STACK, "Raw Gold"),
+        ("ore_mining", "create:raw_zinc", STACK, "Raw Zinc"),
+        ("ore_mining", "tfmg:raw_nickel", STACK, "Raw Nickel"),
+        ("ore_mining", "tfmg:raw_lithium", STACK, "Raw Lithium"),
+        ("ore_mining", "create_the_air_wars:rawtitanium", STACK, "Raw Titanium"),
+        ("ore_mining", "create_the_air_wars:rough_amalgam", STACK, "Raw Amalgam"),
+        ("ore_mining", "create_the_air_wars:raw_sulfur", STACK, "Raw Sulfur"),
+        ("crushing", "create:crushed_raw_iron", STACK, "Crushed Raw Iron"),
+        ("crushing", "create:crushed_raw_gold", STACK, "Crushed Raw Gold"),
+        ("crushing", "create:crushed_raw_copper", STACK, "Crushed Raw Copper"),
+        ("crushing", "create:crushed_raw_zinc", STACK, "Crushed Raw Zinc"),
+        ("crushing", "create:crushed_raw_lead", STACK, "Crushed Raw Lead"),
+        ("crushing", "create:crushed_raw_nickel", STACK, "Crushed Raw Nickel"),
+        ("crushing", "tfmg:crushed_raw_lithium", STACK, "Crushed Raw Lithium"),
+        ("crushing", "create_the_air_wars:crushed_amalgam", STACK, "Crushed Amalgam"),
+        ("crushing", "create:experience_nugget", STACK, "Nugget of Experience"),
+        ("ore_ingots", "minecraft:copper_ingot", STACK, "Copper Ingot"),
+        ("ore_ingots", "create:zinc_ingot", STACK, "Zinc Ingot"),
+        ("ore_ingots", "create:zinc_nugget", STACK, "Zinc Nugget"),
+        ("ore_ingots", "tfmg:lead_ingot", STACK, "Lead Ingot"),
+        ("ore_ingots", "tfmg:nickel_ingot", STACK, "Nickel Ingot"),
+        ("ore_ingots", "tfmg:lithium_ingot", STACK, "Lithium Ingot"),
+        ("ore_ingots", "create_the_air_wars:titaniumingot", STACK, "Titanium Ingot"),
+        ("ore_gems", "minecraft:redstone", STACK, "Redstone Dust"),
+        ("ore_gems", "minecraft:lapis_lazuli", STACK, "Lapis Lazuli"),
+        ("ore_gems", "minecraft:emerald", STACK, "Emerald"),
+        ("ore_gems", "cgs:sulfur", STACK, "Sulfur"),
+        ("ore_diamond", "minecraft:coal", STACK, "Coal"),
+        ("ore_diamond", "minecraft:coal_block", STACK, "Block of Coal"),
+        ("ore_diamond", "minecraft:diamond", STACK, "Diamonds"),
+        ("ore_netherite", "minecraft:nether_bricks", STACK, "Nether Bricks"),
+        ("ore_netherite", "minecraft:netherite_scrap", STACK, "Netherite Scrap"),
+        ("ore_netherite", "minecraft:netherite_ingot", STACK, "Netherite"),
+    ],
+    slugs={"create:zinc_ingot": "auto_zinc", "minecraft:diamond": "auto_diamond", "minecraft:netherite_ingot": "auto_netherite",
+           "minecraft:coal_block": "auto_coal_block", "minecraft:nether_bricks": "auto_nether_bricks"},
+    legacy={"crushing", "auto_zinc", "auto_diamond", "auto_netherite"},
+    legacy_xp={"auto_zinc": 40, "auto_diamond": 100, "auto_netherite": 100},
+    xp={"ore_mining": 40, "crushing": 40, "ore_ingots": 40, "ore_gems": 40, "ore_diamond": 60, "ore_netherite": 60},
+    item_levels=2, group_prefix="ore_", cap_table="war_spoils_2",
+    masters=[("ore_mastered", "Ore Automation Mastered", 20, "minecraft:diamond_block", [
+        "Every ore in the pack, from raw rock to netherite, on autopilot.",
+    ], "ore_auto")],
+    finale=None,
+    desc={
+        # moved (kept text)
+        "create:zinc_ingot": ["Crush &azinc ore&r, wash the crushed ore with a fan, and smelt it. Make a &astack&r of Zinc",
+                              "Ingots."],
+        "minecraft:diamond": ["&eThis pack's own recipe:&r compact &a9 Blocks of Coal&r in a Basin over a &6Superheated&r",
+                              "burner to make &b1 Diamond&r. Automate it and make a &astack&r (576 coal blocks)."],
+        "minecraft:netherite_ingot": [
+            "&eThis pack's own recipe:&r &aCrushing Wheels&r crushing &aNether Bricks&r (the block) have a",
+            "&a5% chance&r to drop &aNetherite Scrap&r. Netherrack is endless, so this is renewable.",
+            "(Ancient Debris blown through lava with a fan works too.)",
+            "",
+            "Then let &aMechanical Crafters&r run the normal recipe: &a4 Netherite Scrap + 4 Gold Ingots&r",
+            "= 1 Netherite Ingot. Make a &astack&r of Netherite Ingots.",
+        ],
+        "create:crushed_raw_iron": ["Crush iron ore or raw iron (crimsite works too). " + _AS],
+        "create:crushed_raw_gold": ["Crush gold ore or raw gold (ochrum works too). " + _AS],
+        "create:crushed_raw_copper": ["Crush copper ore or raw copper (veridium works too). " + _AS],
+        "create:crushed_raw_zinc": ["Crush zinc ore or raw zinc (asurine works too). " + _AS],
+        "create:crushed_raw_lead": ["Crush lead ore, galena or raw lead. " + _AS],
+        "create:crushed_raw_nickel": ["Crush nickel ore or raw nickel. " + _AS],
+        "create:zinc_nugget": ["Wash crushed zinc ore with a fan blowing through water. " + _AS],
+        "create:experience_nugget": ["Crushing ores drops experience nuggets as a bonus (iron and copper ore do). " + _AS],
+        "minecraft:redstone": ["Crush redstone ore. Washing crushed iron ore also gives some. " + _AS],
+        # new (recipes from the export, 2026-11-23)
+        "minecraft:raw_iron": ["Mine iron ore with a &aMechanical Drill&r on a moving contraption. " + _AS],
+        "minecraft:raw_copper": ["Mine copper ore with a Drill on a moving contraption. " + _AS],
+        "minecraft:raw_gold": ["Mine gold ore with a Drill on a moving contraption. " + _AS],
+        "create:raw_zinc": ["Mine zinc ore with a Drill on a moving contraption. " + _AS],
+        "tfmg:raw_nickel": ["Mine nickel ore with a Drill on a moving contraption. " + _AS],
+        "tfmg:raw_lithium": ["Mine lithium ore with a Drill on a moving contraption. " + _AS],
+        "create_the_air_wars:rawtitanium": ["Mine titanium ore with a Drill on a moving contraption. " + _AS],
+        "create_the_air_wars:rough_amalgam": ["Mine amalgam ore with a Drill on a moving contraption. " + _AS],
+        "create_the_air_wars:raw_sulfur": ["Mine sulfur ore with a Drill on a moving contraption. " + _AS],
+        "tfmg:crushed_raw_lithium": ["Crush lithium ore or raw lithium. " + _AS],
+        "create_the_air_wars:crushed_amalgam": ["Crush raw amalgam. " + _AS],
+        "minecraft:copper_ingot": ["Crushed copper ore through a fan blowing through lava. " + _AS],
+        "tfmg:lead_ingot": ["Crushed lead ore through a lava fan. " + _AS],
+        "tfmg:nickel_ingot": ["Crushed nickel ore through a lava fan. " + _AS],
+        "tfmg:lithium_ingot": ["Crushed lithium ore through a lava fan. " + _AS],
+        "create_the_air_wars:titaniumingot": ["Raw titanium through a lava fan. " + _AS],
+        "minecraft:lapis_lazuli": ["Crush lapis ore with Crushing Wheels. " + _AS],
+        "minecraft:emerald": ["Crush emerald ore with Crushing Wheels. " + _AS],
+        "cgs:sulfur": ["Crush magma blocks with Crushing Wheels. " + _AS],
+        "minecraft:coal": ["Crush coal ore with Crushing Wheels. " + _AS],
+        "minecraft:coal_block": ["A Press over a basin compacts 9 coal into a block. " + _AS],
+        "minecraft:nether_bricks": ["Netherrack through a lava fan makes nether brick; a Press over a basin compacts 4 into",
+                                    "a block. " + _AS],
+        "minecraft:netherite_scrap": ["Crush Nether Bricks (the block): each has a 5% chance of scrap. " + _AS],
+    },
+)
+
+
+# Heat Automation (Quest Book v4, owner 2026-11-23: "then do heat"). Spec: vault/03-Design/Quest Book v4 -
+# automation-heat.md. Built around the pack's fuel tiers (vault/03-Design/Blaze Burner Fuel Tiers.md): blaze cakes,
+# then biofuel, then napalm, plus the nether heat materials. Diamonds and netherite moved to Ore (owner).
+HEAT = dict(
+    circles=[("heat_auto", "Heat Automation", "create:blaze_cake", ["Keep the heat on without lifting a finger."], 25)],
+    groups=[
+        ("heat_blaze", "Blaze Fuel", "heat_auto", "create:blaze_burner", "create:blaze_cake", [
+            "&6Tier 1:&r blaze cakes, and the blaze rods, powder and lava behind them.",
+        ]),
+        ("heat_liquid", "Liquid Fuels", "heat_auto", "createaddition:straw", "tfmg:napalm_bucket", [
+            "&6Tier 2 and 3:&r seed oil and biomass into &6biofuel&r, then biofuel into &cnapalm&r. Both need a",
+            "&6superheated&r burner to brew.",
+        ]),
+        ("heat_magma", "Magma and Glowstone", "heat_auto", "minecraft:magma_block", "minecraft:glowstone", [
+            "Nether heat materials made without a trip to the Nether.",
+        ]),
+    ],
+    rows=[
+        ("heat_blaze", "minecraft:blaze_rod", STACK, "Blaze Rod"),
+        ("heat_blaze", "minecraft:blaze_powder", STACK, "Blaze Powder"),
+        ("heat_blaze", "create:blaze_cake_base", STACK, "Blaze Cake Base"),
+        ("heat_blaze", "create:blaze_cake", STACK, "Blaze Cakes"),
+        ("heat_blaze", "minecraft:lava_bucket", STACK16, "Lava"),
+        ("heat_liquid", "createaddition:seed_oil_bucket", STACK16, "Seed Oil"),
+        ("heat_liquid", "createaddition:biomass", STACK16, "Biomass"),
+        ("heat_liquid", "createaddition:biomass_pellet", STACK, "Biomass Pellet"),
+        ("heat_liquid", "createaddition:straw", STACK16, "Straw"),
+        ("heat_liquid", "createaddition:bioethanol_bucket", STACK16, "Biofuel"),
+        ("heat_liquid", "tfmg:napalm_bucket", STACK16, "Napalm"),
+        ("heat_magma", "minecraft:magma_cream", STACK, "Magma Cream"),
+        ("heat_magma", "minecraft:magma_block", STACK, "Magma Block"),
+        ("heat_magma", "minecraft:glowstone_dust", STACK, "Glowstone Dust"),
+    ],
+    slugs={"create:blaze_cake": "auto_cakes", "createaddition:bioethanol_bucket": "auto_biofuel",
+           "minecraft:lava_bucket": "auto_lava", "createaddition:seed_oil_bucket": "auto_seed_oil",
+           "tfmg:napalm_bucket": "auto_napalm", "createaddition:straw": "auto_burner_straw"},
+    legacy={"heat_auto", "auto_cakes", "auto_biofuel"},
+    legacy_xp={"auto_cakes": 50, "auto_biofuel": 75},
+    xp={"heat_blaze": 45, "heat_liquid": 60, "heat_magma": 45},
+    item_levels=2, group_prefix="heat_", cap_table="war_spoils_2",
+    masters=[("heat_mastered", "Heat Automation Mastered", 20, "create:blaze_burner", [
+        "All three fuel tiers on tap. Your burners never go cold.",
+    ], "heat_auto")],
+    finale=None,
+    desc={
+        # kept from before (2026-11-21)
+        "create:blaze_cake": ["Compact the base, fill it with lava and feed the cakes to your burners, all without",
+                              "touching it. Make a &astack&r of Blaze Cakes."],
+        "createaddition:bioethanol_bucket": ["A biofuel plant that keeps its own mixer superheated. Fill a &astack&r of Biofuel buckets",
+                                             "(16)."],
+        # new (recipes from the export and Create's own recipe files, 2026-11-23)
+        "minecraft:blaze_rod": ["Blazes drop rods: a farm around a Nether Fortress blaze spawner that kills them. " + _AS],
+        "minecraft:blaze_powder": ["Crush blaze rods with Crushing Wheels. " + _AS],
+        "create:blaze_cake_base": ["A Press over a basin compacts an egg, sugar and cinder flour into a cake base. " + _AS],
+        "minecraft:lava_bucket": ["A &6superheated&r Mixer melts cobblestone into lava (50 mB a block). A Spout fills",
+                                  "buckets. Fill &a16&r."],
+        "createaddition:seed_oil_bucket": ["A Press over a basin compacts seeds into seed oil. A Spout fills buckets. Fill &a16&r."],
+        "createaddition:biomass": ["Mixer: seed oil with crops, flowers, saplings, sticks or honeycomb. Make a &astack&r (16)."],
+        "createaddition:biomass_pellet": ["A Press over a basin compacts biomass into pellets. " + _AS],
+        "createaddition:straw": ["A &aRolling Mill&r rolls paper or bamboo into straw (for the Blaze Burner with Straw).",
+                                 "Make a &astack&r (16)."],
+        "tfmg:napalm_bucket": ["&eThis pack's recipe:&r a &6superheated&r Mixer with biofuel, gasoline and an aluminum ingot.",
+                               "A Spout fills buckets. Fill &a16&r."],
+        "minecraft:magma_cream": ["Mixer: crushed magma and slime balls (or blaze powder and slime on Mechanical Crafters). " + _AS],
+        "minecraft:magma_block": ["A Press over a basin compacts 4 magma cream into a block. " + _AS],
+        "minecraft:glowstone_dust": ["Spout a night vision potion onto cinder flour, or crush glowstone. " + _AS],
+    },
+)
+
 
 CHAPTERS = [
     # ----------------------------------------------------------------------------------------------
@@ -1788,7 +2817,7 @@ CHAPTERS = [
     # Defend Your Home (owner 2026-11-21): a ladder of AMBUSH waves the player calls in, getting harder.
     # Each quest: checkmark (starting the quest fires the ambush via its tag) + kill goal. Waves 1-4 are
     # custom definitions in pack/kubejs/data/createwars/ambushes/; 5-8 are AMBUSH's own vehicles/ships.
-    dict(slug="defense", group="warfare", title="Defend Your Home",
+    dict(slug="defense", group="challenges", title="Defend Your Home",
          subtitle="Call in enemy waves: each one harder, each one richer", icon="minecraft:bell",
          unlock=[("enemy", "ambush")], quests=[
         Q("wave_scouts", "Wave 1: Scouting Party", 0, 0, [
@@ -1927,8 +2956,57 @@ CHAPTERS = [
             "Cabbage with meat, fish, vegetables or mushrooms in the Cooking Pot.",
         ], [item("farmersdelight:cabbage_rolls", 4)], xp=15),
         Q("dumplings", "Dumplings", 0, 0, [
-            "Dough, cabbage, onion, meat and a brown mushroom in the Cooking Pot.",
+            "Dough, cabbage, onion, and raw chicken, pork or beef (or a brown mushroom) in the Cooking Pot.",
         ], [item("farmersdelight:dumplings", 4)], xp=15),
+        # Fishing branch (owner 2026-11-23: "we need a section in food that talks about fish"). Under the Cutting Board
+        # hub: the knife is what slices fish. Fish Stew chains off Tomato Sauce (it needs the sauce).
+        Q("fishing", "Fishing", 0, 0, [
+            "Cast a &afishing rod&r into any water for &acod&r, &asalmon&r, &apufferfish&r and &atropical fish&r",
+            "(plus junk and the odd treasure). Use a water bucket on a swimming fish to carry it home alive.",
+            "",
+            "Fish are meat too: Agriculture's &aMeats&r group automates cod and salmon.",
+        ], [item("minecraft:fishing_rod")], xp=10),
+        Q("fish_cod", "Cod and Salmon", 0, 0, [
+            "The two eating fish. Cook them with a &asmoking&r fan or a smoker, or slice them first for",
+            "more meals per fish.",
+        ], [item("minecraft:cod", 4), item("minecraft:salmon", 4)], xp=10),
+        Q("pufferfish", "Pufferfish", 0, 0, [
+            "&cPoisonous&r to eat, but brewed into an awkward potion it makes &bWater Breathing&r. Worth a",
+            "few for submarine crews (see &aNaval&r).",
+        ], [item("minecraft:pufferfish")], xp=10),
+        Q("fish_slices", "Fish Slices", 0, 0, [
+            "A knife on the &aCutting Board&r (or a &aSlicer&r holding one) cuts each fish into &a2 slices&r.",
+        ], [item("farmersdelight:cod_slice", 4), item("farmersdelight:salmon_slice", 4)], xp=10),
+        Q("sushi", "Sushi", 0, 0, [
+            "&aCod Roll&r: 2 raw cod slices and cooked rice. &aSalmon Roll&r: 2 raw salmon slices and cooked",
+            "rice. Cooked rice comes from the &aCooking Pot&r.",
+        ], [item("farmersdelight:cod_roll", 2), item("farmersdelight:salmon_roll", 2)], xp=15),
+        Q("fish_stew", "Fish Stew", 0, 0, [
+            "Raw fish, an onion and tomato sauce in the Cooking Pot.",
+        ], [item("farmersdelight:fish_stew", 2)], xp=15),
+        # Create: Fishery Industry (added 2026-11-23, owner: "oh we didnt add in the fishing mod")
+        Q("frame_trap", "Frame Trap", 0, 0, [
+            "&aCreate: Fishery Industry&r. A Frame Trap (zinc sheet and string) on a moving contraption, such",
+            "as a &aTrap Bearing&r spinning it through water, catches fish and pulls up fishing loot that",
+            "depends on the biome. No rod, no player.",
+        ], [item("createfisheryindustry:frame_trap"), item("createfisheryindustry:trap_bearing")], deps=["fishing"], xp=20),
+        Q("bait_trap", "Bait Trap", 0, 0, [
+            "A &aMesh Trap&r (zinc sheet and wool) catches small creatures and drops their loot into the",
+            "container next to it. Add a lantern for a &aBait Trap&r: bait it with fish or mussels for",
+            "lobsters, seeds for chickens, carrots for rabbits.",
+        ], [item("createfisheryindustry:bait_trap")], deps=["fishing"], xp=20),
+        Q("lobster", "Lobster", 0, 0, [
+            "Bait Traps catch them. Cook them with a smoking fan, or mix them with kelp and milk into",
+            "&aLobster Soup&r.",
+        ], [item("createfisheryindustry:raw_lobster", 2)], deps=["bait_trap"], xp=15),
+        Q("peeler", "Mechanical Peeler", 0, 0, [
+            "An iron sheet and andesite casing. It peels cod and salmon into a &afish steak&r plus &afish",
+            "skin&r (roast the skin for lobster bait). It also polishes rose quartz and strips leather armor.",
+        ], [item("createfisheryindustry:mechanical_peeler")], deps=["fish_cod"], xp=20),
+        Q("fish_steaks", "Fish Steaks", 0, 0, [
+            "Run cod and salmon past the Peeler. Cooked steaks go into a &aSeafood Steak&r with steak and",
+            "cooked lobster.",
+        ], [item("createfisheryindustry:cod_steak", 4), item("createfisheryindustry:salmon_steak", 4)], deps=["peeler"], xp=15),
     ]),
     # ----------------------------------------------------------------------------------------------
     dict(slug="storage", group="infrastructure", title="Storage",
@@ -2119,80 +3197,23 @@ CHAPTERS = [
         ], [item("smog:precision_filter_cartridge")], xp=60),
     ]),
     # ----------------------------------------------------------------------------------------------
-    dict(slug="automation", group="automation", title="Automation",
-         subtitle="Put your machines to work: production goals for every tier",
-         icon="create:mechanical_arm", unlock=[("kinetics", "casing")], quests=[
-        Q("andesite_auto", "Andesite Automation", 0, 0, [
-            "Production goals for Andesite-tier machines. Make these with &amachines&r, not by hand.",
-        ], [CHECK], xp=20),
-        Q("auto_cobble", "Automate: Cobblestone", 0, 0, [
-            "A cobblestone generator with a &aMechanical Drill&r mining it nonstop. Make a &astack&r.",
-        ], [item("minecraft:cobblestone", STACK)], xp=30),
-        Q("auto_gravel", "Automate: Gravel", 0, 0, [
-            "Feed cobblestone into a &aMillstone&r. Make a &astack&r of gravel.",
-        ], [item("minecraft:gravel", STACK)], xp=30),
-        Q("auto_alloy", "Automate: Andesite Alloy", 0, 0, [
-            "Feed andesite and iron (or zinc) nuggets into a &aMixer&r over a Basin, no heat needed.",
-            "Make a &astack&r.",
-        ], [item("create:andesite_alloy", STACK)], xp=30),
-        # owner: one iron quest with all three steps (nuggets -> ingots -> blocks)
-        Q("auto_iron", "Automate: Iron", 0, 0, [
-            "Blow &agravel&r through water with an &aEncased Fan&r (washing) for iron nuggets, then",
-            "have a &aMechanical Press&r over a &aBasin&r compact them: &a9 nuggets&r into an ingot,",
-            "&a9 ingots&r into a block.",
-            "",
-            "Make a &astack&r of nuggets, a &astack&r of ingots and &a7 Blocks of Iron&r.",
-        ], [item("minecraft:iron_nugget", STACK), item("minecraft:iron_ingot", STACK),
-            item("minecraft:iron_block", 7)], xp=80),
-        Q("auto_sheets", "Automate: Iron Sheets", 0, 0, [
-            "A Press over a belt of iron ingots. Make a &astack&r of Iron Sheets.",
-        ], [item("create:iron_sheet", STACK)], xp=40),
-        Q("auto_kelp", "Automate: Dried Kelp", 0, 0, [
-            "Blow kelp through &afire&r with an Encased Fan (smoking). Make a &astack&r of Dried Kelp.",
-        ], [item("minecraft:dried_kelp", STACK)], xp=30),
-        Q("brass_auto", "Brass Automation", 0, 0, [
-            "Production goals for the Brass Age.",
-        ], [CHECK], xp=25),
-        Q("auto_brass", "Automate: Brass", 0, 0, [
-            "Feed copper and zinc into a heated Mixer automatically. Make a &astack&r of Brass Ingots.",
-        ], [item("create:brass_ingot", STACK)], xp=40),
-        Q("crushing", "Crushing Wheels", 0, 0, [
-            "Andesite alloy, planks and stone (mechanical crafting). Two &aCrushing Wheels&r spinning",
-            "toward each other crush ores into &acrushed ore&r: far more metal per ore than smelting.",
-        ], [item("create:crushing_wheel", 2)], xp=20),
-        Q("auto_zinc", "Automate: Ore Processing", 0, 0, [
-            "Crush &azinc ore&r, wash the crushed ore with a fan, and smelt it. Make a &astack&r of Zinc",
-            "Ingots.",
-        ], [item("create:zinc_ingot", STACK)], xp=40),
-        Q("auto_tubes", "Automate: Electron Tubes", 0, 0, [
-            "Make &a5 Electron Tubes&r without crafting them by hand (Deployers on a belt work).",
-        ], [item("create:electron_tube", 5)], xp=40),  # owner: 5, not a stack
-        Q("auto_precision", "Automate: Precision Mechanisms", 0, 0, [
-            "Loop the sequenced assembly line so it runs unattended. Make &a5 Precision Mechanisms&r.",
-        ], [item("create:precision_mechanism", 5)], xp=60),  # owner: 5, not a stack
-        Q("heat_auto", "Heat Automation", 0, 0, [
-            "Keep the heat on without lifting a finger.",
-        ], [CHECK], xp=25),
-        Q("auto_cakes", "Automate: Blaze Cakes", 0, 0, [
-            "Compact the base, fill it with lava and feed the cakes to your burners, all without",
-            "touching it. Make a &astack&r of Blaze Cakes.",
-        ], [item("create:blaze_cake", STACK)], xp=50),
-        Q("auto_diamond", "Automate: Diamonds", 0, 0, [
-            "&eThis pack's own recipe:&r compact &a9 Blocks of Coal&r in a Basin over a &6Superheated&r",
-            "burner to make &b1 Diamond&r. Automate it and make a &astack&r (576 coal blocks).",
-        ], [item("minecraft:diamond", STACK)], xp=100),
-        Q("auto_netherite", "Automate: Netherite", 0, 0, [
-            "&eThis pack's own recipe:&r &aCrushing Wheels&r crushing &aNether Bricks&r (the block) have a",
-            "&a5% chance&r to drop &aNetherite Scrap&r. Netherrack is endless, so this is renewable.",
-            "(Ancient Debris blown through lava with a fan works too.)",
-            "",
-            "Then let &aMechanical Crafters&r run the normal recipe: &a4 Netherite Scrap + 4 Gold Ingots&r",
-            "= 1 Netherite Ingot. Make &a4 Netherite Ingots&r.",
-        ], [item("minecraft:netherite_ingot", 4)], xp=100),  # 4, not a stack: ~80 brick blocks per ingot at 5%
-        Q("auto_biofuel", "Automate: Biofuel", 0, 0, [
-            "A biofuel plant that keeps its own mixer superheated. Fill a &astack&r of Biofuel buckets",
-            "(16).",
-        ], [item("createaddition:bioethanol_bucket", STACK16)], xp=75),
+    # Automation tab (Quest Book v4, 2026-11-23: owner "break automation tab out", one chapter per tier). These
+    # quests were one "automation" chapter; id_chapter="automation" keeps every ID, so team progress survives.
+    dict(slug="automation_andesite", group="automation", title="Andesite Automation",
+         subtitle="Production goals for Andesite-tier machines",
+         icon="create:andesite_alloy", unlock=[("kinetics", "casing")], quests=grouped_quests(ANDESITE)),
+    dict(slug="automation_brass", group="automation", title="Brass Automation",
+         subtitle="Brass, ore processing and precision parts on autopilot",
+         icon="create:brass_ingot", unlock=[("brass_and_precision", "brass_casing")], quests=grouped_quests(BRASS)),
+    dict(slug="automation_ore", group="automation", title="Ore Automation",
+         subtitle="Every ore, mined, crushed and refined: diamonds and netherite included",
+         icon="minecraft:raw_iron", unlock=[("brass_and_precision", "brass_casing")], quests=grouped_quests(ORE)),
+    dict(slug="automation_heat", group="automation", title="Heat Automation",
+         subtitle="All three fuel tiers, made without lifting a finger",
+         icon="create:blaze_cake", unlock=[("heat", "blaze_cake")], quests=grouped_quests(HEAT)),
+    dict(slug="automation_industrial", group="automation", title="Industrial Automation", id_chapter="automation",
+         subtitle="Steel and fuel by the stack",
+         icon="tfmg:steel_ingot", unlock=[("industrial", "steel")], quests=[
         Q("industrial_auto", "Industrial Automation", 0, 0, [
             "Heavy industry on autopilot.",
         ], [CHECK], xp=30),
@@ -2205,35 +3226,30 @@ CHAPTERS = [
         Q("auto_gasoline", "Automate: Gasoline", 0, 0, [
             "Pumpjack to distillation tower, no hands. Fill a &astack&r of Gasoline buckets (16).",
         ], [item("tfmg:gasoline_bucket", STACK16)], xp=100),
+    ]),
+    dict(slug="automation_quantum", group="automation", title="Quantum Automation", id_chapter="automation",
+         subtitle="Mass-produce the quantum supply chain",
+         icon="createteleporters:quantum_fluid_bucket", unlock=[("quantum", "telejuice")], quests=[
         Q("quantum_auto", "Quantum Automation", 0, 0, [
             "Mass-produce the quantum supply chain.",
         ], [CHECK], xp=30),
         Q("auto_telejuice", "Automate: Telejuice", 0, 0, [
             "A chorus fruit farm feeding a heated mixer. Fill a &astack&r of Telejuice buckets (16).",
         ], [item("createteleporters:quantum_fluid_bucket", STACK16)], xp=75),
+    ]),
+    dict(slug="automation_enchanting", group="automation", title="Enchanting Automation", id_chapter="automation",
+         subtitle="Experience on tap",
+         icon="create_enchantment_industry:experience_bucket", unlock=[("enchanting", "liquid_xp")], quests=[
         Q("enchanting_auto", "Enchanting Automation", 0, 0, [
             "Experience on tap.",
         ], [CHECK], xp=30),
         Q("auto_xp", "Automate: Liquid Experience", 0, 0, [
             "Fill a &astack&r of Bucket o' Enchanting (16) from an automated setup.",
         ], [item("create_enchantment_industry:experience_bucket", STACK16)], xp=75),
-        # Food hub (owner 2026-11-21: "Yes, a Food hub")
-        Q("food_auto", "Food Automation", 0, 0, [
-            "Feed an army without lifting a knife. Make these with &amachines&r, not by hand.",
-        ], [CHECK], xp=20),
-        Q("auto_bread", "Automate: Bread", 0, 0, [
-            "Mill wheat into flour, mix flour and water into dough, then bake it with an encased fan",
-            "blowing through fire. Make a &astack&r.",
-        ], [item("minecraft:bread", STACK)], xp=40),
-        Q("auto_cabbage_leaf", "Automate: Cabbage Leaves", 0, 0, [
-            "Feed cabbages under a &aSlicer&r holding a knife (it runs cutting board recipes). Make a",
-            "&astack&r.",
-        ], [item("farmersdelight:cabbage_leaf", STACK)], xp=40),
-        Q("auto_soup", "Automate: Vegetable Soup", 0, 0, [
-            "Keep a cooking pot on a stove fed with funnels and pull the soup out. Make a &astack&r",
-            "(16).",
-        ], [item("farmersdelight:vegetable_soup", STACK16)], xp=50),
     ]),
+    dict(slug="agriculture", group="automation", title="Agriculture",
+         subtitle="Feed an army: every crop, every food, every animal product",
+         icon="minecraft:wheat", unlock=[("kinetics", "harvester")], quests=agriculture_quests()),
 ]
 
 
@@ -2253,6 +3269,7 @@ CHAPTERS = [
 #         {quest: ([quests], offset_deg)} rotates the fan off the spoke (e.g. to sit beside a chain)
 #   hubs values may be a list (spread over both arcs) or dict(top=[...], bottom=[...])
 #   extra_deps: {quest: ["chapter/quest", ...]}  (optional) cross-chapter dependencies (not drawn)
+#   place: {quest: (x, y[, size])}  (optional) explicit positions; the quest keeps its own Q() deps
 #   gate: (slug, [required slugs]) or None
 LAYOUTS = {
     "welcome": dict(
@@ -2454,7 +3471,7 @@ LAYOUTS = {
               "arcon": dict(top=["arcon_muzzle", "arcon_breech"], bottom=["bops"])},
         chains={"hull_rolled": ["hull_nickel", "hull_ceramic", "hull_boron"], "hull_aluminum": ["hull_titanium"]},
         # 2026-11-22 audit; Arcon armor and guns use TFMG heavy plates and steel
-        extra_deps={"tracks": ["industrial_belt"], "rockcutting_wheel": ["automation/crushing"],
+        extra_deps={"tracks": ["industrial_belt"], "rockcutting_wheel": ["automation_ore/crushing"],
                     "hull_rolled": ["industrial/steel"], "arcon": ["industrial/steel_mechanism"],
                     "bops": ["demolitions/guncotton"]},
         gate=None),
@@ -2544,7 +3561,7 @@ LAYOUTS = {
     "food": dict(
         main=[("knife", -6, 1.25), ("cutting_board", -1, 2.0), ("crops", 6, 2.0), ("stove", 13, 2.0),
               ("cooking_pot", 20, 2.0), ("compost", 27, 2.0), ("slicer", 34, 2.0), ("feast", 41, 2.0)],
-        hubs={"cutting_board": dict(top=["straw"], bottom=["cuts"]),
+        hubs={"cutting_board": dict(top=["straw"], bottom=["cuts", "fishing"]),
               "crops": dict(top=["tomato", "cabbage_more"], bottom=["onion", "rice"]),
               "stove": dict(top=["skillet"]),
               "cooking_pot": dict(top=["tomato_sauce", "cooked_rice"], bottom=["vegetable_soup", "beef_stew"]),
@@ -2552,8 +3569,16 @@ LAYOUTS = {
               "slicer": dict(top=["sprinkler"], bottom=["fertilizer"]),
               "feast": dict(top=["hamburger", "cabbage_rolls"], bottom=["dumplings"])},
         chains={"straw": ["canvas", "basket"],    # recipe order: straw -> canvas -> basket
-                "skillet": ["fried_egg"]},
-        extra_deps={"slicer": ["kinetics/casing"]},   # andesite casing + turntable
+                "skillet": ["fried_egg"],
+                "fishing": ["fish_cod", "fish_slices", "sushi"],   # owner 2026-11-23: a fish section
+                "tomato_sauce": ["fish_stew"]},                    # fish stew needs tomato sauce
+        fans={"fish_cod": (["pufferfish"], 70)},
+        # Create: Fishery Industry quests, placed by hand in the free space around the fish chain (2026-11-23)
+        place={"frame_trap": (-1.6, 4.4), "bait_trap": (-0.9, 6.3), "lobster": (-1.4, 8.2),
+               "peeler": (3.9, 5.5), "fish_steaks": (4.6, 7.3)},
+        extra_deps={"slicer": ["kinetics/casing"],   # andesite casing + turntable
+                    "frame_trap": ["kinetics/shafts_cogs"],   # the Trap Bearing needs a shaft
+                    "peeler": ["kinetics/casing"]},           # the Peeler needs andesite casing
         hidden_deps={"compost": ["straw"]},   # 2026-11-22 audit: organic compost uses straw
         gate=None),
     "storage": dict(
@@ -2570,30 +3595,25 @@ LAYOUTS = {
         fans={"ss_upgrade_base": ["stack_upgrade", "compacting_upgrade", "hopper_upgrade"]},
         extra_deps={"item_vault": ["kinetics/iron_sheets"], "adv_wireless_terminal": ["wireless_terminal"]},
         gate=None),
-    "automation": dict(
-        # owner: separate bubbles, not a connected line. Top row = Ages tiers, bottom row = Expansions.
-        connected=False,
-        main=[("andesite_auto", 0, 2.0, 0), ("brass_auto", 10, 2.0, 0), ("industrial_auto", 20, 2.0, 0),
-              ("heat_auto", 0, 2.0, 11), ("quantum_auto", 10, 2.0, 11), ("enchanting_auto", 20, 2.0, 11),
-              ("food_auto", 30, 2.0, 0)],
-        hubs={"andesite_auto": dict(top=["auto_cobble", "auto_gravel", "auto_alloy"],
-                                    bottom=["auto_iron", "auto_sheets", "auto_kelp"]),
-              "brass_auto": dict(top=["auto_brass", "auto_tubes", "auto_precision"], bottom=["crushing"]),
-              "heat_auto": dict(top=["auto_cakes", "auto_diamond", "auto_netherite"], bottom=["auto_biofuel"]),
-              "industrial_auto": dict(top=["auto_coke", "auto_steel"], bottom=["auto_gasoline"]),
-              "quantum_auto": dict(top=["auto_telejuice"]),   # owner 2026-11-21: no quantum pearl automate
-              "enchanting_auto": dict(top=["auto_xp"]),
-              "food_auto": dict(top=["auto_bread", "auto_cabbage_leaf"], bottom=["auto_soup"])},
-        chains={"crushing": ["auto_zinc"]},
-        # each tier hub also needs progress in its own chapter (not drawn: other chapter)
-        extra_deps={"andesite_auto": ["kinetics/casing"],
-                    "brass_auto": ["brass_and_precision/brass_casing"],
-                    "heat_auto": ["heat/blaze_cake"],
-                    "industrial_auto": ["industrial/steel"],
-                    "quantum_auto": ["quantum/telejuice"],
-                    "enchanting_auto": ["enchanting/liquid_xp"],
-                    "food_auto": ["food/slicer"]},
+    # Automation tab (Quest Book v4, 2026-11-23): one chapter per tier, each a single bubble. connected=False keeps
+    # the lone hub at hub rewards (+2 levels) instead of being treated as a chapter finale (+5). The old bubbles'
+    # extra_deps are now each chapter's unlock.
+    # "automation_andesite": built by grouped_layout(ANDESITE) (below the layout constants)
+    # "automation_brass": built by grouped_layout(BRASS) (below the layout constants)
+    # "automation_heat": built by grouped_layout(HEAT) (below the layout constants)
+    "automation_industrial": dict(
+        connected=False, main=[("industrial_auto", 0, 2.0)],
+        hubs={"industrial_auto": dict(top=["auto_coke", "auto_steel"], bottom=["auto_gasoline"])},
         gate=None),
+    "automation_quantum": dict(
+        connected=False, main=[("quantum_auto", 0, 2.0)],
+        hubs={"quantum_auto": dict(top=["auto_telejuice"])},   # owner 2026-11-21: no quantum pearl automate
+        gate=None),
+    "automation_enchanting": dict(
+        connected=False, main=[("enchanting_auto", 0, 2.0)],
+        hubs={"enchanting_auto": dict(top=["auto_xp"])},
+        gate=None),
+    # "agriculture": built by agriculture_layout() (below the layout constants)
 }
 # Copper Expansion parts used by other chapters (2026-11-22 audit, after the Copper chapter was added):
 # each quest also needs the Copper quest that teaches its fluid/copper part. Other chapter, so not drawn.
@@ -2621,6 +3641,153 @@ FAN_SPREAD = 160                # sub-fan: total angle (degrees), centered on th
 CHAIN_STEP = 1.8                # distance between links of a chain along a spoke
 MIN_GAP = 0.6                   # minimum empty space between quest edges (room for labels)
 _unused = 0                # sub-fan: total angle (degrees), centered on the spoke direction
+
+
+# Agriculture layout (Quest Book v4). The fan layout above can't hold 27 satellites, so this chapter is placed by
+# geometry: each sub-hub's items sit on one ring (up to 10) or two staggered rings, spaced so every straight line
+# from the sub-hub to an item passes between the items of the inner ring. The ring slot facing the parent hub stays
+# empty for the parent's line. Capstones (hidden lines) sit just outside each cluster, away from the parent.
+FARM_HUB_SIZE, FARM_SUB_SIZE, FARM_CAP_SIZE = 2.0, 1.5, 1.25
+
+
+def farm_rings(center, n, toward, hub_size, size=1.0):
+    """[(x, y)] for n satellites around center (table order, going around), and the cluster's outer radius."""
+    cx, cy = center
+    base = math.atan2(toward[1] - cy, toward[0] - cx)
+    two = n > 10
+    n1 = math.ceil(n / 2) if two else n
+    slots = n1 + 1                                   # +1: the empty slot facing the parent
+    step = 2 * math.pi / slots
+    chord = size + MIN_GAP + 0.05
+    r1 = max(hub_size / 2 + size / 2 + MIN_GAP + 0.3, (chord / 2) / math.sin(step / 2))
+    spots = [(k, r1, base + step * k) for k in range(1, slots)]
+    if two:
+        r2 = r1 + 1.45
+        mids = [(k + 0.5, r2, base + step * (k + 0.5)) for k in range(slots)]
+        spots += mids[:n - n1] if n - n1 == slots else _spread(mids, n - n1)
+    spots.sort()
+    pts = [(round(cx + r * math.cos(a), 2), round(cy + r * math.sin(a), 2)) for _, r, a in spots]
+    outer = max(r for _, r, _ in spots) + size / 2
+    return pts, outer
+
+
+def _spread(lst, m):
+    """m entries of lst, evenly spread (keeps a two-ring cluster balanced when ring 2 isn't full)."""
+    return [lst[round(i * (len(lst) - 1) / max(1, m - 1))] for i in range(m)] if m > 1 else lst[len(lst) // 2:][:m]
+
+
+def grouped_layout(G):
+    """Layout for a grouped automation chapter (see grouped_quests). Circles run left to right. A circle with groups
+    gets its sub-hubs on a ring (ring_of_subs) and its master capstone in the widest gap; a circle whose items sit
+    straight on its hub gets one ring of items and its master to the right. The finale goes after the last circle."""
+    members = grouped_members(G)
+    masters = {m[5]: m[0] for m in G["masters"]}
+    place = {}
+    hidden = {}
+    main = []
+
+    def cluster(sub_pos, parent_pos, items, hub_size):
+        pts, outer = farm_rings(sub_pos, len(items), parent_pos, hub_size)
+        for (iid, _, _), p in zip(items, pts):
+            place[grouped_slug(G, iid)] = p
+        return outer
+
+    def ext(n, hub_size):  # cluster radius including its capstone, before placing it
+        return farm_rings((0, 0), n, (1, 0), hub_size)[1] + FARM_CAP_SIZE + MIN_GAP + 0.3
+
+    def cap_at(sub, sub_pos, parent_pos, outer):
+        a = math.atan2(sub_pos[1] - parent_pos[1], sub_pos[0] - parent_pos[0])
+        r = outer + FARM_CAP_SIZE / 2 + MIN_GAP + 0.2
+        place[grouped_cap_slug(G, sub)] = (round(sub_pos[0] + r * math.cos(a), 2),
+                                           round(sub_pos[1] + r * math.sin(a), 2), FARM_CAP_SIZE)
+
+    def ring_of_subs(subs):
+        """Sub-hubs on a ring around their circle hub (relative positions): the smallest ring that keeps the clusters
+        apart and every hub->sub-hub line clear of the other clusters. Angles are weighted by cluster size."""
+        radii = [ext(len(members[s]), FARM_SUB_SIZE) for s in subs]
+        weights = [radii[i] + radii[(i + 1) % len(radii)] for i in range(len(radii))]
+        angles, acc = [], -math.pi / 2                    # first sub-hub straight up
+        for w in weights:
+            angles.append(acc)
+            acc += 2 * math.pi * w / sum(weights)
+        D = 6.0
+        while True:
+            pos = [(D * math.cos(a), D * math.sin(a)) for a in angles]
+            ok = all(D >= FARM_HUB_SIZE / 2 + r + 0.6 for r in radii)
+            for i in range(len(pos)):
+                for j in range(len(pos)):
+                    if i == j:
+                        continue
+                    if math.dist(pos[i], pos[j]) < radii[i] + radii[j] + 0.6:
+                        ok = False
+                    # the hub->sub line i must stay clear of cluster j
+                    if math.cos(angles[j] - angles[i]) > 0 and abs(math.sin(angles[j] - angles[i])) * D < radii[j] + 0.3:
+                        ok = False
+            if ok:
+                return pos, angles, radii
+            D += 0.25
+
+    def place_circle(hub_x, subs, pos, angles, master):
+        hub = (hub_x, 0.0)
+        for sub, p in zip(subs, pos):
+            sp = (round(hub[0] + p[0], 2), round(hub[1] + p[1], 2))
+            place[sub] = (*sp, FARM_SUB_SIZE)
+            outer = cluster(sp, hub, members[sub], FARM_SUB_SIZE)
+            cap_at(sub, sp, hub, outer)
+        if master:  # inside the ring, in the widest gap between two hub->sub lines
+            gaps = sorted(((angles[(i + 1) % len(angles)] - angles[i]) % (2 * math.pi), i) for i in range(len(angles)))
+            width, i = gaps[-1]
+            mid = angles[i] + width / 2
+            place[master] = (round(hub[0] + 3.3 * math.cos(mid), 2), round(hub[1] + 3.3 * math.sin(mid), 2), 1.75)
+
+    right = None            # right edge of everything placed so far
+    finale_x = None
+    for cslug, *_ in G["circles"]:
+        subs = [g[0] for g in G["groups"] if g[2] == cslug]
+        if subs:
+            pos, ang, rad = ring_of_subs(subs)
+            left_ext = max(rad[i] - pos[i][0] for i in range(len(pos)))
+            right_ext = max(rad[i] + pos[i][0] for i in range(len(pos)))
+            hx = round(left_ext if right is None else right + 2.0 + left_ext, 2)
+            place_circle(hx, subs, pos, ang, masters.get(cslug))
+            right = hx + right_ext
+            finale_x = right + 3.0
+        else:               # items straight around the hub, master to the right
+            items = members[cslug]
+            out = farm_rings((0, 0), len(items), (1, 0), FARM_HUB_SIZE)[1]
+            hx = round(out if right is None else right + 2.0 + out, 2)
+            pts, outer = farm_rings((hx, 0), len(items), (hx + 10, 0), FARM_HUB_SIZE)
+            for (iid, _, _), p in zip(items, pts):
+                place[grouped_slug(G, iid)] = p
+            if masters.get(cslug):
+                place[masters[cslug]] = (round(hx + outer + 1.6, 2), 0.0, 1.75)
+            right = hx + outer + 1.6 + 0.875
+            finale_x = round(hx + outer + 6.0, 2)
+        main.append((cslug, hx, FARM_HUB_SIZE, 0.0))
+    if G.get("finale"):
+        place[G["finale"][0]] = (finale_x, 0.0, 2.5)
+
+    # hidden dependencies: capstones need their group; masters need their circle; the finale needs the masters
+    for slug, *_ in G["groups"]:
+        hidden[grouped_cap_slug(G, slug)] = [grouped_slug(G, i) for i, _, _ in members[slug]]
+    for slug, title, levels, icon, desc, circle in G["masters"]:
+        subs = [g[0] for g in G["groups"] if g[2] == circle]
+        hidden[slug] = ([grouped_cap_slug(G, s) for s in subs] if subs else
+                        [grouped_slug(G, i) for i, _, _ in members[circle]])
+    if G.get("finale"):
+        hidden[G["finale"][0]] = [m[0] for m in G["masters"]]
+    # Milk/egg foods (FARM_NEEDS) are NOT hard dependencies: owner 2026-11-23 saw their lines missing in game (FTB
+    # hides all of a quest's lines or none, and a line to Animal Products would cross the chapter). The description
+    # says what they need instead.
+    return dict(connected=False, main=main, hubs={}, place=place, hidden_deps=hidden,
+                extra_deps=G.get("extra_deps", {}), gate=None)
+
+
+LAYOUTS["agriculture"] = grouped_layout(AGRICULTURE)
+LAYOUTS["automation_andesite"] = grouped_layout(ANDESITE)
+LAYOUTS["automation_brass"] = grouped_layout(BRASS)
+LAYOUTS["automation_ore"] = grouped_layout(ORE)
+LAYOUTS["automation_heat"] = grouped_layout(HEAT)
 
 
 def apply_layout(ch):
@@ -2688,6 +3855,13 @@ def apply_layout(ch):
         for i, slug in enumerate(sats):
             ang = base - spread / 2 + spread * (i + 0.5) / len(sats)
             put(slug, cx + fr * math.cos(ang), cy - fr * math.sin(ang), [center], ang)
+    # place: explicit positions {slug: (x, y[, size])} for quests laid out by hand or by a chapter's own geometry
+    # (Agriculture). The quest keeps the deps written in its Q().
+    for slug, spot in lay.get("place", {}).items():
+        by[slug].update(x=spot[0], y=spot[1])
+        if len(spot) > 2:
+            by[slug]["size"] = spot[2]
+        placed.add(slug)
     for slug, extra in lay.get("extra_deps", {}).items():
         by[slug]["deps"] = by[slug]["deps"] + list(extra)
     for slug, extra in COPPER_DEPS.get(ch["slug"], {}).items():
@@ -2780,6 +3954,17 @@ def stack(i, count=1):
     return {"id": i, "count": count}
 
 
+# Automate quests (Automation tab, slug auto_*), owner 2026-11-23: "i dont think automate tasks need to be giving out
+# the thing you are automating rather more xp or ... things you can't obtain normally like budding amethyst".
+# No bonus of the automated item; double XP points; one Engineer's Cache roll.
+AUTOMATE_XP_MULT = 2
+AUTOMATE_ROLL = ("engineers_cache", 1)
+
+
+def is_automate(ch, q):
+    return ch["group"] == "automation" and q["slug"].startswith("auto_")
+
+
 def levels_for(ch, q):
     """Whole-level bonus by role (see XP constants). A quest's own `levels` wins."""
     if q.get("levels") is not None:
@@ -2798,6 +3983,30 @@ def levels_for(ch, q):
     return 0
 
 
+def id_chapter(ch, q):
+    """Chapter slug a quest's IDs are derived from: the quest's own override, then the chapter's, then its slug."""
+    return q.get("id_chapter") or ch.get("id_chapter") or ch["slug"]
+
+
+def quest_id_table():
+    """(chapter slug, quest slug) -> written quest ID. Every reference resolves through this, so a quest moved with
+    id_chapter is still found by its current chapter/slug."""
+    table = {(c["slug"], q["slug"]): qid(id_chapter(c, q), q["slug"]) for c in CHAPTERS for q in c["quests"]}
+    seen = {}
+    for key, id_ in table.items():
+        assert id_ not in seen, f"quest ID collision: {seen.get(id_)} and {key} (same id_chapter + slug)"
+        seen[id_] = key
+    return table
+
+
+BAD_AMP = re.compile(r"&(?![0-9a-fk-orA-FK-OR])")  # FTB text: & starts a formatting code (&a, &r, ...)
+
+
+def check_text(where, text):
+    """Owner 2026-11-23 saw FTB's "Invalid formatting! You must escape whitespace after &" on "Gems & Dusts"."""
+    assert not BAD_AMP.search(text), f"{where}: bare '&' in {text!r} (write 'and', or a real code like &a)"
+
+
 def build():
     lang = {}
     chapter_files = {}
@@ -2805,6 +4014,7 @@ def build():
     for slug, title in GROUPS:
         group_ids[slug] = qid("group", slug)
         lang[f"chapter_group.{group_ids[slug]}.title"] = title
+    qids = quest_id_table()
     for order, ch in enumerate(CHAPTERS):
         cid = qid(ch["slug"])
         lang[f"chapter.{cid}.title"] = ch["title"]
@@ -2822,14 +4032,17 @@ def build():
                         f"{ch['slug']}/{q['slug']}: unknown cross-chapter dependency {d}"
                 else:
                     assert d in slugs, f"{ch['slug']}/{q['slug']}: unknown dependency {d}"
-            id_ = qid(ch["slug"], q["slug"])
+            base = id_chapter(ch, q)
+            id_ = qids[(ch["slug"], q["slug"])]
+            for t in [q["title"], q["subtitle"] or ""] + list(q["desc"]):
+                check_text(f"{ch['slug']}/{q['slug']}", t)
             lang[f"quest.{id_}.title"] = q["title"]
             if q["subtitle"]:
                 lang[f"quest.{id_}.quest_subtitle"] = q["subtitle"]
             lang[f"quest.{id_}.quest_desc"] = q["desc"]
             tasks = []
             for n, (kind, iid, count) in enumerate(q["tasks"]):
-                t = {"id": qid(ch["slug"], q["slug"], "task", str(n)), "type": kind}
+                t = {"id": qid(base, q["slug"], "task", str(n)), "type": kind}
                 if kind == "item":
                     t["item"] = stack(iid)
                     if count != 1:  # the game omits the default count of 1
@@ -2840,27 +4053,29 @@ def build():
                     t["value"] = Raw(f"{count}L")
                 tasks.append(t)
             rewards = []
+            automate = is_automate(ch, q)
             if q["xp"]:
-                rewards.append({"id": qid(ch["slug"], q["slug"], "xp"), "type": "xp", "xp": q["xp"] * XP_SCALE})
+                xp = q["xp"] * XP_SCALE * (AUTOMATE_XP_MULT if automate else 1)
+                rewards.append({"id": qid(base, q["slug"], "xp"), "type": "xp", "xp": xp})
             levels = levels_for(ch, q)
             if levels:
-                rewards.append({"id": qid(ch["slug"], q["slug"], "levels"), "type": "xp_levels",
+                rewards.append({"id": qid(base, q["slug"], "levels"), "type": "xp_levels",
                                 "xp_levels": levels})
             for n, (iid, count) in enumerate(q["items"]):
                 # ItemReward keeps the amount in its own "count"; the stack itself is count 1 (game format)
-                rewards.append({"id": qid(ch["slug"], q["slug"], "reward", str(n)), "type": "item",
+                rewards.append({"id": qid(base, q["slug"], "reward", str(n)), "type": "item",
                                 "item": stack(iid), "count": count})
-            for n, (table, times) in enumerate(q["rolls"]):
+            for n, (table, times) in enumerate(q["rolls"] + ([AUTOMATE_ROLL] if automate else [])):
                 assert table in REWARD_TABLES, f"{ch['slug']}/{q['slug']}: unknown reward table {table}"
                 for k in range(times):
                     # RandomReward.writeData: "table_id" is the table's ID as a LONG (not the hex string)
-                    rewards.append({"id": qid(ch["slug"], q["slug"], "roll", str(n), str(k)), "type": "random",
+                    rewards.append({"id": qid(base, q["slug"], "roll", str(n), str(k)), "type": "random",
                                     "table_id": Raw(f"{int(qid('table', table), 16)}L")})
-            if q["bonus"]:
+            if q["bonus"] and not automate:
                 for n, (kind, iid, count) in enumerate(q["tasks"]):
                     if kind != "item":
                         continue
-                    r = {"id": qid(ch["slug"], q["slug"], "bonus", str(n)), "type": "item", "item": stack(iid)}
+                    r = {"id": qid(base, q["slug"], "bonus", str(n)), "type": "item", "item": stack(iid)}
                     if bonus_count(count) != 1:
                         r["count"] = bonus_count(count)
                     rewards.append(r)
@@ -2878,7 +4093,7 @@ def build():
             if q["icon"]:
                 quest["icon"] = {"id": q["icon"]}
             if q["deps"]:
-                quest["dependencies"] = [qid(*d.split("/")) if "/" in d else qid(ch["slug"], d) for d in q["deps"]]
+                quest["dependencies"] = [qids[tuple(d.split("/"))] if "/" in d else qids[(ch["slug"], d)] for d in q["deps"]]
             quest["tasks"] = tasks
             quest["rewards"] = rewards
             quests.append(quest)
@@ -2903,8 +4118,8 @@ def build():
         for ref in ch["unlock"]:
             assert ref in all_quests, f"{ch['slug']}: unknown unlock {ref}"
             deps = first.setdefault("dependencies", [])
-            if qid(*ref) not in deps:  # may already be there via extra_deps
-                deps.append(qid(*ref))
+            if qids[tuple(ref)] not in deps:  # may already be there via extra_deps
+                deps.append(qids[tuple(ref)])
 
     # Remove old .snbt files (so deleted chapters don't linger) but keep folders: OneDrive can lock
     # directories mid-sync, which makes rmtree fail.

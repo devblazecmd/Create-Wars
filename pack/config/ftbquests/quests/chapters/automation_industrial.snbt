@@ -1,0 +1,150 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "automation_industrial"
+	group: "5DC36AFDE29DAA60"
+	icon: {
+		id: "tfmg:steel_ingot"
+	}
+	id: "5B7A66B6182A48E6"
+	images: [ ]
+	order_index: 27
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"5C326BE896F9406D"
+			]
+			id: "20B1AC5BF862EA1B"
+			rewards: [
+				{
+					id: "672270677B518941"
+					type: "xp"
+					xp: 120
+				}
+				{
+					id: "430F9612A66CB875"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "388A9244FAEE2DC9"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"20B1AC5BF862EA1B"
+			]
+			id: "788F9D6BEE492895"
+			rewards: [
+				{
+					id: "3DDEB04FAC4765EA"
+					type: "xp"
+					xp: 400
+				}
+				{
+					id: "214BABA58349DFBB"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					id: "017F9D2FB5B4FD67"
+					table_id: 1217703315816509440L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "161DE43C687559A1"
+					item: {
+						count: 1
+						id: "tfmg:coal_coke"
+					}
+					type: "item"
+				}
+			]
+			x: 1.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"20B1AC5BF862EA1B"
+			]
+			id: "10F87A2D17CAB073"
+			rewards: [
+				{
+					id: "3A8063BF04A63E06"
+					type: "xp"
+					xp: 800
+				}
+				{
+					id: "2A076F43B6B7C4CA"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					id: "4818753CF31B03F1"
+					table_id: 1217703315816509440L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "1CE261F6DA6ED56D"
+					item: {
+						count: 1
+						id: "tfmg:steel_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: -1.2d
+			y: -2.31d
+		}
+		{
+			dependencies: [
+				"20B1AC5BF862EA1B"
+			]
+			id: "77BD910B208F5E79"
+			rewards: [
+				{
+					id: "7E248B108B0A4AD8"
+					type: "xp"
+					xp: 800
+				}
+				{
+					id: "5512499EB0F5BC54"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					id: "79F3226DA82C9F83"
+					table_id: 1217703315816509440L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "2A2B50D0A330D685"
+					item: {
+						count: 1
+						id: "tfmg:gasoline_bucket"
+					}
+					type: "item"
+				}
+			]
+			x: -0.0d
+			y: 2.6d
+		}
+	]
+}

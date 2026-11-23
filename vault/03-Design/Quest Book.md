@@ -371,3 +371,96 @@ No unit tests exist for a quest book. Verification is layered:
 - 2026-11-22: Copper Expansion: no lines from Capacitor / Copper Spool to the Electric Motor (owner). Copper Spool keeps its
   drawn Copper Wire + Spool requirements.
 
+- 2026-11-23: **Quest Book v4** started ([[Quest Book v4 - Capability Map]], plan [[Quest Book v4 - Plan]]). Phase 1–2:
+  new **Challenges** tab (last) holding **Defend Your Home** (moved from Warfare). The single Automation chapter is **split
+  into one chapter per tier** in the Automation tab (Andesite, Brass, Heat, Industrial, Quantum, Enchanting Automation) plus
+  an **Agriculture** chapter holding the old Food bubble. Generator gained `id_chapter` (chapter- or quest-level): moved
+  quests derive IDs from `"automation"`, so all 146 quest/task/reward IDs and every reward amount are unchanged (checked
+  with the new `tools/quest_ids.py snapshot|diff`). All `chapter/quest` refs and unlocks now resolve through one ID table.
+  Tier chapters use `connected=False` so the lone hub keeps hub rewards. `export_registry_ids.js` now also exports
+  `max_stack` (non-64 stack sizes). The active test instance is **Create Wars - Testing** (pass `--instance` to the
+  checkers; their default "Create Wars" instance no longer exists). 30 chapters, 562 quests.
+- 2026-11-23: **Automate quests need at least a full stack** of each item (owner: "the automate tasks should require at min
+  a full stack of the item"), using the item's real max stack size from the registry export. Raised to 64: Electron Tubes and
+  Precision Mechanisms (replaces the 2026-11-21 "5, not a stack"), Netherite Ingots (was 4; at 5% scrap from Nether Bricks
+  that's ~5,000 brick blocks crushed), Blocks of Iron in Automate: Iron (was 7). Bonus rewards scale with it (⅛, max 8).
+  `audit_quests.py` gained a **STACK** check (Automation-tab `auto_*` item tasks vs `max_stack`). Quests elsewhere whose slug
+  merely starts with `auto_` (Artillery's automatic cannon controller, Radar's auto-aim) aren't automate goals and are
+  exempt. Note: `levels_for` still gives those two the automate +3 levels because of the prefix (pre-existing, left as is).
+- 2026-11-23: **Agriculture** chapter built (Automation tab, unlock: Andesite Age Mechanical Harvester). 156 quests: 131
+  automate quests (18 crops, 8 meats, 16 fan cooking, 9 slicer, 27 mixing, 8 spout, 13 bakery, 21 assembly, 6 feasts,
+  5 animal products), 3 circle hubs, 9 sub-hubs, 9 "<group> Mastered" capstones (levels = half the group, min 5; Spoils of
+  War II ×1, ×2 for 20+), Master Farmer / Chef / Rancher (15/25/15 levels + War Trophy) and Feed the Army (30 levels +
+  2 War Trophy). Item quests give +1 level; chapter total 309 levels. Data is a `FARM` table in the generator; names from
+  the game's lang files; amounts from the export's `max_stack`. **Milk/egg rule** frozen as `FARM_NEEDS` (25 foods) and
+  re-checked by the audit's new FARM_NEEDS section (recursive through chocolate/tea/pie crust; recipes that loop back,
+  like cake <- cake slices, are ignored). Those 25 quests' lines are hidden (FTB hides all of a quest's lines or none).
+  Layout: new `place` layout key + `agriculture_layout()` (one or two staggered rings per sub-hub so every line passes
+  between the inner items). The old Food bubble's 4 quests kept their IDs (`id_chapter`); they now give +1 level (was +3)
+  and hang off their method sub-hub. Audit: Automation-tab quests no longer count as "teaching" an item and skip the
+  ORDER check (challenges; NO RECIPE still covers obtainability). Descriptions use FD's own recipe files where the export
+  flattens ingredient alternatives ("any vegetable but melon", "raw chicken, pork or beef"). Not yet confirmed in game,
+  so worded as suggestions: Deployers milking cows / shearing sheep, Ham from a Deployer holding a knife.
+- 2026-11-23: Agriculture milk/egg foods are **no longer hard dependencies** on Automate: Milk / Eggs (owner, in game: "some of
+  the mixing ones are missing connection lines"). FTB hides all of a quest's lines or none, so the 25 quests had lost their
+  line to their group. The `FARM_NEEDS` note stays in their descriptions; the audit still re-checks the list.
+- 2026-11-23: **Automate quest rewards reworked** (owner: automate tasks shouldn't give out the thing you automated; "rather
+  more xp or ... things you can't obtain normally like budding amethyst"; "skip books"). Every Automation-tab `auto_*` quest:
+  no ⅛ bonus of the item (24 bonus rewards removed), **XP points ×2** (`AUTOMATE_XP_MULT`), and **1 roll on the new
+  "Engineer's Cache"** reward table (`engineers_cache`): experience bottles, diamonds, budding amethyst, echo shards, nautilus
+  shells, name tags, netherite upgrade template, heart of the sea, sniffer egg, ominous trial key, totem, enchanted golden
+  apple, and all 18 armor trim templates (Better Trims bonuses). No enchanted books (owner). Rule lives in `is_automate()`
+  in the generator, so new automate quests get it automatically. Agriculture item quests now give **+2 levels** (was +1).
+  Crushing Wheels (Brass Automation) isn't an automate goal and keeps its bonus.
+- 2026-11-23: Agriculture gained 7 ingredient quests that other foods use (owner: "we use chocolate, sugar and honey but
+  dont have an automate"): Sugar, Baked Cake Base (Bakery), Chocolate bucket (Mixing), Honey bucket and Honeycomb (Animal
+  Products). Wheat Flour and Dough were added then dropped (owner: "we dont need dough and flour"). Chapter: 161 quests,
+  451 levels. Book: 719 quests.
+- 2026-11-23: Agriculture Crop circle gained **Forestry** and **Fertilizer** (owner: "we should also add logs and leaves then
+  since its ag we should have fertilizer"). Forestry: all **21 trees** (8 vanilla + 13 Biomes O' Plenty, owner's choice), one
+  quest per tree asking for a stack of logs **and** a stack of leaves (maple uses red maple leaves). FARM rows can now hold a
+  tuple of IDs (one task each). Fertilizer: bone meal, Create tree fertilizer, FD organic compost and rich soil, Slice & Dice
+  liquid fertilizer (16 buckets). Crop and Food circles now share one layout helper (`ring_of_subs`/`place_circle`): sub-hubs
+  on a ring around the circle hub, master capstone in the widest gap. Master Farmer needs all four Crop-circle capstones.
+  Agriculture: 191 quests, 523 levels. Book: 749 quests, 1,088 levels.
+- 2026-11-23: **Andesite Automation deepened** like Agriculture (owner: "now with what weve done with ag we need to do to
+  andesite"; spec [[Quest Book v4 - automation-andesite]]). 53 quests: 39 automate quests in 6 groups (Stone 11, Milling &
+  Crushing 5, Washing 4, Fan Processing 5, Metals 5, Kinetic Parts 9), "<group> Mastered" capstones (Spoils of War I) and
+  **Andesite Mastered** (+15 levels, War Trophy). No machines (owner), but Andesite Tunnel, Chute and Basin are in Kinetic
+  Parts. Item quests +2 levels (the 6 old ones were +3). The 7 old quests keep IDs and text (now per-quest `legacy`, not a
+  chapter-wide `id_chapter`, so new quests get their own chapter's IDs). The Agriculture builder and layout became the shared
+  **grouped chapter** builder (`grouped_quests` / `grouped_layout`, spec dicts `AGRICULTURE`, `ANDESITE`); Agriculture's
+  output was byte-identical after the refactor. Chapter: 138 levels. Book: 795 quests, 1,206 levels.
+- 2026-11-23: **Brass Automation deepened** (owner: "now do the same for brass"; spec [[Quest Book v4 - automation-brass]]).
+  39 quests: 27 automate quests in 5 groups (Ore Processing 9 with the existing Crushing Wheels quest as its entry, Brass 5,
+  Rose Quartz 4, Precision 4, Brass Logistics 5), capstones (Spoils of War II) and **Brass Automation Mastered** (+20
+  levels, War Trophy). Same rules as Andesite: no machines, logistics parts in, +2 levels. The 6 old quests keep their IDs;
+  Crushing Wheels (Rail's Rockcutting Wheel depends on it) stays a build quest. Shared builder gained `group_quest` (an
+  existing quest as a group's entry) and a duplicate-slug check (Block of Zinc / Block of Brass would have defaulted to the
+  ingot quests' slugs). Chapter: 111 levels. Book: 828 quests, 1,303 levels.
+- 2026-11-23: **Ore Automation** chapter (owner: "now do ore and this will include diamond and netherite bcs they are ore
+  NOT heat items"; spec [[Quest Book v4 - automation-ore]]). 49 quests: 35 automate quests in 6 groups (Mining 9, Crushing 9
+  with the Crushing Wheels quest as entry, Ingots 7, Gems & Dusts 4, Diamonds 3, Netherite 3), capstones (Spoils of War II),
+  **Ore Automation Mastered** (+20, War Trophy). Brass's Ore Processing group and Redstone moved here (owner), Diamonds and
+  Netherite moved from Heat; all keep their IDs. Rail's Rockcutting Wheel now needs `automation_ore/crushing` (same quest ID).
+  Scope: every ore but nuclear (owner). Lead unified on TFMG; sulfur = Gunsmithing's (crushed magma). Book: 31 chapters,
+  863 quests, 1,404 levels.
+- 2026-11-23: **Heat Automation deepened** (owner: "then do heat"; spec [[Quest Book v4 - automation-heat]]). 22 quests: 14
+  automate quests in 3 groups (Blaze Fuel, Liquid Fuels, Magma & Glowstone) built on the fuel tiers, capstones and **Heat
+  Automation Mastered**. Old quests keep IDs. Book: 31 chapters, 882 quests, 1,467 levels.
+- 2026-11-23: **Food chapter: Fishing branch** (owner: "we need a section in food that talks about fish"). Under the Cutting
+  Board hub: Fishing (rod) -> Cod and Salmon -> Fish Slices -> Sushi (cod + salmon rolls), with Pufferfish (Water Breathing,
+  for submarine crews) off Cod and Salmon; Fish Stew chains off Tomato Sauce. Accepted audit order exceptions: `fish_cod`
+  (cod's only recipes are CBC More Shells torpedo by-products) and `sushi` (needs cooked rice from the Cooking Pot branch).
+  Dumplings text fixed (meat **or** a brown mushroom). Food: 34 quests. Book: 888 quests.
+- 2026-11-23: **Bug: "Invalid formatting! You must escape whitespace after & with \&!"** on "Gems & Dusts" (owner, in game).
+  FTB reads `&` as a formatting code, so a bare `&` in quest text is invalid. Renamed the three group titles that had one:
+  Milling and Crushing (Andesite), Gems and Dusts (Ore), Magma and Glowstone (Heat), and their capstones. The generator now
+  refuses any quest text with a bare `&` (`check_text`). Titles only, so no IDs changed.
+- 2026-11-23: **Create: Fishery Industry** added ([[../01-Mods/Create Fishery Industry]]; owner: "oh we didnt add in the fishing
+  mod"). Agriculture gained a **Seafood** group in the Food circle (16 automate quests; Master Chef now needs Seafood
+  Mastered); the three soups need milk (FARM_NEEDS, audit agrees). Food chapter Fishing branch gained Frame Trap, Bait Trap
+  -> Lobster, Mechanical Peeler -> Fish Steaks (hand-placed with `place`; Frame Trap needs Andesite Age Shafts, the Peeler
+  needs Andesite Casing, cross-chapter). Raw Cod/Salmon, Chicken, Rabbit, Feather and Polished Rose Quartz texts updated.
+  Audit's milk/egg recursion is now memoised (the bait-trap recipe loops made it exponential). Agriculture: 209 quests,
+  565 levels. Book: 911 quests, 1,509 levels.

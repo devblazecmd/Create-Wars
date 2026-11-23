@@ -19,7 +19,7 @@ scrap".
 - Returning 2 of the 4 brick items means each block costs only half its bricks, so a loop can recycle
   some of them.
 - Vanilla debris smelting/blasting still works (fan bulk blasting through lava).
-- Taught by **Automate: Netherite** (4 ingots) in the [[Quest Book]] Automation chapter.
+- Taught by **Automate: Netherite** (a stack since 2026-11-23) in the [[Quest Book]] Ore Automation chapter (was Heat).
 
 ## Open questions
 - Is 5% right? About 80 brick blocks (~320 netherrack) per ingot. Netherite is the top PvP gear tier,

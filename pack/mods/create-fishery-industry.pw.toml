@@ -1,0 +1,13 @@
+name = "Create: Fishery Industry"
+filename = "createfisheryindustry-5.1.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6f5cd5060ac15b53387726d5ccdc1070f5aef4fa"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8863886
+project-id = 1245539

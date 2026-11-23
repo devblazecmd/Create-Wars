@@ -15,6 +15,10 @@
 		"Heated mixing, brass, precision parts and ore processing"
 	]
 	"chapter.0A8F7FB8A84C2634.title": "Brass Age"
+	"chapter.16C842E9DA8FD2E3.chapter_subtitle": [
+		"Feed an army: every crop, every food, every animal product"
+	]
+	"chapter.16C842E9DA8FD2E3.title": "Agriculture"
 	"chapter.18E7501046BDBB52.chapter_subtitle": [
 		"Create: Droneworks and FPV drones"
 	]
@@ -39,6 +43,18 @@
 		"Create: Smog cleans up your factory; bring oxygen up high and deep down"
 	]
 	"chapter.233471EFD5752016.title": "Pollution and Air"
+	"chapter.2C698A15B035439B.chapter_subtitle": [
+		"Production goals for Andesite-tier machines"
+	]
+	"chapter.2C698A15B035439B.title": "Andesite Automation"
+	"chapter.3357927032FF7C40.chapter_subtitle": [
+		"Mass-produce the quantum supply chain"
+	]
+	"chapter.3357927032FF7C40.title": "Quantum Automation"
+	"chapter.33D1E374A73C1A17.chapter_subtitle": [
+		"Experience on tap"
+	]
+	"chapter.33D1E374A73C1A17.title": "Enchanting Automation"
 	"chapter.35A2446CB394CD33.chapter_subtitle": [
 		"Rotation, your first machines, your first automation"
 	]
@@ -59,6 +75,10 @@
 		"Wheels, tank treads, armor plate and vehicle cannons"
 	]
 	"chapter.41740B86D8A8BC3E.title": "Armored Vehicles"
+	"chapter.47386B148565E906.chapter_subtitle": [
+		"Brass, ore processing and precision parts on autopilot"
+	]
+	"chapter.47386B148565E906.title": "Brass Automation"
 	"chapter.509675FCE8A0F318.chapter_subtitle": [
 		"TFMG: cast iron, coke, steel and oil"
 	]
@@ -71,6 +91,10 @@
 		"Telejuice, quantum items, waystones and teleporters"
 	]
 	"chapter.56C3E9BF26C90251.title": "Quantum Expansion"
+	"chapter.5B7A66B6182A48E6.chapter_subtitle": [
+		"Steel and fuel by the stack"
+	]
+	"chapter.5B7A66B6182A48E6.title": "Industrial Automation"
 	"chapter.68FFFFE2EED0491A.chapter_subtitle": [
 		"Create: Warnautics bombs, mines, C4 and missiles"
 	]
@@ -79,14 +103,18 @@
 		"Smarter, tougher, armed mobs and enemy fleets"
 	]
 	"chapter.706C3C2934D87936.title": "Know Your Enemy"
+	"chapter.72C9596A018974D9.chapter_subtitle": [
+		"All three fuel tiers, made without lifting a finger"
+	]
+	"chapter.72C9596A018974D9.title": "Heat Automation"
 	"chapter.7300735DFF8CCF2D.chapter_subtitle": [
 		"Reactors, radiation, and the shells that end wars"
 	]
 	"chapter.7300735DFF8CCF2D.title": "Nuclear Age"
-	"chapter.7415700D4D0CE1C8.chapter_subtitle": [
-		"Put your machines to work: production goals for every tier"
+	"chapter.7741C5BF7A5160BB.chapter_subtitle": [
+		"Every ore, mined, crushed and refined: diamonds and netherite included"
 	]
-	"chapter.7415700D4D0CE1C8.title": "Automation"
+	"chapter.7741C5BF7A5160BB.title": "Ore Automation"
 	"chapter.7DF726A5C25B0699.chapter_subtitle": [
 		"Call in enemy waves: each one harder, each one richer"
 	]
@@ -95,6 +123,7 @@
 		"Create Big Cannons: from log cannons to built-up steel and autocannons"
 	]
 	"chapter.7E12579408EECDD7.title": "Artillery"
+	"chapter_group.0A66BD7502C4E592.title": "Challenges"
 	"chapter_group.0CFAFF482C306DFD.title": "Ages"
 	"chapter_group.5198D7EDAB40AD32.title": "Expansions"
 	"chapter_group.541CE08481D1C6C5.title": "Warfare"
@@ -109,6 +138,25 @@
 		"Clay, dirt and sand: lines the moulds."
 	]
 	"quest.005AC10822BFEE7D.title": "Casting Sand"
+	"quest.007777F3484D6C9D.quest_desc": [
+		"2 wheat and a honey bottle (Mechanical Crafters). Make a &astack&r."
+	]
+	"quest.007777F3484D6C9D.title": "Automate: Honey Cookie"
+	"quest.009CCD32434C6521.quest_desc": [
+		"Mixer: rice, an egg, carrot, onion and a bowl. Make a &astack&r (16)."
+		""
+		"&7Needs eggs from Animal Product Automation."
+	]
+	"quest.009CCD32434C6521.title": "Automate: Fried Rice"
+	"quest.00A7805C13ECF448.quest_desc": [
+		"Oak and dark oak leaves drop apples. A tree farm with &aMechanical Saws&r and leaf"
+		"breakers keeps them coming. Make a &astack&r."
+	]
+	"quest.00A7805C13ECF448.title": "Automate: Apple"
+	"quest.010EF62A99D48302.quest_desc": [
+		"Every quest under &aPrecision&r is done: 4 production lines running on their own."
+	]
+	"quest.010EF62A99D48302.title": "Precision Mastered"
 	"quest.012C8C453F6577FE.quest_desc": [
 		"Leather, glass, string and a filter cartridge. Pulls pollution out of you."
 	]
@@ -117,11 +165,19 @@
 		"Runs off a &acopper backtank&r: precision mechanism, valve, pipe, brass and iron sheets."
 	]
 	"quest.01417E6752358717.title": "Nailgun"
+	"quest.0187FFB7EBEF8201.quest_desc": [
+		"Grows on soul sand in any dimension. Harvester rows work. Make a &astack&r."
+	]
+	"quest.0187FFB7EBEF8201.title": "Automate: Nether Wart"
 	"quest.01B274AEC6E98520.quest_desc": [
 		"A Spout fills items on a Depot or belt with fluid. You'll use it for Blaze Cakes and,"
 		"later, for &dQuantum Paper&r."
 	]
 	"quest.01B274AEC6E98520.title": "Spout"
+	"quest.01C2A9C455D1A608.quest_desc": [
+		"Farmer's Delight crop from wild cabbages. Harvester rows. Make a &astack&r."
+	]
+	"quest.01C2A9C455D1A608.title": "Automate: Cabbage"
 	"quest.01DB109F38C332AE.quest_desc": [
 		"Sequenced assembly on a blank shotgun round, with nails or blaze powder (makes 8)."
 	]
@@ -130,6 +186,15 @@
 		"Iron plate, gunpowder and blaze powder (makes 2). Ammunition for rocket pods."
 	]
 	"quest.0202D14D081DFB44.title": "S-8 Rocket"
+	"quest.020BBB506826B4F2.quest_desc": [
+		"2 cabbages, 2 glow berries, a golden carrot, a honey bottle, beetroot, tomato and a"
+		"bowl. Make &a4&r."
+	]
+	"quest.020BBB506826B4F2.title": "Automate: Gleaming Salad"
+	"quest.023A04271E4D7329.quest_desc": [
+		"Logs through a lava fan, or a Press compacting 2 logs over a basin. Make a &astack&r."
+	]
+	"quest.023A04271E4D7329.title": "Automate: Charcoal"
 	"quest.026989985A23357E.quest_desc": [
 		"A sturdy sheet, a spring, a shaft and zinc nuggets (makes 4). Smooths the ride over"
 		"rough ground."
@@ -149,6 +214,10 @@
 		"Any lead works."
 	]
 	"quest.030523533305C9CD.title": "Anti-Radiation Suit"
+	"quest.033C1F151EC8E3E6.quest_desc": [
+		"Andesite alloy and dried kelp on Mechanical Crafters. Make a &astack&r."
+	]
+	"quest.033C1F151EC8E3E6.title": "Automate: Andesite Tunnel"
 	"quest.03495FB874BD1066.quest_desc": [
 		"Andesite casing, fluid pipe, iron and a piston pole. Bores out cast and built-up barrels."
 	]
@@ -174,6 +243,11 @@
 		"Smelt congealed nitro. Crush or mill it into Nitropowder, the stronger propellant."
 	]
 	"quest.04D5C8ED75ADC36D.title": "Hardened Nitro"
+	"quest.0530DE0B845F1E35.quest_desc": [
+		"Pigs and hoglins killed with a &aknife&r drop Ham. Try a Deployer holding a knife."
+		"Make a &astack&r."
+	]
+	"quest.0530DE0B845F1E35.title": "Automate: Ham"
 	"quest.0540AEA5FD47D948.quest_desc": [
 		"A copper block, a gold sheet and andesite alloy. Build a &6boiler&r: a Fluid Tank with lit"
 		"&aBlaze Burners&r underneath and water pumped in, then put Steam Engines on its sides and"
@@ -194,6 +268,14 @@
 		"Cabbage with meat, fish, vegetables or mushrooms in the Cooking Pot."
 	]
 	"quest.05DA4FF98AE373A1.title": "Cabbage Rolls"
+	"quest.05E8FA7B0F917B21.quest_desc": [
+		"Fish skin through a smoking fan. Good lobster bait. Make a &astack&r."
+	]
+	"quest.05E8FA7B0F917B21.title": "Automate: Roasted Fish Skin"
+	"quest.05F26295C0D4E064.quest_desc": [
+		"Blazes drop rods: a farm around a Nether Fortress blaze spawner that kills them. Make a &astack&r."
+	]
+	"quest.05F26295C0D4E064.title": "Automate: Blaze Rod"
 	"quest.05FD55AEF439EB0C.quest_desc": [
 		"Cast iron tank, pipe and fireproof bricks: heats air for the furnace."
 	]
@@ -212,16 +294,37 @@
 		"Put a &aDepot&r under it to hold what it's pressing."
 	]
 	"quest.066EDE2B31CE6F97.title": "Mechanical Press and Depot"
+	"quest.0692A7D2C24B263A.quest_desc": [
+		"Netherrack through a lava fan makes nether brick; a Press over a basin compacts 4 into"
+		"a block. Make a &astack&r."
+	]
+	"quest.0692A7D2C24B263A.title": "Automate: Nether Bricks"
 	"quest.06A39428AF78928B.quest_desc": [
 		"Everything in Create starts with &aandesite&r: the gray stone found in big patches"
 		"underground and in hillsides. Mine some."
 	]
 	"quest.06A39428AF78928B.title": "Find Andesite"
+	"quest.06B714F2701E4D4F.quest_desc": [
+		"Quartz and redstone into rose quartz, polished by Deployers holding sand paper, into electron tubes."
+	]
+	"quest.06B714F2701E4D4F.title": "Rose Quartz"
 	"quest.06FB04B9C71307E7.quest_desc": [
 		"A redstone lamp, note block, electron tube, iron sheet and red glass. Sounds when it gets"
 		"a redstone signal."
 	]
 	"quest.06FB04B9C71307E7.title": "Industrial Alarm"
+	"quest.0718F9C1F283457C.quest_desc": [
+		"Deployers apply andesite alloy to stripped logs. Make a &astack&r."
+	]
+	"quest.0718F9C1F283457C.title": "Automate: Andesite Casing"
+	"quest.0730161B25077A1B.quest_desc": [
+		"2 apples, a golden carrot, a hay bale and a rice bale. Make a &astack&r (16)."
+	]
+	"quest.0730161B25077A1B.title": "Automate: Horse Feed"
+	"quest.074CADD944FC37A4.quest_desc": [
+		"Raw salmon slices through a smoking fan (or slice cooked salmon). Make a &astack&r."
+	]
+	"quest.074CADD944FC37A4.title": "Automate: Cooked Salmon Slice"
 	"quest.0784C2E3B1ED63AB.quest_desc": [
 		"Iron sheet, precision mechanism and shaft: steering for a missile."
 	]
@@ -234,21 +337,50 @@
 		"An upgrade base and logs. Each slot holds more items; higher tiers hold far more."
 	]
 	"quest.07BF44C0797C1380.title": "Stack Upgrade Tier 1"
+	"quest.07D62E8960C7E77D.quest_desc": [
+		"Grow Pine saplings and fell the trees with &aMechanical Saws&r. Leaf blocks only drop to shears:"
+		"try Deployers holding shears. Make a &astack&r of each."
+	]
+	"quest.07D62E8960C7E77D.title": "Automate: Pine"
 	"quest.07E8DC1BE76E7D93.quest_desc": [
 		"A brass sheet on a filter cartridge. Lasts 4x longer. Wash a clogged one with a"
 		"fan through water to clean it and get the soot back."
 	]
 	"quest.07E8DC1BE76E7D93.title": "Brass Filter Cartridge"
+	"quest.07ED60DE136EC10C.quest_desc": [
+		"Wash gravel with a fan blowing through water. Make a &astack&r."
+	]
+	"quest.07ED60DE136EC10C.title": "Automate: Flint"
 	"quest.083D0860E2942759.quest_desc": [
 		"A mechanical bearing, electron tube and iron sheet. Build a dish on it and spin it to"
 		"&ascan the sky&r. Check the Ponder for radar builds."
 	]
 	"quest.083D0860E2942759.title": "Radar Bearing"
+	"quest.084EBAB39C1C241D.quest_desc": [
+		"Spout chocolate onto sweet berries. Chocolate: Mixer with milk, sugar and cocoa beans."
+		"Make a &astack&r."
+		""
+		"&7Needs milk from Animal Product Automation."
+	]
+	"quest.084EBAB39C1C241D.title": "Automate: Chocolate Glazed Berries"
+	"quest.0871F96D87A29AAD.quest_desc": [
+		"Mixer: tomato, onion, beetroot, any vegetable but melon, and a bowl. Make a &astack&r"
+		"(16)."
+	]
+	"quest.0871F96D87A29AAD.title": "Automate: Ratatouille"
+	"quest.08A41104967AD286.quest_desc": [
+		"Copper and zinc into a heated &aMixer&r, then pressed, compacted and cut into every brass form."
+	]
+	"quest.08A41104967AD286.title": "Brass"
 	"quest.08ADF7B023180415.quest_desc": [
 		"Find wild crops in the world and break them for seeds and produce. Plant them."
 		"&aTip:&r Create's Millstone turns wild crops into seeds too."
 	]
 	"quest.08ADF7B023180415.title": "Wild Crops"
+	"quest.08D2D37931A9F369.quest_desc": [
+		"Deployers apply brass ingots to stripped logs. Make a &astack&r."
+	]
+	"quest.08D2D37931A9F369.title": "Automate: Brass Casing"
 	"quest.08D30B70E04A17D4.quest_desc": [
 		"&cThe end of the war.&r Three Mk.II nuclear shells, end crystals and nether stars. A"
 		"thermonuclear dome and a shockwave in rings. There is nothing bigger."
@@ -271,6 +403,10 @@
 		"A shaft and dried kelp (makes 4). Light vehicles."
 	]
 	"quest.09ACA9567831BCFF.title": "Small Tire"
+	"quest.09C1A0FEB59A4D41.quest_desc": [
+		"Andesite casing and cogwheels on Mechanical Crafters. Make a &astack&r."
+	]
+	"quest.09C1A0FEB59A4D41.title": "Automate: Gearbox"
 	"quest.09D33D79CA336A9E.quest_desc": [
 		"Same idea, turned on its side: a &aVertical Gearbox&r sends rotation up or down."
 	]
@@ -280,6 +416,10 @@
 		"&agranite&r also gives a little."
 	]
 	"quest.09F05D7759AB902E.title": "Uranium Powder"
+	"quest.0A3ABEAAAAB9D744.quest_desc": [
+		"Mixer: 2 tomatoes and a bowl. Make a &astack&r (16)."
+	]
+	"quest.0A3ABEAAAAB9D744.title": "Automate: Tomato Sauce"
 	"quest.0A4151F48A770553.quest_desc": [
 		"Dried kelp makes &aBelts&r, which move items between machines. Place a belt by using"
 		"it on two shafts."
@@ -294,6 +434,11 @@
 		"Cast a barrel from molten &abronze&r: lighter and tougher than cast iron."
 	]
 	"quest.0AED7F0E408DE000.title": "Bronze Cannon"
+	"quest.0AF456D00844DE07.quest_desc": [
+		"Cows give milk to any bucket used on them: try Deployers holding empty buckets. Drain"
+		"the milk into a tank for Spouts and Mixers. Fill &a16&r buckets."
+	]
+	"quest.0AF456D00844DE07.title": "Automate: Milk Bucket"
 	"quest.0B1FFDFAEA02CC1B.quest_desc": [
 		"Slime and paper. Tape a full chest to pick it up with everything inside."
 	]
@@ -302,6 +447,11 @@
 		"Feed cobblestone into a &aMillstone&r. Make a &astack&r of gravel."
 	]
 	"quest.0B4492CE16040D3F.title": "Automate: Gravel"
+	"quest.0B6A2CAD088DC8EA.quest_desc": [
+		"Grow Magic saplings and fell the trees with &aMechanical Saws&r. Leaf blocks only drop to shears:"
+		"try Deployers holding shears. Make a &astack&r of each."
+	]
+	"quest.0B6A2CAD088DC8EA.title": "Automate: Magic"
 	"quest.0C31FEEDB9F4C0F8.quest_desc": [
 		"Wild rice grows in shallow water. Plant it in water one block deep."
 	]
@@ -324,6 +474,10 @@
 		"Press gun steel into sheets."
 	]
 	"quest.0CC25CF336BC5A7A.title": "Steel Sheet"
+	"quest.0CCE65E9808C43B9.quest_desc": [
+		"A Press over a basin compacts biomass into pellets. Make a &astack&r."
+	]
+	"quest.0CCE65E9808C43B9.title": "Automate: Biomass Pellet"
 	"quest.0CD62493EF389622.quest_desc": [
 		"Brass casing and sheet, industrial iron, a &aCannon Loader&r and redstone. Reloads a big"
 		"cannon from a magazine, so it keeps firing without a loader crew."
@@ -334,10 +488,19 @@
 		"for casting setups."
 	]
 	"quest.0CD7E5A645ACC910.title": "Cast Iron Cannon"
+	"quest.0D13904184C440CF.quest_desc": [
+		"A brass ingot, dried kelp and an electron tube on Mechanical Crafters. Make a &astack&r."
+	]
+	"quest.0D13904184C440CF.title": "Automate: Brass Funnel"
 	"quest.0D1C293AEDBE7585.quest_desc": [
 		"Wet scrubbers drain it. &cDo not dump it&r: it contaminates ground and kills plants."
 	]
 	"quest.0D1C293AEDBE7585.title": "Industrial Wastewater"
+	"quest.0D3150A2462CFED0.quest_desc": [
+		"Grow Mahogany saplings and fell the trees with &aMechanical Saws&r. Leaf blocks only drop to shears:"
+		"try Deployers holding shears. Make a &astack&r of each."
+	]
+	"quest.0D3150A2462CFED0.title": "Automate: Mahogany"
 	"quest.0D6FAA54E3DC19FA.quest_desc": [
 		"An iron block, chain, iron sheet and ingot. Drop it to hold your ship in place."
 	]
@@ -351,6 +514,10 @@
 		"A cobblestone generator with a &aMechanical Drill&r mining it nonstop. Make a &astack&r."
 	]
 	"quest.0D9F1985E16955EF.title": "Automate: Cobblestone"
+	"quest.0DB4E16D719CF535.quest_desc": [
+		"Farmer's Delight crop from wild tomatoes. Tomatoes climb ropes as they grow. Make a &astack&r."
+	]
+	"quest.0DB4E16D719CF535.title": "Automate: Tomato"
 	"quest.0DE91D880C27E0AF.quest_desc": [
 		"Brass sheet and a stripped log: steadies your aim."
 	]
@@ -361,6 +528,10 @@
 		"&cPilots:&r flying above Y=192 needs this too."
 	]
 	"quest.0E100C9DE8E82065.title": "Copper Backtank"
+	"quest.0E256B710E333EB5.quest_desc": [
+		"Press over a basin: 2 flint, red sand and lava compact into granite. Make a &astack&r."
+	]
+	"quest.0E256B710E333EB5.title": "Automate: Granite"
 	"quest.0E5FBD9105AE2934.quest_desc": [
 		"Compact &aEgg + Sugar + Cinder Flour&r in a Basin (no heat needed)."
 	]
@@ -369,6 +540,14 @@
 		"A dried kelp block and a shaft (makes 4). For the biggest builds."
 	]
 	"quest.0E7AAD972EAEA28F.title": "Monstrous Tire"
+	"quest.0EAB97A5130F9DBA.quest_desc": [
+		"Wash sand with a fan blowing through water. Make a &astack&r."
+	]
+	"quest.0EAB97A5130F9DBA.title": "Automate: Clay Ball"
+	"quest.0EC617EE74B4E929.quest_desc": [
+		"A &aFrame Trap&r (Create: Fishery Industry) on a moving contraption in water catches fish. Make a &astack&r."
+	]
+	"quest.0EC617EE74B4E929.title": "Automate: Raw Cod"
 	"quest.0EF9790E6AD7081C.quest_desc": [
 		"Kill them before they drink a potion."
 	]
@@ -377,11 +556,23 @@
 		"Mass-produce the quantum supply chain."
 	]
 	"quest.0F1A32D940E5614D.title": "Quantum Automation"
+	"quest.0F2155C8CF1B4D53.quest_desc": [
+		"Mixer: rice, both mushrooms, carrot, potato and a bowl. Make a &astack&r (16)."
+	]
+	"quest.0F2155C8CF1B4D53.title": "Automate: Mushroom Rice"
+	"quest.0F40CAE0D098AF0B.quest_desc": [
+		"A &aMechanical Saw&r cuts andesite alloy into shafts. Make a &astack&r."
+	]
+	"quest.0F40CAE0D098AF0B.title": "Automate: Shaft"
 	"quest.0F710C47C2A97638.quest_desc": [
 		"Same parts as the Mechanical Servo, but it keeps turning step by step while a signal is"
 		"held."
 	]
 	"quest.0F710C47C2A97638.title": "Stepper Servo"
+	"quest.0F7748F4F8A801A3.quest_desc": [
+		"Melon slices, ice and a stick (Mechanical Crafters). Make a &astack&r."
+	]
+	"quest.0F7748F4F8A801A3.title": "Automate: Melon Popsicle"
 	"quest.0F8FE5F9FB341304.quest_desc": [
 		"Compact gunpowder into &aPacked Gunpowder&r and put it in an &aEmpty Powder Charge&r"
 		"(wool and string). More charges = more range, and more strain on the barrel."
@@ -397,13 +588,17 @@
 	]
 	"quest.0FB364E6D5715082.title": "Automate: Blaze Cakes"
 	"quest.0FC5913EC2DC28C7.quest_desc": [
-		"Dough, cabbage, onion, meat and a brown mushroom in the Cooking Pot."
+		"Dough, cabbage, onion, and raw chicken, pork or beef (or a brown mushroom) in the Cooking Pot."
 	]
 	"quest.0FC5913EC2DC28C7.title": "Dumplings"
 	"quest.1010F3ECFE297C65.quest_desc": [
 		"Graphite, an electron tube and a brass cartridge. Lasts 16x longer. A clean factory."
 	]
 	"quest.1010F3ECFE297C65.title": "Precision Filter Cartridge"
+	"quest.1037456320C3F749.quest_desc": [
+		"A pig pen: breed with carrots, potatoes or beetroot, kill with Deployers. Make a &astack&r."
+	]
+	"quest.1037456320C3F749.title": "Automate: Raw Porkchop"
 	"quest.10994D153CA9FABA.quest_desc": [
 		"&6Enhanced AI&r: creepers &cbreach walls&r on purpose, and zombies dig to reach you. Build"
 		"thick walls, or something they cannot dig through."
@@ -414,6 +609,10 @@
 		"cogwheels and iron nuggets, in a loop. JEI shows each step."
 	]
 	"quest.109B3C60E36DD5D4.title": "Precision Mechanism"
+	"quest.10AD0D22CA85F4CC.quest_desc": [
+		"Crush redstone ore. Washing crushed iron ore also gives some. Make a &astack&r."
+	]
+	"quest.10AD0D22CA85F4CC.title": "Automate: Redstone Dust"
 	"quest.10EEAA6ABB049773.quest_desc": [
 		"Copper and andesite alloy. Chestplate and leggings for swimming outside the hull. Wear"
 		"them with a Copper Backtank and Diving Helmet."
@@ -427,6 +626,10 @@
 		"Brass casing and a stick. Sets engine and propeller power from the seat."
 	]
 	"quest.10F97F3E76257275.title": "Throttle Lever"
+	"quest.1108EED880BF4006.quest_desc": [
+		"Mechanical Crafters split brass ingots into nuggets. Make a &astack&r."
+	]
+	"quest.1108EED880BF4006.title": "Automate: Brass Nugget"
 	"quest.1129FA0B61122D2C.quest_desc": [
 		"Brass, brass casing and a transmitter: a 2x2 grid of buttons for weapons and gear."
 	]
@@ -444,10 +647,22 @@
 		"A pressure plate on brass casing: foot pedals for the rudder."
 	]
 	"quest.11CA58893FDF2BE1.title": "Pedal Module"
+	"quest.11E96D23C53E1554.quest_desc": [
+		"Clay blocks through a lava fan. Make a &astack&r."
+	]
+	"quest.11E96D23C53E1554.title": "Automate: Terracotta"
+	"quest.11EA8CD56F3793DD.quest_desc": [
+		"Crush iron ore or raw iron (crimsite works too). Make a &astack&r."
+	]
+	"quest.11EA8CD56F3793DD.title": "Automate: Crushed Raw Iron"
 	"quest.11FDB45C5A84681B.quest_desc": [
 		"A raid's heavy armor."
 	]
 	"quest.11FDB45C5A84681B.title": "Ravager"
+	"quest.127AA1F33B96756E.quest_desc": [
+		"Every quest under &aAssembly&r is done: 21 production lines running on their own."
+	]
+	"quest.127AA1F33B96756E.title": "Assembly Mastered"
 	"quest.1298DB0145DC3F6E.quest_desc": [
 		"The Necromancer's undead illagers."
 	]
@@ -457,11 +672,24 @@
 		"Place one on the train and one facing it on the platform. Supply runs to the front."
 	]
 	"quest.12A25766728BDFA9.title": "Portable Storage Interface"
+	"quest.12AC683015838254.quest_desc": [
+		"Wash crushed gold ore, or crush tuff with Crushing Wheels. Make a &astack&r."
+	]
+	"quest.12AC683015838254.title": "Automate: Gold Nugget"
 	"quest.12DEA2DEFB681BBE.quest_desc": [
 		"Crush raw thorium into dust, turn it into &aliquid thorium&r, and compact it in a basin"
 		"(check JEI for every step)."
 	]
 	"quest.12DEA2DEFB681BBE.title": "Thorium Ingot"
+	"quest.12ECAC1AADD5B049.quest_desc": [
+		"Raw porkchops under a Slicer with a knife. Make a &astack&r."
+	]
+	"quest.12ECAC1AADD5B049.title": "Automate: Raw Bacon"
+	"quest.13546BC248B79776.quest_desc": [
+		"Grow Fir saplings and fell the trees with &aMechanical Saws&r. Leaf blocks only drop to shears:"
+		"try Deployers holding shears. Make a &astack&r of each."
+	]
+	"quest.13546BC248B79776.title": "Automate: Fir"
 	"quest.135D466BB447FEEE.quest_desc": [
 		"Brass casing, electron tube and precision mechanism. Shows radar contacts."
 	]
@@ -475,14 +703,45 @@
 		"&aIndustrial Iron Blocks&r and &acast iron&r. Build the oven multiblock (see its Ponder)."
 	]
 	"quest.1360814D51B29322.title": "Coke Oven"
+	"quest.136F496D90F393CB.quest_desc": [
+		"Every crop and every meat in the pack, automated."
+	]
+	"quest.136F496D90F393CB.title": "Master Farmer"
 	"quest.1379459167819F72.quest_desc": [
-		"Make &a5 Electron Tubes&r without crafting them by hand (Deployers on a belt work)."
+		"Make a &astack&r of Electron Tubes without crafting them by hand (Deployers on a belt work)."
 	]
 	"quest.1379459167819F72.title": "Automate: Electron Tubes"
+	"quest.13DA2722EF75F739.quest_desc": [
+		"Compact chocolate (Mixer: milk, sugar, cocoa beans) with a Press over a basin. Make a &astack&r."
+		""
+		"&7Needs milk from Animal Product Automation."
+	]
+	"quest.13DA2722EF75F739.title": "Automate: Bar of Chocolate"
+	"quest.13F1284AC1E75833.quest_desc": [
+		"Raw cod slices have no smoking recipe: blow them through &alava&r (blasting), or slice"
+		"cooked cod. Make a &astack&r."
+	]
+	"quest.13F1284AC1E75833.title": "Automate: Cooked Cod Slice"
+	"quest.142907BF4AC1001F.quest_desc": [
+		"Milk, wool, leather, eggs and feathers from farms that run themselves."
+	]
+	"quest.142907BF4AC1001F.title": "Animal Product Automation"
+	"quest.142E80308593260C.quest_desc": [
+		"Crushed ore through a fan blowing through lava smelts it, with a better yield than raw ore."
+	]
+	"quest.142E80308593260C.title": "Ingots"
+	"quest.14598E93ADD43738.quest_desc": [
+		"2 cooked bacon, 2 fried eggs and a bowl. Make a &astack&r (16)."
+	]
+	"quest.14598E93ADD43738.title": "Automate: Bacon and Eggs"
 	"quest.14817DE690D788A0.quest_desc": [
 		"A Press over a belt of iron ingots. Make a &astack&r of Iron Sheets."
 	]
 	"quest.14817DE690D788A0.title": "Automate: Iron Sheets"
+	"quest.14882C77E4C621EF.quest_desc": [
+		"Crushing ores drops experience nuggets as a bonus (iron and copper ore do). Make a &astack&r."
+	]
+	"quest.14882C77E4C621EF.title": "Automate: Nugget of Experience"
 	"quest.14939665A825B598.quest_desc": [
 		"Lets hoppers, funnels and pipes insert into and extract from the whole network."
 	]
@@ -506,10 +765,18 @@
 		"sturdy sheets. &cBe careful where you drop it.&r"
 	]
 	"quest.14BCD8B12AE6EF84.title": "MOAB"
+	"quest.14DD63CA2A19993C.quest_desc": [
+		"Mixer: 3 beetroot and a bowl. Make a &astack&r (16)."
+	]
+	"quest.14DD63CA2A19993C.title": "Automate: Beetroot Soup"
 	"quest.14ED0DFC2655F555.quest_desc": [
 		"Roll a copper ingot."
 	]
 	"quest.14ED0DFC2655F555.title": "Copper Rod"
+	"quest.14F05E34C1274D70.quest_desc": [
+		"A Press over a basin compacts 4 magma cream into a block. Make a &astack&r."
+	]
+	"quest.14F05E34C1274D70.title": "Automate: Magma Block"
 	"quest.14F4496BA65A8740.quest_desc": [
 		"A fire caster. Found at Firecaller huts."
 	]
@@ -519,10 +786,22 @@
 		"Mechanism&r (mechanical crafting)."
 	]
 	"quest.14F99FFA53D598FD.title": "Arcon Barrel Section (Breech)"
+	"quest.1529F2A9136540B7.quest_desc": [
+		"Every quest under &aForestry&r is done: 21 production lines running on their own."
+	]
+	"quest.1529F2A9136540B7.title": "Forestry Mastered"
 	"quest.157B57B8355906AB.quest_desc": [
 		"Heavy casing, steel mechanism and electron tube. Finds &aoil deposits&r underground."
 	]
 	"quest.157B57B8355906AB.title": "Surface Scanner"
+	"quest.158949282D4A6D1F.quest_desc": [
+		"Every quest under &aBrass&r is done: 5 production lines running on their own."
+	]
+	"quest.158949282D4A6D1F.title": "Brass Mastered"
+	"quest.15F2EF2491DD22B5.quest_desc": [
+		"Fishing loot: a &aFrame Trap&r on a moving contraption in water pulls up mussels. Make a &astack&r."
+	]
+	"quest.15F2EF2491DD22B5.title": "Automate: Raw Mediterranean Mussel"
 	"quest.15F66045D0C797A4.quest_desc": [
 		"A long-range guided missile: set its target with the Target Gunner Gadget."
 	]
@@ -565,10 +844,20 @@
 		"electrolyzer's oxygen through the hull."
 	]
 	"quest.1738721036346250.title": "Oxygen Diffuser"
+	"quest.173ABC8BE01255D1.quest_desc": [
+		"Farmer's Delight crop from wild onions. Harvester rows. Make a &astack&r."
+	]
+	"quest.173ABC8BE01255D1.title": "Automate: Onion"
 	"quest.17A6D73E23678BDD.quest_desc": [
 		"Deep dark. Probably best avoided."
 	]
 	"quest.17A6D73E23678BDD.title": "The Warden"
+	"quest.17B1845142FA92B6.quest_desc": [
+		"Mixer: glow berries, milk, an egg, sugar and a glass bottle. Make a &astack&r (16)."
+		""
+		"&7Needs milk and eggs from Animal Product Automation."
+	]
+	"quest.17B1845142FA92B6.title": "Automate: Glow Berry Custard"
 	"quest.17E18F4C217EB8F5.quest_desc": [
 		"Crafted from a button panel: a 3x3 grid."
 	]
@@ -577,6 +866,10 @@
 		"Craft &aQuartz&r with &aredstone dust&r to make &aRose Quartz&r."
 	]
 	"quest.1810AAC17B0A938A.title": "Rose Quartz"
+	"quest.1812CCA684B685B6.quest_desc": [
+		"Every quest under &aFan Processing&r is done: 5 production lines running on their own."
+	]
+	"quest.1812CCA684B685B6.title": "Fan Processing Mastered"
 	"quest.18C30ADB760AAE42.quest_desc": [
 		"Copper casing, Block of Experience and a sponge."
 	]
@@ -585,6 +878,23 @@
 		"Engine smokestacks collect &aWaste Oil&r. Refine it with clay in a heated basin."
 	]
 	"quest.196090EA37747DAD.title": "Refined Oil"
+	"quest.1963242F7A9F9630.quest_desc": [
+		"Deployers press planks onto shafts. Make a &astack&r."
+	]
+	"quest.1963242F7A9F9630.title": "Automate: Cogwheel"
+	"quest.19A3CBA5AE5D7D9D.quest_desc": [
+		"Spout honey onto apples. Make a &astack&r."
+	]
+	"quest.19A3CBA5AE5D7D9D.title": "Automate: Honeyed Apple"
+	"quest.19E83B49AF7E7230.quest_desc": [
+		"Every quest under &aIngots&r is done: 7 production lines running on their own."
+	]
+	"quest.19E83B49AF7E7230.title": "Ingots Mastered"
+	"quest.19FE8ECEA569BCFB.quest_desc": [
+		"Grow Spruce saplings and fell the trees with &aMechanical Saws&r. Leaf blocks only drop to shears:"
+		"try Deployers holding shears. Make a &astack&r of each."
+	]
+	"quest.19FE8ECEA569BCFB.title": "Automate: Spruce"
 	"quest.1A0135C606EB0E16.quest_desc": [
 		"Sequenced assembly: TNT, brass sheet and a fluid pipe."
 	]
@@ -603,6 +913,10 @@
 		"launcher for torpedoes."
 	]
 	"quest.1A4FD9D28FD574FC.title": "Torpedo Tube"
+	"quest.1A96B4399F067334.quest_desc": [
+		"Mixer: both mushrooms and a bowl. Make a &astack&r (16)."
+	]
+	"quest.1A96B4399F067334.title": "Automate: Mushroom Stew"
 	"quest.1AB2FB971E4C51CC.quest_desc": [
 		"&6Create Radar: Fire Arc Filter&r. Mark &cno-fire sectors&r so turrets don't hit your own"
 		"base or ships."
@@ -627,6 +941,10 @@
 		"plate and gunpowder."
 	]
 	"quest.1AFDEB5FBC17B28A.title": "Compact Autocannon Mount"
+	"quest.1B0A8EE6F73026C8.quest_desc": [
+		"A Press over a belt of gold ingots. Make a &astack&r."
+	]
+	"quest.1B0A8EE6F73026C8.title": "Automate: Golden Sheet"
 	"quest.1B28C23F7F0D9389.quest_desc": [
 		"Paper and an obsidian sheet. Give it to a train's conductor to run a route on its own."
 	]
@@ -658,6 +976,10 @@
 		"Andesite casing, iron sheet, iron nuggets and a piston pole."
 	]
 	"quest.1C79F0536FCB42A7.title": "Cannon Builder"
+	"quest.1C8F35EF18C704D7.quest_desc": [
+		"Mixer: rice and a bowl. Make a &astack&r (16)."
+	]
+	"quest.1C8F35EF18C704D7.title": "Automate: Cooked Rice"
 	"quest.1CC566DCC6037250.quest_desc": [
 		"Cut logs into a mould. Bigger cannon parts need bigger moulds."
 	]
@@ -689,6 +1011,10 @@
 		"See and search everything on the network from one screen."
 	]
 	"quest.1DD53B0B1D8C1FB9.title": "Storage Terminal"
+	"quest.1E4CDD2E349458C8.quest_desc": [
+		"Press over a basin: 2 flint, gravel and lava compact into andesite. Make a &astack&r."
+	]
+	"quest.1E4CDD2E349458C8.title": "Automate: Andesite"
 	"quest.1EFEBE35ACDF5803.quest_desc": [
 		"&eChanged in this pack:&r Napalm is mixed from &aAluminum Ingot + 1000 mB Gasoline +"
 		"250 mB Biofuel&r over a &6Superheated&r burner (makes 250 mB)."
@@ -701,10 +1027,32 @@
 		"Engineer's Goggles and leather. Goggles for pilots."
 	]
 	"quest.1F391BB7B007C12F.title": "Aviator's Goggles"
+	"quest.1F43E2535E139319.quest_desc": [
+		"&cPoisonous&r to eat, but brewed into an awkward potion it makes &bWater Breathing&r. Worth a"
+		"few for submarine crews (see &aNaval&r)."
+	]
+	"quest.1F43E2535E139319.title": "Pufferfish"
 	"quest.1F6B36437C9F338E.quest_desc": [
 		"Leather and string. A portable refill of air."
 	]
 	"quest.1F6B36437C9F338E.title": "Air Bladder"
+	"quest.1F6E1338709EA1BE.quest_desc": [
+		"Every quest under &aMilling and Crushing&r is done: 5 production lines running on their own."
+	]
+	"quest.1F6E1338709EA1BE.title": "Milling and Crushing Mastered"
+	"quest.1FA06E669C2077A5.quest_desc": [
+		"Minced beef through a smoking fan. Make a &astack&r."
+	]
+	"quest.1FA06E669C2077A5.title": "Automate: Beef Patty"
+	"quest.1FB198B4DBFF449F.quest_desc": [
+		"Crush raw amalgam. Make a &astack&r."
+	]
+	"quest.1FB198B4DBFF449F.title": "Automate: Crushed Amalgam"
+	"quest.1FB2A25BB6ED5D41.quest_desc": [
+		"Mixer: organic compost or tree fertilizer with water. A &aSpout&r fills buckets."
+		"Fill &a16&r buckets."
+	]
+	"quest.1FB2A25BB6ED5D41.title": "Automate: Liquid Fertilizer"
 	"quest.1FE66342C645AA64.quest_desc": [
 		"Brass sheet, a Spout and a block of iron. Copies books and enchanted books."
 	]
@@ -714,11 +1062,19 @@
 		"the same space."
 	]
 	"quest.2046EC2EB85F2020.title": "Pearlescent Levitite"
+	"quest.20487ABCFA88E6D3.quest_desc": [
+		"Every quest under &aFeasts&r is done: 6 production lines running on their own."
+	]
+	"quest.20487ABCFA88E6D3.title": "Feasts Mastered"
 	"quest.205AA396405C0F61.quest_desc": [
 		"Brass ingot, electron tube and dried kelp. Like an andesite funnel, but it can &afilter&r"
 		"and move whole stacks."
 	]
 	"quest.205AA396405C0F61.title": "Brass Funnel"
+	"quest.20734777D3DFEE1C.quest_desc": [
+		"Every quest under &aStone&r is done: 11 production lines running on their own."
+	]
+	"quest.20734777D3DFEE1C.title": "Stone Mastered"
 	"quest.20798AC33774E094.quest_desc": [
 		"&aIron sheets&r and gunpowder: a sturdier chamber than logs."
 	]
@@ -728,14 +1084,30 @@
 		"Planks and sticks."
 	]
 	"quest.207A6631CA77A8EC.title": "Cutting Board"
+	"quest.208848A1445936B5.quest_desc": [
+		"Cocoa pods grow on the sides of jungle logs. Make a &astack&r."
+	]
+	"quest.208848A1445936B5.title": "Automate: Cocoa Beans"
 	"quest.20B1AC5BF862EA1B.quest_desc": [
 		"Heavy industry on autopilot."
 	]
 	"quest.20B1AC5BF862EA1B.title": "Industrial Automation"
+	"quest.20B999C892E89D3C.quest_desc": [
+		"Mixer: pasta, minced beef, tomato sauce and a bowl. Make a &astack&r (16)."
+	]
+	"quest.20B999C892E89D3C.title": "Automate: Pasta with Meatballs"
 	"quest.20BAE8E095DB0D3B.quest_desc": [
 		"Process &abauxite&r in a chemical vat for &aAluminum Ingots&r. Napalm needs them."
 	]
 	"quest.20BAE8E095DB0D3B.title": "Aluminum"
+	"quest.20EABC40030A66FF.quest_desc": [
+		"Blue mussels through a smoking fan. Make a &astack&r."
+	]
+	"quest.20EABC40030A66FF.title": "Automate: Cooked Blue Mussel"
+	"quest.2104D67234DBE358.quest_desc": [
+		"Crush lapis ore with Crushing Wheels. Make a &astack&r."
+	]
+	"quest.2104D67234DBE358.title": "Automate: Lapis Lazuli"
 	"quest.211EEEFFBA86CF3D.quest_desc": [
 		"A &aDistillation Controller&r and outputs on steel tanks refine crude oil into fuels."
 	]
@@ -758,6 +1130,18 @@
 		"encased fan blows through it, the same way soul fire haunts."
 	]
 	"quest.218446DD3532BE52.title": "Enriching Campfire"
+	"quest.21ACCB99D05D3ABF.quest_desc": [
+		"Crushed gold ore through a lava fan, or a Press compacting 9 nuggets over a basin. Make a &astack&r."
+	]
+	"quest.21ACCB99D05D3ABF.title": "Automate: Gold Ingot"
+	"quest.21B2D60677B41BA1.quest_desc": [
+		"Mine lithium ore with a Drill on a moving contraption. Make a &astack&r."
+	]
+	"quest.21B2D60677B41BA1.title": "Automate: Raw Lithium"
+	"quest.21C9EC08D588B815.quest_desc": [
+		"Every quest under &aSlicer&r is done: 9 production lines running on their own."
+	]
+	"quest.21C9EC08D588B815.title": "Slicer Mastered"
 	"quest.21DC15A1F94748E8.quest_desc": [
 		"For aircraft: barely any mass, light protection. Aluminum sheets around a steel plate."
 	]
@@ -766,6 +1150,10 @@
 		"Planks and iron. The base for storage upgrades."
 	]
 	"quest.221AD5A5A71139A3.title": "Storage Upgrade Base"
+	"quest.22232355DD1046BF.quest_desc": [
+		"Mediterranean mussels through a smoking fan. Make a &astack&r."
+	]
+	"quest.22232355DD1046BF.title": "Automate: Cooked Mediterranean Mussel"
 	"quest.222C59BD86688FD7.quest_desc": [
 		"A &aflywheel&r, string, brass and iron sheets: a handheld ballista."
 	]
@@ -774,10 +1162,44 @@
 		"Copper sheets, a fluid pipe and iron bars (makes 3). Pipe water into it to hydrate farmland."
 	]
 	"quest.2270F3906EA75CD8.title": "Sprinkler"
+	"quest.229C3727AB6D3BBA.quest_desc": [
+		"Whole feasts: place them and serve everyone."
+	]
+	"quest.229C3727AB6D3BBA.title": "Feasts"
+	"quest.22CF3155FF502E5D.quest_desc": [
+		"Plant it next to water. A Harvester or &aMechanical Saw&r passing over cuts the tops and"
+		"leaves the base to regrow. Make a &astack&r."
+	]
+	"quest.22CF3155FF502E5D.title": "Automate: Sugar Cane"
+	"quest.22E662E538634A2D.quest_desc": [
+		"Farmland and a &aMechanical Harvester&r on a contraption sweeping the rows. It replants"
+		"as it goes. Make a &astack&r."
+	]
+	"quest.22E662E538634A2D.title": "Automate: Wheat"
+	"quest.22EF5E17591ACBF7.quest_desc": [
+		"Sandwiches, salads, rolls and plates put together without hands."
+	]
+	"quest.22EF5E17591ACBF7.title": "Assembly"
+	"quest.234B23B904664DA7.quest_desc": [
+		"Bone meal, 2 flowers and one of each coral (Mechanical Crafters). Make a &astack&r."
+	]
+	"quest.234B23B904664DA7.title": "Automate: Tree Fertilizer"
 	"quest.2363FC61C8D84632.quest_desc": [
 		"Poison arrows from swamps and trial chambers."
 	]
 	"quest.2363FC61C8D84632.title": "Bogged"
+	"quest.238046C89BB040BE.quest_desc": [
+		"Every quest under &aMining&r is done: 9 production lines running on their own."
+	]
+	"quest.238046C89BB040BE.title": "Mining Mastered"
+	"quest.2394C192F5065F13.quest_desc": [
+		"Every quest under &aLiquid Fuels&r is done: 6 production lines running on their own."
+	]
+	"quest.2394C192F5065F13.title": "Liquid Fuels Mastered"
+	"quest.23C5DC0CB27A8C02.quest_desc": [
+		"Every quest under &aWashing&r is done: 4 production lines running on their own."
+	]
+	"quest.23C5DC0CB27A8C02.title": "Washing Mastered"
 	"quest.23D6DBBEBF2DB427.quest_desc": [
 		"Copper is Create's &6fluid&r metal. Press copper ingots on a Depot, like iron sheets."
 	]
@@ -808,6 +1230,10 @@
 		"crafting). A free-fall bomb."
 	]
 	"quest.2479F9ADF092F86D.title": "SC250 Bomb"
+	"quest.24BA7FE7AD08A32F.quest_desc": [
+		"A &aMillstone&r or &aCrushing Wheels&r grind blocks down into gravel, sand and powders."
+	]
+	"quest.24BA7FE7AD08A32F.title": "Milling and Crushing"
 	"quest.24DAE58E17E18027.quest_desc": [
 		"A camera that feeds a monitor, for remote aiming."
 	]
@@ -841,15 +1267,46 @@
 		"Iron, a spyglass and a transmitter. Sends what the drone sees to your remote."
 	]
 	"quest.252D8DF36E7599EE.title": "Drone Camera"
+	"quest.253E6C8E3471732C.quest_desc": [
+		"Crush netherrack with Crushing Wheels. Make a &astack&r."
+	]
+	"quest.253E6C8E3471732C.title": "Automate: Cinder Flour"
 	"quest.257D9DE8F5DF9281.quest_desc": [
 		"Andesite Alloy makes &aShafts&r: they carry rotation in a straight line from one machine"
 		"to the next."
 	]
 	"quest.257D9DE8F5DF9281.title": "Shafts"
+	"quest.259480BE0D2F70FD.quest_desc": [
+		"A &aFrame Trap&r on a moving contraption in rivers or cold oceans catches salmon. Make a &astack&r."
+	]
+	"quest.259480BE0D2F70FD.title": "Automate: Raw Salmon"
+	"quest.260E1559714D0CCF.quest_desc": [
+		"A Press over a belt of brass ingots. Make a &astack&r."
+	]
+	"quest.260E1559714D0CCF.title": "Automate: Brass Sheet"
 	"quest.2637B546C8D26A98.quest_desc": [
 		"Crush or mill &anetherrack&r."
 	]
 	"quest.2637B546C8D26A98.title": "Cinder Flour"
+	"quest.264569BA878048D3.quest_desc": [
+		"A Press over a basin compacts seeds into seed oil. A Spout fills buckets. Fill &a16&r."
+	]
+	"quest.264569BA878048D3.title": "Automate: Seed Oil"
+	"quest.2676F9A25B93A398.quest_desc": [
+		"A &aSlicer&r holding a knife runs Farmer's Delight cutting board recipes."
+	]
+	"quest.2676F9A25B93A398.title": "Slicer"
+	"quest.2681DFB039CA1902.quest_desc": [
+		"Grow Jacaranda saplings and fell the trees with &aMechanical Saws&r. Leaf blocks only drop to shears:"
+		"try Deployers holding shears. Make a &astack&r of each."
+	]
+	"quest.2681DFB039CA1902.title": "Automate: Jacaranda"
+	"quest.26B1829FFE6A9F97.quest_desc": [
+		"Mixer: 3 wheat flour and milk. Make a &astack&r."
+		""
+		"&7Needs milk from Animal Product Automation."
+	]
+	"quest.26B1829FFE6A9F97.title": "Automate: Pie Crust"
 	"quest.26EC6558855D5B57.quest_desc": [
 		"&6TFMG&r industry starts with &aCast Iron&r: compact &airon ingots&r with &acoal&r in a Basin"
 		"under a Press."
@@ -864,10 +1321,19 @@
 		"(16)."
 	]
 	"quest.2701BFD6DE6338F6.title": "Automate: Biofuel"
+	"quest.27196AA4E9A96C67.quest_desc": [
+		"Crush magma blocks with Crushing Wheels. Make a &astack&r."
+	]
+	"quest.27196AA4E9A96C67.title": "Automate: Sulfur"
 	"quest.27527B6B1D4EAB19.quest_desc": [
 		"Use a &asteel ingot&r on &ahardened planks&r."
 	]
 	"quest.27527B6B1D4EAB19.title": "Steel Casing"
+	"quest.276109B73191C3EB.quest_desc": [
+		"Grow Dark Oak saplings and fell the trees with &aMechanical Saws&r. Leaf blocks only drop to shears:"
+		"try Deployers holding shears. Make a &astack&r of each."
+	]
+	"quest.276109B73191C3EB.title": "Automate: Dark Oak"
 	"quest.279E94C7E37D4A13.quest_desc": [
 		"Production goals for the Brass Age."
 	]
@@ -886,6 +1352,14 @@
 		"into the high air, where it spreads thin."
 	]
 	"quest.27C7E3679A99E65E.title": "Smokestack"
+	"quest.27DA18D3A826CD77.quest_desc": [
+		"Mine nickel ore with a Drill on a moving contraption. Make a &astack&r."
+	]
+	"quest.27DA18D3A826CD77.title": "Automate: Raw Nickel"
+	"quest.27E0BD81A6F51F3B.quest_desc": [
+		"Crush lithium ore or raw lithium. Make a &astack&r."
+	]
+	"quest.27E0BD81A6F51F3B.title": "Automate: Crushed Raw Lithium"
 	"quest.2820B4A2B63AB6CF.quest_desc": [
 		"Polish rose quartz with &aSandpaper&r (hold use), or let a Deployer holding sandpaper do it."
 	]
@@ -904,10 +1378,25 @@
 		"recipes in this pack use them."
 	]
 	"quest.28B372346FDAC614.title": "Mechanical Crafter"
+	"quest.28E6580DD50561CC.quest_desc": [
+		"Crush lead ore, galena or raw lead. Make a &astack&r."
+	]
+	"quest.28E6580DD50561CC.title": "Automate: Crushed Raw Lead"
 	"quest.28FA53FC0E80852A.quest_desc": [
 		"A directional mine: the blast goes one way."
 	]
 	"quest.28FA53FC0E80852A.title": "M18A1 Claymore"
+	"quest.290FA7C48BC62F5D.quest_desc": [
+		"A chicken pen: breed with seeds, kill with Deployers. A Bait Trap baited with seeds works too."
+		"Make a &astack&r."
+	]
+	"quest.290FA7C48BC62F5D.title": "Automate: Raw Chicken"
+	"quest.29223CA60F2B71F1.quest_desc": [
+		"A &aMesh Trap&r (zinc sheet and wool) catches small creatures and drops their loot into the"
+		"container next to it. Add a lantern for a &aBait Trap&r: bait it with fish or mussels for"
+		"lobsters, seeds for chickens, carrots for rabbits."
+	]
+	"quest.29223CA60F2B71F1.title": "Bait Trap"
 	"quest.29652E2BA6AE13B3.quest_desc": [
 		"A &ablaze burner&r, fluid tank, pipe and chute: a flamethrower."
 	]
@@ -917,6 +1406,10 @@
 		"Short range and fragile, but it fires. &cBig Cannons are multiblocks&r: check each part's Ponder."
 	]
 	"quest.297C16F5F33DB4DD.title": "Log Cannon"
+	"quest.29984419DBB52C36.quest_desc": [
+		"A &aMechanical Peeler&r peels raw cod into a steak and fish skin. Make a &astack&r."
+	]
+	"quest.29984419DBB52C36.title": "Automate: Cod Steak"
 	"quest.29A4036FFFE0C78C.quest_desc": [
 		"Crafted from a lever module: four throttle levers, one per engine."
 	]
@@ -935,11 +1428,31 @@
 		"aircraft; the Dual HE and APHE rockets are built on one."
 	]
 	"quest.29E6A06D262FC52F.title": "Rocket Bracket"
+	"quest.2A178A040C410E9E.quest_desc": [
+		"Crimson and warped fungus in a bowl. Make a &astack&r (16)."
+	]
+	"quest.2A178A040C410E9E.title": "Automate: Nether Salad"
 	"quest.2A2F6D7284B0213C.quest_desc": [
 		"Mechanical crafting: a Quantum Casing, a Warp Stone, andesite casing, stone bricks and"
 		"dye. A one-way teleport point: it only sends you, it can't be a destination."
 	]
 	"quest.2A2F6D7284B0213C.title": "Portstone"
+	"quest.2A475144F436F87A.quest_desc": [
+		"Cooked salmon, cabbage, onion, sweet berries and a bowl. Make a &astack&r (16)."
+	]
+	"quest.2A475144F436F87A.title": "Automate: Grilled Salmon"
+	"quest.2A5600005D446B79.quest_desc": [
+		"Sand and paper on Mechanical Crafters. It doesn't stack: make &a16&r."
+	]
+	"quest.2A5600005D446B79.title": "Automate: Sand Paper"
+	"quest.2A61066AB92169BF.quest_desc": [
+		"Beetroot, tomato, a leafy green and a bowl. Make a &astack&r (16)."
+	]
+	"quest.2A61066AB92169BF.title": "Automate: Mixed Salad"
+	"quest.2A62C8DDDC37C4AD.quest_desc": [
+		"An &aEncased Fan&r blowing through water washes items on belts and depots."
+	]
+	"quest.2A62C8DDDC37C4AD.title": "Washing"
 	"quest.2A8180943E58554F.quest_desc": [
 		"The top cannon material. Cast a barrel from molten &anethersteel&r."
 	]
@@ -948,6 +1461,11 @@
 		"Mechanical crafting with C4 and a leather chestplate."
 	]
 	"quest.2A94ABD09E21FD9D.title": "Bomb Vest"
+	"quest.2AA634BC04E2011F.quest_desc": [
+		"Grow Oak saplings and fell the trees with &aMechanical Saws&r. Leaf blocks only drop to shears:"
+		"try Deployers holding shears. Make a &astack&r of each."
+	]
+	"quest.2AA634BC04E2011F.title": "Automate: Oak"
 	"quest.2AAC2846CE112D90.quest_desc": [
 		"4 soot and string. A cheaper way to make cartridges."
 	]
@@ -961,10 +1479,22 @@
 		"fluid through. &eNeeds the Brass Age.&r"
 	]
 	"quest.2AEE3DA100C4AF48.title": "Smart Fluid Pipe"
+	"quest.2B37738661240553.quest_desc": [
+		"Every crop in the pack, vanilla and Farmer's Delight."
+	]
+	"quest.2B37738661240553.title": "Crops"
 	"quest.2B4BFECA3D6F7D80.quest_desc": [
 		"Do not look them in the eye."
 	]
 	"quest.2B4BFECA3D6F7D80.title": "Endermen"
+	"quest.2B4D2F7F9C7EB7E5.quest_desc": [
+		"Cows drop leather when killed. Your beef farm makes it too. Make a &astack&r."
+	]
+	"quest.2B4D2F7F9C7EB7E5.title": "Automate: Leather"
+	"quest.2BF8DB6848A3FDAC.quest_desc": [
+		"Brass sheets and andesite alloy on Mechanical Crafters. Make a &astack&r."
+	]
+	"quest.2BF8DB6848A3FDAC.title": "Automate: Brass Hand"
 	"quest.2BFAFF067189BF14.quest_desc": [
 		"Copper sheets, glass and a mechanical pump. Come up from depth without getting the"
 		"bends."
@@ -982,6 +1512,21 @@
 		"An iron block and black dye. A base where drones land and recharge."
 	]
 	"quest.2C5821CD9043F72B.title": "Drone Hub"
+	"quest.2C59C9EE0D507C63.quest_desc": [
+		"Press over a basin: 2 flint, calcite and lava compact into diorite. Make a &astack&r."
+	]
+	"quest.2C59C9EE0D507C63.title": "Automate: Diorite"
+	"quest.2CB16ACBCC3EB9A0.quest_desc": [
+		"Spout tea into glass bottles. Tea: Mixer with leaves, water and milk. Make a &astack&r (16)."
+		""
+		"&7Needs milk from Animal Product Automation."
+	]
+	"quest.2CB16ACBCC3EB9A0.title": "Automate: Builder's Tea"
+	"quest.2CB3892FD558DB2F.quest_desc": [
+		"Melon stems and a &aMechanical Saw&r cutting the melons. Each melon breaks into slices."
+		"Make a &astack&r."
+	]
+	"quest.2CB3892FD558DB2F.title": "Automate: Melon Slice"
 	"quest.2CCF522E002D4D92.quest_desc": [
 		"&6Thick Air&r's respirator (paper, string, charcoal): helps in thin air. Not the same as"
 		"Smog's respirator."
@@ -1004,6 +1549,10 @@
 		"Pulls items in and pushes them out, with filters."
 	]
 	"quest.2D48D5DB94BF1979.title": "Hopper Upgrade"
+	"quest.2D4CB59184084B3F.quest_desc": [
+		"Raw chicken through a smoking fan. Make a &astack&r."
+	]
+	"quest.2D4CB59184084B3F.title": "Automate: Cooked Chicken"
 	"quest.2D89FEC40D52AEA2.quest_desc": [
 		"Same ingredients as the funnel. Put it over a belt to &asplit, filter and balance&r items"
 		"across belts."
@@ -1014,6 +1563,11 @@
 		"when you look at machines."
 	]
 	"quest.2DA10E741DEED39B.title": "Engineer's Goggles"
+	"quest.2DA2BD47F29DA63F.quest_desc": [
+		"Cave vines hanging from a ceiling. Also: &aHaunting&r sweet berries with a fan blowing"
+		"through soul fire turns them into glow berries. Make a &astack&r."
+	]
+	"quest.2DA2BD47F29DA63F.title": "Automate: Glow Berries"
 	"quest.2DC9D22EAFD82C48.quest_desc": [
 		"Smelt nitrate ore into &bnitrogen concentrate&r, then fan it through &bpowder snow&r."
 		"Nitrogen coolant keeps bigger reactors from melting down."
@@ -1028,6 +1582,11 @@
 		"Brass casing, electron tube and redstone link: marks you as friendly."
 	]
 	"quest.2DD644438104E15A.title": "Identification Transponder"
+	"quest.2DFC4BBEEC0277CA.quest_desc": [
+		"Grow Dead saplings and fell the trees with &aMechanical Saws&r. Leaf blocks only drop to shears:"
+		"try Deployers holding shears. Make a &astack&r of each."
+	]
+	"quest.2DFC4BBEEC0277CA.title": "Automate: Dead"
 	"quest.2E3CBB0BC9E0B8B0.quest_desc": [
 		"&aMechanical Crafting&r from thorium ingots."
 	]
@@ -1054,6 +1613,14 @@
 		"every reactor part goes."
 	]
 	"quest.2F08F7225E5B99D0.title": "Reactor Blueprint"
+	"quest.2F242A05FDED1B15.quest_desc": [
+		"Raw lobster through a smoking fan. Make a &astack&r."
+	]
+	"quest.2F242A05FDED1B15.title": "Automate: Cooked Lobster"
+	"quest.2F30B476C024F7EC.quest_desc": [
+		"Mill bones (or calcite) with a &aMillstone&r or Crushing Wheels. Make a &astack&r."
+	]
+	"quest.2F30B476C024F7EC.title": "Automate: Bone Meal"
 	"quest.2F37EAD823F5C5A1.quest_desc": [
 		"Brass casing, a precision mechanism and all three filters (detection, targeting,"
 		"identification). Applies them to a whole radar network at once."
@@ -1075,6 +1642,10 @@
 		"Tougher and heavier than rolled steel: TFMG nickel, heavy plates and a steel block."
 	]
 	"quest.2F6A610835C74427.title": "Nickel Hull Armor"
+	"quest.2F71F26C3C9A909B.quest_desc": [
+		"Crushed lead ore through a lava fan. Make a &astack&r."
+	]
+	"quest.2F71F26C3C9A909B.title": "Automate: Lead Ingot"
 	"quest.2F7B3CC7044ABB69.quest_desc": [
 		"A Crushing Wheel, industrial iron and iron plates. A wheel that cuts through"
 		"terrain as it drives."
@@ -1096,11 +1667,31 @@
 		"Feed cabbages under a &aSlicer&r holding a knife (it runs cutting board recipes). Make a"
 		"&astack&r."
 	]
-	"quest.2FCB6C6C6877CFF3.title": "Automate: Cabbage Leaves"
+	"quest.2FCB6C6C6877CFF3.title": "Automate: Cabbage Leaf"
+	"quest.2FD488C9341124C7.quest_desc": [
+		"Mixer: lobster, mussels, a raw fish steak, kelp and milk; a Spout fills bowls. Make a &astack&r."
+		""
+		"&7Needs milk from Animal Product Automation."
+	]
+	"quest.2FD488C9341124C7.title": "Automate: Seafood Chowder"
+	"quest.2FD7E35E79AC7086.quest_desc": [
+		"A Press over a basin compacts an egg, sugar and cinder flour into a cake base. Make a &astack&r."
+	]
+	"quest.2FD7E35E79AC7086.title": "Automate: Blaze Cake Base"
 	"quest.2FEB14F8B42244B0.quest_desc": [
 		"Hit their fireballs back."
 	]
 	"quest.2FEB14F8B42244B0.title": "Ghasts"
+	"quest.2FF0E42C2B84B910.quest_desc": [
+		"Mixer: 2 onions, bread, milk and a bowl. Make a &astack&r (16)."
+		""
+		"&7Needs milk from Animal Product Automation."
+	]
+	"quest.2FF0E42C2B84B910.title": "Automate: Onion Soup"
+	"quest.300F6C1A33C7F1A4.quest_desc": [
+		"Raw cod through a smoking fan. Make a &astack&r."
+	]
+	"quest.300F6C1A33C7F1A4.title": "Automate: Cooked Cod"
 	"quest.302F7A79DA6CDED1.quest_desc": [
 		"Cook an egg in the skillet."
 	]
@@ -1115,15 +1706,40 @@
 		"point."
 	]
 	"quest.30690D9174F34F2D.title": "Return Scroll"
+	"quest.306B9A9B85549504.quest_desc": [
+		"Compact dough, eggs and sugar into a cake base, bake it with a smoking fan, then Spout"
+		"chocolate on. Make a &astack&r."
+		""
+		"&7Needs milk and eggs from Animal Product Automation."
+	]
+	"quest.306B9A9B85549504.title": "Automate: Chocolate Cake"
 	"quest.307B7F558FE98190.quest_desc": [
 		"Brass casing, a brass sheet and a precision mechanism. Plots a course and can"
 		"steer the craft toward it."
 	]
 	"quest.307B7F558FE98190.title": "Navigation Table"
+	"quest.3090AE0731E93EDF.quest_desc": [
+		"Grow Jungle saplings and fell the trees with &aMechanical Saws&r. Leaf blocks only drop to shears:"
+		"try Deployers holding shears. Make a &astack&r of each."
+	]
+	"quest.3090AE0731E93EDF.title": "Automate: Jungle"
+	"quest.3097A9281C1F2831.quest_desc": [
+		"Mill sugar cane with a &aMillstone&r or Crushing Wheels. Make a &astack&r."
+	]
+	"quest.3097A9281C1F2831.title": "Automate: Sugar"
+	"quest.309E4737F755212E.quest_desc": [
+		"Mixer: dough, cabbage, onion, and raw chicken, pork or beef (or a brown mushroom)."
+		"Make a &astack&r."
+	]
+	"quest.309E4737F755212E.title": "Automate: Dumplings"
 	"quest.30B182214955D9F9.quest_desc": [
 		"Brass casing, a chute and a copper spool. Charges batteries on a moving contraption."
 	]
 	"quest.30B182214955D9F9.title": "Portable Energy Interface"
+	"quest.311209C8852B8B2E.quest_desc": [
+		"Comes off every fish the Mechanical Peeler peels. Make a &astack&r."
+	]
+	"quest.311209C8852B8B2E.title": "Automate: Fish Skin"
 	"quest.315E6012D36080BC.quest_desc": [
 		"Brass casing, a compass and a gyroscopic mechanism. Outputs redstone by tilt: the"
 		"sensor behind auto-leveling."
@@ -1134,6 +1750,16 @@
 		"and add a round to make ammunition."
 	]
 	"quest.316983E7A8C8D912.title": "Autocannon Cartridge"
+	"quest.3181DF6D189E6B9B.quest_desc": [
+		"Grow Mangrove propagules and fell the trees with &aMechanical Saws&r. Leaf blocks only drop to shears:"
+		"try Deployers holding shears. Make a &astack&r of each."
+	]
+	"quest.3181DF6D189E6B9B.title": "Automate: Mangrove"
+	"quest.3187C8EA3A115C8A.quest_desc": [
+		"&6Tier 2 and 3:&r seed oil and biomass into &6biofuel&r, then biofuel into &cnapalm&r. Both need a"
+		"&6superheated&r burner to brew."
+	]
+	"quest.3187C8EA3A115C8A.title": "Liquid Fuels"
 	"quest.3188AB5143C724A6.quest_desc": [
 		"Brass needs &6heat&r, and heat comes from a &aBlaze Burner&r. Craft an"
 		"&aEmpty Blaze Burner&r from &airon sheets&r and &anetherrack&r."
@@ -1149,11 +1775,36 @@
 		"Axes. Shield up."
 	]
 	"quest.31C9C301A68F80A3.title": "Vindicators"
+	"quest.31DD8F44F818C802.quest_desc": [
+		"2 wheat and sweet berries (Mechanical Crafters). Make a &astack&r."
+	]
+	"quest.31DD8F44F818C802.title": "Automate: Sweet Berry Cookie"
+	"quest.31E5AAE05E104B0F.quest_desc": [
+		"Grow Acacia saplings and fell the trees with &aMechanical Saws&r. Leaf blocks only drop to shears:"
+		"try Deployers holding shears. Make a &astack&r of each."
+	]
+	"quest.31E5AAE05E104B0F.title": "Automate: Acacia"
 	"quest.324B5B374FEE171F.quest_desc": [
 		"A spyglass, comparator, ender pearl, glowstone, glass and planks. Opens your network"
 		"from anywhere nearby."
 	]
 	"quest.324B5B374FEE171F.title": "Wireless Terminal"
+	"quest.324CA84D44AF248A.quest_desc": [
+		"&6Tier 1:&r blaze cakes, and the blaze rods, powder and lava behind them."
+	]
+	"quest.324CA84D44AF248A.title": "Blaze Fuel"
+	"quest.329AE9F04A03675F.quest_desc": [
+		"A sheep pen: breed with wheat, kill with Deployers. Make a &astack&r."
+	]
+	"quest.329AE9F04A03675F.title": "Automate: Raw Mutton"
+	"quest.32D51BA220BED16C.quest_desc": [
+		"Every quest under &aDiamonds&r is done: 3 production lines running on their own."
+	]
+	"quest.32D51BA220BED16C.title": "Diamonds Mastered"
+	"quest.32E1A88C05AE09BB.quest_desc": [
+		"Every ore in the pack, from raw rock to netherite, on autopilot."
+	]
+	"quest.32E1A88C05AE09BB.title": "Ore Automation Mastered"
 	"quest.32E70B970B951381.quest_desc": [
 		"&cElytras are disabled.&r End ships no longer carry one, and gliding is blocked even if"
 		"you find one."
@@ -1166,10 +1817,33 @@
 		"advanced machines."
 	]
 	"quest.3371D99BDCDED5AC.title": "Brass Casing"
+	"quest.337BDF1C0EDED954.quest_desc": [
+		"Red sand and paper on Mechanical Crafters. It doesn't stack: make &a16&r."
+	]
+	"quest.337BDF1C0EDED954.title": "Automate: Red Sand Paper"
+	"quest.3397EF3620FAACEE.quest_desc": [
+		"Cod steaks through a smoking fan. Make a &astack&r."
+	]
+	"quest.3397EF3620FAACEE.title": "Automate: Cooked Cod Steak"
+	"quest.342B99D81C59AC9B.quest_desc": [
+		"Mixer: pasta, raw mutton, tomato sauce and a bowl. Make a &astack&r (16)."
+	]
+	"quest.342B99D81C59AC9B.title": "Automate: Pasta with Mutton Chop"
+	"quest.342DFAF2E6167184.quest_desc": [
+		"Mixer: pumpkin slice, raw pork, a leafy green, milk and a bowl. Make a &astack&r (16)."
+		""
+		"&7Needs milk from Animal Product Automation."
+	]
+	"quest.342DFAF2E6167184.title": "Automate: Pumpkin Soup"
 	"quest.3473E7F36010A291.quest_desc": [
 		"Feasts are placed blocks that serve several plates. One feeds a whole squad before a raid."
 	]
 	"quest.3473E7F36010A291.title": "Roast Chicken Feast"
+	"quest.349E01B3EFC69CE7.quest_desc": [
+		"Bait Traps catch them. Cook them with a smoking fan, or mix them with kelp and milk into"
+		"&aLobster Soup&r."
+	]
+	"quest.349E01B3EFC69CE7.title": "Lobster"
 	"quest.34C95B3009441921.quest_desc": [
 		"Apply steel to a brass casing."
 	]
@@ -1180,6 +1854,10 @@
 		"&aClick the checkmark when you're ready&r (quest edit mode OFF): the attack starts on the spot. Fight near your base."
 	]
 	"quest.34D8A081AEFAEBB4.title": "Wave 8: The Storm Breaker"
+	"quest.34DFD0F2822B27B8.quest_desc": [
+		"Every quest under &aBakery&r is done: 15 production lines running on their own."
+	]
+	"quest.34DFD0F2822B27B8.title": "Bakery Mastered"
 	"quest.34E9EC54D3ED4DE2.quest_desc": [
 		"&eThis pack's own recipe:&r compact &a9 Blocks of Coal&r in a Basin over a &6Superheated&r"
 		"burner to make &b1 Diamond&r. Automate it and make a &astack&r (576 coal blocks)."
@@ -1211,6 +1889,14 @@
 		"Sequenced assembly on a &asturdy sheet&r with a &adiamond&r and a &aRedstone Pearl&r."
 	]
 	"quest.359CB1C16A2C769F.title": "Advanced Component"
+	"quest.35A573EF28FA0DF3.quest_desc": [
+		"Harvester rows, same as wheat. Make a &astack&r."
+	]
+	"quest.35A573EF28FA0DF3.title": "Automate: Potato"
+	"quest.35B0C13C9224365A.quest_desc": [
+		"Crush gravel with Crushing Wheels. Make a &astack&r."
+	]
+	"quest.35B0C13C9224365A.title": "Automate: Sand"
 	"quest.361D29A4C61B6861.quest_desc": [
 		"Quantum casing, Quantum Mechanism, Redstone Pearl and a transmitter. Links portals."
 	]
@@ -1226,6 +1912,12 @@
 		"mobs that break blocks to reach you."
 	]
 	"quest.363DDA5259789DDD.title": "First Blood"
+	"quest.364421849A7C3642.quest_desc": [
+		"Pie crust, apples, sugar and wheat (Mechanical Crafters). Make a &astack&r."
+		""
+		"&7Needs milk from Animal Product Automation."
+	]
+	"quest.364421849A7C3642.title": "Automate: Apple Pie"
 	"quest.367A3FC09B9D2759.quest_desc": [
 		"Compact 6 soot."
 	]
@@ -1235,6 +1927,11 @@
 		"Step on one to warp to the plate it is linked to."
 	]
 	"quest.367C2F2B0C2B6767.title": "Warp Plate"
+	"quest.36A98B3D0D68A88B.quest_desc": [
+		"Mushrooms on &arich soil&r grow into colonies. A &aSlicer&r with a knife cuts a colony into"
+		"mushrooms. Make a &astack&r."
+	]
+	"quest.36A98B3D0D68A88B.title": "Automate: Brown Mushroom"
 	"quest.36AAE0F95A2E1194.quest_desc": [
 		"&6Rolled Homogeneous Armor&r: armor plating in many camo colors. Protects against cannon"
 		"fire. Cut an &airon block&r in a &astonecutter&r (any color, also layered, riveted and"
@@ -1249,14 +1946,31 @@
 		"Pulls nearby items in. Great for clearing loot after a fight."
 	]
 	"quest.36E772B547DD464B.title": "Magnet Upgrade"
+	"quest.37517A958378F385.quest_desc": [
+		"Mixer: a bone, a bowl, and glow berries, a mushroom, hanging roots or glow lichen."
+		"Make a &astack&r (16)."
+	]
+	"quest.37517A958378F385.title": "Automate: Bone Broth"
 	"quest.3789B6937D0F2AC7.quest_desc": [
 		"Roll copper sheets into wire."
 	]
 	"quest.3789B6937D0F2AC7.title": "Copper Wire"
+	"quest.37AB361F8F9DA444.quest_desc": [
+		"Mine amalgam ore with a Drill on a moving contraption. Make a &astack&r."
+	]
+	"quest.37AB361F8F9DA444.title": "Automate: Raw Amalgam"
+	"quest.37DB384485B2E2CA.quest_desc": [
+		"Crush gold ore or raw gold (ochrum works too). Make a &astack&r."
+	]
+	"quest.37DB384485B2E2CA.title": "Automate: Crushed Raw Gold"
 	"quest.381EFD6DCD13A8ED.quest_desc": [
 		"Actuator fins, brass casing, steel and a powder charge."
 	]
 	"quest.381EFD6DCD13A8ED.title": "Rocket Motor"
+	"quest.383DAE64E511F83A.quest_desc": [
+		"Raw fish, an onion and tomato sauce in the Cooking Pot."
+	]
+	"quest.383DAE64E511F83A.title": "Fish Stew"
 	"quest.385048FDBEED3462.quest_desc": [
 		"Iron plates, glass, a compass and redstone. Aim your drops from the air."
 	]
@@ -1270,6 +1984,10 @@
 		"Production goals for Andesite-tier machines. Make these with &amachines&r, not by hand."
 	]
 	"quest.386FB1A022BFF30E.title": "Andesite Automation"
+	"quest.38B0DD0B0812EC56.quest_desc": [
+		"Apple, 2 melon slices, a pumpkin slice, 2 berries and a bowl. Make a &astack&r (16)."
+	]
+	"quest.38B0DD0B0812EC56.title": "Automate: Fruit Salad"
 	"quest.38F621FA929A1DD8.quest_desc": [
 		"&6Create: The Air War&r. Arm your aircraft. (Its launchers and their ammo are removed in this"
 		"pack; guns, bombs and missile blocks remain.)"
@@ -1287,6 +2005,14 @@
 		"Wild onions grow in temperate biomes. Plant the onions themselves."
 	]
 	"quest.392E87A3E40E4C76.title": "Onion"
+	"quest.3930701201D80C81.quest_desc": [
+		"Nether heat materials made without a trip to the Nether."
+	]
+	"quest.3930701201D80C81.title": "Magma and Glowstone"
+	"quest.3963055014A29884.quest_desc": [
+		"Raw beef on a belt through a fan blowing over fire (smoking). Make a &astack&r."
+	]
+	"quest.3963055014A29884.title": "Automate: Steak"
 	"quest.398902EC58D4FE30.quest_desc": [
 		"Paper, precision mechanism and redstone: choose what gets shot at."
 	]
@@ -1295,6 +2021,18 @@
 		"Brass casing, comparator, precision mechanism and redstone: fires when on target."
 	]
 	"quest.39B7178398319DC1.title": "Fire Controller"
+	"quest.39DD3C2618D9991D.quest_desc": [
+		"Every quest under &aSeafood&r is done: 16 production lines running on their own."
+	]
+	"quest.39DD3C2618D9991D.title": "Seafood Mastered"
+	"quest.39E5554A01D624E3.quest_desc": [
+		"Potatoes through a smoking fan. Make a &astack&r."
+	]
+	"quest.39E5554A01D624E3.title": "Automate: Baked Potato"
+	"quest.3A1DAC5D045482E9.quest_desc": [
+		"In this pack the Farmer's Delight cooking pot meals are also &aMixer&r recipes."
+	]
+	"quest.3A1DAC5D045482E9.title": "Mixing"
 	"quest.3A6991406BB1CE62.quest_desc": [
 		"&6Create: The Air War&r: a first-person attack drone. Four Andesite Propellers, a gyro"
 		"stabilizer, antenna, camera and packed guncotton (pack recipe). Place it, link it with the"
@@ -1305,6 +2043,11 @@
 		"Crops grow faster on it, and mushrooms grow into colonies."
 	]
 	"quest.3A964BAC2C4E7B3A.title": "Rich Soil"
+	"quest.3B041FE3D50F4212.quest_desc": [
+		"Sheep regrow wool after shearing: try Deployers holding shears. Dyed wool washes white"
+		"in a fan blowing through water. Make a &astack&r."
+	]
+	"quest.3B041FE3D50F4212.title": "Automate: White Wool"
 	"quest.3B2B86194B0D7B30.quest_desc": [
 		"Iron, leather and string. The base for every backpack upgrade."
 	]
@@ -1313,6 +2056,20 @@
 		"Electron tube, precision mechanism and redstone: shells that steer."
 	]
 	"quest.3B31101BA6D1CD75.title": "Guided Fuze"
+	"quest.3B3CD1F476F29F0A.quest_desc": [
+		"Bread, cooked mutton, a leafy green and onion. Make a &astack&r."
+	]
+	"quest.3B3CD1F476F29F0A.title": "Automate: Mutton Wrap"
+	"quest.3B5F548390851EEA.quest_desc": [
+		"Crush nickel ore or raw nickel. Make a &astack&r."
+	]
+	"quest.3B5F548390851EEA.title": "Automate: Crushed Raw Nickel"
+	"quest.3B82772AE6E8EDFF.quest_desc": [
+		"Mixer: raw cod, potato, tomato, an egg and a bowl. Make a &astack&r (16)."
+		""
+		"&7Needs eggs from Animal Product Automation."
+	]
+	"quest.3B82772AE6E8EDFF.title": "Automate: Baked Cod Stew"
 	"quest.3BABEFE16AC81C7F.quest_desc": [
 		"A seat, a transmitter and a precision mechanism. Command your drones from a vehicle."
 	]
@@ -1332,15 +2089,31 @@
 		"Feed it fuel (coal, logs) and it heats a Basin above it: &6Heated&r."
 	]
 	"quest.3BD47489393A7320.title": "Catch a Blaze"
+	"quest.3BEAA6EE640B6112.quest_desc": [
+		"Dried kelp on &aMechanical Crafters&r. Make a &astack&r."
+	]
+	"quest.3BEAA6EE640B6112.title": "Automate: Mechanical Belt"
 	"quest.3BF3768260E3F121.quest_desc": [
 		"&aCogwheels&r pass rotation sideways to other cogs. Pairing a &alarge&r and a &asmall&r"
 		"cogwheel doubles or halves the speed."
 	]
 	"quest.3BF3768260E3F121.title": "Cogwheels"
+	"quest.3BF6E02C1B19C2F7.quest_desc": [
+		"Ingots, blocks and sheets: a &aMechanical Press&r over a basin compacts, over a belt it flattens."
+	]
+	"quest.3BF6E02C1B19C2F7.title": "Metals"
 	"quest.3C0083216B96355F.quest_desc": [
 		"A rapid-fire cannon from a cast &abreech&r and &abarrel&r. Feeds on cartridges."
 	]
 	"quest.3C0083216B96355F.title": "Autocannon"
+	"quest.3C1DF54BD2B58369.quest_desc": [
+		"Salmon steaks through a smoking fan. Make a &astack&r."
+	]
+	"quest.3C1DF54BD2B58369.title": "Automate: Cooked Salmon Steak"
+	"quest.3C79CDB58B8E9FF4.quest_desc": [
+		"Every quest under &aBlaze Fuel&r is done: 5 production lines running on their own."
+	]
+	"quest.3C79CDB58B8E9FF4.title": "Blaze Fuel Mastered"
 	"quest.3D18216C0DC91D67.quest_desc": [
 		"&6Create Crafts and Additions&r electricity starts here. Andesite casing, andesite alloy, iron"
 		"sheets and a shaft. Rolls ingots into rods and sheets into wire."
@@ -1350,10 +2123,19 @@
 		"Settle wastewater in a basin with a mixer."
 	]
 	"quest.3D42DEA97763E9D2.title": "Clarified Water"
+	"quest.3DA1AB3F86870E76.quest_desc": [
+		"Sand through a fan blowing through lava. Make a &astack&r."
+	]
+	"quest.3DA1AB3F86870E76.title": "Automate: Glass"
 	"quest.3DDDAE7916041D79.quest_desc": [
 		"A shield-bearing brute. Get around the shield."
 	]
 	"quest.3DDDAE7916041D79.title": "Basher"
+	"quest.3E29E3FED7F25BED.quest_desc": [
+		"A &aRolling Mill&r rolls paper or bamboo into straw (for the Blaze Burner with Straw)."
+		"Make a &astack&r (16)."
+	]
+	"quest.3E29E3FED7F25BED.title": "Automate: Straw"
 	"quest.3E2D23E1D3A0EBE4.quest_desc": [
 		"Everything starts with rotation. Head to the &6Andesite Age&r."
 	]
@@ -1376,6 +2158,10 @@
 		"Fill the cake base with liquid experience using a Spout."
 	]
 	"quest.3EBBCA8C5D0936F3.title": "Cake o' Enchanting"
+	"quest.3ED4598EDD7E20BC.quest_desc": [
+		"Pumpkins under a Slicer with a knife. Make a &astack&r."
+	]
+	"quest.3ED4598EDD7E20BC.title": "Automate: Pumpkin Slice"
 	"quest.3EF1E1D409B7DDAD.quest_desc": [
 		"Iron bars, white wool and andesite alloy. Goes in an Air Scrubber. Clogged cartridges"
 		"come back clean with &abulk washing&r (fan through water)."
@@ -1386,6 +2172,22 @@
 		"redstone, string and guncotton. Stick it to a wall and set it off remotely."
 	]
 	"quest.3F82F140108CBD1D.title": "C4 Charge"
+	"quest.3FBAC9E934B9E561.quest_desc": [
+		"&aCod Roll&r: 2 raw cod slices and cooked rice. &aSalmon Roll&r: 2 raw salmon slices and cooked"
+		"rice. Cooked rice comes from the &aCooking Pot&r."
+	]
+	"quest.3FBAC9E934B9E561.title": "Sushi"
+	"quest.3FE2CB017F0A2003.quest_desc": [
+		"Cooked rice, dried kelp and a vegetable. Make a &astack&r."
+	]
+	"quest.3FE2CB017F0A2003.title": "Automate: Kelp Roll"
+	"quest.3FFACDD178C182FA.quest_desc": [
+		"Compact dough, an egg and 2 sugar into a cake base, then bake it with a smoking fan."
+		"Make a &astack&r."
+		""
+		"&7Needs eggs from Animal Product Automation."
+	]
+	"quest.3FFACDD178C182FA.title": "Automate: Baked Cake Base"
 	"quest.403EEC901700CF83.quest_desc": [
 		"Iron sheets and iron rods (roll iron ingots). An empty spool to wind wire onto."
 	]
@@ -1394,10 +2196,19 @@
 		"Gold, gold nuggets and a golden sheet. A key that opens more of your trains."
 	]
 	"quest.405CADB4D11C95CC.title": "Gold Key"
+	"quest.40615557FFDA4DD0.quest_desc": [
+		"Crushed copper ore through a fan blowing through lava. Make a &astack&r."
+	]
+	"quest.40615557FFDA4DD0.title": "Automate: Copper Ingot"
 	"quest.4081D65FB1B1B03E.quest_desc": [
 		"Cast iron, iron plate, guncotton and a heavy pressure plate. Stops vehicles."
 	]
 	"quest.4081D65FB1B1B03E.title": "Large Mine"
+	"quest.409EE419472612AB.quest_desc": [
+		"A rabbit pen: breed with carrots or dandelions, kill with Deployers. A Bait Trap baited with"
+		"carrots works too. Make a &astack&r."
+	]
+	"quest.409EE419472612AB.title": "Automate: Raw Rabbit"
 	"quest.40B15D449F2EBE71.quest_desc": [
 		"Smithing: a &aBlaze Burner&r, an &aenchanting table&r and a &aBlaze Upgrade Smithing"
 		"Template&r. Enchants items automatically with liquid experience."
@@ -1407,6 +2218,15 @@
 		"Mill hardened nitro into &aNitropowder&r: a stronger charge filling than gunpowder."
 	]
 	"quest.40D51604C8B3AE17.title": "Nitropowder"
+	"quest.40DC2725DCAD8BA8.quest_desc": [
+		"Raw chicken under a Slicer with a knife. Make a &astack&r."
+	]
+	"quest.40DC2725DCAD8BA8.title": "Automate: Raw Chicken Cuts"
+	"quest.40E46B6091948CA7.quest_desc": [
+		"Run cod and salmon past the Peeler. Cooked steaks go into a &aSeafood Steak&r with steak and"
+		"cooked lobster."
+	]
+	"quest.40E46B6091948CA7.title": "Fish Steaks"
 	"quest.40F499E79AE3DD52.quest_desc": [
 		"Mechanical crafting: explosive filling, iron and wooden slabs. Shells need a &afuze&r to"
 		"go off."
@@ -1433,6 +2253,10 @@
 		"Mix organic compost with water in a basin. Sprinklers spray it to speed up crops."
 	]
 	"quest.41380124E301CF88.title": "Liquid Fertilizer"
+	"quest.41592A4B0B4E6609.quest_desc": [
+		"A cooked fish steak, steak and cooked lobster (Mechanical Crafters). Make a &astack&r."
+	]
+	"quest.41592A4B0B4E6609.title": "Automate: Seafood Steak"
 	"quest.415DCC8C641DB388.quest_desc": [
 		"Blow yellowcake through the &aEnriching Campfire&r with an encased fan."
 	]
@@ -1441,6 +2265,10 @@
 		"Iron plates, a dispenser and redstone. Mount it on an aircraft."
 	]
 	"quest.4197D2995C3D7FE3.title": "Rocket Pod Section"
+	"quest.41C02E3221A34BAB.quest_desc": [
+		"Every Brass-tier material and part, made by machines. Precision on an industrial scale."
+	]
+	"quest.41C02E3221A34BAB.title": "Brass Automation Mastered"
 	"quest.41CD81FE0E6AA722.quest_desc": [
 		"Spins up, then fires very fast. Power it with redstone."
 	]
@@ -1449,10 +2277,26 @@
 		"A hay bale in an iron shell: bursts into a smoke screen to hide an advance."
 	]
 	"quest.41F3783BD41BD8AD.title": "Smoke Shell"
+	"quest.421AAC9D06C82038.quest_desc": [
+		"Stone through a lava fan a second time. Make a &astack&r."
+	]
+	"quest.421AAC9D06C82038.title": "Automate: Smooth Stone"
+	"quest.4220A170A131104A.quest_desc": [
+		"Pumpkin stems and a &aMechanical Saw&r cutting the pumpkins. Make a &astack&r."
+	]
+	"quest.4220A170A131104A.title": "Automate: Pumpkin"
 	"quest.4257FB3FAF262265.quest_desc": [
 		"Compact &aeggs, sugar and lapis&r in a Basin."
 	]
 	"quest.4257FB3FAF262265.title": "Cake Base o' Enchanting"
+	"quest.4262DE4BB5374E58.quest_desc": [
+		"Chickens drop feathers when killed; a Bait Trap baited with seeds gives them too. Make a &astack&r."
+	]
+	"quest.4262DE4BB5374E58.title": "Automate: Feather"
+	"quest.428299DA2B3171F7.quest_desc": [
+		"Every quest under &aMagma and Glowstone&r is done: 3 production lines running on their own."
+	]
+	"quest.428299DA2B3171F7.title": "Magma and Glowstone Mastered"
 	"quest.42A23A4ACF5E0DBA.quest_desc": [
 		"Outputs redstone by height: the basis of altitude hold."
 	]
@@ -1470,6 +2314,17 @@
 		"with Cimulink circuits."
 	]
 	"quest.42F7C1E1748DCE3D.title": "Circuit"
+	"quest.435D9D6E00A270AC.quest_desc": [
+		"Cooked chicken, bread, 2 baked potatoes, 2 carrots, onion, an egg and a bowl."
+		"Make &a4&r."
+		""
+		"&7Needs eggs from Animal Product Automation."
+	]
+	"quest.435D9D6E00A270AC.title": "Automate: Roast Chicken"
+	"quest.438364018067A419.quest_desc": [
+		"Every quest under &aGems and Dusts&r is done: 4 production lines running on their own."
+	]
+	"quest.438364018067A419.title": "Gems and Dusts Mastered"
 	"quest.438EF50C90497E4F.quest_desc": [
 		"Andesite casing, iron sheet, shaft and gunpowder. A mount turns and aims a cannon with"
 		"rotational power; assemble the cannon on it."
@@ -1482,15 +2337,32 @@
 		"You'll learn to make it in the &dQuantum Expansion&r."
 	]
 	"quest.43B65B6F74E24201.title": "Waystones Are Built, Not Found"
+	"quest.43B8063761FBCE93.quest_desc": [
+		"A cow pen: breed them with Deployers holding wheat, and kill the adults with Deployers"
+		"holding a sword. Make a &astack&r."
+	]
+	"quest.43B8063761FBCE93.title": "Automate: Raw Beef"
+	"quest.43E8CC08C9CD8A1F.quest_desc": [
+		"Full bee hives give honeycomb when sheared: try Deployers holding shears. Make a &astack&r."
+	]
+	"quest.43E8CC08C9CD8A1F.title": "Automate: Honeycomb"
 	"quest.44241F8B25C03EB8.quest_desc": [
 		"An air-to-air missile. Mechanical crafting with a &aProximity Fuze&r and a precision"
 		"mechanism."
 	]
 	"quest.44241F8B25C03EB8.title": "AIM-9 Sidewinder"
+	"quest.44270F9E712C8E30.quest_desc": [
+		"An apple ringed with gold ingots: 8 per apple, so 512 gold for a stack. Make a &astack&r."
+	]
+	"quest.44270F9E712C8E30.title": "Automate: Golden Apple"
 	"quest.446D9B17AB7994FD.quest_desc": [
 		"Brass casing, a radar dish and a receiver: compact radar for aircraft."
 	]
 	"quest.446D9B17AB7994FD.title": "Plane Radar"
+	"quest.44824E2BD594A84A.quest_desc": [
+		"Crushed nickel ore through a lava fan. Make a &astack&r."
+	]
+	"quest.44824E2BD594A84A.title": "Automate: Nickel Ingot"
 	"quest.44BEA75788C0D2BC.quest_desc": [
 		"Shot balls and gunpowder: bursts into fragments."
 	]
@@ -1505,11 +2377,19 @@
 		"collide."
 	]
 	"quest.453E0E92B7BA6611.title": "Train Signal"
+	"quest.4589C8FD19F78A7F.quest_desc": [
+		"Lava flowing into &achocolate&r makes scoria. A Drill mines it. Make a &astack&r."
+	]
+	"quest.4589C8FD19F78A7F.title": "Automate: Scoria"
 	"quest.459817C4038930C4.quest_desc": [
 		"Brass sheets, an antenna, a monitor and an electron tube (pack recipe). Links to and flies"
 		"FPV drones."
 	]
 	"quest.459817C4038930C4.title": "Drone Joystick"
+	"quest.45BA406899B44C40.quest_desc": [
+		"Casings, funnels, tunnels and chutes for a smarter factory."
+	]
+	"quest.45BA406899B44C40.title": "Brass Logistics"
 	"quest.45BDA6C768B90B56.quest_desc": [
 		"Blow kelp through &afire&r with an Encased Fan (smoking). Make a &astack&r of Dried Kelp."
 	]
@@ -1518,6 +2398,11 @@
 		"String, guncotton and iron nuggets (makes 2). Booby-trap a doorway."
 	]
 	"quest.45EF11E35D7CAB2D.title": "Tripwire Coil"
+	"quest.45F467C71BDE3B92.quest_desc": [
+		"Chickens lay eggs on their own. Catch them with hoppers or funnels under the pen."
+		"Make a &astack&r (16)."
+	]
+	"quest.45F467C71BDE3B92.title": "Automate: Egg"
 	"quest.460F2822FC8D77BC.quest_desc": [
 		"Paper, a compass and redstone. Marks an area your radar weapons won't fire into, such as"
 		"your own base."
@@ -1527,15 +2412,36 @@
 		"Lead and copper nuggets into a blank gatling round."
 	]
 	"quest.463608773F5CEE47.title": "Gatling Round"
+	"quest.464094FC2BEB33D4.quest_desc": [
+		"A &aBait Trap&r (Mesh Trap plus a lantern) baited with fish, steaks, mussels or fish skin catches"
+		"lobsters. Make a &astack&r."
+	]
+	"quest.464094FC2BEB33D4.title": "Automate: Raw Lobster"
 	"quest.4680D4EEDDCD2B02.quest_desc": [
 		"&eChanged in this pack:&r waystones don't generate. Mechanical crafting: Warp Stone,"
 		"&d3 Quantum Pearls&r, &d2 Quantum Casings&r, casings and bricks."
 	]
 	"quest.4680D4EEDDCD2B02.title": "Waystone"
+	"quest.4685125B29B34D93.quest_desc": [
+		"Every quest under &aCrops&r is done: 18 production lines running on their own."
+	]
+	"quest.4685125B29B34D93.title": "Crops Mastered"
+	"quest.46CD3DE458C8CF95.quest_desc": [
+		"Raw cod under a Slicer with a knife. Make a &astack&r."
+	]
+	"quest.46CD3DE458C8CF95.title": "Automate: Raw Cod Slice"
+	"quest.46D61453D2A55B56.quest_desc": [
+		"Mixer: rice, raw meat, rotten flesh, bone meal and a bowl. Make a &astack&r (16)."
+	]
+	"quest.46D61453D2A55B56.title": "Automate: Dog Food"
 	"quest.4706D48B2397DBEB.quest_desc": [
 		"A boss that destroys blocks. Fight it far from your base."
 	]
 	"quest.4706D48B2397DBEB.title": "The Wither"
+	"quest.471544857B419170.quest_desc": [
+		"Deployers press planks onto cogwheels. Make a &astack&r."
+	]
+	"quest.471544857B419170.title": "Automate: Large Cogwheel"
 	"quest.47BD23F65E10529D.quest_desc": [
 		"Feed an army without lifting a knife. Make these with &amachines&r, not by hand."
 	]
@@ -1544,6 +2450,10 @@
 		"Bread, a beef patty, a leafy green, tomato and onion."
 	]
 	"quest.47DAF49FAD3BD9FB.title": "Hamburger"
+	"quest.47E331B6B4A0C49F.quest_desc": [
+		"4 melon slices, sugar and a glass bottle. Make a &astack&r (16)."
+	]
+	"quest.47E331B6B4A0C49F.title": "Automate: Melon Juice"
 	"quest.47EF23A2057ECF4E.quest_desc": [
 		"They climb walls. Walls alone will not stop them."
 	]
@@ -1553,6 +2463,10 @@
 		"&6stress capacity&r (SU). Every machine uses some; the goggles show how much is left."
 	]
 	"quest.47FAA13063C15889.title": "Water Wheel"
+	"quest.4835DADB3C450D57.quest_desc": [
+		"Raw mutton under a Slicer with a knife. Make a &astack&r."
+	]
+	"quest.4835DADB3C450D57.title": "Automate: Raw Mutton Chops"
 	"quest.48768D4D201D8CE7.quest_desc": [
 		"A &asteel sheet&r on &aSteel Casing&r. The shell for oil and engine machinery."
 	]
@@ -1565,15 +2479,32 @@
 		"Desert zombies. They make you hungry."
 	]
 	"quest.48BD6C1FF6EEBB8E.title": "Husks"
+	"quest.494BA293994AE30A.quest_desc": [
+		"Every quest under &aSpout&r is done: 8 production lines running on their own."
+	]
+	"quest.494BA293994AE30A.title": "Spout Mastered"
+	"quest.49FB082F1DDF9864.quest_desc": [
+		"Deployers holding sand paper polish rose quartz (a Mechanical Peeler does too). Make a &astack&r."
+	]
+	"quest.49FB082F1DDF9864.title": "Automate: Polished Rose Quartz"
 	"quest.4A5F8E84D4A3E786.quest_desc": [
 		"Industrial iron and TNT. Deny an area of sea to enemy submarines."
 	]
 	"quest.4A5F8E84D4A3E786.title": "Underwater Mine"
+	"quest.4AB19D7D47667BE1.quest_desc": [
+		"Crushed lithium ore through a lava fan. Make a &astack&r."
+	]
+	"quest.4AB19D7D47667BE1.title": "Automate: Lithium Ingot"
 	"quest.4AB1E382B8490E57.quest_desc": [
 		"Brass casing, brass sheets, an electron tube and iron bars. Put it in an exhaust line:"
 		"it catches soot, more the faster it spins. Pipe water in to wash out sulfur."
 	]
 	"quest.4AB1E382B8490E57.title": "Electrostatic Precipitator"
+	"quest.4ACA6968EC983F12.quest_desc": [
+		"Grow Umbran saplings and fell the trees with &aMechanical Saws&r. Leaf blocks only drop to shears:"
+		"try Deployers holding shears. Make a &astack&r of each."
+	]
+	"quest.4ACA6968EC983F12.title": "Automate: Umbran"
 	"quest.4B274D3E2316F111.quest_desc": [
 		"Lead balls into a blank shotgun round."
 	]
@@ -1587,6 +2518,10 @@
 		"Iron and a lever. Use it on a copper chest to upgrade it in place: contents stay."
 	]
 	"quest.4BCEC493225826A4.title": "Iron Tier"
+	"quest.4BE81C1CD42ADD22.quest_desc": [
+		"Bread, cooked bacon, a leafy green and tomato. Make a &astack&r."
+	]
+	"quest.4BE81C1CD42ADD22.title": "Automate: Bacon Sandwich"
 	"quest.4BEDE181FB336132.quest_desc": [
 		"&6Aeroworks&r: a real cockpit. A &aControl Stand&r (copper casing, redstone link, electron"
 		"tube, transmitter, precision mechanism) has &asockets&r for control modules. Sneak-right-click"
@@ -1602,6 +2537,14 @@
 		"Compact &aliquid experience&r into a solid &aBlock of Experience&r."
 	]
 	"quest.4C0B58935DA7AACD.title": "Block of Experience"
+	"quest.4C14CE0432A3011A.quest_desc": [
+		"Every ore in the pack, mined, crushed and refined by machines. Diamonds and netherite too."
+	]
+	"quest.4C14CE0432A3011A.title": "Ore Automation"
+	"quest.4C19787636CD5EF9.quest_desc": [
+		"Mixer: raw fish, onion, tomato sauce and a bowl. Make a &astack&r (16)."
+	]
+	"quest.4C19787636CD5EF9.title": "Automate: Fish Stew"
 	"quest.4C20D3C1C2FAB4CF.quest_desc": [
 		"You've mastered brass. This &aunlocks the Industrial Age&r and all three &6Expansions&r:"
 		"Heat, Quantum and Enchanting."
@@ -1614,6 +2557,11 @@
 		"Fluid Tank in the crafting grid."
 	]
 	"quest.4C4C085C92F74D33.title": "Fluid Vessel"
+	"quest.4C8806C45173F2D0.quest_desc": [
+		"Mixer: milk, sugar and cocoa beans make liquid chocolate. A &aSpout&r fills buckets."
+		"Fill &a16&r buckets."
+	]
+	"quest.4C8806C45173F2D0.title": "Automate: Chocolate"
 	"quest.4C92BC6C73EA306C.quest_desc": [
 		"&6Create Nuclear&r: uranium and thorium ores generate underground."
 		"&cUranium is radioactive.&r Carry too much for too long and you get &cRadiation&r. Store it,"
@@ -1635,6 +2583,14 @@
 		"A chorus fruit farm feeding a heated mixer. Fill a &astack&r of Telejuice buckets (16)."
 	]
 	"quest.4D1D21B956A310AC.title": "Automate: Telejuice"
+	"quest.4D2AE9BC5DC8E7A0.quest_desc": [
+		"Crush zinc ore or raw zinc (asurine works too). Make a &astack&r."
+	]
+	"quest.4D2AE9BC5DC8E7A0.title": "Automate: Crushed Raw Zinc"
+	"quest.4D3E8408DC5F369A.quest_desc": [
+		"Every quest under &aMixing&r is done: 28 production lines running on their own."
+	]
+	"quest.4D3E8408DC5F369A.title": "Mixing Mastered"
 	"quest.4D59F0C8C2DE0CB2.quest_desc": [
 		"A mechanical bearing, torsion spring, clutch and gearshift. Moves control surfaces."
 	]
@@ -1666,6 +2622,15 @@
 		"Gunpowder, a lead nugget and paper: flintlock ammo."
 	]
 	"quest.4E215730E6F0B136.title": "Paper Cartridge"
+	"quest.4E57CCC63F2E0A11.quest_desc": [
+		"Every crop and every meat, by the stack, with no hands on the harvest."
+	]
+	"quest.4E57CCC63F2E0A11.title": "Crop Automation"
+	"quest.4E5BE4B24397B9FE.quest_desc": [
+		"Grow Willow saplings and fell the trees with &aMechanical Saws&r. Leaf blocks only drop to shears:"
+		"try Deployers holding shears. Make a &astack&r of each."
+	]
+	"quest.4E5BE4B24397B9FE.title": "Automate: Willow"
 	"quest.4E83FDAD16DA66F6.quest_desc": [
 		"An illager &6airship&r on patrol finds your base. Shoot it down: autocannons and"
 		"anti-air."
@@ -1689,6 +2654,10 @@
 		"Diamonds and a lever. Gold to diamond."
 	]
 	"quest.4F2DB21B147A7C58.title": "Diamond Tier"
+	"quest.4F41F56BD88F8594.quest_desc": [
+		"Wash crushed zinc ore with a fan blowing through water. Make a &astack&r."
+	]
+	"quest.4F41F56BD88F8594.title": "Automate: Zinc Nugget"
 	"quest.4F432EC45797F61B.quest_desc": [
 		"Also from the stonecutter (iron block). Cheap cover for gun nests and trenches."
 	]
@@ -1714,6 +2683,14 @@
 		"Put &airon ingots&r on the Depot and let the Press flatten them into &aIron Sheets&r."
 	]
 	"quest.500E380CBF65328A.title": "Iron Sheets"
+	"quest.505E04F6477F8763.quest_desc": [
+		"Every quest under &aKinetic Parts&r is done: 9 production lines running on their own."
+	]
+	"quest.505E04F6477F8763.title": "Kinetic Parts Mastered"
+	"quest.50697E645696804F.quest_desc": [
+		"Bread, beef patty, a leafy green, tomato and onion. Make a &astack&r."
+	]
+	"quest.50697E645696804F.title": "Automate: Hamburger"
 	"quest.50822B0BBA2CD21E.quest_desc": [
 		"A transmitter, precision mechanism and compass. Fly drones wirelessly."
 	]
@@ -1723,6 +2700,10 @@
 		"gearshift. Pushes and pulls parts of your craft precisely."
 	]
 	"quest.5083A2BCC04083A8.title": "Hydraulic Linear Actuator"
+	"quest.5089F68C0B1CFF8F.quest_desc": [
+		"Every quest under &aFertilizer&r is done: 5 production lines running on their own."
+	]
+	"quest.5089F68C0B1CFF8F.title": "Fertilizer Mastered"
 	"quest.5098E62B79F885D8.quest_desc": [
 		"&6Enhanced AI&r: skeletons aim better and keep their distance. Fight from cover."
 	]
@@ -1744,6 +2725,15 @@
 		"Sticks and planks. Row a small boat by hand."
 	]
 	"quest.515DC0FA59FD5614.title": "Oar of Boat"
+	"quest.516C1F6F3FFBD9C1.quest_desc": [
+		"Mine iron ore with a &aMechanical Drill&r on a moving contraption. Make a &astack&r."
+	]
+	"quest.516C1F6F3FFBD9C1.title": "Automate: Raw Iron"
+	"quest.51778DC1A4E7BF5F.quest_desc": [
+		"Grow Empyreal saplings and fell the trees with &aMechanical Saws&r. Leaf blocks only drop to shears:"
+		"try Deployers holding shears. Make a &astack&r of each."
+	]
+	"quest.51778DC1A4E7BF5F.title": "Automate: Empyreal"
 	"quest.5194AC4C99BEB854.quest_desc": [
 		"Mechanical crafting with a propeller and an impact fuze. Sinks ships."
 	]
@@ -1753,6 +2743,16 @@
 		"nuclear shell."
 	]
 	"quest.51ABB649DF339B40.title": "Uranium Rod"
+	"quest.51F7728E30F0B263.quest_desc": [
+		"Grow Birch saplings and fell the trees with &aMechanical Saws&r. Leaf blocks only drop to shears:"
+		"try Deployers holding shears. Make a &astack&r of each."
+	]
+	"quest.51F7728E30F0B263.title": "Automate: Birch"
+	"quest.520CA4BA383F49EE.quest_desc": [
+		"Grow Cherry saplings and fell the trees with &aMechanical Saws&r. Leaf blocks only drop to shears:"
+		"try Deployers holding shears. Make a &astack&r of each."
+	]
+	"quest.520CA4BA383F49EE.title": "Automate: Cherry"
 	"quest.521CA3B1F77D8E70.quest_desc": [
 		"Sequenced assembly: sleepers, iron nuggets and zinc nuggets (makes 32 at a time). Create"
 		"trains run on Train Track."
@@ -1773,16 +2773,41 @@
 		"heavy plate, makes 8. A &astonecutter&r recolors any hull (15 camouflage patterns)."
 	]
 	"quest.527B674EBDE64D78.title": "Rolled Hull Armor"
+	"quest.5282E7D30B7AA95C.quest_desc": [
+		"Mixer: raw rabbit, carrot, potato, both mushrooms and a bowl. Make a &astack&r (16)."
+	]
+	"quest.5282E7D30B7AA95C.title": "Automate: Rabbit Stew"
+	"quest.528466FC525F9B9E.quest_desc": [
+		"Pumpkin, sugar and an egg (Mechanical Crafters). Make a &astack&r."
+		""
+		"&7Needs eggs from Animal Product Automation."
+	]
+	"quest.528466FC525F9B9E.title": "Automate: Pumpkin Pie"
 	"quest.528707EC128E396E.quest_desc": [
 		"Iron plates, copper, a note block and a shaft. Warn your base when bombers come."
 	]
 	"quest.528707EC128E396E.title": "Air-Raid Siren"
+	"quest.52A00571472644AB.quest_desc": [
+		"Mine copper ore with a Drill on a moving contraption. Make a &astack&r."
+	]
+	"quest.52A00571472644AB.title": "Automate: Raw Copper"
+	"quest.52BE6EDACFC4FC5F.quest_desc": [
+		"3 cooked mutton, 2 baked potatoes, 2 onions, milk and a bowl. Make &a4&r."
+		""
+		"&7Needs milk from Animal Product Automation."
+	]
+	"quest.52BE6EDACFC4FC5F.title": "Automate: Shepherd's Pie"
 	"quest.5329946572EF2539.quest_desc": [
 		"Press a &aBlock of Experience&r into an &aEnchanting Template&r."
 	]
 	"quest.5329946572EF2539.title": "Enchanting Template"
+	"quest.5349BB8131A6B63D.quest_desc": [
+		"Raw beef under a Slicer with a knife. Make a &astack&r."
+	]
+	"quest.5349BB8131A6B63D.title": "Automate: Minced Beef"
 	"quest.537966C61051FF3E.quest_desc": [
-		"Loop the sequenced assembly line so it runs unattended. Make &a5 Precision Mechanisms&r."
+		"Loop the sequenced assembly line so it runs unattended. Make a &astack&r of Precision"
+		"Mechanisms."
 	]
 	"quest.537966C61051FF3E.title": "Automate: Precision Mechanisms"
 	"quest.53A9557C86F6A159.quest_desc": [
@@ -1808,6 +2833,10 @@
 		"teleporter."
 	]
 	"quest.53FCAEF396A40468.title": "Quantum Mechanism"
+	"quest.540B75E0FDF7BF0F.quest_desc": [
+		"Raw salmon through a smoking fan. Make a &astack&r."
+	]
+	"quest.540B75E0FDF7BF0F.title": "Automate: Cooked Salmon"
 	"quest.542539A9D3F991D6.quest_desc": [
 		"Much tougher, and lighter than steel: fireclay, heavy plates and a diamond."
 	]
@@ -1816,6 +2845,12 @@
 		"See under water. (A different block from the Air War sonar.)"
 	]
 	"quest.5459DE3C6BCF979E.title": "Sonar (Deep Seas)"
+	"quest.545D0853A4D87489.quest_desc": [
+		"&aCreate: Fishery Industry&r. A Frame Trap (zinc sheet and string) on a moving contraption, such"
+		"as a &aTrap Bearing&r spinning it through water, catches fish and pulls up fishing loot that"
+		"depends on the biome. No rod, no player."
+	]
+	"quest.545D0853A4D87489.title": "Frame Trap"
 	"quest.5480C8B5E1657A00.quest_desc": [
 		"Brass and iron sheets. Holds a belt of autocannon rounds for continuous fire."
 	]
@@ -1838,6 +2873,14 @@
 		"Break tall grass or wheat with a knife."
 	]
 	"quest.55133A80FE1B9D72.title": "Straw"
+	"quest.55265CE7787A5196.quest_desc": [
+		"An &aEncased Fan&r blowing through fire smokes food on belts and depots."
+	]
+	"quest.55265CE7787A5196.title": "Fan Cooking"
+	"quest.558B1890C605987A.quest_desc": [
+		"Mine titanium ore with a Drill on a moving contraption. Make a &astack&r."
+	]
+	"quest.558B1890C605987A.title": "Automate: Raw Titanium"
 	"quest.5595EF082B5BFD12.quest_desc": [
 		"Copper and a gold sheet. Put it on a boiler; redstone blows it. Taller stacks play lower."
 	]
@@ -1847,6 +2890,14 @@
 		"blowing through fire. Make a &astack&r."
 	]
 	"quest.55D36CF33F3CCCBB.title": "Automate: Bread"
+	"quest.55D4A5D306F241A6.quest_desc": [
+		"Every Andesite-tier material and part, made by machines. The foundation of every factory."
+	]
+	"quest.55D4A5D306F241A6.title": "Andesite Mastered"
+	"quest.55F313C195066158.quest_desc": [
+		"Mill or crush granite. Make a &astack&r."
+	]
+	"quest.55F313C195066158.title": "Automate: Red Sand"
 	"quest.5616C2CB21D1F5E0.quest_desc": [
 		"An impact fuze head and redstone (makes 2). Goes off on contact. Put a fuze on a shell"
 		"before you load it."
@@ -1861,6 +2912,18 @@
 		"&aLevitite&r provides lift: build it into a hull to make it float."
 	]
 	"quest.5654679C05A47678.title": "Levitite"
+	"quest.56744B93E8B9829C.quest_desc": [
+		"A chute, brass sheets and an electron tube on Mechanical Crafters. Make a &astack&r."
+	]
+	"quest.56744B93E8B9829C.title": "Automate: Smart Chute"
+	"quest.56B896874512C7F2.quest_desc": [
+		"Farmer, Chef and Rancher. Your faction never goes hungry again."
+	]
+	"quest.56B896874512C7F2.title": "Feed the Army"
+	"quest.56BFFCE6BD56FE57.quest_desc": [
+		"Sweet berry bushes regrow after picking. Keep them picked without hands. Make a &astack&r."
+	]
+	"quest.56BFFCE6BD56FE57.title": "Automate: Sweet Berries"
 	"quest.56C06FAADEC153C4.quest_desc": [
 		"A &aBlaze Burner&r (Brass Age), brass and iron sheets. Welds built-up cannon parts"
 		"together."
@@ -1870,6 +2933,18 @@
 		"Iron sheets and a stripped log. A longer flintlock barrel: more range."
 	]
 	"quest.56DD42619431371D.title": "Musket Barrel"
+	"quest.5737E93025848C2B.quest_desc": [
+		"Wash magma blocks with a fan blowing through water. Make a &astack&r."
+	]
+	"quest.5737E93025848C2B.title": "Automate: Obsidian"
+	"quest.5759D788625EA06F.quest_desc": [
+		"Crush Nether Bricks (the block): each has a 5% chance of scrap. Make a &astack&r."
+	]
+	"quest.5759D788625EA06F.title": "Automate: Netherite Scrap"
+	"quest.57698FA008794B58.quest_desc": [
+		"Raw salmon under a Slicer with a knife. Make a &astack&r."
+	]
+	"quest.57698FA008794B58.title": "Automate: Raw Salmon Slice"
 	"quest.57B7CCC186625ABD.quest_desc": [
 		"Build the Pumpjack over an oil deposit (find one with the Surface Scanner) and pump"
 		"&aCrude Oil&r into a tank. Fill a bucket from the tank."
@@ -1885,6 +2960,10 @@
 		"&eNeeds the Brass Age.&r Automate brass (Automation chapter) to keep these guns fed."
 	]
 	"quest.58281E71C2982F6E.title": "Ballistic Computer"
+	"quest.585243261D118217.quest_desc": [
+		"&eThis pack's own recipe:&r diamonds are compacted from coal over a &6superheated&r burner."
+	]
+	"quest.585243261D118217.title": "Diamonds"
 	"quest.58601A41B035E394.quest_desc": [
 		"Right-click a placed chest or barrel with a tier upgrade to make it bigger &awithout"
 		"emptying it&r. Copper first (copper ingots and a lever), then up the tiers."
@@ -1904,6 +2983,15 @@
 		"propeller, a powder charge, guncotton and an impact fuze."
 	]
 	"quest.593880FB761DDE5A.title": "Cruise Missile"
+	"quest.594D0103D8307571.quest_desc": [
+		"Shafts, cogs, belts, casings and the logistics parts every factory is built from."
+	]
+	"quest.594D0103D8307571.title": "Kinetic Parts"
+	"quest.596283CCE38214A8.quest_desc": [
+		"Grow Maple saplings and fell the trees with &aMechanical Saws&r. Leaf blocks only drop to shears:"
+		"try Deployers holding shears. Make a &astack&r of each."
+	]
+	"quest.596283CCE38214A8.title": "Automate: Maple"
 	"quest.597A3E429F55275A.quest_desc": [
 		"Train Casing and a wooden door (makes 2). Doors that work on a moving train."
 	]
@@ -1913,6 +3001,14 @@
 		"your boat."
 	]
 	"quest.598BE4ADE1531AFA.title": "Boat Engine"
+	"quest.59AC3D4CC846EDAF.quest_desc": [
+		"Every raw meat and fish."
+	]
+	"quest.59AC3D4CC846EDAF.title": "Meats"
+	"quest.59ACD0A7F0415F39.quest_desc": [
+		"A &aMechanical Peeler&r peels raw salmon into a steak and fish skin. Make a &astack&r."
+	]
+	"quest.59ACD0A7F0415F39.title": "Automate: Salmon Steak"
 	"quest.59C4C64E295DD12D.quest_desc": [
 		"A mechanical pump, a copper block and a propeller. A water jet for fine maneuvering."
 	]
@@ -1925,6 +3021,11 @@
 		"Industrial iron, an electron tube and a lightning rod."
 	]
 	"quest.5A3BA4624706AB01.title": "Radar Receiver"
+	"quest.5AD983ACCE696260.quest_desc": [
+		"Mixer: raw chicken, carrot, a leafy green, any vegetable but melon, and a bowl."
+		"Make a &astack&r (16)."
+	]
+	"quest.5AD983ACCE696260.title": "Automate: Chicken Soup"
 	"quest.5AFAAE84D66D6BA3.quest_desc": [
 		"Thin air down here too (see Pollution and Air): bring a backtank."
 	]
@@ -1960,10 +3061,30 @@
 		"dive from here."
 	]
 	"quest.5BC063A06F708BDE.title": "Onboard Computer"
+	"quest.5BE3FC9AB4DF6169.quest_desc": [
+		"Every food in the pack, made by machines. The army eats well."
+	]
+	"quest.5BE3FC9AB4DF6169.title": "Master Chef"
+	"quest.5BFC740EF1842F8A.quest_desc": [
+		"Mixer: mussels and milk make the soup; a Spout fills bowls. Make a &astack&r."
+		""
+		"&7Needs milk from Animal Product Automation."
+	]
+	"quest.5BFC740EF1842F8A.title": "Automate: Mussel Soup"
+	"quest.5C17E0C5F99D8D6D.quest_desc": [
+		"A baked potato, cooked beef and milk. Make a &astack&r."
+		""
+		"&7Needs milk from Animal Product Automation."
+	]
+	"quest.5C17E0C5F99D8D6D.title": "Automate: Stuffed Potato"
 	"quest.5C326BE896F9406D.quest_desc": [
 		"The furnace makes &amolten steel&r; cast it into &aSteel Ingots&r."
 	]
 	"quest.5C326BE896F9406D.title": "Steel"
+	"quest.5C8808451971B4AC.quest_desc": [
+		"Raw bacon through a smoking fan. Make a &astack&r."
+	]
+	"quest.5C8808451971B4AC.title": "Automate: Cooked Bacon"
 	"quest.5C8F73A18227EF75.quest_desc": [
 		"&6Steam 'n' Rails&r adds more to trains: a handcar for quick trips."
 	]
@@ -1988,12 +3109,26 @@
 		"pipes below."
 	]
 	"quest.5D4BCA7941DD7B93.title": "Item Drain"
+	"quest.5DDF8A5926B033B1.quest_desc": [
+		"Wheat and cocoa beans (Mechanical Crafters). Make a &astack&r."
+	]
+	"quest.5DDF8A5926B033B1.title": "Automate: Cookie"
+	"quest.5DFDB0F445DCDD6B.quest_desc": [
+		"Every quest under &aMetals&r is done: 5 production lines running on their own."
+	]
+	"quest.5DFDB0F445DCDD6B.title": "Metals Mastered"
 	"quest.5E4C130E5B208860.quest_desc": [
 		"&6Create: Armored Constructs&r: a tank gun. Assemble Breech, Barrel sections, an"
 		"Intermediate Muzzle and a Muzzle in a line. Pack recipes (the mod ships without any):"
 		"&aMechanical Crafting&r from heavy plates and steel. Barrels come 2 at a time."
 	]
 	"quest.5E4C130E5B208860.title": "Arcon Cannon Barrel"
+	"quest.5F2D60AF89DE6ABE.quest_desc": [
+		"Eggs through a smoking fan. Make a &astack&r (16)."
+		""
+		"&7Needs eggs from Animal Product Automation."
+	]
+	"quest.5F2D60AF89DE6ABE.title": "Automate: Fried Egg"
 	"quest.5F40C639C270FBD0.quest_desc": [
 		"Bastion guards. They never calm down."
 	]
@@ -2006,19 +3141,51 @@
 		"Throws potions. Kill it before it supports the rest."
 	]
 	"quest.5FC5AF17035E86EE.title": "Alchemist"
+	"quest.5FEBCACF7850D1AD.quest_desc": [
+		"Raw porkchops through a smoking fan. Make a &astack&r."
+	]
+	"quest.5FEBCACF7850D1AD.title": "Automate: Cooked Porkchop"
+	"quest.601B2FCAF5026C70.quest_desc": [
+		"Iron sheets and netherrack on Mechanical Crafters. Make a &astack&r."
+	]
+	"quest.601B2FCAF5026C70.title": "Automate: Empty Blaze Burner"
+	"quest.603877210C605F5D.quest_desc": [
+		"Mixer: raw beef, carrot, potato and a bowl. Make a &astack&r (16)."
+	]
+	"quest.603877210C605F5D.title": "Automate: Beef Stew"
+	"quest.60475C6A23C1B8CF.quest_desc": [
+		"Mine sulfur ore with a Drill on a moving contraption. Make a &astack&r."
+	]
+	"quest.60475C6A23C1B8CF.title": "Automate: Raw Sulfur"
 	"quest.60A8E36CAE45E950.quest_desc": [
 		"&eThis pack's own recipe:&r &aCrushing Wheels&r crushing &aNether Bricks&r (the block) have a"
 		"&a5% chance&r to drop &aNetherite Scrap&r. Netherrack is endless, so this is renewable."
 		"(Ancient Debris blown through lava with a fan works too.)"
 		""
 		"Then let &aMechanical Crafters&r run the normal recipe: &a4 Netherite Scrap + 4 Gold Ingots&r"
-		"= 1 Netherite Ingot. Make &a4 Netherite Ingots&r."
+		"= 1 Netherite Ingot. Make a &astack&r of Netherite Ingots."
 	]
 	"quest.60A8E36CAE45E950.title": "Automate: Netherite"
+	"quest.60AC9F2A33E18216.quest_desc": [
+		"Crush obsidian with Crushing Wheels. Make a &astack&r."
+	]
+	"quest.60AC9F2A33E18216.title": "Automate: Powdered Obsidian"
+	"quest.60B7B7F88377BDD8.quest_desc": [
+		"All three fuel tiers on tap. Your burners never go cold."
+	]
+	"quest.60B7B7F88377BDD8.title": "Heat Automation Mastered"
 	"quest.60B90AF4C95E818F.quest_desc": [
 		"Mix &acopper&r and &azinc&r in a Basin over a lit Blaze Burner."
 	]
 	"quest.60B90AF4C95E818F.title": "Brass Ingot"
+	"quest.60C65DE73B4B6054.quest_desc": [
+		"Wash soul sand with a fan blowing through water. Make a &astack&r."
+	]
+	"quest.60C65DE73B4B6054.title": "Automate: Nether Quartz"
+	"quest.60FAD498BD32289F.quest_desc": [
+		"Sequenced assembly and the parts it needs."
+	]
+	"quest.60FAD498BD32289F.title": "Precision"
 	"quest.60FCA6A7CAC5BEBF.quest_desc": [
 		"Press coal dust."
 	]
@@ -2027,7 +3194,7 @@
 		"Crush &azinc ore&r, wash the crushed ore with a fan, and smelt it. Make a &astack&r of Zinc"
 		"Ingots."
 	]
-	"quest.610E62DABE42F45B.title": "Automate: Ore Processing"
+	"quest.610E62DABE42F45B.title": "Automate: Zinc Ingot"
 	"quest.6112990A4F373F3B.quest_desc": [
 		"Compact &aseeds&r into Seed Oil, then mix plants (crops, leaves, saplings, flowers) with"
 		"&a100 mB of Seed Oil&r over a &6heated&r burner to make &aBiomass&r."
@@ -2047,6 +3214,15 @@
 		"Fly it yourself: a &aSteering Wheel&r on your craft lets you steer from the seat."
 	]
 	"quest.61EA0CE43165502E.title": "Steering Wheel"
+	"quest.6219439BB6C5DA8A.quest_desc": [
+		"&eThis pack's recipe:&r a &6superheated&r Mixer with biofuel, gasoline and an aluminum ingot."
+		"A Spout fills buckets. Fill &a16&r."
+	]
+	"quest.6219439BB6C5DA8A.title": "Automate: Napalm"
+	"quest.623D285040FF4D37.quest_desc": [
+		"A Press over a basin compacts 9 zinc ingots into a block. Make a &astack&r."
+	]
+	"quest.623D285040FF4D37.title": "Automate: Block of Zinc"
 	"quest.628849AB04278591.quest_desc": [
 		"Brass sheet, compass, electron tube, steel and precision mechanism: steers the missile"
 		"onto a radar track."
@@ -2080,22 +3256,58 @@
 		"JEI shows every step."
 	]
 	"quest.6306F2A0E0D78360.title": "Steel Mechanism"
+	"quest.6329826148B7D2C8.quest_desc": [
+		"2 cod rolls, 3 salmon rolls, 3 kelp roll slices and a bowl. Make &a4&r."
+	]
+	"quest.6329826148B7D2C8.title": "Automate: Rice Roll Medley"
+	"quest.635B592E27A35F35.quest_desc": [
+		"Spout liquid fertilizer onto organic compost. Make a &astack&r."
+	]
+	"quest.635B592E27A35F35.title": "Automate: Rich Soil"
 	"quest.636673A39A09D339.quest_desc": [
 		"Gunpowder, iron plate, shot balls and a pressure plate."
 	]
 	"quest.636673A39A09D339.title": "Small Mine"
+	"quest.636A79EE6234A536.quest_desc": [
+		"Raw mutton through a smoking fan. Make a &astack&r."
+	]
+	"quest.636A79EE6234A536.title": "Automate: Cooked Mutton"
 	"quest.6393779977E23D30.quest_desc": [
 		"Redstone torch, lever, copper and iron plate. Sets off your C4."
 	]
 	"quest.6393779977E23D30.title": "Detonator"
+	"quest.63D88DAF707C6F45.quest_desc": [
+		"Raw titanium through a lava fan. Make a &astack&r."
+	]
+	"quest.63D88DAF707C6F45.title": "Automate: Titanium Ingot"
+	"quest.63E3C2A3C78A67C7.quest_desc": [
+		"Fishing loot: a &aFrame Trap&r on a moving contraption in water pulls up mussels. Make a &astack&r."
+	]
+	"quest.63E3C2A3C78A67C7.title": "Automate: Raw Blue Mussel"
 	"quest.64156283A7F5D425.quest_desc": [
 		"Press brass ingots into &aBrass Sheets&r on a Depot, like iron and gold."
 	]
 	"quest.64156283A7F5D425.title": "Brass Sheets"
+	"quest.647DFE7493DF2C42.quest_desc": [
+		"Every tree in the pack, vanilla and Biomes O' Plenty: a stack of logs and a stack of leaves each."
+	]
+	"quest.647DFE7493DF2C42.title": "Forestry"
+	"quest.64F6FE46093FADEA.quest_desc": [
+		"Clay balls through a lava fan. Make a &astack&r."
+	]
+	"quest.64F6FE46093FADEA.title": "Automate: Brick"
+	"quest.6531378A87245AF5.quest_desc": [
+		"Every quest under &aNetherite&r is done: 3 production lines running on their own."
+	]
+	"quest.6531378A87245AF5.title": "Netherite Mastered"
 	"quest.653667B88343242F.quest_desc": [
 		"Iron and brass sheets. Fixes to the flintlock for when they get too close."
 	]
 	"quest.653667B88343242F.title": "Bayonet"
+	"quest.658409F99B53650B.quest_desc": [
+		"A basalt generator: lava flowing over soul soil next to blue ice. A Drill mines it. Make a &astack&r."
+	]
+	"quest.658409F99B53650B.title": "Automate: Basalt"
 	"quest.658C20D3D998E1FC.quest_desc": [
 		"Crush or mill charcoal."
 	]
@@ -2104,6 +3316,18 @@
 		"&6Synaxis&r: precision controls for Sable craft (circuits, Lua, motors and actuators)."
 	]
 	"quest.65B386CAEB47A994.title": "Control Chair"
+	"quest.65CB28479847E870.quest_desc": [
+		"Crush copper ore or raw copper (veridium works too). Make a &astack&r."
+	]
+	"quest.65CB28479847E870.title": "Automate: Crushed Raw Copper"
+	"quest.65D8A2AD77A82C98.quest_desc": [
+		"Every quest under &aFan Cooking&r is done: 16 production lines running on their own."
+	]
+	"quest.65D8A2AD77A82C98.title": "Fan Cooking Mastered"
+	"quest.65F25EDB14626C44.quest_desc": [
+		"Crush coal ore with Crushing Wheels. Make a &astack&r."
+	]
+	"quest.65F25EDB14626C44.title": "Automate: Coal"
 	"quest.661BA95EC4E158D5.quest_desc": [
 		"Carrot, potato, beetroot and a leafy green in the Cooking Pot."
 	]
@@ -2113,6 +3337,10 @@
 		"(check JEI for how it's made)."
 	]
 	"quest.6629BCD414634293.title": "Packed Guncotton"
+	"quest.663AB5DC04610255.quest_desc": [
+		"Harvester rows, same as wheat. Make a &astack&r."
+	]
+	"quest.663AB5DC04610255.title": "Automate: Beetroot"
 	"quest.663C120074F50910.quest_desc": [
 		"A waystone shared by everyone who uses the same color. Uses Quantum Casings too."
 	]
@@ -2139,6 +3367,15 @@
 		"Launches guided missiles."
 	]
 	"quest.66C3EC98853BC5DF.title": "Missile Mount"
+	"quest.66D223D025853928.quest_desc": [
+		"2 raw salmon slices and cooked rice. Make a &astack&r."
+	]
+	"quest.66D223D025853928.title": "Automate: Salmon Roll"
+	"quest.672CFFCB4514583D.quest_desc": [
+		"Mushrooms on &arich soil&r grow into colonies. A &aSlicer&r with a knife cuts a colony into"
+		"mushrooms. Make a &astack&r."
+	]
+	"quest.672CFFCB4514583D.title": "Automate: Red Mushroom"
 	"quest.672FD2FD5E0B970A.quest_desc": [
 		"A &aBasic Torpedo&r fixed to a &aRocket Bracket&r with two iron sheets (pack recipe)."
 		"Dropped from aircraft into water, it runs to the target like a ship's torpedo."
@@ -2153,6 +3390,10 @@
 		"a player (placing, clicking, applying), and it's the key machine for sequenced assembly."
 	]
 	"quest.674633D31D85B876.title": "Deployer"
+	"quest.67909118375EA207.quest_desc": [
+		"Mine gold ore with a Drill on a moving contraption. Make a &astack&r."
+	]
+	"quest.67909118375EA207.title": "Automate: Raw Gold"
 	"quest.679F6C0F323E288F.quest_desc": [
 		"Convert an Andesite Propeller in a crafting grid. Light, cheap blades."
 	]
@@ -2161,6 +3402,16 @@
 		"Feed copper and zinc into a heated Mixer automatically. Make a &astack&r of Brass Ingots."
 	]
 	"quest.67A8D26B5BBD67D5.title": "Automate: Brass"
+	"quest.680153DBEF875C5B.quest_desc": [
+		"Bread, cooked chicken, a leafy green and carrot. Make a &astack&r."
+	]
+	"quest.680153DBEF875C5B.title": "Automate: Chicken Sandwich"
+	"quest.680455D7BB0E4A30.quest_desc": [
+		"Mixer: raw lobster, kelp and milk make the soup; a Spout fills bowls. Make a &astack&r."
+		""
+		"&7Needs milk from Animal Product Automation."
+	]
+	"quest.680455D7BB0E4A30.title": "Automate: Lobster Soup"
 	"quest.681D7475EC18C5EA.quest_desc": [
 		"A propeller, industrial iron and a shaft. Thrust under water."
 	]
@@ -2169,15 +3420,38 @@
 		"Casings make machines tidy and are an ingredient in many recipes, including &dwaystones&r."
 	]
 	"quest.6831CB5CFFFE83CA.title": "Andesite Casing"
+	"quest.683A03C336C4155F.quest_desc": [
+		"Generators and drills: every stone the Andesite Age needs, without a pickaxe."
+	]
+	"quest.683A03C336C4155F.title": "Stone"
+	"quest.688E209D19AE83F9.quest_desc": [
+		"Dough under a Slicer with a knife. Dough: mill wheat into flour, then mix it with water."
+		"Make a &astack&r."
+	]
+	"quest.688E209D19AE83F9.title": "Automate: Raw Pasta"
 	"quest.689AB4054B803CCE.quest_desc": [
 		"Uses a &aMechanical Arm&r: pick targets for your missiles."
 	]
 	"quest.689AB4054B803CCE.title": "Targeting Interface"
+	"quest.689BC375391396D1.quest_desc": [
+		"Crush emerald ore with Crushing Wheels. Make a &astack&r."
+	]
+	"quest.689BC375391396D1.title": "Automate: Emerald"
+	"quest.68D51CBA48CE2950.quest_desc": [
+		"Spout milk into glass bottles. Make a &astack&r (16)."
+		""
+		"&7Needs milk from Animal Product Automation."
+	]
+	"quest.68D51CBA48CE2950.title": "Automate: Milk Bottle"
 	"quest.690304EEF8A85B66.quest_desc": [
 		"The first Create material. Combine &aandesite&r with &airon nuggets&r (or zinc nuggets)."
 		"Check &aJEI&r for the recipe: press &aU&r on an item to see how it's made."
 	]
 	"quest.690304EEF8A85B66.title": "Andesite Alloy"
+	"quest.693C138BD4F5203A.quest_desc": [
+		"2 raw cod slices and cooked rice. Make a &astack&r."
+	]
+	"quest.693C138BD4F5203A.title": "Automate: Cod Roll"
 	"quest.6965B2C1A9D2D96A.quest_desc": [
 		"Heats basins and boilers with liquid fuel. Very dirty on waste oil, clean on refined oil."
 	]
@@ -2187,6 +3461,10 @@
 		"together act as one battery."
 	]
 	"quest.69751AD0E2419B9B.title": "Modular Accumulator"
+	"quest.69950202A01FD5DC.quest_desc": [
+		"Quartz and 5 redstone on Mechanical Crafters. Make a &astack&r."
+	]
+	"quest.69950202A01FD5DC.title": "Automate: Rose Quartz"
 	"quest.6A0F5E3A470D0D6D.quest_desc": [
 		"Brass casing, electron tube, Quantum Mechanism and Redstone Pearl. Fill it with"
 		"&dTelejuice&r to teleport to a paired destination."
@@ -2196,6 +3474,20 @@
 		"Copper, glass panes and string. Spot targets by eye before you track them by radar."
 	]
 	"quest.6A3136FC8C67D6A5.title": "Binoculars"
+	"quest.6A366BF3D0EF732F.quest_desc": [
+		"Mixer: a pumpkin, rice, potato, onion, a brown mushroom, a berry and any vegetable"
+		"but melon. Make &a4&r."
+	]
+	"quest.6A366BF3D0EF732F.title": "Automate: Stuffed Pumpkin"
+	"quest.6A6B77129E1AEFE3.quest_desc": [
+		"Steak, a baked potato, cooked rice, onion and a bowl. Make a &astack&r (16)."
+	]
+	"quest.6A6B77129E1AEFE3.title": "Automate: Steak and Potatoes"
+	"quest.6A6F2AAAB71A2CDF.quest_desc": [
+		"Ores don't regrow: a &aMechanical Drill&r on a moving contraption (a mining rig or tunnel bore) brings"
+		"them in."
+	]
+	"quest.6A6F2AAAB71A2CDF.title": "Mining"
 	"quest.6A815378A5DE98C6.quest_desc": [
 		"&6Create Deep Seas&r. Flood and empty &aBallast Tanks&r to dive and surface."
 	]
@@ -2208,24 +3500,57 @@
 		"&aPolished Rose Quartz&r on an &aIron Sheet&r: the 'circuit' of Create machines."
 	]
 	"quest.6AF6E11AB857B769.title": "Electron Tube"
+	"quest.6B217BD4AED205D0.quest_desc": [
+		"A &6superheated&r Mixer melts cobblestone into lava (50 mB a block). A Spout fills"
+		"buckets. Fill &a16&r."
+	]
+	"quest.6B217BD4AED205D0.title": "Automate: Lava"
+	"quest.6B3AD946BC615531.quest_desc": [
+		"A &aSpout&r fills food with honey, milk, chocolate and tea."
+	]
+	"quest.6B3AD946BC615531.title": "Spout"
+	"quest.6B3BCED1EA271A59.quest_desc": [
+		"A fan blowing through &alava&r smelts, through &afire&r smokes."
+	]
+	"quest.6B3BCED1EA271A59.title": "Fan Processing"
+	"quest.6B8992B54A88BAD0.quest_desc": [
+		"Mixer: pasta, raw fish, tomato, an ink sac and a bowl. Make a &astack&r (16)."
+	]
+	"quest.6B8992B54A88BAD0.title": "Automate: Squid Ink Pasta"
 	"quest.6BB4725031FEA927.quest_desc": [
 		"Red and white wool. Marks a spot on the water: channels, mines, rally points."
 	]
 	"quest.6BB4725031FEA927.title": "Buoy"
+	"quest.6BC91EB7A3EC3C43.quest_desc": [
+		"A Press over a basin compacts 9 coal into a block. Make a &astack&r."
+	]
+	"quest.6BC91EB7A3EC3C43.title": "Automate: Block of Coal"
 	"quest.6BEC794B9B7ED2B9.quest_desc": [
 		"Belts are made from &adried kelp&r. Gather &akelp&r from any ocean."
 	]
 	"quest.6BEC794B9B7ED2B9.title": "Kelp"
+	"quest.6C2E39C435DB09B7.quest_desc": [
+		"Andesite alloy on Mechanical Crafters. Make a &astack&r."
+	]
+	"quest.6C2E39C435DB09B7.title": "Automate: Basin"
 	"quest.6C3CFAF816C70C1A.quest_desc": [
 		"&6Trigger Mobs&r: some mobs spawn &ccarrying guns&r and fire them at you. Armor up and"
 		"keep moving."
 	]
 	"quest.6C3CFAF816C70C1A.title": "Armed and Dangerous"
+	"quest.6C84D12C75770661.quest_desc": [
+		"Smoked ham, a honey bottle, 4 sweet berries, 2 cooked rice and a bowl. Make &a4&r."
+	]
+	"quest.6C84D12C75770661.title": "Automate: Honey Glazed Ham"
 	"quest.6C99B713DE5C894D.quest_desc": [
 		"Keep a cooking pot on a stove fed with funnels and pull the soup out. Make a &astack&r"
 		"(16)."
 	]
 	"quest.6C99B713DE5C894D.title": "Automate: Vegetable Soup"
+	"quest.6CB63BE4A285144A.quest_desc": [
+		"Bread and 2 fried eggs. Make a &astack&r."
+	]
+	"quest.6CB63BE4A285144A.title": "Automate: Egg Sandwich"
 	"quest.6CFFC5E6FB4D423C.quest_desc": [
 		"&eChanged in this pack:&r brewing Biofuel now needs a &6Superheated&r burner. Mix"
 		"&aSugar + Cinder Flour + 2 Biomass&r to make &a125 mB&r."
@@ -2266,15 +3591,37 @@
 		"&cBoss:&r the Invoker leads the invasion, with a boss bar and fangs. Bring a team."
 	]
 	"quest.6DC04ED3ECE631A7.title": "The Invoker"
+	"quest.6DC2586768C49C09.quest_desc": [
+		"Raw chicken cuts through a smoking fan (or slice cooked chicken). Make a &astack&r."
+	]
+	"quest.6DC2586768C49C09.title": "Automate: Cooked Chicken Cuts"
 	"quest.6DFA7706AC394262.quest_desc": [
 		"Zinc: the missile body that carries the warhead."
 	]
 	"quest.6DFA7706AC394262.title": "Payload Casing"
+	"quest.6E3A0D04627D2E8E.quest_desc": [
+		"Mixer: crushed magma and slime balls (or blaze powder and slime on Mechanical Crafters). Make a &astack&r."
+	]
+	"quest.6E3A0D04627D2E8E.title": "Automate: Magma Cream"
+	"quest.6E5E6509CE32E013.quest_desc": [
+		"The two eating fish. Cook them with a &asmoking&r fan or a smoker, or slice them first for"
+		"more meals per fish."
+	]
+	"quest.6E5E6509CE32E013.title": "Cod and Salmon"
+	"quest.6E78E57BD013830B.quest_desc": [
+		"Cooked mutton chops, cooked rice, beetroot, tomato and a bowl. Make a &astack&r (16)."
+	]
+	"quest.6E78E57BD013830B.title": "Automate: Roasted Mutton Chops"
 	"quest.6E9F388055BE2E9B.quest_desc": [
 		"&aMechanical Crafting&r: copper spool, capacitor, iron rods, brass sheets and andesite"
 		"alloy. Turns electricity back into rotation, with a speed you set. &eNeeds the Brass Age.&r"
 	]
 	"quest.6E9F388055BE2E9B.title": "Electric Motor"
+	"quest.6F0574BFA980C31E.quest_desc": [
+		"Plant rice in shallow water. Panicles &aMill&r into rice (Millstone or Crushing Wheels)."
+		"Make a &astack&r."
+	]
+	"quest.6F0574BFA980C31E.title": "Automate: Rice"
 	"quest.6F14B448D1FF9C9A.quest_desc": [
 		"&6Dragons Plus&r: copper sheets, gold and a barrel. A tank that keeps its fluid when you"
 		"break it."
@@ -2288,15 +3635,45 @@
 		"Electron tube, iron plates, brass nuggets and redstone. Marks targets."
 	]
 	"quest.6F3BBA2B34BC0A91.title": "Target Designator"
+	"quest.6FA2ACB82CCEA0DD.quest_desc": [
+		"Spout chocolate onto a pie crust. Make a &astack&r."
+		""
+		"&7Needs milk from Animal Product Automation."
+	]
+	"quest.6FA2ACB82CCEA0DD.title": "Automate: Chocolate Pie"
 	"quest.6FC902C0AAB2722B.quest_desc": [
 		"&eChanged in this pack:&r mechanical crafting with &a7 Quantum Pearls&r, amethyst and"
 		"emeralds."
 	]
 	"quest.6FC902C0AAB2722B.title": "Warp Stone"
+	"quest.7000BE24649EACD6.quest_desc": [
+		"Grow Redwood saplings and fell the trees with &aMechanical Saws&r. Leaf blocks only drop to shears:"
+		"try Deployers holding shears. Make a &astack&r of each."
+	]
+	"quest.7000BE24649EACD6.title": "Automate: Redwood"
+	"quest.70263C939D5DC8A6.quest_desc": [
+		"Mixer: pasta, raw pork, dried kelp, an egg and a bowl. Make a &astack&r (16)."
+		""
+		"&7Needs eggs from Animal Product Automation."
+	]
+	"quest.70263C939D5DC8A6.title": "Automate: Noodle Soup"
+	"quest.706F45431F5C5E14.quest_desc": [
+		"Every quest under &aBrass Logistics&r is done: 5 production lines running on their own."
+	]
+	"quest.706F45431F5C5E14.title": "Brass Logistics Mastered"
 	"quest.708ABE7F0EE91DFA.quest_desc": [
 		"&eChanged in this pack:&r every scroll is made from &dQuantum Paper&r."
 	]
 	"quest.708ABE7F0EE91DFA.title": "Blank Scroll"
+	"quest.70D3BE6805B8D5D8.quest_desc": [
+		"Crush blaze rods with Crushing Wheels. Make a &astack&r."
+	]
+	"quest.70D3BE6805B8D5D8.title": "Automate: Blaze Powder"
+	"quest.7122C875AA1F391F.quest_desc": [
+		"Dirt, 2 straw, 2 bone meal and 4 tree bark (or 4 bone meal and 2 rotten flesh), on"
+		"Mechanical Crafters. Tree bark: a Slicer holding an axe strips logs. Make a &astack&r."
+	]
+	"quest.7122C875AA1F391F.title": "Automate: Organic Compost"
 	"quest.7127B39888B240ED.quest_desc": [
 		"4 straw."
 	]
@@ -2308,6 +3685,10 @@
 		"biome behind. Everyone within 256 blocks gets a warning first. A reactor is a target."
 	]
 	"quest.7153EFC543EF00EA.title": "Reactor Controller"
+	"quest.718E4E38BC1A75D0.quest_desc": [
+		"Any cooked meat, onion, tomato and a stick. Make a &astack&r."
+	]
+	"quest.718E4E38BC1A75D0.title": "Automate: Barbecue on a Stick"
 	"quest.71AA12F89FADBAA6.quest_desc": [
 		"&6Offroad&r: ground vehicles are Sable physics objects (see the Physics Assembler in"
 		"Aeronautics). Mount wheels on a &aWheel Mount&r."
@@ -2321,6 +3702,10 @@
 		"Copper and a redstone torch. Its color shows the air quality around you."
 	]
 	"quest.71E0AD84F1CF7715.title": "Safety Lantern"
+	"quest.71FA72B80315E6FB.quest_desc": [
+		"Every quest under &aCrushing&r is done: 9 production lines running on their own."
+	]
+	"quest.71FA72B80315E6FB.title": "Crushing Mastered"
 	"quest.72194779A11AA636.quest_desc": [
 		"A valve handle on brass casing: a steering wheel. Dye it any color."
 	]
@@ -2353,6 +3738,10 @@
 		"place."
 	]
 	"quest.7298096382EF849F.title": "Pump Controller"
+	"quest.72AD940B35F91514.quest_desc": [
+		"Flour, dough, cookies, pies and cakes."
+	]
+	"quest.72AD940B35F91514.title": "Bakery"
 	"quest.72BF8D911FA88129.quest_desc": [
 		"Mix &aChorus Fruit + 250 mB water&r over a &6heated&r burner to make &dTelejuice&r"
 		"(Quantum Fluid)."
@@ -2384,14 +3773,34 @@
 		"Wheels, planks and a shaft: a field carriage to drag a light cannon around."
 	]
 	"quest.73A80F40FCC06F47.title": "Cannon Carriage"
+	"quest.73B701AF88A87639.quest_desc": [
+		"A knife on the &aCutting Board&r (or a &aSlicer&r holding one) cuts each fish into &a2 slices&r."
+	]
+	"quest.73B701AF88A87639.title": "Fish Slices"
+	"quest.7464283671580AFD.quest_desc": [
+		"Crushing Wheels turn gem ores into gems and dust."
+	]
+	"quest.7464283671580AFD.title": "Gems and Dusts"
+	"quest.746C159AEF0D05EF.quest_desc": [
+		"&eThis pack's own recipe:&r crushing Nether Bricks can drop Netherite Scrap."
+	]
+	"quest.746C159AEF0D05EF.title": "Netherite"
 	"quest.74777FCB60E4E957.quest_desc": [
 		"Blow &agravel&r through water with an &aEncased Fan&r (washing) for iron nuggets, then"
 		"have a &aMechanical Press&r over a &aBasin&r compact them: &a9 nuggets&r into an ingot,"
 		"&a9 ingots&r into a block."
 		""
-		"Make a &astack&r of nuggets, a &astack&r of ingots and &a7 Blocks of Iron&r."
+		"Make a &astack&r each of nuggets, ingots and Blocks of Iron."
 	]
 	"quest.74777FCB60E4E957.title": "Automate: Iron"
+	"quest.747B9C1E1629BAE3.quest_desc": [
+		"Raw mutton chops through a smoking fan (or slice cooked mutton). Make a &astack&r."
+	]
+	"quest.747B9C1E1629BAE3.title": "Automate: Cooked Mutton Chops"
+	"quest.7480EF1E2750E1CA.quest_desc": [
+		"Every quest under &aRose Quartz&r is done: 3 production lines running on their own."
+	]
+	"quest.7480EF1E2750E1CA.title": "Rose Quartz Mastered"
 	"quest.7495980C8CC73268.quest_desc": [
 		"Iron bars, quartz and redstone: bursts near a target."
 	]
@@ -2421,15 +3830,27 @@
 		"torpedo tube."
 	]
 	"quest.74CFBB049C996D12.title": "Basic Torpedo"
+	"quest.75335DE2B5EB654D.quest_desc": [
+		"Cobblestone through a fan blowing through lava. Make a &astack&r."
+	]
+	"quest.75335DE2B5EB654D.title": "Automate: Stone"
 	"quest.7561AD7708EB75D1.quest_desc": [
 		"A cast-iron &6anti-air car&r with a heavy crew. Your aircraft are its targets."
 		"&aClick the checkmark when you're ready&r (quest edit mode OFF): the attack starts on the spot. Fight near your base."
 	]
 	"quest.7561AD7708EB75D1.title": "Wave 7: Anti-Air Battery"
+	"quest.75B21D2F895338BB.quest_desc": [
+		"A Press over a basin compacts 9 brass ingots into a block. Make a &astack&r."
+	]
+	"quest.75B21D2F895338BB.title": "Automate: Block of Brass"
 	"quest.75DA6E9988F3AA8E.quest_desc": [
 		"The medium bomb's recipe plus &aSturdy Sheets&r."
 	]
 	"quest.75DA6E9988F3AA8E.title": "Large Bomb"
+	"quest.76309B06924D5129.quest_desc": [
+		"Spout a night vision potion onto cinder flour, or crush glowstone. Make a &astack&r."
+	]
+	"quest.76309B06924D5129.title": "Automate: Glowstone Dust"
 	"quest.763A8D151E82F962.quest_desc": [
 		"Copper wire wound on a spool. Use it on two connectors to wire them together."
 		"TFMG has its own &aCopper Spool (TFMG Cable)&r for its cable insulators; the two don't mix."
@@ -2443,6 +3864,10 @@
 		"Bullets are made of &alead&r. Mine and smelt lead ore."
 	]
 	"quest.7647AA74DA277AB7.title": "Lead"
+	"quest.7677E2F5E9D9F3C5.quest_desc": [
+		"Mixer: 2 apples, sugar and a glass bottle. Make a &astack&r (16)."
+	]
+	"quest.7677E2F5E9D9F3C5.title": "Automate: Apple Cider"
 	"quest.768786DC2818C9FB.quest_desc": [
 		"Another Distillation Tower output: aviation fuel for jet and turbine engines."
 	]
@@ -2459,6 +3884,10 @@
 		"Mechanical Arm, Deployer or Funnel."
 	]
 	"quest.76F59EFACD9DBDED.title": "Tier 1: Blaze Cake"
+	"quest.76F7847080F67A6F.quest_desc": [
+		"Milk, wool, leather, eggs and feathers on tap."
+	]
+	"quest.76F7847080F67A6F.title": "Master Rancher"
 	"quest.7723D422C390F52B.quest_desc": [
 		"&6Create: Droneworks Simulated&r: the heart of a drone. Check the Ponder for a basic build."
 	]
@@ -2483,18 +3912,34 @@
 		"than a cog pair."
 	]
 	"quest.77578E1470294AE0.title": "Gearbox"
+	"quest.77939D5A042C3A39.quest_desc": [
+		"Ham through a smoking fan. Smoking is the only recipe for it. Make a &astack&r."
+	]
+	"quest.77939D5A042C3A39.title": "Automate: Smoked Ham"
 	"quest.779A31FF93D9F4FD.quest_desc": [
 		"Iron and brass sheets, gunpowder, copper nuggets and a cogwheel."
 	]
 	"quest.779A31FF93D9F4FD.title": "Frag Grenade"
+	"quest.77B43DA86A99BD93.quest_desc": [
+		"Bone meal, compost, rich soil and liquid fertilizer to keep the fields growing."
+	]
+	"quest.77B43DA86A99BD93.title": "Fertilizer"
 	"quest.77BD910B208F5E79.quest_desc": [
 		"Pumpjack to distillation tower, no hands. Fill a &astack&r of Gasoline buckets (16)."
 	]
 	"quest.77BD910B208F5E79.title": "Automate: Gasoline"
+	"quest.77C78A666705D0ED.quest_desc": [
+		"Raw rabbit through a smoking fan. Make a &astack&r."
+	]
+	"quest.77C78A666705D0ED.title": "Automate: Cooked Rabbit"
 	"quest.77DB7EDAF5F47B92.quest_desc": [
 		"Cast iron tank, pipe, sheet and fireproof bricks: where materials go in."
 	]
 	"quest.77DB7EDAF5F47B92.title": "Blast Furnace Hatch"
+	"quest.77E858E43348CDA4.quest_desc": [
+		"Mixer: cabbage plus any raw meat, fish, vegetable or mushroom. Make a &astack&r."
+	]
+	"quest.77E858E43348CDA4.title": "Automate: Cabbage Rolls"
 	"quest.77F672E923133118.quest_desc": [
 		"Glass, brass sheet and an electron tube. Hold it for a live pollution reading."
 		"Engineer's Goggles show the state of every Smog machine."
@@ -2504,6 +3949,11 @@
 		"Makes &aoxygen&r for your crew. Submarines need air."
 	]
 	"quest.77F9BCF4792E9119.title": "Electrolyzer"
+	"quest.781530919FCCDB83.quest_desc": [
+		"Mixer: pasta, carrot, a mushroom, a leafy green, any vegetable but melon, and a"
+		"bowl. Make a &astack&r (16)."
+	]
+	"quest.781530919FCCDB83.title": "Automate: Vegetable Noodles"
 	"quest.7818999E3DE028B1.quest_desc": [
 		"A &cRavager&r leads the assault, with illagers and witches behind it. It breaks crops and"
 		"walls. Bring friends."
@@ -2553,6 +4003,10 @@
 		"fire on its own."
 	]
 	"quest.79AFAE2A1B4CB9E2.title": "Automatic Cannon Controller"
+	"quest.79D1D4ECACAC0E6A.quest_desc": [
+		"Brass ingots, dried kelp and an electron tube on Mechanical Crafters. Make a &astack&r."
+	]
+	"quest.79D1D4ECACAC0E6A.title": "Automate: Brass Tunnel"
 	"quest.7A0CFA70DB594577.quest_desc": [
 		"Train Casing, a lever and a precision mechanism. Drive the train yourself."
 	]
@@ -2563,10 +4017,36 @@
 		"&eNeeds the Brass Age.&r Automate brass (Automation chapter) to keep these guns fed."
 	]
 	"quest.7A1C29BC7A1E7837.title": "Compact Cannon Mount"
+	"quest.7A3F84BDB5400331.quest_desc": [
+		"Mixer: seed oil with crops, flowers, saplings, sticks or honeycomb. Make a &astack&r (16)."
+	]
+	"quest.7A3F84BDB5400331.title": "Automate: Biomass"
+	"quest.7A488CFB10FAE4B1.quest_desc": [
+		"Every quest under &aMeats&r is done: 8 production lines running on their own."
+	]
+	"quest.7A488CFB10FAE4B1.title": "Meats Mastered"
+	"quest.7A4DBE38AB7A7226.quest_desc": [
+		"Lava flowing into &ahoney&r makes limestone. A Drill mines it. Make a &astack&r."
+	]
+	"quest.7A4DBE38AB7A7226.title": "Automate: Limestone"
+	"quest.7A61284E61C8C04F.quest_desc": [
+		"Harvester rows, same as wheat. Make a &astack&r."
+	]
+	"quest.7A61284E61C8C04F.title": "Automate: Carrot"
+	"quest.7A95F64CCEE986F4.quest_desc": [
+		"Spout milk onto bread. Make a &astack&r."
+		""
+		"&7Needs milk from Animal Product Automation."
+	]
+	"quest.7A95F64CCEE986F4.title": "Automate: Sweet Roll"
 	"quest.7AB9FC5B547B2BA9.quest_desc": [
 		"&6Offroad&r: dried kelp and a shaft (makes 4). Standard wheels for a ground vehicle."
 	]
 	"quest.7AB9FC5B547B2BA9.title": "Tire"
+	"quest.7AD5DD7C8C0D4923.quest_desc": [
+		"A cobblestone generator below Y=0 makes cobbled deepslate. A Drill mines it. Make a &astack&r."
+	]
+	"quest.7AD5DD7C8C0D4923.title": "Automate: Cobbled Deepslate"
 	"quest.7AD7EE7AAC074AE1.quest_desc": [
 		"A netherite ingot and a lever. Diamond to netherite: the biggest chest."
 	]
@@ -2613,6 +4093,22 @@
 		"guncotton and a powder charge. Combine two for a bigger rack."
 	]
 	"quest.7B757D6F1FE22F44.title": "Small Bomb"
+	"quest.7BA25B26BF786669.quest_desc": [
+		"A carrot ringed with gold nuggets. Make a &astack&r."
+	]
+	"quest.7BA25B26BF786669.title": "Automate: Golden Carrot"
+	"quest.7BBB696A3AB127E1.quest_desc": [
+		"3 wheat and an egg (Mechanical Crafters). Make a &astack&r."
+		""
+		"&7Needs eggs from Animal Product Automation."
+	]
+	"quest.7BBB696A3AB127E1.title": "Automate: Wheat Dough"
+	"quest.7BD4707E991E34CD.quest_desc": [
+		"Pie crust, sweet berries and milk (Mechanical Crafters). Make a &astack&r."
+		""
+		"&7Needs milk from Animal Product Automation."
+	]
+	"quest.7BD4707E991E34CD.title": "Automate: Sweet Berry Cheesecake"
 	"quest.7C1A8620A78BA4B6.quest_desc": [
 		"Pillagers patrol and raid villages with crossbows. &6CTOV&r outposts are styled to each"
 		"biome, and &6Create: Pillager Arise&r adds mechanized pillager bases: towers, camps, a"
@@ -2623,10 +4119,22 @@
 		"Fill a &aRailway Casing&r with &a1000 mB of Telejuice&r using a Spout."
 	]
 	"quest.7C25C2287D94AE08.title": "Quantum Casing"
+	"quest.7CA594E22D4342D7.quest_desc": [
+		"Cast a &afishing rod&r into any water for &acod&r, &asalmon&r, &apufferfish&r and &atropical fish&r"
+		"(plus junk and the odd treasure). Use a water bucket on a swimming fish to carry it home alive."
+		""
+		"Fish are meat too: Agriculture's &aMeats&r group automates cod and salmon."
+	]
+	"quest.7CA594E22D4342D7.title": "Fishing"
 	"quest.7CEBB4B0BE358E76.quest_desc": [
 		"&aMechanical Crafting&r: steel and graphene. Graphite rods &bcool&r a reactor."
 	]
 	"quest.7CEBB4B0BE358E76.title": "Graphite Rod"
+	"quest.7CF1D81329527AF6.quest_desc": [
+		"Pipes pull honey out of full bee hives as a fluid. A &aSpout&r fills buckets. Fill &a16&r"
+		"buckets."
+	]
+	"quest.7CF1D81329527AF6.title": "Automate: Honey"
 	"quest.7D0A81063D367284.quest_desc": [
 		"&6Sophisticated Storage&r: chests that take upgrades and can be tiered up. Planks and a"
 		"lever (any wood works)."
@@ -2640,23 +4148,78 @@
 		"Right-click a stripped log or wood with a copper ingot. The shell of every fluid machine."
 	]
 	"quest.7D263B17652C8ACD.title": "Copper Casing"
+	"quest.7D5C7962B8EC6F60.quest_desc": [
+		"Iron ingots and iron sheets on Mechanical Crafters. Make a &astack&r."
+	]
+	"quest.7D5C7962B8EC6F60.title": "Automate: Chute"
+	"quest.7D68A9CC1359838B.quest_desc": [
+		"An iron sheet and andesite casing. It peels cod and salmon into a &afish steak&r plus &afish"
+		"skin&r (roast the skin for lobster bait). It also polishes rose quartz and strips leather armor."
+	]
+	"quest.7D68A9CC1359838B.title": "Mechanical Peeler"
 	"quest.7D6935F4DE704537.quest_desc": [
 		"Chute, fluid pipe, brass and steel sheets: fires rockets."
 	]
 	"quest.7D6935F4DE704537.title": "Launcher"
+	"quest.7DD6A8B29B761263.quest_desc": [
+		"Compact dough, eggs and sugar into a cake base, bake it with a smoking fan, then Spout"
+		"honey on. Make a &astack&r."
+		""
+		"&7Needs eggs from Animal Product Automation."
+	]
+	"quest.7DD6A8B29B761263.title": "Automate: Honey Cake"
 	"quest.7E06F1098287576C.quest_desc": [
 		"A longer barrel for the revolver."
 	]
 	"quest.7E06F1098287576C.title": "Revolver: Long Barrel"
+	"quest.7E329D2CC7AAB77A.quest_desc": [
+		"&aCreate: Fishery Industry&r: a &aMechanical Peeler&r splits fish into steaks and skin, Bait Traps catch"
+		"lobsters, Frame Traps pull up mussels."
+	]
+	"quest.7E329D2CC7AAB77A.title": "Seafood"
+	"quest.7E7A50CE9C12944F.quest_desc": [
+		"Bee hives give honey: pipes pull it from a full hive as fluid. Spout it into glass"
+		"bottles. Make a &astack&r (16)."
+	]
+	"quest.7E7A50CE9C12944F.title": "Automate: Honey Bottle"
+	"quest.7E99C8CCE9860EDD.quest_desc": [
+		"Mine zinc ore with a Drill on a moving contraption. Make a &astack&r."
+	]
+	"quest.7E99C8CCE9860EDD.title": "Automate: Raw Zinc"
 	"quest.7EF44200E09553BD.quest_desc": [
 		"Collect your first bucket of liquid experience (&aBucket o' Enchanting&r)."
 	]
 	"quest.7EF44200E09553BD.title": "Liquid Experience"
+	"quest.7F34CAFF787D4716.quest_desc": [
+		"Grow Hellbark saplings and fell the trees with &aMechanical Saws&r. Leaf blocks only drop to shears:"
+		"try Deployers holding shears. Make a &astack&r of each."
+	]
+	"quest.7F34CAFF787D4716.title": "Automate: Hellbark"
 	"quest.7FB9FCEB172EFC2A.quest_desc": [
 		"Sequenced assembly: iron sheets, packed gunpowder, redstone and a brass nugget. The"
 		"explosive end of a torpedo."
 	]
 	"quest.7FB9FCEB172EFC2A.title": "Torpedo Warhead"
+	"quest.7FC3A773BDC66B97.quest_desc": [
+		"Mixer: 2 cocoa beans, milk, sugar and a glass bottle, or Spout chocolate into a bottle."
+		"Make a &astack&r (16)."
+		""
+		"&7Needs milk from Animal Product Automation."
+	]
+	"quest.7FC3A773BDC66B97.title": "Automate: Hot Cocoa"
+	"quest.7FC5EB1EC259FB56.quest_desc": [
+		"Grow Palm saplings and fell the trees with &aMechanical Saws&r. Leaf blocks only drop to shears:"
+		"try Deployers holding shears. Make a &astack&r of each."
+	]
+	"quest.7FC5EB1EC259FB56.title": "Automate: Palm"
+	"quest.7FFB52F03DAEEB3B.quest_desc": [
+		"Spout milk onto a baked cake base (dough, eggs and sugar compacted, then smoked), or let"
+		"Mechanical Crafters run the normal recipe. Make &a8&r."
+		""
+		"&7Needs milk and eggs from Animal Product Automation."
+	]
+	"quest.7FFB52F03DAEEB3B.title": "Automate: Cake"
+	"reward_table.10E626B6CD0EF000.title": "Engineer's Cache"
 	"reward_table.54CACBC1AF89E17B.title": "War Trophy"
 	"reward_table.6D80D04DDC0C9FC3.title": "Spoils of War II"
 	"reward_table.770ACF92BAB50B96.title": "Spoils of War III"

@@ -381,3 +381,18 @@ this tells you *why*, in prose, per pack version.
 - **Better Trims 1.4.0 + test enchants (2026-11-22):** Better Trims 1.4.0 (Tool Trims compat) replaces 1.3.0; Tool Trims tools get
   Better Trims bonuses (verified). More Enchants' 8 test enchantments neutralised and hidden from JEI.
 
+- **Quest Book v4, part 1 (2026-11-23):** new **Challenges** tab (Defend Your Home moved in). The Automation chapter is split
+  into one chapter per tier (Andesite, Brass, Heat, Industrial, Quantum, Enchanting Automation) with no progress lost. New
+  **Agriculture** chapter (191 quests): every crop, meat and tree (21 woods: logs and leaves), fertilizer, every food item in the pack (all of Farmer's Delight included)
+  and the animal products, in three circles (Crop, Food with 7 method sub-hubs, Animal Products), with completion capstones
+  (Spoils of War and War Trophy rolls) and a **Feed the Army** finale. Automate quests now need at least a full stack:
+  Electron Tubes, Precision Mechanisms, Netherite Ingots and Iron Blocks raised to 64. Automate quests no longer give
+  back the item: double XP plus a roll on the new **Engineer's Cache** (budding amethyst, trim templates, netherite upgrade,
+  rare loot). **Andesite Automation** rebuilt the same way: 39 automate quests in 6 groups (stone, milling, washing, fan processing, metals,
+  kinetic parts) with capstones and Andesite Mastered. **Brass Automation** too: 27 automate quests in 5 groups (ore processing, brass, rose quartz, precision, brass logistics).
+  New **Ore Automation** chapter: mining, crushing, ingots, gems, diamonds and netherite (diamond and netherite moved out of
+  Heat, ore processing out of Brass). **Heat Automation** rebuilt on the fuel tiers (blaze fuel, liquid fuels, magma and
+  glowstone). Food chapter gained a **Fishing** branch (fishing, fish slices, sushi, fish stew, pufferfish).
+  Added **Create: Fishery Industry** 5.1.2 (Frame Trap and Bait Trap fishing, Mechanical Peeler, seafood): an Agriculture
+  Seafood group and fishery quests in the Food chapter. Book: 31 chapters, 911 quests.
+  See [[../03-Design/Quest Book v4 - Capability Map]].
