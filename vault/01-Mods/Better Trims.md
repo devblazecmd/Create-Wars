@@ -51,3 +51,9 @@ tooltip (`ModClient.onTooltip`, `toolTrimmingEnabled` removed), no `TRIMMABLE_TO
 is still in the jar but unreachable without a way to trim tools. `FunctionalArmorTrimNeoForge` is byte-identical to 1.2.1,
 so the dedicated-server fix is unchanged. The tools/ranged configs were dropped from the pack.
 
+**Correction (2026-11-22):** tool/weapon trimming now comes from **Tool Trims** (Modrinth `tool-trims`, 3.0.7+1.21.1,
+`pack/mods/tool-trims.pw.toml`). Its four templates (Linear, Tracks, Charge, Frost) put a vanilla `minecraft:trim` on
+tools/weapons with visible icon patterns, so Better Trims' tool and ranged bonuses are reachable again. The
+`functionalarmortrim_tools.json` / `functionalarmortrim_ranged.json` configs are back in the pack (mod defaults).
+Vanilla armor templates stay armor-only on purpose (no weapon art exists for vanilla patterns).
+

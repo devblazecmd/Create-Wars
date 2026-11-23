@@ -149,6 +149,14 @@ file = "config/functionalarmortrim.json"
 hash = "9713d4c65c04f8399573f94a7f7d69bffa3d7f570ad217921e6e9e67393e1e95"
 
 [[files]]
+file = "config/functionalarmortrim_ranged.json"
+hash = "b467c9a341b71776969a7051432dfce29a9dca8320b704df96dcb720d9918592"
+
+[[files]]
+file = "config/functionalarmortrim_tools.json"
+hash = "439c1690be41fd45fe603bc15e7621b49f3c8b590bdeafa315347e56adfae77e"
+
+[[files]]
 file = "config/gravestone-server.toml"
 hash = "f93c280168e2c0287fb53a24556a5184527c2ffd5741c11b931f076d6afc83e5"
 
@@ -1115,6 +1123,11 @@ metafile = true
 [[files]]
 file = "mods/toms-storage.pw.toml"
 hash = "a303683e4c74640f419c31db329e9afc3ee8f388abc5c6a536dc6169c274b5c6"
+metafile = true
+
+[[files]]
+file = "mods/tool-trims.pw.toml"
+hash = "580c4fbb12a2f983bbe1976d02182f8b0d0660a8d4db7a6b608700903bfd948e"
 metafile = true
 
 [[files]]
