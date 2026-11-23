@@ -25,12 +25,23 @@ const AMBUSH_KEY_GRACE_DONE = 'createwars_ambush_grace_announced'
 let ambushApplied = null      // the state this script last set (null = not yet this session, so set it once)
 let ambushErrorLogged = false
 
+// Run a command and get its result number. KubeJS's server.runCommandSilent returns nothing in this version (the first
+// boot logged "toggle result undefined", 2026-11-23), so use the vanilla dispatcher with a result callback instead.
+function ambushRun(server, cmd) {
+  var out = { r: -1 }
+  var src = server.createCommandSourceStack().withSuppressedOutput().withPermission(4)
+    .withCallback((ok, result) => { out.r = ok ? result : 0 })
+  server.getCommands().performPrefixedCommand(src, cmd)
+  return out.r
+}
+
 function ambushSetNatural(server, want) {
-  // Toggle, and toggle again if it landed on the wrong state: the command only toggles.
-  var r = server.runCommandSilent('ambush admin spawning')
-  if ((r == 1) != want) r = server.runCommandSilent('ambush admin spawning')
+  // Toggle, and toggle again if it landed on the wrong state: the command only toggles (returns 1 = now on, 0 = now off).
+  var r = ambushRun(server, 'ambush admin spawning')
+  if ((r == 1) != want) r = ambushRun(server, 'ambush admin spawning')
   ambushApplied = want
   console.info('[createwars] AMBUSH natural spawning ' + (want ? 'ON' : 'OFF') + ' (toggle result ' + r + ')')
+  if ((r == 1) != want) console.error('[createwars] ambush_grace.js: AMBUSH did not confirm the state (result ' + r + ')')
 }
 
 function ambushHours(ticks) {
@@ -49,7 +60,7 @@ ServerEvents.tick(event => {
       data.putLong(AMBUSH_KEY_PLAY, play)
     }
     // `execute if entity` returns how many matched; > 0 while an ambush is running somewhere
-    var active = server.runCommandSilent('execute if entity @e[tag=ambush_owned]') > 0
+    var active = ambushRun(server, 'execute if entity @e[tag=ambush_owned]') > 0
     var gapUntil = data.getLong(AMBUSH_KEY_GAP_UNTIL)
     if (active && gapUntil < play + AMBUSH_GAP_TICKS) {
       gapUntil = play + AMBUSH_GAP_TICKS

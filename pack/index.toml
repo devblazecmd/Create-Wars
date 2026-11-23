@@ -478,7 +478,7 @@ hash = "f5844850ca63241d691f8d12f7e7ad6c1dc748959902d8d935d7e3f8d8892d35"
 
 [[files]]
 file = "kubejs/server_scripts/ambush_grace.js"
-hash = "f74c221f6eeff7ebbf375a9c90f00dca1bba8998312cdbcd587fbca4514808df"
+hash = "ede22438aae0f1f14da6672a58be600305aa4e3363faede4a454c49210780829"
 
 [[files]]
 file = "kubejs/server_scripts/blaze_burner_tiers.js"

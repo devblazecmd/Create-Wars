@@ -86,4 +86,8 @@ returns the new state, 1 = on; saved with the world; quest-forced ambushes ignor
 - OFF while any `ambush_owned` mob is alive and for **2 hours of play** after the last one is gone.
 - Players get a chat line on login while the grace lasts; everyone gets one when it ends.
 Server-wide, not per player (owner asked; AMBUSH has no per-player switch). If an op toggles spawning by hand, the
-script won't notice until the next state change or restart. **Not yet boot-tested** (shipped in the v2 server zip).
+script won't notice until the next state change or restart.
+Boot-tested 2026-11-23: first version logged "toggle result undefined" (KubeJS `runCommandSilent` returns nothing here,
+so the state couldn't be confirmed and the ambush-mob check always read 0). Fixed: commands go through the vanilla
+dispatcher with a `CommandResultCallback` (`ambushRun`). Second boot: "AMBUSH natural spawning OFF (toggle result 0)" and
+the login grace message in chat. Ships in the v3 server zip.
