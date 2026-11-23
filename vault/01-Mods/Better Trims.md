@@ -1,8 +1,8 @@
 ---
 tags: [mod/status/testing, mod/category/combat, mc-version/1.21.1, loader/neoforge]
 mod_id: functionalarmortrim
-pack_version_pinned: "1.21.1-1.1.0 (better-trims-armor-and-weapons-1.21.1-1.1.0.jar, raw jar in pack/mods/)"
-last_verified: "2026-11-22 (bytecode reviewed; not yet run on a dedicated server - owner testing on UltraServers)"
+pack_version_pinned: "1.21.1-1.2.1 (better-trims-armor-and-weapons-1.21.1-1.2.1.jar, raw jar in pack/mods/)"
+last_verified: "2026-11-22 (1.2.1: client boot, tool trims verified in-game data; dedicated server not yet confirmed)"
 ---
 
 # Better Trims: Armor & Weapons
@@ -36,3 +36,12 @@ Not yet proven on a dedicated server (owner is testing on UltraServers). If it c
 
 ## Config decisions
 Defaults (same as the original). PvP: a full netherite-trimmed set adds +8 armor.
+
+## 1.2.1 (2026-11-22): tool and weapon trims
+Owner added `data/minecraft/tags/item/trimmable_armor.json` -> `#functionalarmortrim:trimmable_tools` (vanilla swords,
+axes, pickaxes, shovels, hoes, bow, crossbow, trident, mace + optional `#c:tools/*` tags), so the vanilla smithing-table
+trim recipe and JEI accept tools. Verified with a temporary KubeJS check on the test instance: iron sword + redstone trim
+gets +0.25 attack speed, bow + iron trim +10% arrow damage (`functionalarmortrim:arrow_damage`), diamond chestplate + iron
+trim +2 armor. No icon visuals for trimmed tools (tooltip only). New configs shipped: `functionalarmortrim_tools.json`,
+`functionalarmortrim_ranged.json`. Client-code scan unchanged (dist guard intact, GameRendererMixin client-only).
+

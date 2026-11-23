@@ -149,6 +149,14 @@ file = "config/functionalarmortrim.json"
 hash = "9713d4c65c04f8399573f94a7f7d69bffa3d7f570ad217921e6e9e67393e1e95"
 
 [[files]]
+file = "config/functionalarmortrim_ranged.json"
+hash = "b467c9a341b71776969a7051432dfce29a9dca8320b704df96dcb720d9918592"
+
+[[files]]
+file = "config/functionalarmortrim_tools.json"
+hash = "439c1690be41fd45fe603bc15e7621b49f3c8b590bdeafa315347e56adfae77e"
+
+[[files]]
 file = "config/gravestone-server.toml"
 hash = "f93c280168e2c0287fb53a24556a5184527c2ffd5741c11b931f076d6afc83e5"
 
@@ -510,8 +518,8 @@ hash = "03084ff4f74cedc1b8ac6c85a98842f75956fb4fa811d285d8ca7caa8d54da5d"
 metafile = true
 
 [[files]]
-file = "mods/better-trims-armor-and-weapons-1.21.1-1.1.0.jar"
-hash = "44c6d813b92bc06839ec497b9f19c35cbedb728e19d1b4868fe38f75c359655f"
+file = "mods/better-trims-armor-and-weapons-1.21.1-1.2.1.jar"
+hash = "d1e3fc2699ebd2e97dd3efd17566ba78402c83564ef298ce99502ed490db552a"
 
 [[files]]
 file = "mods/biomes-o-plenty.pw.toml"
