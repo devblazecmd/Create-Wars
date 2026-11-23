@@ -10,3 +10,8 @@ Thumbs.db
 # server logs (contain player IP addresses) must never be committed to the public repo
 server.log
 *.log
+
+# Mods come from packwiz (pack/mods/*.pw.toml). Don't commit loose jars in the repo root.
+/*.jar
+# Python bytecode
+__pycache__/
